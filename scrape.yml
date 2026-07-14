@@ -1,0 +1,36 @@
+name: Scrape events
+
+on:
+  schedule:
+    - cron: "0 7 * * *"   # every day at 07:00 UTC (8am Irish summer time)
+  workflow_dispatch: {}    # adds a "Run workflow" button for manual runs
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          PAGE_URL: ${{ vars.PAGE_URL }}
+        run: python scraper/scrape.py
+
+      - name: Commit updated events
+        run: |
+          git config user.name "events-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/events.json
+          git diff --cached --quiet || git commit -m "Update events ($(date -u +%Y-%m-%d))"
+          git push
