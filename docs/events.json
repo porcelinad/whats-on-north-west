@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-14",
+ "generated_at": "2026-07-15",
  "failed_sources": [],
  "events": [
   {
@@ -84,19 +84,6 @@
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662799",
    "category": "Theatre",
    "id": "72d98a8dc2b4",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "EAF: Gwenno",
-   "date": "2026-07-14",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/gwenno-concert/",
-   "category": "Music",
-   "id": "b28822eebf9e",
    "first_seen": "2026-07-14"
   },
   {
