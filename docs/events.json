@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-15",
+ "generated_at": "2026-07-16",
  "failed_sources": [],
  "events": [
   {
@@ -59,34 +59,6 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Summer Camp for ages 13 to 18",
-   "date": "2026-07-13",
-   "end_date": "2026-07-17",
-   "url": "https://angrianan.com/event/the-viewing-project-summer-camp-for-ages-13-to-18/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873664491",
-   "category": "Workshop",
-   "id": "0aef76ae6eb8",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Distillation by Luke Casserly",
-   "date": "2026-07-14",
-   "end_date": "2026-07-15",
-   "url": "https://angrianan.com/event/distillation/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662799",
-   "category": "Theatre",
-   "id": "72d98a8dc2b4",
-   "first_seen": "2026-07-14"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -98,19 +70,6 @@
    "url": "https://regionalculturalcentre.com/events/rcc-kids-art-workshops/",
    "category": "Workshop",
    "id": "1bb263e16a1b",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC MUSIC: Ruth McGinley: Glass and Beyond",
-   "date": "2026-07-15",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/ruth-mcginley-glass-and-beyond-concert/",
-   "category": "Music",
-   "id": "6cd678e37db8",
    "first_seen": "2026-07-14"
   },
   {
@@ -626,6 +585,17 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Tick, Tick...Boom!",
+   "date": "2026-09-25",
+   "url": "https://www.balorartscentre.com/?event=tick-tick-boom",
+   "id": "d7c813d35091",
+   "first_seen": "2026-07-16"
+  },
+  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -966,6 +936,18 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
+   "title": "Adrift by Deirdre Kinahan",
+   "date": "2026-11-18",
+   "url": "https://angrianan.com/event/adrift-by-deirdre-kinahan/",
+   "category": "Theatre",
+   "id": "b14c3616b15f",
+   "first_seen": "2026-07-16"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
    "title": "John Colleary: Mighty Quack",
    "date": "2026-11-20",
    "url": "https://angrianan.com/event/john-colleary-the-quack/",
@@ -1156,6 +1138,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Tommy Fleming",
+   "date": "2027-02-14",
+   "url": "https://angrianan.com/event/tommy-fleming/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666241/events/128660510/seats?zone=Default",
+   "category": "Music",
+   "id": "29a6de2028a2",
+   "first_seen": "2026-07-16"
+  },
+  {
    "source": "abbey",
    "venue": "Abbey Arts Centre",
    "town": "Ballyshannon",
@@ -1204,6 +1199,19 @@
    "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173671624",
    "id": "71fcd959659a",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Give My Head Peace",
+   "date": "2027-03-12",
+   "url": "https://angrianan.com/event/give-my-head-peace/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666248/events/128660526/seats?zone=Default",
+   "category": "Comedy",
+   "id": "984f14cb30cf",
+   "first_seen": "2026-07-16"
   },
   {
    "source": "an_grianan",
