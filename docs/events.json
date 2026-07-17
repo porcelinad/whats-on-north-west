@@ -1,6 +1,8 @@
 {
- "generated_at": "2026-07-16",
- "failed_sources": [],
+ "generated_at": "2026-07-17",
+ "failed_sources": [
+  "Abbey Arts Centre"
+ ],
  "events": [
   {
    "source": "rcc",
@@ -70,30 +72,6 @@
    "url": "https://regionalculturalcentre.com/events/rcc-kids-art-workshops/",
    "category": "Workshop",
    "id": "1bb263e16a1b",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "The Ghostlight Sessions July 2026",
-   "date": "2026-07-16",
-   "url": "https://www.balorartscentre.com/?event=the-ghostlight-sessions-july-2026",
-   "id": "0c71e604b1ce",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC MUSIC: The McKenna Family Album Launch + Support from Coirm",
-   "date": "2026-07-16",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/the-mckenna-family-album-launch-support-from-coirm/",
-   "category": "Music",
-   "id": "5b0209285b05",
    "first_seen": "2026-07-14"
   },
   {
@@ -453,6 +431,19 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
+   "title": "Lisa O’Neill",
+   "date": "2026-09-09",
+   "url": "https://angrianan.com/event/lisa-oneill/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666288/events/128660658/seats?zone=Default",
+   "category": "Music",
+   "id": "ab30dc1f8732",
+   "first_seen": "2026-07-17"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
    "title": "The ELO Tribute Show",
    "date": "2026-09-10",
    "url": "https://angrianan.com/event/the-elo-show/",
@@ -711,6 +702,17 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Paddy McDonnell - Gout's Out",
+   "date": "2026-10-16",
+   "url": "https://www.balorartscentre.com/?event=paddy-mcdonnell-gouts-out",
+   "id": "556a8869cba5",
+   "first_seen": "2026-07-17"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -755,6 +757,19 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
+   "title": "A Derry Queer Open Mic (Letterkenny Edition)",
+   "date": "2026-10-22",
+   "url": "https://angrianan.com/event/a-derry-queer-open-mic-letterkenny-edition/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666276",
+   "category": "Variety",
+   "id": "a98b5791cfd5",
+   "first_seen": "2026-07-17"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
    "title": "Legends Of The 60s Show",
    "date": "2026-10-23",
    "url": "https://angrianan.com/event/legends-of-the-60s-show/",
@@ -762,6 +777,19 @@
    "category": "Music",
    "id": "761267b7ea0e",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Retardant",
+   "date": "2026-10-23",
+   "url": "https://angrianan.com/event/retardant/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666278",
+   "category": "Theatre",
+   "id": "1529c3b7dfc1",
+   "first_seen": "2026-07-17"
   },
   {
    "source": "an_grianan",
@@ -1238,6 +1266,19 @@
    "category": "Music",
    "id": "13bcd5dff456",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Anne Gildea: You’re Welcome",
+   "date": "2027-04-17",
+   "url": "https://angrianan.com/event/anne-gildea-youre-welcome/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666262/events/128660564/seats?zone=Default",
+   "category": "Comedy",
+   "id": "a860d57a54cb",
+   "first_seen": "2026-07-17"
   }
  ]
 }
