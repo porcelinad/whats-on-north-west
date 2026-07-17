@@ -154,8 +154,9 @@ function render(gen){
       stub.append(el("span","range","to "+e2.day+" "+e2.mon));}
     const info=el("div","info");
     info.append(el("p","title",ev.title));
-    info.append(el("p","meta")).lastChild.innerHTML=
-      "<b>"+ev.venue+"</b> · "+ev.town+(ev.time?" · "+ev.time:"");
+    const meta=el("p","meta");
+    meta.innerHTML="<b>"+ev.venue+"</b> · "+ev.town+(ev.time?" · "+ev.time:"");
+    info.append(meta);
     const tags=el("div","tags");
     if(isNew(ev,gen)) tags.append(el("span","new","New"));
     if(ev.category) ev.category.split(", ").forEach(c=>
@@ -193,11 +194,12 @@ fetch("events.json?t="+Date.now())
    document.getElementById("search").addEventListener("input",e=>{
      query=e.target.value; render(GEN)});
  })
- .catch(()=>{
+ .catch(err=>{
+   console.error("Failed to load or render events:", err);
    document.getElementById("updated").textContent="";
    document.getElementById("list").append(el("p","error",
-     "No event data yet. Once the first scrape has run on GitHub, "+
-     "events will appear here."));
+     "Something went wrong showing events. Check the browser console "+
+     "for details, or try refreshing."));
  });
 </script>
 </body>
