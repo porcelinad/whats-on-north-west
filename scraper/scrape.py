@@ -14,6 +14,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -27,9 +28,11 @@ DATA_FILE = ROOT / "docs" / "events.json"
 
 HEADERS = {
     "User-Agent": (
-        "NorthWestWhatsOn/1.0 (personal, non-commercial events listing; "
-        "one request per day)"
-    )
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-GB,en;q=0.9",
 }
 TIMEOUT = 30
 TODAY = date.today()
@@ -63,9 +66,17 @@ SKIP_LINK_TEXT = {
 # ---------------------------------------------------------------- helpers
 
 def fetch(url):
-    r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-    r.raise_for_status()
-    return BeautifulSoup(r.text, "lxml")
+    last_exc = None
+    for attempt in range(3):
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+            r.raise_for_status()
+            return BeautifulSoup(r.text, "lxml")
+        except Exception as exc:
+            last_exc = exc
+            if attempt < 2:
+                time.sleep(4 * (attempt + 1))
+    raise last_exc
 
 
 def clean(text):
@@ -321,7 +332,10 @@ def main():
             found = source["parser"](soup, source)
             print(f"{source['venue']}: {len(found)} events")
             if not found:
-                raise ValueError("parsed zero events - selectors may be stale")
+                snippet = soup.get_text(" ", strip=True)[:200]
+                raise ValueError(
+                    "parsed zero events - selectors may be stale, or the "
+                    f"site blocked this request. Page preview: {snippet!r}")
             all_events.extend(found)
         except Exception as exc:
             failed.append(source["venue"])
