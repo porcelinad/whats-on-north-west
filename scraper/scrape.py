@@ -15,7 +15,7 @@ import os
 import re
 import sys
 import time
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -43,7 +43,8 @@ HEADERS = {
     "Referer": "https://www.google.com/",
 }
 TIMEOUT = 30
-TODAY = date.today()
+NOW = datetime.now(timezone.utc)
+TODAY = NOW.date()
 
 NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "").strip()
 PAGE_URL = os.environ.get("PAGE_URL", "").strip()
@@ -485,7 +486,7 @@ def main():
 
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     DATA_FILE.write_text(json.dumps({
-        "generated_at": TODAY.isoformat(),
+        "generated_at": NOW.strftime("%Y-%m-%dT%H:%MZ"),
         "failed_sources": failed,
         "events": final,
     }, indent=1, ensure_ascii=False), encoding="utf-8")
