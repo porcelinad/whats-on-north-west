@@ -1,9 +1,40 @@
 {
- "generated_at": "2026-07-18T16:22Z",
+ "generated_at": "2026-07-18T16:50Z",
  "failed_sources": [
   "Abbey Arts Centre"
  ],
+ "source_last_run": {
+  "eaf": "2026-07-18T16:50Z"
+ },
  "events": [
+  {
+   "source": "eaf",
+   "venue": "Saldanha Gallery, Fort Dunree",
+   "town": "Linsfort, Buncrana",
+   "county": "Donegal",
+   "title": "Setting | Mary O’Malley",
+   "date": "2026-06-28",
+   "end_date": "2026-07-26",
+   "time": "10.30am- 4.30pm (Daily)",
+   "url": "https://eaf.ie/events/setting-mary-omalley/",
+   "category": "Visual Arts & Film",
+   "id": "05bf61071ab7",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Saldanha Gallery, Fort Dunree",
+   "town": "Linsfort, Buncrana",
+   "county": "Donegal",
+   "title": "Still Life | Group Show",
+   "date": "2026-06-28",
+   "end_date": "2026-07-26",
+   "time": "10.30am- 4.30pm (Daily)",
+   "url": "https://eaf.ie/events/still-life-group-show/",
+   "category": "Visual Arts & Film",
+   "id": "ad248e5e203e",
+   "first_seen": "2026-07-18"
+  },
   {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
@@ -17,6 +48,76 @@
    "category": "Exhibition",
    "id": "bd4b86b4526e",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eaf",
+   "venue": "Glebe Gallery & Gardens",
+   "town": "Churchill",
+   "county": "Donegal",
+   "title": "Cathal McGinley – Scattered at the Edges",
+   "date": "2026-07-05",
+   "end_date": "2026-08-30",
+   "time": "10am - 6pm (Daily)",
+   "url": "https://eaf.ie/events/cathal-mcginley-scattered-at-the-edges/",
+   "category": "Visual Arts & Film",
+   "id": "16b05ee491cf",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Donegal County Museum",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Rockwell Kent – An American Artist in Donegal",
+   "date": "2026-07-10",
+   "end_date": "2026-09-05",
+   "time": "Monday – Friday 10am - 4.30pm, (Closed 12.30pm - 1pm), Saturday, 1pm - 4.30pm",
+   "url": "https://eaf.ie/events/rockwell-kent-an-american-artist-in-donegal/",
+   "category": "Visual Arts & Film",
+   "id": "377b45f33d4b",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "An Gailearaí, Ionad Áislann, Páirc Ghnó Ghaoth Dobhair, F92 PT38",
+   "town": "Gaoth Dobhair",
+   "county": "Donegal",
+   "title": "Déanta i nDún na nGall – Made in Donegal",
+   "date": "2026-07-11",
+   "end_date": "2026-09-04",
+   "time": "11am-5pm, Monday, Tuesday, Thursday & Friday 1pm-8pm, Wednesdays",
+   "url": "https://eaf.ie/events/deanta-i-ndun-na-ngall-made-in-donegal/",
+   "category": "Visual Arts & Film",
+   "id": "472238298297",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Barbara Knežević: Gvozdene Kapije | The Iron Gates",
+   "date": "2026-07-11",
+   "end_date": "2026-09-19",
+   "time": "11am - 5pm Tuesday – Friday, 1pm - 5pm Saturdays",
+   "url": "https://eaf.ie/events/barbara-knezevic-gvozdene-kapije-the-iron-gates/",
+   "category": "Visual Arts & Film",
+   "id": "7c5a438cacfa",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Drop-In, Hands-On, Art Room",
+   "date": "2026-07-11",
+   "end_date": "2026-08-29",
+   "time": "11am - 5pm Tuesday – Friday, 1pm - 5pm Saturdays",
+   "url": "https://eaf.ie/events/drop-in-hands-on-art-room/",
+   "category": "Visual Arts & Film",
+   "id": "820f76a45ab9",
+   "first_seen": "2026-07-18"
   },
   {
    "source": "rcc",
@@ -47,6 +148,20 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eaf",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "The Rain Tells Us Everything",
+   "date": "2026-07-11",
+   "end_date": "2026-09-19",
+   "time": "11am - 5pm Tuesday – Friday, 1pm - 5pm Saturdays",
+   "url": "https://eaf.ie/events/the-rain-tells-us-everything/",
+   "category": "Visual Arts & Film",
+   "id": "a1544879aff4",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -59,6 +174,20 @@
    "category": "Exhibition",
    "id": "88d45de4385a",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eaf",
+   "venue": "Glebe Gallery & Gardens",
+   "town": "Churchill",
+   "county": "Donegal",
+   "title": "Vinyl Sundays",
+   "date": "2026-07-12",
+   "end_date": "2026-07-19",
+   "time": "2pm",
+   "url": "https://eaf.ie/events/vinyl-sundays/",
+   "category": "Music",
+   "id": "d9c81fa36643",
+   "first_seen": "2026-07-18"
   },
   {
    "source": "rcc",
@@ -75,6 +204,20 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eaf",
+   "venue": "Various",
+   "town": "Rathmullan",
+   "county": "Donegal",
+   "title": "RAMP – Rathmullan Music Project",
+   "date": "2026-07-17",
+   "end_date": "2026-07-19",
+   "time": "Various",
+   "url": "https://eaf.ie/events/ramp-rathmullan-music-project/",
+   "category": "Music",
+   "id": "e9fd9ac658b0",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -88,6 +231,32 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eaf",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Sounding The Peninsula",
+   "date": "2026-07-18",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/sounding-the-peninsula/",
+   "category": "Music",
+   "id": "bd83406ea3fa",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Patrick McMenamin",
+   "date": "2026-07-18",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/patrick-mcmenamin/",
+   "category": "Music",
+   "id": "f2378a19ffb1",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -99,6 +268,20 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eaf",
+   "venue": "Glebe Gallery & Gardens",
+   "town": "Churchill",
+   "county": "Donegal",
+   "title": "Funny Business starring Fraser Hooper",
+   "date": "2026-07-18",
+   "end_date": "2026-07-19",
+   "time": "3pm",
+   "url": "https://eaf.ie/events/funny-business-starring-fraser-hooper/",
+   "category": "Spectacle, Street Arts & Circus",
+   "id": "77c303332556",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Murray's Yard, Mountcharles F94 C8X4",
    "town": "Mountcharles",
@@ -108,6 +291,32 @@
    "time": "09:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/tir-chonaill-stone-festival-2026/",
    "id": "3aa92a08dd28",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Rathmullan House",
+   "town": "Rathmullan",
+   "county": "Donegal",
+   "title": "The Journals Fleadh | In Conversation: Jan Carson",
+   "date": "2026-07-18",
+   "time": "3.30pm",
+   "url": "https://eaf.ie/events/the-journals-fleadh-in-conversation-jan-carson/",
+   "category": "Spoken Word & Conversations",
+   "id": "58ff933430e2",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "All Ages (5-95 years) Clown Workshop with Fraser Hooper",
+   "date": "2026-07-18",
+   "time": "11am",
+   "url": "https://eaf.ie/events/all-ages-5-95-years-clown-workshop-with-fraser-hooper/",
+   "category": "Masterclass/Workshop",
+   "id": "b5894386709f",
    "first_seen": "2026-07-18"
   },
   {
@@ -150,6 +359,45 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eaf",
+   "venue": "The Beachcomber Bar",
+   "town": "Rathmullan",
+   "county": "Donegal",
+   "title": "Angel and The Dead Hearts",
+   "date": "2026-07-18",
+   "time": "10pm",
+   "url": "https://eaf.ie/events/angel-and-the-dead-hearts/",
+   "category": "Music",
+   "id": "72bd87fa3cce",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "The White Harte Bar",
+   "town": "Rathmullan",
+   "county": "Donegal",
+   "title": "The Journals Fleadh | Journal-Vision",
+   "date": "2026-07-18",
+   "time": "7pm",
+   "url": "https://eaf.ie/events/the-journals-fleadh-the-world-cup-of-irish-journals/",
+   "category": "Spoken Word & Conversations",
+   "id": "17a6756d6c22",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Various",
+   "town": "Various",
+   "county": "Donegal",
+   "title": "Daniel Patrick & Whitt Algar Bluegrass Tour",
+   "date": "2026-07-18",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/daniel-patrick-whitt-algar-bluegrass-tour/",
+   "category": "Music",
+   "id": "48266570d212",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Villa Rose Hotel and Spa",
    "town": "Ballybofey",
@@ -171,6 +419,45 @@
    "url": "https://www.balorartscentre.com/?event=the-maurice-lennon-trio-2",
    "id": "0ce517e36cb3",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eaf",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "The Maurice Lennon Trio",
+   "date": "2026-07-19",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/the-maurice-lennon-trio/",
+   "category": "Music",
+   "id": "52dc28952023",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Rathmullan House",
+   "town": "Rathmullan",
+   "county": "Donegal",
+   "title": "The Journals Fleadh | Poetry Workshop with Mícheál McCann",
+   "date": "2026-07-19",
+   "time": "3.30pm",
+   "url": "https://eaf.ie/events/the-journals-fleadh-poetry-workshop-with-micheal-mccann/",
+   "category": "Spoken Word & Conversations",
+   "id": "224159c2503a",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Rathmullan House",
+   "town": "Rathmullan",
+   "county": "Donegal",
+   "title": "The Journals Fleadh | Prose Workshop with Dean Fee",
+   "date": "2026-07-19",
+   "time": "1.30pm",
+   "url": "https://eaf.ie/events/the-journals-fleadh-prose-workshop-with-dean-fee/",
+   "category": "Spoken Word & Conversations",
+   "id": "8917a0c469dc",
+   "first_seen": "2026-07-18"
   },
   {
    "source": "rcc",
@@ -199,6 +486,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eaf",
+   "venue": "Various",
+   "town": "Inishowen",
+   "county": "Donegal",
+   "title": "Summer Heritage Tour of Inishowen – With Neil McGrory & Lorna Henry",
+   "date": "2026-07-19",
+   "time": "10am",
+   "url": "https://eaf.ie/events/summer-heritage-tour-of-inishowen-with-neil-mcgrory-lorna-henry/",
+   "category": "Spoken Word & Conversations",
+   "id": "ea6c451bd847",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "ZD Loft",
    "town": "Donegal",
@@ -211,6 +511,19 @@
    "first_seen": "2026-07-18"
   },
   {
+   "source": "eaf",
+   "venue": "Blakes",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Pop-Up Gaeltacht & Seisiún Ceoil",
+   "date": "2026-07-21",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/pop-up-gaeltacht-seisiun-ceoil/",
+   "category": "Music",
+   "id": "7132d758649a",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Henderson Hall",
    "town": "Donegal",
@@ -220,6 +533,32 @@
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/k-pop-workshop/",
    "id": "ac63a5c1d71c",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Ionad Cois Locha",
+   "town": "Dunlewey",
+   "county": "Donegal",
+   "title": "Trad Tráthnóna | Doimnic Mac Giolla Bhríde",
+   "date": "2026-07-21",
+   "time": "8.30pm",
+   "url": "https://eaf.ie/events/trad-trathnona-doimnic-mac-giolla-bhride/",
+   "category": "Music",
+   "id": "8417d442d2c6",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Ionad Naomh Pádraig",
+   "town": "Dore",
+   "county": "Donegal",
+   "title": "Tá mé Just – DÍOLTA AMACH / SOLD OUT",
+   "date": "2026-07-21",
+   "time": "11am",
+   "url": "https://eaf.ie/events/ta-me-just-diolta-amach-sold-out/",
+   "category": "Masterclass/Workshop",
+   "id": "4b5bbd029f6b",
    "first_seen": "2026-07-18"
   },
   {
@@ -246,6 +585,32 @@
    "category": "Theatre",
    "id": "64de8071f042",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eaf",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Irish Aerial Dance Fest | International Night & Homegrown",
+   "date": "2026-07-22",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/irish-aerial-dance-fest-international-night-homegrown/",
+   "category": "Dance & Theatre",
+   "id": "e535f7592af2",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "A Personal History Of Pyromania – By Brendan Mac Evilly",
+   "date": "2026-07-22",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/a-personal-history-of-pyromania-by-brendan-mac-evilly/",
+   "category": "Spoken Word & Conversations",
+   "id": "52c846b7932f",
+   "first_seen": "2026-07-18"
   },
   {
    "source": "rcc",
@@ -275,6 +640,33 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eaf",
+   "venue": "Dámhlann an Ghleanna",
+   "town": "Mín an Leá, Gortahork",
+   "county": "Donegal",
+   "title": "Oíche Airneáil – Gort an Choirce",
+   "date": "2026-07-23",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/oiche-airneail-gort-an-choirce/",
+   "category": "Music",
+   "id": "5bc18cb00be3",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Ionad Cois Locha",
+   "town": "Dunlewey",
+   "county": "Donegal",
+   "title": "Fanzini Brothers – Risky Business",
+   "date": "2026-07-23",
+   "end_date": "2026-07-24",
+   "time": "3pm",
+   "url": "https://eaf.ie/events/fanzini-brothers-risky-business/",
+   "category": "Spectacle, Street Arts & Circus",
+   "id": "73b38e34ca3d",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "The Highlands Hotel",
    "town": "Glenties",
@@ -300,6 +692,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eaf",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Irish Aerial Dance Fest | Homegrown Night",
+   "date": "2026-07-24",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/irish-aerial-dance-fest-homegrown-night/",
+   "category": "Dance & Theatre",
+   "id": "2e3331b70bb1",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -311,6 +716,46 @@
    "category": "Workshop",
    "id": "3a1069352a63",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eaf",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Samuel Yakura – Poetry Slam",
+   "date": "2026-07-24",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/samuel-yakura-poetry-slam/",
+   "category": "Spoken Word & Conversations",
+   "id": "395ac9903e35",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "The Diamond",
+   "town": "Donegal Town",
+   "county": "Donegal",
+   "title": "MDME Kakapo & Son",
+   "date": "2026-07-24",
+   "end_date": "2026-07-25",
+   "time": "2pm, 3pm & 4pm",
+   "url": "https://eaf.ie/events/mdme-kakapo-son/",
+   "category": "Spectacle, Street Arts & Circus",
+   "id": "a858a17d6b3d",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "The Social",
+   "town": "Derrybeg",
+   "county": "Donegal",
+   "title": "Diane Cannon, Steve Cooney, Màiri MacMillan agus Eoghan Mac Giolla Bhríde",
+   "date": "2026-07-24",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/diane-cannon-steve-cooney-mairi-macmillan-agus-eoghan-mac-giolla-bhride/",
+   "category": "Music",
+   "id": "eed8fce8195a",
+   "first_seen": "2026-07-18"
   },
   {
    "source": "an_grianan",
@@ -326,6 +771,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eaf",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Irish Aerial Dance Fest | Emma Insley Cabaret",
+   "date": "2026-07-25",
+   "time": "7pm",
+   "url": "https://eaf.ie/events/irish-aerial-dance-fest-emma-insley-cabaret/",
+   "category": "Dance & Theatre",
+   "id": "070dcfb9a6e5",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -335,6 +793,97 @@
    "url": "https://www.balorartscentre.com/?event=tanya-mccole-with-o-hearain",
    "id": "2d874f9d2f93",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eaf",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Tanya McCole | Ó hEaráin",
+   "date": "2026-07-25",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/tanya-mccole/",
+   "category": "Music",
+   "id": "7d2f98cc9662",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Blakes",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "BRRR BRRR BRRR Records & Tapes Summer Fair",
+   "date": "2026-07-25",
+   "time": "2pm",
+   "url": "https://eaf.ie/events/brrr-record-and-tape-fair/",
+   "category": "Music",
+   "id": "279090f4923d",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Donegal Castle",
+   "town": "Donegal Town",
+   "county": "Donegal",
+   "title": "Brigid Mae Power",
+   "date": "2026-07-25",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/brigid-mae-power/",
+   "category": "Music",
+   "id": "0def27a51da7",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Ionad Cois Locha",
+   "town": "Dunlewey",
+   "county": "Donegal",
+   "title": "The Byrne Brothers",
+   "date": "2026-07-25",
+   "time": "8.30pm",
+   "url": "https://eaf.ie/events/the-byrne-brothers/",
+   "category": "Music",
+   "id": "ef398b19153d",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "The Forge",
+   "town": "Donegal Town",
+   "county": "Donegal",
+   "title": "Turn It On: EAF Closing Party – DJ Set",
+   "date": "2026-07-25",
+   "time": "10pm",
+   "url": "https://eaf.ie/events/turn-it-on-eaf-closing-party-dj-set/",
+   "category": "Music",
+   "id": "41bc036a2882",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Town Park",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Party In The Park",
+   "date": "2026-07-25",
+   "time": "12noon - 6pm",
+   "url": "https://eaf.ie/events/party-in-the-park/",
+   "category": "Music",
+   "id": "f917b0c0cb3b",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eaf",
+   "venue": "Visitor Centre",
+   "town": "Glenveagh National Park",
+   "county": "Donegal",
+   "title": "Ubuntu Trekkers, BIG CHEEKS and Samuel Yakura",
+   "date": "2026-07-25",
+   "time": "2pm",
+   "url": "https://eaf.ie/events/ubuntu-trekkers-big-cheeks-and-samuel-yakura/",
+   "category": "Spoken Word & Conversations",
+   "id": "98cbff6a9a05",
+   "first_seen": "2026-07-18"
   },
   {
    "source": "abbey",
@@ -1290,6 +1839,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eaf",
+   "venue": "Ballyliffin Hotel",
+   "town": "Ballyliffin",
+   "county": "Donegal",
+   "title": "The Henry Girls – January 2027",
+   "date": "2027-01-09",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/the-henry-girls-january-2027/",
+   "category": "Music",
+   "id": "0b937edb08a4",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -1301,6 +1863,19 @@
    "category": "Music",
    "id": "d177435c06f3",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eaf",
+   "venue": "Ballyliffin Hotel",
+   "town": "Ballyliffin",
+   "county": "Donegal",
+   "title": "A Winter Home with The Henry Girls – January 2027",
+   "date": "2027-01-10",
+   "time": "Various",
+   "url": "https://eaf.ie/events/a-winter-home-with-the-henry-girls-january-2027/",
+   "category": "Masterclass/Workshop",
+   "id": "ada5af46cff8",
+   "first_seen": "2026-07-18"
   },
   {
    "source": "an_grianan",
