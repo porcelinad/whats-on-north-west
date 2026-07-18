@@ -17,6 +17,7 @@ import sys
 import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import quote
 
 import requests
 from bs4 import BeautifulSoup, NavigableString
@@ -302,6 +303,27 @@ EVENTBRITE_ALLOWED_CATEGORIES = {
     "Music", "Performing & Visual Arts", "Community & Culture", "Film & Media",
 }
 
+# GitHub Actions' server IPs appear to be blocked by Eventbrite specifically
+# (a 405 even with full browser-like headers - consistent with an IP-range
+# block rather than a header/UA check). As a fallback, route through a
+# public raw-HTML proxy that has a different IP range. Direct is always
+# tried first, so if Eventbrite's block ever lifts, this quietly stops
+# being needed. This is an extra external dependency and could itself
+# become unreliable - if so, dropping Eventbrite entirely is reasonable.
+EVENTBRITE_PROXY_TEMPLATE = "https://api.allorigins.win/raw?url={}"
+
+
+def fetch_eventbrite_page(url):
+    try:
+        return fetch_text(url)
+    except Exception as direct_exc:
+        proxy_url = EVENTBRITE_PROXY_TEMPLATE.format(quote(url, safe=""))
+        try:
+            print(f"  direct fetch blocked ({direct_exc}); trying proxy...")
+            return fetch_text(proxy_url)
+        except Exception:
+            raise direct_exc  # the direct error is more informative to log
+
 
 def parse_eventbrite(source):
     """Eventbrite 'discover' pages for a region (e.g. eventbrite.ie/d/
@@ -314,7 +336,7 @@ def parse_eventbrite(source):
     events = []
     for page in range(1, EVENTBRITE_MAX_PAGES + 1):
         page_url = source["url"] if page == 1 else f"{source['url']}?page={page}"
-        html = fetch_text(page_url)
+        html = fetch_eventbrite_page(page_url)
         data = extract_server_data(html)
         ev_block = data.get("search_data", {}).get("events", {})
         results = ev_block.get("results", [])
