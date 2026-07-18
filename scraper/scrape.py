@@ -9,12 +9,14 @@ them up. This avoids relying on fragile CSS class names, so minor site
 redesigns are less likely to break things.
 """
 
+import csv
 import hashlib
 import json
 import os
 import re
 import sys
 import time
+import unicodedata
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import quote
@@ -403,6 +405,105 @@ def parse_abbey(soup, source):
     return events
 
 
+MANUAL_CSV_PATH = ROOT / "scraper" / "manual-imports" / "eventbrite.csv"
+
+
+WEEKDAY_INDEX = {name: i for i, name in enumerate(
+    ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"])}
+
+
+def parse_eventbrite_date_text(text):
+    """Parses Eventbrite's date text as found in a webscraper.io export:
+    an explicit date ('Fri 31 Jul, 18:30'), or a relative one ('Today at
+    09:00', 'Tomorrow at 19:30', 'Thursday at 11:00' - a bare weekday
+    means the next occurrence of that day). Relative dates are resolved
+    against TODAY (the day this script runs), on the assumption the CSV
+    was exported recently - if the file goes stale before being
+    refreshed, the fix is simply to re-export and re-upload it."""
+    if not text:
+        return None, None
+    t = clean(text)
+
+    m = re.match(r"today at (\d{1,2}:\d{2})", t, re.I)
+    if m:
+        return TODAY, m.group(1)
+
+    m = re.match(r"tomorrow at (\d{1,2}:\d{2})", t, re.I)
+    if m:
+        return TODAY + timedelta(days=1), m.group(1)
+
+    m = re.match(r"([A-Za-z]+)\s+at\s+(\d{1,2}:\d{2})", t)
+    if m:
+        wd = WEEKDAY_INDEX.get(m.group(1).lower())
+        if wd is not None:
+            delta = (wd - TODAY.weekday()) % 7 or 7
+            return TODAY + timedelta(days=delta), m.group(2)
+
+    m = re.match(r"[A-Za-z]+\s+(\d{1,2})\s+([A-Za-z]+),?\s+(\d{1,2}:\d{2})", t)
+    if m:
+        mon = MONTHS.get(m.group(2).lower()[:3])
+        if mon:
+            d = infer_year(mon, int(m.group(1)))
+            if d:
+                return d, m.group(3)
+
+    return None, None
+
+
+def slugify(title):
+    """Guesses Eventbrite's own URL slug from a title, e.g. 'MacGill
+    Summer School 2026' -> 'macgill-summer-school-2026'. Won't always be
+    exactly right (Eventbrite occasionally adds words not in the visible
+    title), but lands on the real event page far more often than not -
+    and when it's wrong, eventbrite.ie/d/ireland--donegal/<slug>/ still
+    lands on Eventbrite's Donegal search, which is what we'd link to
+    anyway, so there's no downside to trying. Accented characters (common
+    in Irish-language titles, e.g. 'Tír') are transliterated to their
+    plain-ASCII equivalent rather than dropped, matching what Eventbrite
+    itself does ('Tír' -> 'tir', not 't-r')."""
+    t = title.lower()
+    t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode("ascii")
+    t = t.replace("'", "")
+    t = re.sub(r"[^a-z0-9]+", "-", t)
+    return t.strip("-")
+
+
+def parse_eventbrite_csv(source):
+    """Eventbrite blocks GitHub Actions' servers outright (see EVENTBRITE_*
+    above), so this reads a CSV exported by hand from the webscraper.io
+    browser extension instead - no network request, so nothing to block.
+    Upload a fresh export to scraper/manual-imports/eventbrite.csv every
+    so often (weekly is plenty), always overwriting the same filename.
+    Returns None (not []) if no file has been uploaded yet, so the caller
+    can tell 'nothing uploaded' apart from 'uploaded but empty/broken'."""
+    if not MANUAL_CSV_PATH.exists():
+        return None
+    events = []
+    with MANUAL_CSV_PATH.open(encoding="utf-8-sig", newline="") as f:
+        for row in csv.DictReader(f):
+            title = clean(row.get("data") or row.get("data6") or "")
+            if not title:
+                continue
+            start_date, time_str = parse_eventbrite_date_text(row.get("data2"))
+            if not start_date:
+                start_date, time_str = parse_eventbrite_date_text(row.get("data11"))
+            if not start_date:
+                continue  # relative-only or missing date - skip, see above
+            venue_text = clean(row.get("data5") or row.get("data13") or "")
+            town = venue = None
+            if "·" in venue_text:
+                town, venue = (p.strip() for p in venue_text.split("·", 1))
+            else:
+                venue = venue_text or None
+            slug = slugify(title)
+            url = (f"https://www.eventbrite.ie/d/ireland--donegal/{slug}/"
+                   if slug else source["url"])
+            events.append(make_event(
+                source, title, start_date, time=time_str,
+                venue=venue, town=town, url=url))
+    return events
+
+
 # ---------------------------------------------------------------- sources
 
 SOURCES = [
@@ -421,7 +522,7 @@ SOURCES = [
     {"name": "eventbrite_donegal", "venue": "Eventbrite (Donegal)",
      "town": "Donegal", "county": "Donegal", "region_filter": "Donegal",
      "url": "https://www.eventbrite.ie/d/ireland--donegal/all-events/",
-     "parser": parse_eventbrite, "custom_fetch": True},
+     "parser": parse_eventbrite_csv, "manual_csv": True},
 ]
 
 
@@ -474,7 +575,16 @@ def main():
     all_events, failed = [], []
     for source in SOURCES:
         try:
-            if source.get("custom_fetch"):
+            if source.get("manual_csv"):
+                found = source["parser"](source)
+                if found is None:
+                    print(f"{source['venue']}: no manual CSV uploaded this "
+                          f"run - keeping previously known events")
+                    all_events.extend(
+                        e for e in prev_by_key.values()
+                        if e["source"] == source["name"])
+                    continue
+            elif source.get("custom_fetch"):
                 found = source["parser"](source)
             else:
                 soup = fetch(source["url"])
@@ -482,7 +592,7 @@ def main():
             print(f"{source['venue']}: {len(found)} events")
             if not found:
                 extra = ""
-                if not source.get("custom_fetch"):
+                if not source.get("custom_fetch") and not source.get("manual_csv"):
                     extra = f" Page preview: {soup.get_text(' ', strip=True)[:200]!r}"
                 raise ValueError(
                     "parsed zero events - selectors may be stale, filters "
