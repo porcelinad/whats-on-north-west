@@ -1,10 +1,7 @@
 {
- "generated_at": "2026-07-18T14:15Z",
+ "generated_at": "2026-07-18T16:22Z",
  "failed_sources": [
-  "An Grianán Theatre",
-  "Regional Cultural Centre",
-  "Balor Arts Centre",
-  "Eventbrite (Donegal)"
+  "Abbey Arts Centre"
  ],
  "events": [
   {
@@ -102,6 +99,18 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eventbrite_donegal",
+   "venue": "Murray's Yard, Mountcharles F94 C8X4",
+   "town": "Mountcharles",
+   "county": "Donegal",
+   "title": "Tír Chonaill Stone Festival 2026",
+   "date": "2026-07-18",
+   "time": "09:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/tir-chonaill-stone-festival-2026/",
+   "id": "3aa92a08dd28",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -141,6 +150,18 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eventbrite_donegal",
+   "venue": "Villa Rose Hotel and Spa",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Mamma Mia - The Live Experience / BALLYBOFEY",
+   "date": "2026-07-18",
+   "time": "19:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/mamma-mia-the-live-experience-ballybofey/",
+   "id": "f29828d9fa21",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -176,6 +197,42 @@
    "category": "Spoken Word",
    "id": "ef42c3b00879",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "ZD Loft",
+   "town": "Donegal",
+   "county": "Donegal",
+   "title": "Reverie in the Loft",
+   "date": "2026-07-19",
+   "time": "19:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/reverie-in-the-loft/",
+   "id": "d306b0802445",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Henderson Hall",
+   "town": "Donegal",
+   "county": "Donegal",
+   "title": "K-Pop Workshop!",
+   "date": "2026-07-21",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/k-pop-workshop/",
+   "id": "ac63a5c1d71c",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "McCafferty's at The Pier",
+   "town": "Donegal",
+   "county": "Donegal",
+   "title": "ANAM - Traditional Irish Music, Song and Dance Show",
+   "date": "2026-07-21",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/anam-traditional-irish-music-song-and-dance-show/",
+   "id": "7f42106fc193",
+   "first_seen": "2026-07-18"
   },
   {
    "source": "an_grianan",
@@ -216,6 +273,18 @@
    "category": "Workshop",
    "id": "02b9bf2077ee",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "The Highlands Hotel",
+   "town": "Glenties",
+   "county": "Donegal",
+   "title": "MacGill Summer School 2026",
+   "date": "2026-07-23",
+   "time": "11:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/macgill-summer-school-2026/",
+   "id": "bc2b8c036a4e",
+   "first_seen": "2026-07-18"
   },
   {
    "source": "an_grianan",
@@ -293,6 +362,18 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eventbrite_donegal",
+   "venue": "Ballyshannon Folk & Traditional Festival",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "49th Ballyshannon Folk and Traditional Music Festival Weekend Ticket",
+   "date": "2026-07-31",
+   "time": "18:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/49th-ballyshannon-folk-and-traditional-music-festival-weekend-ticket/",
+   "id": "80a8e246eaf8",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -302,6 +383,66 @@
    "url": "https://www.balorartscentre.com/?event=we-will-rock-you",
    "id": "10c78e239cff",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Ballyshannon Folk & Traditional Festival - Live at the Marquee",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Ballyshannon Folk & Traditional Music Festival - Saturday 1st August",
+   "date": "2026-08-01",
+   "time": "18:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/ballyshannon-folk-traditional-music-festival-saturday-1st-august/",
+   "id": "26c6b6159e5b",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Post Office",
+   "town": "Garrison",
+   "county": "Donegal",
+   "title": "Melvin Studios Arts & Crafts 2026 - Morning",
+   "date": "2026-08-03",
+   "time": "10:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/melvin-studios-arts-crafts-2026-morning/",
+   "id": "ec24dc8f742f",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Post Office",
+   "town": "Garrison",
+   "county": "Donegal",
+   "title": "Melvin Studios Arts & Crafts 2026- Afternoon",
+   "date": "2026-08-03",
+   "time": "14:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/melvin-studios-arts-crafts-2026-afternoon/",
+   "id": "81dd62baba86",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "St.John Bosco Centre",
+   "town": "Donegal",
+   "county": "Donegal",
+   "title": "KIDS SUMMER FUN SHOW - DONEGAL TOWN",
+   "date": "2026-08-05",
+   "time": "18:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/kids-summer-fun-show-donegal-town/",
+   "id": "37514d063d9a",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "McCafferty's at The Pier",
+   "town": "Donegal",
+   "county": "Donegal",
+   "title": "Bagatelle Live at McCafferty's at the Pier",
+   "date": "2026-08-08",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/bagatelle-live-at-mccaffertys-at-the-pier/",
+   "id": "582a66c191c9",
+   "first_seen": "2026-07-18"
   },
   {
    "source": "an_grianan",
@@ -315,6 +456,54 @@
    "category": "Workshop",
    "id": "de69a1cb59d2",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Garrison",
+   "town": "Garrison",
+   "county": "Donegal",
+   "title": "Futsal 2026",
+   "date": "2026-08-13",
+   "time": "09:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/futsal-2026/",
+   "id": "bc0f497f01c7",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Jackson's Hotel, Conference & Leisure Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "The Cowgirl Experience™ Ballybofey DONEGAL",
+   "date": "2026-08-15",
+   "time": "19:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-cowgirl-experience-ballybofey-donegal/",
+   "id": "37291c40aed8",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "McCafferty's Bar - Lettermacaward",
+   "town": "Lettermacaward",
+   "county": "Donegal",
+   "title": "The Kilkenny's Live at McCafferty's Bar, Lettermacaward",
+   "date": "2026-08-15",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-kilkennys-live-at-mccaffertys-bar-lettermacaward/",
+   "id": "93d4d313f4f3",
+   "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Lough Derg",
+   "town": "Pettigo",
+   "county": "Donegal",
+   "title": "Lough Derg 2026 Heritage Day - Morning Tour",
+   "date": "2026-08-20",
+   "time": "11:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/lough-derg-2026-heritage-day-morning-tour/",
+   "id": "44c7cabc139e",
+   "first_seen": "2026-07-18"
   },
   {
    "source": "abbey",
@@ -476,6 +665,18 @@
    "url": "https://www.balorartscentre.com/?event=tadhg-j-devery-pints-dentures-rock-n-roll",
    "id": "bbc520789d4f",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Villa Rose Hotel",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Thunder Rolls - Garth Brooks Tribute - Live at the Villa Rose Hotel",
+   "date": "2026-09-18",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/thunder-rolls-garth-brooks-tribute-live-at-the-villa-rose-hotel/",
+   "id": "c0b43f531839",
+   "first_seen": "2026-07-18"
   },
   {
    "source": "abbey",
@@ -948,6 +1149,18 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eventbrite_donegal",
+   "venue": "The Great Northern Hotel",
+   "town": "Bundoran",
+   "county": "Donegal",
+   "title": "Abide in His Love Women's Conference",
+   "date": "2026-11-20",
+   "time": "17:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/abide-in-his-love-womens-conference/",
+   "id": "087950933b5d",
+   "first_seen": "2026-07-18"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -1011,6 +1224,18 @@
    "category": "Music",
    "id": "063b1a28ad8d",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "The Great Northern Hotel",
+   "town": "Bundoran",
+   "county": "Donegal",
+   "title": "Onoir Live - Great Northern Hotel, Bundoran",
+   "date": "2026-12-19",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/onoir-live-great-northern-hotel-bundoran/",
+   "id": "004f9584b525",
+   "first_seen": "2026-07-18"
   },
   {
    "source": "an_grianan",
