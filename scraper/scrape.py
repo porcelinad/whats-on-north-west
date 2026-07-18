@@ -33,6 +33,14 @@ HEADERS = {
     ),
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "en-GB,en;q=0.9",
+}
+
+# Eventbrite specifically gets a fuller browser-like header set (used only
+# by fetch_text, not the shared fetch() the WordPress venues use) - mixing
+# these into every request made some sites' bot-protection MORE suspicious,
+# since a Referer of google.com alongside Sec-Fetch-Site: none is actually
+# self-contradictory and can look like a spoofed request.
+EVENTBRITE_HEADERS = dict(HEADERS, **{
     "Accept-Encoding": "gzip, deflate, br",
     "Connection": "keep-alive",
     "Upgrade-Insecure-Requests": "1",
@@ -40,8 +48,8 @@ HEADERS = {
     "Sec-Fetch-Mode": "navigate",
     "Sec-Fetch-Site": "none",
     "Sec-Fetch-User": "?1",
-    "Referer": "https://www.google.com/",
-}
+})
+
 TIMEOUT = 30
 NOW = datetime.now(timezone.utc)
 TODAY = NOW.date()
@@ -74,13 +82,16 @@ SKIP_LINK_TEXT = {
 
 # ---------------------------------------------------------------- helpers
 
-def fetch(url):
+def fetch_text(url):
+    """Like fetch(), but returns raw response text instead of parsed HTML -
+    needed for Eventbrite, where we read an embedded JSON blob rather than
+    the rendered markup. Uses EVENTBRITE_HEADERS, not the shared HEADERS."""
     last_exc = None
     for attempt in range(3):
         try:
-            r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+            r = requests.get(url, headers=EVENTBRITE_HEADERS, timeout=TIMEOUT)
             r.raise_for_status()
-            return BeautifulSoup(r.text, "lxml")
+            return r.text
         except Exception as exc:
             last_exc = exc
             if attempt < 2:
