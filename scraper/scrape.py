@@ -504,6 +504,118 @@ def parse_eventbrite_csv(source):
     return events
 
 
+EAF_DATE_RE = re.compile(
+    r"(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?\s*"
+    r"(\d{1,2})(?:st|nd|rd|th)\s+([A-Za-z]+)(?:\s+(\d{4}))?", re.I)
+EAF_TYPE_WORDS = {"live event", "exhibition", "project"}
+
+
+def parse_eaf_date_text(text):
+    """Extracts every date found in a line like 'Monday 13th - Friday
+    17th July' or 'Saturday 9th January 2027', inferring the year when
+    not stated explicitly."""
+    found = []
+    for m in EAF_DATE_RE.finditer(text):
+        mon = MONTHS.get(m.group(2).lower()[:3])
+        if not mon:
+            continue
+        day = int(m.group(1))
+        if m.group(3):
+            try:
+                d = date(int(m.group(3)), mon, day)
+            except ValueError:
+                continue
+        else:
+            d = infer_year(mon, day)
+        if d:
+            found.append(d)
+    return found
+
+
+def parse_eaf_listing(soup, source):
+    """eaf.ie/2026-events/ lists every festival event on one page: a
+    genre link, then a title link, then date/time bullet lines, then an
+    event-type label (Live Event / Exhibition / Project). 'Project'
+    entries (artist residencies with no attendable date) are skipped."""
+    events = []
+    genre = None
+    title = url = None
+    pending_dates, pending_time = [], None
+
+    def finalise(type_word):
+        nonlocal title, url, genre, pending_dates, pending_time
+        if title and url and type_word != "project" and pending_dates:
+            start = pending_dates[0]
+            end = pending_dates[-1] if len(pending_dates) == 2 else None
+            events.append(make_event(
+                source, title, start,
+                end_date=end.isoformat() if end and end != start else None,
+                time=pending_time, url=url, category=genre))
+        title = url = None
+        genre = None
+        pending_dates, pending_time = [], None
+
+    for kind, a, b in walk(soup):
+        if kind == "link":
+            href, text = a, b
+            if "/genre/" in href and text:
+                genre = text
+            elif "/events/" in href and text and text.lower() not in SKIP_LINK_TEXT:
+                title, url = text, href
+        else:
+            if a.lower() in EAF_TYPE_WORDS:
+                finalise(a.lower())
+                continue
+            if title:
+                dates = parse_eaf_date_text(a)
+                if dates:
+                    pending_dates.extend(dates)
+                elif pending_dates and not pending_time:
+                    pending_time = a
+    return events
+
+
+def parse_eaf_event_page(soup):
+    """Each event's own page lists 'Location:' (town) and 'Venue:' (venue
+    name) as plain labelled text - not present on the listing page."""
+    town = venue = None
+    pending_label = None
+    for kind, a, b in walk(soup):
+        if kind != "text":
+            continue
+        if a in ("Location:", "Venue:"):
+            pending_label = a
+            continue
+        if pending_label == "Location:" and not town:
+            town = a
+        elif pending_label == "Venue:" and not venue:
+            venue = a
+        pending_label = None
+    return town, venue
+
+
+def parse_eaf(source):
+    """Two-stage: scrape the listing page for what/when, then visit each
+    event's own page for its venue (not shown on the listing page). This
+    means ~1 + N requests where N is the number of live events/exhibitions
+    - a small delay is added between the per-event requests to avoid
+    hammering a small festival site's server all at once."""
+    listing = fetch(source["url"])
+    events = parse_eaf_listing(listing, source)
+    for ev in events:
+        try:
+            detail = fetch(ev["url"])
+            town, venue = parse_eaf_event_page(detail)
+            if town:
+                ev["town"] = town
+            if venue:
+                ev["venue"] = venue
+        except Exception:
+            pass  # keep the event with the festival's own name as venue
+        time.sleep(0.4)
+    return events
+
+
 # ---------------------------------------------------------------- sources
 
 SOURCES = [
@@ -523,6 +635,9 @@ SOURCES = [
      "town": "Donegal", "county": "Donegal", "region_filter": "Donegal",
      "url": "https://www.eventbrite.ie/d/ireland--donegal/all-events/",
      "parser": parse_eventbrite_csv, "manual_csv": True},
+    {"name": "eaf", "venue": "Earagail Arts Festival", "town": "Donegal",
+     "county": "Donegal", "url": "https://eaf.ie/2026-events/",
+     "parser": parse_eaf, "custom_fetch": True, "min_interval_days": 7},
 ]
 
 
@@ -536,10 +651,12 @@ def event_key(ev):
 def load_previous():
     if DATA_FILE.exists():
         try:
-            return json.loads(DATA_FILE.read_text(encoding="utf-8"))
+            data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
+            data.setdefault("source_last_run", {})
+            return data
         except Exception:
             pass
-    return {"events": []}
+    return {"events": [], "source_last_run": {}}
 
 
 def notify(new_events):
@@ -573,7 +690,22 @@ def main():
     prev_by_key = {event_key(e): e for e in previous.get("events", [])}
 
     all_events, failed = [], []
+    source_last_run = dict(previous.get("source_last_run", {}))
     for source in SOURCES:
+        interval = source.get("min_interval_days")
+        if interval:
+            last_run = source_last_run.get(source["name"])
+            if last_run:
+                last_date = datetime.strptime(
+                    last_run, "%Y-%m-%dT%H:%MZ").date()
+                if (TODAY - last_date).days < interval:
+                    print(f"{source['venue']}: last refreshed {last_run}, "
+                          f"refreshes every {interval}d - skipping today, "
+                          f"keeping previous data")
+                    all_events.extend(
+                        e for e in prev_by_key.values()
+                        if e["source"] == source["name"])
+                    continue
         try:
             if source.get("manual_csv"):
                 found = source["parser"](source)
@@ -599,6 +731,8 @@ def main():
                     "may be too strict, or the site blocked this request."
                     + extra)
             all_events.extend(found)
+            if interval:
+                source_last_run[source["name"]] = NOW.strftime("%Y-%m-%dT%H:%MZ")
         except Exception as exc:
             failed.append(source["venue"])
             print(f"WARNING {source['venue']} failed: {exc}", file=sys.stderr)
@@ -628,6 +762,7 @@ def main():
     DATA_FILE.write_text(json.dumps({
         "generated_at": NOW.strftime("%Y-%m-%dT%H:%MZ"),
         "failed_sources": failed,
+        "source_last_run": source_last_run,
         "events": final,
     }, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"Wrote {len(final)} upcoming events to {DATA_FILE}")
