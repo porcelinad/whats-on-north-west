@@ -49,7 +49,6 @@ EVENTBRITE_HEADERS = dict(HEADERS, **{
     "Sec-Fetch-Site": "none",
     "Sec-Fetch-User": "?1",
 })
-
 TIMEOUT = 30
 NOW = datetime.now(timezone.utc)
 TODAY = NOW.date()
@@ -82,16 +81,13 @@ SKIP_LINK_TEXT = {
 
 # ---------------------------------------------------------------- helpers
 
-def fetch_text(url):
-    """Like fetch(), but returns raw response text instead of parsed HTML -
-    needed for Eventbrite, where we read an embedded JSON blob rather than
-    the rendered markup. Uses EVENTBRITE_HEADERS, not the shared HEADERS."""
+def fetch(url):
     last_exc = None
     for attempt in range(3):
         try:
-            r = requests.get(url, headers=EVENTBRITE_HEADERS, timeout=TIMEOUT)
+            r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
             r.raise_for_status()
-            return r.text
+            return BeautifulSoup(r.text, "lxml")
         except Exception as exc:
             last_exc = exc
             if attempt < 2:
@@ -253,11 +249,11 @@ def parse_balor(soup, source):
 def fetch_text(url):
     """Like fetch(), but returns raw response text instead of parsed HTML -
     needed for Eventbrite, where we read an embedded JSON blob rather than
-    the rendered markup."""
+    the rendered markup. Uses EVENTBRITE_HEADERS, not the shared HEADERS."""
     last_exc = None
     for attempt in range(3):
         try:
-            r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+            r = requests.get(url, headers=EVENTBRITE_HEADERS, timeout=TIMEOUT)
             r.raise_for_status()
             return r.text
         except Exception as exc:
@@ -351,6 +347,7 @@ def parse_eventbrite(source):
         if page >= pag.get("page_count", 1):
             break
     return events
+
 
 
 def parse_abbey(soup, source):
