@@ -97,3 +97,42 @@ This project makes **one request per venue per day**, identifies itself in
 its User-Agent, and links every event back to the venue's own site and box
 office — it sends the venues traffic rather than taking it. If a venue ever
 objects, remove it from `SOURCES`.
+
+# Manual Eventbrite import
+
+Eventbrite blocks requests from GitHub's servers, so this one source is
+updated by hand instead of automatically.
+
+## How to refresh it
+
+1. Open Chrome, go to `https://www.eventbrite.ie/d/ireland--donegal/all-events/`
+2. Open DevTools → **Web Scraper** tab (your existing sitemap should be there)
+3. Run the scrape, then **Export data as CSV**
+4. In this repo, go to `scraper/manual-imports/eventbrite.csv`
+5. Click the pencil (✏️) to edit, or use **Add file → Upload files** and
+   drag your new export in — always keep the filename **exactly**
+   `eventbrite.csv`, overwriting the old one each time
+6. Commit. The next scraper run (daily) will pick it up automatically.
+
+Do this whenever convenient - weekly is plenty. If you skip a week,
+nothing breaks: the site just keeps showing last week's Eventbrite
+events until you upload a fresh file.
+
+## How dates are handled
+
+Explicit dates ("Fri 31 Jul, 18:30") always work correctly. Relative
+dates ("Today", "Tomorrow", or a bare weekday like "Thursday at 11:00")
+are resolved assuming the file was just exported - "Thursday" becomes
+the next upcoming Thursday from whenever the scraper runs. If you let
+the file go stale for a few days before re-uploading, a relative-dated
+event could briefly show on the wrong day - re-exporting and
+re-uploading fixes it immediately, since the whole file is re-read
+fresh each time, nothing accumulates.
+
+## Why some irrelevant events might show up
+
+The CSV has no category information, so non-cultural events (markets,
+sports, workshops) that happen to appear in the Donegal search results
+will show up too. Either delete those rows from the CSV before
+uploading, or just leave them - they're fully searchable/filterable on
+the site like everything else.
