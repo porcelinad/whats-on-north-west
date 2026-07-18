@@ -126,6 +126,15 @@ function isNew(ev,gen){
   return (g-first)/86400000 <= 7;
 }
 
+  function fmtUpdated(iso){
+  try{
+    const d=new Date(iso);
+    if(isNaN(d)) return iso;
+    return d.toLocaleString("en-IE",{day:"numeric",month:"short",
+      hour:"2-digit",minute:"2-digit",timeZone:"Europe/Dublin"});
+  }catch(e){ return iso; }
+}
+  
 function render(gen){
   const list=document.getElementById("list");
   list.textContent="";
@@ -187,7 +196,7 @@ fetch("events.json?t="+Date.now())
  .then(data=>{
    EVENTS=data.events||[]; GEN=data.generated_at||"";
    const u=document.getElementById("updated");
-   u.textContent=EVENTS.length+" upcoming events · updated "+GEN;
+   u.textContent=EVENTS.length+" upcoming events · updated "+fmtUpdated(GEN);
    if((data.failed_sources||[]).length){
      data.failed_sources.forEach(name=>{
        u.after(el("p","warn","⚠ Error loading "+name));
