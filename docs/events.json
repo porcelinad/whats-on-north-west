@@ -1,6 +1,10 @@
 {
- "generated_at": "2026-07-17",
- "failed_sources": [],
+ "generated_at": "2026-07-18",
+ "failed_sources": [
+  "An Grianán Theatre",
+  "Regional Cultural Centre",
+  "Balor Arts Centre"
+ ],
  "events": [
   {
    "source": "rcc",
@@ -70,45 +74,6 @@
    "url": "https://regionalculturalcentre.com/events/rcc-kids-art-workshops/",
    "category": "Workshop",
    "id": "1bb263e16a1b",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "IADF 2026: Between Earth and Sky",
-   "date": "2026-07-17",
-   "url": "https://angrianan.com/event/iadf-2026-beneath-earth-and-sky/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662785/events/128646839/seats?zone=Default",
-   "category": "Theatre",
-   "id": "64162fd4fdd5",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "IADF 2026: Itch – Christopher McAuley",
-   "date": "2026-07-17",
-   "url": "https://angrianan.com/event/iadf-2026-itch-christopher-mcauley/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662787/events/128646847/seats?zone=Default",
-   "category": "Theatre",
-   "id": "3731e90e2100",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The Journals Fleadh | Meet the Players: Introducing the Irish Journals",
-   "date": "2026-07-17",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/the-journals-fleadh-meet-the-players-introducing-the-irish-journals-2/",
-   "category": "Spoken Word",
-   "id": "d5c34581f008",
    "first_seen": "2026-07-14"
   },
   {
