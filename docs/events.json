@@ -1,6 +1,8 @@
 {
  "generated_at": "2026-07-18",
  "failed_sources": [
+  "Balor Arts Centre",
+  "Abbey Arts Centre",
   "Eventbrite (Donegal)"
  ],
  "events": [
@@ -96,19 +98,6 @@
    "date": "2026-07-18",
    "url": "https://www.balorartscentre.com/?event=patrick-mcmenamin-the-more-things-change-tour",
    "id": "72e41c55c2dc",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "All Ages (5-95 years) Clown Workshop with Fraser Hooper",
-   "date": "2026-07-18",
-   "time": "11:00 am",
-   "url": "https://regionalculturalcentre.com/events/clown-workshop-with-fraser-cooper/",
-   "category": "Workshop",
-   "id": "a58c4a9701b5",
    "first_seen": "2026-07-14"
   },
   {
