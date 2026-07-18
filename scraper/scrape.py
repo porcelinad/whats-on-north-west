@@ -230,6 +230,109 @@ def parse_balor(soup, source):
     return events
 
 
+def fetch_text(url):
+    """Like fetch(), but returns raw response text instead of parsed HTML -
+    needed for Eventbrite, where we read an embedded JSON blob rather than
+    the rendered markup."""
+    last_exc = None
+    for attempt in range(3):
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+            r.raise_for_status()
+            return r.text
+        except Exception as exc:
+            last_exc = exc
+            if attempt < 2:
+                time.sleep(4 * (attempt + 1))
+    raise last_exc
+
+
+def extract_server_data(html):
+    """Eventbrite's destination-search pages embed the real results as
+    `window.__SERVER_DATA__ = {...}` - a plain JSON object sitting in the
+    raw HTML (rendered server-side for SEO), so no browser/JS execution
+    is needed to read it. This walks the braces to find where that
+    object ends, since it's followed by more JS, not a clean delimiter."""
+    marker = "window.__SERVER_DATA__ = "
+    start = html.index(marker) + len(marker)
+    depth = 0
+    in_str = False
+    esc = False
+    end = None
+    for i in range(start, len(html)):
+        c = html[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif c == "\\":
+                esc = True
+            elif c == '"':
+                in_str = False
+            continue
+        if c == '"':
+            in_str = True
+        elif c == "{":
+            depth += 1
+        elif c == "}":
+            depth -= 1
+            if depth == 0:
+                end = i + 1
+                break
+    return json.loads(html[start:end])
+
+
+EVENTBRITE_MAX_PAGES = 10
+EVENTBRITE_ALLOWED_CATEGORIES = {
+    "Music", "Performing & Visual Arts", "Community & Culture", "Film & Media",
+}
+
+
+def parse_eventbrite(source):
+    """Eventbrite 'discover' pages for a region (e.g. eventbrite.ie/d/
+    ireland--donegal/all-events/) list thousands of results across many
+    pages, most of it irrelevant (sports, recurring workshops, religious
+    events, and nearby-but-out-of-county venues near the border). We page
+    through a bounded number of pages and keep only events that are: in
+    the target region specifically, not online-only, and tagged with a
+    cultural category."""
+    events = []
+    for page in range(1, EVENTBRITE_MAX_PAGES + 1):
+        page_url = source["url"] if page == 1 else f"{source['url']}?page={page}"
+        html = fetch_text(page_url)
+        data = extract_server_data(html)
+        ev_block = data.get("search_data", {}).get("events", {})
+        results = ev_block.get("results", [])
+        if not results:
+            break
+        for r in results:
+            if r.get("is_online_event"):
+                continue
+            cats = {t["display_name"] for t in r.get("tags", [])
+                    if t.get("prefix") == "EventbriteCategory"}
+            if not cats & EVENTBRITE_ALLOWED_CATEGORIES:
+                continue
+            venue = r.get("primary_venue") or {}
+            addr = venue.get("address") or {}
+            if addr.get("region") != source["region_filter"]:
+                continue
+            try:
+                start_date = date.fromisoformat(r["start_date"])
+            except (KeyError, ValueError, TypeError):
+                continue
+            end_date = None
+            if r.get("end_date") and r["end_date"] != r["start_date"]:
+                end_date = r["end_date"]
+            events.append(make_event(
+                source, r.get("name", "").strip(), start_date,
+                end_date=end_date, time=r.get("start_time"),
+                url=r.get("url"), category=", ".join(sorted(cats)),
+                venue=venue.get("name"), town=addr.get("city")))
+        pag = ev_block.get("pagination", {})
+        if page >= pag.get("page_count", 1):
+            break
+    return events
+
+
 def parse_abbey(soup, source):
     """abbeycentre.ie homepage - titles link to Ticketsolve; the exact ISO
     date is embedded in each event's social-share links (/edate/YYYY-MM-DD)."""
@@ -276,6 +379,10 @@ SOURCES = [
     {"name": "abbey", "venue": "Abbey Arts Centre", "town": "Ballyshannon",
      "county": "Donegal", "url": "https://abbeycentre.ie/",
      "parser": parse_abbey},
+    {"name": "eventbrite_donegal", "venue": "Eventbrite (Donegal)",
+     "town": "Donegal", "county": "Donegal", "region_filter": "Donegal",
+     "url": "https://www.eventbrite.ie/d/ireland--donegal/all-events/",
+     "parser": parse_eventbrite, "custom_fetch": True},
 ]
 
 
@@ -328,14 +435,20 @@ def main():
     all_events, failed = [], []
     for source in SOURCES:
         try:
-            soup = fetch(source["url"])
-            found = source["parser"](soup, source)
+            if source.get("custom_fetch"):
+                found = source["parser"](source)
+            else:
+                soup = fetch(source["url"])
+                found = source["parser"](soup, source)
             print(f"{source['venue']}: {len(found)} events")
             if not found:
-                snippet = soup.get_text(" ", strip=True)[:200]
+                extra = ""
+                if not source.get("custom_fetch"):
+                    extra = f" Page preview: {soup.get_text(' ', strip=True)[:200]!r}"
                 raise ValueError(
-                    "parsed zero events - selectors may be stale, or the "
-                    f"site blocked this request. Page preview: {snippet!r}")
+                    "parsed zero events - selectors may be stale, filters "
+                    "may be too strict, or the site blocked this request."
+                    + extra)
             all_events.extend(found)
         except Exception as exc:
             failed.append(source["venue"])
