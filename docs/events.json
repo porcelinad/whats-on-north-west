@@ -1,10 +1,6 @@
 {
  "generated_at": "2026-07-18",
- "failed_sources": [
-  "An Grianán Theatre",
-  "Regional Cultural Centre",
-  "Balor Arts Centre"
- ],
+ "failed_sources": [],
  "events": [
   {
    "source": "rcc",
@@ -1242,6 +1238,19 @@
    "category": "Comedy",
    "id": "a860d57a54cb",
    "first_seen": "2026-07-17"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Hollie McNish with Michael Pedersen",
+   "date": "2027-04-18",
+   "time": "7:00 pm",
+   "url": "https://regionalculturalcentre.com/events/hollie-mcnish-with-michael-pedersen/",
+   "category": "Spoken Word",
+   "id": "bc4c82e21e4a",
+   "first_seen": "2026-07-18"
   }
  ]
 }
