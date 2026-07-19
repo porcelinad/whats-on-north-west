@@ -1,8 +1,6 @@
 {
- "generated_at": "2026-07-18T16:50Z",
- "failed_sources": [
-  "Abbey Arts Centre"
- ],
+ "generated_at": "2026-07-19T09:04Z",
+ "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z"
  },
@@ -218,56 +216,6 @@
    "first_seen": "2026-07-18"
   },
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Sounding The Peninsula",
-   "date": "2026-07-18",
-   "url": "https://angrianan.com/event/sounding-the-peninsula/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662797/events/128646884/seats?zone=Default",
-   "category": "Music",
-   "id": "d26b8e601406",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eaf",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Sounding The Peninsula",
-   "date": "2026-07-18",
-   "time": "8pm",
-   "url": "https://eaf.ie/events/sounding-the-peninsula/",
-   "category": "Music",
-   "id": "bd83406ea3fa",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Patrick McMenamin",
-   "date": "2026-07-18",
-   "time": "8pm",
-   "url": "https://eaf.ie/events/patrick-mcmenamin/",
-   "category": "Music",
-   "id": "f2378a19ffb1",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Patrick McMenamin - The More Things Change Tour",
-   "date": "2026-07-18",
-   "url": "https://www.balorartscentre.com/?event=patrick-mcmenamin-the-more-things-change-tour",
-   "id": "72e41c55c2dc",
-   "first_seen": "2026-07-14"
-  },
-  {
    "source": "eaf",
    "venue": "Glebe Gallery & Gardens",
    "town": "Churchill",
@@ -279,134 +227,6 @@
    "url": "https://eaf.ie/events/funny-business-starring-fraser-hooper/",
    "category": "Spectacle, Street Arts & Circus",
    "id": "77c303332556",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Murray's Yard, Mountcharles F94 C8X4",
-   "town": "Mountcharles",
-   "county": "Donegal",
-   "title": "Tír Chonaill Stone Festival 2026",
-   "date": "2026-07-18",
-   "time": "09:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/tir-chonaill-stone-festival-2026/",
-   "id": "3aa92a08dd28",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "Rathmullan House",
-   "town": "Rathmullan",
-   "county": "Donegal",
-   "title": "The Journals Fleadh | In Conversation: Jan Carson",
-   "date": "2026-07-18",
-   "time": "3.30pm",
-   "url": "https://eaf.ie/events/the-journals-fleadh-in-conversation-jan-carson/",
-   "category": "Spoken Word & Conversations",
-   "id": "58ff933430e2",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "All Ages (5-95 years) Clown Workshop with Fraser Hooper",
-   "date": "2026-07-18",
-   "time": "11am",
-   "url": "https://eaf.ie/events/all-ages-5-95-years-clown-workshop-with-fraser-hooper/",
-   "category": "Masterclass/Workshop",
-   "id": "b5894386709f",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Collective Singing Event around CHANTER",
-   "date": "2026-07-18",
-   "time": "3:00 pm",
-   "url": "https://regionalculturalcentre.com/events/collective-singing-event-around-chanter/",
-   "category": "Community Arts",
-   "id": "932aa6a98a05",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The Journals Fleadh | In Conversation: Jan Carson",
-   "date": "2026-07-18",
-   "time": "3:30 pm",
-   "url": "https://regionalculturalcentre.com/events/the-journals-fleadh-in-conversation-jan-carson/",
-   "category": "Spoken Word",
-   "id": "0e0d93be8ad5",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The Journals Fleadh | Journal-Vision",
-   "date": "2026-07-18",
-   "time": "9:00 pm",
-   "url": "https://regionalculturalcentre.com/events/the-journals-fleadh-journal-vision/",
-   "category": "Earagail Arts Festival",
-   "id": "506cfeed6649",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eaf",
-   "venue": "The Beachcomber Bar",
-   "town": "Rathmullan",
-   "county": "Donegal",
-   "title": "Angel and The Dead Hearts",
-   "date": "2026-07-18",
-   "time": "10pm",
-   "url": "https://eaf.ie/events/angel-and-the-dead-hearts/",
-   "category": "Music",
-   "id": "72bd87fa3cce",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "The White Harte Bar",
-   "town": "Rathmullan",
-   "county": "Donegal",
-   "title": "The Journals Fleadh | Journal-Vision",
-   "date": "2026-07-18",
-   "time": "7pm",
-   "url": "https://eaf.ie/events/the-journals-fleadh-the-world-cup-of-irish-journals/",
-   "category": "Spoken Word & Conversations",
-   "id": "17a6756d6c22",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "Various",
-   "town": "Various",
-   "county": "Donegal",
-   "title": "Daniel Patrick & Whitt Algar Bluegrass Tour",
-   "date": "2026-07-18",
-   "time": "8pm",
-   "url": "https://eaf.ie/events/daniel-patrick-whitt-algar-bluegrass-tour/",
-   "category": "Music",
-   "id": "48266570d212",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Villa Rose Hotel and Spa",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Mamma Mia - The Live Experience / BALLYBOFEY",
-   "date": "2026-07-18",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/mamma-mia-the-live-experience-ballybofey/",
-   "id": "f29828d9fa21",
    "first_seen": "2026-07-18"
   },
   {
@@ -432,6 +252,18 @@
    "category": "Music",
    "id": "52dc28952023",
    "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Murray's Yard, Mountcharles F94 C8X4",
+   "town": "Mountcharles",
+   "county": "Donegal",
+   "title": "Tír Chonaill Stone Festival 2026",
+   "date": "2026-07-19",
+   "time": "09:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/tir-chonaill-stone-festival-2026/",
+   "id": "a200b1108ba0",
+   "first_seen": "2026-07-19"
   },
   {
    "source": "eaf",
@@ -500,15 +332,27 @@
   },
   {
    "source": "eventbrite_donegal",
+   "venue": "Villa Rose Hotel and Spa",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Mamma Mia - The Live Experience / BALLYBOFEY",
+   "date": "2026-07-19",
+   "time": "19:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/mamma-mia-the-live-experience-ballybofey/",
+   "id": "fe98be5debf2",
+   "first_seen": "2026-07-19"
+  },
+  {
+   "source": "eventbrite_donegal",
    "venue": "ZD Loft",
    "town": "Donegal",
    "county": "Donegal",
    "title": "Reverie in the Loft",
-   "date": "2026-07-19",
+   "date": "2026-07-20",
    "time": "19:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/reverie-in-the-loft/",
-   "id": "d306b0802445",
-   "first_seen": "2026-07-18"
+   "id": "1ca197f125b9",
+   "first_seen": "2026-07-19"
   },
   {
    "source": "eaf",
