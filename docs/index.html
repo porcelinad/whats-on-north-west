@@ -32,6 +32,19 @@
 
   .controls{position:sticky;top:0;background:var(--mist);z-index:5;
             padding:10px 0 12px;border-bottom:1px solid var(--line)}
+  .date-filters{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;
+         scrollbar-width:none}
+  .date-filters::-webkit-scrollbar{display:none}
+  .chip{font-family:var(--display);font-weight:600;font-size:14px;
+        text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;
+        border:1.5px solid var(--ink);border-radius:999px;background:transparent;
+        color:var(--ink);padding:6px 14px;cursor:pointer;flex:0 0 auto;
+        transition:background .15s,color .15s}
+  .chip[aria-pressed="true"]{background:var(--ink);color:var(--mist)}
+  .custom-dates{display:flex;gap:8px;margin-bottom:8px}
+  .custom-dates input[type="date"]{font:inherit;font-size:14px;flex:1 1 0;
+        min-width:0;border:1.5px solid var(--ink);border-radius:8px;
+        padding:6px 10px;background:var(--stub);color:var(--ink)}
   .filters{display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap}
   .filter-select{font-family:var(--display);font-weight:600;font-size:14px;
         text-transform:uppercase;letter-spacing:.04em;
@@ -96,6 +109,11 @@
   </header>
 
   <div class="controls">
+    <div class="date-filters" id="dateFilters" role="group" aria-label="Filter by date"></div>
+    <div class="custom-dates" id="customDates" hidden>
+      <input type="date" id="dateFrom" aria-label="From date">
+      <input type="date" id="dateTo" aria-label="To date">
+    </div>
     <div class="filters">
       <select id="countyFilter" class="filter-select" aria-label="Filter by county"></select>
       <select id="venueFilter" class="filter-select" aria-label="Filter by venue"></select>
@@ -117,6 +135,30 @@ const MONTHS=["January","February","March","April","May","June","July",
               "August","September","October","November","December"];
 const DOWS=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 let EVENTS=[], countySel="All", venueSel="All", genreSel="All", query="";
+let dateSel=null, customFrom="", customTo="";
+
+function addDays(iso,n){
+  const [y,m,d]=iso.split("-").map(Number);
+  return new Date(Date.UTC(y,m-1,d+n)).toISOString().slice(0,10);
+}
+function weekdayOf(iso){
+  const [y,m,d]=iso.split("-").map(Number);
+  return new Date(Date.UTC(y,m-1,d)).getUTCDay();
+}
+function todayISO(){
+  const parts=new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Dublin",
+    year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());
+  const get=t=>parts.find(p=>p.type===t).value;
+  return `${get("year")}-${get("month")}-${get("day")}`;
+}
+function weekendRange(today){
+  const wd=weekdayOf(today);
+  if(wd===6) return {from:today, to:addDays(today,1)};
+  if(wd===0) return {from:today, to:today};
+  const sat=addDays(today,6-wd);
+  return {from:sat, to:addDays(sat,1)};
+}
+const TODAY_ISO=todayISO(), TOMORROW_ISO=addDays(TODAY_ISO,1);
 
 const el=(t,c,txt)=>{const n=document.createElement(t);
   if(c)n.className=c; if(txt!==undefined)n.textContent=txt; return n};
@@ -151,6 +193,20 @@ function matchesGenre(ev){
   return (ev.category||"").split(", ").includes(genreSel);
 }
 
+function matchesDate(ev){
+  if(!dateSel) return true;
+  const start=ev.date, end=ev.end_date||ev.date;
+  let from, to;
+  if(dateSel==="today"){ from=to=TODAY_ISO; }
+  else if(dateSel==="tomorrow"){ from=to=TOMORROW_ISO; }
+  else if(dateSel==="weekend"){ const w=weekendRange(TODAY_ISO); from=w.from; to=w.to; }
+  else if(dateSel==="custom"){
+    if(!customFrom && !customTo) return true;
+    from=customFrom||"0000-01-01"; to=customTo||"9999-12-31";
+  }
+  return start<=to && end>=from;
+}
+
 function render(gen){
   const list=document.getElementById("list");
   list.textContent="";
@@ -158,7 +214,7 @@ function render(gen){
   const shown=EVENTS.filter(e=>
     (countySel==="All"||e.county===countySel) &&
     (venueSel==="All"||e.venue===venueSel) &&
-    matchesGenre(e) &&
+    matchesGenre(e) && matchesDate(e) &&
     (!q || (e.title+" "+e.venue+" "+(e.category||"")+" "+e.town)
             .toLowerCase().includes(q)));
   if(!shown.length){
@@ -234,6 +290,25 @@ function buildGenreOptions(){
                       "Genres", genreSel);
 }
 
+function buildDateFilters(){
+  const box=document.getElementById("dateFilters");
+  const customBox=document.getElementById("customDates");
+  const opts=[["today","Today"],["tomorrow","Tomorrow"],
+              ["weekend","This weekend"],["custom","Custom"]];
+  opts.forEach(([val,label])=>{
+    const b=el("button","chip",label);
+    b.setAttribute("aria-pressed",val===dateSel);
+    b.onclick=()=>{
+      dateSel = (dateSel===val) ? null : val;
+      box.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed","false"));
+      if(dateSel) b.setAttribute("aria-pressed","true");
+      customBox.hidden = dateSel!=="custom";
+      render(GEN);
+    };
+    box.append(b);
+  });
+}
+
 let GEN="";
 fetch("events.json?t="+Date.now())
  .then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
@@ -246,9 +321,14 @@ fetch("events.json?t="+Date.now())
        u.after(el("p","warn","⚠ Error loading "+name));
      });
    }
+   buildDateFilters();
    buildCountyOptions(); buildVenueOptions(); buildGenreOptions(); render(GEN);
    document.getElementById("search").addEventListener("input",e=>{
      query=e.target.value; render(GEN)});
+   document.getElementById("dateFrom").addEventListener("change",e=>{
+     customFrom=e.target.value; render(GEN)});
+   document.getElementById("dateTo").addEventListener("change",e=>{
+     customTo=e.target.value; render(GEN)});
    document.getElementById("countyFilter").addEventListener("change",e=>{
      countySel=e.target.value; venueSel="All";
      buildVenueOptions(); render(GEN)});
