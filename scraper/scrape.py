@@ -651,68 +651,52 @@ def parse_mcgrorys(soup, source):
     return events
 
 
-SCH_DATE_RE = re.compile(
-    r"(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?\s*"
-    r"(\d{1,2})(?:st|nd|rd|th)(?:\s+([A-Za-z]+))?(?:\s+(\d{4}))?", re.I)
-
-
-def parse_sch_date_text(text):
-    """Extracts dates from lines like 'Saturday 14th March 2026',
-    'Tuesday 7th - Friday 10th April 2026', or 'Fri 24th & 25th April
-    2026' (a bare day number borrows month/year from a later date in
-    the same line). Returns [] for lines with no day-specific date at
-    all (e.g. 'Jan-Mar 2026' - a whole quarter, not a bookable date)."""
-    matches = [[int(m.group(1)), m.group(2), m.group(3)]
-               for m in SCH_DATE_RE.finditer(text)]
-    for i in range(len(matches) - 2, -1, -1):
-        if not matches[i][1]:
-            matches[i][1] = matches[i + 1][1]
-        if not matches[i][2]:
-            matches[i][2] = matches[i + 1][2]
-    dates = []
-    for day, mon_name, year in matches:
-        if not mon_name:
-            continue
-        mon = MONTHS.get(mon_name.lower()[:3])
-        if not mon:
-            continue
-        if year:
-            try:
-                d = date(int(year), mon, day)
-            except ValueError:
-                continue
-        else:
-            d = infer_year(mon, day)
-        if d:
-            dates.append(d)
-    return dates
+SCH_MONTH_YEAR_RE = re.compile(r"^([A-Za-z]+)\s+(\d{4})$")
+SCH_DAY_HEADER_RE = re.compile(
+    r"^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+(\d{1,2})$", re.I)
+SCH_TIME_RE = re.compile(r"@\s*(\d{1,2}:\d{2}\s*[ap]m)", re.I)
+SCH_EVENT_LINK_RE = re.compile(r"/whatson/([a-z0-9-]+)/?$", re.I)
+SCH_RESERVED_VIEWS = {"list", "month", "day", "today", "photo", "week",
+                       "map", "summary"}
 
 
 def parse_st_columbs(soup, source):
-    """saintcolumbshall.com/whats-on/ - each entry is a heading (title),
-    a date line, a time line, then a 'More Info' link. Using the last 3
-    text nodes before each link (rather than the first 3 since the last
-    entry) keeps this correct even with stray page text bleeding in
-    before the very first real entry."""
+    """saintcolumbshall.com/whatson/ (a live Tribe/'The Events Calendar'
+    plugin archive - NOT /whats-on/, an old orphaned page from before
+    this plugin was installed). Events are grouped under 'Month Year'
+    and 'Day D' headers rather than stating a full date inline, so we
+    track those as context. A single venue site, so no per-event detail
+    fetch is needed - everything is always 'at St Columb's Hall'."""
     events = []
-    buf = []
+    cur_month = cur_year = cur_day = None
+    title = url = None
     for kind, a, b in walk(soup):
         if kind == "link":
             href, text = a, b
-            if text.strip().lower() == "more info" and len(buf) >= 3:
-                title, date_text, time_text = buf[-3], buf[-2], buf[-1]
-                dates = parse_sch_date_text(date_text)
-                if dates:
-                    start = dates[0]
-                    end = (dates[-1] if len(dates) == 2 and dates[-1] != start
-                           else None)
-                    events.append(make_event(
-                        source, title, start,
-                        end_date=end.isoformat() if end else None,
-                        time=time_text, url=href))
-            buf = []
+            m = SCH_EVENT_LINK_RE.search(href)
+            if m and m.group(1).lower() not in SCH_RESERVED_VIEWS and text:
+                title, url = text, href
         else:
-            buf.append(a)
+            m = SCH_MONTH_YEAR_RE.match(a)
+            if m:
+                mon = MONTHS.get(m.group(1).lower()[:3])
+                if mon:
+                    cur_month, cur_year = mon, int(m.group(2))
+                continue
+            m = SCH_DAY_HEADER_RE.match(a)
+            if m:
+                cur_day = int(m.group(1))
+                continue
+            m = SCH_TIME_RE.search(a)
+            if m and title and url and cur_month and cur_day:
+                try:
+                    d = date(cur_year or TODAY.year, cur_month, cur_day)
+                except ValueError:
+                    d = None
+                if d:
+                    events.append(make_event(
+                        source, title, d, time=m.group(1), url=url))
+                title = url = None
     return events
 
 
@@ -742,7 +726,7 @@ SOURCES = [
      "county": "Donegal", "url": "https://www.mcgrorys.ie/entertainment",
      "parser": parse_mcgrorys},
     {"name": "st_columbs", "venue": "St Columb's Hall", "town": "Derry",
-     "county": "Derry", "url": "https://www.saintcolumbshall.com/whats-on/",
+     "county": "Derry", "url": "https://www.saintcolumbshall.com/whatson/",
      "parser": parse_st_columbs},
 ]
 
