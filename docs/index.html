@@ -289,7 +289,11 @@ function setOptions(select, values, allLabel, current){
 }
 
 function buildCountyOptions(){
-  const counties=[...new Set(EVENTS.map(e=>e.county))].sort();
+  const counties=[...new Set(EVENTS.map(e=>e.county))].sort((a,b)=>{
+    if(a==="Donegal") return -1;
+    if(b==="Donegal") return 1;
+    return a.localeCompare(b);
+  });
   countySel=setOptions(document.getElementById("countyFilter"), counties,
                        "Counties", countySel);
 }
