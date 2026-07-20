@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-19T09:04Z",
+ "generated_at": "2026-07-20T10:10Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z"
@@ -174,20 +174,6 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "eaf",
-   "venue": "Glebe Gallery & Gardens",
-   "town": "Churchill",
-   "county": "Donegal",
-   "title": "Vinyl Sundays",
-   "date": "2026-07-12",
-   "end_date": "2026-07-19",
-   "time": "2pm",
-   "url": "https://eaf.ie/events/vinyl-sundays/",
-   "category": "Music",
-   "id": "d9c81fa36643",
-   "first_seen": "2026-07-18"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -202,133 +188,16 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "eaf",
-   "venue": "Various",
-   "town": "Rathmullan",
-   "county": "Donegal",
-   "title": "RAMP – Rathmullan Music Project",
-   "date": "2026-07-17",
-   "end_date": "2026-07-19",
-   "time": "Various",
-   "url": "https://eaf.ie/events/ramp-rathmullan-music-project/",
-   "category": "Music",
-   "id": "e9fd9ac658b0",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "Glebe Gallery & Gardens",
-   "town": "Churchill",
-   "county": "Donegal",
-   "title": "Funny Business starring Fraser Hooper",
-   "date": "2026-07-18",
-   "end_date": "2026-07-19",
-   "time": "3pm",
-   "url": "https://eaf.ie/events/funny-business-starring-fraser-hooper/",
-   "category": "Spectacle, Street Arts & Circus",
-   "id": "77c303332556",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "The Maurice Lennon Trio",
-   "date": "2026-07-19",
-   "url": "https://www.balorartscentre.com/?event=the-maurice-lennon-trio-2",
-   "id": "0ce517e36cb3",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eaf",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "The Maurice Lennon Trio",
-   "date": "2026-07-19",
-   "time": "8pm",
-   "url": "https://eaf.ie/events/the-maurice-lennon-trio/",
-   "category": "Music",
-   "id": "52dc28952023",
-   "first_seen": "2026-07-18"
-  },
-  {
    "source": "eventbrite_donegal",
    "venue": "Murray's Yard, Mountcharles F94 C8X4",
    "town": "Mountcharles",
    "county": "Donegal",
    "title": "Tír Chonaill Stone Festival 2026",
-   "date": "2026-07-19",
+   "date": "2026-07-20",
    "time": "09:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/tir-chonaill-stone-festival-2026/",
-   "id": "a200b1108ba0",
-   "first_seen": "2026-07-19"
-  },
-  {
-   "source": "eaf",
-   "venue": "Rathmullan House",
-   "town": "Rathmullan",
-   "county": "Donegal",
-   "title": "The Journals Fleadh | Poetry Workshop with Mícheál McCann",
-   "date": "2026-07-19",
-   "time": "3.30pm",
-   "url": "https://eaf.ie/events/the-journals-fleadh-poetry-workshop-with-micheal-mccann/",
-   "category": "Spoken Word & Conversations",
-   "id": "224159c2503a",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "Rathmullan House",
-   "town": "Rathmullan",
-   "county": "Donegal",
-   "title": "The Journals Fleadh | Prose Workshop with Dean Fee",
-   "date": "2026-07-19",
-   "time": "1.30pm",
-   "url": "https://eaf.ie/events/the-journals-fleadh-prose-workshop-with-dean-fee/",
-   "category": "Spoken Word & Conversations",
-   "id": "8917a0c469dc",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The Journals Fleadh | Poetry Workshop with Mícheál McCann",
-   "date": "2026-07-19",
-   "time": "3:30 pm",
-   "url": "https://regionalculturalcentre.com/events/the-journals-fleadh-poetry-workshop-with-micheal-mccann/",
-   "category": "Spoken Word",
-   "id": "b4ee70a1ca90",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The Journals Fleadh | Prose Workshop with Dean Fee",
-   "date": "2026-07-19",
-   "time": "1:30 pm",
-   "url": "https://regionalculturalcentre.com/events/the-journals-fleadh-prose-workshop-with-dean-fee/",
-   "category": "Spoken Word",
-   "id": "ef42c3b00879",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eaf",
-   "venue": "Various",
-   "town": "Inishowen",
-   "county": "Donegal",
-   "title": "Summer Heritage Tour of Inishowen – With Neil McGrory & Lorna Henry",
-   "date": "2026-07-19",
-   "time": "10am",
-   "url": "https://eaf.ie/events/summer-heritage-tour-of-inishowen-with-neil-mcgrory-lorna-henry/",
-   "category": "Spoken Word & Conversations",
-   "id": "ea6c451bd847",
-   "first_seen": "2026-07-18"
+   "id": "10af67c0c73c",
+   "first_seen": "2026-07-20"
   },
   {
    "source": "eventbrite_donegal",
@@ -336,23 +205,11 @@
    "town": "Ballybofey",
    "county": "Donegal",
    "title": "Mamma Mia - The Live Experience / BALLYBOFEY",
-   "date": "2026-07-19",
+   "date": "2026-07-20",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/mamma-mia-the-live-experience-ballybofey/",
-   "id": "fe98be5debf2",
-   "first_seen": "2026-07-19"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "ZD Loft",
-   "town": "Donegal",
-   "county": "Donegal",
-   "title": "Reverie in the Loft",
-   "date": "2026-07-20",
-   "time": "19:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/reverie-in-the-loft/",
-   "id": "1ca197f125b9",
-   "first_seen": "2026-07-19"
+   "id": "cbf258bc06f3",
+   "first_seen": "2026-07-20"
   },
   {
    "source": "eaf",
@@ -416,6 +273,18 @@
    "url": "https://www.eventbrite.ie/d/ireland--donegal/anam-traditional-irish-music-song-and-dance-show/",
    "id": "7f42106fc193",
    "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "ZD Loft",
+   "town": "Donegal",
+   "county": "Donegal",
+   "title": "Reverie in the Loft",
+   "date": "2026-07-21",
+   "time": "19:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/reverie-in-the-loft/",
+   "id": "0809c8e0ca44",
+   "first_seen": "2026-07-20"
   },
   {
    "source": "an_grianan",
