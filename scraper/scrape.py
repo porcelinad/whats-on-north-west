@@ -651,52 +651,34 @@ def parse_mcgrorys(soup, source):
     return events
 
 
-SCH_MONTH_YEAR_RE = re.compile(r"^([A-Za-z]+)\s+(\d{4})$")
-SCH_DAY_HEADER_RE = re.compile(
-    r"^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+(\d{1,2})$", re.I)
-SCH_TIME_RE = re.compile(r"@\s*(\d{1,2}:\d{2}\s*[ap]m)", re.I)
-SCH_EVENT_LINK_RE = re.compile(r"/whatson/([a-z0-9-]+)/?$", re.I)
-SCH_RESERVED_VIEWS = {"list", "month", "day", "today", "photo", "week",
-                       "map", "summary"}
-
-
 def parse_st_columbs(soup, source):
-    """saintcolumbshall.com/whatson/ (a live Tribe/'The Events Calendar'
-    plugin archive - NOT /whats-on/, an old orphaned page from before
-    this plugin was installed). Events are grouped under 'Month Year'
-    and 'Day D' headers rather than stating a full date inline, so we
-    track those as context. A single venue site, so no per-event detail
-    fetch is needed - everything is always 'at St Columb's Hall'."""
+    """saintcolumbshall.com/whatson/ embeds full event data as JSON-LD
+    (schema.org Event objects, exact ISO datetimes) - far more reliable
+    than the visible text, which Tribe Events Calendar splits oddly
+    across separate text nodes (the weekday and day number are two
+    different nodes, for instance)."""
     events = []
-    cur_month = cur_year = cur_day = None
-    title = url = None
-    for kind, a, b in walk(soup):
-        if kind == "link":
-            href, text = a, b
-            m = SCH_EVENT_LINK_RE.search(href)
-            if m and m.group(1).lower() not in SCH_RESERVED_VIEWS and text:
-                title, url = text, href
-        else:
-            m = SCH_MONTH_YEAR_RE.match(a)
-            if m:
-                mon = MONTHS.get(m.group(1).lower()[:3])
-                if mon:
-                    cur_month, cur_year = mon, int(m.group(2))
+    for script in soup.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(script.string or script.get_text())
+        except (json.JSONDecodeError, TypeError):
+            continue
+        items = data if isinstance(data, list) else data.get("@graph", [data])
+        for item in items:
+            if not isinstance(item, dict) or item.get("@type") != "Event":
                 continue
-            m = SCH_DAY_HEADER_RE.match(a)
-            if m:
-                cur_day = int(m.group(1))
+            name, url, start = (item.get("name"), item.get("url"),
+                                 item.get("startDate"))
+            if not (name and url and start):
                 continue
-            m = SCH_TIME_RE.search(a)
-            if m and title and url and cur_month and cur_day:
-                try:
-                    d = date(cur_year or TODAY.year, cur_month, cur_day)
-                except ValueError:
-                    d = None
-                if d:
-                    events.append(make_event(
-                        source, title, d, time=m.group(1), url=url))
-                title = url = None
+            try:
+                start_date = date.fromisoformat(start[:10])
+            except ValueError:
+                continue
+            end = item.get("endDate")
+            end_date = end[:10] if end and end[:10] != start[:10] else None
+            events.append(make_event(
+                source, name, start_date, end_date=end_date, url=url))
     return events
 
 
