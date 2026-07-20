@@ -41,7 +41,7 @@
         border:1.5px solid var(--ink);border-radius:999px;background:transparent;
         color:var(--ink);padding:6px 14px;cursor:pointer;flex:0 0 auto;
         transition:background .15s,color .15s}
-  .chip[aria-pressed="true"]{background:var(--ink);color:var(--mist)}
+  .chip[aria-pressed="true"]{background:var(--ember);border-color:var(--ember);color:#fff}
   .custom-dates{display:flex;gap:8px;margin-bottom:8px}
   .custom-dates[hidden]{display:none}
   .custom-dates input[type="date"]{font:inherit;font-size:14px;flex:1 1 0;
@@ -112,13 +112,6 @@
   </header>
 
   <div class="controls">
-    <div class="date-filters" id="dateFilters" role="group" aria-label="Filter by date"></div>
-    <div class="custom-dates" id="customDates" hidden>
-      <input type="date" id="dateFrom" aria-label="From date">
-      <input type="date" id="dateTo" aria-label="To date">
-    </div>
-    <p class="date-error" id="dateError" hidden></p>
-    <div class="extra-filters" id="shapeFilters" role="group" aria-label="Filter by recurrence"></div>
     <div class="filters">
       <select id="countyFilter" class="filter-select" aria-label="Filter by county"></select>
       <select id="locationFilter" class="filter-select" aria-label="Filter by location"></select>
@@ -126,6 +119,13 @@
       <select id="genreFilter" class="filter-select" aria-label="Filter by genre"></select>
     </div>
     <input id="search" type="search" placeholder="Search by event, venue or genre…" aria-label="Search by event, venue or genre">
+    <div class="date-filters" id="dateFilters" role="group" aria-label="Filter by date"></div>
+    <div class="custom-dates" id="customDates" hidden>
+      <input type="date" id="dateFrom" aria-label="From date">
+      <input type="date" id="dateTo" aria-label="To date">
+    </div>
+    <p class="date-error" id="dateError" hidden></p>
+    <div class="extra-filters" id="shapeFilters" role="group" aria-label="Filter by recurrence"></div>
   </div>
 
   <main id="list"></main>
@@ -302,7 +302,9 @@ function buildLocationOptions(){
 }
 
 function buildVenueOptions(){
-  const scoped=countySel==="All"?EVENTS:EVENTS.filter(e=>e.county===countySel);
+  let scoped=EVENTS;
+  if(countySel!=="All") scoped=scoped.filter(e=>e.county===countySel);
+  if(locationSel!=="All") scoped=scoped.filter(e=>normalizeTown(e.town)===locationSel);
   const venues=[...new Set(scoped.map(e=>e.venue))].sort();
   venueSel=setOptions(document.getElementById("venueFilter"), venues,
                       "Venues", venueSel);
@@ -381,7 +383,8 @@ fetch("events.json?t="+Date.now())
      countySel=e.target.value; venueSel="All"; locationSel="All";
      buildLocationOptions(); buildVenueOptions(); render(GEN)});
    document.getElementById("locationFilter").addEventListener("change",e=>{
-     locationSel=e.target.value; render(GEN)});
+     locationSel=e.target.value; venueSel="All";
+     buildVenueOptions(); render(GEN)});
    document.getElementById("venueFilter").addEventListener("change",e=>{
      venueSel=e.target.value; render(GEN)});
    document.getElementById("genreFilter").addEventListener("change",e=>{
