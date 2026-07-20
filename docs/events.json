@@ -1,12 +1,10 @@
 {
- "generated_at": "2026-07-20T21:30Z",
- "failed_sources": [
-  "An Grianán Theatre",
-  "Regional Cultural Centre",
-  "Balor Arts Centre"
- ],
+ "generated_at": "2026-07-20T22:01Z",
+ "failed_sources": [],
  "source_last_run": {
-  "eaf": "2026-07-18T16:50Z"
+  "eaf": "2026-07-18T16:50Z",
+  "eventbrite_csv_hash": "0447f747ae16",
+  "eventbrite_csv_since": "2026-07-20T22:01Z"
  },
  "events": [
   {
@@ -192,30 +190,6 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "eventbrite_donegal",
-   "venue": "Murray's Yard, Mountcharles F94 C8X4",
-   "town": "Mountcharles",
-   "county": "Donegal",
-   "title": "Tír Chonaill Stone Festival 2026",
-   "date": "2026-07-20",
-   "time": "09:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/tir-chonaill-stone-festival-2026/",
-   "id": "10af67c0c73c",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Villa Rose Hotel and Spa",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Mamma Mia - The Live Experience / BALLYBOFEY",
-   "date": "2026-07-20",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/mamma-mia-the-live-experience-ballybofey/",
-   "id": "cbf258bc06f3",
-   "first_seen": "2026-07-20"
-  },
-  {
    "source": "eaf",
    "venue": "Blakes",
    "town": "Letterkenny",
@@ -268,26 +242,14 @@
   },
   {
    "source": "eventbrite_donegal",
-   "venue": "McCafferty's at The Pier",
-   "town": "Donegal",
+   "venue": "The Well Lane",
+   "town": "Ballybofey",
    "county": "Donegal",
-   "title": "ANAM - Traditional Irish Music, Song and Dance Show",
-   "date": "2026-07-21",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/anam-traditional-irish-music-song-and-dance-show/",
-   "id": "7f42106fc193",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "ZD Loft",
-   "town": "Donegal",
-   "county": "Donegal",
-   "title": "Reverie in the Loft",
+   "title": "Whispers at the Well Lane",
    "date": "2026-07-21",
    "time": "19:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/reverie-in-the-loft/",
-   "id": "0809c8e0ca44",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/whispers-at-the-well-lane/",
+   "id": "3bf542ab979f",
    "first_seen": "2026-07-20"
   },
   {
@@ -614,6 +576,18 @@
    "first_seen": "2026-07-18"
   },
   {
+   "source": "eventbrite_donegal",
+   "venue": "McCafferty's at The Pier",
+   "town": "Donegal",
+   "county": "Donegal",
+   "title": "ANAM - Traditional Irish Music, Song and Dance Show",
+   "date": "2026-07-28",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/anam-traditional-irish-music-song-and-dance-show/",
+   "id": "429d3d675b2e",
+   "first_seen": "2026-07-20"
+  },
+  {
    "source": "abbey",
    "venue": "Abbey Arts Centre",
    "town": "Ballyshannon",
@@ -731,6 +705,18 @@
    "url": "https://www.eventbrite.ie/d/ireland--donegal/bagatelle-live-at-mccaffertys-at-the-pier/",
    "id": "582a66c191c9",
    "first_seen": "2026-07-18"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Bundoran Golf Club",
+   "town": "Bundoran",
+   "county": "Donegal",
+   "title": "Donegal Golf Nines Event - Bundoran Golf Club",
+   "date": "2026-08-09",
+   "time": "15:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/donegal-golf-nines-event-bundoran-golf-club/",
+   "id": "bc43639d6e68",
+   "first_seen": "2026-07-20"
   },
   {
    "source": "an_grianan",
@@ -1318,6 +1304,18 @@
    "date": "2026-10-24",
    "url": "https://www.saintcolumbshall.com/whatson/ralph-mctell/",
    "id": "0acdda9bbba9",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "The Great Northern Hotel",
+   "town": "Bundoran",
+   "county": "Donegal",
+   "title": "♻️ VINTED IN REAL LIFE - BUNDORAN♻️",
+   "date": "2026-10-25",
+   "time": "12:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/vinted-in-real-life-bundoran/",
+   "id": "f25676c9d70a",
    "first_seen": "2026-07-20"
   },
   {
