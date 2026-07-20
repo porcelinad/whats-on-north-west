@@ -750,6 +750,10 @@ SOURCES = [
 ]
 
 
+ALLOWED_COUNTIES = {"Donegal", "Derry", "Sligo", "Leitrim", "Tyrone"}
+COUNTY_ALIASES = {"Londonderry": "Derry"}
+
+
 # ---------------------------------------------------------------- pipeline
 
 def event_key(ev):
@@ -861,6 +865,9 @@ def main():
     # drop past events, de-duplicate, stamp first_seen
     seen, final = set(), []
     for ev in all_events:
+        ev["county"] = COUNTY_ALIASES.get(ev["county"], ev["county"])
+        if ev["county"] not in ALLOWED_COUNTIES:
+            continue  # outside Donegal/Derry/Sligo/Leitrim/Tyrone - skip
         last_day = date.fromisoformat(ev.get("end_date", ev["date"]))
         if last_day < TODAY:
             continue
