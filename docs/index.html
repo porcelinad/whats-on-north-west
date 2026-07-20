@@ -33,8 +33,9 @@
   .controls{position:sticky;top:0;background:var(--mist);z-index:5;
             padding:10px 0 12px;border-bottom:1px solid var(--line)}
   .date-filters{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;
-         scrollbar-width:none}
+         scrollbar-width:none;justify-content:center}
   .date-filters::-webkit-scrollbar{display:none}
+  .extra-filters{display:flex;justify-content:center;margin-bottom:8px}
   .chip{font-family:var(--display);font-weight:600;font-size:14px;
         text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;
         border:1.5px solid var(--ink);border-radius:999px;background:transparent;
@@ -117,6 +118,9 @@
       <input type="date" id="dateTo" aria-label="To date">
     </div>
     <p class="date-error" id="dateError" hidden></p>
+    <div class="extra-filters">
+      <button class="chip" id="singleDateToggle" aria-pressed="false">Single date</button>
+    </div>
     <div class="filters">
       <select id="countyFilter" class="filter-select" aria-label="Filter by county"></select>
       <select id="venueFilter" class="filter-select" aria-label="Filter by venue"></select>
@@ -138,7 +142,7 @@ const MONTHS=["January","February","March","April","May","June","July",
               "August","September","October","November","December"];
 const DOWS=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 let EVENTS=[], countySel="All", venueSel="All", genreSel="All", query="";
-let dateSel=null, customFrom="", customTo="";
+let dateSel=null, customFrom="", customTo="", singleDateOnly=false;
 
 function addDays(iso,n){
   const [y,m,d]=iso.split("-").map(Number);
@@ -231,6 +235,7 @@ function render(gen){
     (countySel==="All"||e.county===countySel) &&
     (venueSel==="All"||e.venue===venueSel) &&
     matchesGenre(e) && matchesDate(e) &&
+    (!singleDateOnly || !e.end_date) &&
     (!q || (e.title+" "+e.venue+" "+(e.category||"")+" "+e.town)
             .toLowerCase().includes(q)));
   if(!shown.length){
@@ -345,6 +350,11 @@ fetch("events.json?t="+Date.now())
      customFrom=e.target.value; render(GEN)});
    document.getElementById("dateTo").addEventListener("change",e=>{
      customTo=e.target.value; render(GEN)});
+   document.getElementById("singleDateToggle").addEventListener("click",function(){
+     singleDateOnly=!singleDateOnly;
+     this.setAttribute("aria-pressed", singleDateOnly);
+     render(GEN);
+   });
    document.getElementById("countyFilter").addEventListener("change",e=>{
      countySel=e.target.value; venueSel="All";
      buildVenueOptions(); render(GEN)});
