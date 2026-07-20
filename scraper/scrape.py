@@ -412,32 +412,32 @@ WEEKDAY_INDEX = {name: i for i, name in enumerate(
     ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"])}
 
 
-def parse_eventbrite_date_text(text):
+def parse_eventbrite_date_text(text, trust_relative=True):
     """Parses Eventbrite's date text as found in a webscraper.io export:
     an explicit date ('Fri 31 Jul, 18:30'), or a relative one ('Today at
     09:00', 'Tomorrow at 19:30', 'Thursday at 11:00' - a bare weekday
-    means the next occurrence of that day). Relative dates are resolved
-    against TODAY (the day this script runs), on the assumption the CSV
-    was exported recently - if the file goes stale before being
-    refreshed, the fix is simply to re-export and re-upload it."""
+    means the next occurrence of that day). Relative dates are only
+    parsed when trust_relative is True - see csv_freshness_check below
+    for why that matters."""
     if not text:
         return None, None
     t = clean(text)
 
-    m = re.match(r"today at (\d{1,2}:\d{2})", t, re.I)
-    if m:
-        return TODAY, m.group(1)
+    if trust_relative:
+        m = re.match(r"today at (\d{1,2}:\d{2})", t, re.I)
+        if m:
+            return TODAY, m.group(1)
 
-    m = re.match(r"tomorrow at (\d{1,2}:\d{2})", t, re.I)
-    if m:
-        return TODAY + timedelta(days=1), m.group(1)
+        m = re.match(r"tomorrow at (\d{1,2}:\d{2})", t, re.I)
+        if m:
+            return TODAY + timedelta(days=1), m.group(1)
 
-    m = re.match(r"([A-Za-z]+)\s+at\s+(\d{1,2}:\d{2})", t)
-    if m:
-        wd = WEEKDAY_INDEX.get(m.group(1).lower())
-        if wd is not None:
-            delta = (wd - TODAY.weekday()) % 7 or 7
-            return TODAY + timedelta(days=delta), m.group(2)
+        m = re.match(r"([A-Za-z]+)\s+at\s+(\d{1,2}:\d{2})", t)
+        if m:
+            wd = WEEKDAY_INDEX.get(m.group(1).lower())
+            if wd is not None:
+                delta = (wd - TODAY.weekday()) % 7 or 7
+                return TODAY + timedelta(days=delta), m.group(2)
 
     m = re.match(r"[A-Za-z]+\s+(\d{1,2})\s+([A-Za-z]+),?\s+(\d{1,2}:\d{2})", t)
     if m:
@@ -468,7 +468,34 @@ def slugify(title):
     return t.strip("-")
 
 
-def parse_eventbrite_csv(source):
+CSV_STALE_AFTER_DAYS = 1
+
+
+def csv_freshness_check(prev_state):
+    """Tracks whether the manual Eventbrite CSV has changed since it was
+    last read, using a content hash stored in our own persisted state -
+    NOT file modification times, which git resets to checkout time on
+    every run and are therefore useless for this. Returns True if the
+    file is new or was last changed within CSV_STALE_AFTER_DAYS days -
+    i.e. whether 'Today'/'Tomorrow'/bare-weekday text in it can still be
+    trusted. Once a file goes stale, only its unambiguous explicit dates
+    keep being used; relative-only rows are simply dropped rather than
+    silently drifting onto the wrong day."""
+    current_hash = hashlib.sha1(MANUAL_CSV_PATH.read_bytes()).hexdigest()[:12]
+    prev_hash = prev_state.get("eventbrite_csv_hash")
+    if current_hash != prev_hash:
+        prev_state["eventbrite_csv_hash"] = current_hash
+        prev_state["eventbrite_csv_since"] = NOW.strftime("%Y-%m-%dT%H:%MZ")
+        return True
+    since = prev_state.get("eventbrite_csv_since")
+    if not since:
+        prev_state["eventbrite_csv_since"] = NOW.strftime("%Y-%m-%dT%H:%MZ")
+        return True
+    since_date = datetime.strptime(since, "%Y-%m-%dT%H:%MZ").date()
+    return (TODAY - since_date).days <= CSV_STALE_AFTER_DAYS
+
+
+def parse_eventbrite_csv(source, prev_state=None):
     """Eventbrite blocks GitHub Actions' servers outright (see EVENTBRITE_*
     above), so this reads a CSV exported by hand from the webscraper.io
     browser extension instead - no network request, so nothing to block.
@@ -478,17 +505,21 @@ def parse_eventbrite_csv(source):
     can tell 'nothing uploaded' apart from 'uploaded but empty/broken'."""
     if not MANUAL_CSV_PATH.exists():
         return None
+    trust_relative = (csv_freshness_check(prev_state)
+                      if prev_state is not None else True)
     events = []
     with MANUAL_CSV_PATH.open(encoding="utf-8-sig", newline="") as f:
         for row in csv.DictReader(f):
             title = clean(row.get("data") or row.get("data6") or "")
             if not title:
                 continue
-            start_date, time_str = parse_eventbrite_date_text(row.get("data2"))
+            start_date, time_str = parse_eventbrite_date_text(
+                row.get("data2"), trust_relative)
             if not start_date:
-                start_date, time_str = parse_eventbrite_date_text(row.get("data11"))
+                start_date, time_str = parse_eventbrite_date_text(
+                    row.get("data11"), trust_relative)
             if not start_date:
-                continue  # relative-only or missing date - skip, see above
+                continue  # stale relative date, or missing entirely
             venue_text = clean(row.get("data5") or row.get("data13") or "")
             town = venue = None
             if "·" in venue_text:
@@ -780,7 +811,7 @@ def main():
                     continue
         try:
             if source.get("manual_csv"):
-                found = source["parser"](source)
+                found = source["parser"](source, source_last_run)
                 if found is None:
                     print(f"{source['venue']}: no manual CSV uploaded this "
                           f"run - keeping previously known events")
