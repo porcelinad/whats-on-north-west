@@ -1,6 +1,8 @@
 {
- "generated_at": "2026-07-20T10:10Z",
- "failed_sources": [],
+ "generated_at": "2026-07-20T21:03Z",
+ "failed_sources": [
+  "Abbey Arts Centre"
+ ],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z"
  },
@@ -418,6 +420,17 @@
    "first_seen": "2026-07-18"
   },
   {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-07-24",
+   "url": "https://www.mcgrorys.ie/entertainment/78-154/",
+   "id": "c86c88b4afbd",
+   "first_seen": "2026-07-20"
+  },
+  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -659,6 +672,17 @@
    "first_seen": "2026-07-18"
   },
   {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-08-01",
+   "url": "https://www.mcgrorys.ie/entertainment/78-152/",
+   "id": "16782cc1b219",
+   "first_seen": "2026-07-20"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Post Office",
    "town": "Garrison",
@@ -720,6 +744,17 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-08-12",
+   "url": "https://www.mcgrorys.ie/entertainment/78-168/",
+   "id": "f1cb567e53e7",
+   "first_seen": "2026-07-20"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Garrison",
    "town": "Garrison",
@@ -766,6 +801,17 @@
    "url": "https://www.eventbrite.ie/d/ireland--donegal/lough-derg-2026-heritage-day-morning-tour/",
    "id": "44c7cabc139e",
    "first_seen": "2026-07-18"
+  },
+  {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-08-21",
+   "url": "https://www.mcgrorys.ie/entertainment/78-156/",
+   "id": "ab4df7dc0797",
+   "first_seen": "2026-07-20"
   },
   {
    "source": "abbey",
@@ -827,6 +873,17 @@
    "category": "Theatre",
    "id": "6e3489c44300",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-09-05",
+   "url": "https://www.mcgrorys.ie/entertainment/78-169/",
+   "id": "14d3663310a5",
+   "first_seen": "2026-07-20"
   },
   {
    "source": "an_grianan",
@@ -929,6 +986,17 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-09-18",
+   "url": "https://www.mcgrorys.ie/entertainment/78-170/",
+   "id": "6541fa401adc",
+   "first_seen": "2026-07-20"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Villa Rose Hotel",
    "town": "Ballybofey",
@@ -999,6 +1067,17 @@
    "url": "https://www.balorartscentre.com/?event=tick-tick-boom",
    "id": "d7c813d35091",
    "first_seen": "2026-07-16"
+  },
+  {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-09-26",
+   "url": "https://www.mcgrorys.ie/entertainment/78-171/",
+   "id": "94e51870f748",
+   "first_seen": "2026-07-20"
   },
   {
    "source": "rcc",
@@ -1077,6 +1156,17 @@
    "category": "Comedy",
    "id": "a54d9f5ca2c2",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-10-09",
+   "url": "https://www.mcgrorys.ie/entertainment/78-167/",
+   "id": "90090f7afc2d",
+   "first_seen": "2026-07-20"
   },
   {
    "source": "abbey",
@@ -1206,6 +1296,17 @@
    "first_seen": "2026-07-17"
   },
   {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-10-23",
+   "url": "https://www.mcgrorys.ie/entertainment/78-172/",
+   "id": "7d36c8e52e64",
+   "first_seen": "2026-07-20"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -1217,6 +1318,18 @@
    "category": "Theatre",
    "id": "9df01b8335c1",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Ralph McTell",
+   "date": "2026-10-24",
+   "time": "8pm",
+   "url": "https://www.saintcolumbshall.com/whats-on/ralph-mctell/",
+   "id": "0acdda9bbba9",
+   "first_seen": "2026-07-20"
   },
   {
    "source": "an_grianan",
@@ -1257,6 +1370,17 @@
    "category": "Drama",
    "id": "fdac0ebe58ed",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-10-30",
+   "url": "https://www.mcgrorys.ie/entertainment/78-174/",
+   "id": "ed5327d6b670",
+   "first_seen": "2026-07-20"
   },
   {
    "source": "rcc",
@@ -1361,6 +1485,17 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-11-14",
+   "url": "https://www.mcgrorys.ie/entertainment/78-175/",
+   "id": "ebc52ffda82f",
+   "first_seen": "2026-07-20"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -1436,6 +1571,28 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-11-21",
+   "url": "https://www.mcgrorys.ie/entertainment/78-176/",
+   "id": "5b70d863db74",
+   "first_seen": "2026-07-20"
+  },
+  {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-11-27",
+   "url": "https://www.mcgrorys.ie/entertainment/78-177/",
+   "id": "86ad9bb55378",
+   "first_seen": "2026-07-20"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -1475,6 +1632,17 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-12-12",
+   "url": "https://www.mcgrorys.ie/entertainment/78-178/",
+   "id": "d57f7a915ebb",
+   "first_seen": "2026-07-20"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -1486,6 +1654,17 @@
    "category": "Music",
    "id": "063b1a28ad8d",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "McGrorys Hotel - - Read More",
+   "date": "2026-12-19",
+   "url": "https://www.mcgrorys.ie/entertainment/78-179/",
+   "id": "fb4eefa6342e",
+   "first_seen": "2026-07-20"
   },
   {
    "source": "eventbrite_donegal",
