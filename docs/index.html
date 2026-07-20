@@ -32,15 +32,16 @@
 
   .controls{position:sticky;top:0;background:var(--mist);z-index:5;
             padding:10px 0 12px;border-bottom:1px solid var(--line)}
-  .chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;
-         scrollbar-width:none}
-  .chips::-webkit-scrollbar{display:none}
-  .chip{font-family:var(--display);font-weight:600;font-size:15px;
-        text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;
-        border:1.5px solid var(--ink);border-radius:999px;background:transparent;
-        color:var(--ink);padding:5px 14px;cursor:pointer;
-        transition:background .15s,color .15s}
-  .chip[aria-pressed="true"]{background:var(--ink);color:var(--mist)}
+  .filters{display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+  .filter-select{font-family:var(--display);font-weight:600;font-size:14px;
+        text-transform:uppercase;letter-spacing:.04em;
+        border:1.5px solid var(--ink);border-radius:8px;background:var(--stub);
+        color:var(--ink);padding:7px 26px 7px 12px;cursor:pointer;
+        flex:1 1 0;min-width:90px;
+        -webkit-appearance:none;appearance:none;
+        background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path d="M0 0L5 6L10 0Z" fill="%231E2B26"/></svg>');
+        background-repeat:no-repeat;background-position:right 10px center}
+  .filter-select:focus{outline:2px solid var(--ember);outline-offset:1px}
   #search{width:100%;padding:9px 12px;font:inherit;font-size:15px;
           border:1.5px solid var(--line);border-radius:8px;background:var(--stub);
           color:var(--ink)}
@@ -95,7 +96,11 @@
   </header>
 
   <div class="controls">
-    <div class="chips" id="chips" role="group" aria-label="Filter by venue"></div>
+    <div class="filters">
+      <select id="countyFilter" class="filter-select" aria-label="Filter by county"></select>
+      <select id="venueFilter" class="filter-select" aria-label="Filter by venue"></select>
+      <select id="genreFilter" class="filter-select" aria-label="Filter by genre"></select>
+    </div>
     <input id="search" type="search" placeholder="Search events…" aria-label="Search events">
   </div>
 
@@ -111,7 +116,7 @@
 const MONTHS=["January","February","March","April","May","June","July",
               "August","September","October","November","December"];
 const DOWS=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
-let EVENTS=[], venueFilter="All", query="";
+let EVENTS=[], countySel="All", venueSel="All", genreSel="All", query="";
 
 const el=(t,c,txt)=>{const n=document.createElement(t);
   if(c)n.className=c; if(txt!==undefined)n.textContent=txt; return n};
@@ -126,7 +131,7 @@ function isNew(ev,gen){
   return (g-first)/86400000 <= 7;
 }
 
-  function fmtUpdated(iso){
+function fmtUpdated(iso){
   try{
     const d=new Date(iso);
     if(isNaN(d)) return iso;
@@ -134,13 +139,26 @@ function isNew(ev,gen){
       hour:"2-digit",minute:"2-digit",timeZone:"Europe/Dublin"});
   }catch(e){ return iso; }
 }
-  
+
+function shortVenue(v){
+  return v.replace(" Theatre","").replace(" Arts Centre","").replace(" Hotel","")
+          .replace("Regional Cultural Centre","RCC").replace("St Columb's Hall","St Columb's");
+}
+
+function matchesGenre(ev){
+  if(genreSel==="All") return true;
+  if(genreSel==="Not listed") return !ev.category;
+  return (ev.category||"").split(", ").includes(genreSel);
+}
+
 function render(gen){
   const list=document.getElementById("list");
   list.textContent="";
   const q=query.trim().toLowerCase();
   const shown=EVENTS.filter(e=>
-    (venueFilter==="All"||e.venue===venueFilter) &&
+    (countySel==="All"||e.county===countySel) &&
+    (venueSel==="All"||e.venue===venueSel) &&
+    matchesGenre(e) &&
     (!q || (e.title+" "+e.venue+" "+(e.category||"")+" "+e.town)
             .toLowerCase().includes(q)));
   if(!shown.length){
@@ -176,18 +194,44 @@ function render(gen){
   }
 }
 
-function buildChips(){
-  const venues=["All",...new Set(EVENTS.map(e=>e.venue))];
-  const box=document.getElementById("chips");
-  venues.forEach(v=>{
-    const b=el("button","chip",v==="All"?"All venues":v.replace(" Theatre","")
-              .replace(" Arts Centre","").replace("Regional Cultural Centre","RCC"));
-    b.setAttribute("aria-pressed",v===venueFilter);
-    b.onclick=()=>{venueFilter=v;
-      box.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed","false"));
-      b.setAttribute("aria-pressed","true"); render(GEN)};
-    box.append(b);
+function setOptions(select, values, allLabel, current){
+  select.textContent="";
+  const opt=el("option","","All "+allLabel); opt.value="All";
+  select.append(opt);
+  values.forEach(v=>{
+    const o=el("option","",v.label!==undefined?v.label:v);
+    o.value=v.value!==undefined?v.value:v;
+    select.append(o);
   });
+  select.value=[...select.options].some(o=>o.value===current) ? current : "All";
+  return select.value;
+}
+
+function buildCountyOptions(){
+  const counties=[...new Set(EVENTS.map(e=>e.county))].sort();
+  countySel=setOptions(document.getElementById("countyFilter"), counties,
+                       "Counties", countySel);
+}
+
+function buildVenueOptions(){
+  const scoped=countySel==="All"?EVENTS:EVENTS.filter(e=>e.county===countySel);
+  const venues=[...new Set(scoped.map(e=>e.venue))].sort()
+    .map(v=>({value:v,label:shortVenue(v)}));
+  venueSel=setOptions(document.getElementById("venueFilter"), venues,
+                      "Venues", venueSel);
+}
+
+function buildGenreOptions(){
+  const genres=new Set();
+  let hasUnlisted=false;
+  EVENTS.forEach(e=>{
+    if(e.category) e.category.split(", ").forEach(c=>genres.add(c));
+    else hasUnlisted=true;
+  });
+  const list=[...genres].sort();
+  if(hasUnlisted) list.push("Not listed");
+  genreSel=setOptions(document.getElementById("genreFilter"), list,
+                      "Genres", genreSel);
 }
 
 let GEN="";
@@ -202,9 +246,16 @@ fetch("events.json?t="+Date.now())
        u.after(el("p","warn","⚠ Error loading "+name));
      });
    }
-   buildChips(); render(GEN);
+   buildCountyOptions(); buildVenueOptions(); buildGenreOptions(); render(GEN);
    document.getElementById("search").addEventListener("input",e=>{
      query=e.target.value; render(GEN)});
+   document.getElementById("countyFilter").addEventListener("change",e=>{
+     countySel=e.target.value; venueSel="All";
+     buildVenueOptions(); render(GEN)});
+   document.getElementById("venueFilter").addEventListener("change",e=>{
+     venueSel=e.target.value; render(GEN)});
+   document.getElementById("genreFilter").addEventListener("change",e=>{
+     genreSel=e.target.value; render(GEN)});
  })
  .catch(err=>{
    console.error("Failed to load or render events:", err);
