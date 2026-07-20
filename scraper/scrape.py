@@ -616,6 +616,106 @@ def parse_eaf(source):
     return events
 
 
+def parse_mcgrorys(soup, source):
+    """mcgrorys.ie/entertainment - each card is an image link to the
+    event's own page, immediately followed by its title as a heading
+    (not itself a link), a description paragraph, a duplicate 'Read
+    More' link, a booking link, then an 'Event Date DD Mon YY' line."""
+    event_link_re = re.compile(r"/entertainment/\d+-\d+/?$")
+    date_re = re.compile(r"(\d{1,2})\s+([A-Za-z]{3})\s+(\d{2})\b")
+    events = []
+    url = title = None
+    awaiting_title = False
+    for kind, a, b in walk(soup):
+        if kind == "link":
+            href, text = a, b
+            if event_link_re.search(href) and href != url:
+                url = href
+                awaiting_title = True
+        else:
+            if awaiting_title and not title:
+                title = a
+                awaiting_title = False
+                continue
+            m = date_re.search(a)
+            if m and title and url:
+                mon = MONTHS.get(m.group(2).lower())
+                if mon:
+                    try:
+                        d = date(2000 + int(m.group(3)), mon, int(m.group(1)))
+                    except ValueError:
+                        d = None
+                    if d:
+                        events.append(make_event(source, title, d, url=url))
+                title = url = None
+    return events
+
+
+SCH_DATE_RE = re.compile(
+    r"(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?\s*"
+    r"(\d{1,2})(?:st|nd|rd|th)(?:\s+([A-Za-z]+))?(?:\s+(\d{4}))?", re.I)
+
+
+def parse_sch_date_text(text):
+    """Extracts dates from lines like 'Saturday 14th March 2026',
+    'Tuesday 7th - Friday 10th April 2026', or 'Fri 24th & 25th April
+    2026' (a bare day number borrows month/year from a later date in
+    the same line). Returns [] for lines with no day-specific date at
+    all (e.g. 'Jan-Mar 2026' - a whole quarter, not a bookable date)."""
+    matches = [[int(m.group(1)), m.group(2), m.group(3)]
+               for m in SCH_DATE_RE.finditer(text)]
+    for i in range(len(matches) - 2, -1, -1):
+        if not matches[i][1]:
+            matches[i][1] = matches[i + 1][1]
+        if not matches[i][2]:
+            matches[i][2] = matches[i + 1][2]
+    dates = []
+    for day, mon_name, year in matches:
+        if not mon_name:
+            continue
+        mon = MONTHS.get(mon_name.lower()[:3])
+        if not mon:
+            continue
+        if year:
+            try:
+                d = date(int(year), mon, day)
+            except ValueError:
+                continue
+        else:
+            d = infer_year(mon, day)
+        if d:
+            dates.append(d)
+    return dates
+
+
+def parse_st_columbs(soup, source):
+    """saintcolumbshall.com/whats-on/ - each entry is a heading (title),
+    a date line, a time line, then a 'More Info' link. Using the last 3
+    text nodes before each link (rather than the first 3 since the last
+    entry) keeps this correct even with stray page text bleeding in
+    before the very first real entry."""
+    events = []
+    buf = []
+    for kind, a, b in walk(soup):
+        if kind == "link":
+            href, text = a, b
+            if text.strip().lower() == "more info" and len(buf) >= 3:
+                title, date_text, time_text = buf[-3], buf[-2], buf[-1]
+                dates = parse_sch_date_text(date_text)
+                if dates:
+                    start = dates[0]
+                    end = (dates[-1] if len(dates) == 2 and dates[-1] != start
+                           else None)
+                    events.append(make_event(
+                        source, title, start,
+                        end_date=end.isoformat() if end else None,
+                        time=time_text, url=href))
+            buf = []
+        else:
+            buf.append(a)
+    return events
+
+
 # ---------------------------------------------------------------- sources
 
 SOURCES = [
@@ -638,6 +738,12 @@ SOURCES = [
     {"name": "eaf", "venue": "Earagail Arts Festival", "town": "Donegal",
      "county": "Donegal", "url": "https://eaf.ie/2026-events/",
      "parser": parse_eaf, "custom_fetch": True, "min_interval_days": 7},
+    {"name": "mcgrorys", "venue": "McGrory's Hotel", "town": "Culdaff",
+     "county": "Donegal", "url": "https://www.mcgrorys.ie/entertainment",
+     "parser": parse_mcgrorys},
+    {"name": "st_columbs", "venue": "St Columb's Hall", "town": "Derry",
+     "county": "Derry", "url": "https://www.saintcolumbshall.com/whats-on/",
+     "parser": parse_st_columbs},
 ]
 
 
