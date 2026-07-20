@@ -42,9 +42,11 @@
         transition:background .15s,color .15s}
   .chip[aria-pressed="true"]{background:var(--ink);color:var(--mist)}
   .custom-dates{display:flex;gap:8px;margin-bottom:8px}
+  .custom-dates[hidden]{display:none}
   .custom-dates input[type="date"]{font:inherit;font-size:14px;flex:1 1 0;
         min-width:0;border:1.5px solid var(--ink);border-radius:8px;
         padding:6px 10px;background:var(--stub);color:var(--ink)}
+  .date-error{font-size:13px;color:var(--ember);font-weight:700;margin:-4px 0 8px}
   .filters{display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap}
   .filter-select{font-family:var(--display);font-weight:600;font-size:14px;
         text-transform:uppercase;letter-spacing:.04em;
@@ -114,6 +116,7 @@
       <input type="date" id="dateFrom" aria-label="From date">
       <input type="date" id="dateTo" aria-label="To date">
     </div>
+    <p class="date-error" id="dateError" hidden></p>
     <div class="filters">
       <select id="countyFilter" class="filter-select" aria-label="Filter by county"></select>
       <select id="venueFilter" class="filter-select" aria-label="Filter by venue"></select>
@@ -193,6 +196,15 @@ function matchesGenre(ev){
   return (ev.category||"").split(", ").includes(genreSel);
 }
 
+function customRangeError(){
+  if(dateSel!=="custom") return null;
+  if(customFrom && customTo && customTo<customFrom)
+    return "End date can't be before the start date.";
+  if(customTo && customTo<TODAY_ISO)
+    return "That date range is in the past.";
+  return null;
+}
+
 function matchesDate(ev){
   if(!dateSel) return true;
   const start=ev.date, end=ev.end_date||ev.date;
@@ -210,8 +222,12 @@ function matchesDate(ev){
 function render(gen){
   const list=document.getElementById("list");
   list.textContent="";
+  const errBox=document.getElementById("dateError");
+  const rangeErr=customRangeError();
+  errBox.hidden=!rangeErr;
+  if(rangeErr) errBox.textContent=rangeErr;
   const q=query.trim().toLowerCase();
-  const shown=EVENTS.filter(e=>
+  const shown=rangeErr ? [] : EVENTS.filter(e=>
     (countySel==="All"||e.county===countySel) &&
     (venueSel==="All"||e.venue===venueSel) &&
     matchesGenre(e) && matchesDate(e) &&
