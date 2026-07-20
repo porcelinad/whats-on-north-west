@@ -1,10 +1,19 @@
 {
- "generated_at": "2026-07-20T22:01Z",
+ "generated_at": "2026-07-20T23:10Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z",
   "eventbrite_csv_hash": "0447f747ae16",
   "eventbrite_csv_since": "2026-07-20T22:01Z"
+ },
+ "consecutive_failures": {
+  "an_grianan": 0,
+  "rcc": 0,
+  "balor": 0,
+  "abbey": 0,
+  "eventbrite_donegal": 0,
+  "mcgrorys": 0,
+  "st_columbs": 0
  },
  "events": [
   {
@@ -388,10 +397,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "Thunder Rolls - The Garth Brooks Tribute",
    "date": "2026-07-24",
    "url": "https://www.mcgrorys.ie/entertainment/78-154/",
-   "id": "c86c88b4afbd",
+   "id": "557d1ec313ea",
    "first_seen": "2026-07-20"
   },
   {
@@ -652,10 +661,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "Luka Bloom",
    "date": "2026-08-01",
    "url": "https://www.mcgrorys.ie/entertainment/78-152/",
-   "id": "16782cc1b219",
+   "id": "e6a85702dbca",
    "first_seen": "2026-07-20"
   },
   {
@@ -736,10 +745,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "Sara Dougherty Carter",
    "date": "2026-08-12",
    "url": "https://www.mcgrorys.ie/entertainment/78-168/",
-   "id": "f1cb567e53e7",
+   "id": "9ea19fa6f412",
    "first_seen": "2026-07-20"
   },
   {
@@ -795,10 +804,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "The Mindbenders",
    "date": "2026-08-21",
    "url": "https://www.mcgrorys.ie/entertainment/78-156/",
-   "id": "ab4df7dc0797",
+   "id": "ff314b6e3d01",
    "first_seen": "2026-07-20"
   },
   {
@@ -855,10 +864,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "Emma Langford",
    "date": "2026-09-05",
    "url": "https://www.mcgrorys.ie/entertainment/78-169/",
-   "id": "14d3663310a5",
+   "id": "a935e4f46a28",
    "first_seen": "2026-07-20"
   },
   {
@@ -966,10 +975,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "Charles James & The Rise",
    "date": "2026-09-18",
    "url": "https://www.mcgrorys.ie/entertainment/78-170/",
-   "id": "6541fa401adc",
+   "id": "de80948384fc",
    "first_seen": "2026-07-20"
   },
   {
@@ -1049,10 +1058,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "Frankie Gavin & Catherine McHugh",
    "date": "2026-09-26",
    "url": "https://www.mcgrorys.ie/entertainment/78-171/",
-   "id": "94e51870f748",
+   "id": "96c25162fcc7",
    "first_seen": "2026-07-20"
   },
   {
@@ -1138,10 +1147,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "Daoirí Farrell",
    "date": "2026-10-09",
    "url": "https://www.mcgrorys.ie/entertainment/78-167/",
-   "id": "90090f7afc2d",
+   "id": "2ec7cee78ad2",
    "first_seen": "2026-07-20"
   },
   {
@@ -1276,10 +1285,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "Aoife Scott",
    "date": "2026-10-23",
    "url": "https://www.mcgrorys.ie/entertainment/78-172/",
-   "id": "7d36c8e52e64",
+   "id": "141f0f93b483",
    "first_seen": "2026-07-20"
   },
   {
@@ -1363,10 +1372,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "Johnny Brady",
    "date": "2026-10-30",
    "url": "https://www.mcgrorys.ie/entertainment/78-174/",
-   "id": "ed5327d6b670",
+   "id": "1beba8f5fe41",
    "first_seen": "2026-07-20"
   },
   {
@@ -1476,10 +1485,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "The Music of The Beatles",
    "date": "2026-11-14",
    "url": "https://www.mcgrorys.ie/entertainment/78-175/",
-   "id": "ebc52ffda82f",
+   "id": "9a9b3c827e71",
    "first_seen": "2026-07-20"
   },
   {
@@ -1562,10 +1571,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "Paddy Casey",
    "date": "2026-11-21",
    "url": "https://www.mcgrorys.ie/entertainment/78-176/",
-   "id": "5b70d863db74",
+   "id": "ed9783d057a9",
    "first_seen": "2026-07-20"
   },
   {
@@ -1573,10 +1582,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "John Spillane",
    "date": "2026-11-27",
    "url": "https://www.mcgrorys.ie/entertainment/78-177/",
-   "id": "86ad9bb55378",
+   "id": "36ec4bd4ed94",
    "first_seen": "2026-07-20"
   },
   {
@@ -1623,10 +1632,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "Seán Keane",
    "date": "2026-12-12",
    "url": "https://www.mcgrorys.ie/entertainment/78-178/",
-   "id": "d57f7a915ebb",
+   "id": "7e3254d77917",
    "first_seen": "2026-07-20"
   },
   {
@@ -1647,10 +1656,10 @@
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
    "county": "Donegal",
-   "title": "McGrorys Hotel - - Read More",
+   "title": "CRAMPSIE & CO",
    "date": "2026-12-19",
    "url": "https://www.mcgrorys.ie/entertainment/78-179/",
-   "id": "fb4eefa6342e",
+   "id": "da601db20c3a",
    "first_seen": "2026-07-20"
   },
   {
