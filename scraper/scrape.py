@@ -665,6 +665,8 @@ def parse_mcgrorys(soup, source):
                 awaiting_title = True
         else:
             if awaiting_title and not title:
+                if "read more" in a.lower():
+                    continue  # hidden a11y label on the image link, not the title
                 title = a
                 awaiting_title = False
                 continue
@@ -756,10 +758,11 @@ def load_previous():
         try:
             data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
             data.setdefault("source_last_run", {})
+            data.setdefault("consecutive_failures", {})
             return data
         except Exception:
             pass
-    return {"events": [], "source_last_run": {}}
+    return {"events": [], "source_last_run": {}, "consecutive_failures": {}}
 
 
 def notify(new_events):
@@ -794,6 +797,8 @@ def main():
 
     all_events, failed = [], []
     source_last_run = dict(previous.get("source_last_run", {}))
+    consecutive_failures = dict(previous.get("consecutive_failures", {}))
+    FAILURE_THRESHOLD = 5
     for source in SOURCES:
         interval = source.get("min_interval_days")
         if interval:
@@ -836,9 +841,14 @@ def main():
             all_events.extend(found)
             if interval:
                 source_last_run[source["name"]] = NOW.strftime("%Y-%m-%dT%H:%MZ")
+            consecutive_failures[source["name"]] = 0
         except Exception as exc:
-            failed.append(source["venue"])
-            print(f"WARNING {source['venue']} failed: {exc}", file=sys.stderr)
+            count = consecutive_failures.get(source["name"], 0) + 1
+            consecutive_failures[source["name"]] = count
+            print(f"WARNING {source['venue']} failed ({count} in a row): {exc}",
+                  file=sys.stderr)
+            if count >= FAILURE_THRESHOLD:
+                failed.append(source["venue"])
             # keep this venue's previously-seen events so a one-day outage
             # doesn't wipe them (and re-announce them tomorrow)
             all_events.extend(
@@ -866,6 +876,7 @@ def main():
         "generated_at": NOW.strftime("%Y-%m-%dT%H:%MZ"),
         "failed_sources": failed,
         "source_last_run": source_last_run,
+        "consecutive_failures": consecutive_failures,
         "events": final,
     }, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"Wrote {len(final)} upcoming events to {DATA_FILE}")
