@@ -1,7 +1,9 @@
 {
- "generated_at": "2026-07-20T21:12Z",
+ "generated_at": "2026-07-20T21:30Z",
  "failed_sources": [
-  "St Columb's Hall"
+  "An Grianán Theatre",
+  "Regional Cultural Centre",
+  "Balor Arts Centre"
  ],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z"
@@ -1314,8 +1316,7 @@
    "county": "Derry",
    "title": "Ralph McTell",
    "date": "2026-10-24",
-   "time": "8pm",
-   "url": "https://www.saintcolumbshall.com/whats-on/ralph-mctell/",
+   "url": "https://www.saintcolumbshall.com/whatson/ralph-mctell/",
    "id": "0acdda9bbba9",
    "first_seen": "2026-07-20"
   },
@@ -1756,6 +1757,17 @@
    "category": "Masterclass/Workshop",
    "id": "ada5af46cff8",
    "first_seen": "2026-07-18"
+  },
+  {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Maccana – The Unseen Growth of Winter",
+   "date": "2027-01-30",
+   "url": "https://www.saintcolumbshall.com/whatson/maccana-the-unseen-growth-of-winter/",
+   "id": "dc1bc65c2fdd",
+   "first_seen": "2026-07-20"
   },
   {
    "source": "an_grianan",
