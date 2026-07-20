@@ -118,15 +118,13 @@
       <input type="date" id="dateTo" aria-label="To date">
     </div>
     <p class="date-error" id="dateError" hidden></p>
-    <div class="extra-filters">
-      <button class="chip" id="singleDateToggle" aria-pressed="false">Single date</button>
-    </div>
+    <div class="extra-filters" id="shapeFilters" role="group" aria-label="Filter by recurrence"></div>
     <div class="filters">
       <select id="countyFilter" class="filter-select" aria-label="Filter by county"></select>
       <select id="venueFilter" class="filter-select" aria-label="Filter by venue"></select>
       <select id="genreFilter" class="filter-select" aria-label="Filter by genre"></select>
     </div>
-    <input id="search" type="search" placeholder="Search events…" aria-label="Search events">
+    <input id="search" type="search" placeholder="Search by event, venue or genre…" aria-label="Search by event, venue or genre">
   </div>
 
   <main id="list"></main>
@@ -142,7 +140,7 @@ const MONTHS=["January","February","March","April","May","June","July",
               "August","September","October","November","December"];
 const DOWS=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 let EVENTS=[], countySel="All", venueSel="All", genreSel="All", query="";
-let dateSel=null, customFrom="", customTo="", singleDateOnly=false;
+let dateSel=null, customFrom="", customTo="", shapeSel=null;
 
 function addDays(iso,n){
   const [y,m,d]=iso.split("-").map(Number);
@@ -189,9 +187,10 @@ function fmtUpdated(iso){
   }catch(e){ return iso; }
 }
 
-function shortVenue(v){
-  return v.replace(" Theatre","").replace(" Arts Centre","").replace(" Hotel","")
-          .replace("Regional Cultural Centre","RCC").replace("St Columb's Hall","St Columb's");
+function matchesShape(ev){
+  if(shapeSel==="single") return !ev.end_date;
+  if(shapeSel==="recurring") return !!ev.end_date;
+  return true;
 }
 
 function matchesGenre(ev){
@@ -234,8 +233,7 @@ function render(gen){
   const shown=rangeErr ? [] : EVENTS.filter(e=>
     (countySel==="All"||e.county===countySel) &&
     (venueSel==="All"||e.venue===venueSel) &&
-    matchesGenre(e) && matchesDate(e) &&
-    (!singleDateOnly || !e.end_date) &&
+    matchesGenre(e) && matchesDate(e) && matchesShape(e) &&
     (!q || (e.title+" "+e.venue+" "+(e.category||"")+" "+e.town)
             .toLowerCase().includes(q)));
   if(!shown.length){
@@ -292,8 +290,7 @@ function buildCountyOptions(){
 
 function buildVenueOptions(){
   const scoped=countySel==="All"?EVENTS:EVENTS.filter(e=>e.county===countySel);
-  const venues=[...new Set(scoped.map(e=>e.venue))].sort()
-    .map(v=>({value:v,label:shortVenue(v)}));
+  const venues=[...new Set(scoped.map(e=>e.venue))].sort();
   venueSel=setOptions(document.getElementById("venueFilter"), venues,
                       "Venues", venueSel);
 }
@@ -330,6 +327,22 @@ function buildDateFilters(){
   });
 }
 
+function buildShapeFilters(){
+  const box=document.getElementById("shapeFilters");
+  const opts=[["single","Single date"],["recurring","Recurring"]];
+  opts.forEach(([val,label])=>{
+    const b=el("button","chip",label);
+    b.setAttribute("aria-pressed",val===shapeSel);
+    b.onclick=()=>{
+      shapeSel = (shapeSel===val) ? null : val;
+      box.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed","false"));
+      if(shapeSel) b.setAttribute("aria-pressed","true");
+      render(GEN);
+    };
+    box.append(b);
+  });
+}
+
 let GEN="";
 fetch("events.json?t="+Date.now())
  .then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
@@ -342,7 +355,7 @@ fetch("events.json?t="+Date.now())
        u.after(el("p","warn","⚠ Error loading "+name));
      });
    }
-   buildDateFilters();
+   buildDateFilters(); buildShapeFilters();
    buildCountyOptions(); buildVenueOptions(); buildGenreOptions(); render(GEN);
    document.getElementById("search").addEventListener("input",e=>{
      query=e.target.value; render(GEN)});
@@ -350,11 +363,6 @@ fetch("events.json?t="+Date.now())
      customFrom=e.target.value; render(GEN)});
    document.getElementById("dateTo").addEventListener("change",e=>{
      customTo=e.target.value; render(GEN)});
-   document.getElementById("singleDateToggle").addEventListener("click",function(){
-     singleDateOnly=!singleDateOnly;
-     this.setAttribute("aria-pressed", singleDateOnly);
-     render(GEN);
-   });
    document.getElementById("countyFilter").addEventListener("change",e=>{
      countySel=e.target.value; venueSel="All";
      buildVenueOptions(); render(GEN)});
