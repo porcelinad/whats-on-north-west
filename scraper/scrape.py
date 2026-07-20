@@ -651,7 +651,10 @@ def parse_mcgrorys(soup, source):
     """mcgrorys.ie/entertainment - each card is an image link to the
     event's own page, immediately followed by its title as a heading
     (not itself a link), a description paragraph, a duplicate 'Read
-    More' link, a booking link, then an 'Event Date DD Mon YY' line."""
+    More' link, a booking link, then an 'Event Date DD Mon YY' line.
+    The page never states a genre, but McGrory's is overwhelmingly a
+    music venue, so every event is tagged category='Music' - if that
+    ever stops being true, this is the line to revisit."""
     event_link_re = re.compile(r"/entertainment/\d+-\d+/?$")
     date_re = re.compile(r"(\d{1,2})\s+([A-Za-z]{3})\s+(\d{2})\b")
     events = []
@@ -679,7 +682,8 @@ def parse_mcgrorys(soup, source):
                     except ValueError:
                         d = None
                     if d:
-                        events.append(make_event(source, title, d, url=url))
+                        events.append(make_event(
+                            source, title, d, url=url, category="Music"))
                 title = url = None
     return events
 
