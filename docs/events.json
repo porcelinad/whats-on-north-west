@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-07-20T21:03Z",
+ "generated_at": "2026-07-20T21:12Z",
  "failed_sources": [
-  "Abbey Arts Centre"
+  "St Columb's Hall"
  ],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z"
@@ -812,18 +812,6 @@
    "url": "https://www.mcgrorys.ie/entertainment/78-156/",
    "id": "ab4df7dc0797",
    "first_seen": "2026-07-20"
-  },
-  {
-   "source": "abbey",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Mikaela – A Night of Adele",
-   "date": "2026-08-29",
-   "url": "https://abbeycentre.ie/eventer/mikaela-a-night-of-adele",
-   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173674806",
-   "id": "76de8e82b983",
-   "first_seen": "2026-07-14"
   },
   {
    "source": "an_grianan",
