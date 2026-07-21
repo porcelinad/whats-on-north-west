@@ -407,6 +407,55 @@ def parse_abbey(soup, source):
 
 MANUAL_CSV_PATH = ROOT / "scraper" / "manual-imports" / "eventbrite.csv"
 
+# Eventbrite's destination search pads results with "nearby" events once
+# genuine local listings run thin, which is how places like Warrenpoint
+# (Co. Down) or Belfast (Co. Antrim) end up in a "Donegal" search. Rather
+# than trust Eventbrite's own geography, every row's town is checked
+# against this list and assigned its real county; anything not
+# recognised is dropped entirely rather than mislabelled. This list is
+# inherently incomplete - if a genuine local event ever gets wrongly
+# excluded because its town isn't here yet, add it.
+TOWN_TO_COUNTY = {
+    # Donegal
+    "letterkenny": "Donegal", "ballybofey": "Donegal", "stranorlar": "Donegal",
+    "ballyshannon": "Donegal", "bundoran": "Donegal", "donegal": "Donegal",
+    "donegal town": "Donegal", "killybegs": "Donegal", "glenties": "Donegal",
+    "ardara": "Donegal", "dungloe": "Donegal", "gaoth dobhair": "Donegal",
+    "gweedore": "Donegal", "falcarragh": "Donegal", "dunfanaghy": "Donegal",
+    "milford": "Donegal", "ramelton": "Donegal", "rathmullan": "Donegal",
+    "raphoe": "Donegal", "convoy": "Donegal", "carndonagh": "Donegal",
+    "buncrana": "Donegal", "moville": "Donegal", "culdaff": "Donegal",
+    "malin": "Donegal", "clonmany": "Donegal", "ballyliffin": "Donegal",
+    "kilcar": "Donegal", "carrick": "Donegal", "mountcharles": "Donegal",
+    "pettigo": "Donegal", "lettermacaward": "Donegal", "churchill": "Donegal",
+    "gortahork": "Donegal", "derrybeg": "Donegal", "dunlewey": "Donegal",
+    "linsfort": "Donegal", "burtonport": "Donegal", "creeslough": "Donegal",
+    "kilmacrenan": "Donegal", "manorcunningham": "Donegal",
+    "newtowncunningham": "Donegal", "lifford": "Donegal", "muff": "Donegal",
+    "greencastle": "Donegal",
+    # Derry
+    "derry": "Derry", "londonderry": "Derry", "limavady": "Derry",
+    "coleraine": "Derry", "magherafelt": "Derry", "maghera": "Derry",
+    "garvagh": "Derry", "eglinton": "Derry",
+    # Tyrone
+    "omagh": "Tyrone", "strabane": "Tyrone", "dungannon": "Tyrone",
+    "cookstown": "Tyrone", "castlederg": "Tyrone", "fintona": "Tyrone",
+    "sion mills": "Tyrone",
+    # Leitrim
+    "carrick-on-shannon": "Leitrim", "carrick on shannon": "Leitrim",
+    "manorhamilton": "Leitrim", "ballinamore": "Leitrim",
+    "drumshanbo": "Leitrim", "mohill": "Leitrim", "kinlough": "Leitrim",
+    "dromahair": "Leitrim",
+    # Sligo
+    "sligo": "Sligo", "tubbercurry": "Sligo", "ballymote": "Sligo",
+    "enniscrone": "Sligo", "strandhill": "Sligo", "grange": "Sligo",
+    "rosses point": "Sligo", "collooney": "Sligo",
+    # Fermanagh
+    "garrison": "Fermanagh", "enniskillen": "Fermanagh", "belleek": "Fermanagh",
+    "kesh": "Fermanagh", "lisnaskea": "Fermanagh", "irvinestown": "Fermanagh",
+    "belcoo": "Fermanagh", "derrygonnelly": "Fermanagh",
+}
+
 
 WEEKDAY_INDEX = {name: i for i, name in enumerate(
     ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"])}
@@ -526,12 +575,15 @@ def parse_eventbrite_csv(source, prev_state=None):
                 town, venue = (p.strip() for p in venue_text.split("·", 1))
             else:
                 venue = venue_text or None
+            county = TOWN_TO_COUNTY.get((town or "").strip().lower())
+            if not county:
+                continue  # not a recognized Donegal/Derry/Sligo/Leitrim/Tyrone town
             slug = slugify(title)
             url = (f"https://www.eventbrite.ie/d/ireland--donegal/{slug}/"
                    if slug else source["url"])
             events.append(make_event(
                 source, title, start_date, time=time_str,
-                venue=venue, town=town, url=url))
+                venue=venue, town=town, county=county, url=url))
     return events
 
 
@@ -750,7 +802,7 @@ SOURCES = [
 ]
 
 
-ALLOWED_COUNTIES = {"Donegal", "Derry", "Sligo", "Leitrim", "Tyrone"}
+ALLOWED_COUNTIES = {"Donegal", "Derry", "Sligo", "Leitrim", "Tyrone", "Fermanagh"}
 COUNTY_ALIASES = {"Londonderry": "Derry"}
 
 CATEGORY_ALIASES = {"family": "Kids/Family"}
