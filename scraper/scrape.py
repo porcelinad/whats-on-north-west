@@ -929,7 +929,7 @@ def parse_nervecentre(soup, source):
         start, end, time_text = parse_nerve_date_line(date_line)
         if not start:
             return
-        venue = venue_text.replace("Derry~Londonderry", "Derry")
+        venue = venue_text.split(",")[0].strip()
         events.append(make_event(
             source, title, start, end_date=end.isoformat() if end else None,
             time=time_text, url=url, category=genre, venue=venue,
