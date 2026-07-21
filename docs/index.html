@@ -98,9 +98,11 @@
   .tags{margin-top:6px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
   .tag{font-size:11.5px;letter-spacing:.04em;color:var(--heather);
        border:1px solid currentColor;border-radius:4px;padding:1px 6px}
-  .new{font-family:var(--display);font-weight:700;font-size:12px;
+  .new,.sold-out{font-family:var(--display);font-weight:700;font-size:12px;
        letter-spacing:.1em;background:var(--ember);color:#fff;
        border-radius:4px;padding:2px 7px;text-transform:uppercase}
+  .event.sold{opacity:.55}
+  .event.sold .title{text-decoration:line-through;text-decoration-color:var(--ink-soft)}
 
   .empty,.error{padding:40px 10px;text-align:center;color:var(--ink-soft)}
   .warn{display:block;margin-top:10px;padding:8px 12px;font-size:14px;
@@ -264,6 +266,7 @@ function render(gen){
     }
     const a=el("a","event"); a.href=ev.url||ev.booking_url||"#";
     a.target="_blank"; a.rel="noopener";
+    if(ev.sold_out) a.classList.add("sold");
 
     const stub=el("div","stub");
     stub.append(el("span","dow",f.dow), el("span","day",f.day),
@@ -279,6 +282,7 @@ function render(gen){
     if(isNew(ev,gen)) tags.append(el("span","new","New"));
     if(ev.category) ev.category.split(", ").forEach(c=>
       tags.append(el("span","tag",c)));
+    if(ev.sold_out) tags.append(el("span","sold-out","Sold Out"));
     if(tags.childNodes.length) info.append(tags);
     a.append(stub,info); list.append(a);
   }
