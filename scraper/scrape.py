@@ -1006,20 +1006,47 @@ CATEGORY_ALIASES = {
     "talks/spoken word": "Spoken Word",
     "masterclass/workshop": "Workshop",
     "workshops & programmes": "Workshop",
+    "visual arts & film": "Visual Arts",
 }
+CATEGORY_DROP = {"spectacle"}  # "Street Arts & Circus" alone covers this well
 
 AGE_RANGE_RE = re.compile(r"\b(\d{1,2})\s*-\s*(\d{1,2})\s*(?:yrs?|years?)\b", re.I)
 KIDS_KEYWORDS_RE = re.compile(r"\b(kids?|children'?s?|junior)\b", re.I)
 
 
+GENERIC_SOLD_OUT_RE = re.compile(r"\(?\bsold\s*out\b\)?", re.I)
+
+
+def apply_generic_sold_out(ev):
+    """Catches 'SOLD OUT' (any capitalisation) appearing anywhere in a
+    title from ANY source, stripping it out and setting sold_out - the
+    same treatment already built in for EAF and Nerve Centre, just
+    generalised as a safety net for every other source too. Skips
+    events a source-specific check already handled, so nothing gets
+    double-processed."""
+    if ev.get("sold_out"):
+        return
+    title = ev.get("title", "")
+    if not re.search(r"\bsold\s*out\b", title, re.I):
+        return
+    cleaned = GENERIC_SOLD_OUT_RE.sub("", title)
+    cleaned = re.sub(r"^[\s\-–—:|/]+|[\s\-–—:|/]+$", "", cleaned)
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    ev["title"] = cleaned or title
+    ev["sold_out"] = True
+
+
 def normalize_category(cat):
-    """Renames the 'Family' genre tag to 'Kids/Family' wherever it comes
-    from (currently just An Grianán's own genre labelling)."""
+    """Renames some genre tags to consolidate near-duplicates (e.g.
+    'Cinema' -> 'Film'), and drops a few tokens entirely (CATEGORY_DROP)
+    rather than renaming them, where an existing tag already covers the
+    same ground well enough on its own."""
     if not cat:
         return cat
     parts = [p.strip() for p in cat.split(",")]
     parts = [CATEGORY_ALIASES.get(p.lower(), p) for p in parts]
-    return ", ".join(parts)
+    parts = [p for p in parts if p.lower() not in CATEGORY_DROP]
+    return ", ".join(parts) if parts else None
 
 
 def looks_like_kids_family(title):
@@ -1255,6 +1282,7 @@ def main():
             continue  # outside Donegal/Derry/Sligo/Leitrim/Tyrone - skip
         ev["category"] = normalize_category(ev.get("category"))
         apply_kids_family_tag(ev)
+        apply_generic_sold_out(ev)
         last_day = date.fromisoformat(ev.get("end_date", ev["date"]))
         if last_day < TODAY:
             continue
