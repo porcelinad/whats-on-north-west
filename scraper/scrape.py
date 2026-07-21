@@ -754,6 +754,102 @@ ALLOWED_COUNTIES = {"Donegal", "Derry", "Sligo", "Leitrim", "Tyrone"}
 COUNTY_ALIASES = {"Londonderry": "Derry"}
 
 
+SOURCE_PRIORITY = {
+    "an_grianan": 0, "rcc": 1, "balor": 2, "abbey": 3,
+    "mcgrorys": 4, "st_columbs": 5,
+    "eaf": 10, "eventbrite_donegal": 11,
+}
+
+DEDUP_STOPWORDS = {"the", "a", "an", "with", "and", "at", "in", "on", "of",
+                    "by", "to", "for"}
+DEDUP_NOISE_PREFIXES = [
+    re.compile(r"^rcc kids:\s*", re.I),
+    re.compile(r"^eaf:\s*", re.I),
+    re.compile(r"^iadf 2026:\s*", re.I),
+]
+DEDUP_ALIASES = [
+    (re.compile(r"\biadf\b", re.I), "irish aerial dance fest"),
+]
+DEDUP_THRESHOLD = 0.7
+
+
+def _dedup_words(title):
+    t = title.lower()
+    for pat in DEDUP_NOISE_PREFIXES:
+        t = pat.sub("", t)
+    for pat, repl in DEDUP_ALIASES:
+        t = pat.sub(repl, t)
+    t = re.sub(r"[^a-z0-9 ]+", " ", t)
+    return {w for w in t.split() if w and w not in DEDUP_STOPWORDS}
+
+
+def _title_containment(a, b):
+    """What fraction of the SHORTER title's (stopword-stripped) words
+    appear in the longer one - robust to one source truncating or
+    padding a title, unlike plain string-similarity ratios."""
+    wa, wb = _dedup_words(a), _dedup_words(b)
+    if not wa or not wb:
+        return 0.0
+    smaller, larger = (wa, wb) if len(wa) <= len(wb) else (wb, wa)
+    return len(smaller & larger) / len(smaller)
+
+
+def merge_cross_source_duplicates(events):
+    """Events from different sources describing the same real-world
+    happening (e.g. a show at An Grianán that's also promoted by the
+    Earagail Arts Festival) are merged into one entry. Only ever
+    compares events sharing the exact same venue AND date - deliberately
+    conservative, so two genuinely different events at the same venue on
+    the same day are never wrongly merged, at the cost of occasionally
+    missing a real duplicate (e.g. if two sources disagree on an
+    exhibition's exact opening date by a few days). Whichever source is
+    closer to the venue itself wins the merged details (SOURCE_PRIORITY);
+    other sources only backfill fields the winner is missing."""
+    groups = {}
+    for ev in events:
+        groups.setdefault((ev["venue"], ev["date"]), []).append(ev)
+
+    result = []
+    for group in groups.values():
+        if len(group) == 1:
+            result.append(group[0])
+            continue
+
+        parent = list(range(len(group)))
+
+        def find(i):
+            while parent[i] != i:
+                parent[i] = parent[parent[i]]
+                i = parent[i]
+            return i
+
+        for i in range(len(group)):
+            for j in range(i + 1, len(group)):
+                if _title_containment(group[i]["title"],
+                                       group[j]["title"]) >= DEDUP_THRESHOLD:
+                    ri, rj = find(i), find(j)
+                    if ri != rj:
+                        parent[rj] = ri
+
+        clusters = {}
+        for i in range(len(group)):
+            clusters.setdefault(find(i), []).append(group[i])
+
+        for members in clusters.values():
+            if len(members) == 1:
+                result.append(members[0])
+                continue
+            members.sort(key=lambda e: SOURCE_PRIORITY.get(e["source"], 99))
+            winner = dict(members[0])
+            for loser in members[1:]:
+                for k, v in loser.items():
+                    if v and not winner.get(k):
+                        winner[k] = v
+            winner["merged_from"] = sorted({m["source"] for m in members})
+            result.append(winner)
+    return result
+
+
 # ---------------------------------------------------------------- pipeline
 
 def event_key(ev):
@@ -864,7 +960,7 @@ def main():
 
     # drop past events, de-duplicate, stamp first_seen
     seen, final = set(), []
-    for ev in all_events:
+    for ev in merge_cross_source_duplicates(all_events):
         ev["county"] = COUNTY_ALIASES.get(ev["county"], ev["county"])
         if ev["county"] not in ALLOWED_COUNTIES:
             continue  # outside Donegal/Derry/Sligo/Leitrim/Tyrone - skip
