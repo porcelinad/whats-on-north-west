@@ -892,16 +892,35 @@ def parse_nervecentre(soup, source):
     line (e.g. a book for sale), are skipped - not real attendable
     events for this site. The button text ('Sold Out' vs 'Book Now' /
     'Sign Up' / 'Apply Now' / 'Purchase Now') sets a sold_out flag,
-    which naturally refreshes on each day's rescrape."""
+    which naturally refreshes on each day's rescrape.
+
+    A date RANGE is marked up as two separate <time> tags with a bare
+    '-' text node between them (e.g. '10 August' / '-' / '13 August
+    2026'), not one combined string like a single date is - so the
+    leading run of date-shaped-or-separator text nodes is accumulated
+    into one date_line before parsing, rather than only keeping the
+    last one seen."""
     events = []
-    url = genre = date_line = None
-    buf = []
+    url = genre = None
+    raw_lines = []
+    skip_next = False
 
     def finalise(sold_out):
-        if not (url and buf):
+        if not (url and raw_lines):
             return
-        title = buf[0]
-        venue_text = buf[-1] if len(buf) > 1 else ""
+        i = 0
+        date_parts = []
+        while i < len(raw_lines) and (
+                _nerve_has_date_token(raw_lines[i])
+                or re.fullmatch(r"[-–—\s]+", raw_lines[i])):
+            date_parts.append(raw_lines[i])
+            i += 1
+        date_line = " ".join(date_parts) if date_parts else None
+        leftover = raw_lines[i:]
+        if not leftover:
+            return
+        title = leftover[0]
+        venue_text = leftover[-1] if len(leftover) > 1 else ""
         vt_lower = venue_text.lower()
         if "derry" not in vt_lower or "belfast" in vt_lower:
             return  # not a strictly-Derry event
@@ -925,19 +944,21 @@ def parse_nervecentre(soup, source):
             if NERVE_EVENT_LINK_RE.search(href):
                 if href == url and text:
                     finalise(sold_out=(text.strip().lower() == "sold out"))
-                    url = genre = date_line = None
-                    buf = []
+                    url = genre = None
+                    raw_lines = []
+                    skip_next = False
                 else:
                     url = href
         else:
             if not url:
                 continue
+            if skip_next:
+                skip_next = False
+                continue
             if a.lower().startswith("admission:"):
+                skip_next = True
                 continue
-            if _nerve_has_date_token(a):
-                date_line = a
-                continue
-            buf.append(a)
+            raw_lines.append(a)
     return events
 
 
