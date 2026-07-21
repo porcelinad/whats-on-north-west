@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-21T09:27Z",
+ "generated_at": "2026-07-21T20:28Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z",
@@ -13,7 +13,8 @@
   "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
-  "st_columbs": 0
+  "st_columbs": 0,
+  "nervecentre": 1
  },
  "events": [
   {
@@ -2236,6 +2237,7 @@
    "title": "Adrift by Deirdre Kinahan",
    "date": "2026-11-18",
    "url": "https://angrianan.com/event/adrift-by-deirdre-kinahan/",
+   "booking_url": "https://angrianan.ticketsolve.com/shows/873666266/events",
    "category": "Theatre",
    "id": "b14c3616b15f",
    "first_seen": "2026-07-16"
