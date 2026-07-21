@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-21T21:34Z",
+ "generated_at": "2026-07-21T22:25Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z",
@@ -10,7 +10,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -215,7 +215,7 @@
    "date": "2026-07-21",
    "time": "11am",
    "url": "https://eaf.ie/events/ta-me-just-diolta-amach-sold-out/",
-   "category": "Masterclass/Workshop",
+   "category": "Workshop",
    "id": "4b5bbd029f6b",
    "first_seen": "2026-07-18"
   },
@@ -506,7 +506,7 @@
    "date": "2026-07-25",
    "time": "2pm",
    "url": "https://eaf.ie/events/ubuntu-trekkers-big-cheeks-and-samuel-yakura/",
-   "category": "Spoken Word & Conversations",
+   "category": "Spoken Word",
    "id": "98cbff6a9a05",
    "first_seen": "2026-07-18"
   },
@@ -656,7 +656,7 @@
   },
   {
    "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "Hothouse: Homecoming",
@@ -775,14 +775,14 @@
   },
   {
    "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "David Byrne's American Utopia | Nerve Cinema",
    "date": "2026-08-05",
    "time": "7:00PM",
    "url": "https://nervecentre.org/whats-on/david-byrnes-american-utopia-nerve-cinema",
-   "category": "Cinema",
+   "category": "Film",
    "id": "fc68d1fa879d",
    "first_seen": "2026-07-21"
   },
@@ -996,14 +996,14 @@
   },
   {
    "source": "nervecentre",
-   "venue": "New Gate Arts & Culture Centre, 2-4 Kennedy St, Derry, BT48 6RF",
+   "venue": "New Gate Arts & Culture Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "Creative Media Summer School at Newgate Arts & Culture Centre",
    "date": "2026-08-10",
    "end_date": "2026-08-13",
    "url": "https://nervecentre.org/whats-on/creative-media-summer-school",
-   "category": "Workshops & Programmes",
+   "category": "Workshop",
    "sold_out": true,
    "id": "e71d1398f983",
    "first_seen": "2026-07-21"
@@ -1125,6 +1125,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Our Space | Summer Sounds",
+   "date": "2026-08-13",
+   "time": "7:00PM",
+   "url": "https://nervecentre.org/whats-on/our-space-summer-sounds",
+   "category": "Music/Comedy",
+   "id": "76817af8bd51",
+   "first_seen": "2026-07-21"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Nerve Centre",
    "town": "Londonderry",
@@ -1136,19 +1149,6 @@
    "category": null,
    "id": "fdaffc980022",
    "first_seen": "2026-07-20"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Our Space | Summer Sounds",
-   "date": "2026-08-13",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/our-space-summer-sounds",
-   "category": "Music/Comedy",
-   "id": "76817af8bd51",
-   "first_seen": "2026-07-21"
   },
   {
    "source": "eventbrite_donegal",
@@ -1230,7 +1230,7 @@
   },
   {
    "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "United We Stand Live: Andy Cole & Andy Mitten in Conversation",
@@ -1385,27 +1385,27 @@
   },
   {
    "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "Lesbian Lines | Nerve Cinema",
    "date": "2026-08-27",
    "time": "6:30PM",
    "url": "https://nervecentre.org/whats-on/lesbian-lines-nerve-cinema",
-   "category": "Cinema",
+   "category": "Film",
    "id": "09c58d7fac08",
    "first_seen": "2026-07-21"
   },
   {
    "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "Queers for Years | Nerve Cinema",
    "date": "2026-08-28",
    "time": "7:00PM",
    "url": "https://nervecentre.org/whats-on/queers-for-years-nerve-cinema",
-   "category": "Cinema",
+   "category": "Film",
    "id": "982024f1fe24",
    "first_seen": "2026-07-21"
   },
@@ -1490,7 +1490,7 @@
   },
   {
    "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "Chris Boldt",
@@ -1830,14 +1830,14 @@
   },
   {
    "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "Creative Media Courses",
    "date": "2026-10-01",
    "end_date": "2027-06-30",
    "url": "https://nervecentre.org/whats-on/creative-media-courses-apply-now",
-   "category": "Workshops & Programmes",
+   "category": "Workshop",
    "id": "d6d3b2a8ca5f",
    "first_seen": "2026-07-21"
   },
@@ -1850,13 +1850,13 @@
    "date": "2026-10-02",
    "url": "https://angrianan.com/event/burke-and-hare-andrew-johnston/",
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873663401/events/128648339/seats?zone=Default",
-   "category": "Talks/Spoken Word",
+   "category": "Spoken Word",
    "id": "1e56f9203825",
    "first_seen": "2026-07-14"
   },
   {
    "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "Pilgrims",
@@ -1889,7 +1889,7 @@
    "date": "2026-10-08",
    "url": "https://angrianan.com/event/dr-david-coleman-2026/",
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873663825/events/128649368/seats?zone=Default",
-   "category": "Talks/Spoken Word, Kids/Family",
+   "category": "Spoken Word, Kids/Family",
    "id": "843510d9e9e0",
    "first_seen": "2026-07-14"
   },
@@ -1959,7 +1959,7 @@
   },
   {
    "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "Ro Boyle: Showed Up",
@@ -2270,7 +2270,7 @@
   },
   {
    "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "Moving Pictures — Rush Tribute 2026",
@@ -2283,7 +2283,7 @@
   },
   {
    "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "Scummy Mummies: Hot Mess",
@@ -2309,7 +2309,7 @@
   },
   {
    "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "The Riptide Movement",
@@ -2360,7 +2360,7 @@
   },
   {
    "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "From The Jam",
@@ -2758,7 +2758,7 @@
    "date": "2027-01-10",
    "time": "Various",
    "url": "https://eaf.ie/events/a-winter-home-with-the-henry-girls-january-2027/",
-   "category": "Masterclass/Workshop",
+   "category": "Workshop",
    "id": "ada5af46cff8",
    "first_seen": "2026-07-18"
   },
@@ -3036,7 +3036,7 @@
   },
   {
    "source": "nervecentre",
-   "venue": "Nerve Centre, 7-8 Magazine Street, Derry",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
    "title": "The Mumford & Sons Story: Awake My Soul",
