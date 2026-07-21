@@ -797,6 +797,133 @@ def parse_st_columbs(soup, source):
     return events
 
 
+NERVE_EVENT_LINK_RE = re.compile(r"/whats-on/[a-z0-9-]+/?$", re.I)
+NERVE_DATE_TOKEN_RE = re.compile(r"(\d{1,2})\s+([A-Za-z]+)(?:\s+(\d{4}))?")
+NERVE_TIME_RE = re.compile(r"\|\s*(\d{1,2}:\d{2}\s*[AP]M)", re.I)
+
+
+def parse_nerve_date_line(text):
+    """Parses date lines like '31 July 2026 | 5:00PM', '20 July - 24
+    July 2026' (first date missing a year, borrowed from the second),
+    or '1 October - 30 June 2027' - a course spanning into the next
+    year, where naively borrowing the end date's year would make the
+    start date come AFTER the end date; in that case the start year is
+    stepped back by one to keep the range chronological."""
+    time_text = None
+    m_time = NERVE_TIME_RE.search(text)
+    if m_time:
+        time_text = m_time.group(1)
+        text = text[:m_time.start()]
+
+    parsed = []
+    for m in NERVE_DATE_TOKEN_RE.finditer(text):
+        mon = MONTHS.get(m.group(2).lower()[:3])
+        if not mon:
+            continue
+        year = int(m.group(3)) if m.group(3) else None
+        parsed.append([int(m.group(1)), mon, year])
+    if not parsed:
+        return None, None, None
+
+    for i in range(len(parsed) - 1):
+        if parsed[i][2] is None:
+            later_years = [p[2] for p in parsed[i + 1:] if p[2] is not None]
+            if later_years:
+                parsed[i][2] = later_years[0]
+
+    dates = []
+    for day, mon, year in parsed:
+        if year is None:
+            d = infer_year(mon, day)
+        else:
+            try:
+                d = date(year, mon, day)
+            except ValueError:
+                d = None
+        if d:
+            dates.append(d)
+    if not dates:
+        return None, None, time_text
+
+    if len(dates) >= 2 and dates[0] > dates[-1]:
+        try:
+            fixed = date(dates[0].year - 1, dates[0].month, dates[0].day)
+            if fixed <= dates[-1]:
+                dates[0] = fixed
+        except ValueError:
+            pass
+
+    start = dates[0]
+    end = dates[-1] if len(dates) > 1 and dates[-1] != dates[0] else None
+    return start, end, time_text
+
+
+def _nerve_has_date_token(text):
+    """NERVE_DATE_TOKEN_RE alone is too loose - '7-8 Magazine Street'
+    matches 'digit + word' just like a real date would. Only treat a
+    line as a date line if at least one match's word is an actual
+    month name."""
+    return any(MONTHS.get(m.group(2).lower()[:3])
+               for m in NERVE_DATE_TOKEN_RE.finditer(text))
+
+
+def parse_nervecentre(soup, source):
+    """nervecentre.org/whats-on - Nerve Centre runs events across Derry,
+    Belfast, Bangor and even Wales, so only events whose venue text
+    mentions Derry (and NOT Belfast, ruling out the one dual-city
+    workshop) are kept. Listings with no date at all, or with no venue
+    line (e.g. a book for sale), are skipped - not real attendable
+    events for this site. The button text ('Sold Out' vs 'Book Now' /
+    'Sign Up' / 'Apply Now' / 'Purchase Now') sets a sold_out flag,
+    which naturally refreshes on each day's rescrape."""
+    events = []
+    url = genre = date_line = None
+    buf = []
+
+    def finalise(sold_out):
+        if not (url and buf):
+            return
+        title = buf[0]
+        venue_text = buf[-1] if len(buf) > 1 else ""
+        vt_lower = venue_text.lower()
+        if "derry" not in vt_lower or "belfast" in vt_lower:
+            return  # not a strictly-Derry event
+        if not date_line:
+            return  # no date at all - not schedulable
+        start, end, time_text = parse_nerve_date_line(date_line)
+        if not start:
+            return
+        venue = venue_text.replace("Derry~Londonderry", "Derry")
+        events.append(make_event(
+            source, title, start, end_date=end.isoformat() if end else None,
+            time=time_text, url=url, category=genre, venue=venue,
+            town="Derry", sold_out=sold_out))
+
+    for kind, a, b in walk(soup):
+        if kind == "link":
+            href, text = a, b
+            if "topic=" in href and text:
+                genre = text
+                continue
+            if NERVE_EVENT_LINK_RE.search(href):
+                if href == url and text:
+                    finalise(sold_out=(text.strip().lower() == "sold out"))
+                    url = genre = date_line = None
+                    buf = []
+                else:
+                    url = href
+        else:
+            if not url:
+                continue
+            if a.lower().startswith("admission:"):
+                continue
+            if _nerve_has_date_token(a):
+                date_line = a
+                continue
+            buf.append(a)
+    return events
+
+
 # ---------------------------------------------------------------- sources
 
 SOURCES = [
@@ -825,6 +952,9 @@ SOURCES = [
     {"name": "st_columbs", "venue": "St Columb's Hall", "town": "Derry",
      "county": "Derry", "url": "https://www.saintcolumbshall.com/whatson/",
      "parser": parse_st_columbs},
+    {"name": "nervecentre", "venue": "Nerve Centre", "town": "Derry",
+     "county": "Derry", "url": "https://nervecentre.org/whats-on",
+     "parser": parse_nervecentre},
 ]
 
 
