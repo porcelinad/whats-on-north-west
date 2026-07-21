@@ -792,8 +792,11 @@ def parse_st_columbs(soup, source):
                 continue
             end = item.get("endDate")
             end_date = end[:10] if end and end[:10] != start[:10] else None
+            availability = (item.get("offers") or {}).get("availability", "")
+            sold_out = "soldout" in availability.lower().replace(" ", "")
             events.append(make_event(
-                source, name, start_date, end_date=end_date, url=url))
+                source, name, start_date, end_date=end_date, url=url,
+                sold_out=sold_out))
     return events
 
 
