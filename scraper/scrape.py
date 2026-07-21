@@ -1,6 +1,6 @@
 """
 North West What's On - event scraper
-Scrapes cultural venues in Donegal / Sligo / Leitrim / Derry / Fermanagh / Tyrone into docs/events.json
+Scrapes cultural venues in Donegal / Sligo / Derry into docs/events.json
 and sends an ntfy push notification when new events appear.
 
 Each venue has its own small parser. They all work the same way:
@@ -224,28 +224,54 @@ def parse_rcc(soup, source):
     return events
 
 
+BALOR_DATE_RE = re.compile(r"(\d{1,2})/(\d{1,2})/(\d{4})")
+BALOR_TIME_RE = re.compile(r"\d{1,2}:\d{2}\s*[ap]m", re.I)
+
+
 def parse_balor(soup, source):
-    """balorartscentre.com homepage - '10 Jul 26' dates AFTER title links."""
-    date_re = re.compile(r"\b(\d{1,2})\s+([A-Za-z]{3})\s+(\d{2})\b")
-    events, current = [], None
+    """balorartscentre.com/?page_id=87 - redesigned as of ~July 2026.
+    Each card: title (h3 link), a DD/MM/YYYY date (optionally a
+    ' - DD/MM/YYYY' range), a separate time line, a genre category link,
+    a description, then a duplicate 'More Info' link (same href as the
+    title) which triggers finalising the event."""
+    events = []
+    title = url = genre = None
+    dates_found, time_text = [], None
+
+    def finalise():
+        if title and url and dates_found:
+            start = dates_found[0]
+            end = dates_found[1] if len(dates_found) > 1 else None
+            events.append(make_event(
+                source, title, start,
+                end_date=end.isoformat() if end and end != start else None,
+                time=time_text, url=url, category=genre))
+
     for kind, a, b in walk(soup):
-        if kind == "text":
-            m = date_re.search(a)
-            if m and current:
-                mon = MONTHS.get(m.group(2).lower())
-                if mon:
-                    try:
-                        d = date(2000 + int(m.group(3)), mon, int(m.group(1)))
-                    except ValueError:
-                        d = None
-                    if d:
-                        events.append(make_event(
-                            source, current["title"], d, url=current["url"]))
-                current = None
-        else:
+        if kind == "link":
             href, text = a, b
-            if "?event=" in href and text.lower() not in SKIP_LINK_TEXT:
-                current = {"title": text, "url": href}
+            if "event-categories=" in href and text:
+                genre = text
+                continue
+            if "?event=" in href and text:
+                if text.lower() == "more info":
+                    finalise()
+                    title = url = genre = None
+                    dates_found, time_text = [], None
+                elif text.lower() not in SKIP_LINK_TEXT:
+                    title, url = text, href
+        else:
+            if title:
+                for m in BALOR_DATE_RE.finditer(a):
+                    try:
+                        dates_found.append(
+                            date(int(m.group(3)), int(m.group(2)), int(m.group(1))))
+                    except ValueError:
+                        pass
+                if not dates_found:
+                    continue
+                if not time_text and BALOR_TIME_RE.search(a):
+                    time_text = a
     return events
 
 
@@ -781,7 +807,7 @@ SOURCES = [
      "county": "Donegal", "url": "https://regionalculturalcentre.com/whats-on/",
      "parser": parse_rcc},
     {"name": "balor", "venue": "Balor Arts Centre", "town": "Ballybofey",
-     "county": "Donegal", "url": "https://www.balorartscentre.com/",
+     "county": "Donegal", "url": "https://www.balorartscentre.com/?page_id=87",
      "parser": parse_balor},
     {"name": "abbey", "venue": "Abbey Arts Centre", "town": "Ballyshannon",
      "county": "Donegal", "url": "https://abbeycentre.ie/",
