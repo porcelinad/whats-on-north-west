@@ -1,6 +1,6 @@
 """
 North West What's On - event scraper
-Scrapes cultural venues in Donegal / Sligo / Derry into docs/events.json
+Scrapes cultural venues in Donegal / Sligo / Leitrim / Derry / Fermanagh / Tyrone into docs/events.json
 and sends an ntfy push notification when new events appear.
 
 Each venue has its own small parser. They all work the same way:
