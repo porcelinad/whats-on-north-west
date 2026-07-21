@@ -753,6 +753,42 @@ SOURCES = [
 ALLOWED_COUNTIES = {"Donegal", "Derry", "Sligo", "Leitrim", "Tyrone"}
 COUNTY_ALIASES = {"Londonderry": "Derry"}
 
+CATEGORY_ALIASES = {"family": "Kids/Family"}
+
+AGE_RANGE_RE = re.compile(r"\b(\d{1,2})\s*-\s*(\d{1,2})\s*(?:yrs?|years?)\b", re.I)
+KIDS_KEYWORDS_RE = re.compile(r"\b(kids?|children'?s?|junior)\b", re.I)
+
+
+def normalize_category(cat):
+    """Renames the 'Family' genre tag to 'Kids/Family' wherever it comes
+    from (currently just An Grianán's own genre labelling)."""
+    if not cat:
+        return cat
+    parts = [p.strip() for p in cat.split(",")]
+    parts = [CATEGORY_ALIASES.get(p.lower(), p) for p in parts]
+    return ", ".join(parts)
+
+
+def looks_like_kids_family(title):
+    """Catches events with no genre data at all (mainly Eventbrite, which
+    has no category field in our pipeline) that are clearly for children
+    based on the title: 'kids'/'children's'/'junior', or a hyphenated age
+    range whose upper bound is under 18 ('6-11yrs' but not '18+yrs' or
+    '25 Years On', neither of which is a hyphenated range at all)."""
+    if KIDS_KEYWORDS_RE.search(title):
+        return True
+    m = AGE_RANGE_RE.search(title)
+    return bool(m and int(m.group(2)) < 18)
+
+
+def apply_kids_family_tag(ev):
+    if not looks_like_kids_family(ev["title"]):
+        return
+    existing = [p.strip() for p in (ev.get("category") or "").split(",") if p.strip()]
+    if "Kids/Family" not in existing:
+        existing.append("Kids/Family")
+    ev["category"] = ", ".join(existing)
+
 
 SOURCE_PRIORITY = {
     "an_grianan": 0, "rcc": 1, "balor": 2, "abbey": 3,
@@ -964,6 +1000,8 @@ def main():
         ev["county"] = COUNTY_ALIASES.get(ev["county"], ev["county"])
         if ev["county"] not in ALLOWED_COUNTIES:
             continue  # outside Donegal/Derry/Sligo/Leitrim/Tyrone - skip
+        ev["category"] = normalize_category(ev.get("category"))
+        apply_kids_family_tag(ev)
         last_day = date.fromisoformat(ev.get("end_date", ev["date"]))
         if last_day < TODAY:
             continue
