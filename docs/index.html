@@ -35,7 +35,7 @@
   .date-filters{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;
          scrollbar-width:none;justify-content:center}
   .date-filters::-webkit-scrollbar{display:none}
-  .extra-filters{display:flex;justify-content:center;margin-bottom:8px}
+  .extra-filters{display:flex;justify-content:center;gap:8px;margin-bottom:8px}
   .chip{font-family:var(--display);font-weight:600;font-size:14px;
         text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;
         border:1.5px solid var(--ink);border-radius:999px;background:transparent;
@@ -58,7 +58,13 @@
         background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path d="M0 0L5 6L10 0Z" fill="%231E2B26"/></svg>');
         background-repeat:no-repeat;background-position:right 10px center}
   .filter-select:focus{outline:2px solid var(--ember);outline-offset:1px}
-  #search{width:100%;padding:9px 12px;font:inherit;font-size:15px;margin-bottom:10px;
+  .search-row{display:flex;gap:8px;margin-bottom:10px}
+  .clear-btn{font-family:var(--display);font-weight:700;font-size:13px;
+        text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;
+        border:1.5px solid var(--ember);border-radius:8px;background:var(--ember);
+        color:#fff;padding:0 14px;cursor:pointer;flex:0 0 auto}
+  .clear-btn:active{opacity:.85}
+  #search{padding:9px 12px;font:inherit;font-size:15px;flex:1;min-width:0;
           border:1.5px solid var(--line);border-radius:8px;background:var(--stub);
           color:var(--ink)}
   #search:focus{outline:2px solid var(--ember);outline-offset:1px}
@@ -118,7 +124,10 @@
       <select id="venueFilter" class="filter-select" aria-label="Filter by venue"></select>
       <select id="genreFilter" class="filter-select" aria-label="Filter by genre"></select>
     </div>
-    <input id="search" type="search" placeholder="Search by event, venue or genre…" aria-label="Search by event, venue or genre">
+    <div class="search-row">
+      <input id="search" type="search" placeholder="Search by event, venue or genre…" aria-label="Search by event, venue or genre">
+      <button id="clearFilters" class="clear-btn" type="button">Clear all filters</button>
+    </div>
     <div class="date-filters" id="dateFilters" role="group" aria-label="Filter by date"></div>
     <div class="custom-dates" id="customDates" hidden>
       <input type="date" id="dateFrom" aria-label="From date">
@@ -393,6 +402,19 @@ fetch("events.json?t="+Date.now())
      venueSel=e.target.value; render(GEN)});
    document.getElementById("genreFilter").addEventListener("change",e=>{
      genreSel=e.target.value; render(GEN)});
+   document.getElementById("clearFilters").addEventListener("click",()=>{
+     countySel="All"; venueSel="All"; genreSel="All"; locationSel="All";
+     query=""; dateSel=null; customFrom=""; customTo=""; shapeSel=null;
+     document.getElementById("search").value="";
+     document.getElementById("dateFrom").value="";
+     document.getElementById("dateTo").value="";
+     document.getElementById("customDates").hidden=true;
+     document.getElementById("dateError").hidden=true;
+     document.querySelectorAll("#dateFilters .chip, #shapeFilters .chip")
+       .forEach(c=>c.setAttribute("aria-pressed","false"));
+     buildCountyOptions(); buildLocationOptions(); buildVenueOptions();
+     buildGenreOptions(); render(GEN);
+   });
  })
  .catch(err=>{
    console.error("Failed to load or render events:", err);
