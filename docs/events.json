@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-20T23:49Z",
+ "generated_at": "2026-07-21T07:11Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z",
@@ -7,10 +7,10 @@
   "eventbrite_csv_since": "2026-07-20T23:49Z"
  },
  "consecutive_failures": {
-  "an_grianan": 0,
-  "rcc": 0,
-  "balor": 0,
-  "abbey": 0,
+  "an_grianan": 1,
+  "rcc": 1,
+  "balor": 1,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0
@@ -115,20 +115,6 @@
    "first_seen": "2026-07-18"
   },
   {
-   "source": "eaf",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Drop-In, Hands-On, Art Room",
-   "date": "2026-07-11",
-   "end_date": "2026-08-29",
-   "time": "11am - 5pm Tuesday – Friday, 1pm - 5pm Saturdays",
-   "url": "https://eaf.ie/events/drop-in-hands-on-art-room/",
-   "category": "Visual Arts & Film",
-   "id": "820f76a45ab9",
-   "first_seen": "2026-07-18"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -140,7 +126,11 @@
    "url": "https://regionalculturalcentre.com/events/drop-in-hands-on-art-room/",
    "category": "Community Arts",
    "id": "e284beba368b",
-   "first_seen": "2026-07-14"
+   "first_seen": "2026-07-14",
+   "merged_from": [
+    "eaf",
+    "rcc"
+   ]
   },
   {
    "source": "rcc",
@@ -157,20 +147,6 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "eaf",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The Rain Tells Us Everything",
-   "date": "2026-07-11",
-   "end_date": "2026-09-19",
-   "time": "11am - 5pm Tuesday – Friday, 1pm - 5pm Saturdays",
-   "url": "https://eaf.ie/events/the-rain-tells-us-everything/",
-   "category": "Visual Arts & Film",
-   "id": "a1544879aff4",
-   "first_seen": "2026-07-18"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -182,7 +158,11 @@
    "url": "https://regionalculturalcentre.com/exhibitions/the-rain-tells-us-everything-catherine-mcdonald-katie-nolan-and-niamh-schmidtke-gallery-2-foyer-gallery/",
    "category": "Exhibition",
    "id": "88d45de4385a",
-   "first_seen": "2026-07-14"
+   "first_seen": "2026-07-14",
+   "merged_from": [
+    "eaf",
+    "rcc"
+   ]
   },
   {
    "source": "rcc",
@@ -199,30 +179,6 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "eventbrite_donegal",
-   "venue": "Leitrim School of Art Ballinamore",
-   "town": "Ballinamore N41E8H0",
-   "county": "Donegal",
-   "title": "Summer Camp, Ballinamore, 5-12 yrs, Tue 21st-Fri 24th July 2026, 10am-2pm.",
-   "date": "2026-07-20",
-   "time": "10:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/summer-camp-ballinamore-5-12-yrs-tue-21st-fri-24th-july-2026-10am-2pm/",
-   "id": "c87f14e4c04f",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Peace Flame",
-   "town": "Londonderry",
-   "county": "Donegal",
-   "title": "Discover Derry! Interactive Treasure Hunt & City Exploration Game",
-   "date": "2026-07-20",
-   "time": "07:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/discover-derry-interactive-treasure-hunt-city-exploration-game/",
-   "id": "186c42b48657",
-   "first_seen": "2026-07-20"
-  },
-  {
    "source": "eaf",
    "venue": "Blakes",
    "town": "Letterkenny",
@@ -234,18 +190,6 @@
    "category": "Music",
    "id": "7132d758649a",
    "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "F23 KN72",
-   "town": "Castlebar",
-   "county": "Donegal",
-   "title": "Community Tennis Club Program Belcarra",
-   "date": "2026-07-21",
-   "time": "18:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/community-tennis-club-program-belcarra/",
-   "id": "170112f35507",
-   "first_seen": "2026-07-20"
   },
   {
    "source": "eaf",
@@ -274,6 +218,30 @@
    "first_seen": "2026-07-18"
   },
   {
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim School of Art Ballinamore",
+   "town": "Ballinamore N41E8H0",
+   "county": "Donegal",
+   "title": "Summer Camp, Ballinamore, 5-12 yrs, Tue 21st-Fri 24th July 2026, 10am-2pm.",
+   "date": "2026-07-21",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/summer-camp-ballinamore-5-12-yrs-tue-21st-fri-24th-july-2026-10am-2pm/",
+   "id": "f53da6dc423b",
+   "first_seen": "2026-07-21"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Peace Flame",
+   "town": "Londonderry",
+   "county": "Donegal",
+   "title": "Discover Derry! Interactive Treasure Hunt & City Exploration Game",
+   "date": "2026-07-21",
+   "time": "07:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/discover-derry-interactive-treasure-hunt-city-exploration-game/",
+   "id": "93c0c6e265f3",
+   "first_seen": "2026-07-21"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -284,33 +252,24 @@
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662789/events/128646848/seats?zone=Default",
    "category": "Theatre",
    "id": "64de8071f042",
-   "first_seen": "2026-07-14"
+   "first_seen": "2026-07-14",
+   "time": "8pm",
+   "merged_from": [
+    "an_grianan",
+    "eaf"
+   ]
   },
   {
-   "source": "eaf",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
+   "source": "eventbrite_donegal",
+   "venue": "F23 KN72",
+   "town": "Castlebar",
    "county": "Donegal",
-   "title": "Irish Aerial Dance Fest | International Night & Homegrown",
+   "title": "Community Tennis Club Program Belcarra",
    "date": "2026-07-22",
-   "time": "8pm",
-   "url": "https://eaf.ie/events/irish-aerial-dance-fest-international-night-homegrown/",
-   "category": "Dance & Theatre",
-   "id": "e535f7592af2",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "A Personal History Of Pyromania – By Brendan Mac Evilly",
-   "date": "2026-07-22",
-   "time": "8pm",
-   "url": "https://eaf.ie/events/a-personal-history-of-pyromania-by-brendan-mac-evilly/",
-   "category": "Spoken Word & Conversations",
-   "id": "52c846b7932f",
-   "first_seen": "2026-07-18"
+   "time": "18:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/community-tennis-club-program-belcarra/",
+   "id": "331a7a3069af",
+   "first_seen": "2026-07-21"
   },
   {
    "source": "rcc",
@@ -323,7 +282,11 @@
    "url": "https://regionalculturalcentre.com/events/a-personal-history-of-pyromania/",
    "category": "Spoken Word",
    "id": "8d794761504a",
-   "first_seen": "2026-07-14"
+   "first_seen": "2026-07-14",
+   "merged_from": [
+    "eaf",
+    "rcc"
+   ]
   },
   {
    "source": "rcc",
@@ -413,20 +376,12 @@
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662791/events/128646862/seats?zone=Default",
    "category": "Theatre",
    "id": "1f28dfbd5da0",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eaf",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Irish Aerial Dance Fest | Homegrown Night",
-   "date": "2026-07-24",
+   "first_seen": "2026-07-14",
    "time": "8pm",
-   "url": "https://eaf.ie/events/irish-aerial-dance-fest-homegrown-night/",
-   "category": "Dance & Theatre",
-   "id": "2e3331b70bb1",
-   "first_seen": "2026-07-18"
+   "merged_from": [
+    "an_grianan",
+    "eaf"
+   ]
   },
   {
    "source": "mcgrorys",
@@ -451,20 +406,11 @@
    "url": "https://regionalculturalcentre.com/events/samuel-yakura-poetry-slam/",
    "category": "Workshop",
    "id": "3a1069352a63",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eaf",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Samuel Yakura – Poetry Slam",
-   "date": "2026-07-24",
-   "time": "8pm",
-   "url": "https://eaf.ie/events/samuel-yakura-poetry-slam/",
-   "category": "Spoken Word & Conversations",
-   "id": "395ac9903e35",
-   "first_seen": "2026-07-18"
+   "first_seen": "2026-07-14",
+   "merged_from": [
+    "eaf",
+    "rcc"
+   ]
   },
   {
    "source": "eventbrite_donegal",
@@ -540,20 +486,12 @@
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662792/events/128646864/seats?zone=Default",
    "category": "Theatre",
    "id": "dca7555014b8",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eaf",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Irish Aerial Dance Fest | Emma Insley Cabaret",
-   "date": "2026-07-25",
+   "first_seen": "2026-07-14",
    "time": "7pm",
-   "url": "https://eaf.ie/events/irish-aerial-dance-fest-emma-insley-cabaret/",
-   "category": "Dance & Theatre",
-   "id": "070dcfb9a6e5",
-   "first_seen": "2026-07-18"
+   "merged_from": [
+    "an_grianan",
+    "eaf"
+   ]
   },
   {
    "source": "balor",
@@ -564,20 +502,13 @@
    "date": "2026-07-25",
    "url": "https://www.balorartscentre.com/?event=tanya-mccole-with-o-hearain",
    "id": "2d874f9d2f93",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eaf",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Tanya McCole | Ó hEaráin",
-   "date": "2026-07-25",
+   "first_seen": "2026-07-14",
    "time": "8pm",
-   "url": "https://eaf.ie/events/tanya-mccole/",
    "category": "Music",
-   "id": "7d2f98cc9662",
-   "first_seen": "2026-07-18"
+   "merged_from": [
+    "balor",
+    "eaf"
+   ]
   },
   {
    "source": "eaf",
@@ -998,22 +929,13 @@
    "venue": "Post Office",
    "town": "Garrison",
    "county": "Donegal",
-   "title": "Melvin Studios Arts & Crafts 2026 - Morning",
-   "date": "2026-08-03",
-   "time": "10:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/melvin-studios-arts-crafts-2026-morning/",
-   "id": "ec24dc8f742f",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Post Office",
-   "town": "Garrison",
-   "county": "Donegal",
    "title": "Melvin Studios Arts & Crafts 2026- Afternoon",
    "date": "2026-08-03",
    "time": "14:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/melvin-studios-arts-crafts-2026-afternoon/",
+   "merged_from": [
+    "eventbrite_donegal"
+   ],
    "id": "81dd62baba86",
    "first_seen": "2026-07-18"
   },
