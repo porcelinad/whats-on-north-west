@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-21T22:25Z",
+ "generated_at": "2026-07-21T22:52Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z",
@@ -10,7 +10,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -27,7 +27,7 @@
    "end_date": "2026-07-26",
    "time": "10.30am- 4.30pm (Daily)",
    "url": "https://eaf.ie/events/setting-mary-omalley/",
-   "category": "Visual Arts & Film",
+   "category": "Visual Arts",
    "id": "05bf61071ab7",
    "first_seen": "2026-07-18"
   },
@@ -41,7 +41,7 @@
    "end_date": "2026-07-26",
    "time": "10.30am- 4.30pm (Daily)",
    "url": "https://eaf.ie/events/still-life-group-show/",
-   "category": "Visual Arts & Film",
+   "category": "Visual Arts",
    "id": "ad248e5e203e",
    "first_seen": "2026-07-18"
   },
@@ -69,7 +69,7 @@
    "end_date": "2026-08-30",
    "time": "10am - 6pm (Daily)",
    "url": "https://eaf.ie/events/cathal-mcginley-scattered-at-the-edges/",
-   "category": "Visual Arts & Film",
+   "category": "Visual Arts",
    "id": "16b05ee491cf",
    "first_seen": "2026-07-18"
   },
@@ -83,7 +83,7 @@
    "end_date": "2026-09-05",
    "time": "Monday – Friday 10am - 4.30pm, (Closed 12.30pm - 1pm), Saturday, 1pm - 4.30pm",
    "url": "https://eaf.ie/events/rockwell-kent-an-american-artist-in-donegal/",
-   "category": "Visual Arts & Film",
+   "category": "Visual Arts",
    "id": "377b45f33d4b",
    "first_seen": "2026-07-18"
   },
@@ -97,7 +97,7 @@
    "end_date": "2026-09-04",
    "time": "11am-5pm, Monday, Tuesday, Thursday & Friday 1pm-8pm, Wednesdays",
    "url": "https://eaf.ie/events/deanta-i-ndun-na-ngall-made-in-donegal/",
-   "category": "Visual Arts & Film",
+   "category": "Visual Arts",
    "id": "472238298297",
    "first_seen": "2026-07-18"
   },
@@ -111,7 +111,7 @@
    "end_date": "2026-09-19",
    "time": "11am - 5pm Tuesday – Friday, 1pm - 5pm Saturdays",
    "url": "https://eaf.ie/events/barbara-knezevic-gvozdene-kapije-the-iron-gates/",
-   "category": "Visual Arts & Film",
+   "category": "Visual Arts",
    "id": "7c5a438cacfa",
    "first_seen": "2026-07-18"
   },
@@ -211,13 +211,14 @@
    "venue": "Ionad Naomh Pádraig",
    "town": "Dore",
    "county": "Donegal",
-   "title": "Tá mé Just – DÍOLTA AMACH / SOLD OUT",
+   "title": "Tá mé Just – DÍOLTA AMACH",
    "date": "2026-07-21",
    "time": "11am",
    "url": "https://eaf.ie/events/ta-me-just-diolta-amach-sold-out/",
    "category": "Workshop",
-   "id": "4b5bbd029f6b",
-   "first_seen": "2026-07-18"
+   "id": "3b51fadd6dfa",
+   "first_seen": "2026-07-21",
+   "sold_out": true
   },
   {
    "source": "eventbrite_donegal",
@@ -298,7 +299,7 @@
    "end_date": "2026-07-24",
    "time": "3pm",
    "url": "https://eaf.ie/events/fanzini-brothers-risky-business/",
-   "category": "Spectacle, Street Arts & Circus",
+   "category": "Street Arts & Circus",
    "id": "73b38e34ca3d",
    "first_seen": "2026-07-18"
   },
@@ -376,7 +377,7 @@
    "end_date": "2026-07-25",
    "time": "2pm, 3pm & 4pm",
    "url": "https://eaf.ie/events/mdme-kakapo-son/",
-   "category": "Spectacle, Street Arts & Circus",
+   "category": "Street Arts & Circus",
    "id": "a858a17d6b3d",
    "first_seen": "2026-07-18"
   },
