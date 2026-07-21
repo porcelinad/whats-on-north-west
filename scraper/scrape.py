@@ -641,11 +641,18 @@ def parse_eaf_date_text(text):
     return found
 
 
+EAF_SOLD_OUT_RE = re.compile(
+    r"\s*[-–—]\s*(?:d[ií]olta amach\s*/\s*)?sold\s*out\s*$", re.I)
+
+
 def parse_eaf_listing(soup, source):
     """eaf.ie/2026-events/ lists every festival event on one page: a
     genre link, then a title link, then date/time bullet lines, then an
     event-type label (Live Event / Exhibition / Project). 'Project'
-    entries (artist residencies with no attendable date) are skipped."""
+    entries (artist residencies with no attendable date) are skipped.
+    A sold-out show has 'DÍOLTA AMACH / SOLD OUT' (or just 'SOLD OUT')
+    appended to its title on the page - that's stripped out and turned
+    into a sold_out flag instead of being shown twice."""
     events = []
     genre = None
     title = url = None
@@ -656,10 +663,17 @@ def parse_eaf_listing(soup, source):
         if title and url and type_word != "project" and pending_dates:
             start = pending_dates[0]
             end = pending_dates[-1] if len(pending_dates) == 2 else None
+            clean_title = title
+            sold_out = False
+            m = EAF_SOLD_OUT_RE.search(title)
+            if m:
+                clean_title = title[:m.start()].strip()
+                sold_out = True
             events.append(make_event(
-                source, title, start,
+                source, clean_title, start,
                 end_date=end.isoformat() if end and end != start else None,
-                time=pending_time, url=url, category=genre))
+                time=pending_time, url=url, category=genre,
+                sold_out=sold_out))
         title = url = None
         genre = None
         pending_dates, pending_time = [], None
