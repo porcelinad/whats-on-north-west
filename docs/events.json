@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-21T07:11Z",
+ "generated_at": "2026-07-21T07:30Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z",
@@ -7,10 +7,10 @@
   "eventbrite_csv_since": "2026-07-20T23:49Z"
  },
  "consecutive_failures": {
-  "an_grianan": 1,
-  "rcc": 1,
-  "balor": 1,
-  "abbey": 1,
+  "an_grianan": 0,
+  "rcc": 0,
+  "balor": 0,
+  "abbey": 2,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0
@@ -124,13 +124,12 @@
    "end_date": "2026-08-29",
    "time": "1:00 pm",
    "url": "https://regionalculturalcentre.com/events/drop-in-hands-on-art-room/",
-   "category": "Community Arts",
-   "id": "e284beba368b",
-   "first_seen": "2026-07-14",
+   "category": "Community Arts, Kids/Family",
    "merged_from": [
-    "eaf",
     "rcc"
-   ]
+   ],
+   "id": "e284beba368b",
+   "first_seen": "2026-07-14"
   },
   {
    "source": "rcc",
@@ -142,7 +141,10 @@
    "end_date": "2026-08-29",
    "time": "1:00 pm",
    "url": "https://regionalculturalcentre.com/events/rcc-kids-mini-cinema/",
-   "category": "Film",
+   "category": "Film, Kids/Family",
+   "merged_from": [
+    "rcc"
+   ],
    "id": "7bda7aff8d02",
    "first_seen": "2026-07-14"
   },
@@ -158,11 +160,7 @@
    "url": "https://regionalculturalcentre.com/exhibitions/the-rain-tells-us-everything-catherine-mcdonald-katie-nolan-and-niamh-schmidtke-gallery-2-foyer-gallery/",
    "category": "Exhibition",
    "id": "88d45de4385a",
-   "first_seen": "2026-07-14",
-   "merged_from": [
-    "eaf",
-    "rcc"
-   ]
+   "first_seen": "2026-07-14"
   },
   {
    "source": "rcc",
@@ -174,7 +172,10 @@
    "end_date": "2026-08-19",
    "time": "10:00 am",
    "url": "https://regionalculturalcentre.com/events/rcc-kids-art-workshops/",
-   "category": "Workshop",
+   "category": "Workshop, Kids/Family",
+   "merged_from": [
+    "rcc"
+   ],
    "id": "1bb263e16a1b",
    "first_seen": "2026-07-14"
   },
@@ -226,6 +227,7 @@
    "date": "2026-07-21",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/summer-camp-ballinamore-5-12-yrs-tue-21st-fri-24th-july-2026-10am-2pm/",
+   "category": "Kids/Family",
    "id": "f53da6dc423b",
    "first_seen": "2026-07-21"
   },
@@ -238,6 +240,7 @@
    "date": "2026-07-21",
    "time": "07:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/discover-derry-interactive-treasure-hunt-city-exploration-game/",
+   "category": null,
    "id": "93c0c6e265f3",
    "first_seen": "2026-07-21"
   },
@@ -252,12 +255,7 @@
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662789/events/128646848/seats?zone=Default",
    "category": "Theatre",
    "id": "64de8071f042",
-   "first_seen": "2026-07-14",
-   "time": "8pm",
-   "merged_from": [
-    "an_grianan",
-    "eaf"
-   ]
+   "first_seen": "2026-07-14"
   },
   {
    "source": "eventbrite_donegal",
@@ -268,6 +266,7 @@
    "date": "2026-07-22",
    "time": "18:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/community-tennis-club-program-belcarra/",
+   "category": null,
    "id": "331a7a3069af",
    "first_seen": "2026-07-21"
   },
@@ -282,11 +281,7 @@
    "url": "https://regionalculturalcentre.com/events/a-personal-history-of-pyromania/",
    "category": "Spoken Word",
    "id": "8d794761504a",
-   "first_seen": "2026-07-14",
-   "merged_from": [
-    "eaf",
-    "rcc"
-   ]
+   "first_seen": "2026-07-14"
   },
   {
    "source": "rcc",
@@ -298,7 +293,10 @@
    "end_date": "2026-08-19",
    "time": "10:00 am",
    "url": "https://regionalculturalcentre.com/events/rcc-kids-art-workshops-2/",
-   "category": "Workshop",
+   "category": "Workshop, Kids/Family",
+   "merged_from": [
+    "rcc"
+   ],
    "id": "02b9bf2077ee",
    "first_seen": "2026-07-14"
   },
@@ -311,6 +309,7 @@
    "date": "2026-07-23",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/robe-cinema-screening-project-hail-mary/",
+   "category": null,
    "id": "b52fdd92c379",
    "first_seen": "2026-07-20"
   },
@@ -350,6 +349,7 @@
    "date": "2026-07-23",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/public-tour-of-parliament-buildings-stormont-estate-belfast/",
+   "category": null,
    "id": "d92cb1c3325b",
    "first_seen": "2026-07-20"
   },
@@ -362,6 +362,7 @@
    "date": "2026-07-23",
    "time": "11:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/macgill-summer-school-2026/",
+   "category": null,
    "id": "bc2b8c036a4e",
    "first_seen": "2026-07-18"
   },
@@ -376,12 +377,7 @@
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662791/events/128646862/seats?zone=Default",
    "category": "Theatre",
    "id": "1f28dfbd5da0",
-   "first_seen": "2026-07-14",
-   "time": "8pm",
-   "merged_from": [
-    "an_grianan",
-    "eaf"
-   ]
+   "first_seen": "2026-07-14"
   },
   {
    "source": "mcgrorys",
@@ -406,11 +402,7 @@
    "url": "https://regionalculturalcentre.com/events/samuel-yakura-poetry-slam/",
    "category": "Workshop",
    "id": "3a1069352a63",
-   "first_seen": "2026-07-14",
-   "merged_from": [
-    "eaf",
-    "rcc"
-   ]
+   "first_seen": "2026-07-14"
   },
   {
    "source": "eventbrite_donegal",
@@ -421,6 +413,7 @@
    "date": "2026-07-24",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/kevin-laughlin-live-with-special-guest-o-hearain/",
+   "category": null,
    "id": "8be06f290c4d",
    "first_seen": "2026-07-20"
   },
@@ -433,6 +426,7 @@
    "date": "2026-07-24",
    "time": "15:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/campervan-parking-official-ulster-fleadh-2026/",
+   "category": null,
    "id": "4b5820f9b0e0",
    "first_seen": "2026-07-20"
   },
@@ -445,6 +439,7 @@
    "date": "2026-07-24",
    "time": "17:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/a-walking-tour-of-the-plantation-towns-of-ballykelly/",
+   "category": null,
    "id": "f620ff84536a",
    "first_seen": "2026-07-20"
   },
@@ -486,12 +481,7 @@
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662792/events/128646864/seats?zone=Default",
    "category": "Theatre",
    "id": "dca7555014b8",
-   "first_seen": "2026-07-14",
-   "time": "7pm",
-   "merged_from": [
-    "an_grianan",
-    "eaf"
-   ]
+   "first_seen": "2026-07-14"
   },
   {
    "source": "balor",
@@ -501,14 +491,9 @@
    "title": "Tanya McCole with Ó hEaráin",
    "date": "2026-07-25",
    "url": "https://www.balorartscentre.com/?event=tanya-mccole-with-o-hearain",
+   "category": null,
    "id": "2d874f9d2f93",
-   "first_seen": "2026-07-14",
-   "time": "8pm",
-   "category": "Music",
-   "merged_from": [
-    "balor",
-    "eaf"
-   ]
+   "first_seen": "2026-07-14"
   },
   {
    "source": "eaf",
@@ -532,6 +517,7 @@
    "date": "2026-07-25",
    "time": "11:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/belfast-anime-gaming-con-2026/",
+   "category": null,
    "id": "1f5bdb72de65",
    "first_seen": "2026-07-20"
   },
@@ -557,6 +543,7 @@
    "date": "2026-07-25",
    "time": "12:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/hike-the-horizon-2/",
+   "category": null,
    "id": "3c2bde20f61f",
    "first_seen": "2026-07-20"
   },
@@ -582,6 +569,7 @@
    "date": "2026-07-25",
    "time": "15:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/the-naughty-noughties-brunch/",
+   "category": null,
    "id": "01eae8153562",
    "first_seen": "2026-07-20"
   },
@@ -633,6 +621,7 @@
    "date": "2026-07-26",
    "time": "14:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/upstairs-mayo-vs-kerry/",
+   "category": null,
    "id": "1f7e65ad3eac",
    "first_seen": "2026-07-20"
   },
@@ -645,6 +634,7 @@
    "date": "2026-07-26",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/one-day-ceramic-workshop-sunday-26th-july-2026-10am-4pm/",
+   "category": null,
    "id": "0fe217f9144a",
    "first_seen": "2026-07-20"
   },
@@ -657,6 +647,7 @@
    "date": "2026-07-26",
    "time": "11:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/tour-of-castle-gardens/",
+   "category": null,
    "id": "eaf2f691454f",
    "first_seen": "2026-07-20"
   },
@@ -669,6 +660,7 @@
    "date": "2026-07-26",
    "time": "14:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/a-tribute-to-the-movie-at-kellys/",
+   "category": null,
    "id": "0ca1a9d8dfc4",
    "first_seen": "2026-07-20"
   },
@@ -681,6 +673,7 @@
    "date": "2026-07-27",
    "time": "18:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/community-tennis-club-program-kiltimagh/",
+   "category": null,
    "id": "61cf98504526",
    "first_seen": "2026-07-20"
   },
@@ -693,6 +686,7 @@
    "date": "2026-07-27",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/the-couch-with-kendy-raybo/",
+   "category": null,
    "id": "81599208e0dd",
    "first_seen": "2026-07-20"
   },
@@ -705,6 +699,7 @@
    "date": "2026-07-28",
    "time": "18:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/walking-the-agivey-river/",
+   "category": null,
    "id": "2e9b57080711",
    "first_seen": "2026-07-20"
   },
@@ -717,6 +712,7 @@
    "date": "2026-07-28",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/killian-sundermann-live-at-lilliepalooza/",
+   "category": null,
    "id": "6a674a1d4fcb",
    "first_seen": "2026-07-20"
   },
@@ -729,6 +725,7 @@
    "date": "2026-07-28",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/anam-traditional-irish-music-song-and-dance-show/",
+   "category": null,
    "id": "429d3d675b2e",
    "first_seen": "2026-07-20"
   },
@@ -741,6 +738,7 @@
    "date": "2026-07-29",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/the-seeger-sessions-revival-kilcar/",
+   "category": null,
    "id": "d0f5014f2b59",
    "first_seen": "2026-07-20"
   },
@@ -754,7 +752,8 @@
    "url": "https://abbeycentre.ie/eventer/the-seeger-sessions-revival",
    "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173672330",
    "id": "a0e3f9786ebb",
-   "first_seen": "2026-07-14"
+   "first_seen": "2026-07-14",
+   "category": null
   },
   {
    "source": "an_grianan",
@@ -778,6 +777,7 @@
    "date": "2026-07-31",
    "time": "18:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/49th-ballyshannon-folk-and-traditional-music-festival-weekend-ticket/",
+   "category": null,
    "id": "80a8e246eaf8",
    "first_seen": "2026-07-18"
   },
@@ -789,6 +789,7 @@
    "title": "We Will Rock You",
    "date": "2026-07-31",
    "url": "https://www.balorartscentre.com/?event=we-will-rock-you",
+   "category": null,
    "id": "10c78e239cff",
    "first_seen": "2026-07-14"
   },
@@ -801,6 +802,7 @@
    "date": "2026-07-31",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/nothing-but-trouble-daire-marquee-at-bridge-inn/",
+   "category": null,
    "id": "a4d28039674c",
    "first_seen": "2026-07-20"
   },
@@ -813,6 +815,7 @@
    "date": "2026-08-01",
    "time": "18:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/ballyshannon-folk-traditional-music-festival-saturday-1st-august/",
+   "category": null,
    "id": "26c6b6159e5b",
    "first_seen": "2026-07-18"
   },
@@ -825,6 +828,7 @@
    "date": "2026-08-01",
    "time": "21:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/3-bucks-left-live-at-gurns/",
+   "category": null,
    "id": "2f507e424cc1",
    "first_seen": "2026-07-20"
   },
@@ -837,6 +841,7 @@
    "date": "2026-08-01",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/quiltmaking-workshop-sat-1st-aug-2026-10am-4pm/",
+   "category": null,
    "id": "ae34381b9e8b",
    "first_seen": "2026-07-20"
   },
@@ -849,6 +854,7 @@
    "date": "2026-08-01",
    "time": "11:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/the-antrim-rambler-guided-walks-the-mamore-hills-in-county-donegal/",
+   "category": null,
    "id": "5e4ce3fe5820",
    "first_seen": "2026-07-20"
   },
@@ -861,6 +867,7 @@
    "date": "2026-08-01",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/gearoid-mccarthy-live-at-mccaffertys-dungloe/",
+   "category": null,
    "id": "de1325381988",
    "first_seen": "2026-07-20"
   },
@@ -885,6 +892,7 @@
    "date": "2026-08-01",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/danny-boy-inspired-fused-glass-panel-for-18-yrs/",
+   "category": null,
    "id": "2545d0d70d06",
    "first_seen": "2026-07-20"
   },
@@ -897,6 +905,7 @@
    "date": "2026-08-01",
    "time": "14:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/farm-open-day/",
+   "category": null,
    "id": "906c4669fb0f",
    "first_seen": "2026-07-20"
   },
@@ -909,6 +918,7 @@
    "date": "2026-08-02",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/the-mary-from-dungloe-international-arts-festival-crowning-cabaret-event/",
+   "category": null,
    "id": "316b1169da89",
    "first_seen": "2026-07-20"
   },
@@ -921,6 +931,7 @@
    "date": "2026-08-02",
    "time": "14:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/garfield-in-aid-of-north-coast-cat-rescue/",
+   "category": null,
    "id": "4b3997b7f77d",
    "first_seen": "2026-07-20"
   },
@@ -936,6 +947,7 @@
    "merged_from": [
     "eventbrite_donegal"
    ],
+   "category": null,
    "id": "81dd62baba86",
    "first_seen": "2026-07-18"
   },
@@ -948,6 +960,7 @@
    "date": "2026-08-05",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/choosing-the-struggle/",
+   "category": null,
    "id": "40728da7c5ce",
    "first_seen": "2026-07-20"
   },
@@ -960,6 +973,7 @@
    "date": "2026-08-06",
    "time": "18:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/redefining-the-alpha-live-unfiltered-podcast/",
+   "category": null,
    "id": "d8eb1decb64e",
    "first_seen": "2026-07-20"
   },
@@ -972,6 +986,7 @@
    "date": "2026-08-06",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/the-ethnic-cleansing-of-the-west-bank/",
+   "category": null,
    "id": "98663c6398cb",
    "first_seen": "2026-07-20"
   },
@@ -984,6 +999,7 @@
    "date": "2026-08-06",
    "time": "19:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/grease-sing-along-lurig-film-club/",
+   "category": null,
    "id": "51b71edcb9cb",
    "first_seen": "2026-07-20"
   },
@@ -996,6 +1012,7 @@
    "date": "2026-08-06",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/national-theatre-live-les-liaisons-dangereuses/",
+   "category": null,
    "id": "6d16b9bac9ea",
    "first_seen": "2026-07-20"
   },
@@ -1008,6 +1025,7 @@
    "date": "2026-08-06",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/displace-the-battle-for-dublin/",
+   "category": null,
    "id": "19e33910bb6b",
    "first_seen": "2026-07-20"
   },
@@ -1020,6 +1038,7 @@
    "date": "2026-08-06",
    "time": "14:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/did-ye-hear-about-peace-and-the-political-path/",
+   "category": null,
    "id": "2510b9443e8a",
    "first_seen": "2026-07-20"
   },
@@ -1032,6 +1051,7 @@
    "date": "2026-08-07",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/life-support-film-screening-q-a-with-dr-nick-maynard/",
+   "category": null,
    "id": "3405bffd1e95",
    "first_seen": "2026-07-20"
   },
@@ -1044,6 +1064,7 @@
    "date": "2026-08-07",
    "time": "18:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/mini-workshop-with-una-burke-leather/",
+   "category": null,
    "id": "ef702c9984f2",
    "first_seen": "2026-07-20"
   },
@@ -1056,6 +1077,7 @@
    "date": "2026-08-08",
    "time": "12:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/feile-family-bus-run-lurgybrack-farm/",
+   "category": null,
    "id": "b76050b2ccdc",
    "first_seen": "2026-07-20"
   },
@@ -1068,6 +1090,7 @@
    "date": "2026-08-08",
    "time": "13:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/brunch-beats-cruise-with-dj-bob-sat-8th-august-2026/",
+   "category": null,
    "id": "735f8734604b",
    "first_seen": "2026-07-20"
   },
@@ -1080,6 +1103,7 @@
    "date": "2026-08-08",
    "time": "18:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/lions-gate-a-rare-sound-and-stillness-experience-in-the-marble-arch-caves/",
+   "category": null,
    "id": "e09e98cd4941",
    "first_seen": "2026-07-20"
   },
@@ -1092,6 +1116,7 @@
    "date": "2026-08-08",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/bagatelle-live-at-mccaffertys-at-the-pier/",
+   "category": null,
    "id": "582a66c191c9",
    "first_seen": "2026-07-18"
   },
@@ -1104,6 +1129,7 @@
    "date": "2026-08-08",
    "time": "17:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/a-carleton-loop-walk/",
+   "category": null,
    "id": "93e431037f8c",
    "first_seen": "2026-07-20"
   },
@@ -1116,6 +1142,7 @@
    "date": "2026-08-08",
    "time": "14:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/smidirini-i-sligeach/",
+   "category": null,
    "id": "6b7b3b0151cc",
    "first_seen": "2026-07-20"
   },
@@ -1128,6 +1155,7 @@
    "date": "2026-08-09",
    "time": "12:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/sit-on-top-kayaking-annangh-lake-9th-august/",
+   "category": null,
    "id": "e2e8348909b7",
    "first_seen": "2026-07-20"
   },
@@ -1140,6 +1168,7 @@
    "date": "2026-08-09",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/jewellery-for-beginners-workshop-sun-9th-aug-2026-10am-3pm/",
+   "category": null,
    "id": "7e3c2b030fab",
    "first_seen": "2026-07-20"
   },
@@ -1152,6 +1181,7 @@
    "date": "2026-08-09",
    "time": "11:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/north-west-card-club/",
+   "category": null,
    "id": "f500d8f38932",
    "first_seen": "2026-07-20"
   },
@@ -1164,6 +1194,7 @@
    "date": "2026-08-09",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/on-the-line-film-makers-showcase/",
+   "category": null,
    "id": "10636ec81a80",
    "first_seen": "2026-07-20"
   },
@@ -1189,6 +1220,7 @@
    "date": "2026-08-10",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/eddie-dempsey/",
+   "category": null,
    "id": "e374dffb8ca5",
    "first_seen": "2026-07-20"
   },
@@ -1201,6 +1233,7 @@
    "date": "2026-08-10",
    "time": "13:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/neutrality-roadshow/",
+   "category": null,
    "id": "8fcc2da5151e",
    "first_seen": "2026-07-20"
   },
@@ -1213,6 +1246,7 @@
    "date": "2026-08-10",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/birds-of-war/",
+   "category": null,
    "id": "4750dcce5a3a",
    "first_seen": "2026-07-20"
   },
@@ -1225,6 +1259,7 @@
    "date": "2026-08-11",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/stormont-sources-podcast-live/",
+   "category": null,
    "id": "181a77cd5c1e",
    "first_seen": "2026-07-20"
   },
@@ -1237,6 +1272,7 @@
    "date": "2026-08-11",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/shoot-the-people/",
+   "category": null,
    "id": "0bfa2e29ca9d",
    "first_seen": "2026-07-20"
   },
@@ -1249,6 +1285,7 @@
    "date": "2026-08-11",
    "time": "11:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/art-science-rocket-adventures-for-6-11yrs/",
+   "category": "Kids/Family",
    "id": "90adaa242aa7",
    "first_seen": "2026-07-20"
   },
@@ -1261,6 +1298,7 @@
    "date": "2026-08-12",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/a-new-beginning-psni-25-years-on/",
+   "category": null,
    "id": "bd2bd0cac95a",
    "first_seen": "2026-07-20"
   },
@@ -1285,6 +1323,7 @@
    "date": "2026-08-12",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/journacide-the-war-on-truth/",
+   "category": null,
    "id": "bb8d0862d92e",
    "first_seen": "2026-07-20"
   },
@@ -1297,6 +1336,7 @@
    "date": "2026-08-13",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/youth-voices-for-the-future-of-ireland/",
+   "category": null,
    "id": "71a07c00a663",
    "first_seen": "2026-07-20"
   },
@@ -1309,6 +1349,7 @@
    "date": "2026-08-13",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/3-bucks-left-comedy-show/",
+   "category": null,
    "id": "aca976500b27",
    "first_seen": "2026-07-20"
   },
@@ -1321,6 +1362,7 @@
    "date": "2026-08-13",
    "time": "18:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/celtic-utopia/",
+   "category": null,
    "id": "57eb94970e4a",
    "first_seen": "2026-07-20"
   },
@@ -1333,6 +1375,7 @@
    "date": "2026-08-13",
    "time": "19:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/the-time-is-now-the-story-of-the-craigavon-two/",
+   "category": null,
    "id": "fdaffc980022",
    "first_seen": "2026-07-20"
   },
@@ -1345,6 +1388,7 @@
    "date": "2026-08-14",
    "time": "13:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/irelands-unity-vote-yes/",
+   "category": null,
    "id": "7677bbd6f089",
    "first_seen": "2026-07-20"
   },
@@ -1357,6 +1401,7 @@
    "date": "2026-08-14",
    "time": "13:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/coercive-control-where-is-the-line/",
+   "category": null,
    "id": "b7ff92a975d9",
    "first_seen": "2026-07-20"
   },
@@ -1369,6 +1414,7 @@
    "date": "2026-08-14",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/a-peoples-emergency-briefing-screening-panel-discussion/",
+   "category": null,
    "id": "661b19394459",
    "first_seen": "2026-07-20"
   },
@@ -1381,6 +1427,7 @@
    "date": "2026-08-14",
    "time": "18:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/jet-set-formula-westport-meet-mixer/",
+   "category": null,
    "id": "11f3eb85e36a",
    "first_seen": "2026-07-20"
   },
@@ -1393,6 +1440,7 @@
    "date": "2026-08-15",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/hiking-with-your-phone/",
+   "category": null,
    "id": "54d06bdf535a",
    "first_seen": "2026-07-20"
   },
@@ -1405,6 +1453,7 @@
    "date": "2026-08-15",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/the-cowgirl-experience-ballybofey-donegal/",
+   "category": null,
    "id": "37291c40aed8",
    "first_seen": "2026-07-18"
   },
@@ -1417,6 +1466,7 @@
    "date": "2026-08-15",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/introduction-to-alternative-analogue-darkroom-techniques-workshop/",
+   "category": null,
    "id": "61c951e8653f",
    "first_seen": "2026-07-20"
   },
@@ -1429,6 +1479,7 @@
    "date": "2026-08-15",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/the-kilkennys-live-at-mccaffertys-bar-lettermacaward/",
+   "category": null,
    "id": "93d4d313f4f3",
    "first_seen": "2026-07-18"
   },
@@ -1441,6 +1492,7 @@
    "date": "2026-08-16",
    "time": "14:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/wildlife-wander-in-cookstown/",
+   "category": null,
    "id": "b5be5aabc6c6",
    "first_seen": "2026-07-20"
   },
@@ -1453,6 +1505,7 @@
    "date": "2026-08-16",
    "time": "13:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/grand-slam-wrestling-sligo/",
+   "category": null,
    "id": "c90ec5ab09a4",
    "first_seen": "2026-07-20"
   },
@@ -1465,6 +1518,7 @@
    "date": "2026-08-16",
    "time": "11:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/benwiskin-sings-community-singing-with-una-mccann/",
+   "category": null,
    "id": "7c42f41b81ef",
    "first_seen": "2026-07-20"
   },
@@ -1477,6 +1531,7 @@
    "date": "2026-08-17",
    "time": "11:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/watercolour-explorers-for-6-11yrs/",
+   "category": "Kids/Family",
    "id": "a8af536e1655",
    "first_seen": "2026-07-20"
   },
@@ -1501,6 +1556,7 @@
    "date": "2026-08-21",
    "time": "10:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/comic-book-illustration-for-6-11yrs-session-1/",
+   "category": "Kids/Family",
    "id": "d5a8a5a0f4f8",
    "first_seen": "2026-07-20"
   },
@@ -1513,6 +1569,7 @@
    "date": "2026-08-21",
    "time": "19:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/jesus-christ-superstar/",
+   "category": null,
    "id": "e70ff6c21c3e",
    "first_seen": "2026-07-20"
   },
@@ -1525,6 +1582,7 @@
    "date": "2026-08-23",
    "time": "10:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/willow-basket-weaving-asymmetric-basket-sun-23rd-aug-2026-10-30am/",
+   "category": null,
    "id": "273c41455d27",
    "first_seen": "2026-07-20"
   },
@@ -1537,6 +1595,7 @@
    "date": "2026-08-24",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/italian-beginners-6-mon-eves-7-9pm-aug-24-31-sep-7-14-21-28/",
+   "category": null,
    "id": "23dd25585d26",
    "first_seen": "2026-07-20"
   },
@@ -1549,6 +1608,7 @@
    "date": "2026-08-25",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/lets-write-about-intimacy-6-x-tuesday-eves-from-aug-25th-7-9pm/",
+   "category": null,
    "id": "c0571a3b0d28",
    "first_seen": "2026-07-20"
   },
@@ -1561,6 +1621,7 @@
    "date": "2026-08-25",
    "time": "11:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/wool-felting-fun-for-6-11yrs/",
+   "category": "Kids/Family",
    "id": "f597436630bc",
    "first_seen": "2026-07-20"
   },
@@ -1573,6 +1634,7 @@
    "date": "2026-08-26",
    "time": "09:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/15th-annual-darcy-mcgee-summer-school-culture-identity-and-inclusion/",
+   "category": null,
    "id": "8f21eeeac26c",
    "first_seen": "2026-07-20"
   },
@@ -1585,6 +1647,7 @@
    "date": "2026-08-26",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/novel-writing-6-weds-7-9pm-aug-26th-sep-2nd-9th-16th-23rd-30th/",
+   "category": null,
    "id": "89917aa1673c",
    "first_seen": "2026-07-20"
   },
@@ -1597,6 +1660,7 @@
    "date": "2026-08-29",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/digital-photography-for-beginners-part-1-sat-29th-aug-2026-10am-4pm/",
+   "category": null,
    "id": "c45cea5fca21",
    "first_seen": "2026-07-20"
   },
@@ -1609,6 +1673,7 @@
    "date": "2026-08-29",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/painting-workshop-1-day-sat-29th-aug-2026-10-00am-3-00pm/",
+   "category": null,
    "id": "17804f9e1cc6",
    "first_seen": "2026-07-20"
   },
@@ -1621,6 +1686,7 @@
    "date": "2026-08-30",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/one-day-ceramic-workshop-sunday-30th-aug-2026-10am-4pm/",
+   "category": null,
    "id": "68fbb7ca9c6d",
    "first_seen": "2026-07-20"
   },
@@ -1633,6 +1699,7 @@
    "date": "2026-09-02",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/northern-ireland-peace-index-report-launch/",
+   "category": null,
    "id": "e61875af9c23",
    "first_seen": "2026-07-20"
   },
@@ -1645,6 +1712,7 @@
    "date": "2026-09-03",
    "time": "12:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/northern-ireland-peace-index-report-launch/",
+   "category": null,
    "id": "b44510a29cf2",
    "first_seen": "2026-07-20"
   },
@@ -1669,6 +1737,7 @@
    "title": "How's Your Father starring Conal Gallen",
    "date": "2026-09-04",
    "url": "https://www.balorartscentre.com/?event=hows-your-father-starring-conal-gallen",
+   "category": null,
    "id": "c27f5df6993a",
    "first_seen": "2026-07-14"
   },
@@ -1682,7 +1751,8 @@
    "url": "https://abbeycentre.ie/eventer/at-the-end-of-the-day",
    "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173673976",
    "id": "d106b2d5bf64",
-   "first_seen": "2026-07-14"
+   "first_seen": "2026-07-14",
+   "category": null
   },
   {
    "source": "an_grianan",
@@ -1744,6 +1814,7 @@
    "date": "2026-09-10",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/the-emergency-services-military-expo/",
+   "category": null,
    "id": "70f86a6c8af6",
    "first_seen": "2026-07-20"
   },
@@ -1769,6 +1840,7 @@
    "date": "2026-09-11",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/ireland-and-the-spanish-civil-war-the-press-and-politics/",
+   "category": null,
    "id": "5a801672c02f",
    "first_seen": "2026-07-20"
   },
@@ -1781,6 +1853,7 @@
    "date": "2026-09-11",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/onoir-live-aisleann-centre-kilcar-co-donegal-11th-september-2026/",
+   "category": null,
    "id": "eb353e38982a",
    "first_seen": "2026-07-20"
   },
@@ -1805,6 +1878,7 @@
    "title": "Rude Boy Revolution",
    "date": "2026-09-12",
    "url": "https://www.balorartscentre.com/?event=rude-boy-revolution-2",
+   "category": null,
    "id": "27e961ec55d9",
    "first_seen": "2026-07-14"
   },
@@ -1817,6 +1891,7 @@
    "date": "2026-09-12",
    "time": "16:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/new-moon-crystal-caves-an-underground-sound-journey/",
+   "category": null,
    "id": "57d2d97c5798",
    "first_seen": "2026-07-20"
   },
@@ -1829,6 +1904,7 @@
    "date": "2026-09-14",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/introduction-to-outdoor-education-learning/",
+   "category": null,
    "id": "9e9eec707a81",
    "first_seen": "2026-07-20"
   },
@@ -1855,6 +1931,7 @@
    "date": "2026-09-17",
    "time": "15:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/exclusive-writers-retreat/",
+   "category": null,
    "id": "11d61b2485db",
    "first_seen": "2026-07-20"
   },
@@ -1878,6 +1955,7 @@
    "title": "Tadhg J Devery - Pints, Dentures & Rock ’n’ Roll",
    "date": "2026-09-18",
    "url": "https://www.balorartscentre.com/?event=tadhg-j-devery-pints-dentures-rock-n-roll",
+   "category": null,
    "id": "bbc520789d4f",
    "first_seen": "2026-07-14"
   },
@@ -1902,6 +1980,7 @@
    "date": "2026-09-18",
    "time": "16:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/sligo-donegal-bay-iwdg-weekend-whale-watching-course-residential/",
+   "category": null,
    "id": "e47079f0fdfa",
    "first_seen": "2026-07-20"
   },
@@ -1915,7 +1994,8 @@
    "url": "https://abbeycentre.ie/eventer/greatest-80s-show",
    "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173671902",
    "id": "c92573836333",
-   "first_seen": "2026-07-14"
+   "first_seen": "2026-07-14",
+   "category": null
   },
   {
    "source": "an_grianan",
@@ -1926,6 +2006,7 @@
    "date": "2026-09-19",
    "url": "https://angrianan.com/event/harvest-a-tribute-to-neil-young/",
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662033/events/128643035/seats?zone=Default",
+   "category": null,
    "id": "aa3028017caf",
    "first_seen": "2026-07-14"
   },
@@ -1937,6 +2018,7 @@
    "title": "Nashville Live!",
    "date": "2026-09-19",
    "url": "https://www.balorartscentre.com/?event=nashville-live",
+   "category": null,
    "id": "b7acea3de5ce",
    "first_seen": "2026-07-14"
   },
@@ -1949,6 +2031,7 @@
    "date": "2026-09-19",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/mamma-mia-the-live-experience-letterkenny/",
+   "category": null,
    "id": "f0226be46b17",
    "first_seen": "2026-07-20"
   },
@@ -1961,6 +2044,7 @@
    "date": "2026-09-19",
    "time": "16:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/the-cowgirl-experience-abbey-hotel-donegal/",
+   "category": null,
    "id": "49220ba8377b",
    "first_seen": "2026-07-20"
   },
@@ -1973,6 +2057,7 @@
    "date": "2026-09-23",
    "time": "09:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/nmc-council-meeting-23-september-2026/",
+   "category": null,
    "id": "f3314831e799",
    "first_seen": "2026-07-20"
   },
@@ -1998,6 +2083,7 @@
    "title": "Tick, Tick...Boom!",
    "date": "2026-09-25",
    "url": "https://www.balorartscentre.com/?event=tick-tick-boom",
+   "category": null,
    "id": "d7c813d35091",
    "first_seen": "2026-07-16"
   },
@@ -2023,6 +2109,9 @@
    "time": "8:00 pm",
    "url": "https://regionalculturalcentre.com/events/migrantes-mauro-sigura-andrea-manzoni/",
    "category": "Music",
+   "merged_from": [
+    "rcc"
+   ],
    "id": "e3a64678717f",
    "first_seen": "2026-07-14"
   },
@@ -2074,7 +2163,7 @@
    "date": "2026-10-08",
    "url": "https://angrianan.com/event/dr-david-coleman-2026/",
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873663825/events/128649368/seats?zone=Default",
-   "category": "Talks/Spoken Word",
+   "category": "Talks/Spoken Word, Kids/Family",
    "id": "843510d9e9e0",
    "first_seen": "2026-07-14"
   },
@@ -2100,6 +2189,7 @@
    "date": "2026-10-09",
    "time": "19:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/ro-boyle-on-tour-showed-up-joes-bar-strabane/",
+   "category": null,
    "id": "752b203242de",
    "first_seen": "2026-07-20"
   },
@@ -2125,7 +2215,8 @@
    "url": "https://abbeycentre.ie/eventer/paddy-power-full-with-paddy-mcdonnell",
    "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173674596",
    "id": "95a127c60d2f",
-   "first_seen": "2026-07-14"
+   "first_seen": "2026-07-14",
+   "category": null
   },
   {
    "source": "an_grianan",
@@ -2149,6 +2240,7 @@
    "date": "2026-10-10",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/ladies-diy-skills-class-sligo/",
+   "category": null,
    "id": "a5f1045ace87",
    "first_seen": "2026-07-20"
   },
@@ -2161,6 +2253,7 @@
    "date": "2026-10-10",
    "time": "18:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/the-masked-singer/",
+   "category": null,
    "id": "f58c10afd8bd",
    "first_seen": "2026-07-20"
   },
@@ -2174,7 +2267,8 @@
    "url": "https://abbeycentre.ie/eventer/onoir-1st-april",
    "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173672766",
    "id": "fde96886d9b0",
-   "first_seen": "2026-07-14"
+   "first_seen": "2026-07-14",
+   "category": null
   },
   {
    "source": "eventbrite_donegal",
@@ -2185,6 +2279,7 @@
    "date": "2026-10-15",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/roe/",
+   "category": null,
    "id": "3077ce1bb7c1",
    "first_seen": "2026-07-20"
   },
@@ -2196,6 +2291,7 @@
    "title": "Paddy McDonnell - Gout's Out",
    "date": "2026-10-16",
    "url": "https://www.balorartscentre.com/?event=paddy-mcdonnell-gouts-out",
+   "category": null,
    "id": "556a8869cba5",
    "first_seen": "2026-07-17"
   },
@@ -2221,6 +2317,7 @@
    "date": "2026-10-17",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/introduction-to-the-darkroom-workshop/",
+   "category": null,
    "id": "d8da5dec5192",
    "first_seen": "2026-07-20"
   },
@@ -2311,6 +2408,7 @@
    "date": "2026-10-23",
    "time": "10:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/rebooting-the-public-sector/",
+   "category": null,
    "id": "7bebb0f01ac7",
    "first_seen": "2026-07-20"
   },
@@ -2336,6 +2434,7 @@
    "date": "2026-10-24",
    "time": "19:30",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/fomhair-festival-presents-jamie-mcintyre-dunlewey-theatre-donegal/",
+   "category": null,
    "id": "706f751c418d",
    "first_seen": "2026-07-20"
   },
@@ -2347,6 +2446,7 @@
    "title": "Ralph McTell",
    "date": "2026-10-24",
    "url": "https://www.saintcolumbshall.com/whatson/ralph-mctell/",
+   "category": null,
    "id": "0acdda9bbba9",
    "first_seen": "2026-07-20"
   },
@@ -2360,7 +2460,7 @@
    "end_date": "2026-10-29",
    "url": "https://angrianan.com/event/fireman-sam-live-the-lost-pirate-treasure/",
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666102",
-   "category": "Family",
+   "category": "Kids/Family",
    "id": "e824e6547a44",
    "first_seen": "2026-07-14"
   },
@@ -2488,6 +2588,7 @@
    "date": "2026-11-13",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/fintan-harvey-flightmares-strabane/",
+   "category": null,
    "id": "eb0b817a6184",
    "first_seen": "2026-07-20"
   },
@@ -2501,6 +2602,9 @@
    "time": "8:00 pm",
    "url": "https://regionalculturalcentre.com/events/lemoncello/",
    "category": "Music",
+   "merged_from": [
+    "rcc"
+   ],
    "id": "c7be8ddd79b9",
    "first_seen": "2026-07-14"
   },
@@ -2514,7 +2618,8 @@
    "url": "https://abbeycentre.ie/eventer/abba-forever",
    "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173671785",
    "id": "4395369cdece",
-   "first_seen": "2026-07-14"
+   "first_seen": "2026-07-14",
+   "category": null
   },
   {
    "source": "mcgrorys",
@@ -2575,6 +2680,7 @@
    "date": "2026-11-20",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/expanded-glass-fuse-flame-cast-workshop/",
+   "category": null,
    "id": "3fa591c113d7",
    "first_seen": "2026-07-20"
   },
@@ -2587,6 +2693,10 @@
    "date": "2026-11-20",
    "time": "8:00 pm",
    "url": "https://regionalculturalcentre.com/events/rcc-music-tommy-sands/",
+   "merged_from": [
+    "rcc"
+   ],
+   "category": null,
    "id": "56a27cfbf3d4",
    "first_seen": "2026-07-14"
   },
@@ -2624,6 +2734,7 @@
    "date": "2026-11-21",
    "time": "18:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/club-30-donegal-town-the-abbey-hotel/",
+   "category": null,
    "id": "232fdad0ca23",
    "first_seen": "2026-07-20"
   },
@@ -2636,6 +2747,7 @@
    "date": "2026-11-21",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/tanya-mccole/",
+   "category": null,
    "id": "5e915e71bf7c",
    "first_seen": "2026-07-20"
   },
@@ -2736,6 +2848,7 @@
    "date": "2026-12-19",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/onoir-live-great-northern-hotel-bundoran/",
+   "category": null,
    "id": "004f9584b525",
    "first_seen": "2026-07-18"
   },
@@ -2748,6 +2861,7 @@
    "date": "2026-12-19",
    "time": "18:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/mamma-mia-the-live-experience-the-social-gweedore-donegal/",
+   "category": null,
    "id": "3b4a8cf06f5e",
    "first_seen": "2026-07-20"
   },
@@ -2851,6 +2965,7 @@
    "date": "2027-01-16",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/pauline-scanlon-the-half-room-live-atlantic-apartotel/",
+   "category": null,
    "id": "dda7b307f187",
    "first_seen": "2026-07-20"
   },
@@ -2863,6 +2978,7 @@
    "date": "2027-01-19",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/cairdeas-traditional-music-showcase-live-atlantic-apartotel/",
+   "category": null,
    "id": "64d34ddfaa9c",
    "first_seen": "2026-07-20"
   },
@@ -2874,6 +2990,7 @@
    "title": "Maccana – The Unseen Growth of Winter",
    "date": "2027-01-30",
    "url": "https://www.saintcolumbshall.com/whatson/maccana-the-unseen-growth-of-winter/",
+   "category": null,
    "id": "dc1bc65c2fdd",
    "first_seen": "2026-07-20"
   },
@@ -2939,7 +3056,8 @@
    "url": "https://abbeycentre.ie/eventer/tommy-flemming-the-encore-tour",
    "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173674156",
    "id": "cacb478aea42",
-   "first_seen": "2026-07-14"
+   "first_seen": "2026-07-14",
+   "category": null
   },
   {
    "source": "eventbrite_donegal",
@@ -2950,6 +3068,7 @@
    "date": "2027-02-17",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/creative-recycled-metal-sculpture-workshop/",
+   "category": null,
    "id": "d859691aa3db",
    "first_seen": "2026-07-20"
   },
@@ -2988,6 +3107,7 @@
    "date": "2027-02-28",
    "time": "20:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/andrew-strong-the-commitments/",
+   "category": null,
    "id": "cf05f3343ec9",
    "first_seen": "2026-07-20"
   },
@@ -3001,7 +3121,8 @@
    "url": "https://abbeycentre.ie/eventer/heaven-can-wait-the-meat-loaf-concert-experience",
    "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173671624",
    "id": "71fcd959659a",
-   "first_seen": "2026-07-14"
+   "first_seen": "2026-07-14",
+   "category": null
   },
   {
    "source": "an_grianan",
@@ -3025,6 +3146,7 @@
    "date": "2027-03-12",
    "time": "10:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/introduction-to-etching-workshop/",
+   "category": null,
    "id": "1fe9c6e45aae",
    "first_seen": "2026-07-20"
   },
