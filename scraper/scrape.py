@@ -999,7 +999,14 @@ SOURCES = [
 ALLOWED_COUNTIES = {"Donegal", "Derry", "Sligo", "Leitrim", "Tyrone", "Fermanagh"}
 COUNTY_ALIASES = {"Londonderry": "Derry"}
 
-CATEGORY_ALIASES = {"family": "Kids/Family"}
+CATEGORY_ALIASES = {
+    "family": "Kids/Family",
+    "cinema": "Film",
+    "spoken word & conversations": "Spoken Word",
+    "talks/spoken word": "Spoken Word",
+    "masterclass/workshop": "Workshop",
+    "workshops & programmes": "Workshop",
+}
 
 AGE_RANGE_RE = re.compile(r"\b(\d{1,2})\s*-\s*(\d{1,2})\s*(?:yrs?|years?)\b", re.I)
 KIDS_KEYWORDS_RE = re.compile(r"\b(kids?|children'?s?|junior)\b", re.I)
