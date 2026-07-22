@@ -1,10 +1,11 @@
 {
- "generated_at": "2026-07-22T09:25Z",
+ "generated_at": "2026-07-22T10:52Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z",
   "eventbrite_csv_hash": "a355968390ba",
-  "eventbrite_csv_since": "2026-07-20T23:49Z"
+  "eventbrite_csv_since": "2026-07-20T23:49Z",
+  "hawkswell": "2026-07-22T10:52Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
@@ -14,7 +15,8 @@
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
-  "nervecentre": 0
+  "nervecentre": 0,
+  "hawkswell": 0
  },
  "events": [
   {
@@ -72,6 +74,20 @@
    "category": "Visual Arts",
    "id": "16b05ee491cf",
    "first_seen": "2026-07-18"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Moana",
+   "date": "2026-07-10",
+   "end_date": "2026-07-23",
+   "time": "Various times",
+   "url": "https://www.hawkswell.com/whats-on/shows/moana",
+   "category": "Art Deco",
+   "id": "dc4fda4c5df5",
+   "first_seen": "2026-07-22"
   },
   {
    "source": "eaf",
@@ -181,6 +197,33 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Festival Jam Sessions",
+   "date": "2026-07-21",
+   "end_date": "2026-07-25",
+   "time": "5pm & 10.30pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/festival-jam-sessions-2",
+   "category": "Music",
+   "id": "597791a7ef67",
+   "first_seen": "2026-07-22"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Sligo Jazz Festival 2026 Season Ticket",
+   "date": "2026-07-21",
+   "end_date": "2026-07-26",
+   "url": "https://www.hawkswell.com/whats-on/shows/sligo-jazz-festival-2026-season-ticket",
+   "category": "Sligo Jazz",
+   "id": "ea05172e8079",
+   "first_seen": "2026-07-22"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -192,6 +235,32 @@
    "category": "Theatre",
    "id": "64de8071f042",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Double Bill: Jasper Høiby’s 3Elements & Liselotte Östblom",
+   "date": "2026-07-22",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/double-bill-jasper-høibys-3elements-liselotte-östblom",
+   "category": "Music",
+   "id": "fe31311e8803",
+   "first_seen": "2026-07-22"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Honey, Inc. – Featuring Rory Conneally",
+   "date": "2026-07-22",
+   "time": "1.10pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/honey-inc",
+   "category": "Music",
+   "id": "ddd3811aeeac",
+   "first_seen": "2026-07-22"
   },
   {
    "source": "rcc",
@@ -237,6 +306,19 @@
    "first_seen": "2026-07-18"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Double Bill: Emma Rawicz Quartet & Lucia Cadotsch",
+   "date": "2026-07-23",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/double-bill-emma-rawicz-quartet-lucia-cadotsch",
+   "category": "Music",
+   "id": "db8b5b98bfb7",
+   "first_seen": "2026-07-22"
+  },
+  {
    "source": "eaf",
    "venue": "Ionad Cois Locha",
    "town": "Dunlewey",
@@ -262,6 +344,33 @@
    "category": "Theatre",
    "id": "1f28dfbd5da0",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Minions and Monsters",
+   "date": "2026-07-24",
+   "end_date": "2026-07-30",
+   "time": "Various times",
+   "url": "https://www.hawkswell.com/whats-on/shows/minions-and-monsters",
+   "category": "Art Deco",
+   "id": "17346b950e9a",
+   "first_seen": "2026-07-22"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Aaron Parks and Friends",
+   "date": "2026-07-24",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/aaron-parks-and-friends",
+   "category": "Music",
+   "id": "a6c0f5145bf1",
+   "first_seen": "2026-07-22"
   },
   {
    "source": "mcgrorys",
@@ -368,6 +477,32 @@
    "first_seen": "2026-07-18"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Gareth Lockrane Octet",
+   "date": "2026-07-25",
+   "time": "2pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/gareth-lockrane-septet",
+   "category": "Music",
+   "id": "9ffe696de865",
+   "first_seen": "2026-07-22"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "SJP All Stars",
+   "date": "2026-07-25",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/sligo-jazz-project-all-stars",
+   "category": "Music",
+   "id": "3e42d8655302",
+   "first_seen": "2026-07-22"
+  },
+  {
    "source": "eaf",
    "venue": "Ionad Cois Locha",
    "town": "Dunlewey",
@@ -420,6 +555,32 @@
    "first_seen": "2026-07-18"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "SJP BIG BASH",
+   "date": "2026-07-26",
+   "time": "12pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/sligo-jazz-project-big-bash",
+   "category": "Music",
+   "id": "9710abd1d803",
+   "first_seen": "2026-07-22"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "SJP Wrap Party – with the SJP Little Big Band",
+   "date": "2026-07-26",
+   "time": "7.30pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/festival-wrap-party-2",
+   "category": "Music",
+   "id": "927d6ae19b3c",
+   "first_seen": "2026-07-22"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Lillie's Cocktail Bar Sligo",
    "town": "Sligo",
@@ -470,6 +631,19 @@
    "category": null,
    "id": "429d3d675b2e",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theater",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Clíodhna Donagher & Friends – Lunchtime @ the Well",
+   "date": "2026-07-29",
+   "time": "1.10pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/clíodhna-donagher-friends",
+   "category": "Music",
+   "id": "c99455231b78",
+   "first_seen": "2026-07-22"
   },
   {
    "source": "eventbrite_donegal",
@@ -588,6 +762,19 @@
    "category": null,
    "id": "2f507e424cc1",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Nightshift: DJ Ash & nigel",
+   "date": "2026-08-01",
+   "time": "9pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/nightshift-nigel-djash",
+   "category": "Music",
+   "id": "4e4509125244",
+   "first_seen": "2026-07-22"
   },
   {
    "source": "eventbrite_donegal",
