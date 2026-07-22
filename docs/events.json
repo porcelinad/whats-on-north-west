@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-21T22:52Z",
+ "generated_at": "2026-07-22T09:25Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z",
@@ -181,59 +181,6 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "eaf",
-   "venue": "Blakes",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Pop-Up Gaeltacht & Seisiún Ceoil",
-   "date": "2026-07-21",
-   "time": "8pm",
-   "url": "https://eaf.ie/events/pop-up-gaeltacht-seisiun-ceoil/",
-   "category": "Music",
-   "id": "7132d758649a",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "Ionad Cois Locha",
-   "town": "Dunlewey",
-   "county": "Donegal",
-   "title": "Trad Tráthnóna | Doimnic Mac Giolla Bhríde",
-   "date": "2026-07-21",
-   "time": "8.30pm",
-   "url": "https://eaf.ie/events/trad-trathnona-doimnic-mac-giolla-bhride/",
-   "category": "Music",
-   "id": "8417d442d2c6",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "Ionad Naomh Pádraig",
-   "town": "Dore",
-   "county": "Donegal",
-   "title": "Tá mé Just – DÍOLTA AMACH",
-   "date": "2026-07-21",
-   "time": "11am",
-   "url": "https://eaf.ie/events/ta-me-just-diolta-amach-sold-out/",
-   "category": "Workshop",
-   "id": "3b51fadd6dfa",
-   "first_seen": "2026-07-21",
-   "sold_out": true
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Peace Flame",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "Discover Derry! Interactive Treasure Hunt & City Exploration Game",
-   "date": "2026-07-21",
-   "time": "07:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/discover-derry-interactive-treasure-hunt-city-exploration-game/",
-   "category": null,
-   "id": "93c0c6e265f3",
-   "first_seen": "2026-07-21"
-  },
-  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -304,19 +251,6 @@
    "first_seen": "2026-07-18"
   },
   {
-   "source": "eventbrite_donegal",
-   "venue": "The Highlands Hotel",
-   "town": "Glenties",
-   "county": "Donegal",
-   "title": "MacGill Summer School 2026",
-   "date": "2026-07-23",
-   "time": "11:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/macgill-summer-school-2026/",
-   "category": null,
-   "id": "bc2b8c036a4e",
-   "first_seen": "2026-07-18"
-  },
-  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -353,19 +287,6 @@
    "category": "Workshop",
    "id": "3a1069352a63",
    "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Roddy's Bar",
-   "town": "Glenties",
-   "county": "Donegal",
-   "title": "Kevin Laughlin Live (with special guest Ó hEaráin)",
-   "date": "2026-07-24",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/kevin-laughlin-live-with-special-guest-o-hearain/",
-   "category": null,
-   "id": "8be06f290c4d",
-   "first_seen": "2026-07-20"
   },
   {
    "source": "eaf",
@@ -460,19 +381,6 @@
    "first_seen": "2026-07-18"
   },
   {
-   "source": "eventbrite_donegal",
-   "venue": "McCafferty's Bar & Restaurant",
-   "town": "Dungloe",
-   "county": "Donegal",
-   "title": "The Naughty Noughties Brunch",
-   "date": "2026-07-25",
-   "time": "15:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-naughty-noughties-brunch/",
-   "category": null,
-   "id": "01eae8153562",
-   "first_seen": "2026-07-20"
-  },
-  {
    "source": "eaf",
    "venue": "The Forge",
    "town": "Donegal Town",
@@ -510,19 +418,6 @@
    "category": "Spoken Word",
    "id": "98cbff6a9a05",
    "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Leitrim School of Art N41 E8H0",
-   "town": "Ballinamore",
-   "county": "Leitrim",
-   "title": "One Day Ceramic Workshop, Sunday 26th July 2026, 10am-4pm",
-   "date": "2026-07-26",
-   "time": "10:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/one-day-ceramic-workshop-sunday-26th-july-2026-10am-4pm/",
-   "category": null,
-   "id": "0fe217f9144a",
-   "first_seen": "2026-07-20"
   },
   {
    "source": "eventbrite_donegal",
