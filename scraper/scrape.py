@@ -962,6 +962,175 @@ def parse_nervecentre(soup, source):
     return events
 
 
+HAWKSWELL_TIME_RE = re.compile(r"\d{1,2}([.:]\d{2})?\s*(?:am|pm)", re.I)
+HAWKSWELL_DATE_TOKEN_RE = re.compile(r"\b(\d{1,2})\b(?:\s+([A-Za-z]+))?(?:\s+(\d{4}))?")
+
+
+def parse_hawkswell_date_line(text):
+    """Parses Hawk's Well's date lines, which come in several shapes:
+    a single date+time ('Wed 22 July 2026, 1.10pm'), a genuine range
+    ('Tues 21 - Sat 25 July 2026, 5pm & 10.30pm' - dash-joined, day-only
+    on the first token borrows month/year from the second), or a list of
+    genuinely separate non-contiguous performances ('Fri 6 March & Fri
+    10 April 2026, 1pm' - '&'/',' joined). Only a dash-only join is
+    treated as a real range; any '&' or ',' between date tokens means
+    'take the first occurrence only', so we don't imply a false
+    continuous run across unrelated nights."""
+    time_matches = [m.group(0) for m in HAWKSWELL_TIME_RE.finditer(text)]
+    time_text = " & ".join(time_matches) if time_matches else None
+    if not time_text:
+        m_various = re.search(r"various\s*times?", text, re.I)
+        if m_various:
+            time_text = "Various times"
+
+    date_part = HAWKSWELL_TIME_RE.sub("", text)
+    matches = list(HAWKSWELL_DATE_TOKEN_RE.finditer(date_part))
+    if not matches:
+        return None, None, time_text
+
+    is_list = False
+    for i in range(len(matches) - 1):
+        between = date_part[matches[i].end():matches[i + 1].start()]
+        if "&" in between or "," in between:
+            is_list = True
+            break
+
+    parsed = [[int(m.group(1)),
+               MONTHS.get(m.group(2).lower()[:3]) if m.group(2) else None,
+               int(m.group(3)) if m.group(3) else None]
+              for m in matches]
+
+    for i in range(len(parsed) - 1):
+        if parsed[i][1] is None:
+            later = next((p for p in parsed[i + 1:] if p[1] is not None), None)
+            if later:
+                parsed[i][1] = later[1]
+                if parsed[i][2] is None:
+                    parsed[i][2] = later[2]
+        if parsed[i][2] is None:
+            later_year = next((p[2] for p in parsed[i + 1:] if p[2] is not None), None)
+            if later_year:
+                parsed[i][2] = later_year
+
+    dates = []
+    for day, mon, year in parsed:
+        if not mon:
+            continue
+        if year:
+            try:
+                d = date(year, mon, day)
+            except ValueError:
+                d = None
+        else:
+            d = infer_year(mon, day)
+        if d:
+            dates.append(d)
+
+    if not dates:
+        return None, None, time_text
+    if is_list or len(dates) == 1:
+        return dates[0], None, time_text
+    start, end = dates[0], dates[-1]
+    return start, (end if end != start else None), time_text
+
+
+def parse_hawkswell_listing(soup, source):
+    """hawkswell.com/whats-on/shows - each card is a genre tag (plain
+    div, not a link), then a single <a> wrapping the whole card (image,
+    title, optional subline, date). The genre 'Filter' buttons at the
+    top of the page are real links pointing at the same URL pattern as
+    individual shows, so they're explicitly excluded via the #wwd-tags
+    container rather than guessed at."""
+    filter_hrefs = set()
+    filter_div = soup.find(id="wwd-tags")
+    if filter_div:
+        filter_hrefs = {a.get("href") for a in filter_div.find_all("a", href=True)}
+
+    events = []
+    genre = None
+    url = None
+    buf = []
+
+    def finalise():
+        if not (url and buf):
+            return
+        date_line = None
+        text_parts = []
+        for line in buf:
+            if HAWKSWELL_DATE_TOKEN_RE.search(HAWKSWELL_TIME_RE.sub("", line)) \
+                    or HAWKSWELL_TIME_RE.search(line) \
+                    or re.search(r"various\s*times?", line, re.I):
+                date_line = line
+            else:
+                text_parts.append(line)
+        if not date_line or not text_parts:
+            return
+        start, end, time_text = parse_hawkswell_date_line(date_line)
+        if not start:
+            return
+        title = " – ".join(text_parts)
+        events.append(make_event(
+            source, title, start, end_date=end.isoformat() if end else None,
+            time=time_text, url=url, category=genre))
+
+    for kind, a, b in walk(soup):
+        if kind == "link":
+            href, text = a, b
+            if href in filter_hrefs:
+                continue
+            if href != url:
+                # the most recently buffered text (if any) is actually
+                # the NEW event's genre tag, captured while the OLD
+                # event's href was still active - reclaim it before
+                # finalising the old event
+                next_genre = buf.pop() if buf else None
+                finalise()
+                url = href
+                genre = next_genre
+                buf = []
+        else:
+            buf.append(a)
+    finalise()
+    return events
+
+
+def parse_hawkswell_event_page(soup):
+    """Each event's own page has a clean 'Location' table row: either
+    the main theatre ('Hawk's Well Theatre') or their second venue in
+    Ballymote ('Art Deco Theatre, Ballymote')."""
+    for th in soup.find_all("th"):
+        if clean(th.get_text()).lower() == "location":
+            td = th.find_next_sibling("td")
+            if td:
+                text = clean(td.get_text())
+                if "," in text:
+                    venue, town = (p.strip() for p in text.split(",", 1))
+                else:
+                    venue, town = text, "Sligo"
+                return venue, town
+    return "Hawk's Well Theatre", "Sligo"
+
+
+def parse_hawkswell(source):
+    """Two-stage, same pattern as EAF: scrape the listing page for
+    what/when/genre, then visit each event's own page for its real
+    venue (the listing page has no reliable per-event location - only
+    the 'Art Deco' genre tag, which is also a style label used at the
+    main venue too, not exclusively a Ballymote marker)."""
+    listing = fetch(source["url"])
+    events = parse_hawkswell_listing(listing, source)
+    for ev in events:
+        try:
+            detail = fetch(ev["url"])
+            venue, town = parse_hawkswell_event_page(detail)
+            ev["venue"] = venue
+            ev["town"] = town
+        except Exception:
+            pass  # keep the default Hawk's Well Theatre / Sligo
+        time.sleep(0.4)
+    return events
+
+
 # ---------------------------------------------------------------- sources
 
 SOURCES = [
@@ -993,6 +1162,9 @@ SOURCES = [
     {"name": "nervecentre", "venue": "Nerve Centre", "town": "Derry",
      "county": "Derry", "url": "https://nervecentre.org/whats-on",
      "parser": parse_nervecentre},
+    {"name": "hawkswell", "venue": "Hawk's Well Theatre", "town": "Sligo",
+     "county": "Sligo", "url": "https://www.hawkswell.com/whats-on/shows",
+     "parser": parse_hawkswell, "custom_fetch": True, "min_interval_days": 3},
 ]
 
 
