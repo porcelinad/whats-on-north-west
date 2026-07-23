@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-22T10:52Z",
+ "generated_at": "2026-07-23T09:24Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z",
@@ -11,7 +11,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -222,58 +222,6 @@
    "category": "Sligo Jazz",
    "id": "ea05172e8079",
    "first_seen": "2026-07-22"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "IADF 2026: International Night",
-   "date": "2026-07-22",
-   "url": "https://angrianan.com/event/iadf-2026-international-night-homegrown/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662789/events/128646848/seats?zone=Default",
-   "category": "Theatre",
-   "id": "64de8071f042",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Double Bill: Jasper Høiby’s 3Elements & Liselotte Östblom",
-   "date": "2026-07-22",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/double-bill-jasper-høibys-3elements-liselotte-östblom",
-   "category": "Music",
-   "id": "fe31311e8803",
-   "first_seen": "2026-07-22"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Honey, Inc. – Featuring Rory Conneally",
-   "date": "2026-07-22",
-   "time": "1.10pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/honey-inc",
-   "category": "Music",
-   "id": "ddd3811aeeac",
-   "first_seen": "2026-07-22"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "EAF: A Personal History Of Pyromania",
-   "date": "2026-07-22",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/a-personal-history-of-pyromania/",
-   "category": "Spoken Word",
-   "id": "8d794761504a",
-   "first_seen": "2026-07-14"
   },
   {
    "source": "rcc",
@@ -1400,6 +1348,19 @@
    "category": null,
    "id": "e70ff6c21c3e",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Donegal Mela 2026",
+   "date": "2026-08-22",
+   "end_date": "2026-08-22",
+   "url": "https://angrianan.com/event/donegal-mela-2026/",
+   "category": "Variety",
+   "id": "1ec35a3e0fde",
+   "first_seen": "2026-07-23"
   },
   {
    "source": "eventbrite_donegal",
