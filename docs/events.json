@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-23T09:24Z",
+ "generated_at": "2026-07-24T09:21Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-18T16:50Z",
@@ -11,7 +11,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 2,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -74,20 +74,6 @@
    "category": "Visual Arts",
    "id": "16b05ee491cf",
    "first_seen": "2026-07-18"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Moana",
-   "date": "2026-07-10",
-   "end_date": "2026-07-23",
-   "time": "Various times",
-   "url": "https://www.hawkswell.com/whats-on/shows/moana",
-   "category": "Art Deco",
-   "id": "dc4fda4c5df5",
-   "first_seen": "2026-07-22"
   },
   {
    "source": "eaf",
@@ -239,32 +225,6 @@
    ],
    "id": "02b9bf2077ee",
    "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eaf",
-   "venue": "Dámhlann an Ghleanna",
-   "town": "Mín an Leá, Gortahork",
-   "county": "Donegal",
-   "title": "Oíche Airneáil – Gort an Choirce",
-   "date": "2026-07-23",
-   "time": "8pm",
-   "url": "https://eaf.ie/events/oiche-airneail-gort-an-choirce/",
-   "category": "Music",
-   "id": "5bc18cb00be3",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Double Bill: Emma Rawicz Quartet & Lucia Cadotsch",
-   "date": "2026-07-23",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/double-bill-emma-rawicz-quartet-lucia-cadotsch",
-   "category": "Music",
-   "id": "db8b5b98bfb7",
-   "first_seen": "2026-07-22"
   },
   {
    "source": "eaf",
