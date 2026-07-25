@@ -1,22 +1,23 @@
 {
- "generated_at": "2026-07-24T09:21Z",
+ "generated_at": "2026-07-25T09:02Z",
  "failed_sources": [],
  "source_last_run": {
-  "eaf": "2026-07-18T16:50Z",
+  "eaf": "2026-07-25T09:02Z",
   "eventbrite_csv_hash": "a355968390ba",
   "eventbrite_csv_since": "2026-07-20T23:49Z",
-  "hawkswell": "2026-07-22T10:52Z"
+  "hawkswell": "2026-07-25T09:02Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 2,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 0
+  "hawkswell": 0,
+  "eaf": 0
  },
  "events": [
   {
@@ -129,6 +130,7 @@
    "url": "https://regionalculturalcentre.com/events/drop-in-hands-on-art-room/",
    "category": "Community Arts, Kids/Family",
    "merged_from": [
+    "eaf",
     "rcc"
    ],
    "id": "e284beba368b",
@@ -162,6 +164,10 @@
    "time": "6:00 pm",
    "url": "https://regionalculturalcentre.com/exhibitions/the-rain-tells-us-everything-catherine-mcdonald-katie-nolan-and-niamh-schmidtke-gallery-2-foyer-gallery/",
    "category": "Exhibition",
+   "merged_from": [
+    "eaf",
+    "rcc"
+   ],
    "id": "88d45de4385a",
    "first_seen": "2026-07-14"
   },
@@ -227,33 +233,6 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "eaf",
-   "venue": "Ionad Cois Locha",
-   "town": "Dunlewey",
-   "county": "Donegal",
-   "title": "Fanzini Brothers – Risky Business",
-   "date": "2026-07-23",
-   "end_date": "2026-07-24",
-   "time": "3pm",
-   "url": "https://eaf.ie/events/fanzini-brothers-risky-business/",
-   "category": "Street Arts & Circus",
-   "id": "73b38e34ca3d",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "IADF 2026: Homegrown",
-   "date": "2026-07-24",
-   "url": "https://angrianan.com/event/iadf-2026-homegrown/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662791/events/128646862/seats?zone=Default",
-   "category": "Theatre",
-   "id": "1f28dfbd5da0",
-   "first_seen": "2026-07-14"
-  },
-  {
    "source": "hawkswell",
    "venue": "Art Deco Theatre",
    "town": "Ballymote",
@@ -266,44 +245,6 @@
    "category": "Art Deco",
    "id": "17346b950e9a",
    "first_seen": "2026-07-22"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Aaron Parks and Friends",
-   "date": "2026-07-24",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/aaron-parks-and-friends",
-   "category": "Music",
-   "id": "a6c0f5145bf1",
-   "first_seen": "2026-07-22"
-  },
-  {
-   "source": "mcgrorys",
-   "venue": "McGrory's Hotel",
-   "town": "Culdaff",
-   "county": "Donegal",
-   "title": "Thunder Rolls - The Garth Brooks Tribute",
-   "date": "2026-07-24",
-   "url": "https://www.mcgrorys.ie/entertainment/78-154/",
-   "category": "Music",
-   "id": "557d1ec313ea",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "EAF: Samuel Yakura – Poetry Slam",
-   "date": "2026-07-24",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/samuel-yakura-poetry-slam/",
-   "category": "Workshop",
-   "id": "3a1069352a63",
-   "first_seen": "2026-07-14"
   },
   {
    "source": "eaf",
@@ -320,19 +261,6 @@
    "first_seen": "2026-07-18"
   },
   {
-   "source": "eaf",
-   "venue": "The Social",
-   "town": "Derrybeg",
-   "county": "Donegal",
-   "title": "Diane Cannon, Steve Cooney, Màiri MacMillan agus Eoghan Mac Giolla Bhríde",
-   "date": "2026-07-24",
-   "time": "8pm",
-   "url": "https://eaf.ie/events/diane-cannon-steve-cooney-mairi-macmillan-agus-eoghan-mac-giolla-bhride/",
-   "category": "Music",
-   "id": "eed8fce8195a",
-   "first_seen": "2026-07-18"
-  },
-  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -342,6 +270,11 @@
    "url": "https://angrianan.com/event/iadf-2026-emma-insley-cabaret-night/",
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662792/events/128646864/seats?zone=Default",
    "category": "Theatre",
+   "time": "7pm",
+   "merged_from": [
+    "an_grianan",
+    "eaf"
+   ],
    "id": "dca7555014b8",
    "first_seen": "2026-07-14"
   },
@@ -355,6 +288,10 @@
    "time": "8:00 pm",
    "url": "https://www.balorartscentre.com/?event=tanya-mccole-with-o-hearain",
    "category": "Music",
+   "merged_from": [
+    "balor",
+    "eaf"
+   ],
    "id": "2d874f9d2f93",
    "first_seen": "2026-07-14"
   },
@@ -765,6 +702,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Trio Hupsola – Lunchtime @ The Well",
+   "date": "2026-08-05",
+   "time": "1.10pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/trio-hupsola",
+   "category": "Music",
+   "id": "a25e455f61d4",
+   "first_seen": "2026-07-25"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -828,6 +778,19 @@
    "category": null,
    "id": "3405bffd1e95",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "André Rieu's 2026 Summer Concert: Viva Maastricht!",
+   "date": "2026-08-08",
+   "time": "6.30pm & 2pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/andré-rieus-2026-summer-concert-viva-maastricht",
+   "category": "Art Deco",
+   "id": "eb8ccc1e800a",
+   "first_seen": "2026-07-25"
   },
   {
    "source": "eventbrite_donegal",
@@ -3011,6 +2974,19 @@
    "category": "Music",
    "id": "e73a52022aa3",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Marquee Square Heroes | A Tribute to the Music of Fish Era Marillion",
+   "date": "2027-04-03",
+   "time": "8:00PM",
+   "url": "https://nervecentre.org/whats-on/marquee-square-heroes-a-tribute-to-the-music-of-fish-era-marillion",
+   "category": "Music/Comedy",
+   "id": "5e635fbd4e1a",
+   "first_seen": "2026-07-25"
   },
   {
    "source": "an_grianan",
