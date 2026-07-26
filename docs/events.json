@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T09:02Z",
+ "generated_at": "2026-07-26T09:12Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-25T09:02Z",
@@ -11,7 +11,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -130,7 +130,6 @@
    "url": "https://regionalculturalcentre.com/events/drop-in-hands-on-art-room/",
    "category": "Community Arts, Kids/Family",
    "merged_from": [
-    "eaf",
     "rcc"
    ],
    "id": "e284beba368b",
@@ -164,10 +163,6 @@
    "time": "6:00 pm",
    "url": "https://regionalculturalcentre.com/exhibitions/the-rain-tells-us-everything-catherine-mcdonald-katie-nolan-and-niamh-schmidtke-gallery-2-foyer-gallery/",
    "category": "Exhibition",
-   "merged_from": [
-    "eaf",
-    "rcc"
-   ],
    "id": "88d45de4385a",
    "first_seen": "2026-07-14"
   },
@@ -187,20 +182,6 @@
    ],
    "id": "1bb263e16a1b",
    "first_seen": "2026-07-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Festival Jam Sessions",
-   "date": "2026-07-21",
-   "end_date": "2026-07-25",
-   "time": "5pm & 10.30pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/festival-jam-sessions-2",
-   "category": "Music",
-   "id": "597791a7ef67",
-   "first_seen": "2026-07-22"
   },
   {
    "source": "hawkswell",
@@ -245,159 +226,6 @@
    "category": "Art Deco",
    "id": "17346b950e9a",
    "first_seen": "2026-07-22"
-  },
-  {
-   "source": "eaf",
-   "venue": "The Diamond",
-   "town": "Donegal Town",
-   "county": "Donegal",
-   "title": "MDME Kakapo & Son",
-   "date": "2026-07-24",
-   "end_date": "2026-07-25",
-   "time": "2pm, 3pm & 4pm",
-   "url": "https://eaf.ie/events/mdme-kakapo-son/",
-   "category": "Street Arts & Circus",
-   "id": "a858a17d6b3d",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "IADF 2026: Emma Insley Cabaret Night",
-   "date": "2026-07-25",
-   "url": "https://angrianan.com/event/iadf-2026-emma-insley-cabaret-night/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662792/events/128646864/seats?zone=Default",
-   "category": "Theatre",
-   "time": "7pm",
-   "merged_from": [
-    "an_grianan",
-    "eaf"
-   ],
-   "id": "dca7555014b8",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Tanya McCole with Ó hEaráin",
-   "date": "2026-07-25",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=tanya-mccole-with-o-hearain",
-   "category": "Music",
-   "merged_from": [
-    "balor",
-    "eaf"
-   ],
-   "id": "2d874f9d2f93",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eaf",
-   "venue": "Blakes",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "BRRR BRRR BRRR Records & Tapes Summer Fair",
-   "date": "2026-07-25",
-   "time": "2pm",
-   "url": "https://eaf.ie/events/brrr-record-and-tape-fair/",
-   "category": "Music",
-   "id": "279090f4923d",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "Donegal Castle",
-   "town": "Donegal Town",
-   "county": "Donegal",
-   "title": "Brigid Mae Power",
-   "date": "2026-07-25",
-   "time": "8pm",
-   "url": "https://eaf.ie/events/brigid-mae-power/",
-   "category": "Music",
-   "id": "0def27a51da7",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Gareth Lockrane Octet",
-   "date": "2026-07-25",
-   "time": "2pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/gareth-lockrane-septet",
-   "category": "Music",
-   "id": "9ffe696de865",
-   "first_seen": "2026-07-22"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "SJP All Stars",
-   "date": "2026-07-25",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/sligo-jazz-project-all-stars",
-   "category": "Music",
-   "id": "3e42d8655302",
-   "first_seen": "2026-07-22"
-  },
-  {
-   "source": "eaf",
-   "venue": "Ionad Cois Locha",
-   "town": "Dunlewey",
-   "county": "Donegal",
-   "title": "The Byrne Brothers",
-   "date": "2026-07-25",
-   "time": "8.30pm",
-   "url": "https://eaf.ie/events/the-byrne-brothers/",
-   "category": "Music",
-   "id": "ef398b19153d",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "The Forge",
-   "town": "Donegal Town",
-   "county": "Donegal",
-   "title": "Turn It On: EAF Closing Party – DJ Set",
-   "date": "2026-07-25",
-   "time": "10pm",
-   "url": "https://eaf.ie/events/turn-it-on-eaf-closing-party-dj-set/",
-   "category": "Music",
-   "id": "41bc036a2882",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "Town Park",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Party In The Park",
-   "date": "2026-07-25",
-   "time": "12noon - 6pm",
-   "url": "https://eaf.ie/events/party-in-the-park/",
-   "category": "Music",
-   "id": "f917b0c0cb3b",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "Visitor Centre",
-   "town": "Glenveagh National Park",
-   "county": "Donegal",
-   "title": "Ubuntu Trekkers, BIG CHEEKS and Samuel Yakura",
-   "date": "2026-07-25",
-   "time": "2pm",
-   "url": "https://eaf.ie/events/ubuntu-trekkers-big-cheeks-and-samuel-yakura/",
-   "category": "Spoken Word",
-   "id": "98cbff6a9a05",
-   "first_seen": "2026-07-18"
   },
   {
    "source": "hawkswell",
