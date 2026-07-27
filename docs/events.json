@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-07-26T09:12Z",
+ "generated_at": "2026-07-27T08:55Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-25T09:02Z",
-  "eventbrite_csv_hash": "a355968390ba",
-  "eventbrite_csv_since": "2026-07-20T23:49Z",
+  "eventbrite_csv_hash": "69ee700b47c0",
+  "eventbrite_csv_since": "2026-07-27T08:55Z",
   "hawkswell": "2026-07-25T09:02Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -20,34 +20,6 @@
   "eaf": 0
  },
  "events": [
-  {
-   "source": "eaf",
-   "venue": "Saldanha Gallery, Fort Dunree",
-   "town": "Linsfort, Buncrana",
-   "county": "Donegal",
-   "title": "Setting | Mary O’Malley",
-   "date": "2026-06-28",
-   "end_date": "2026-07-26",
-   "time": "10.30am- 4.30pm (Daily)",
-   "url": "https://eaf.ie/events/setting-mary-omalley/",
-   "category": "Visual Arts",
-   "id": "05bf61071ab7",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eaf",
-   "venue": "Saldanha Gallery, Fort Dunree",
-   "town": "Linsfort, Buncrana",
-   "county": "Donegal",
-   "title": "Still Life | Group Show",
-   "date": "2026-06-28",
-   "end_date": "2026-07-26",
-   "time": "10.30am- 4.30pm (Daily)",
-   "url": "https://eaf.ie/events/still-life-group-show/",
-   "category": "Visual Arts",
-   "id": "ad248e5e203e",
-   "first_seen": "2026-07-18"
-  },
   {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
@@ -184,19 +156,6 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Sligo Jazz Festival 2026 Season Ticket",
-   "date": "2026-07-21",
-   "end_date": "2026-07-26",
-   "url": "https://www.hawkswell.com/whats-on/shows/sligo-jazz-festival-2026-season-ticket",
-   "category": "Sligo Jazz",
-   "id": "ea05172e8079",
-   "first_seen": "2026-07-22"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -228,43 +187,17 @@
    "first_seen": "2026-07-22"
   },
   {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "SJP BIG BASH",
-   "date": "2026-07-26",
-   "time": "12pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/sligo-jazz-project-big-bash",
-   "category": "Music",
-   "id": "9710abd1d803",
-   "first_seen": "2026-07-22"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "SJP Wrap Party – with the SJP Little Big Band",
-   "date": "2026-07-26",
-   "time": "7.30pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/festival-wrap-party-2",
-   "category": "Music",
-   "id": "927d6ae19b3c",
-   "first_seen": "2026-07-22"
-  },
-  {
    "source": "eventbrite_donegal",
-   "venue": "Lillie's Cocktail Bar Sligo",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "The Couch with KENDY & RAYBO",
+   "venue": "Peace Flame",
+   "town": "Londonderry",
+   "county": "Derry",
+   "title": "Discover Derry! Interactive Treasure Hunt & City Exploration Game",
    "date": "2026-07-27",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-couch-with-kendy-raybo/",
+   "time": "07:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/discover-derry-interactive-treasure-hunt-city-exploration-game/",
    "category": null,
-   "id": "81599208e0dd",
-   "first_seen": "2026-07-20"
+   "id": "202b2e554b9a",
+   "first_seen": "2026-07-27"
   },
   {
    "source": "eventbrite_donegal",
@@ -277,19 +210,6 @@
    "url": "https://www.eventbrite.ie/d/ireland--donegal/walking-the-agivey-river/",
    "category": null,
    "id": "2e9b57080711",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Lillie's Cocktail Bar Sligo",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Killian Sundermann Live at LilliePalooza",
-   "date": "2026-07-28",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/killian-sundermann-live-at-lilliepalooza/",
-   "category": null,
-   "id": "6a674a1d4fcb",
    "first_seen": "2026-07-20"
   },
   {
@@ -489,16 +409,16 @@
   },
   {
    "source": "eventbrite_donegal",
-   "venue": "Roe Valley Arts and Cultural Centre",
-   "town": "Limavady",
-   "county": "Derry",
-   "title": "Danny Boy Inspired Fused Glass Panel for 18+yrs",
-   "date": "2026-08-01",
-   "time": "10:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/danny-boy-inspired-fused-glass-panel-for-18-yrs/",
+   "venue": "Bridgend Bar",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Legend Sessions - When Johnny Meets ....",
+   "date": "2026-08-02",
+   "time": "12:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/legend-sessions-when-johnny-meets/",
    "category": null,
-   "id": "2545d0d70d06",
-   "first_seen": "2026-07-20"
+   "id": "18097d08d35f",
+   "first_seen": "2026-07-27"
   },
   {
    "source": "eventbrite_donegal",
@@ -518,6 +438,19 @@
   },
   {
    "source": "eventbrite_donegal",
+   "venue": "Roe Valley Arts and Cultural Centre",
+   "town": "Limavady",
+   "county": "Derry",
+   "title": "Marbling Magic for 6-11yrs",
+   "date": "2026-08-04",
+   "time": "11:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/marbling-magic-for-6-11yrs/",
+   "category": "Kids/Family",
+   "id": "1b240846007b",
+   "first_seen": "2026-07-27"
+  },
+  {
+   "source": "eventbrite_donegal",
    "venue": "Cultúrlann Uí Chanáin",
    "town": "Londonderry",
    "county": "Derry",
@@ -528,6 +461,19 @@
    "category": null,
    "id": "40728da7c5ce",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "F92 ADT8",
+   "town": "Ramelton",
+   "county": "Donegal",
+   "title": "Cyanotype Workshop",
+   "date": "2026-08-05",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/cyanotype-workshop/",
+   "category": null,
+   "id": "377a781c7ca9",
+   "first_seen": "2026-07-27"
   },
   {
    "source": "hawkswell",
@@ -960,6 +906,19 @@
   },
   {
    "source": "eventbrite_donegal",
+   "venue": "Learmount Forest Park",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Cycling in the Sperrins",
+   "date": "2026-08-14",
+   "time": "11:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/cycling-in-the-sperrins/",
+   "category": null,
+   "id": "0bdac8d94fc4",
+   "first_seen": "2026-07-27"
+  },
+  {
+   "source": "eventbrite_donegal",
    "venue": "Nerve Centre",
    "town": "Londonderry",
    "county": "Derry",
@@ -1063,6 +1022,32 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "eventbrite_donegal",
+   "venue": "Roe Valley Arts and Cultural Centre",
+   "town": "Limavady",
+   "county": "Derry",
+   "title": "Creative Sculptures for 6-11yrs",
+   "date": "2026-08-18",
+   "time": "11:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/creative-sculptures-for-6-11yrs/",
+   "category": "Kids/Family",
+   "id": "94932e744b23",
+   "first_seen": "2026-07-27"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Roe Valley Arts and Cultural Centre",
+   "town": "Limavady",
+   "county": "Derry",
+   "title": "LEGO Animation Studio for 6-11yrs Session 2",
+   "date": "2026-08-19",
+   "time": "13:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/lego-animation-studio-for-6-11yrs-session-2/",
+   "category": "Kids/Family",
+   "id": "f471cf19bd03",
+   "first_seen": "2026-07-27"
+  },
+  {
    "source": "mcgrorys",
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
@@ -1112,6 +1097,19 @@
    "category": "Variety",
    "id": "1ec35a3e0fde",
    "first_seen": "2026-07-23"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Manor House Country Hotel",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Brunch, Beats & Cruise with DJ Bob!! Sat 22nd August 2026",
+   "date": "2026-08-22",
+   "time": "13:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/brunch-beats-cruise-with-dj-bob-sat-22nd-august-2026/",
+   "category": null,
+   "id": "40d9fd0177d3",
+   "first_seen": "2026-07-27"
   },
   {
    "source": "eventbrite_donegal",
@@ -1177,6 +1175,19 @@
    "category": null,
    "id": "89917aa1673c",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "The nest Custom House Quay branching F91 K79P",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Swan Song",
+   "date": "2026-08-26",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/swan-song/",
+   "category": null,
+   "id": "15d374872008",
+   "first_seen": "2026-07-27"
   },
   {
    "source": "nervecentre",
@@ -1282,6 +1293,19 @@
    "category": "Comedy",
    "id": "c27f5df6993a",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim Sculpture Centre",
+   "town": "Manorhamilton",
+   "county": "Leitrim",
+   "title": "Welding Workshop",
+   "date": "2026-09-04",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/welding-workshop/",
+   "category": null,
+   "id": "723d876609e5",
+   "first_seen": "2026-07-27"
   },
   {
    "source": "nervecentre",
@@ -1527,19 +1551,6 @@
    "category": "Music",
    "id": "b7acea3de5ce",
    "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Clanree Hotel",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Mamma Mia - The Live Experience / LETTERKENNY",
-   "date": "2026-09-19",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/mamma-mia-the-live-experience-letterkenny/",
-   "category": null,
-   "id": "f0226be46b17",
-   "first_seen": "2026-07-20"
   },
   {
    "source": "eventbrite_donegal",
