@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-27T10:42Z",
+ "generated_at": "2026-07-28T09:36Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-25T09:02Z",
   "eventbrite_csv_hash": "69ee700b47c0",
   "eventbrite_csv_since": "2026-07-27T08:55Z",
-  "hawkswell": "2026-07-25T09:02Z"
+  "hawkswell": "2026-07-28T09:36Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
@@ -192,12 +192,12 @@
    "town": "Londonderry",
    "county": "Derry",
    "title": "Discover Derry! Interactive Treasure Hunt & City Exploration Game",
-   "date": "2026-07-27",
+   "date": "2026-07-28",
    "time": "07:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/discover-derry-interactive-treasure-hunt-city-exploration-game/",
    "category": null,
-   "id": "202b2e554b9a",
-   "first_seen": "2026-07-27"
+   "id": "8b4d2cf0a2df",
+   "first_seen": "2026-07-28"
   },
   {
    "source": "eventbrite_donegal",
@@ -205,25 +205,12 @@
    "town": "Coleraine",
    "county": "Derry",
    "title": "Walking the Agivey River",
-   "date": "2026-07-28",
+   "date": "2026-07-29",
    "time": "18:00",
    "url": "https://www.eventbrite.ie/d/ireland--donegal/walking-the-agivey-river/",
    "category": null,
-   "id": "2e9b57080711",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "McCafferty's at The Pier",
-   "town": "Donegal",
-   "county": "Donegal",
-   "title": "ANAM - Traditional Irish Music, Song and Dance Show",
-   "date": "2026-07-28",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/anam-traditional-irish-music-song-and-dance-show/",
-   "category": null,
-   "id": "429d3d675b2e",
-   "first_seen": "2026-07-20"
+   "id": "72f30b70b30f",
+   "first_seen": "2026-07-28"
   },
   {
    "source": "hawkswell",
@@ -237,6 +224,19 @@
    "category": "Music",
    "id": "c99455231b78",
    "first_seen": "2026-07-22"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "McCafferty's at The Pier",
+   "town": "Donegal",
+   "county": "Donegal",
+   "title": "ANAM - Traditional Irish Music, Song and Dance Show",
+   "date": "2026-07-29",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/anam-traditional-irish-music-song-and-dance-show/",
+   "category": null,
+   "id": "0c7d97604ad6",
+   "first_seen": "2026-07-28"
   },
   {
    "source": "eventbrite_donegal",
@@ -1255,6 +1255,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Ceol Binn Linn – Lunchtime @ The Well",
+   "date": "2026-09-02",
+   "time": "1.10pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/ceol-binn-linn",
+   "category": "Music",
+   "id": "f9b3e1d287d8",
+   "first_seen": "2026-07-28"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Holywell Trust",
    "town": "Londonderry",
@@ -1293,6 +1306,19 @@
    "category": "Comedy",
    "id": "c27f5df6993a",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Dancing at Lughnasa – by Brian Friel",
+   "date": "2026-09-04",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/dancing-at-lughnasa-2",
+   "category": "Theatre",
+   "id": "f7276e3be663",
+   "first_seen": "2026-07-28"
   },
   {
    "source": "eventbrite_donegal",
@@ -1347,6 +1373,32 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "The General – With live musical accompaniment",
+   "date": "2026-09-05",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-general",
+   "category": "Art Deco",
+   "id": "1d30bf98ecfe",
+   "first_seen": "2026-07-28"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Anne Gildea - Further Adventures in WOMANING",
+   "date": "2026-09-05",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/anne-gildea-further-adventures-in-womaning",
+   "category": "Comedy",
+   "id": "9346e94ff465",
+   "first_seen": "2026-07-28"
+  },
+  {
    "source": "mcgrorys",
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
@@ -1357,6 +1409,32 @@
    "category": "Music",
    "id": "a935e4f46a28",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Studio",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Tiny Trees – With Jackie Maguire",
+   "date": "2026-09-07",
+   "time": "11am & 12pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/tiny-trees",
+   "category": "Children",
+   "id": "893db976530b",
+   "first_seen": "2026-07-28"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "The Sand Park – A play written & performed by Seamus O'Rourke",
+   "date": "2026-09-08",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-sand-park",
+   "category": "Theatre",
+   "id": "d37586d4767d",
+   "first_seen": "2026-07-28"
   },
   {
    "source": "an_grianan",
