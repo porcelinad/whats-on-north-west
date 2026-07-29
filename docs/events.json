@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-28T09:36Z",
+ "generated_at": "2026-07-29T09:37Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-25T09:02Z",
@@ -8,10 +8,10 @@
   "hawkswell": "2026-07-28T09:36Z"
  },
  "consecutive_failures": {
-  "an_grianan": 0,
-  "rcc": 0,
-  "balor": 0,
-  "abbey": 0,
+  "an_grianan": 1,
+  "rcc": 1,
+  "balor": 1,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -187,32 +187,6 @@
    "first_seen": "2026-07-22"
   },
   {
-   "source": "eventbrite_donegal",
-   "venue": "Peace Flame",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "Discover Derry! Interactive Treasure Hunt & City Exploration Game",
-   "date": "2026-07-28",
-   "time": "07:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/discover-derry-interactive-treasure-hunt-city-exploration-game/",
-   "category": null,
-   "id": "8b4d2cf0a2df",
-   "first_seen": "2026-07-28"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Agivey River",
-   "town": "Coleraine",
-   "county": "Derry",
-   "title": "Walking the Agivey River",
-   "date": "2026-07-29",
-   "time": "18:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/walking-the-agivey-river/",
-   "category": null,
-   "id": "72f30b70b30f",
-   "first_seen": "2026-07-28"
-  },
-  {
    "source": "hawkswell",
    "venue": "Hawk's Well Theater",
    "town": "Sligo",
@@ -224,32 +198,6 @@
    "category": "Music",
    "id": "c99455231b78",
    "first_seen": "2026-07-22"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "McCafferty's at The Pier",
-   "town": "Donegal",
-   "county": "Donegal",
-   "title": "ANAM - Traditional Irish Music, Song and Dance Show",
-   "date": "2026-07-29",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/anam-traditional-irish-music-song-and-dance-show/",
-   "category": null,
-   "id": "0c7d97604ad6",
-   "first_seen": "2026-07-28"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Áislann Chill Chartha",
-   "town": "Kilcar",
-   "county": "Donegal",
-   "title": "The Seeger Sessions Revival - Kilcar",
-   "date": "2026-07-29",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-seeger-sessions-revival-kilcar/",
-   "category": null,
-   "id": "d0f5014f2b59",
-   "first_seen": "2026-07-20"
   },
   {
    "source": "abbey",
@@ -278,19 +226,6 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "eventbrite_donegal",
-   "venue": "Ballyshannon Folk & Traditional Festival",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "49th Ballyshannon Folk and Traditional Music Festival Weekend Ticket",
-   "date": "2026-07-31",
-   "time": "18:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/49th-ballyshannon-folk-and-traditional-music-festival-weekend-ticket/",
-   "category": null,
-   "id": "80a8e246eaf8",
-   "first_seen": "2026-07-18"
-  },
-  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -303,19 +238,6 @@
    "category": "Musical",
    "id": "10c78e239cff",
    "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Bridge Inn Dungloe",
-   "town": "Dungloe",
-   "county": "Donegal",
-   "title": "Nothing But Trouble - DAIRE - Marquee at Bridge Inn",
-   "date": "2026-07-31",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/nothing-but-trouble-daire-marquee-at-bridge-inn/",
-   "category": null,
-   "id": "a4d28039674c",
-   "first_seen": "2026-07-20"
   },
   {
    "source": "nervecentre",
@@ -331,32 +253,6 @@
    "first_seen": "2026-07-21"
   },
   {
-   "source": "eventbrite_donegal",
-   "venue": "Ballyshannon Folk & Traditional Festival - Live at the Marquee",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Ballyshannon Folk & Traditional Music Festival - Saturday 1st August",
-   "date": "2026-08-01",
-   "time": "18:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/ballyshannon-folk-traditional-music-festival-saturday-1st-august/",
-   "category": null,
-   "id": "26c6b6159e5b",
-   "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Gurn's Milestone",
-   "town": "Manorhamilton",
-   "county": "Leitrim",
-   "title": "3 Bucks Left - Live at Gurns",
-   "date": "2026-08-01",
-   "time": "21:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/3-bucks-left-live-at-gurns/",
-   "category": null,
-   "id": "2f507e424cc1",
-   "first_seen": "2026-07-20"
-  },
-  {
    "source": "hawkswell",
    "venue": "Hawk's Well Theatre",
    "town": "Sligo",
@@ -368,32 +264,6 @@
    "category": "Music",
    "id": "4e4509125244",
    "first_seen": "2026-07-22"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Leitrim School of Art N41 E8H0",
-   "town": "Ballinamore",
-   "county": "Leitrim",
-   "title": "Quiltmaking Workshop, Sat 1st Aug 2026,10am-4pm",
-   "date": "2026-08-01",
-   "time": "10:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/quiltmaking-workshop-sat-1st-aug-2026-10am-4pm/",
-   "category": null,
-   "id": "ae34381b9e8b",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "McCafferty's Bar & Restaurant",
-   "town": "Dungloe",
-   "county": "Donegal",
-   "title": "Gearóid McCarthy LIVE at McCafferty's, Dungloe",
-   "date": "2026-08-01",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/gearoid-mccarthy-live-at-mccaffertys-dungloe/",
-   "category": null,
-   "id": "de1325381988",
-   "first_seen": "2026-07-20"
   },
   {
    "source": "mcgrorys",
