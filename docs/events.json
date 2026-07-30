@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-29T09:37Z",
+ "generated_at": "2026-07-30T09:30Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-25T09:02Z",
@@ -8,10 +8,10 @@
   "hawkswell": "2026-07-28T09:36Z"
  },
  "consecutive_failures": {
-  "an_grianan": 1,
-  "rcc": 1,
-  "balor": 1,
-  "abbey": 1,
+  "an_grianan": 2,
+  "rcc": 2,
+  "balor": 2,
+  "abbey": 2,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -184,19 +184,6 @@
    "url": "https://www.hawkswell.com/whats-on/shows/minions-and-monsters",
    "category": "Art Deco",
    "id": "17346b950e9a",
-   "first_seen": "2026-07-22"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theater",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Clíodhna Donagher & Friends – Lunchtime @ the Well",
-   "date": "2026-07-29",
-   "time": "1.10pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/clíodhna-donagher-friends",
-   "category": "Music",
-   "id": "c99455231b78",
    "first_seen": "2026-07-22"
   },
   {
