@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-07-30T09:30Z",
+ "generated_at": "2026-07-31T09:44Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-07-25T09:02Z",
   "eventbrite_csv_hash": "69ee700b47c0",
   "eventbrite_csv_since": "2026-07-27T08:55Z",
-  "hawkswell": "2026-07-28T09:36Z"
+  "hawkswell": "2026-07-31T09:44Z"
  },
  "consecutive_failures": {
-  "an_grianan": 2,
-  "rcc": 2,
-  "balor": 2,
-  "abbey": 2,
+  "an_grianan": 0,
+  "rcc": 0,
+  "balor": 0,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -101,9 +101,6 @@
    "time": "1:00 pm",
    "url": "https://regionalculturalcentre.com/events/drop-in-hands-on-art-room/",
    "category": "Community Arts, Kids/Family",
-   "merged_from": [
-    "rcc"
-   ],
    "id": "e284beba368b",
    "first_seen": "2026-07-14"
   },
@@ -170,33 +167,6 @@
     "rcc"
    ],
    "id": "02b9bf2077ee",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Minions and Monsters",
-   "date": "2026-07-24",
-   "end_date": "2026-07-30",
-   "time": "Various times",
-   "url": "https://www.hawkswell.com/whats-on/shows/minions-and-monsters",
-   "category": "Art Deco",
-   "id": "17346b950e9a",
-   "first_seen": "2026-07-22"
-  },
-  {
-   "source": "abbey",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "The Seeger Sessions Revival",
-   "date": "2026-07-30",
-   "url": "https://abbeycentre.ie/eventer/the-seeger-sessions-revival",
-   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173672330",
-   "category": null,
-   "id": "a0e3f9786ebb",
    "first_seen": "2026-07-14"
   },
   {
@@ -355,6 +325,7 @@
    "time": "7:00PM",
    "url": "https://nervecentre.org/whats-on/david-byrnes-american-utopia-nerve-cinema",
    "category": "Film",
+   "sold_out": true,
    "id": "fc68d1fa879d",
    "first_seen": "2026-07-21"
   },
@@ -409,6 +380,18 @@
    "category": null,
    "id": "3405bffd1e95",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Taking Up Space",
+   "date": "2026-08-08",
+   "url": "https://angrianan.com/event/taking-up-space/",
+   "category": null,
+   "id": "e74a612ba5bc",
+   "first_seen": "2026-07-31"
   },
   {
    "source": "hawkswell",
@@ -905,6 +888,19 @@
    "first_seen": "2026-07-27"
   },
   {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "The Ghostlight Sessions August 2026",
+   "date": "2026-08-20",
+   "time": "8:00 pm",
+   "url": "https://www.balorartscentre.com/?event=the-ghostlight-sessions-august-2026",
+   "category": "Music",
+   "id": "d7082f3db7d3",
+   "first_seen": "2026-07-31"
+  },
+  {
    "source": "mcgrorys",
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
@@ -1073,6 +1069,19 @@
    "first_seen": "2026-07-21"
   },
   {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Pump Up The Volume",
+   "date": "2026-08-29",
+   "time": "9:00 pm",
+   "url": "https://www.balorartscentre.com/?event=pump-up-the-volume",
+   "category": "Music",
+   "id": "87942b55bbd9",
+   "first_seen": "2026-07-31"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Leitrim School of Art N41 E8H0",
    "town": "Ballinamore",
@@ -1136,6 +1145,22 @@
    "category": null,
    "id": "b44510a29cf2",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Evlana Ensemble: Headland",
+   "date": "2026-09-03",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/evlana-ensemble-headland/",
+   "category": "Music",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "701e9b3f554c",
+   "first_seen": "2026-07-31"
   },
   {
    "source": "an_grianan",
@@ -1269,6 +1294,19 @@
   },
   {
    "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "SEOID Album Launch – With special guest artists Kenny Donagher, Kerrie Herrity, John Dwyer, Fiachra Guihen",
+   "date": "2026-09-06",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/seoid-album-launch",
+   "category": "Music",
+   "id": "56fd2e37c005",
+   "first_seen": "2026-07-31"
+  },
+  {
+   "source": "hawkswell",
    "venue": "Hawk's Well Studio",
    "town": "Sligo",
    "county": "Sligo",
@@ -1305,6 +1343,19 @@
    "category": "Music",
    "id": "ab30dc1f8732",
    "first_seen": "2026-07-17"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "The Sand Park – A play written & performed by Seamus O'Rourke",
+   "date": "2026-09-09",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-sand-park-2",
+   "category": "Art Deco",
+   "id": "77c05e7cc149",
+   "first_seen": "2026-07-31"
   },
   {
    "source": "an_grianan",
@@ -1416,12 +1467,12 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "Culture Night 2026: Culture Night Cabaret",
+   "title": "Culture Night 2026",
    "date": "2026-09-18",
    "url": "https://angrianan.com/event/culture-night-2026-culture-night-cabaret/",
    "category": "Variety",
-   "id": "8980b57a4dc8",
-   "first_seen": "2026-07-14"
+   "id": "366345193d4f",
+   "first_seen": "2026-07-31"
   },
   {
    "source": "balor",
@@ -1529,6 +1580,19 @@
    "first_seen": "2026-07-16"
   },
   {
+   "source": "abbey",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Saving for a Helicopter",
+   "date": "2026-09-26",
+   "url": "https://abbeycentre.ie/eventer/saving-for-a-helicopter",
+   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173674806",
+   "category": null,
+   "id": "e90f53a2f295",
+   "first_seen": "2026-07-31"
+  },
+  {
    "source": "mcgrorys",
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
@@ -1622,6 +1686,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Stuart Reid — Boogers, Books and Big Bottom Burps!",
+   "date": "2026-10-03",
+   "time": "2:00PM",
+   "url": "https://nervecentre.org/whats-on/stuart-reid-boogers-books-and-big-bottom-burps",
+   "category": "Workshop",
+   "id": "c5d42d763d2a",
+   "first_seen": "2026-07-31"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -1633,6 +1710,20 @@
    "category": "Spoken Word, Kids/Family",
    "id": "843510d9e9e0",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Found Drowned - The Mysterious Death of Bella Brooks",
+   "date": "2026-10-08",
+   "end_date": "2026-10-09",
+   "time": "8:00 pm",
+   "url": "https://www.balorartscentre.com/?event=found-drowned-the-mysterious-death-of-bella-brooks",
+   "category": "Drama",
+   "id": "ca13072835d6",
+   "first_seen": "2026-07-31"
   },
   {
    "source": "an_grianan",
@@ -1697,6 +1788,18 @@
    "category": "Theatre",
    "id": "692eaa612810",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Wainfest 2026: Donegal Junior Strings Orchestra",
+   "date": "2026-10-10",
+   "url": "https://angrianan.com/event/wainfest-2026-donegal-junior-strings-orchestra/",
+   "category": "Music, Kids/Family",
+   "id": "808a01c40de7",
+   "first_seen": "2026-07-31"
   },
   {
    "source": "nervecentre",
@@ -1821,6 +1924,19 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
+   "title": "A Night of One Act Plays",
+   "date": "2026-10-21",
+   "url": "https://angrianan.com/event/a-night-of-one-act-plays-2026/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666581/events/128661421/seats?zone=Default",
+   "category": "Theatre",
+   "id": "8d6a99f6d586",
+   "first_seen": "2026-07-31"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
    "title": "A Derry Queer Open Mic (Letterkenny Edition)",
    "date": "2026-10-22",
    "url": "https://angrianan.com/event/a-derry-queer-open-mic-letterkenny-edition/",
@@ -1904,6 +2020,19 @@
    "category": null,
    "id": "0acdda9bbba9",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Donegal Chamber Orchestra: 20th Anniversary Gala Concert",
+   "date": "2026-10-25",
+   "url": "https://angrianan.com/event/donegal-chamber-orchestra-2026/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666591/events/128661433/seats?zone=Default",
+   "category": "Music",
+   "id": "cfd185d7c6b7",
+   "first_seen": "2026-07-31"
   },
   {
    "source": "balor",
@@ -2284,6 +2413,20 @@
    "category": null,
    "id": "5e915e71bf7c",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Frozen: The Musical",
+   "date": "2026-11-24",
+   "end_date": "2026-11-28",
+   "url": "https://angrianan.com/event/frozen-the-musical/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666467",
+   "category": "Theatre",
+   "id": "517906038277",
+   "first_seen": "2026-07-31"
   },
   {
    "source": "mcgrorys",
