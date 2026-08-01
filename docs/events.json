@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-01T23:12Z",
+ "generated_at": "2026-08-01T23:31Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-08-01T09:05Z",
@@ -19,7 +19,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -153,18 +153,6 @@
   },
   {
    "source": "craftmonth_derry",
-   "venue": "Adam Frew",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Adam Frew Ceramics Open Studio: Birthday Celebration!",
-   "date": "2026-08-01",
-   "url": "https://augustcraftmonth.org/acm-event/adam-frew-ceramics-open-studio-birthday-celebration/",
-   "category": "Open Studio, Ceramics",
-   "id": "413fe66626b4",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "craftmonth_derry",
    "venue": "Derry Designer Makers",
    "town": "Derry",
    "county": "Derry",
@@ -177,31 +165,6 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "craftmonth_derry",
-   "venue": "Fine and Dandy Market",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The Fine and Dandy Market – St Columbs Hall, Derry/Londonderry",
-   "date": "2026-08-01",
-   "url": "https://augustcraftmonth.org/acm-event/the-fine-and-dandy-market-st-columbs-hall-derry-londonderry/",
-   "category": "Market, Multiple",
-   "id": "694612396440",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Nightshift: DJ Ash & nigel",
-   "date": "2026-08-01",
-   "time": "9pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/nightshift-nigel-djash",
-   "category": "Music",
-   "id": "4e4509125244",
-   "first_seen": "2026-07-22"
-  },
-  {
    "source": "craftmonth_donegal",
    "venue": "Kevin Callaghan",
    "town": "Donegal",
@@ -212,66 +175,6 @@
    "url": "https://augustcraftmonth.org/acm-event/kcp-pottery-shop-studio/",
    "category": "Workshop, Open Studio, Exhibition, Meet the Maker, Demonstration, Ceramics",
    "id": "b3ea9c8b0d8a",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "mcgrorys",
-   "venue": "McGrory's Hotel",
-   "town": "Culdaff",
-   "county": "Donegal",
-   "title": "Luka Bloom",
-   "date": "2026-08-01",
-   "url": "https://www.mcgrorys.ie/entertainment/78-152/",
-   "category": "Music",
-   "id": "e6a85702dbca",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "craftmonth_derry",
-   "venue": "Natasha Duddy",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Danny Boy Inspired Fused Glass Panel for 18+yrs",
-   "date": "2026-08-01",
-   "url": "https://augustcraftmonth.org/acm-event/danny-boy-inspired-fused-glass-panel-for-18yrs/",
-   "category": "Workshop, For Children, Glass Making",
-   "id": "166a5e9d535a",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "craftmonth_fermanagh",
-   "venue": "Navar Willow",
-   "town": "Fermanagh",
-   "county": "Fermanagh",
-   "title": "Irish Skib Basket Workshop",
-   "date": "2026-08-01",
-   "url": "https://augustcraftmonth.org/acm-event/irish-skib-basket-workshop/",
-   "category": "Workshop, Basketry & Willow",
-   "id": "1208c667aebe",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "craftmonth_fermanagh",
-   "venue": "Rachel Leary Ceramics",
-   "town": "Fermanagh",
-   "county": "Fermanagh",
-   "title": "Slip Casting Workshop with Rachel Leary Ceramics",
-   "date": "2026-08-01",
-   "url": "https://augustcraftmonth.org/acm-event/slip-casting-workshop-with-rachel-leary-ceramics/",
-   "category": "Workshop, Ceramics",
-   "id": "b530b42da659",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "craftmonth_donegal",
-   "venue": "Rathmullan Makers Market",
-   "town": "Donegal",
-   "county": "Donegal",
-   "title": "Rathmullan Makers Market",
-   "date": "2026-08-01",
-   "url": "https://augustcraftmonth.org/acm-event/rathmullan-makers-market/",
-   "category": "Market, Multiple",
-   "id": "9e5896caebef",
    "first_seen": "2026-08-01"
   },
   {
