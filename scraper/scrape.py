@@ -1131,7 +1131,166 @@ def parse_hawkswell(source):
     return events
 
 
+CRAFTMONTH_DATE_RE = re.compile(
+    r"(\d{1,2})\s+([A-Za-z]+)\s+to\s+(\d{1,2})\s+([A-Za-z]+)", re.I)
+
+
+def parse_craftmonth(soup, source):
+    """augustcraftmonth.org/events/?search_loc=X - each event card is
+    `<a class="acm-venue-item">` inside `#results` (there's also an
+    unrelated 'featured' carousel elsewhere on the page showing events
+    from ALL counties regardless of the filter, which is skipped by
+    only looking inside #results). The date range span has a <br/> in
+    the middle splitting it into two text nodes, so it's read directly
+    via BeautifulSoup rather than the generic text-walk."""
+    results = soup.find(id="results")
+    if not results:
+        return []
+    events = []
+    for card in results.find_all("a", class_="acm-venue-item"):
+        href = card.get("href")
+        title_tag = card.find("h3")
+        date_tab = card.find("span", class_="date_tab")
+        if not (href and title_tag and date_tab):
+            continue
+        title = clean(title_tag.get_text())
+        date_text = clean(date_tab.get_text(" "))
+        m = CRAFTMONTH_DATE_RE.search(date_text)
+        if not m:
+            continue
+        d1, mon1, d2, mon2 = m.groups()
+        mon1n = MONTHS.get(mon1.lower()[:3])
+        mon2n = MONTHS.get(mon2.lower()[:3])
+        if not (mon1n and mon2n):
+            continue
+        start = infer_year(mon1n, int(d1))
+        end = infer_year(mon2n, int(d2))
+        if not start:
+            continue
+
+        fields = {}
+        for p in card.select(".text_items p"):
+            strong = p.find("strong")
+            if not strong:
+                continue
+            label = clean(strong.get_text()).rstrip(":").lower()
+            value = clean(strong.next_sibling or "")
+            fields[label] = value
+
+        county = COUNTY_ALIASES.get(fields.get("location", ""), fields.get("location"))
+        cat_bits = [fields[k] for k in ("event type", "craft type") if fields.get(k)]
+
+        events.append(make_event(
+            source, title, start,
+            end_date=end.isoformat() if end and end != start else None,
+            url=href, category=", ".join(cat_bits) if cat_bits else None,
+            venue=fields.get("maker"), town=county, county=county))
+
+    next_link = soup.select_one("a.next, a[rel='next']")
+    if next_link and next_link.get("href") and len(events) > 0:
+        try:
+            more_soup = fetch(next_link["href"])
+            events.extend(parse_craftmonth(more_soup, source))
+        except Exception:
+            pass
+    return events
+
+
+HERITAGEWEEK_DATE_RE = re.compile(r"^(\d{1,2})\s+([A-Za-z]+)\b")
+
+
+def parse_heritageweek_page(soup, source):
+    """heritageweek.ie/event-listings - each card is <article
+    class="item-summary">, with an inner <ul class="list-details">
+    whose <li> items are, in order: venue (bold), 'Co. County', a
+    town/address fragment, then one <li> PER DAY for multi-day events
+    ('17 August, 9:30am - 5:30pm', '18 August, ...' etc - each its own
+    list item, not one combined string)."""
+    events = []
+    for article in soup.select("article.item-summary"):
+        link = article.select_one("a.link-block")
+        if not link:
+            continue
+        href = link.get("href")
+        title_tag = link.select_one("h3.title")
+        if not (href and title_tag):
+            continue
+        title = clean(title_tag.get_text())
+
+        items = []
+        for li in link.select("ul.list-details li"):
+            for piece in li.get_text("\n").split("\n"):
+                piece = clean(piece)
+                if piece:
+                    items.append(piece)
+        date_entries = [i for i in items if HERITAGEWEEK_DATE_RE.match(i)]
+        info_entries = [i for i in items if not HERITAGEWEEK_DATE_RE.match(i)]
+        if not date_entries:
+            continue
+
+        venue = info_entries[0] if info_entries else None
+        town = info_entries[1] if len(info_entries) > 1 else None
+        county = None
+        for item in info_entries[1:]:
+            m = re.search(r"co\.\s*([a-z\s]+?)(?:,|$)", item, re.I)
+            if m:
+                county = clean(m.group(1))
+                break
+        county = COUNTY_ALIASES.get(county, county)
+
+        dates, time_text = [], None
+        for de in date_entries:
+            m = HERITAGEWEEK_DATE_RE.match(de)
+            mon = MONTHS.get(m.group(2).lower()[:3])
+            if not mon:
+                continue
+            d = infer_year(mon, int(m.group(1)))
+            if d:
+                dates.append(d)
+                if not time_text:
+                    rest = de[m.end():].lstrip(", ").strip()
+                    if rest:
+                        time_text = rest
+        if not dates:
+            continue
+        start = dates[0]
+        end = dates[-1] if len(dates) > 1 and dates[-1] != start else None
+
+        events.append(make_event(
+            source, title, start,
+            end_date=end.isoformat() if end else None,
+            time=time_text, url=href, venue=venue, town=town, county=county))
+    return events
+
+
+def parse_heritageweek(source):
+    """Follows 'Next' pagination links (which preserve our county
+    filter query params) until no more pages remain, capped as a
+    safety net against runaway pagination."""
+    events = []
+    url = source["url"]
+    for _ in range(15):
+        soup = fetch(url)
+        found = parse_heritageweek_page(soup, source)
+        events.extend(found)
+        next_link = soup.find("a", string=lambda s: s and s.strip().lower() == "next")
+        if not next_link or not next_link.get("href"):
+            break
+        url = next_link["href"]
+    return events
+
+
 # ---------------------------------------------------------------- sources
+
+CRAFTMONTH_START = TODAY.strftime("%Y%m%d")
+CRAFTMONTH_END = (TODAY + timedelta(days=120)).strftime("%Y%m%d")
+
+
+def craftmonth_url(loc):
+    return (f"https://augustcraftmonth.org/events/?search_loc={loc}"
+            f"&event_type=&discipline=&start_date={CRAFTMONTH_START}"
+            f"&end_date={CRAFTMONTH_END}")
+
 
 SOURCES = [
     {"name": "an_grianan", "venue": "An Grianán Theatre", "town": "Letterkenny",
@@ -1165,11 +1324,50 @@ SOURCES = [
     {"name": "hawkswell", "venue": "Hawk's Well Theatre", "town": "Sligo",
      "county": "Sligo", "url": "https://www.hawkswell.com/whats-on/shows",
      "parser": parse_hawkswell, "custom_fetch": True, "min_interval_days": 3},
+    {"name": "craftmonth_donegal", "venue": "August Craft Month", "town": "Donegal",
+     "county": "Donegal", "url": craftmonth_url("donegal"),
+     "parser": parse_craftmonth, "min_interval_days": 3, "quiet_if_empty": True},
+    {"name": "craftmonth_derry", "venue": "August Craft Month", "town": "Derry",
+     "county": "Derry", "url": craftmonth_url("derry"),
+     "parser": parse_craftmonth, "min_interval_days": 3, "quiet_if_empty": True},
+    {"name": "craftmonth_derry_city", "venue": "August Craft Month", "town": "Derry",
+     "county": "Derry", "url": craftmonth_url("derry_city"),
+     "parser": parse_craftmonth, "min_interval_days": 3, "quiet_if_empty": True},
+    {"name": "craftmonth_leitrim", "venue": "August Craft Month", "town": "Leitrim",
+     "county": "Leitrim", "url": craftmonth_url("leitrim"),
+     "parser": parse_craftmonth, "min_interval_days": 3, "quiet_if_empty": True},
+    {"name": "craftmonth_sligo", "venue": "August Craft Month", "town": "Sligo",
+     "county": "Sligo", "url": craftmonth_url("sligo"),
+     "parser": parse_craftmonth, "min_interval_days": 3, "quiet_if_empty": True},
+    {"name": "craftmonth_tyrone", "venue": "August Craft Month", "town": "Tyrone",
+     "county": "Tyrone", "url": craftmonth_url("tyrone"),
+     "parser": parse_craftmonth, "min_interval_days": 3, "quiet_if_empty": True},
+    {"name": "craftmonth_fermanagh", "venue": "August Craft Month", "town": "Fermanagh",
+     "county": "Fermanagh", "url": craftmonth_url("fermanagh"),
+     "parser": parse_craftmonth, "min_interval_days": 3, "quiet_if_empty": True},
+    {"name": "heritageweek", "venue": "Heritage Week", "town": "Donegal",
+     "county": "Donegal",
+     "url": "https://www.heritageweek.ie/event-listings?q=&where%5B%5D=derry"
+            "&where%5B%5D=donegal&where%5B%5D=leitrim&where%5B%5D=sligo"
+            "&where%5B%5D=tyrone&where%5B%5D=fermanagh",
+     "parser": parse_heritageweek, "custom_fetch": True,
+     "min_interval_days": 3, "quiet_if_empty": True},
 ]
 
 
 ALLOWED_COUNTIES = {"Donegal", "Derry", "Sligo", "Leitrim", "Tyrone", "Fermanagh"}
-COUNTY_ALIASES = {"Londonderry": "Derry"}
+COUNTY_ALIASES = {
+    "Londonderry": "Derry",
+    "Derry City": "Derry",
+    "Derry/Londonderry": "Derry",
+}
+# Case-insensitive lookup covering both the six real county names and all
+# known Derry variants, so a source producing "derry city", "DERRY", etc
+# (rather than our exact expected capitalisation) is still normalised
+# correctly instead of silently falling through unaliased or, worse,
+# being wrongly excluded from the region entirely.
+COUNTY_CANONICAL = {c.lower(): c for c in ALLOWED_COUNTIES}
+COUNTY_CANONICAL.update({k.lower(): v for k, v in COUNTY_ALIASES.items()})
 
 CATEGORY_ALIASES = {
     "family": "Kids/Family",
@@ -1422,6 +1620,13 @@ def main():
                 soup = fetch(source["url"])
                 found = source["parser"](soup, source)
             print(f"{source['venue']}: {len(found)} events")
+            if not found and source.get("quiet_if_empty"):
+                print(f"  (zero results - treated as normal for a seasonal "
+                      f"source, not a failure)")
+                if interval:
+                    source_last_run[source["name"]] = NOW.strftime("%Y-%m-%dT%H:%MZ")
+                consecutive_failures[source["name"]] = 0
+                continue
             if not found:
                 extra = ""
                 if not source.get("custom_fetch") and not source.get("manual_csv"):
@@ -1449,9 +1654,10 @@ def main():
     # drop past events, de-duplicate, stamp first_seen
     seen, final = set(), []
     for ev in merge_cross_source_duplicates(all_events):
-        ev["county"] = COUNTY_ALIASES.get(ev["county"], ev["county"])
-        if ev["county"] not in ALLOWED_COUNTIES:
-            continue  # outside Donegal/Derry/Sligo/Leitrim/Tyrone - skip
+        canon = COUNTY_CANONICAL.get((ev.get("county") or "").strip().lower())
+        if not canon:
+            continue  # not a recognized Donegal/Derry/Sligo/Leitrim/Tyrone/Fermanagh county
+        ev["county"] = canon
         ev["category"] = normalize_category(ev.get("category"))
         apply_kids_family_tag(ev)
         apply_generic_sold_out(ev)
@@ -1494,3 +1700,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
