@@ -275,8 +275,7 @@ function render(gen){
     const stub=el("div","stub");
     if(isOngoing){
       const e2=fmt(ev.end_date);
-      stub.append(el("span","dow","Now On"),
-                  el("span","ongoing","Until "+e2.day+" "+e2.mon));
+      stub.append(el("span","ongoing","Until "+e2.day+" "+e2.mon));
     }else{
       stub.append(el("span","dow",f.dow), el("span","day",f.day),
                   el("span","dow",f.mon));
