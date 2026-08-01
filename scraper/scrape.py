@@ -108,13 +108,17 @@ def clean(text):
 
 def infer_year(month, day):
     """Venue listings only show current/upcoming events, so if a date
-    without a year would fall well in the past, it means next year."""
+    without a year would fall in the past, it means next year. A small
+    grace period (not e.g. 90 days) avoids wrongly rolling a date that's
+    only just passed forward a whole year, while still correctly rolling
+    forward dates many months out (some venues list up to a year ahead,
+    so a wide grace period would wrongly keep those in the past year)."""
     for year in (TODAY.year, TODAY.year + 1):
         try:
             d = date(year, month, day)
         except ValueError:
             continue
-        if d >= TODAY - timedelta(days=90):
+        if d >= TODAY - timedelta(days=7):
             return d
     return None
 
@@ -1476,6 +1480,9 @@ SOURCES = [
      "parser": parse_thedock},
     {"name": "strule", "venue": "Strule Arts Centre", "town": "Omagh",
      "county": "Tyrone", "url": "https://struleartscentre.co.uk/whats-on/shows/",
+     "parser": parse_strule},
+    {"name": "ardhowen", "venue": "Ardhowen Theatre", "town": "Enniskillen",
+     "county": "Fermanagh", "url": "https://ardhowen.com/whats-on/shows/",
      "parser": parse_strule},
 ]
 
