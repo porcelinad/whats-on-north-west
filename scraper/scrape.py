@@ -18,6 +18,7 @@ import sys
 import time
 import unicodedata
 from datetime import date, datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from urllib.parse import quote
 
@@ -58,7 +59,12 @@ EVENTBRITE_HEADERS = dict(HEADERS, **{
 # A slow-but-working site still gets a generous 20s to actually respond.
 TIMEOUT = (8, 20)
 NOW = datetime.now(timezone.utc)
-TODAY = NOW.date()
+# TODAY must reflect the Irish calendar date, not the UTC one - Ireland is
+# UTC+1 during summer (BST), so Irish midnight happens at 23:00 UTC the
+# day before. Using raw UTC here meant that for roughly the first hour of
+# every Irish day (00:00-01:00 IST), TODAY was still "yesterday" by UTC's
+# clock, so that day's already-past single-day events weren't dropped yet.
+TODAY = NOW.astimezone(ZoneInfo("Europe/Dublin")).date()
 
 NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "").strip()
 PAGE_URL = os.environ.get("PAGE_URL", "").strip()
