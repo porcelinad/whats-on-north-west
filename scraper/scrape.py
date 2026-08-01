@@ -1403,6 +1403,76 @@ def parse_strule(soup, source):
     return events
 
 
+THEMODEL_DATE_RE = re.compile(
+    r"([A-Za-z]{3,9})\s+(\d{1,2}),\s+(\d{4})"
+    r"(?:\s*[-–—]\s*([A-Za-z]{3,9})\s+(\d{1,2}),\s+(\d{4}))?")
+THEMODEL_TIME_RE = re.compile(r"\d{1,2}:\d{2}\s*[ap]m", re.I)
+THEMODEL_MAX_SPAN_DAYS = 90
+
+
+def parse_themodel_date(text):
+    """Parses lines like 'Sun., 11:00 am Jun 13, 2026 – Aug 22, 2026' or
+    'Open all day. Jan 1, 2026 – Dec 31, 2026'."""
+    time_m = THEMODEL_TIME_RE.search(text)
+    time_text = time_m.group(0) if time_m else None
+    if not time_text and re.search(r"open all day", text, re.I):
+        time_text = "Open all day"
+
+    m = THEMODEL_DATE_RE.search(text)
+    if not m:
+        return None, None, time_text
+    mon1, d1, y1, mon2, d2, y2 = m.groups()
+    mon1n = MONTHS.get(mon1.lower()[:3])
+    if not mon1n:
+        return None, None, time_text
+    try:
+        start = date(int(y1), mon1n, int(d1))
+    except ValueError:
+        return None, None, time_text
+    end = None
+    if mon2:
+        mon2n = MONTHS.get(mon2.lower()[:3])
+        if mon2n:
+            try:
+                end_d = date(int(y2), mon2n, int(d2))
+                if end_d != start:
+                    end = end_d
+            except ValueError:
+                pass
+    return start, end, time_text
+
+
+def parse_themodel(soup, source):
+    """themodel.ie/whats-on/ - each event is <li class="grid-item">,
+    title in h3>a, and a combined weekday/time/date-range string in
+    .grid-item-meta. Standing year-round programmes that aren't real
+    discrete events (e.g. 'Gallery Tours for Groups' running Jan-Dec, or
+    'Guided Tours for Schools' running Sep-June) are skipped via a
+    90-day span cutoff, rather than a title-based denylist, so any
+    similar catchall programme is caught automatically."""
+    events = []
+    seen_urls = set()
+    for li in soup.select("li.grid-item"):
+        title_tag = li.select_one("h3 a")
+        meta_tag = li.select_one(".grid-item-meta")
+        if not (title_tag and meta_tag):
+            continue
+        href = title_tag.get("href")
+        if not href or href in seen_urls:
+            continue
+        seen_urls.add(href)
+        start, end, time_text = parse_themodel_date(clean(meta_tag.get_text(" ")))
+        if not start:
+            continue
+        if end and (end - start).days > THEMODEL_MAX_SPAN_DAYS:
+            continue  # standing/catchall programme, not a real event
+        events.append(make_event(
+            source, clean(title_tag.get_text()), start,
+            end_date=end.isoformat() if end else None,
+            time=time_text, url=href))
+    return events
+
+
 # ---------------------------------------------------------------- sources
 
 CRAFTMONTH_START = TODAY.strftime("%Y%m%d")
@@ -1484,6 +1554,9 @@ SOURCES = [
     {"name": "ardhowen", "venue": "Ardhowen Theatre", "town": "Enniskillen",
      "county": "Fermanagh", "url": "https://ardhowen.com/whats-on/shows/",
      "parser": parse_strule},
+    {"name": "themodel", "venue": "The Model", "town": "Sligo",
+     "county": "Sligo", "url": "https://www.themodel.ie/whats-on/",
+     "parser": parse_themodel},
 ]
 
 
