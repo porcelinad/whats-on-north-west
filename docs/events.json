@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-01T20:46Z",
+ "generated_at": "2026-08-01T21:10Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-08-01T09:05Z",
@@ -36,9 +36,24 @@
   "heritageweek": 0,
   "thedock": 0,
   "strule": 0,
-  "ardhowen": 0
+  "ardhowen": 0,
+  "themodel": 0
  },
  "events": [
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Jack B. Yeats | Guided Tour",
+   "date": "2026-06-13",
+   "end_date": "2026-08-22",
+   "time": "11:00 am",
+   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-02",
+   "category": null,
+   "id": "3df0a1f19014",
+   "first_seen": "2026-08-01"
+  },
   {
    "source": "eaf",
    "venue": "Glebe Gallery & Gardens",
@@ -285,6 +300,19 @@
    "first_seen": "2026-07-27"
   },
   {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Informal Music Afternoon in August",
+   "date": "2026-08-02",
+   "time": "1:00 pm",
+   "url": "https://www.themodel.ie/?event=ima-aug26&event_date=2026-08-02",
+   "category": null,
+   "id": "079e33249832",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Post Office",
    "town": "Garrison",
@@ -430,6 +458,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Illuminations – Open Mic Poetry",
+   "date": "2026-08-06",
+   "time": "8:00 pm",
+   "url": "https://www.themodel.ie/?event=illuminations&event_date=2026-08-06",
+   "category": null,
+   "id": "2e8f2808477c",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Nerve Centre",
    "town": "Londonderry",
@@ -441,6 +482,19 @@
    "category": null,
    "id": "3405bffd1e95",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Bump & Baby",
+   "date": "2026-08-07",
+   "time": "10:00 am",
+   "url": "https://www.themodel.ie/?event=baby-and-bump&event_date=2026-08-07",
+   "category": null,
+   "id": "2bff310e6876",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -602,6 +656,19 @@
    "url": "https://struleartscentre.co.uk/show/tale-of-the-frozen-heart/",
    "category": "Kids/Family",
    "id": "651de93c488b",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Glass sculpture workshop with artist Karen Donnellan",
+   "date": "2026-08-08",
+   "time": "2:00 pm",
+   "url": "https://www.themodel.ie/?event=karen-donnellan-glass-workshop&event_date=2026-08-08",
+   "category": null,
+   "id": "3905df494f37",
    "first_seen": "2026-08-01"
   },
   {
@@ -2931,6 +2998,19 @@
    "url": "https://www.heritageweek.ie/event-listings/guided-tour-of-aughris-coastal-walk",
    "category": null,
    "id": "4bd565a38aa6",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Graphite & Easel; Life Drawing Sessions",
+   "date": "2026-08-21",
+   "time": "10:30 am",
+   "url": "https://www.themodel.ie/?event=graphite-and-easel&event_date=2026-08-21",
+   "category": null,
+   "id": "ba79550d0e0b",
    "first_seen": "2026-08-01"
   },
   {
