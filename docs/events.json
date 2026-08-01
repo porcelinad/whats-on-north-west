@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-01T20:23Z",
+ "generated_at": "2026-08-01T20:36Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-08-01T09:05Z",
@@ -19,7 +19,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 3,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -34,7 +34,8 @@
   "craftmonth_tyrone": 0,
   "craftmonth_fermanagh": 0,
   "heritageweek": 0,
-  "thedock": 0
+  "thedock": 0,
+  "strule": 0
  },
  "events": [
   {
@@ -668,6 +669,19 @@
    "url": "https://augustcraftmonth.org/acm-event/pottery-wheel-and-back-to-school-pencil-pot-workshop-with-shauna-mccann/",
    "category": "Workshop, For Children, Ceramics",
    "id": "f8e42fc8679a",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Tale Of The Frozen Heart",
+   "date": "2026-08-08",
+   "time": "2:00pm",
+   "url": "https://struleartscentre.co.uk/show/tale-of-the-frozen-heart/",
+   "category": "Kids/Family",
+   "id": "651de93c488b",
    "first_seen": "2026-08-01"
   },
   {
@@ -1457,6 +1471,19 @@
    "url": "https://augustcraftmonth.org/acm-event/history-story-stitch/",
    "category": "Workshop, Maker Talk, Demonstration, Textile Making",
    "id": "383f8ee963af",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "No Hope Here",
+   "date": "2026-08-15",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/no-hope-here/",
+   "category": "Comedy",
+   "id": "4c3fe38eb748",
    "first_seen": "2026-08-01"
   },
   {
@@ -3761,6 +3788,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Little Women – Dementia Friendly Screening",
+   "date": "2026-08-26",
+   "time": "11:00am",
+   "url": "https://struleartscentre.co.uk/show/little-women-dementia-friendly-screening/",
+   "category": "Film",
+   "id": "04e61d4c2942",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "The nest Custom House Quay branching F91 K79P",
    "town": "Sligo",
@@ -4120,6 +4160,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Conor Moore Me, Myself and Them",
+   "date": "2026-09-05",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/conor-moore-me-myself-and-them/",
+   "category": "Comedy",
+   "id": "f2cda88a2840",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "thedock",
    "venue": "The Dock",
    "town": "Carrick-on-Shannon",
@@ -4223,6 +4276,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Réalta",
+   "date": "2026-09-11",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/realta/",
+   "category": "Music",
+   "id": "0e08ac39ad4a",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Áislann Chill Chartha",
    "town": "Kilcar",
@@ -4275,6 +4341,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Sinéad Willox Album Launch – Seoda Uladh",
+   "date": "2026-09-12",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/sinead-wilcox-album-launch-seoda-uladh/",
+   "category": "Music",
+   "id": "ef5f4346ed41",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Peatlands Park",
    "town": "Dungannon",
@@ -4300,6 +4379,32 @@
    "category": "Music",
    "id": "cd2fd1c2e7f9",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "LISA O’NEILL – Tour of Ulster",
+   "date": "2026-09-16",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/lisa-oneill-tour-of-ulster/",
+   "category": "Music",
+   "id": "d22543654304",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Robert Mizzell’s Nashville Songbook",
+   "date": "2026-09-17",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/robert-mizzells-nashville-songbook/",
+   "category": "Music",
+   "id": "d437664e9a1f",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -4339,6 +4444,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Harmonise – Songs by the Strule",
+   "date": "2026-09-18",
+   "time": "7:30pm",
+   "url": "https://struleartscentre.co.uk/show/harmonise-songs-by-the-strule/",
+   "category": "Music",
+   "id": "035c625827e6",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "abbey",
    "venue": "Abbey Arts Centre",
    "town": "Ballyshannon",
@@ -4376,6 +4494,19 @@
    "category": "Music",
    "id": "b7acea3de5ce",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Bee Gees Gold",
+   "date": "2026-09-19",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/bee-gees-gold/",
+   "category": "Music",
+   "id": "39e8c4c2e3bf",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "eventbrite_donegal",
@@ -4431,6 +4562,19 @@
    "first_seen": "2026-07-16"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Think Twice Celine Dion Tribute",
+   "date": "2026-09-25",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/think-twice-celine-dion-tribute/",
+   "category": "Music",
+   "id": "c85a0b6366a9",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "thedock",
    "venue": "The Dock",
    "town": "Carrick-on-Shannon",
@@ -4482,6 +4626,19 @@
    ],
    "id": "e3a64678717f",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Adrian Knight Comedy Hypontist",
+   "date": "2026-09-26",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/adrian-knight-comedy-hypontist/",
+   "category": "Theatre",
+   "id": "2838f328f0c4",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "thedock",
@@ -4548,6 +4705,20 @@
    "first_seen": "2026-07-21"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Emer Maguire – Perfectly Chaotic",
+   "date": "2026-10-02",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/emer-maguire-perfectly-chaotic/",
+   "category": "Comedy",
+   "sold_out": true,
+   "id": "6dacf8acfdf1",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -4572,6 +4743,19 @@
    "category": "Workshop",
    "id": "c5d42d763d2a",
    "first_seen": "2026-07-31"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Onóir – The Brotherhood Tour",
+   "date": "2026-10-03",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/onoir-the-brotherhood-tour/",
+   "category": "Music",
+   "id": "493b0b46f58c",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -4895,6 +5079,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Ralph McTell – Somewhere Down the Road",
+   "date": "2026-10-23",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/ralph-mctell-somewhere-down-the-road/",
+   "category": "Music",
+   "id": "72adffc58972",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "thedock",
    "venue": "The Dock",
    "town": "Carrick-on-Shannon",
@@ -4945,6 +5142,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "There Is Hope",
+   "date": "2026-10-24",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/there-is-hope/",
+   "category": "Music",
+   "id": "950be8a343a3",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -4969,6 +5179,32 @@
    "category": "Music",
    "id": "cd8ff5ae1879",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Burke & Hare: Body Snatchers, Serial Killers, Ulstermen",
+   "date": "2026-10-28",
+   "time": "7:30pm",
+   "url": "https://struleartscentre.co.uk/show/burke-hare-body-snatchers-serial-killers-ulstermen/",
+   "category": "Talk",
+   "id": "733a1c85ea37",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Daoirí Farrell",
+   "date": "2026-10-28",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/daoiri-farrell/",
+   "category": "Music",
+   "id": "8725141e851b",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -4996,6 +5232,19 @@
    "category": "Drama",
    "id": "610e57e6664b",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Jack Keogh in Concert with Special Guest Hugo Duncan",
+   "date": "2026-10-29",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/jack-keogh-in-concert-with-special-guest-hugo-duncan/",
+   "category": "Music",
+   "id": "f56cfb83961b",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "thedock",
@@ -5048,6 +5297,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Rock Rising – The Supreme Classic Rock Show",
+   "date": "2026-10-30",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/rock-rising-the-supreme-classic-rock-show-3/",
+   "category": "Music",
+   "id": "21e6cb0063b2",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "thedock",
    "venue": "The Dock",
    "town": "Carrick-on-Shannon",
@@ -5071,6 +5333,32 @@
    "category": "Music",
    "id": "1f5dfaeb2fc2",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Teddy On A Broomstick",
+   "date": "2026-10-31",
+   "time": "10:00am",
+   "url": "https://struleartscentre.co.uk/show/teddy-on-a-broomstick/",
+   "category": "Kids/Family",
+   "id": "04f2f9a622e3",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "The Princess & The Goblin",
+   "date": "2026-10-31",
+   "time": "11:30am",
+   "url": "https://struleartscentre.co.uk/show/the-princess-the-goblin/",
+   "category": "Kids/Family",
+   "id": "91651aa5af05",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -5148,6 +5436,18 @@
    "category": "Music/Comedy",
    "id": "afe10d6b57b0",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Boyd’s Shop by St. John Irvine",
+   "date": "2026-11-07",
+   "url": "https://struleartscentre.co.uk/show/boyds-shop-by-st-john-irvine/",
+   "category": "Comedy",
+   "id": "aa8d61aac18b",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -5360,6 +5660,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "How’s Your Father? – Starring Conal Gallen",
+   "date": "2026-11-21",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/hows-your-father-starring-conal-gallen/",
+   "category": "Comedy",
+   "id": "8801f4a400a1",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "The Abbey Hotel Donegal",
    "town": "Donegal",
@@ -5412,6 +5725,32 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "A Christmas Country with the Stars 2026",
+   "date": "2026-11-27",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/a-christmas-country-with-the-stars-2026/",
+   "category": "Music",
+   "id": "93a1cd325535",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Let It Be: The Music of The Beatles",
+   "date": "2026-11-28",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/let-it-be-the-music-of-the-beatles/",
+   "category": "Music",
+   "id": "d50a10f887ed",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -5436,6 +5775,31 @@
    "category": "Music",
    "id": "c3f856ca35b2",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "SPR!NGSTEEN!",
+   "date": "2026-12-04",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/springsteen/",
+   "category": "Music",
+   "id": "3dd76a0e24d5",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Little Red Riding Hood’s Christmas Adventure",
+   "date": "2026-12-07",
+   "url": "https://struleartscentre.co.uk/show/little-red-riding-hoods-christmas-adventure/",
+   "category": "Children's Theatre",
+   "id": "47f6da509584",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -5477,6 +5841,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Nashville Live",
+   "date": "2026-12-12",
+   "time": "7:30pm",
+   "url": "https://struleartscentre.co.uk/show/nashville-live/",
+   "category": "Music",
+   "id": "96fcb8e07176",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -5503,6 +5880,18 @@
    "first_seen": "2026-07-21"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Little Women – Schools Performances – presented by Hazel Wand Theatre School",
+   "date": "2026-12-18",
+   "url": "https://struleartscentre.co.uk/show/little-women-schools-performances-presented-by-hazel-wand-theater-school/",
+   "category": "Musical Theatre",
+   "id": "8a9cb214e953",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "mcgrorys",
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
@@ -5513,6 +5902,18 @@
    "category": "Music",
    "id": "da601db20c3a",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Little Women presented by Hazel Wand Theatre School",
+   "date": "2026-12-19",
+   "url": "https://struleartscentre.co.uk/show/little-women-presented-by-hazel-wand-theater-school/",
+   "category": "Musical Theatre",
+   "id": "fb36adab5067",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "eventbrite_donegal",
@@ -5554,6 +5955,18 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Beauty & The Beast Jrs presented by Hazel Wand Theater School",
+   "date": "2026-12-22",
+   "url": "https://struleartscentre.co.uk/show/beauty-the-beast-jrs-presented-by-hazel-wand-theater-school/",
+   "category": "Musical Theatre",
+   "id": "6137ccd6f2fb",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -5578,6 +5991,19 @@
    "category": "Comedy",
    "id": "239634d15e53",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Paddy McDonnell – Paddy Power FULL",
+   "date": "2027-01-08",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/paddy-mcdonnell-paddy-power-full/",
+   "category": "Comedy",
+   "id": "b7e71a745138",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -5658,6 +6084,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Maccana – The Unseen Growth of Winter",
+   "date": "2027-01-23",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/maccana-the-unseen-growth-of-winter/",
+   "category": "Music",
+   "id": "2f744fc3d635",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "st_columbs",
    "venue": "St Columb's Hall",
    "town": "Derry",
@@ -5694,6 +6133,32 @@
    "category": "Music",
    "id": "002c145aee6b",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "The Tumbling Paddies Theatre Tour",
+   "date": "2027-02-06",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/the-tumbling-paddies-theatre-tour/",
+   "category": "Music",
+   "id": "01a5f038a728",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Maggies Menopause",
+   "date": "2027-02-12",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/maggies-menopause/",
+   "category": "Comedy",
+   "id": "95a1ce298dde",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -5774,6 +6239,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Jimmy Buckley Variety Show ‘Anything Goes’",
+   "date": "2027-02-27",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/jimmy-buckley-variety-show-anything-goes/",
+   "category": "Music",
+   "id": "ffa4f543a577",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "The Blue Haven Hotel, F94 P270",
    "town": "Kilcar",
@@ -5798,6 +6276,19 @@
    "category": null,
    "id": "71fcd959659a",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Tommy Fleming – The Encore Tour",
+   "date": "2027-03-10",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/tommy-fleming-the-encore-tour/",
+   "category": "Music",
+   "id": "c92497646db5",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -5891,6 +6382,19 @@
    "first_seen": "2026-07-25"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "A Night at the Opry with Claudia Buckley, Johnny Brady & John Hogan",
+   "date": "2027-04-08",
+   "time": "8:00am",
+   "url": "https://struleartscentre.co.uk/show/a-night-at-the-opry-with-claudia-buckley-johnny-brady-john-hogan-2027/",
+   "category": "Music",
+   "id": "0df5391d51f7",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -5915,6 +6419,19 @@
    "category": "Spoken Word",
    "id": "bc4c82e21e4a",
    "first_seen": "2026-07-18"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Chris Kent – Thats All I Need Now!",
+   "date": "2027-04-24",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/chris-kent-thats-all-i-need-now/",
+   "category": "Comedy",
+   "id": "ddbedf0d2dec",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "nervecentre",
