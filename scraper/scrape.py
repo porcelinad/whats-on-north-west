@@ -52,7 +52,11 @@ EVENTBRITE_HEADERS = dict(HEADERS, **{
     "Sec-Fetch-Site": "none",
     "Sec-Fetch-User": "?1",
 })
-TIMEOUT = 30
+# (connect_timeout, read_timeout) - if a host is genuinely unreachable
+# (e.g. blocking GitHub's server IPs, as Eventbrite did), that fails fast
+# on the connect phase rather than hanging for a full 30s per attempt.
+# A slow-but-working site still gets a generous 20s to actually respond.
+TIMEOUT = (8, 20)
 NOW = datetime.now(timezone.utc)
 TODAY = NOW.date()
 
@@ -86,15 +90,15 @@ SKIP_LINK_TEXT = {
 
 def fetch(url):
     last_exc = None
-    for attempt in range(3):
+    for attempt in range(2):
         try:
             r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
             r.raise_for_status()
             return BeautifulSoup(r.text, "lxml")
         except Exception as exc:
             last_exc = exc
-            if attempt < 2:
-                time.sleep(4 * (attempt + 1))
+            if attempt < 1:
+                time.sleep(2)
     raise last_exc
 
 
@@ -280,15 +284,15 @@ def fetch_text(url):
     needed for Eventbrite, where we read an embedded JSON blob rather than
     the rendered markup. Uses EVENTBRITE_HEADERS, not the shared HEADERS."""
     last_exc = None
-    for attempt in range(3):
+    for attempt in range(2):
         try:
             r = requests.get(url, headers=EVENTBRITE_HEADERS, timeout=TIMEOUT)
             r.raise_for_status()
             return r.text
         except Exception as exc:
             last_exc = exc
-            if attempt < 2:
-                time.sleep(4 * (attempt + 1))
+            if attempt < 1:
+                time.sleep(2)
     raise last_exc
 
 
@@ -1700,4 +1704,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
