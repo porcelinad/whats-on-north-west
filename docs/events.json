@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-07-31T09:44Z",
+ "generated_at": "2026-08-01T09:05Z",
  "failed_sources": [],
  "source_last_run": {
-  "eaf": "2026-07-25T09:02Z",
+  "eaf": "2026-08-01T09:05Z",
   "eventbrite_csv_hash": "69ee700b47c0",
   "eventbrite_csv_since": "2026-07-27T08:55Z",
   "hawkswell": "2026-07-31T09:44Z"
@@ -11,7 +11,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -132,6 +132,10 @@
    "time": "6:00 pm",
    "url": "https://regionalculturalcentre.com/exhibitions/the-rain-tells-us-everything-catherine-mcdonald-katie-nolan-and-niamh-schmidtke-gallery-2-foyer-gallery/",
    "category": "Exhibition",
+   "merged_from": [
+    "eaf",
+    "rcc"
+   ],
    "id": "88d45de4385a",
    "first_seen": "2026-07-14"
   },
@@ -170,19 +174,6 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Ratling by Genevieve Hulme-Beaman",
-   "date": "2026-07-31",
-   "url": "https://angrianan.com/event/ratling-by-genevieve-hulme-beaman/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873664022",
-   "category": "Theatre",
-   "id": "7072a4d27805",
-   "first_seen": "2026-07-14"
-  },
-  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -195,19 +186,6 @@
    "category": "Musical",
    "id": "10c78e239cff",
    "first_seen": "2026-07-14"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Hothouse: Homecoming",
-   "date": "2026-07-31",
-   "time": "5:00PM",
-   "url": "https://nervecentre.org/whats-on/hothouse-homecoming",
-   "category": "Music/Comedy",
-   "id": "9b4694496caf",
-   "first_seen": "2026-07-21"
   },
   {
    "source": "hawkswell",
@@ -389,7 +367,7 @@
    "title": "Taking Up Space",
    "date": "2026-08-08",
    "url": "https://angrianan.com/event/taking-up-space/",
-   "category": null,
+   "category": "Workshop",
    "id": "e74a612ba5bc",
    "first_seen": "2026-07-31"
   },
@@ -2478,6 +2456,20 @@
    "category": "Music",
    "id": "b6b613d0c290",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "The Nutcracker",
+   "date": "2026-12-11",
+   "end_date": "2026-12-12",
+   "url": "https://angrianan.com/event/the-nutcracker/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666699",
+   "category": "Kids/Family",
+   "id": "383706431058",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "mcgrorys",
