@@ -1284,6 +1284,81 @@ def parse_heritageweek(source):
     return events
 
 
+THEDOCK_DATE_TOKEN_RE = re.compile(r"(\d{1,2})\s+([A-Za-z]+)(?:\s+(\d{4}))?")
+
+
+def parse_thedock_date(text):
+    """Parses dates like '5 September 2026' or a range like '25 — 28
+    November 2026' (first date missing month/year, borrowed from the
+    second, same approach as Hawk's Well and Nerve Centre)."""
+    matches = [[int(m.group(1)),
+                MONTHS.get(m.group(2).lower()[:3]),
+                int(m.group(3)) if m.group(3) else None]
+               for m in THEDOCK_DATE_TOKEN_RE.finditer(text)]
+    for i in range(len(matches) - 1):
+        if matches[i][1] is None:
+            later = next((p for p in matches[i + 1:] if p[1] is not None), None)
+            if later:
+                matches[i][1] = later[1]
+                if matches[i][2] is None:
+                    matches[i][2] = later[2]
+        if matches[i][2] is None:
+            later_year = next((p[2] for p in matches[i + 1:] if p[2] is not None), None)
+            if later_year:
+                matches[i][2] = later_year
+    dates = []
+    for day, mon, year in matches:
+        if not mon:
+            continue
+        if year:
+            try:
+                d = date(year, mon, day)
+            except ValueError:
+                d = None
+        else:
+            d = infer_year(mon, day)
+        if d:
+            dates.append(d)
+    if not dates:
+        return None, None
+    start = dates[0]
+    end = dates[-1] if len(dates) > 1 and dates[-1] != start else None
+    return start, end
+
+
+def parse_thedock(soup, source):
+    """thedock.ie/whats-on/upcoming-events - each event is <article
+    class="item-event">, with genre (.btn), title (h3.title), an
+    optional subtitle (h4.sub-title), and a date (p.date), all in
+    clean, directly-selectable elements. A single physical venue, so
+    no per-event detail fetch is needed."""
+    events = []
+    for article in soup.select("article.item-event"):
+        link = article.select_one("a.link-block")
+        if not link:
+            continue
+        href = link.get("href")
+        title_tag = link.select_one("h3.title")
+        date_tag = link.select_one("p.date")
+        if not (href and title_tag and date_tag):
+            continue
+        title = clean(title_tag.get_text())
+        sub_tag = link.select_one("h4.sub-title")
+        if sub_tag:
+            sub = clean(sub_tag.get_text())
+            if sub:
+                title = f"{title} – {sub}"
+        genre_tag = link.select_one(".btn")
+        genre = clean(genre_tag.get_text()) if genre_tag else None
+        start, end = parse_thedock_date(clean(date_tag.get_text()))
+        if not start:
+            continue
+        events.append(make_event(
+            source, title, start, end_date=end.isoformat() if end else None,
+            url=href, category=genre))
+    return events
+
+
 # ---------------------------------------------------------------- sources
 
 CRAFTMONTH_START = TODAY.strftime("%Y%m%d")
@@ -1356,6 +1431,9 @@ SOURCES = [
             "&where%5B%5D=tyrone&where%5B%5D=fermanagh",
      "parser": parse_heritageweek, "custom_fetch": True,
      "min_interval_days": 3, "quiet_if_empty": True},
+    {"name": "thedock", "venue": "The Dock", "town": "Carrick-on-Shannon",
+     "county": "Leitrim", "url": "https://www.thedock.ie/whats-on/upcoming-events",
+     "parser": parse_thedock},
 ]
 
 
