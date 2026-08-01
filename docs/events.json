@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-01T19:25Z",
+ "generated_at": "2026-08-01T20:23Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-08-01T09:05Z",
@@ -19,7 +19,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 2,
+  "abbey": 3,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -33,7 +33,8 @@
   "craftmonth_sligo": 0,
   "craftmonth_tyrone": 0,
   "craftmonth_fermanagh": 0,
-  "heritageweek": 0
+  "heritageweek": 0,
+  "thedock": 0
  },
  "events": [
   {
@@ -4119,6 +4120,18 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Mundy – Live in Concert",
+   "date": "2026-09-05",
+   "url": "https://www.thedock.ie/whats-on/mundy-2",
+   "category": "Music",
+   "id": "99cf4d459737",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "hawkswell",
    "venue": "Hawk's Well Theatre",
    "town": "Sligo",
@@ -4378,6 +4391,18 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Muireann Nic Amhlaoibh, Pauline Scanlon, Tom Morrow, and John Doyle – Music Network",
+   "date": "2026-09-19",
+   "url": "https://www.thedock.ie/whats-on/muireann",
+   "category": "Music",
+   "id": "6fb809baf41e",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -4404,6 +4429,18 @@
    "category": "Drama",
    "id": "d7c813d35091",
    "first_seen": "2026-07-16"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Paahto & The Bull – Patrick Cummins and John Francis Flynn",
+   "date": "2026-09-25",
+   "url": "https://www.thedock.ie/whats-on/paahto-the-bull",
+   "category": "Music",
+   "id": "4aefdf77a54b",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "abbey",
@@ -4445,6 +4482,18 @@
    ],
    "id": "e3a64678717f",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Favourite Books – Conversations on Books",
+   "date": "2026-09-26",
+   "url": "https://www.thedock.ie/whats-on/favourite-books",
+   "category": "Literature",
+   "id": "ec110ba8dec9",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -4590,6 +4639,18 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "John McGahern: A Writing Life – Frank Shovlin",
+   "date": "2026-10-09",
+   "url": "https://www.thedock.ie/whats-on/john-mcgahern-a-writing-life-frank-shovlin",
+   "category": "Literature",
+   "id": "e6fb28299e75",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "abbey",
    "venue": "Abbey Arts Centre",
    "town": "Ballyshannon",
@@ -4654,6 +4715,18 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Tommy Tiernan – World Tour of Leitrim",
+   "date": "2026-10-15",
+   "url": "https://www.thedock.ie/whats-on/tommy-tiernan",
+   "category": "Comedy",
+   "id": "83c4f9a51c85",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -4665,6 +4738,18 @@
    "category": "Comedy",
    "id": "556a8869cba5",
    "first_seen": "2026-07-17"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Forgotten – Fishamble: The New Play Company",
+   "date": "2026-10-16",
+   "url": "https://www.thedock.ie/whats-on/forgotten",
+   "category": "Theatre",
+   "id": "8df83315c35b",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -4810,6 +4895,18 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Clare Sands – They Tried to Bury Us",
+   "date": "2026-10-23",
+   "url": "https://www.thedock.ie/whats-on/clare-sands",
+   "category": "Music",
+   "id": "47d6a36e991d",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -4901,6 +4998,18 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Who Shot Queen Medb? – The Story of the Táin & Cruachán Aí",
+   "date": "2026-10-29",
+   "url": "https://www.thedock.ie/whats-on/who-shot-queen-medb",
+   "category": "Literature",
+   "id": "7f4d6ce2d5d7",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -4937,6 +5046,18 @@
    "category": "Music",
    "id": "4543d9e7da58",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Pebbledash – Salt, Glass & Spit Tour",
+   "date": "2026-10-30",
+   "url": "https://www.thedock.ie/whats-on/pebbledash",
+   "category": "Music",
+   "id": "f47128fa554a",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -4989,6 +5110,18 @@
    "category": "Music/Comedy",
    "id": "7da66777e2c8",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Andrew Ryan – Honest Capacity",
+   "date": "2026-11-06",
+   "url": "https://www.thedock.ie/whats-on/honest-capacity",
+   "category": "Comedy",
+   "id": "1cdc53edd454",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -5082,6 +5215,18 @@
    ],
    "id": "c7be8ddd79b9",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Mr. Bergmann of Deadman's Point – Nth Degree Productions",
+   "date": "2026-11-13",
+   "url": "https://www.thedock.ie/whats-on/mr-bergmann-of-deadmans-point",
+   "category": "Theatre",
+   "id": "0ca993ab6b0b",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "abbey",
