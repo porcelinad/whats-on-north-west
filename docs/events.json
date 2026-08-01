@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-01T20:36Z",
+ "generated_at": "2026-08-01T20:46Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-08-01T09:05Z",
@@ -35,23 +35,10 @@
   "craftmonth_fermanagh": 0,
   "heritageweek": 0,
   "thedock": 0,
-  "strule": 0
+  "strule": 0,
+  "ardhowen": 0
  },
  "events": [
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Barbara Knežević: Gvozdene Kapije | The Iron Gates (Gallery 1)",
-   "date": "2026-07-04",
-   "end_date": "2026-08-29",
-   "time": "6:00 pm",
-   "url": "https://regionalculturalcentre.com/exhibitions/barbara-knezevic-gvozdene-kapije-the-iron-gates/",
-   "category": "Exhibition",
-   "id": "bd4b86b4526e",
-   "first_seen": "2026-07-14"
-  },
   {
    "source": "eaf",
    "venue": "Glebe Gallery & Gardens",
@@ -109,68 +96,6 @@
    "first_seen": "2026-07-18"
   },
   {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Kids: Drop-In, Hands-On, Art Room",
-   "date": "2026-07-11",
-   "end_date": "2026-08-29",
-   "time": "1:00 pm",
-   "url": "https://regionalculturalcentre.com/events/drop-in-hands-on-art-room/",
-   "category": "Community Arts, Kids/Family",
-   "id": "e284beba368b",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Kids: Mini Cinema",
-   "date": "2026-07-11",
-   "end_date": "2026-08-29",
-   "time": "1:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-kids-mini-cinema/",
-   "category": "Film, Kids/Family",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "7bda7aff8d02",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The Rain Tells Us Everything – Catherine McDonald, Katie Nolan, and Niamh Schmidtke (Gallery 2 + Foyer Gallery)",
-   "date": "2026-07-11",
-   "end_date": "2026-09-19",
-   "time": "6:00 pm",
-   "url": "https://regionalculturalcentre.com/exhibitions/the-rain-tells-us-everything-catherine-mcdonald-katie-nolan-and-niamh-schmidtke-gallery-2-foyer-gallery/",
-   "category": "Exhibition",
-   "id": "88d45de4385a",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Kids: Storytime",
-   "date": "2026-07-15",
-   "end_date": "2026-08-19",
-   "time": "10:00 am",
-   "url": "https://regionalculturalcentre.com/events/rcc-kids-art-workshops/",
-   "category": "Workshop, Kids/Family",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "1bb263e16a1b",
-   "first_seen": "2026-07-14"
-  },
-  {
    "source": "craftmonth_leitrim",
    "venue": "The Leitrim Design House",
    "town": "Leitrim",
@@ -182,23 +107,6 @@
    "category": "Exhibition, Woodworking",
    "id": "007a1b416f7f",
    "first_seen": "2026-08-01"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Kids: Art Workshops",
-   "date": "2026-07-22",
-   "end_date": "2026-08-19",
-   "time": "10:00 am",
-   "url": "https://regionalculturalcentre.com/events/rcc-kids-art-workshops-2/",
-   "category": "Workshop, Kids/Family",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "02b9bf2077ee",
-   "first_seen": "2026-07-14"
   },
   {
    "source": "balor",
@@ -545,6 +453,18 @@
    "category": "Workshop",
    "id": "e74a612ba5bc",
    "first_seen": "2026-07-31"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "The Holywood Players Present Last of the Red Hot Lovers",
+   "date": "2026-08-08",
+   "url": "https://ardhowen.com/show/the-holywood-players-present-last-of-the-red-hot-lovers/",
+   "category": "Drama",
+   "id": "9446aa1ee86c",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "hawkswell",
@@ -1142,6 +1062,18 @@
    "url": "https://www.heritageweek.ie/event-listings/dúlra-dúchasach-cois-trá-native-nature-on-the-coast-2",
    "category": null,
    "id": "269637951f0d",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "FSOMAPA presents Back to the 80’s",
+   "date": "2026-08-15",
+   "url": "https://ardhowen.com/show/fsomapa-presents-back-to-the-80s/",
+   "category": "Music",
+   "id": "747a4c292217",
    "first_seen": "2026-08-01"
   },
   {
@@ -3106,6 +3038,18 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Fermanagh Musical Theatre Presents Guys and Dolls",
+   "date": "2026-08-22",
+   "url": "https://ardhowen.com/show/fermanagh-musical-theatre-presents-guys-and-dolls/",
+   "category": "Music",
+   "id": "e3f1dc9b6777",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "heritageweek",
    "venue": "Coiste Oidhreachta Chill Chartha / Kilcar Heritage Committee",
    "town": "Áislann Car Park / St Matthew's Church, Co. Donegal",
@@ -3839,6 +3783,19 @@
    "first_seen": "2026-07-21"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Icons of the 70s show",
+   "date": "2026-08-28",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/icons-of-the-70s-show/",
+   "category": "Music",
+   "id": "1e50b40d2054",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -3861,6 +3818,19 @@
    "url": "https://augustcraftmonth.org/acm-event/discover-the-art-of-eco-printing-with-naomi-from-the-wild-things/",
    "category": "Workshop, Mixed Media Construction, Printing, Textile Making",
    "id": "4684943c725e",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Sounds Of The West",
+   "date": "2026-08-29",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/sounds-of-the-west/",
+   "category": "Music",
+   "id": "6d9cea84c7f6",
    "first_seen": "2026-08-01"
   },
   {
@@ -4122,6 +4092,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Superstar Wrestling",
+   "date": "2026-09-05",
+   "time": "6:00pm",
+   "url": "https://ardhowen.com/show/superstar-wrestling/",
+   "category": null,
+   "id": "510dc1e6d1d6",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "hawkswell",
    "venue": "Art Deco Theatre",
    "town": "Ballymote",
@@ -4211,6 +4194,19 @@
    "first_seen": "2026-07-28"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "The Macbeth Project",
+   "date": "2026-09-08",
+   "time": "10:00am",
+   "url": "https://ardhowen.com/show/the-macbeth-project/",
+   "category": "Drama",
+   "id": "e397cb14705a",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "hawkswell",
    "venue": "Hawk's Well Theatre",
    "town": "Sligo",
@@ -4276,6 +4272,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Nashville Live",
+   "date": "2026-09-11",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/nashville-live/",
+   "category": "Music",
+   "id": "e6fec2cff69c",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -4313,6 +4322,19 @@
    "category": "Comedy",
    "id": "b7be3fbfc659",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "CLUBSOUND The Band who couldn’t retire TOUR",
+   "date": "2026-09-12",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/clubsound-the-band-who-couldnt-retire-tour/",
+   "category": "Music",
+   "id": "f6beade6dc3a",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "balor",
@@ -4419,6 +4441,19 @@
    "first_seen": "2026-07-31"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Gerry Guthrie in concert with guests John Glenn and Raymond Kelly",
+   "date": "2026-09-18",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/gerry-guthrie-in-concert-with-guests-john-glenn-and-raymond-kelly/",
+   "category": "Music",
+   "id": "a6f43f67a749",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -4483,6 +4518,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Glory Days – A Bruce Springsteen Tribute",
+   "date": "2026-09-19",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/glory-days-a-bruce-springsteen-tribute/",
+   "category": "Music",
+   "id": "b61dc0297eec",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -4534,6 +4582,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Music In Fermanagh Presents Michael Collins and Michael Mc Hale",
+   "date": "2026-09-24",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/music-in-fermanagh-presents-michael-collins-and-michael-mc-hale/",
+   "category": "Classical Music",
+   "id": "0f75e5848b59",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -4546,6 +4607,19 @@
    "category": "Theatre",
    "id": "ae6499e05fe0",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "The Love Hungry Farmer",
+   "date": "2026-09-25",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/the-love-hungry-farmer/",
+   "category": "Drama",
+   "id": "9bc507814430",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "balor",
@@ -4598,6 +4672,19 @@
    "category": null,
    "id": "e90f53a2f295",
    "first_seen": "2026-07-31"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "THE ELVIS SPECTACULAR SHOW Starring CIARAN HOULIHAN with his TCB BAND and THE SWEET SENSATIONS",
+   "date": "2026-09-26",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/the-elvis-spectacular-show-starring-ciaran-houlihan-with-his-tcb-band-and-the-sweet-sensations/",
+   "category": "Music",
+   "id": "0550f7cfa214",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "mcgrorys",
@@ -4664,6 +4751,20 @@
    "category": "Comedy",
    "id": "517da0ea42b6",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "EMER MAGUIRE: PERFECTLY CHAOTIC",
+   "date": "2026-10-01",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/emer-maguire-perfectly-chaotic/",
+   "category": "Comedy",
+   "sold_out": true,
+   "id": "6bbda8707375",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "nervecentre",
@@ -4758,6 +4859,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Made In Tennessee",
+   "date": "2026-10-07",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/made-in-tennessee/",
+   "category": "Music",
+   "id": "b0753a3ea706",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -4769,6 +4883,19 @@
    "category": "Spoken Word, Kids/Family",
    "id": "843510d9e9e0",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Anthony Toner",
+   "date": "2026-10-08",
+   "time": "9:00pm",
+   "url": "https://ardhowen.com/show/anthony-toner-3/",
+   "category": "Music",
+   "id": "5e2ec5fdbc4e",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "balor",
@@ -4796,6 +4923,19 @@
    "category": "Comedy",
    "id": "a54d9f5ca2c2",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "The Bjorn Identity – Celebrate 50 years of Dancing Queen",
+   "date": "2026-10-09",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/the-bjorn-identity-celebrate-50-years-of-dancing-queen/",
+   "category": "Music",
+   "id": "b4e75015a18e",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "eventbrite_donegal",
@@ -4873,6 +5013,19 @@
    "first_seen": "2026-07-31"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Calum MacPhail Live",
+   "date": "2026-10-10",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/calum-macphail-live/",
+   "category": "Music",
+   "id": "9922095d252a",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -4899,6 +5052,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Michael English with Special Guest Paddy Treacy",
+   "date": "2026-10-15",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/michael-english/",
+   "category": "Music",
+   "id": "20a06ed51f72",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "thedock",
    "venue": "The Dock",
    "town": "Carrick-on-Shannon",
@@ -4908,6 +5074,19 @@
    "url": "https://www.thedock.ie/whats-on/tommy-tiernan",
    "category": "Comedy",
    "id": "83c4f9a51c85",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Thunder Rolls, The Garth Brooks Tribute",
+   "date": "2026-10-16",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/thunder-rolls-the-garth-brooks-tribute/",
+   "category": "Music",
+   "id": "c49afc3bc74c",
    "first_seen": "2026-08-01"
   },
   {
@@ -4947,6 +5126,32 @@
    "category": "Comedy",
    "id": "3e1f8e8c1c1f",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Eerieland: Ghost Stories of the North of Ireland",
+   "date": "2026-10-17",
+   "time": "9:00pm",
+   "url": "https://ardhowen.com/show/eerieland-ghost-stories-of-the-north-of-ireland/",
+   "category": null,
+   "id": "d6a8b53e2d7b",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "HAY!",
+   "date": "2026-10-17",
+   "time": "2:00pm",
+   "url": "https://ardhowen.com/show/hay/",
+   "category": "Children's Event",
+   "id": "bd03a9e83f5d",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "balor",
@@ -5387,6 +5592,19 @@
    "first_seen": "2026-07-21"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "A Night With The Country Stars",
+   "date": "2026-11-06",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/a-night-with-the-country-stars-3/",
+   "category": "Music",
+   "id": "bc47b4ad98df",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -5423,6 +5641,19 @@
    "category": "Music",
    "id": "7c8f9a277165",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "How’s Your Father? Starring Conal Gallen",
+   "date": "2026-11-07",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/hows-your-father-staring-conal-gallen/",
+   "category": null,
+   "id": "bcdb157a31b1",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "nervecentre",
@@ -5542,6 +5773,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Just Us presents Surprise Surprise It’s Stars In Their Eyes",
+   "date": "2026-11-14",
+   "time": "7:30pm",
+   "url": "https://ardhowen.com/show/just-us-presents-surprise-surprise-its-stars-in-their-eyes/",
+   "category": "Music",
+   "id": "836d35926f4c",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "mcgrorys",
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
@@ -5635,6 +5879,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Romeo and Juliet",
+   "date": "2026-11-21",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/romeo-and-juliet/",
+   "category": null,
+   "id": "544267a2bd1c",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -5711,6 +5968,19 @@
    "category": "Theatre",
    "id": "517906038277",
    "first_seen": "2026-07-31"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Paddy Power FULL",
+   "date": "2026-11-27",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/paddy-power-full/",
+   "category": null,
+   "id": "0484b4525c02",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "mcgrorys",
@@ -5829,6 +6099,18 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Disney’s Frozen – The West End Musical",
+   "date": "2026-12-12",
+   "url": "https://ardhowen.com/show/disneys-frozen-the-west-end-musical/",
+   "category": "Musical",
+   "id": "42440181b5c3",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "mcgrorys",
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
@@ -5867,6 +6149,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Declan Nerney in concert with special guest John McNicholl",
+   "date": "2026-12-18",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/declan-nerney-in-concert-with-special-guest-john-mcnicholl/",
+   "category": "Music",
+   "id": "ddbe8ee1a69e",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -5889,6 +6184,19 @@
    "url": "https://struleartscentre.co.uk/show/little-women-schools-performances-presented-by-hazel-wand-theater-school/",
    "category": "Musical Theatre",
    "id": "8a9cb214e953",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "The Greatest 80’s Show",
+   "date": "2026-12-19",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/the-greatest-80s-show-3/",
+   "category": "Music",
+   "id": "0d4bfbf3db55",
    "first_seen": "2026-08-01"
   },
   {
@@ -5955,6 +6263,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Caritas Choir Christmas Concert",
+   "date": "2026-12-21",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/caritas-choir-christmas-concert/",
+   "category": "Music",
+   "id": "25afe21f9e82",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -5978,6 +6299,32 @@
    "category": "Music",
    "id": "a90e69a26b84",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "A Christmas Country with the Stars",
+   "date": "2026-12-30",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/a-christmas-country-with-the-stars/",
+   "category": "Music",
+   "id": "d6eccabf72a5",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "JAKE O’KANE – SUBTLE AS A SLEDGEHAMMER TOUR",
+   "date": "2027-01-02",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/jake-okane-subtle-as-a-sledgehammer-tour/",
+   "category": "Comedy",
+   "id": "84542fb784c8",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -6084,6 +6431,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "The Tumbling Paddies",
+   "date": "2027-01-22",
+   "url": "https://ardhowen.com/show/the-tumbling-paddies-2/",
+   "category": "Music",
+   "sold_out": true,
+   "id": "7adf6770bf73",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -6094,6 +6454,19 @@
    "url": "https://struleartscentre.co.uk/show/maccana-the-unseen-growth-of-winter/",
    "category": "Music",
    "id": "2f744fc3d635",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Mack Fleetwood a Tribute to Fleetwood Mac",
+   "date": "2027-01-30",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/mack-fleetwood-a-tribute-to-fleetwood-mac/",
+   "category": "Music",
+   "id": "61e58c216bc3",
    "first_seen": "2026-08-01"
   },
   {
@@ -6135,6 +6508,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Essentially Cher",
+   "date": "2027-02-06",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/essentially-cher/",
+   "category": "Music",
+   "id": "7a390be8ddd0",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -6174,6 +6560,18 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "The Martin Hurson Story",
+   "date": "2027-02-13",
+   "url": "https://ardhowen.com/show/the-martin-hurson-story/",
+   "category": "Drama",
+   "id": "ef883198de53",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -6200,6 +6598,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Philomena Begley and Ray Lynams Farewell Party",
+   "date": "2027-02-17",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/philomena-begley-and-ray-lynams-farewell-party/",
+   "category": "Music",
+   "id": "576f1ef1c376",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Leitrim Sculpture Centre",
    "town": "Manorhamilton",
@@ -6211,6 +6622,31 @@
    "category": null,
    "id": "d859691aa3db",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Country Girl The Musical",
+   "date": "2027-02-18",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/country-girl-the-musical/",
+   "category": "Music",
+   "id": "629767f65a2d",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Talon – The Best Of Eagles",
+   "date": "2027-02-20",
+   "url": "https://ardhowen.com/show/talon-the-best-of-eagles/",
+   "category": "Music",
+   "id": "d734f6e0c773",
+   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -6382,6 +6818,19 @@
    "first_seen": "2026-07-25"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Legends of the 60’s",
+   "date": "2027-04-08",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/legends-of-the-60s/",
+   "category": null,
+   "id": "e763e0faa703",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -6392,6 +6841,32 @@
    "url": "https://struleartscentre.co.uk/show/a-night-at-the-opry-with-claudia-buckley-johnny-brady-john-hogan-2027/",
    "category": "Music",
    "id": "0df5391d51f7",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Andrew Ryan: Honest Capacity",
+   "date": "2027-04-09",
+   "time": "7:30pm",
+   "url": "https://ardhowen.com/show/andrew-ryan-honest-capacity/",
+   "category": "Comedy",
+   "id": "c85948718fa2",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Joe The Magician – Live",
+   "date": "2027-04-10",
+   "time": "3:00pm",
+   "url": "https://ardhowen.com/show/joe-the-magician-live/",
+   "category": "Children's Event",
+   "id": "2ea17ad86db3",
    "first_seen": "2026-08-01"
   },
   {
@@ -6434,6 +6909,45 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "A Night At The Opry with Claudia Buckley, Johnny Brady & John Hogan",
+   "date": "2027-04-29",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/a-night-at-the-opry-with-claudia-buckley-johnny-brady-john-hogan/",
+   "category": "Music",
+   "id": "234a5964e018",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Eric & Ern",
+   "date": "2027-05-25",
+   "url": "https://angrianan.com/event/eric-ern/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666010/events/128655711/seats?zone=Default",
+   "category": "Variety",
+   "id": "20e498acb28c",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Eric and Ern",
+   "date": "2027-05-29",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/eric-and-ern/",
+   "category": "Comedy",
+   "id": "13fe7e853f0b",
+   "first_seen": "2026-08-01"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -6445,6 +6959,164 @@
    "category": "Music/Comedy",
    "id": "1c505dd403a8",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Celebrate Cruinniú na nÓg at the RCC!",
+   "date": "2027-06-06",
+   "time": "1:30 pm",
+   "url": "https://regionalculturalcentre.com/events/celebrate-cruinniu-na-nog-at-the-rcc/",
+   "category": "Workshop",
+   "id": "ff903419ae03",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "DIALOGUES: An End of Programme Showcase",
+   "date": "2027-07-03",
+   "time": "6:00 pm",
+   "url": "https://regionalculturalcentre.com/events/dialogues-an-end-of-programme-showcase/",
+   "category": "Music",
+   "id": "ea9371d9dbb7",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Barbara Knežević: Gvozdene Kapije | The Iron Gates (Gallery 1)",
+   "date": "2027-07-04",
+   "end_date": "2026-08-29",
+   "time": "6:00 pm",
+   "url": "https://regionalculturalcentre.com/exhibitions/barbara-knezevic-gvozdene-kapije-the-iron-gates/",
+   "category": "Exhibition",
+   "id": "2c77c8b1b4c0",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Exclusive Preview – Artist & Curator Tour – Barbara Knežević: The Iron Gates",
+   "date": "2027-07-04",
+   "time": "5:00 pm",
+   "url": "https://regionalculturalcentre.com/events/exclusive-preview-artist-curator-tour-barbara-knezevic-the-iron-gates/",
+   "category": "Workshop",
+   "id": "e78e4913bd2f",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Kids: Drop-In, Hands-On, Art Room",
+   "date": "2027-07-11",
+   "end_date": "2026-08-29",
+   "time": "1:00 pm",
+   "url": "https://regionalculturalcentre.com/events/drop-in-hands-on-art-room/",
+   "category": "Community Arts, Kids/Family",
+   "id": "603b8d35f088",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Kids: Mini Cinema",
+   "date": "2027-07-11",
+   "end_date": "2026-08-29",
+   "time": "1:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-kids-mini-cinema/",
+   "category": "Film, Kids/Family",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "168a754a433f",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "The Rain Tells Us Everything – Catherine McDonald, Katie Nolan, and Niamh Schmidtke (Gallery 2 + Foyer Gallery)",
+   "date": "2027-07-11",
+   "end_date": "2026-09-19",
+   "time": "6:00 pm",
+   "url": "https://regionalculturalcentre.com/exhibitions/the-rain-tells-us-everything-catherine-mcdonald-katie-nolan-and-niamh-schmidtke-gallery-2-foyer-gallery/",
+   "category": "Exhibition",
+   "id": "cecb99220148",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Kids: Storytime",
+   "date": "2027-07-15",
+   "end_date": "2026-08-19",
+   "time": "10:00 am",
+   "url": "https://regionalculturalcentre.com/events/rcc-kids-art-workshops/",
+   "category": "Workshop, Kids/Family",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "ed6332de15c9",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC MUSIC: The McKenna Family Album Launch + Support from Coirm",
+   "date": "2027-07-16",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/the-mckenna-family-album-launch-support-from-coirm/",
+   "category": "Music",
+   "id": "cc6e63ef2164",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Collective Singing Event around CHANTER",
+   "date": "2027-07-18",
+   "time": "3:00 pm",
+   "url": "https://regionalculturalcentre.com/events/collective-singing-event-around-chanter/",
+   "category": "Community Arts",
+   "id": "30d38e49ff43",
+   "first_seen": "2026-08-01"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Kids: Art Workshops",
+   "date": "2027-07-22",
+   "end_date": "2026-08-19",
+   "time": "10:00 am",
+   "url": "https://regionalculturalcentre.com/events/rcc-kids-art-workshops-2/",
+   "category": "Workshop, Kids/Family",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "44e18aa9a312",
+   "first_seen": "2026-08-01"
   }
  ]
 }
