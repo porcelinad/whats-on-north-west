@@ -1359,6 +1359,46 @@ def parse_thedock(soup, source):
     return events
 
 
+STRULE_DATE_RE = re.compile(
+    r"(\d{1,2})\s+([A-Za-z]+)(?:\s+at\s+(\d{1,2}[:.]\d{2}\s*[ap]m))?", re.I)
+
+
+def parse_strule(soup, source):
+    """struleartscentre.co.uk/whats-on/shows/ - each card (.card-show)
+    has a genre (.primary-category), title (h2), a date (p.published-
+    date), and a Book/Sold Out button. For a sold-out show, the site
+    drops the date from the listing entirely rather than showing it
+    alongside a Sold Out badge - those are skipped, since there's no
+    way to schedule an event with no visible date on this page."""
+    events = []
+    for card in soup.select(".card-show"):
+        title_tag = card.select_one("h2")
+        link_tag = card.select_one("a.stretched-link")
+        date_tag = card.select_one("p.published-date")
+        if not (title_tag and link_tag and date_tag):
+            continue
+        date_text = clean(date_tag.get_text())
+        if not date_text:
+            continue  # sold out - no date shown on this page
+        m = STRULE_DATE_RE.search(date_text)
+        if not m:
+            continue
+        mon = MONTHS.get(m.group(2).lower()[:3])
+        if not mon:
+            continue
+        start = infer_year(mon, int(m.group(1)))
+        if not start:
+            continue
+        genre_tag = card.select_one(".primary-category")
+        sold_out = bool(card.select_one("a.btn.disabled"))
+        events.append(make_event(
+            source, clean(title_tag.get_text()), start,
+            time=m.group(3), url=link_tag.get("href"),
+            category=clean(genre_tag.get_text()) if genre_tag else None,
+            sold_out=sold_out))
+    return events
+
+
 # ---------------------------------------------------------------- sources
 
 CRAFTMONTH_START = TODAY.strftime("%Y%m%d")
@@ -1434,6 +1474,9 @@ SOURCES = [
     {"name": "thedock", "venue": "The Dock", "town": "Carrick-on-Shannon",
      "county": "Leitrim", "url": "https://www.thedock.ie/whats-on/upcoming-events",
      "parser": parse_thedock},
+    {"name": "strule", "venue": "Strule Arts Centre", "town": "Omagh",
+     "county": "Tyrone", "url": "https://struleartscentre.co.uk/whats-on/shows/",
+     "parser": parse_strule},
 ]
 
 
