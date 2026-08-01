@@ -261,17 +261,18 @@ function render(gen){
   }
   let lastMonth="";
   for(const ev of shown){
-    const f=fmt(ev.date);
+    const isOngoing = ev.end_date && ev.date<=TODAY_ISO && ev.end_date>=TODAY_ISO;
+    const groupIso = isOngoing ? TODAY_ISO : ev.date;
+    const f=fmt(groupIso);
     if(f.key!==lastMonth){
       lastMonth=f.key;
-      list.append(el("h2","month",f.month+" "+ev.date.slice(0,4)));
+      list.append(el("h2","month",f.month+" "+groupIso.slice(0,4)));
     }
     const a=el("a","event"); a.href=ev.url||ev.booking_url||"#";
     a.target="_blank"; a.rel="noopener";
     if(ev.sold_out) a.classList.add("sold");
 
     const stub=el("div","stub");
-    const isOngoing = ev.end_date && ev.date<=TODAY_ISO && ev.end_date>=TODAY_ISO;
     if(isOngoing){
       const e2=fmt(ev.end_date);
       stub.append(el("span","dow","Now On"),
