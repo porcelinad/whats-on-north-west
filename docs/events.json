@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-08-02T17:00Z",
+ "generated_at": "2026-08-02T17:41Z",
  "failed_sources": [],
  "source_last_run": {
-  "eventbrite_csv_hash": "69ee700b47c0",
-  "eventbrite_csv_since": "2026-08-02T17:00Z",
+  "eventbrite_csv_hash": "190d9959f231",
+  "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-02T17:00Z",
   "hawkswell": "2026-08-02T17:00Z",
   "craftmonth_donegal": "2026-08-02T17:00Z",
@@ -344,19 +344,6 @@
   },
   {
    "source": "eventbrite_donegal",
-   "venue": "Bridgend Bar",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Legend Sessions - When Johnny Meets ....",
-   "date": "2026-08-02",
-   "time": "12:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/legend-sessions-when-johnny-meets/",
-   "category": null,
-   "id": "18097d08d35f",
-   "first_seen": "2026-07-27"
-  },
-  {
-   "source": "eventbrite_donegal",
    "venue": "Peace Flame",
    "town": "Londonderry",
    "county": "Derry",
@@ -367,48 +354,6 @@
    "category": null,
    "id": "b4b3044e3081",
    "first_seen": "2026-08-02"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Agivey River",
-   "town": "Coleraine",
-   "county": "Derry",
-   "title": "Walking the Agivey River",
-   "date": "2026-08-03",
-   "time": "18:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/walking-the-agivey-river/",
-   "category": null,
-   "id": "45beb0fa743c",
-   "first_seen": "2026-08-02"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "McCafferty's at The Pier",
-   "town": "Donegal Town",
-   "county": "Donegal",
-   "title": "ANAM - Traditional Irish Music, Song and Dance Show",
-   "date": "2026-08-03",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/anam-traditional-irish-music-song-and-dance-show/",
-   "category": null,
-   "id": "2778f544b670",
-   "first_seen": "2026-08-02"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Post Office",
-   "town": "Garrison",
-   "county": "Fermanagh",
-   "title": "Melvin Studios Arts & Crafts 2026- Afternoon",
-   "date": "2026-08-03",
-   "time": "14:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/melvin-studios-arts-crafts-2026-afternoon/",
-   "merged_from": [
-    "eventbrite_donegal"
-   ],
-   "category": null,
-   "id": "81dd62baba86",
-   "first_seen": "2026-07-18"
   },
   {
    "source": "eventbrite_donegal",
@@ -490,15 +435,15 @@
   },
   {
    "source": "eventbrite_donegal",
-   "venue": "Áislann Chill Chartha",
-   "town": "Kilcar",
-   "county": "Donegal",
-   "title": "The Seeger Sessions Revival - Kilcar",
-   "date": "2026-08-05",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-seeger-sessions-revival-kilcar/",
+   "venue": "Agivey River",
+   "town": "Coleraine",
+   "county": "Derry",
+   "title": "Walking the Agivey River",
+   "date": "2026-08-06",
+   "time": "18:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/walking-the-agivey-river/",
    "category": null,
-   "id": "5d8785fd6485",
+   "id": "47bc4ba6c002",
    "first_seen": "2026-08-02"
   },
   {
@@ -567,32 +512,6 @@
   },
   {
    "source": "eventbrite_donegal",
-   "venue": "Ballyshannon Folk & Traditional Festival",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "49th Ballyshannon Folk and Traditional Music Festival Weekend Ticket",
-   "date": "2026-08-07",
-   "time": "18:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/49th-ballyshannon-folk-and-traditional-music-festival-weekend-ticket/",
-   "category": null,
-   "id": "7308670b5be6",
-   "first_seen": "2026-08-02"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Bridge Inn Dungloe",
-   "town": "Dungloe",
-   "county": "Donegal",
-   "title": "Nothing But Trouble - DAIRE - Marquee at Bridge Inn",
-   "date": "2026-08-07",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/nothing-but-trouble-daire-marquee-at-bridge-inn/",
-   "category": null,
-   "id": "b6dcaa390c91",
-   "first_seen": "2026-08-02"
-  },
-  {
-   "source": "eventbrite_donegal",
    "venue": "Nerve Centre",
    "town": "Londonderry",
    "county": "Derry",
@@ -603,6 +522,19 @@
    "category": null,
    "id": "3405bffd1e95",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "The Highlands Hotel",
+   "town": "Glenties",
+   "county": "Donegal",
+   "title": "Glenties Teen Disco – Hawaiian Party Night",
+   "date": "2026-08-07",
+   "time": "21:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/glenties-teen-disco-hawaiian-party-night/",
+   "category": null,
+   "id": "536734ce01df",
+   "first_seen": "2026-08-02"
   },
   {
    "source": "themodel",
@@ -655,19 +587,6 @@
    "first_seen": "2026-07-25"
   },
   {
-   "source": "eventbrite_donegal",
-   "venue": "Ballyshannon Folk & Traditional Festival - Live at the Marquee",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Ballyshannon Folk & Traditional Music Festival - Saturday 1st August",
-   "date": "2026-08-08",
-   "time": "18:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/ballyshannon-folk-traditional-music-festival-saturday-1st-august/",
-   "category": null,
-   "id": "54d9aa137744",
-   "first_seen": "2026-08-02"
-  },
-  {
    "source": "craftmonth_derry",
    "venue": "Fiona Shannon",
    "town": "Coleraine",
@@ -694,32 +613,6 @@
   },
   {
    "source": "eventbrite_donegal",
-   "venue": "Gurn's Milestone",
-   "town": "Manorhamilton",
-   "county": "Leitrim",
-   "title": "3 Bucks Left - Live at Gurns",
-   "date": "2026-08-08",
-   "time": "21:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/3-bucks-left-live-at-gurns/",
-   "category": null,
-   "id": "df6ae7104a10",
-   "first_seen": "2026-08-02"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Leitrim School of Art N41 E8H0",
-   "town": "Ballinamore",
-   "county": "Leitrim",
-   "title": "Quiltmaking Workshop, Sat 1st Aug 2026,10am-4pm",
-   "date": "2026-08-08",
-   "time": "10:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/quiltmaking-workshop-sat-1st-aug-2026-10am-4pm/",
-   "category": null,
-   "id": "78d871416f44",
-   "first_seen": "2026-08-02"
-  },
-  {
-   "source": "eventbrite_donegal",
    "venue": "Manor House Country Hotel",
    "town": "Enniskillen",
    "county": "Fermanagh",
@@ -743,19 +636,6 @@
    "category": null,
    "id": "e09e98cd4941",
    "first_seen": "2026-07-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "McCafferty's Bar & Restaurant",
-   "town": "Dungloe",
-   "county": "Donegal",
-   "title": "Gearóid McCarthy LIVE at McCafferty's, Dungloe",
-   "date": "2026-08-08",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/gearoid-mccarthy-live-at-mccaffertys-dungloe/",
-   "category": null,
-   "id": "375b6d8cfc6d",
-   "first_seen": "2026-08-02"
   },
   {
    "source": "eventbrite_donegal",
@@ -1242,16 +1122,16 @@
   },
   {
    "source": "eventbrite_donegal",
-   "venue": "Learmount Forest Park",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Cycling in the Sperrins",
+   "venue": "Leitrim School of Art N41 E8H0",
+   "town": "Ballinamore",
+   "county": "Leitrim",
+   "title": "One Day Ceramic Workshop, Friday 14th Aug 2026, 10am-4pm",
    "date": "2026-08-14",
-   "time": "11:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/cycling-in-the-sperrins/",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/one-day-ceramic-workshop-friday-14th-aug-2026-10am-4pm/",
    "category": null,
-   "id": "0bdac8d94fc4",
-   "first_seen": "2026-07-27"
+   "id": "c7d0a790b763",
+   "first_seen": "2026-08-02"
   },
   {
    "source": "eventbrite_donegal",
@@ -1277,6 +1157,19 @@
    "category": "Workshop, Mixed Media Construction, Printing, Textile Making",
    "id": "33a7b436ae5d",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "The Abbey Hotel",
+   "town": "Donegal Town",
+   "county": "Donegal",
+   "title": "Neon Beatz Disco",
+   "date": "2026-08-14",
+   "time": "21:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/neon-beatz-disco/",
+   "category": null,
+   "id": "17e040a6260a",
+   "first_seen": "2026-08-02"
   },
   {
    "source": "heritageweek",
@@ -2680,6 +2573,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "eventbrite_donegal",
+   "venue": "Dunkineely Community Centre",
+   "town": "Dunkineely",
+   "county": "Donegal",
+   "title": "Concert with Aidan and Kevin O'Donnell and Friends",
+   "date": "2026-08-20",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/concert-with-aidan-and-kevin-odonnell-and-friends/",
+   "category": null,
+   "id": "c31fe6f7748b",
+   "first_seen": "2026-08-02"
+  },
+  {
    "source": "heritageweek",
    "venue": "Dunkineely Community Ltd",
    "town": "Dunkineely",
@@ -2785,6 +2691,19 @@
    "category": null,
    "id": "11ddfa85b97c",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Roe Valley Arts and Cultural Centre",
+   "town": "Limavady",
+   "county": "Derry",
+   "title": "Cyanotype Photography for 18+yrs",
+   "date": "2026-08-20",
+   "time": "11:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/cyanotype-photography-for-18-yrs/",
+   "category": null,
+   "id": "886b7dd9cba0",
+   "first_seen": "2026-08-02"
   },
   {
    "source": "heritageweek",
@@ -2928,6 +2847,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "eventbrite_donegal",
+   "venue": "Dunkineely Community Centre",
+   "town": "Dunkineely",
+   "county": "Donegal",
+   "title": "Mystery Bus Tour",
+   "date": "2026-08-21",
+   "time": "09:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/mystery-bus-tour/",
+   "category": null,
+   "id": "19d2a01d63d4",
+   "first_seen": "2026-08-02"
+  },
+  {
    "source": "heritageweek",
    "venue": "Dunkineely Community Ltd",
    "town": "Dunkineely",
@@ -3056,6 +2988,19 @@
    "category": null,
    "id": "0b47679a1db2",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Kinnegar Brewing",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Jack Houston: An Fhidil Bhriste | The Broken Fiddle - Album Launch",
+   "date": "2026-08-21",
+   "time": "19:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/jack-houston-an-fhidil-bhriste-the-broken-fiddle-album-launch/",
+   "category": null,
+   "id": "ce93cb3bb5eb",
+   "first_seen": "2026-08-02"
   },
   {
    "source": "heritageweek",
@@ -3546,6 +3491,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "eventbrite_donegal",
+   "venue": "The Glass Farm",
+   "town": "Dromahair",
+   "county": "Leitrim",
+   "title": "Cross Collaboration - A Gathering of Glassmakers",
+   "date": "2026-08-22",
+   "time": "09:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/cross-collaboration-a-gathering-of-glassmakers/",
+   "category": null,
+   "id": "53172ef9cd4e",
+   "first_seen": "2026-08-02"
+  },
+  {
    "source": "heritageweek",
    "venue": "Tireragh Community Support Ltd",
    "town": null,
@@ -3946,19 +3904,6 @@
    "first_seen": "2026-07-20"
   },
   {
-   "source": "eventbrite_donegal",
-   "venue": "Roe Valley Arts and Cultural Centre",
-   "town": "Limavady",
-   "county": "Derry",
-   "title": "Wool Felting Fun for 6-11yrs",
-   "date": "2026-08-25",
-   "time": "11:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/wool-felting-fun-for-6-11yrs/",
-   "category": "Kids/Family",
-   "id": "f597436630bc",
-   "first_seen": "2026-07-20"
-  },
-  {
    "source": "craftmonth_leitrim",
    "venue": "The Leitrim Design House",
    "town": "Carrick-on-Shannon",
@@ -4011,16 +3956,16 @@
   },
   {
    "source": "eventbrite_donegal",
-   "venue": "The nest Custom House Quay branching F91 K79P",
-   "town": "Sligo",
+   "venue": "Abhainn Studio",
+   "town": "Enniscrone",
    "county": "Sligo",
-   "title": "Swan Song",
-   "date": "2026-08-26",
+   "title": "Monk ⎸ `````Abhainn Studio, Enniscrone",
+   "date": "2026-08-27",
    "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/swan-song/",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/monk-abhainn-studio-enniscrone/",
    "category": null,
-   "id": "15d374872008",
-   "first_seen": "2026-07-27"
+   "id": "465b916e4d5d",
+   "first_seen": "2026-08-02"
   },
   {
    "source": "craftmonth_fermanagh",
@@ -4147,6 +4092,19 @@
    "url": "https://augustcraftmonth.org/acm-event/fiona-shannon-ceramics-open-studio-and-pottery-sale/",
    "category": "Open Studio, Ceramics",
    "id": "6a03190bf2a3",
+   "first_seen": "2026-08-02"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Garvagh High School Site - Meeting Point",
+   "town": "Garvagh",
+   "county": "Derry",
+   "title": "Garvagh Forest Bat Walk",
+   "date": "2026-08-29",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/garvagh-forest-bat-walk/",
+   "category": null,
+   "id": "5493537bc23e",
    "first_seen": "2026-08-02"
   },
   {
@@ -4468,6 +4426,32 @@
    "category": "Comedy",
    "id": "9346e94ff465",
    "first_seen": "2026-07-28"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Mahon's Hotel",
+   "town": "Irvinestown",
+   "county": "Fermanagh",
+   "title": "Tully in Concert",
+   "date": "2026-09-05",
+   "time": "20:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/tully-in-concert/",
+   "category": null,
+   "id": "b2fc370f715b",
+   "first_seen": "2026-08-02"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Manor House Country Hotel",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Brunch, Beats & Cruise with DJ Bob!! Sat 5th September 2026",
+   "date": "2026-09-05",
+   "time": "13:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/brunch-beats-cruise-with-dj-bob-sat-5th-september-2026/",
+   "category": null,
+   "id": "2f58f6baf467",
+   "first_seen": "2026-08-02"
   },
   {
    "source": "mcgrorys",
@@ -4971,6 +4955,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "eventbrite_donegal",
+   "venue": "Joes Bar",
+   "town": "Strabane",
+   "county": "Tyrone",
+   "title": "SHANE TODD AT JOES BAR",
+   "date": "2026-09-24",
+   "time": "19:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/shane-todd-at-joes-bar/",
+   "category": null,
+   "id": "ed64794e2821",
+   "first_seen": "2026-08-02"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -5425,6 +5422,19 @@
    "category": "Music/Comedy",
    "id": "879a100437b9",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Villa Rose Hotel",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Broadway to Vienna - by Candlelight",
+   "date": "2026-10-10",
+   "time": "19:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/broadway-to-vienna-by-candlelight/",
+   "category": null,
+   "id": "429825ba2684",
+   "first_seen": "2026-08-02"
   },
   {
    "source": "abbey",
@@ -6226,6 +6236,19 @@
   },
   {
    "source": "eventbrite_donegal",
+   "venue": "Dunlewey Theatre Gweedore",
+   "town": "Gweedore",
+   "county": "Donegal",
+   "title": "Paul Brady, Dunlewey Theatre, Donegal",
+   "date": "2026-11-20",
+   "time": "19:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/paul-brady-dunlewey-theatre-donegal/",
+   "category": null,
+   "id": "08cf34104bad",
+   "first_seen": "2026-08-02"
+  },
+  {
+   "source": "eventbrite_donegal",
    "venue": "Leitrim Sculpture Centre",
    "town": "Manorhamilton",
    "county": "Leitrim",
@@ -6573,6 +6596,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "eventbrite_donegal",
+   "venue": "Villa Rose Hotel",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Christmas Candlelight Variety Spectacular",
+   "date": "2026-12-17",
+   "time": "19:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/christmas-candlelight-variety-spectacular/",
+   "category": null,
+   "id": "0b30f007cdb2",
+   "first_seen": "2026-08-02"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -6659,19 +6695,6 @@
    "category": null,
    "id": "004f9584b525",
    "first_seen": "2026-07-18"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "The Social",
-   "town": "Gweedore",
-   "county": "Donegal",
-   "title": "Mamma Mia - The Live Experience. The Social, Gweedore Donegal",
-   "date": "2026-12-19",
-   "time": "18:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/mamma-mia-the-live-experience-the-social-gweedore-donegal/",
-   "category": null,
-   "id": "3b4a8cf06f5e",
-   "first_seen": "2026-07-20"
   },
   {
    "source": "an_grianan",
@@ -7547,10 +7570,6 @@
    "time": "6:00 pm",
    "url": "https://regionalculturalcentre.com/exhibitions/the-rain-tells-us-everything-catherine-mcdonald-katie-nolan-and-niamh-schmidtke-gallery-2-foyer-gallery/",
    "category": "Exhibition",
-   "merged_from": [
-    "eaf",
-    "rcc"
-   ],
    "id": "cecb99220148",
    "first_seen": "2026-08-01"
   },
