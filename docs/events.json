@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-01T23:33Z",
+ "generated_at": "2026-08-02T09:08Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-08-01T09:05Z",
@@ -16,10 +16,10 @@
   "heritageweek": "2026-08-01T19:25Z"
  },
  "consecutive_failures": {
-  "an_grianan": 1,
-  "rcc": 1,
-  "balor": 1,
-  "abbey": 2,
+  "an_grianan": 0,
+  "rcc": 0,
+  "balor": 0,
+  "abbey": 3,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -34,7 +34,7 @@
   "craftmonth_tyrone": 0,
   "craftmonth_fermanagh": 0,
   "heritageweek": 0,
-  "thedock": 1,
+  "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
