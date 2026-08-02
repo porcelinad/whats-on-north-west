@@ -601,13 +601,26 @@ WEEKDAY_INDEX = {name: i for i, name in enumerate(
     ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"])}
 
 
-def parse_eventbrite_date_text(text, trust_relative=True):
+def parse_eventbrite_date_text(text, trust_relative=True, reference_date=None):
     """Parses Eventbrite's date text as found in a webscraper.io export:
     an explicit date ('Fri 31 Jul, 18:30'), or a relative one ('Today at
     09:00', 'Tomorrow at 19:30', 'Thursday at 11:00' - a bare weekday
     means the next occurrence of that day). Relative dates are only
     parsed when trust_relative is True - see csv_freshness_check below
-    for why that matters."""
+    for why that matters.
+
+    reference_date anchors what 'today'/'tomorrow'/a bare weekday
+    actually MEANS - it should be the day the CSV was captured, NOT
+    necessarily today. If even a day or two passes between capture and
+    this actually being processed (easily possible: the CSV stays
+    'fresh' for a day, and the workflow runs daily), resolving 'Friday'
+    against the CURRENT day rather than the capture day can roll a full
+    week past the already-happened, originally-intended Friday - which
+    is exactly what happened to two Ballyshannon Festival events that
+    were meant as 31 Jul/1 Aug and came out a week later as 7/8 Aug.
+    Defaults to TODAY if not given, for compatibility."""
+    if reference_date is None:
+        reference_date = TODAY
     if not text:
         return None, None
     t = clean(text)
@@ -615,18 +628,18 @@ def parse_eventbrite_date_text(text, trust_relative=True):
     if trust_relative:
         m = re.match(r"today at (\d{1,2}:\d{2})", t, re.I)
         if m:
-            return TODAY, m.group(1)
+            return reference_date, m.group(1)
 
         m = re.match(r"tomorrow at (\d{1,2}:\d{2})", t, re.I)
         if m:
-            return TODAY + timedelta(days=1), m.group(1)
+            return reference_date + timedelta(days=1), m.group(1)
 
         m = re.match(r"([A-Za-z]+)\s+at\s+(\d{1,2}:\d{2})", t)
         if m:
             wd = WEEKDAY_INDEX.get(m.group(1).lower())
             if wd is not None:
-                delta = (wd - TODAY.weekday()) % 7 or 7
-                return TODAY + timedelta(days=delta), m.group(2)
+                delta = (wd - reference_date.weekday()) % 7 or 7
+                return reference_date + timedelta(days=delta), m.group(2)
 
     m = re.match(r"[A-Za-z]+\s+(\d{1,2})\s+([A-Za-z]+),?\s+(\d{1,2}:\d{2})", t)
     if m:
@@ -696,6 +709,19 @@ def parse_eventbrite_csv(source, prev_state=None):
         return None
     trust_relative = (csv_freshness_check(prev_state)
                       if prev_state is not None else True)
+    # relative date text ('Friday at 18:30') must be resolved against the
+    # day the CSV was actually captured, not today - see
+    # parse_eventbrite_date_text's docstring for why that distinction
+    # matters
+    reference_date = TODAY
+    if prev_state is not None:
+        since = prev_state.get("eventbrite_csv_since")
+        if since:
+            try:
+                reference_date = datetime.strptime(
+                    since, "%Y-%m-%dT%H:%MZ").date()
+            except ValueError:
+                pass
     events = []
     with MANUAL_CSV_PATH.open(encoding="utf-8-sig", newline="") as f:
         for row in csv.DictReader(f):
@@ -703,10 +729,10 @@ def parse_eventbrite_csv(source, prev_state=None):
             if not title:
                 continue
             start_date, time_str = parse_eventbrite_date_text(
-                row.get("data2"), trust_relative)
+                row.get("data2"), trust_relative, reference_date)
             if not start_date:
                 start_date, time_str = parse_eventbrite_date_text(
-                    row.get("data11"), trust_relative)
+                    row.get("data11"), trust_relative, reference_date)
             if not start_date:
                 continue  # stale relative date, or missing entirely
             venue_text = clean(row.get("data5") or row.get("data13") or "")
