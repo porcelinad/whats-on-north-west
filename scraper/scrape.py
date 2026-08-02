@@ -530,6 +530,23 @@ _FALLBACK_TOWN_ORDER = sorted(
     key=len, reverse=True)
 
 
+def find_specific_town(text):
+    """Like nearest_known_town, but only matches a genuinely specific
+    town - NEVER a bare county name - and returns None (not the
+    original text) when nothing matches, so callers can tell 'found a
+    real town' apart from 'found nothing'. Useful for checking a
+    title/venue string for a town mention, where falling back to a
+    bare county name would be actively misleading rather than just
+    imprecise."""
+    if not text:
+        return None
+    low = text.lower()
+    for key in _SPECIFIC_TOWN_ORDER:
+        if re.search(r"\b" + re.escape(key) + r"\b", low):
+            return TOWN_DISPLAY_CASE[key]
+    return None
+
+
 def nearest_known_town(raw_town):
     """Reduces a raw, possibly overly-specific or compound town/address
     string (e.g. Heritage Week's 'Rossinver Community Centre, Co.
@@ -542,10 +559,10 @@ def nearest_known_town(raw_town):
     no known town is found anywhere in it."""
     if not raw_town:
         return raw_town
+    found = find_specific_town(raw_town)
+    if found:
+        return found
     low = raw_town.lower()
-    for key in _SPECIFIC_TOWN_ORDER:
-        if re.search(r"\b" + re.escape(key) + r"\b", low):
-            return TOWN_DISPLAY_CASE[key]
     for key in _FALLBACK_TOWN_ORDER:
         if re.search(r"\b" + re.escape(key) + r"\b", low):
             return TOWN_DISPLAY_CASE[key]
@@ -1248,12 +1265,20 @@ def parse_craftmonth(soup, source):
 
         county = COUNTY_ALIASES.get(fields.get("location", ""), fields.get("location"))
         cat_bits = [fields[k] for k in ("event type", "craft type") if fields.get(k)]
+        # the site's own 'Location:' field is county-level only, not a
+        # specific town - check the title and maker/venue name for an
+        # actual town mention (e.g. 'Rathmullan Makers Market') before
+        # falling back to the county itself, which would otherwise show
+        # every single event as generically "Donegal Town" regardless of
+        # where it really is
+        town = (find_specific_town(title) or find_specific_town(fields.get("maker"))
+                or county)
 
         events.append(make_event(
             source, title, start,
             end_date=end.isoformat() if end and end != start else None,
             url=href, category=", ".join(cat_bits) if cat_bits else None,
-            venue=fields.get("maker"), town=county, county=county))
+            venue=fields.get("maker"), town=town, county=county))
 
     next_link = soup.select_one("a.next, a[rel='next']")
     if next_link and next_link.get("href") and len(events) > 0:
