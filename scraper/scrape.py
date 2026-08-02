@@ -464,6 +464,7 @@ TOWN_TO_COUNTY = {
     "ghaoth dobhair": "Donegal",
     "gweedore": "Donegal", "falcarragh": "Donegal", "dunfanaghy": "Donegal",
     "milford": "Donegal", "ramelton": "Donegal", "rathmullan": "Donegal",
+    "portsalon": "Donegal", "dunkineely": "Donegal", "tory island": "Donegal",
     "raphoe": "Donegal", "convoy": "Donegal", "carndonagh": "Donegal",
     "buncrana": "Donegal", "moville": "Donegal", "culdaff": "Donegal",
     "malin": "Donegal", "clonmany": "Donegal", "ballyliffin": "Donegal",
