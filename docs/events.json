@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-02T09:08Z",
+ "generated_at": "2026-08-02T12:37Z",
  "failed_sources": [],
  "source_last_run": {
   "eaf": "2026-08-01T09:05Z",
@@ -19,7 +19,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 3,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -50,7 +50,7 @@
    "date": "2026-06-13",
    "end_date": "2026-08-22",
    "time": "11:00 am",
-   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-02",
+   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-03",
    "category": null,
    "id": "3df0a1f19014",
    "first_seen": "2026-08-01"
