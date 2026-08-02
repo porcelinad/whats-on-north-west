@@ -159,6 +159,15 @@ let dateSel=null, customFrom="", customTo="", shapeSel=null;
 function normalizeTown(t){
   return t==="Donegal" ? "Donegal Town" : t;
 }
+// Some events genuinely have no town-level precision (only a source's
+// own county-level info was ever available). Those show the bare
+// county name here - NOT normalizeTown's "Donegal"->"Donegal Town"
+// conversion, which is reserved for sources that actually confirmed a
+// specific town, since applying it to an unresolved fallback would
+// falsely claim a precision the data doesn't have.
+function locationLabel(ev){
+  return ev.town ? normalizeTown(ev.town) : (ev.county ? "Co. "+ev.county : null);
+}
 
 function addDays(iso,n){
   const [y,m,d]=iso.split("-").map(Number);
@@ -250,10 +259,10 @@ function render(gen){
   const q=query.trim().toLowerCase();
   const shown=rangeErr ? [] : EVENTS.filter(e=>
     (countySel==="All"||e.county===countySel) &&
-    (locationSel==="All"||normalizeTown(e.town)===locationSel) &&
+    (locationSel==="All"||locationLabel(e)===locationSel) &&
     (venueSel==="All"||e.venue===venueSel) &&
     matchesGenre(e) && matchesDate(e) && matchesShape(e) &&
-    (!q || (e.title+" "+e.venue+" "+(e.category||"")+" "+normalizeTown(e.town))
+    (!q || (e.title+" "+e.venue+" "+(e.category||"")+" "+(locationLabel(e)||""))
             .toLowerCase().includes(q)));
   if(!shown.length){
     list.append(el("p","empty","No events match. Try clearing the filters."));
@@ -285,7 +294,8 @@ function render(gen){
     const info=el("div","info");
     info.append(el("p","title",ev.title));
     const meta=el("p","meta");
-    meta.innerHTML="<b>"+ev.venue+"</b> · "+normalizeTown(ev.town)+(ev.time?" · "+ev.time:"");
+    const loc=locationLabel(ev);
+    meta.innerHTML="<b>"+ev.venue+"</b>"+(loc?" · "+loc:"")+(ev.time?" · "+ev.time:"");
     info.append(meta);
     const tags=el("div","tags");
     if(isNew(ev,gen)) tags.append(el("span","new","New"));
@@ -322,7 +332,7 @@ function buildCountyOptions(){
 
 function buildLocationOptions(){
   const scoped=countySel==="All"?EVENTS:EVENTS.filter(e=>e.county===countySel);
-  const locations=[...new Set(scoped.map(e=>normalizeTown(e.town)))].sort();
+  const locations=[...new Set(scoped.map(e=>locationLabel(e)).filter(Boolean))].sort();
   locationSel=setOptions(document.getElementById("locationFilter"), locations,
                          "Locations", locationSel);
 }
@@ -330,7 +340,7 @@ function buildLocationOptions(){
 function buildVenueOptions(){
   let scoped=EVENTS;
   if(countySel!=="All") scoped=scoped.filter(e=>e.county===countySel);
-  if(locationSel!=="All") scoped=scoped.filter(e=>normalizeTown(e.town)===locationSel);
+  if(locationSel!=="All") scoped=scoped.filter(e=>locationLabel(e)===locationSel);
   const venues=[...new Set(scoped.map(e=>e.venue))].sort();
   venueSel=setOptions(document.getElementById("venueFilter"), venues,
                       "Venues", venueSel);
