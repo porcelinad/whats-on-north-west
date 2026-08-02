@@ -91,8 +91,7 @@
   .dow{font-size:13px;font-weight:600;letter-spacing:.15em;color:var(--ink-soft)}
   .day{font-size:30px;font-weight:700;line-height:1;margin:2px 0}
   .range{font-size:11px;color:var(--ink-soft);letter-spacing:.05em}
-  .ongoing{font-size:13px;font-weight:600;color:var(--ink-soft);letter-spacing:.03em;
-           text-transform:none;line-height:1.15}
+  .until-label{font-size:13px;font-weight:600;letter-spacing:.15em;color:var(--ember)}
   .info{padding:12px 14px;min-width:0;flex:1}
   .title{font-weight:700;font-size:16.5px;line-height:1.25}
   .meta{font-size:13.5px;color:var(--ink-soft);margin-top:4px}
@@ -282,7 +281,8 @@ function render(gen){
     const stub=el("div","stub");
     if(isOngoing){
       const e2=fmt(ev.end_date);
-      stub.append(el("span","ongoing","Until "+e2.day+" "+e2.mon));
+      stub.append(el("span","until-label","Until"), el("span","day",e2.day),
+                  el("span","dow",e2.mon));
     }else{
       stub.append(el("span","dow",f.dow), el("span","day",f.day),
                   el("span","dow",f.mon));
