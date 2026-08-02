@@ -1,20 +1,7 @@
 {
  "generated_at": "2026-08-02T13:03Z",
  "failed_sources": [],
- "source_last_run": {
-  "eventbrite_csv_hash": "69ee700b47c0",
-  "eventbrite_csv_since": "2026-08-02T12:49Z",
-  "hawkswell": "2026-08-02T12:49Z",
-  "heritageweek": "2026-08-02T12:49Z",
-  "eaf": "2026-08-02T13:03Z",
-  "craftmonth_donegal": "2026-08-02T13:03Z",
-  "craftmonth_derry": "2026-08-02T13:03Z",
-  "craftmonth_derry_city": "2026-08-02T13:03Z",
-  "craftmonth_leitrim": "2026-08-02T13:03Z",
-  "craftmonth_sligo": "2026-08-02T13:03Z",
-  "craftmonth_tyrone": "2026-08-02T13:03Z",
-  "craftmonth_fermanagh": "2026-08-02T13:03Z"
- },
+ "source_last_run": {},
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
