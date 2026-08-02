@@ -1,27 +1,32 @@
 {
- "generated_at": "2026-08-02T12:37Z",
+ "generated_at": "2026-08-02T12:49Z",
  "failed_sources": [],
- "source_last_run": {},
+ "source_last_run": {
+  "eventbrite_csv_hash": "69ee700b47c0",
+  "eventbrite_csv_since": "2026-08-02T12:49Z",
+  "hawkswell": "2026-08-02T12:49Z",
+  "heritageweek": "2026-08-02T12:49Z"
+ },
  "consecutive_failures": {
-  "an_grianan": 0,
-  "rcc": 0,
-  "balor": 0,
+  "an_grianan": 1,
+  "rcc": 1,
+  "balor": 1,
   "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 0,
-  "craftmonth_donegal": 0,
-  "craftmonth_derry": 0,
-  "craftmonth_derry_city": 0,
-  "craftmonth_leitrim": 0,
-  "craftmonth_sligo": 0,
-  "craftmonth_tyrone": 0,
-  "craftmonth_fermanagh": 0,
+  "eaf": 1,
+  "craftmonth_donegal": 1,
+  "craftmonth_derry": 1,
+  "craftmonth_derry_city": 1,
+  "craftmonth_leitrim": 1,
+  "craftmonth_sligo": 1,
+  "craftmonth_tyrone": 1,
+  "craftmonth_fermanagh": 1,
   "heritageweek": 0,
-  "thedock": 0,
+  "thedock": 1,
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
@@ -191,6 +196,19 @@
    "first_seen": "2026-07-27"
   },
   {
+   "source": "eventbrite_donegal",
+   "venue": "Peace Flame",
+   "town": "Londonderry",
+   "county": "Derry",
+   "title": "Discover Derry! Interactive Treasure Hunt & City Exploration Game",
+   "date": "2026-08-02",
+   "time": "07:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/discover-derry-interactive-treasure-hunt-city-exploration-game/",
+   "category": null,
+   "id": "b4b3044e3081",
+   "first_seen": "2026-08-02"
+  },
+  {
    "source": "themodel",
    "venue": "The Model",
    "town": "Sligo",
@@ -202,6 +220,32 @@
    "category": null,
    "id": "079e33249832",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Agivey River",
+   "town": "Coleraine",
+   "county": "Derry",
+   "title": "Walking the Agivey River",
+   "date": "2026-08-03",
+   "time": "18:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/walking-the-agivey-river/",
+   "category": null,
+   "id": "45beb0fa743c",
+   "first_seen": "2026-08-02"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "McCafferty's at The Pier",
+   "town": "Donegal",
+   "county": "Donegal",
+   "title": "ANAM - Traditional Irish Music, Song and Dance Show",
+   "date": "2026-08-03",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/anam-traditional-irish-music-song-and-dance-show/",
+   "category": null,
+   "id": "2778f544b670",
+   "first_seen": "2026-08-02"
   },
   {
    "source": "eventbrite_donegal",
@@ -299,6 +343,19 @@
   },
   {
    "source": "eventbrite_donegal",
+   "venue": "Áislann Chill Chartha",
+   "town": "Kilcar",
+   "county": "Donegal",
+   "title": "The Seeger Sessions Revival - Kilcar",
+   "date": "2026-08-05",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-seeger-sessions-revival-kilcar/",
+   "category": null,
+   "id": "5d8785fd6485",
+   "first_seen": "2026-08-02"
+  },
+  {
+   "source": "eventbrite_donegal",
    "venue": "Cultúrlann Uí Chanáin",
    "town": "Derry",
    "county": "Derry",
@@ -360,6 +417,32 @@
    "category": null,
    "id": "2e8f2808477c",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Ballyshannon Folk & Traditional Festival",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "49th Ballyshannon Folk and Traditional Music Festival Weekend Ticket",
+   "date": "2026-08-07",
+   "time": "18:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/49th-ballyshannon-folk-and-traditional-music-festival-weekend-ticket/",
+   "category": null,
+   "id": "7308670b5be6",
+   "first_seen": "2026-08-02"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Bridge Inn Dungloe",
+   "town": "Dungloe",
+   "county": "Donegal",
+   "title": "Nothing But Trouble - DAIRE - Marquee at Bridge Inn",
+   "date": "2026-08-07",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/nothing-but-trouble-daire-marquee-at-bridge-inn/",
+   "category": null,
+   "id": "b6dcaa390c91",
+   "first_seen": "2026-08-02"
   },
   {
    "source": "eventbrite_donegal",
@@ -425,6 +508,19 @@
    "first_seen": "2026-07-25"
   },
   {
+   "source": "eventbrite_donegal",
+   "venue": "Ballyshannon Folk & Traditional Festival - Live at the Marquee",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Ballyshannon Folk & Traditional Music Festival - Saturday 1st August",
+   "date": "2026-08-08",
+   "time": "18:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/ballyshannon-folk-traditional-music-festival-saturday-1st-august/",
+   "category": null,
+   "id": "54d9aa137744",
+   "first_seen": "2026-08-02"
+  },
+  {
    "source": "craftmonth_derry",
    "venue": "Fiona Shannon",
    "town": "Derry",
@@ -451,6 +547,32 @@
   },
   {
    "source": "eventbrite_donegal",
+   "venue": "Gurn's Milestone",
+   "town": "Manorhamilton",
+   "county": "Leitrim",
+   "title": "3 Bucks Left - Live at Gurns",
+   "date": "2026-08-08",
+   "time": "21:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/3-bucks-left-live-at-gurns/",
+   "category": null,
+   "id": "df6ae7104a10",
+   "first_seen": "2026-08-02"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim School of Art N41 E8H0",
+   "town": "Ballinamore",
+   "county": "Leitrim",
+   "title": "Quiltmaking Workshop, Sat 1st Aug 2026,10am-4pm",
+   "date": "2026-08-08",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/quiltmaking-workshop-sat-1st-aug-2026-10am-4pm/",
+   "category": null,
+   "id": "78d871416f44",
+   "first_seen": "2026-08-02"
+  },
+  {
+   "source": "eventbrite_donegal",
    "venue": "Manor House Country Hotel",
    "town": "Enniskillen",
    "county": "Fermanagh",
@@ -474,6 +596,19 @@
    "category": null,
    "id": "e09e98cd4941",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "McCafferty's Bar & Restaurant",
+   "town": "Dungloe",
+   "county": "Donegal",
+   "title": "Gearóid McCarthy LIVE at McCafferty's, Dungloe",
+   "date": "2026-08-08",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/gearoid-mccarthy-live-at-mccaffertys-dungloe/",
+   "category": null,
+   "id": "375b6d8cfc6d",
+   "first_seen": "2026-08-02"
   },
   {
    "source": "eventbrite_donegal",
@@ -4289,6 +4424,19 @@
    "category": "Music",
    "id": "13824aa89abf",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Shane Martin. Wake Up! You're Here!",
+   "date": "2026-09-10",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/shane-martin-wake-up-youre-here",
+   "category": "Talks/Literary",
+   "id": "5fee0e6c6eb0",
+   "first_seen": "2026-08-02"
   },
   {
    "source": "an_grianan",
