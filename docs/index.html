@@ -261,6 +261,17 @@ function render(gen){
     matchesGenre(e) && matchesDate(e) && matchesShape(e) &&
     (!q || (e.title+" "+e.venue+" "+(e.category||"")+" "+(locationLabel(e)||""))
             .toLowerCase().includes(q)));
+  // Sort by the date actually shown on each card - an ongoing event
+  // displays "Until <end date>", not its (already-past) start date, so
+  // it must sort by end date too, or ongoing cards can appear visibly
+  // out of order relative to each other and to upcoming events.
+  shown.sort((a,b)=>{
+    const aOngoing=a.end_date && a.date<=TODAY_ISO && a.end_date>=TODAY_ISO;
+    const bOngoing=b.end_date && b.date<=TODAY_ISO && b.end_date>=TODAY_ISO;
+    const aKey=aOngoing?a.end_date:a.date, bKey=bOngoing?b.end_date:b.date;
+    if(aKey!==bKey) return aKey<bKey?-1:1;
+    return (a.venue+a.title).localeCompare(b.venue+b.title);
+  });
   if(!shown.length){
     list.append(el("p","empty","No events match. Try clearing the filters."));
     return;
