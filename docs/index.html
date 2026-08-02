@@ -166,7 +166,7 @@ function normalizeTown(t){
 // specific town, since applying it to an unresolved fallback would
 // falsely claim a precision the data doesn't have.
 function locationLabel(ev){
-  return ev.town ? normalizeTown(ev.town) : (ev.county ? "Co. "+ev.county : null);
+  return ev.town ? normalizeTown(ev.town) : (ev.county ? "No town listed" : null);
 }
 
 function addDays(iso,n){
@@ -332,7 +332,12 @@ function buildCountyOptions(){
 
 function buildLocationOptions(){
   const scoped=countySel==="All"?EVENTS:EVENTS.filter(e=>e.county===countySel);
-  const locations=[...new Set(scoped.map(e=>locationLabel(e)).filter(Boolean))].sort();
+  const locations=[...new Set(scoped.map(e=>locationLabel(e)).filter(Boolean))]
+    .sort((a,b)=>{
+      if(a==="No town listed") return 1;
+      if(b==="No town listed") return -1;
+      return a.localeCompare(b);
+    });
   locationSel=setOptions(document.getElementById("locationFilter"), locations,
                          "Locations", locationSel);
 }
