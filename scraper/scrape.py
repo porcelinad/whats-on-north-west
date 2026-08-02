@@ -1844,6 +1844,7 @@ COUNTY_CANONICAL.update({k.lower(): v for k, v in COUNTY_ALIASES.items()})
 
 CATEGORY_ALIASES = {
     "family": "Kids/Family",
+    "family friendly": "Kids/Family",
     "cinema": "Film",
     "spoken word & conversations": "Spoken Word",
     "talks/spoken word": "Spoken Word",
@@ -1854,8 +1855,36 @@ CATEGORY_ALIASES = {
     "visual arts & film": "Visual Arts",
     "classical music": "Music",
     "musical theatre": "Musical",
+    "maker talk": "Meet the Maker",
+    # fine-grained craft disciplines (mostly August Craft Month's own
+    # "Craft Type" taxonomy) - individually each only ever tags a
+    # handful of events, cluttering the genre list; grouped into one
+    # broader bucket instead
+    "ceramics": "Craft/Hobbies",
+    "glass making": "Craft/Hobbies",
+    "felt": "Craft/Hobbies",
+    "basketry & willow": "Craft/Hobbies",
+    "blacksmithing": "Craft/Hobbies",
+    "furniture making": "Craft/Hobbies",
+    "jewellery making": "Craft/Hobbies",
+    "music instrument making": "Craft/Hobbies",
+    "textile making": "Craft/Hobbies",
+    "lettering": "Craft/Hobbies",
+    "mixed media construction": "Craft/Hobbies",
+    "mosaics": "Craft/Hobbies",
+    "printing": "Craft/Hobbies",
+    "soap making": "Craft/Hobbies",
+    "spinning": "Craft/Hobbies",
+    "woodworking": "Craft/Hobbies",
+    "fashion design": "Craft/Hobbies",
+    "candle making": "Craft/Hobbies",
+    "interior furnishings": "Craft/Hobbies",
+    "multiple": "Craft/Hobbies",
 }
-CATEGORY_DROP = {"spectacle"}  # "Street Arts & Circus" alone covers this well
+CATEGORY_DROP = {
+    "spectacle",  # "Street Arts & Circus" alone covers this well
+    "art deco",  # a venue marker (Hawk's Well's Ballymote location), not a genre
+}
 
 AGE_RANGE_RE = re.compile(r"\b(\d{1,2})\s*-\s*(\d{1,2})\s*(?:yrs?|years?)\b", re.I)
 KIDS_KEYWORDS_RE = re.compile(r"\b(kids?|children'?s?|junior)\b", re.I)
