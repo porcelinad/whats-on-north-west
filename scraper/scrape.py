@@ -583,16 +583,17 @@ LOCATION_CACHE = {}
 def cached_town_lookup(url, fetch_and_extract_fn):
     """Returns the cached town for this event URL if known; otherwise
     calls fetch_and_extract_fn() to fetch the event's own page and derive
-    one. Caches the result either way (including None), so a page that
-    turns out to have no usable address doesn't get re-fetched forever."""
+    one. Only caches the result if the fetch actually succeeded (even if
+    it found nothing) - a fetch that merely failed (timeout, blocked,
+    etc) is left uncached so it's retried on the next run, rather than
+    being permanently remembered as 'no location available'."""
     if url in LOCATION_CACHE:
         return LOCATION_CACHE[url]
-    town = None
     try:
         town = fetch_and_extract_fn()
     except Exception:
-        pass
-    LOCATION_CACHE[url] = town
+        return None  # don't cache - retry next run
+    LOCATION_CACHE[url] = town  # a genuine "found nothing" IS worth caching
     return town
 
 
@@ -717,6 +718,13 @@ def parse_eventbrite_csv(source, prev_state=None):
             county = TOWN_TO_COUNTY.get((town or "").strip().lower())
             if not county:
                 continue  # not a recognized Donegal/Derry/Sligo/Leitrim/Tyrone town
+            # Eventbrite's own bare "Donegal" location tag specifically and
+            # reliably means Donegal Town itself (confirmed against real
+            # listings), unlike other sources where a bare "Donegal"
+            # fallback usually just means "we only know the county" - so
+            # this upgrade belongs here, not as a blanket rule elsewhere
+            if town and town.strip().lower() == "donegal":
+                town = "Donegal Town"
             slug = slugify(title)
             url = (f"https://www.eventbrite.ie/d/ireland--donegal/{slug}/"
                    if slug else source["url"])
@@ -1294,17 +1302,20 @@ def parse_craftmonth_listing(soup, source):
         cat_bits = [fields[k] for k in ("event type", "craft type") if fields.get(k)]
         # the site's own 'Location:' field is county-level only, not a
         # specific town - check the title and maker/venue name for an
-        # actual town mention (e.g. 'Rathmullan Makers Market') before
-        # falling back to the county itself; a per-event page fetch (see
-        # parse_craftmonth) usually improves on this further still
-        town = (find_specific_town(title) or find_specific_town(fields.get("maker"))
-                or county)
+        # actual town mention (e.g. 'Rathmullan Makers Market'). If
+        # nothing specific turns up here OR from the per-event page
+        # fetch (see parse_craftmonth), town is left unset rather than
+        # falling back to the bare county name, which downstream would
+        # get misread as a specific place ("Donegal" -> "Donegal Town")
+        town = find_specific_town(title) or find_specific_town(fields.get("maker"))
 
-        events.append(make_event(
+        ev = make_event(
             source, title, start,
             end_date=end.isoformat() if end and end != start else None,
             url=href, category=", ".join(cat_bits) if cat_bits else None,
-            venue=fields.get("maker"), town=town, county=county))
+            venue=fields.get("maker"), county=county)
+        ev["town"] = town  # explicit, bypassing make_event's default-from-source
+        events.append(ev)
 
     next_link = soup.select_one("a.next, a[rel='next']")
     if next_link and next_link.get("href") and len(events) > 0:
@@ -1376,14 +1387,21 @@ def parse_heritageweek_page(soup, source):
             continue
 
         venue = info_entries[0] if info_entries else None
-        town = info_entries[1] if len(info_entries) > 1 else None
         county = None
+        town_candidate = None
+        bare_county_re = re.compile(r"^co\.\s+[a-z\s]+$", re.I)
         for item in info_entries[1:]:
             m = re.search(r"co\.\s*([a-z\s]+?)(?:,|$)", item, re.I)
-            if m:
+            if m and county is None:
                 county = clean(m.group(1))
-                break
+            if town_candidate is None and not bare_county_re.match(item.strip()):
+                town_candidate = item
         county = COUNTY_ALIASES.get(county, county)
+        # resolved now (not left as raw address text) so an unresolved
+        # candidate doesn't later fall through to a bare county-name
+        # match in the main pipeline's normalisation and get misread as
+        # a specific place ("Donegal" -> "Donegal Town")
+        town = find_specific_town(town_candidate) if town_candidate else None
 
         dates, time_text = [], None
         for de in date_entries:
@@ -1403,10 +1421,12 @@ def parse_heritageweek_page(soup, source):
         start = dates[0]
         end = dates[-1] if len(dates) > 1 and dates[-1] != start else None
 
-        events.append(make_event(
+        ev = make_event(
             source, title, start,
             end_date=end.isoformat() if end else None,
-            time=time_text, url=href, venue=venue, town=town, county=county))
+            time=time_text, url=href, venue=venue, county=county)
+        ev["town"] = town  # explicit, bypassing make_event's default-from-source
+        events.append(ev)
     return events
 
 
@@ -1729,35 +1749,35 @@ SOURCES = [
     {"name": "hawkswell", "venue": "Hawk's Well Theatre", "town": "Sligo",
      "county": "Sligo", "url": "https://www.hawkswell.com/whats-on/shows",
      "parser": parse_hawkswell, "custom_fetch": True, "min_interval_days": 3},
-    {"name": "craftmonth_donegal", "venue": "August Craft Month", "town": "Donegal",
+    {"name": "craftmonth_donegal", "venue": "August Craft Month", "town": "",
      "county": "Donegal", "url": craftmonth_url("donegal"),
      "parser": parse_craftmonth, "custom_fetch": True,
      "min_interval_days": 3, "quiet_if_empty": True},
-    {"name": "craftmonth_derry", "venue": "August Craft Month", "town": "Derry",
+    {"name": "craftmonth_derry", "venue": "August Craft Month", "town": "",
      "county": "Derry", "url": craftmonth_url("derry"),
      "parser": parse_craftmonth, "custom_fetch": True,
      "min_interval_days": 3, "quiet_if_empty": True},
-    {"name": "craftmonth_derry_city", "venue": "August Craft Month", "town": "Derry",
+    {"name": "craftmonth_derry_city", "venue": "August Craft Month", "town": "",
      "county": "Derry", "url": craftmonth_url("derry_city"),
      "parser": parse_craftmonth, "custom_fetch": True,
      "min_interval_days": 3, "quiet_if_empty": True},
-    {"name": "craftmonth_leitrim", "venue": "August Craft Month", "town": "Leitrim",
+    {"name": "craftmonth_leitrim", "venue": "August Craft Month", "town": "",
      "county": "Leitrim", "url": craftmonth_url("leitrim"),
      "parser": parse_craftmonth, "custom_fetch": True,
      "min_interval_days": 3, "quiet_if_empty": True},
-    {"name": "craftmonth_sligo", "venue": "August Craft Month", "town": "Sligo",
+    {"name": "craftmonth_sligo", "venue": "August Craft Month", "town": "",
      "county": "Sligo", "url": craftmonth_url("sligo"),
      "parser": parse_craftmonth, "custom_fetch": True,
      "min_interval_days": 3, "quiet_if_empty": True},
-    {"name": "craftmonth_tyrone", "venue": "August Craft Month", "town": "Tyrone",
+    {"name": "craftmonth_tyrone", "venue": "August Craft Month", "town": "",
      "county": "Tyrone", "url": craftmonth_url("tyrone"),
      "parser": parse_craftmonth, "custom_fetch": True,
      "min_interval_days": 3, "quiet_if_empty": True},
-    {"name": "craftmonth_fermanagh", "venue": "August Craft Month", "town": "Fermanagh",
+    {"name": "craftmonth_fermanagh", "venue": "August Craft Month", "town": "",
      "county": "Fermanagh", "url": craftmonth_url("fermanagh"),
      "parser": parse_craftmonth, "custom_fetch": True,
      "min_interval_days": 3, "quiet_if_empty": True},
-    {"name": "heritageweek", "venue": "Heritage Week", "town": "Donegal",
+    {"name": "heritageweek", "venue": "Heritage Week", "town": "",
      "county": "Donegal",
      "url": "https://www.heritageweek.ie/event-listings?q=&where%5B%5D=derry"
             "&where%5B%5D=donegal&where%5B%5D=leitrim&where%5B%5D=sligo"
