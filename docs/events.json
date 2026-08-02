@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-02T17:52Z",
+ "generated_at": "2026-08-02T18:06Z",
  "failed_sources": [],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
@@ -16,10 +16,10 @@
   "heritageweek": "2026-08-02T17:00Z"
  },
  "consecutive_failures": {
-  "an_grianan": 1,
-  "rcc": 1,
-  "balor": 1,
-  "abbey": 1,
+  "an_grianan": 2,
+  "rcc": 2,
+  "balor": 2,
+  "abbey": 2,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -34,7 +34,7 @@
   "craftmonth_tyrone": 0,
   "craftmonth_fermanagh": 0,
   "heritageweek": 0,
-  "thedock": 1,
+  "thedock": 2,
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
@@ -299,7 +299,7 @@
    "date": "2026-07-31",
    "end_date": "2026-08-31",
    "url": "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/",
-   "category": "Exhibition, Multiple",
+   "category": "Exhibition, Craft/Hobbies",
    "id": "57c2d97b3ef9",
    "first_seen": "2026-08-01"
   },
@@ -312,7 +312,7 @@
    "date": "2026-08-01",
    "end_date": "2026-08-31",
    "url": "https://augustcraftmonth.org/acm-event/derry-designer-makers-meet-our-creatives/",
-   "category": "Open Studio, Exhibition, Meet the Maker, Maker Talk, Family Friendly, Demonstration, Multiple",
+   "category": "Open Studio, Exhibition, Meet the Maker, Kids/Family, Demonstration, Craft/Hobbies",
    "id": "d1feab938335",
    "first_seen": "2026-08-01"
   },
@@ -325,7 +325,7 @@
    "date": "2026-08-01",
    "end_date": "2026-08-31",
    "url": "https://augustcraftmonth.org/acm-event/kcp-pottery-shop-studio/",
-   "category": "Workshop, Open Studio, Exhibition, Meet the Maker, Demonstration, Ceramics",
+   "category": "Workshop, Open Studio, Exhibition, Meet the Maker, Demonstration, Craft/Hobbies",
    "id": "b3ea9c8b0d8a",
    "first_seen": "2026-08-01"
   },
@@ -338,7 +338,7 @@
    "date": "2026-08-01",
    "end_date": "2026-08-29",
    "url": "https://augustcraftmonth.org/acm-event/august-craft-month-in-strule-arts-centre-with-sharyn-kelly/",
-   "category": "Exhibition, Felt",
+   "category": "Exhibition, Craft/Hobbies",
    "id": "cb7f1eee0e2b",
    "first_seen": "2026-08-01"
   },
@@ -415,7 +415,7 @@
    "title": "Fused Glass Hot Air Balloon Creations for 6-11yrs",
    "date": "2026-08-05",
    "url": "https://augustcraftmonth.org/acm-event/fused-glass-hot-air-balloon-creations-for-6-11yrs/",
-   "category": "Workshop, Kids/Family, Glass Making",
+   "category": "Workshop, Kids/Family, Craft/Hobbies",
    "id": "e8c6c5590e96",
    "first_seen": "2026-08-01"
   },
@@ -480,7 +480,7 @@
    "title": "Wet Felting a Landscape or Floral Design with Sharyn Kelly",
    "date": "2026-08-06",
    "url": "https://augustcraftmonth.org/acm-event/wet-felting-a-landscape-or-floral-design-with-sharyn-kelly/",
-   "category": "Workshop, Felt",
+   "category": "Workshop, Craft/Hobbies",
    "id": "3a048daad0d1",
    "first_seen": "2026-08-01"
   },
@@ -582,7 +582,7 @@
    "date": "2026-08-08",
    "time": "6.30pm & 2pm",
    "url": "https://www.hawkswell.com/whats-on/shows/andré-rieus-2026-summer-concert-viva-maastricht",
-   "category": "Art Deco",
+   "category": null,
    "id": "eb8ccc1e800a",
    "first_seen": "2026-07-25"
   },
@@ -594,7 +594,7 @@
    "title": "Coastal Reflections | Seaside Ceramic Mirror Frame for 18+yrs",
    "date": "2026-08-08",
    "url": "https://augustcraftmonth.org/acm-event/coastal-reflections-seaside-ceramic-mirror-frame-for-18yrs/",
-   "category": "Workshop, Ceramics",
+   "category": "Workshop, Craft/Hobbies",
    "id": "0ad6fc93b2e8",
    "first_seen": "2026-08-01"
   },
@@ -658,7 +658,7 @@
    "title": "Coastal Glass Collection | Beach Hut Sun Catcher for 8-12 yrs",
    "date": "2026-08-08",
    "url": "https://augustcraftmonth.org/acm-event/coastal-glass-collection-layered-coast-scene-for-18-yrs-2/",
-   "category": "Workshop, Glass Making, Kids/Family",
+   "category": "Workshop, Craft/Hobbies, Kids/Family",
    "id": "12565779541b",
    "first_seen": "2026-08-01"
   },
@@ -670,7 +670,7 @@
    "title": "Coastal Glass Collection | Layered Coast Scene for 18+ yrs",
    "date": "2026-08-08",
    "url": "https://augustcraftmonth.org/acm-event/coastal-glass-collection-layered-coast-scene-for-18-yrs/",
-   "category": "Workshop, Glass Making",
+   "category": "Workshop, Craft/Hobbies",
    "id": "0c4f84a0038e",
    "first_seen": "2026-08-01"
   },
@@ -682,7 +682,7 @@
    "title": "Rathmullan Makers Market",
    "date": "2026-08-08",
    "url": "https://augustcraftmonth.org/acm-event/rathmullan-makers-market-2/",
-   "category": "Market, Multiple",
+   "category": "Market, Craft/Hobbies",
    "id": "704b202226ca",
    "first_seen": "2026-08-01"
   },
@@ -694,7 +694,7 @@
    "title": "Pottery Wheel and Back to School Pencil Pot Workshop with Shauna McCann",
    "date": "2026-08-08",
    "url": "https://augustcraftmonth.org/acm-event/pottery-wheel-and-back-to-school-pencil-pot-workshop-with-shauna-mccann/",
-   "category": "Workshop, Kids/Family, Ceramics",
+   "category": "Workshop, Kids/Family, Craft/Hobbies",
    "id": "f8e42fc8679a",
    "first_seen": "2026-08-01"
   },
@@ -746,7 +746,7 @@
    "date": "2026-08-08",
    "end_date": "2026-08-12",
    "url": "https://augustcraftmonth.org/acm-event/tubbercurry-old-fair-day/",
-   "category": "Meet the Maker, Market, Festival, Fair, Family Friendly, Demonstration, Basketry & Willow, Blacksmithing, Ceramics, Furniture Making, Jewellery Making, Music Instrument Making, Woodworking",
+   "category": "Meet the Maker, Market, Festival, Fair, Kids/Family, Demonstration, Craft/Hobbies",
    "id": "110e1d86a6de",
    "first_seen": "2026-08-01"
   },
@@ -810,7 +810,7 @@
    "title": "Belleek Pottery Hands On Experience",
    "date": "2026-08-10",
    "url": "https://augustcraftmonth.org/acm-event/belleek-pottery-hands-on-experience/",
-   "category": "Workshop, Family Friendly, Ceramics",
+   "category": "Workshop, Kids/Family, Craft/Hobbies",
    "id": "b21163254556",
    "first_seen": "2026-08-01"
   },
@@ -849,7 +849,7 @@
    "date": "2026-08-10",
    "end_date": "2026-08-13",
    "url": "https://augustcraftmonth.org/acm-event/4-day-intensive-throwing-course-for-18yrs/",
-   "category": "Workshop, Ceramics",
+   "category": "Workshop, Craft/Hobbies",
    "id": "7303102862f7",
    "first_seen": "2026-08-01"
   },
@@ -888,7 +888,7 @@
    "title": "Introduction to Needle Felting – Using a Hoop",
    "date": "2026-08-10",
    "url": "https://augustcraftmonth.org/acm-event/introduction-to-needle-felting-using-a-hoop/",
-   "category": "Workshop, Felt",
+   "category": "Workshop, Craft/Hobbies",
    "id": "696082f796c2",
    "first_seen": "2026-08-01"
   },
@@ -939,7 +939,7 @@
    "title": "Belleek Pottery Hands On Experience",
    "date": "2026-08-12",
    "url": "https://augustcraftmonth.org/acm-event/belleek-pottery-hands-on-experience-2/",
-   "category": "Workshop, Family Friendly, Ceramics",
+   "category": "Workshop, Kids/Family, Craft/Hobbies",
    "id": "f26c1b4cfb54",
    "first_seen": "2026-08-01"
   },
@@ -1054,7 +1054,7 @@
    "title": "Omagh Crafty Kids Craft Fair",
    "date": "2026-08-14",
    "url": "https://augustcraftmonth.org/acm-event/omagh-crafty-kids-craft-fair/",
-   "category": "Fair, Kids/Family, Candle Making, Ceramics, Fashion Design, Felt, Furniture Making, Jewellery Making, Lettering, Mixed Media Construction, Mosaics, Multiple, Printing",
+   "category": "Fair, Kids/Family, Craft/Hobbies",
    "id": "00f9f84915f9",
    "first_seen": "2026-08-01"
   },
@@ -1066,7 +1066,7 @@
    "title": "Gathering Basket Masterclass for 18+yrs",
    "date": "2026-08-14",
    "url": "https://augustcraftmonth.org/acm-event/gathering-basket-masterclass-for-18yrs/",
-   "category": "Workshop, Basketry & Willow",
+   "category": "Workshop, Craft/Hobbies",
    "id": "94117c320d52",
    "first_seen": "2026-08-01"
   },
@@ -1078,7 +1078,7 @@
    "title": "Belleek Pottery Hands On Experience",
    "date": "2026-08-14",
    "url": "https://augustcraftmonth.org/acm-event/belleek-pottery-hands-on-experience-5/",
-   "category": "Workshop, Family Friendly, Ceramics",
+   "category": "Workshop, Kids/Family, Craft/Hobbies",
    "id": "13aaf1ee4d64",
    "first_seen": "2026-08-01"
   },
@@ -1103,7 +1103,7 @@
    "title": "Tiffany Glass Workshop with Eleanor-Jane McCartney at The Giant’s Causeway",
    "date": "2026-08-14",
    "url": "https://augustcraftmonth.org/acm-event/tiffany-glass-workshop-with-eleanor-jane-mccartney-at-the-giants-causeway/",
-   "category": "Workshop, Glass Making",
+   "category": "Workshop, Craft/Hobbies",
    "id": "4afe680fa3b8",
    "first_seen": "2026-08-01"
   },
@@ -1154,7 +1154,7 @@
    "title": "Fresh Leaf Indigo Dyeing Demonstration",
    "date": "2026-08-14",
    "url": "https://augustcraftmonth.org/acm-event/fresh-leaf-indigo-dyeing-demonstration/",
-   "category": "Workshop, Mixed Media Construction, Printing, Textile Making",
+   "category": "Workshop, Craft/Hobbies",
    "id": "33a7b436ae5d",
    "first_seen": "2026-08-01"
   },
@@ -1350,7 +1350,7 @@
    "title": "Tiffany Glass Workshop with Eleanor-Jane McCartney at The Giant’s Causeway",
    "date": "2026-08-15",
    "url": "https://augustcraftmonth.org/acm-event/tiffany-glass-workshop-with-eleanor-jane-mccartney-at-the-giants-causeway-2/",
-   "category": "Workshop, Glass Making",
+   "category": "Workshop, Craft/Hobbies",
    "id": "a383eae5b12d",
    "first_seen": "2026-08-01"
   },
@@ -1467,7 +1467,7 @@
    "title": "Rathmullan Makers Market",
    "date": "2026-08-15",
    "url": "https://augustcraftmonth.org/acm-event/rathmullan-makers-market-3/",
-   "category": "Market, Multiple",
+   "category": "Market, Craft/Hobbies",
    "id": "18d007607fa3",
    "first_seen": "2026-08-01"
   },
@@ -1534,7 +1534,7 @@
    "title": "History Story Stitch",
    "date": "2026-08-15",
    "url": "https://augustcraftmonth.org/acm-event/history-story-stitch/",
-   "category": "Workshop, Maker Talk, Demonstration, Textile Making",
+   "category": "Workshop, Meet the Maker, Demonstration, Craft/Hobbies",
    "id": "383f8ee963af",
    "first_seen": "2026-08-01"
   },
@@ -1611,7 +1611,7 @@
    "title": "Yard Studios Open Morning",
    "date": "2026-08-15",
    "url": "https://augustcraftmonth.org/acm-event/yard-studios-open-morning/",
-   "category": "Open Studio, Exhibition, Meet the Maker, Maker Talk, Felt, Interior Furnishings, Mixed Media Construction, Printing, Spinning, Textile Making",
+   "category": "Open Studio, Exhibition, Meet the Maker, Craft/Hobbies",
    "id": "27ac12995d5a",
    "first_seen": "2026-08-01"
   },
@@ -1845,7 +1845,7 @@
    "title": "Belleek Pottery Hands On Experience",
    "date": "2026-08-17",
    "url": "https://augustcraftmonth.org/acm-event/belleek-pottery-hands-on-experience-6/",
-   "category": "Workshop, Family Friendly, Ceramics",
+   "category": "Workshop, Kids/Family, Craft/Hobbies",
    "id": "aae2e0eef084",
    "first_seen": "2026-08-01"
   },
@@ -2133,7 +2133,7 @@
    "title": "Natural Dyeing for Beginners",
    "date": "2026-08-18",
    "url": "https://augustcraftmonth.org/acm-event/short-talk-demonstration-on-using-natural-dyes/",
-   "category": "Maker Talk, Demonstration, Textile Making",
+   "category": "Meet the Maker, Demonstration, Craft/Hobbies",
    "time": "10am - 12pm",
    "merged_from": [
     "craftmonth_sligo",
@@ -2726,7 +2726,7 @@
    "title": "Coffee and Clay in Castlerock",
    "date": "2026-08-20",
    "url": "https://augustcraftmonth.org/acm-event/coffee-and-clay-in-castlerock/",
-   "category": "Meet the Maker, Demonstration, Ceramics",
+   "category": "Meet the Maker, Demonstration, Craft/Hobbies",
    "id": "a532d35f9c03",
    "first_seen": "2026-08-01"
   },
@@ -2777,7 +2777,7 @@
    "title": "Belleek Pottery Hands On Experience",
    "date": "2026-08-21",
    "url": "https://augustcraftmonth.org/acm-event/belleek-pottery-hands-on-experience-7/",
-   "category": "Workshop, Family Friendly, Ceramics",
+   "category": "Workshop, Kids/Family, Craft/Hobbies",
    "id": "f2ac7d3885b9",
    "first_seen": "2026-08-01"
   },
@@ -2880,7 +2880,7 @@
    "title": "Fused Glass Workshop with Eleanor-Jane McCartney at The Giant’s Causeway",
    "date": "2026-08-21",
    "url": "https://augustcraftmonth.org/acm-event/fused-glass-workshop-with-eleanor-jane-mccartney-at-the-giants-causeway-2/",
-   "category": "Workshop, Glass Making",
+   "category": "Workshop, Craft/Hobbies",
    "id": "59c2435d056a",
    "first_seen": "2026-08-01"
   },
@@ -3333,7 +3333,7 @@
    "title": "Introduction to Stained Glass Workshop at Eirlume Studio",
    "date": "2026-08-22",
    "url": "https://augustcraftmonth.org/acm-event/introduction-to-stained-glass-workshop-at-eirlume-studio/",
-   "category": "Workshop, Glass Making",
+   "category": "Workshop, Craft/Hobbies",
    "id": "a6eb9a036f19",
    "first_seen": "2026-08-01"
   },
@@ -3345,7 +3345,7 @@
    "title": "Fused Glass Workshop with Eleanor-Jane McCartney at The Giant’s Causeway",
    "date": "2026-08-22",
    "url": "https://augustcraftmonth.org/acm-event/fused-glass-workshop-with-eleanor-jane-mccartney-at-the-giants-causeway/",
-   "category": "Workshop, Glass Making",
+   "category": "Workshop, Craft/Hobbies",
    "id": "6785ecd3fecf",
    "first_seen": "2026-08-01"
   },
@@ -3357,7 +3357,7 @@
    "title": "The Flax Meitheal Harvest Celebration",
    "date": "2026-08-22",
    "url": "https://augustcraftmonth.org/acm-event/the-flax-meitheal-harvest-celebration/",
-   "category": "Festival, Spinning, Textile Making",
+   "category": "Festival, Craft/Hobbies",
    "id": "9dffc1f5c35a",
    "first_seen": "2026-08-01"
   },
@@ -3370,7 +3370,7 @@
    "date": "2026-08-22",
    "end_date": "2026-08-23",
    "url": "https://augustcraftmonth.org/acm-event/cross-collaboration-a-gathering-of-glassmakers/",
-   "category": "Workshop, Glass Making",
+   "category": "Workshop, Craft/Hobbies",
    "id": "45029045c55c",
    "first_seen": "2026-08-01"
   },
@@ -3473,7 +3473,7 @@
    "title": "Rathmullan Makers Market",
    "date": "2026-08-22",
    "url": "https://augustcraftmonth.org/acm-event/rathmullan-makers-market-4/",
-   "category": "Market, Multiple",
+   "category": "Market, Craft/Hobbies",
    "id": "c55447328835",
    "first_seen": "2026-08-01"
   },
@@ -3719,7 +3719,7 @@
    "title": "The Flax Meitheal Harvest Celebration",
    "date": "2026-08-23",
    "url": "https://augustcraftmonth.org/acm-event/the-flax-meitheal-harvest-celebration-2/",
-   "category": "Festival, Spinning, Textile Making",
+   "category": "Festival, Craft/Hobbies",
    "id": "3faf1c11e094",
    "first_seen": "2026-08-01"
   },
@@ -3757,7 +3757,7 @@
    "title": "Willow Basket Weaving (Asymmetric Basket)",
    "date": "2026-08-23",
    "url": "https://augustcraftmonth.org/acm-event/willow-basket-weaving-asymmetric-basket/",
-   "category": "Workshop, Basketry & Willow",
+   "category": "Workshop, Craft/Hobbies",
    "id": "7e138527e39c",
    "first_seen": "2026-08-01"
   },
@@ -3873,7 +3873,7 @@
    "title": "Belleek Pottery Hands On Experience",
    "date": "2026-08-24",
    "url": "https://augustcraftmonth.org/acm-event/belleek-pottery-hands-on-experience-3/",
-   "category": "Workshop, Family Friendly, Ceramics",
+   "category": "Workshop, Kids/Family, Craft/Hobbies",
    "id": "f85e7139dd1b",
    "first_seen": "2026-08-01"
   },
@@ -3912,7 +3912,7 @@
    "date": "2026-08-25",
    "end_date": "2026-09-30",
    "url": "https://augustcraftmonth.org/acm-event/feltmakers-ireland-essence-of-nature-exhibition/",
-   "category": "Exhibition, Felt",
+   "category": "Exhibition, Craft/Hobbies",
    "id": "0a32ed98a0db",
    "first_seen": "2026-08-01"
   },
@@ -3975,7 +3975,7 @@
    "title": "Belleek Pottery Hands On Experience",
    "date": "2026-08-27",
    "url": "https://augustcraftmonth.org/acm-event/belleek-pottery-hands-on-experience-4/",
-   "category": "Workshop, Family Friendly, Ceramics",
+   "category": "Workshop, Kids/Family, Craft/Hobbies",
    "id": "ee4ca772cb2c",
    "first_seen": "2026-08-01"
   },
@@ -4001,7 +4001,7 @@
    "date": "2026-08-28",
    "end_date": "2026-08-29",
    "url": "https://augustcraftmonth.org/acm-event/moonjars-and-bowls-in-porcelain-workshop/",
-   "category": "Workshop, Ceramics",
+   "category": "Workshop, Craft/Hobbies",
    "id": "f55a253043cc",
    "first_seen": "2026-08-02"
   },
@@ -4039,7 +4039,7 @@
    "title": "Discover the art of eco-printing with Naomi from The Wild Things",
    "date": "2026-08-28",
    "url": "https://augustcraftmonth.org/acm-event/discover-the-art-of-eco-printing-with-naomi-from-the-wild-things/",
-   "category": "Workshop, Mixed Media Construction, Printing, Textile Making",
+   "category": "Workshop, Craft/Hobbies",
    "id": "4684943c725e",
    "first_seen": "2026-08-01"
   },
@@ -4090,7 +4090,7 @@
    "title": "Fiona Shannon Ceramics Open Studio and Pottery Sale",
    "date": "2026-08-29",
    "url": "https://augustcraftmonth.org/acm-event/fiona-shannon-ceramics-open-studio-and-pottery-sale/",
-   "category": "Open Studio, Ceramics",
+   "category": "Open Studio, Craft/Hobbies",
    "id": "6a03190bf2a3",
    "first_seen": "2026-08-02"
   },
@@ -4115,7 +4115,7 @@
    "title": "Open studio celebration day",
    "date": "2026-08-29",
    "url": "https://augustcraftmonth.org/acm-event/open-studio-celebration-day/",
-   "category": "Open Studio, Meet the Maker, Family Friendly, Demonstration, Blacksmithing, Textile Making",
+   "category": "Open Studio, Meet the Maker, Kids/Family, Demonstration, Craft/Hobbies",
    "id": "4412cd4ea78b",
    "first_seen": "2026-08-01"
   },
@@ -4127,7 +4127,7 @@
    "title": "Stained Glass Workshop",
    "date": "2026-08-29",
    "url": "https://augustcraftmonth.org/acm-event/stained-glass-workshop-2/",
-   "category": "Workshop, Glass Making",
+   "category": "Workshop, Craft/Hobbies",
    "id": "6002d0b27841",
    "first_seen": "2026-08-01"
   },
@@ -4165,7 +4165,7 @@
    "title": "Rathmullan Makers Market",
    "date": "2026-08-29",
    "url": "https://augustcraftmonth.org/acm-event/rathmullan-makers-market-5/",
-   "category": "Market, Multiple",
+   "category": "Market, Craft/Hobbies",
    "id": "3775629cc7dc",
    "first_seen": "2026-08-01"
   },
@@ -4189,7 +4189,7 @@
    "title": "Beginner Soap Making Workshop",
    "date": "2026-08-29",
    "url": "https://augustcraftmonth.org/acm-event/beginner-soap-making-workshop/",
-   "category": "Workshop, Soap Making",
+   "category": "Workshop, Craft/Hobbies",
    "id": "e3182bdf356b",
    "first_seen": "2026-08-01"
   },
@@ -4201,7 +4201,7 @@
    "title": "Silk painting workshop",
    "date": "2026-08-30",
    "url": "https://augustcraftmonth.org/acm-event/silk-painting-workshop/",
-   "category": "Workshop, Textile Making",
+   "category": "Workshop, Craft/Hobbies",
    "id": "371076a23ca5",
    "first_seen": "2026-08-01"
   },
@@ -4213,7 +4213,7 @@
    "title": "One Day Ceramic Workshop",
    "date": "2026-08-30",
    "url": "https://augustcraftmonth.org/acm-event/one-day-ceramic-workshop/",
-   "category": "Workshop, Ceramics",
+   "category": "Workshop, Craft/Hobbies",
    "id": "e3400407c9e5",
    "first_seen": "2026-08-01"
   },
@@ -4410,7 +4410,7 @@
    "date": "2026-09-05",
    "time": "8pm",
    "url": "https://www.hawkswell.com/whats-on/shows/the-general",
-   "category": "Art Deco",
+   "category": null,
    "id": "1d30bf98ecfe",
    "first_seen": "2026-07-28"
   },
@@ -4564,7 +4564,7 @@
    "date": "2026-09-09",
    "time": "8pm",
    "url": "https://www.hawkswell.com/whats-on/shows/the-sand-park-2",
-   "category": "Art Deco",
+   "category": null,
    "id": "77c05e7cc149",
    "first_seen": "2026-07-31"
   },
@@ -7612,7 +7612,7 @@
    "date": "2027-07-17",
    "end_date": "2026-08-22",
    "url": "https://augustcraftmonth.org/acm-event/richard-west-exhibition/",
-   "category": "Exhibition, Woodworking",
+   "category": "Exhibition, Craft/Hobbies",
    "id": "ae1effa5af25",
    "first_seen": "2026-08-02"
   },
