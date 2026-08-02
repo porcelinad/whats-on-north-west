@@ -461,6 +461,7 @@ TOWN_TO_COUNTY = {
     "ballyshannon": "Donegal", "bundoran": "Donegal", "donegal": "Donegal",
     "donegal town": "Donegal", "killybegs": "Donegal", "glenties": "Donegal",
     "ardara": "Donegal", "dungloe": "Donegal", "gaoth dobhair": "Donegal",
+    "ghaoth dobhair": "Donegal",
     "gweedore": "Donegal", "falcarragh": "Donegal", "dunfanaghy": "Donegal",
     "milford": "Donegal", "ramelton": "Donegal", "rathmullan": "Donegal",
     "raphoe": "Donegal", "convoy": "Donegal", "carndonagh": "Donegal",
@@ -567,6 +568,31 @@ def nearest_known_town(raw_town):
         if re.search(r"\b" + re.escape(key) + r"\b", low):
             return TOWN_DISPLAY_CASE[key]
     return raw_town
+
+
+# Populated from persisted state at the start of main() and written back
+# at the end. Some sources (August Craft Month, Heritage Week) only give
+# a county on their listing pages - the real town is only on each event's
+# own page. Since that town never changes once an event exists, it's
+# fetched once and cached by URL forever after, rather than being
+# re-fetched on every single run.
+LOCATION_CACHE = {}
+
+
+def cached_town_lookup(url, fetch_and_extract_fn):
+    """Returns the cached town for this event URL if known; otherwise
+    calls fetch_and_extract_fn() to fetch the event's own page and derive
+    one. Caches the result either way (including None), so a page that
+    turns out to have no usable address doesn't get re-fetched forever."""
+    if url in LOCATION_CACHE:
+        return LOCATION_CACHE[url]
+    town = None
+    try:
+        town = fetch_and_extract_fn()
+    except Exception:
+        pass
+    LOCATION_CACHE[url] = town
+    return town
 
 
 WEEKDAY_INDEX = {name: i for i, name in enumerate(
@@ -1221,7 +1247,7 @@ CRAFTMONTH_DATE_RE = re.compile(
     r"(\d{1,2})\s+([A-Za-z]+)\s+to\s+(\d{1,2})\s+([A-Za-z]+)", re.I)
 
 
-def parse_craftmonth(soup, source):
+def parse_craftmonth_listing(soup, source):
     """augustcraftmonth.org/events/?search_loc=X - each event card is
     `<a class="acm-venue-item">` inside `#results` (there's also an
     unrelated 'featured' carousel elsewhere on the page showing events
@@ -1268,9 +1294,8 @@ def parse_craftmonth(soup, source):
         # the site's own 'Location:' field is county-level only, not a
         # specific town - check the title and maker/venue name for an
         # actual town mention (e.g. 'Rathmullan Makers Market') before
-        # falling back to the county itself, which would otherwise show
-        # every single event as generically "Donegal Town" regardless of
-        # where it really is
+        # falling back to the county itself; a per-event page fetch (see
+        # parse_craftmonth) usually improves on this further still
         town = (find_specific_town(title) or find_specific_town(fields.get("maker"))
                 or county)
 
@@ -1284,9 +1309,36 @@ def parse_craftmonth(soup, source):
     if next_link and next_link.get("href") and len(events) > 0:
         try:
             more_soup = fetch(next_link["href"])
-            events.extend(parse_craftmonth(more_soup, source))
+            events.extend(parse_craftmonth_listing(more_soup, source))
         except Exception:
             pass
+    return events
+
+
+def parse_craftmonth_event_page(soup):
+    """Individual event pages have an 'Event Address:' label followed by
+    the real street address as a separate text node right after it (e.g.
+    'Front Street Ardara Co Donegal F94 E4E4') - much more specific than
+    the always-county-level 'Event Location:' field also present."""
+    texts = [a for kind, a, b in walk(soup) if kind == "text"]
+    for i, t in enumerate(texts):
+        if t.strip().lower() == "event address:" and i + 1 < len(texts):
+            return find_specific_town(texts[i + 1])
+    return None
+
+
+def parse_craftmonth(source):
+    """Two-stage: the listing gives title/date/genre/a rough town, then
+    each event's own page is fetched once (ever - see LOCATION_CACHE)
+    for a more precise town from its real street address."""
+    soup = fetch(source["url"])
+    events = parse_craftmonth_listing(soup, source)
+    for ev in events:
+        town = cached_town_lookup(
+            ev["url"],
+            lambda ev=ev: parse_craftmonth_event_page(fetch(ev["url"])))
+        if town:
+            ev["town"] = town
     return events
 
 
@@ -1357,10 +1409,32 @@ def parse_heritageweek_page(soup, source):
     return events
 
 
+def parse_heritageweek_event_page(soup):
+    """Individual event pages have a cleaner address breakdown than the
+    listing card: <ul class="event-details"> with a few specific-to-
+    general <li> lines ending in 'Co. County' (e.g. 'Port Arthur, An
+    Luinnigh' / 'Luinnigh, Gaoth Dobhair' / 'Co. Donegal') - the county
+    line itself is skipped since it's no more useful than what the
+    listing page already gave us."""
+    ul = soup.select_one("ul.event-details")
+    if not ul:
+        return None
+    for li in ul.select("li"):
+        text = clean(li.get_text())
+        if text.lower().startswith("co."):
+            continue
+        found = find_specific_town(text)
+        if found:
+            return found
+    return None
+
+
 def parse_heritageweek(source):
     """Follows 'Next' pagination links (which preserve our county
     filter query params) until no more pages remain, capped as a
-    safety net against runaway pagination."""
+    safety net against runaway pagination. Each event's own page is
+    then fetched once (ever - see LOCATION_CACHE) for a more precise
+    town than the listing card's address fragment gives."""
     events = []
     url = source["url"]
     for _ in range(15):
@@ -1371,6 +1445,13 @@ def parse_heritageweek(source):
         if not next_link or not next_link.get("href"):
             break
         url = next_link["href"]
+
+    for ev in events:
+        town = cached_town_lookup(
+            ev["url"],
+            lambda ev=ev: parse_heritageweek_event_page(fetch(ev["url"])))
+        if town:
+            ev["town"] = town
     return events
 
 
@@ -1649,25 +1730,32 @@ SOURCES = [
      "parser": parse_hawkswell, "custom_fetch": True, "min_interval_days": 3},
     {"name": "craftmonth_donegal", "venue": "August Craft Month", "town": "Donegal",
      "county": "Donegal", "url": craftmonth_url("donegal"),
-     "parser": parse_craftmonth, "min_interval_days": 3, "quiet_if_empty": True},
+     "parser": parse_craftmonth, "custom_fetch": True,
+     "min_interval_days": 3, "quiet_if_empty": True},
     {"name": "craftmonth_derry", "venue": "August Craft Month", "town": "Derry",
      "county": "Derry", "url": craftmonth_url("derry"),
-     "parser": parse_craftmonth, "min_interval_days": 3, "quiet_if_empty": True},
+     "parser": parse_craftmonth, "custom_fetch": True,
+     "min_interval_days": 3, "quiet_if_empty": True},
     {"name": "craftmonth_derry_city", "venue": "August Craft Month", "town": "Derry",
      "county": "Derry", "url": craftmonth_url("derry_city"),
-     "parser": parse_craftmonth, "min_interval_days": 3, "quiet_if_empty": True},
+     "parser": parse_craftmonth, "custom_fetch": True,
+     "min_interval_days": 3, "quiet_if_empty": True},
     {"name": "craftmonth_leitrim", "venue": "August Craft Month", "town": "Leitrim",
      "county": "Leitrim", "url": craftmonth_url("leitrim"),
-     "parser": parse_craftmonth, "min_interval_days": 3, "quiet_if_empty": True},
+     "parser": parse_craftmonth, "custom_fetch": True,
+     "min_interval_days": 3, "quiet_if_empty": True},
     {"name": "craftmonth_sligo", "venue": "August Craft Month", "town": "Sligo",
      "county": "Sligo", "url": craftmonth_url("sligo"),
-     "parser": parse_craftmonth, "min_interval_days": 3, "quiet_if_empty": True},
+     "parser": parse_craftmonth, "custom_fetch": True,
+     "min_interval_days": 3, "quiet_if_empty": True},
     {"name": "craftmonth_tyrone", "venue": "August Craft Month", "town": "Tyrone",
      "county": "Tyrone", "url": craftmonth_url("tyrone"),
-     "parser": parse_craftmonth, "min_interval_days": 3, "quiet_if_empty": True},
+     "parser": parse_craftmonth, "custom_fetch": True,
+     "min_interval_days": 3, "quiet_if_empty": True},
     {"name": "craftmonth_fermanagh", "venue": "August Craft Month", "town": "Fermanagh",
      "county": "Fermanagh", "url": craftmonth_url("fermanagh"),
-     "parser": parse_craftmonth, "min_interval_days": 3, "quiet_if_empty": True},
+     "parser": parse_craftmonth, "custom_fetch": True,
+     "min_interval_days": 3, "quiet_if_empty": True},
     {"name": "heritageweek", "venue": "Heritage Week", "town": "Donegal",
      "county": "Donegal",
      "url": "https://www.heritageweek.ie/event-listings?q=&where%5B%5D=derry"
@@ -1887,10 +1975,12 @@ def load_previous():
             data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
             data.setdefault("source_last_run", {})
             data.setdefault("consecutive_failures", {})
+            data.setdefault("location_cache", {})
             return data
         except Exception:
             pass
-    return {"events": [], "source_last_run": {}, "consecutive_failures": {}}
+    return {"events": [], "source_last_run": {}, "consecutive_failures": {},
+            "location_cache": {}}
 
 
 def notify(new_events):
@@ -1920,8 +2010,10 @@ def notify(new_events):
 
 
 def main():
+    global LOCATION_CACHE
     previous = load_previous()
     prev_by_key = {event_key(e): e for e in previous.get("events", [])}
+    LOCATION_CACHE = dict(previous.get("location_cache", {}))
 
     all_events, failed = [], []
     source_last_run = dict(previous.get("source_last_run", {}))
@@ -2020,6 +2112,7 @@ def main():
         "failed_sources": failed,
         "source_last_run": source_last_run,
         "consecutive_failures": consecutive_failures,
+        "location_cache": LOCATION_CACHE,
         "events": final,
     }, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"Wrote {len(final)} upcoming events to {DATA_FILE}")
