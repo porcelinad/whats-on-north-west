@@ -1847,9 +1847,13 @@ CATEGORY_ALIASES = {
     "cinema": "Film",
     "spoken word & conversations": "Spoken Word",
     "talks/spoken word": "Spoken Word",
+    "talk": "Spoken Word",
+    "talks/literary": "Spoken Word",
     "masterclass/workshop": "Workshop",
     "workshops & programmes": "Workshop",
     "visual arts & film": "Visual Arts",
+    "classical music": "Music",
+    "musical theatre": "Musical",
 }
 CATEGORY_DROP = {"spectacle"}  # "Street Arts & Circus" alone covers this well
 
@@ -1883,13 +1887,34 @@ def normalize_category(cat):
     """Renames some genre tags to consolidate near-duplicates (e.g.
     'Cinema' -> 'Film'), and drops a few tokens entirely (CATEGORY_DROP)
     rather than renaming them, where an existing tag already covers the
-    same ground well enough on its own."""
+    same ground well enough on its own.
+
+    Children's content specifically gets a SUBSTRING match ('child' or
+    'kids' appearing anywhere in the tag), not just another entry in the
+    exact-match alias table below - sources phrase this wildly
+    differently ('Children', "Children's Event", "Children's Theatre",
+    'For Children', "Kids' Workshop" have all shown up separately), and
+    a substring catch-all means a NEW phrasing from some future venue
+    gets folded in automatically instead of silently slipping through
+    unconsolidated until someone happens to notice and add it by hand."""
     if not cat:
         return cat
     parts = [p.strip() for p in cat.split(",")]
-    parts = [CATEGORY_ALIASES.get(p.lower(), p) for p in parts]
-    parts = [p for p in parts if p.lower() not in CATEGORY_DROP]
-    return ", ".join(parts) if parts else None
+    out = []
+    for p in parts:
+        low = p.lower()
+        if low in CATEGORY_DROP:
+            continue
+        if "child" in low or "kids" in low:
+            out.append("Kids/Family")
+        else:
+            out.append(CATEGORY_ALIASES.get(low, p))
+    seen, deduped = set(), []
+    for p in out:
+        if p not in seen:
+            seen.add(p)
+            deduped.append(p)
+    return ", ".join(deduped) if deduped else None
 
 
 def looks_like_kids_family(title):
