@@ -91,7 +91,6 @@
   .dow{font-size:13px;font-weight:600;letter-spacing:.15em;color:var(--ink-soft)}
   .day{font-size:30px;font-weight:700;line-height:1;margin:2px 0}
   .range{font-size:11px;color:var(--ink-soft);letter-spacing:.05em}
-  .until-label{font-size:13px;font-weight:600;letter-spacing:.15em;color:var(--ember)}
   .info{padding:12px 14px;min-width:0;flex:1}
   .title{font-weight:700;font-size:16.5px;line-height:1.25}
   .meta{font-size:13.5px;color:var(--ink-soft);margin-top:4px}
@@ -290,15 +289,14 @@ function render(gen){
     if(ev.sold_out) a.classList.add("sold");
 
     const stub=el("div","stub");
+    stub.append(el("span","dow",f.dow), el("span","day",f.day),
+                el("span","dow",f.mon));
     if(isOngoing){
       const e2=fmt(ev.end_date);
-      stub.append(el("span","until-label","Until"), el("span","day",e2.day),
-                  el("span","dow",e2.mon));
-    }else{
-      stub.append(el("span","dow",f.dow), el("span","day",f.day),
-                  el("span","dow",f.mon));
-      if(ev.end_date){const e2=fmt(ev.end_date);
-        stub.append(el("span","range","to "+e2.day+" "+e2.mon));}
+      stub.append(el("span","range","Until "+e2.day+" "+e2.mon));
+    }else if(ev.end_date){
+      const e2=fmt(ev.end_date);
+      stub.append(el("span","range","to "+e2.day+" "+e2.mon));
     }
     const info=el("div","info");
     info.append(el("p","title",ev.title));
