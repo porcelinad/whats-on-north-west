@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-02T18:06Z",
+ "generated_at": "2026-08-03T10:42Z",
  "failed_sources": [],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
@@ -16,10 +16,10 @@
   "heritageweek": "2026-08-02T17:00Z"
  },
  "consecutive_failures": {
-  "an_grianan": 2,
-  "rcc": 2,
-  "balor": 2,
-  "abbey": 2,
+  "an_grianan": 0,
+  "rcc": 0,
+  "balor": 0,
+  "abbey": 3,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -34,7 +34,7 @@
   "craftmonth_tyrone": 0,
   "craftmonth_fermanagh": 0,
   "heritageweek": 0,
-  "thedock": 2,
+  "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
@@ -271,7 +271,7 @@
    "date": "2026-06-13",
    "end_date": "2026-08-22",
    "time": "11:00 am",
-   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-03",
+   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-04",
    "category": null,
    "id": "3df0a1f19014",
    "first_seen": "2026-08-01"
@@ -341,19 +341,6 @@
    "category": "Exhibition, Craft/Hobbies",
    "id": "cb7f1eee0e2b",
    "first_seen": "2026-08-01"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Peace Flame",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "Discover Derry! Interactive Treasure Hunt & City Exploration Game",
-   "date": "2026-08-02",
-   "time": "07:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/discover-derry-interactive-treasure-hunt-city-exploration-game/",
-   "category": null,
-   "id": "b4b3044e3081",
-   "first_seen": "2026-08-02"
   },
   {
    "source": "eventbrite_donegal",
@@ -509,6 +496,19 @@
    "category": null,
    "id": "2e8f2808477c",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Hothouse: Homecoming",
+   "date": "2026-08-07",
+   "time": "5:00PM",
+   "url": "https://nervecentre.org/whats-on/hothouse-homecoming",
+   "category": "Music/Comedy",
+   "id": "66c592ff2c1b",
+   "first_seen": "2026-08-03"
   },
   {
    "source": "eventbrite_donegal",
@@ -3016,18 +3016,6 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "mcgrorys",
-   "venue": "McGrory's Hotel",
-   "town": "Culdaff",
-   "county": "Donegal",
-   "title": "The Mindbenders",
-   "date": "2026-08-21",
-   "url": "https://www.mcgrorys.ie/entertainment/78-156/",
-   "category": "Music",
-   "id": "ff314b6e3d01",
-   "first_seen": "2026-07-20"
-  },
-  {
    "source": "eventbrite_donegal",
    "venue": "Roe Valley Arts and Cultural Centre",
    "town": "Limavady",
@@ -5058,18 +5046,6 @@
    "category": "Music",
    "id": "0550f7cfa214",
    "first_seen": "2026-08-01"
-  },
-  {
-   "source": "mcgrorys",
-   "venue": "McGrory's Hotel",
-   "town": "Culdaff",
-   "county": "Donegal",
-   "title": "Frankie Gavin & Catherine McHugh",
-   "date": "2026-09-26",
-   "url": "https://www.mcgrorys.ie/entertainment/78-171/",
-   "category": "Music",
-   "id": "96c25162fcc7",
-   "first_seen": "2026-07-20"
   },
   {
    "source": "rcc",
