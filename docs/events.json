@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-05T12:03Z",
+ "generated_at": "2026-08-06T00:11Z",
  "failed_sources": [],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
@@ -16,10 +16,10 @@
   "heritageweek": "2026-08-05T12:03Z"
  },
  "consecutive_failures": {
-  "an_grianan": 0,
-  "rcc": 0,
-  "balor": 0,
-  "abbey": 0,
+  "an_grianan": 1,
+  "rcc": 1,
+  "balor": 1,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -34,7 +34,7 @@
   "craftmonth_tyrone": 0,
   "craftmonth_fermanagh": 0,
   "heritageweek": 0,
-  "thedock": 0,
+  "thedock": 1,
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
@@ -366,45 +366,6 @@
    "category": "Exhibition, Craft/Hobbies",
    "id": "cb7f1eee0e2b",
    "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Trio Hupsola – Lunchtime @ The Well",
-   "date": "2026-08-05",
-   "time": "1.10pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/trio-hupsola",
-   "category": "Music",
-   "id": "a25e455f61d4",
-   "first_seen": "2026-07-25"
-  },
-  {
-   "source": "craftmonth_derry",
-   "venue": "Natasha Duddy",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "Fused Glass Hot Air Balloon Creations for 6-11yrs",
-   "date": "2026-08-05",
-   "url": "https://augustcraftmonth.org/acm-event/fused-glass-hot-air-balloon-creations-for-6-11yrs/",
-   "category": "Workshop, Kids/Family, Craft/Hobbies",
-   "id": "e8c6c5590e96",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "David Byrne's American Utopia | Nerve Cinema",
-   "date": "2026-08-05",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/david-byrnes-american-utopia-nerve-cinema",
-   "category": "Film",
-   "sold_out": true,
-   "id": "fc68d1fa879d",
-   "first_seen": "2026-07-21"
   },
   {
    "source": "craftmonth_tyrone",
@@ -7190,6 +7151,19 @@
    "category": "Music",
    "id": "d734f6e0c773",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Philomena Begley & Ray Lynams Farewell Party 2027",
+   "date": "2027-02-20",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/philomena-begley-ray-lynams-farewell-party-2027/",
+   "category": "Music",
+   "id": "a93516763a74",
+   "first_seen": "2026-08-06"
   },
   {
    "source": "an_grianan",
