@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-06T00:11Z",
+ "generated_at": "2026-08-07T01:44Z",
  "failed_sources": [],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
@@ -16,10 +16,10 @@
   "heritageweek": "2026-08-05T12:03Z"
  },
  "consecutive_failures": {
-  "an_grianan": 1,
-  "rcc": 1,
-  "balor": 1,
-  "abbey": 1,
+  "an_grianan": 0,
+  "rcc": 0,
+  "balor": 0,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -34,7 +34,7 @@
   "craftmonth_tyrone": 0,
   "craftmonth_fermanagh": 0,
   "heritageweek": 0,
-  "thedock": 1,
+  "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
@@ -296,24 +296,10 @@
    "date": "2026-06-13",
    "end_date": "2026-08-22",
    "time": "11:00 am",
-   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-06",
+   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-07",
    "category": null,
    "id": "3df0a1f19014",
    "first_seen": "2026-08-01"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "We Will Rock You",
-   "date": "2026-07-31",
-   "end_date": "2026-08-06",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=we-will-rock-you",
-   "category": "Musical",
-   "id": "10c78e239cff",
-   "first_seen": "2026-07-14"
   },
   {
    "source": "craftmonth_donegal",
@@ -368,29 +354,17 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "craftmonth_tyrone",
-   "venue": "Sharyn Kelly",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Wet Felting a Landscape or Floral Design with Sharyn Kelly",
-   "date": "2026-08-06",
-   "url": "https://augustcraftmonth.org/acm-event/wet-felting-a-landscape-or-floral-design-with-sharyn-kelly/",
-   "category": "Workshop, Craft/Hobbies",
-   "id": "3a048daad0d1",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Illuminations – Open Mic Poetry",
-   "date": "2026-08-06",
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "We Will Rock You",
+   "date": "2026-08-07",
    "time": "8:00 pm",
-   "url": "https://www.themodel.ie/?event=illuminations&event_date=2026-08-06",
-   "category": null,
-   "id": "2e8f2808477c",
-   "first_seen": "2026-08-01"
+   "url": "https://www.balorartscentre.com/?event=we-will-rock-you",
+   "category": "Musical",
+   "id": "1182d1185e76",
+   "first_seen": "2026-08-07"
   },
   {
    "source": "nervecentre",
@@ -3767,6 +3741,18 @@
    "first_seen": "2026-07-21"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Pride – Free Film Screening",
+   "date": "2026-08-27",
+   "url": "https://www.thedock.ie/whats-on/pride",
+   "category": "Film",
+   "id": "bdb7eb49ae8d",
+   "first_seen": "2026-08-07"
+  },
+  {
    "source": "craftmonth_derry",
    "venue": "Adam Frew",
    "town": null,
@@ -4056,6 +4042,18 @@
    "first_seen": "2026-08-05"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Blue Road — The Edna O'Brien Story – Classic Cinema",
+   "date": "2026-09-02",
+   "url": "https://www.thedock.ie/whats-on/blue-road-the-edna-obrien-story",
+   "category": "Film",
+   "id": "a3b4bffd5ac3",
+   "first_seen": "2026-08-07"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Holywell Trust",
    "town": "Londonderry",
@@ -4098,7 +4096,6 @@
    "merged_from": [
     "rcc"
    ],
-   "sold_out": true,
    "id": "d7d2f5e72ed8",
    "first_seen": "2026-08-05"
   },
@@ -4320,6 +4317,19 @@
    "category": "Music",
    "id": "99cf4d459737",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Afronauts",
+   "date": "2026-09-05",
+   "end_date": "2026-09-06",
+   "url": "https://www.derryplayhouse.co.uk/event/afronauts",
+   "category": null,
+   "id": "62ab2d442f0c",
+   "first_seen": "2026-08-07"
   },
   {
    "source": "hawkswell",
@@ -4632,6 +4642,19 @@
    "category": "Music",
    "id": "d22543654304",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "The Ghostlight Sessions September 2026",
+   "date": "2026-09-17",
+   "time": "8:00 pm",
+   "url": "https://www.balorartscentre.com/?event=the-ghostlight-sessions-september-2026",
+   "category": "Music",
+   "id": "33c4f60ae39e",
+   "first_seen": "2026-08-07"
   },
   {
    "source": "strule",
@@ -5092,6 +5115,22 @@
    "first_seen": "2026-07-21"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Django Donegal: Giacomo Smith Trio with Hugo Guezbar",
+   "date": "2026-10-02",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/django-donegal-giacomo-smith-trio-with-hugo-guezbar/",
+   "category": "Music",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "62517732193a",
+   "first_seen": "2026-08-07"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -5119,6 +5158,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Paul Sherry",
+   "date": "2026-10-03",
+   "time": "8:00 pm",
+   "url": "https://www.balorartscentre.com/?event=paul-sherry",
+   "category": "Music",
+   "id": "da22fce0d340",
+   "first_seen": "2026-08-07"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -5130,6 +5182,22 @@
    "category": "Workshop",
    "id": "c5d42d763d2a",
    "first_seen": "2026-07-31"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Django Donegal: Angelo Debarre Trio with Alexandre Cavaliere",
+   "date": "2026-10-03",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/django-donegal-angelo-debarre-trio-with-alexandre-cavaliere/",
+   "category": "Music",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "ea83cf576ab1",
+   "first_seen": "2026-08-07"
   },
   {
    "source": "strule",
@@ -5182,6 +5250,18 @@
    "category": "Music",
    "id": "b0753a3ea706",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "It Was Just an Accident – Classic Cinema",
+   "date": "2026-10-07",
+   "url": "https://www.thedock.ie/whats-on/it-was-just-an-accident",
+   "category": "Film",
+   "id": "387e3fe203b2",
+   "first_seen": "2026-08-07"
   },
   {
    "source": "an_grianan",
@@ -5924,18 +6004,6 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Pebbledash – Salt, Glass & Spit Tour",
-   "date": "2026-10-30",
-   "url": "https://www.thedock.ie/whats-on/pebbledash",
-   "category": "Music",
-   "id": "f47128fa554a",
-   "first_seen": "2026-08-01"
-  },
-  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -6025,18 +6093,6 @@
    "category": "Music/Comedy",
    "id": "7da66777e2c8",
    "first_seen": "2026-07-21"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Andrew Ryan – Honest Capacity",
-   "date": "2026-11-06",
-   "url": "https://www.thedock.ie/whats-on/honest-capacity",
-   "category": "Comedy",
-   "id": "1cdc53edd454",
-   "first_seen": "2026-08-01"
   },
   {
    "source": "an_grianan",
@@ -6169,18 +6225,6 @@
    "category": "Music",
    "id": "c7be8ddd79b9",
    "first_seen": "2026-07-14"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Mr. Bergmann of Deadman's Point – Nth Degree Productions",
-   "date": "2026-11-13",
-   "url": "https://www.thedock.ie/whats-on/mr-bergmann-of-deadmans-point",
-   "category": "Theatre",
-   "id": "0ca993ab6b0b",
-   "first_seen": "2026-08-01"
   },
   {
    "source": "abbey",
@@ -6535,6 +6579,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "All Ireland One Act Drama Finals 2026",
+   "date": "2026-12-04",
+   "end_date": "2026-12-06",
+   "url": "https://angrianan.com/event/all-ireland-one-act-drama-finals-2026/",
+   "category": "Theatre",
+   "id": "5b0fd0b9585e",
+   "first_seen": "2026-08-07"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -6725,6 +6782,7 @@
     "rcc"
    ],
    "category": null,
+   "sold_out": true,
    "id": "dd2d3c7d788d",
    "first_seen": "2026-08-05"
   },
@@ -7218,6 +7276,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Brandon McPhee & Band Live In Concert",
+   "date": "2027-03-04",
+   "time": "8:00 pm",
+   "url": "https://www.balorartscentre.com/?event=brandon-mcphee-band-live-in-concert",
+   "category": "Music",
+   "id": "a6485bd9c918",
+   "first_seen": "2026-08-07"
+  },
+  {
    "source": "abbey",
    "venue": "Abbey Arts Centre",
    "town": "Ballyshannon",
@@ -7270,6 +7341,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Derek Ryan Live In Concert",
+   "date": "2027-03-12",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/derek-ryan-live-in-concert/",
+   "category": "Music",
+   "id": "764b3dbe3751",
+   "first_seen": "2026-08-07"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -7320,6 +7404,19 @@
    "category": "Music",
    "id": "e73a52022aa3",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Rock Rising – The Supreme Classic Rock Show",
+   "date": "2027-04-02",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/rock-rising-the-supreme-classic-rock-show/",
+   "category": "Music",
+   "id": "b70b60fdb5d1",
+   "first_seen": "2026-08-07"
   },
   {
    "source": "nervecentre",
@@ -7451,6 +7548,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "The Summer Country Show",
+   "date": "2027-05-19",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/the-summer-country-show/",
+   "category": "Music",
+   "id": "eb32689358f6",
+   "first_seen": "2026-08-07"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -7488,19 +7598,6 @@
    "category": "Music/Comedy",
    "id": "1c505dd403a8",
    "first_seen": "2026-07-21"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "DIALOGUES: An End of Programme Showcase",
-   "date": "2027-07-03",
-   "time": "6:00 pm",
-   "url": "https://regionalculturalcentre.com/events/dialogues-an-end-of-programme-showcase/",
-   "category": "Music",
-   "id": "ea9371d9dbb7",
-   "first_seen": "2026-08-01"
   },
   {
    "source": "rcc",
@@ -7597,9 +7694,6 @@
    "time": "1:00 pm",
    "url": "https://regionalculturalcentre.com/events/rcc-kids-mini-cinema/",
    "category": "Film, Kids/Family",
-   "merged_from": [
-    "rcc"
-   ],
    "id": "168a754a433f",
    "first_seen": "2026-08-01"
   },
