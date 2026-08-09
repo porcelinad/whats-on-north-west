@@ -1743,6 +1743,16 @@ CRAFTMONTH_START = TODAY.strftime("%Y%m%d")
 CRAFTMONTH_END = (TODAY + timedelta(days=120)).strftime("%Y%m%d")
 
 
+def seasonal_interval(active_months, quiet_interval=3):
+    """Returns 0 (no throttle - refresh on every run, same as an
+    unthrottled source) during active_months, or quiet_interval
+    otherwise. For genuinely seasonal sources (a festival, a themed
+    week) where new events appear frequently during their real active
+    window but the source is otherwise dormant - checking daily only
+    when it's actually worth checking daily."""
+    return 0 if TODAY.month in active_months else quiet_interval
+
+
 def craftmonth_url(loc):
     return (f"https://augustcraftmonth.org/events/?search_loc={loc}"
             f"&event_type=&discipline=&start_date={CRAFTMONTH_START}"
@@ -1768,7 +1778,8 @@ SOURCES = [
      "parser": parse_eventbrite_csv, "manual_csv": True},
     {"name": "eaf", "venue": "Earagail Arts Festival", "town": "Donegal",
      "county": "Donegal", "url": "https://eaf.ie/2026-events/",
-     "parser": parse_eaf, "custom_fetch": True, "min_interval_days": 7},
+     "parser": parse_eaf, "custom_fetch": True,
+     "min_interval_days": seasonal_interval({7, 8}, quiet_interval=7)},
     {"name": "mcgrorys", "venue": "McGrory's Hotel", "town": "Culdaff",
      "county": "Donegal", "url": "https://www.mcgrorys.ie/entertainment",
      "parser": parse_mcgrorys},
@@ -1784,38 +1795,38 @@ SOURCES = [
     {"name": "craftmonth_donegal", "venue": "August Craft Month", "town": "",
      "county": "Donegal", "url": craftmonth_url("donegal"),
      "parser": parse_craftmonth, "custom_fetch": True,
-     "min_interval_days": 3, "quiet_if_empty": True},
+     "min_interval_days": seasonal_interval({7, 8}), "quiet_if_empty": True},
     {"name": "craftmonth_derry", "venue": "August Craft Month", "town": "",
      "county": "Derry", "url": craftmonth_url("derry"),
      "parser": parse_craftmonth, "custom_fetch": True,
-     "min_interval_days": 3, "quiet_if_empty": True},
+     "min_interval_days": seasonal_interval({7, 8}), "quiet_if_empty": True},
     {"name": "craftmonth_derry_city", "venue": "August Craft Month", "town": "",
      "county": "Derry", "url": craftmonth_url("derry_city"),
      "parser": parse_craftmonth, "custom_fetch": True,
-     "min_interval_days": 3, "quiet_if_empty": True},
+     "min_interval_days": seasonal_interval({7, 8}), "quiet_if_empty": True},
     {"name": "craftmonth_leitrim", "venue": "August Craft Month", "town": "",
      "county": "Leitrim", "url": craftmonth_url("leitrim"),
      "parser": parse_craftmonth, "custom_fetch": True,
-     "min_interval_days": 3, "quiet_if_empty": True},
+     "min_interval_days": seasonal_interval({7, 8}), "quiet_if_empty": True},
     {"name": "craftmonth_sligo", "venue": "August Craft Month", "town": "",
      "county": "Sligo", "url": craftmonth_url("sligo"),
      "parser": parse_craftmonth, "custom_fetch": True,
-     "min_interval_days": 3, "quiet_if_empty": True},
+     "min_interval_days": seasonal_interval({7, 8}), "quiet_if_empty": True},
     {"name": "craftmonth_tyrone", "venue": "August Craft Month", "town": "",
      "county": "Tyrone", "url": craftmonth_url("tyrone"),
      "parser": parse_craftmonth, "custom_fetch": True,
-     "min_interval_days": 3, "quiet_if_empty": True},
+     "min_interval_days": seasonal_interval({7, 8}), "quiet_if_empty": True},
     {"name": "craftmonth_fermanagh", "venue": "August Craft Month", "town": "",
      "county": "Fermanagh", "url": craftmonth_url("fermanagh"),
      "parser": parse_craftmonth, "custom_fetch": True,
-     "min_interval_days": 3, "quiet_if_empty": True},
+     "min_interval_days": seasonal_interval({7, 8}), "quiet_if_empty": True},
     {"name": "heritageweek", "venue": "Heritage Week", "town": "",
      "county": "Donegal",
      "url": "https://www.heritageweek.ie/event-listings?q=&where%5B%5D=derry"
             "&where%5B%5D=donegal&where%5B%5D=leitrim&where%5B%5D=sligo"
             "&where%5B%5D=tyrone&where%5B%5D=fermanagh",
      "parser": parse_heritageweek, "custom_fetch": True,
-     "min_interval_days": 3, "quiet_if_empty": True},
+     "min_interval_days": seasonal_interval({7, 8}), "quiet_if_empty": True},
     {"name": "thedock", "venue": "The Dock", "town": "Carrick-on-Shannon",
      "county": "Leitrim", "url": "https://www.thedock.ie/whats-on/upcoming-events",
      "parser": parse_thedock},
