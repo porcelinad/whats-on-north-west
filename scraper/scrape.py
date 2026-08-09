@@ -1478,13 +1478,19 @@ def parse_heritageweek_event_page(soup):
 
 def parse_heritageweek(source):
     """Follows 'Next' pagination links (which preserve our county
-    filter query params) until no more pages remain, capped as a
-    safety net against runaway pagination. Each event's own page is
-    then fetched once (ever - see LOCATION_CACHE) for a more precise
-    town than the listing card's address fragment gives."""
+    filter query params) until no more pages remain. Capped as a
+    safety net against a genuinely broken/looping 'Next' link, not as
+    a normal termination path - the real result set is large (Donegal
+    alone has ~150 events, ~13 pages, and this query combines six
+    counties into one alphabetically-sorted list), so the cap must sit
+    well above that or events sorting late alphabetically (anything
+    from roughly S onward) silently never get fetched at all. Each
+    event's own page is then fetched once (ever - see LOCATION_CACHE)
+    for a more precise town than the listing card's address fragment
+    gives."""
     events = []
     url = source["url"]
-    for _ in range(15):
+    for _ in range(60):
         soup = fetch(url)
         found = parse_heritageweek_page(soup, source)
         events.extend(found)
