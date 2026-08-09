@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-08T23:46Z",
+ "generated_at": "2026-08-09T13:03Z",
  "failed_sources": [],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
@@ -19,7 +19,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -306,7 +306,7 @@
    "date": "2026-06-13",
    "end_date": "2026-08-22",
    "time": "11:00 am",
-   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-09",
+   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-10",
    "category": null,
    "id": "3df0a1f19014",
    "first_seen": "2026-08-01"
@@ -3625,6 +3625,22 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Music: The Tunney family & Guests – Where Songs Do Thunder (Book launch and concert)",
+   "date": "2026-08-28",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-music-the-tunney-family-guests-where-songs-do-thunder-book-launch-and-concert/",
+   "merged_from": [
+    "rcc"
+   ],
+   "category": null,
+   "id": "382b95e6fe7d",
+   "first_seen": "2026-08-09"
+  },
+  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -4796,9 +4812,6 @@
    "time": "8:00 pm",
    "url": "https://regionalculturalcentre.com/events/migrantes-mauro-sigura-andrea-manzoni/",
    "category": "Music",
-   "merged_from": [
-    "rcc"
-   ],
    "id": "6e7c7ac14109",
    "first_seen": "2026-08-08"
   },
@@ -7555,10 +7568,6 @@
    "time": "6:00 pm",
    "url": "https://regionalculturalcentre.com/exhibitions/the-rain-tells-us-everything-catherine-mcdonald-katie-nolan-and-niamh-schmidtke-gallery-2-foyer-gallery/",
    "category": "Exhibition",
-   "merged_from": [
-    "eaf",
-    "rcc"
-   ],
    "id": "cecb99220148",
    "first_seen": "2026-08-01"
   },
