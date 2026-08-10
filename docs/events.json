@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-10T09:43Z",
+ "generated_at": "2026-08-10T23:51Z",
  "failed_sources": [],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
@@ -16,25 +16,25 @@
   "heritageweek": "2026-08-07T23:49Z"
  },
  "consecutive_failures": {
-  "an_grianan": 0,
-  "rcc": 0,
-  "balor": 0,
-  "abbey": 0,
+  "an_grianan": 1,
+  "rcc": 1,
+  "balor": 1,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 0,
-  "craftmonth_donegal": 0,
-  "craftmonth_derry": 0,
-  "craftmonth_derry_city": 0,
-  "craftmonth_leitrim": 0,
-  "craftmonth_sligo": 0,
-  "craftmonth_tyrone": 0,
-  "craftmonth_fermanagh": 0,
+  "eaf": 1,
+  "craftmonth_donegal": 1,
+  "craftmonth_derry": 1,
+  "craftmonth_derry_city": 1,
+  "craftmonth_leitrim": 1,
+  "craftmonth_sligo": 1,
+  "craftmonth_tyrone": 1,
+  "craftmonth_fermanagh": 1,
   "heritageweek": 0,
-  "thedock": 0,
+  "thedock": 1,
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
@@ -315,7 +315,17 @@
   "https://www.heritageweek.ie/event-listings/biodiversity-walk-and-talk-along-the-unshin-river": "Riverstown",
   "https://www.heritageweek.ie/event-listings/flags-protest-and-sligo-abbey-heritage-week-2026-history-talk": null,
   "https://www.heritageweek.ie/event-listings/irish-traditional-music-with-aidan-shannon-jacinta-shannon-and-rachel-mc-govern": null,
-  "https://www.heritageweek.ie/event-listings/leitrim-field-names-project-recording-session": "Manorhamilton"
+  "https://www.heritageweek.ie/event-listings/leitrim-field-names-project-recording-session": "Manorhamilton",
+  "https://www.heritageweek.ie/event-listings/atlantis-circle-of-healing-heritage-week-event-2026": "Strandhill",
+  "https://www.heritageweek.ie/event-listings/bat-walk-in-ballinamore": "Ballinamore",
+  "https://www.heritageweek.ie/event-listings/enniscrone-castle-field-a-window-to-our-heritage": "Enniscrone",
+  "https://www.heritageweek.ie/event-listings/exploring-the-rocky-seashore-of-rosses-point": "Rosses Point",
+  "https://www.heritageweek.ie/event-listings/forest-therapy-at-derrycarne-wood": null,
+  "https://www.heritageweek.ie/event-listings/garadice-woodland-walk": null,
+  "https://www.heritageweek.ie/event-listings/glenfarne-kiltyclogher-heritage-bus-tour": null,
+  "https://www.heritageweek.ie/event-listings/illustrated-talk-excavations-in-church-park-field-derrygonnelly-co-fermanagh": "Derrygonnelly",
+  "https://www.heritageweek.ie/event-listings/scealtaí-í-gcloch-fieldtrip-to-cronkeerin-lime-kiln-and-kiltiernan-graveyard": "Ardara",
+  "https://www.heritageweek.ie/event-listings/traditional-harvest-straw-craft": null
  },
  "events": [
   {
@@ -327,7 +337,7 @@
    "date": "2026-06-13",
    "end_date": "2026-08-22",
    "time": "11:00 am",
-   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-10",
+   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-11",
    "category": null,
    "id": "3df0a1f19014",
    "first_seen": "2026-08-01"
@@ -481,57 +491,6 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "An Grianán Youth Theatre Summer School (ages 13-18)",
-   "date": "2026-08-10",
-   "url": "https://angrianan.com/event/an-grianan-youth-theatre-summer-school-ages-13-18/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873664605",
-   "category": "Workshop",
-   "id": "de69a1cb59d2",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "craftmonth_fermanagh",
-   "venue": "Belleek Pottery",
-   "town": "Belleek",
-   "county": "Fermanagh",
-   "title": "Belleek Pottery Hands On Experience",
-   "date": "2026-08-10",
-   "url": "https://augustcraftmonth.org/acm-event/belleek-pottery-hands-on-experience/",
-   "category": "Workshop, Kids/Family, Craft/Hobbies",
-   "id": "b21163254556",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Cultúrlann Uí Chanáin",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "Eddie Dempsey",
-   "date": "2026-08-10",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/eddie-dempsey/",
-   "category": null,
-   "id": "e374dffb8ca5",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Cultúrlann Uí Chanáin",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Neutrality Roadshow",
-   "date": "2026-08-10",
-   "time": "13:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/neutrality-roadshow/",
-   "category": null,
-   "id": "8fcc2da5151e",
-   "first_seen": "2026-07-20"
-  },
-  {
    "source": "craftmonth_derry",
    "venue": "Fiona Shannon",
    "town": "Coleraine",
@@ -542,45 +501,6 @@
    "url": "https://augustcraftmonth.org/acm-event/4-day-intensive-throwing-course-for-18yrs/",
    "category": "Workshop, Craft/Hobbies",
    "id": "7303102862f7",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Nerve Centre",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "Birds of War",
-   "date": "2026-08-10",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/birds-of-war/",
-   "category": null,
-   "id": "4750dcce5a3a",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "New Gate Arts & Culture Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Creative Media Summer School at Newgate Arts & Culture Centre",
-   "date": "2026-08-10",
-   "end_date": "2026-08-13",
-   "url": "https://nervecentre.org/whats-on/creative-media-summer-school",
-   "category": "Workshop",
-   "sold_out": true,
-   "id": "e71d1398f983",
-   "first_seen": "2026-07-21"
-  },
-  {
-   "source": "craftmonth_tyrone",
-   "venue": "Sharyn Kelly",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Introduction to Needle Felting – Using a Hoop",
-   "date": "2026-08-10",
-   "url": "https://augustcraftmonth.org/acm-event/introduction-to-needle-felting-using-a-hoop/",
-   "category": "Workshop, Craft/Hobbies",
-   "id": "696082f796c2",
    "first_seen": "2026-08-01"
   },
   {
@@ -873,19 +793,6 @@
    "url": "https://www.heritageweek.ie/event-listings/skreen-past-and-future",
    "category": null,
    "id": "a5e54dc61ba1",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "heritageweek",
-   "venue": "An Crannóg - Comharchumann Forbartha Ghaoth Dobhair",
-   "town": "Gaoth Dobhair",
-   "county": "Donegal",
-   "title": "DÚLRA DÚCHASACH COIS TRÁ – NATIVE NATURE ON THE COAST",
-   "date": "2026-08-15",
-   "time": "2pm - 4pm",
-   "url": "https://www.heritageweek.ie/event-listings/dúlra-dúchasach-cois-trá-native-nature-on-the-coast-2",
-   "category": null,
-   "id": "269637951f0d",
    "first_seen": "2026-08-01"
   },
   {
@@ -1412,6 +1319,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "heritageweek",
+   "venue": "An Crannóg - Comharchumann Forbartha Ghaoth Dobhair",
+   "town": "Gaoth Dobhair",
+   "county": "Donegal",
+   "title": "DÚLRA DÚCHASACH COIS TRÁ – NATIVE NATURE ON THE COAST",
+   "date": "2026-08-16",
+   "time": "4pm - 6pm",
+   "url": "https://www.heritageweek.ie/event-listings/dúlra-dúchasach-cois-trá-native-nature-on-the-coast-2",
+   "category": null,
+   "id": "c28474d55fcf",
+   "first_seen": "2026-08-11"
+  },
+  {
    "source": "hawkswell",
    "venue": "Art Deco Theatre",
    "town": "Ballymote",
@@ -1423,6 +1343,19 @@
    "category": null,
    "id": "b21490fcee9b",
    "first_seen": "2026-08-08"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Atlantis Healing",
+   "town": "Strandhill",
+   "county": "Sligo",
+   "title": "Atlantis Circle of Healing - Heritage Week Event 2026",
+   "date": "2026-08-16",
+   "time": "1pm - 5pm",
+   "url": "https://www.heritageweek.ie/event-listings/atlantis-circle-of-healing-heritage-week-event-2026",
+   "category": null,
+   "id": "c725dd0b984e",
+   "first_seen": "2026-08-11"
   },
   {
    "source": "heritageweek",
@@ -2136,6 +2069,32 @@
   },
   {
    "source": "heritageweek",
+   "venue": "School Outside",
+   "town": "Rosses Point",
+   "county": "Sligo",
+   "title": "Exploring the Rocky Seashore of Rosses Point",
+   "date": "2026-08-18",
+   "time": "3pm - 4pm",
+   "url": "https://www.heritageweek.ie/event-listings/exploring-the-rocky-seashore-of-rosses-point",
+   "category": null,
+   "id": "8e40865d492f",
+   "first_seen": "2026-08-11"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "The Organic Centre",
+   "town": null,
+   "county": "Leitrim",
+   "title": "Traditional Harvest Straw Craft",
+   "date": "2026-08-18",
+   "time": "11am - 3pm",
+   "url": "https://www.heritageweek.ie/event-listings/traditional-harvest-straw-craft",
+   "category": null,
+   "id": "83dc8eab35ce",
+   "first_seen": "2026-08-11"
+  },
+  {
+   "source": "heritageweek",
    "venue": "ACRES Breifne",
    "town": "Manorhamilton",
    "county": "Leitrim",
@@ -2305,6 +2264,19 @@
   },
   {
    "source": "heritageweek",
+   "venue": "Enniscrone & District Community Development",
+   "town": "Enniscrone",
+   "county": "Sligo",
+   "title": "Enniscrone Castle Field - A Window to our Heritage!",
+   "date": "2026-08-19",
+   "time": "7pm - 8pm",
+   "url": "https://www.heritageweek.ie/event-listings/enniscrone-castle-field-a-window-to-our-heritage",
+   "category": null,
+   "id": "27690f300cc4",
+   "first_seen": "2026-08-11"
+  },
+  {
+   "source": "heritageweek",
    "venue": "Glebe Gallery",
    "town": "Churchill",
    "county": "Donegal",
@@ -2341,6 +2313,19 @@
    "category": null,
    "id": "5d833ae93ea4",
    "first_seen": "2026-08-05"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Leitrim County Council",
+   "town": "Ballinamore",
+   "county": "Leitrim",
+   "title": "Bat Walk in Ballinamore",
+   "date": "2026-08-19",
+   "time": "8:30pm - 10pm",
+   "url": "https://www.heritageweek.ie/event-listings/bat-walk-in-ballinamore",
+   "category": null,
+   "id": "ec0ba2654455",
+   "first_seen": "2026-08-11"
   },
   {
    "source": "heritageweek",
@@ -2566,6 +2551,19 @@
   },
   {
    "source": "heritageweek",
+   "venue": "Centre for Community Archaeology, Queen's University Belfast",
+   "town": "Derrygonnelly",
+   "county": "Fermanagh",
+   "title": "Illustrated Talk on Archaeological Excavation in Church Park Field, Derrygonnelly",
+   "date": "2026-08-20",
+   "time": "8pm - 10pm",
+   "url": "https://www.heritageweek.ie/event-listings/illustrated-talk-excavations-in-church-park-field-derrygonnelly-co-fermanagh",
+   "category": null,
+   "id": "6e6119bfab89",
+   "first_seen": "2026-08-11"
+  },
+  {
+   "source": "heritageweek",
    "venue": "Daithí Lavelle",
    "town": null,
    "county": "Sligo",
@@ -2722,6 +2720,19 @@
    "category": null,
    "id": "585b31680aba",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Leitrim County Council",
+   "town": null,
+   "county": "Leitrim",
+   "title": "Garadice Woodland Walk",
+   "date": "2026-08-20",
+   "time": "6pm - 7:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/garadice-woodland-walk",
+   "category": null,
+   "id": "f42d9555d58c",
+   "first_seen": "2026-08-11"
   },
   {
    "source": "heritageweek",
@@ -2905,6 +2916,19 @@
   },
   {
    "source": "heritageweek",
+   "venue": "Donegal G.A.P. Heritage and History Group",
+   "town": "Ardara",
+   "county": "Donegal",
+   "title": "Scealtaí i gCloch - Fieldtrip to Cronkeerin Lime Kiln and Kiltiernan Graveyard",
+   "date": "2026-08-21",
+   "time": "6:30pm - 8:15pm",
+   "url": "https://www.heritageweek.ie/event-listings/scealtaí-í-gcloch-fieldtrip-to-cronkeerin-lime-kiln-and-kiltiernan-graveyard",
+   "category": null,
+   "id": "338ceff1323e",
+   "first_seen": "2026-08-11"
+  },
+  {
+   "source": "heritageweek",
    "venue": "Donegal Library Service",
    "town": "Buncrana",
    "county": "Donegal",
@@ -3053,7 +3077,7 @@
    "title": "Biodiversity and Invasive Species Walk and Talk",
    "date": "2026-08-21",
    "time": "6pm - 8:30pm",
-   "url": "https://www.heritageweek.ie/event-listings/biodiversity-and-invasive-species-walk-and-talk-3",
+   "url": "https://www.heritageweek.ie/event-listings/biodiversity-and-invasive-species-walk-and-talk-2",
    "merged_from": [
     "heritageweek"
    ],
@@ -3295,6 +3319,19 @@
    "category": null,
    "id": "3ac908ca9894",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "The Rainbow Ballroom of Romance",
+   "town": null,
+   "county": "Leitrim",
+   "title": "Glenfarne Kiltyclogher Heritage Bus Tour",
+   "date": "2026-08-21",
+   "time": "11am - 2:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/glenfarne-kiltyclogher-heritage-bus-tour",
+   "category": null,
+   "id": "296fddca514e",
+   "first_seen": "2026-08-11"
   },
   {
    "source": "heritageweek",
@@ -3835,7 +3872,7 @@
    "title": "Céilí Dancing Course with Grace Meenan and Margaret Campbell",
    "date": "2026-08-22",
    "time": "8pm - 9pm",
-   "url": "https://www.heritageweek.ie/event-listings/céilí-dancing-course-with-grace-meenan-and-margaret-campbell-2",
+   "url": "https://www.heritageweek.ie/event-listings/céilí-dancing-course-with-grace-meenan-and-margaret-campbell",
    "merged_from": [
     "heritageweek"
    ],
@@ -4127,6 +4164,19 @@
    "category": null,
    "id": "06b5f908b5f3",
    "first_seen": "2026-08-05"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Leitrim County Council",
+   "town": null,
+   "county": "Leitrim",
+   "title": "Forest Therapy at Derrycarne Wood",
+   "date": "2026-08-23",
+   "time": "12pm - 2pm",
+   "url": "https://www.heritageweek.ie/event-listings/forest-therapy-at-derrycarne-wood",
+   "category": null,
+   "id": "807e6c4b6522",
+   "first_seen": "2026-08-11"
   },
   {
    "source": "craftmonth_leitrim",
