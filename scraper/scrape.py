@@ -129,6 +129,93 @@ def infer_year(month, day):
     return None
 
 
+def infer_range_years(tokens):
+    """Resolves the year for a list of (month, day) tokens making up a
+    single date RANGE together, rather than inferring each one
+    independently against TODAY via infer_year(). A range's start can
+    easily be more than infer_year()'s 7-day grace period in the past
+    while the event is still genuinely ongoing (e.g. an exhibition
+    running 1-31 August, checked on the 9th) - inferring the start on
+    its own would wrongly roll it forward a full year even though the
+    end date makes clear the event is still this year. Anchors on the
+    LAST token (the one that actually determines whether the event is
+    still relevant), then works backward assigning each earlier token
+    the SAME year as the one after it, correcting back one year only if
+    that would put it AFTER the following token (a genuine year-
+    boundary-crossing range, e.g. 28 Dec - 3 Jan). Returns a list the
+    same length as tokens, with None for any date that couldn't be
+    resolved at all."""
+    if not tokens:
+        return []
+    n = len(tokens)
+    resolved = [None] * n
+    last_mon, last_day = tokens[-1]
+    resolved[-1] = infer_year(last_mon, last_day)
+    if not resolved[-1]:
+        return resolved
+    for i in range(n - 2, -1, -1):
+        mon, day = tokens[i]
+        anchor = resolved[i + 1]
+        try:
+            d = date(anchor.year, mon, day)
+        except ValueError:
+            continue
+        if d > anchor:
+            try:
+                d = date(anchor.year - 1, mon, day)
+            except ValueError:
+                continue
+        resolved[i] = d
+    return resolved
+
+
+def resolve_date_tokens(tokens):
+    """Like infer_range_years, but for tokens that may already carry an
+    explicit year - (month, day, year_or_None) triples - rather than
+    needing inference for all of them (EAF occasionally states a year
+    explicitly, e.g. 'Saturday 9th January 2027', when a run crosses
+    into next year). Resolves right-to-left: the last token uses its
+    own explicit year if given, else infer_year(); each earlier token
+    uses its own explicit year if given, else the same year as the
+    token after it, correcting back one year only if that would put it
+    after the following token (a genuine year-boundary-crossing
+    range)."""
+    if not tokens:
+        return []
+    n = len(tokens)
+    resolved = [None] * n
+    mon, day, yr = tokens[-1]
+    if yr:
+        try:
+            resolved[-1] = date(yr, mon, day)
+        except ValueError:
+            resolved[-1] = None
+    else:
+        resolved[-1] = infer_year(mon, day)
+    if not resolved[-1]:
+        return resolved
+    for i in range(n - 2, -1, -1):
+        mon, day, yr = tokens[i]
+        anchor = resolved[i + 1]
+        if yr:
+            try:
+                resolved[i] = date(yr, mon, day)
+            except ValueError:
+                pass
+            continue
+        try:
+            d = date(anchor.year, mon, day)
+        except ValueError:
+            continue
+        if d > anchor:
+            try:
+                d = date(anchor.year - 1, mon, day)
+            except ValueError:
+                continue
+        resolved[i] = d
+    return resolved
+
+
 def genre_from_text(text):
     """Return 'Comedy, Music' etc. if a text node is purely a genre list."""
     t = clean(text).strip("|").strip()
@@ -768,23 +855,21 @@ EAF_TYPE_WORDS = {"live event", "exhibition", "project"}
 
 def parse_eaf_date_text(text):
     """Extracts every date found in a line like 'Monday 13th - Friday
-    17th July' or 'Saturday 9th January 2027', inferring the year when
-    not stated explicitly."""
+    17th July' or 'Saturday 9th January 2027', as raw (month, day,
+    explicit_year_or_None) tuples - year resolution is deferred until
+    all of an event's date tokens are collected together (see
+    resolve_date_tokens in finalise() below), since resolving each one
+    independently can wrongly roll an already-passed-but-still-relevant
+    start date a full year forward while the event is genuinely still
+    ongoing."""
     found = []
     for m in EAF_DATE_RE.finditer(text):
         mon = MONTHS.get(m.group(2).lower()[:3])
         if not mon:
             continue
         day = int(m.group(1))
-        if m.group(3):
-            try:
-                d = date(int(m.group(3)), mon, day)
-            except ValueError:
-                continue
-        else:
-            d = infer_year(mon, day)
-        if d:
-            found.append(d)
+        year = int(m.group(3)) if m.group(3) else None
+        found.append((mon, day, year))
     return found
 
 
@@ -808,19 +893,21 @@ def parse_eaf_listing(soup, source):
     def finalise(type_word):
         nonlocal title, url, genre, pending_dates, pending_time
         if title and url and type_word != "project" and pending_dates:
-            start = pending_dates[0]
-            end = pending_dates[-1] if len(pending_dates) == 2 else None
-            clean_title = title
-            sold_out = False
-            m = EAF_SOLD_OUT_RE.search(title)
-            if m:
-                clean_title = title[:m.start()].strip()
-                sold_out = True
-            events.append(make_event(
-                source, clean_title, start,
-                end_date=end.isoformat() if end and end != start else None,
-                time=pending_time, url=url, category=genre,
-                sold_out=sold_out))
+            resolved = resolve_date_tokens(pending_dates)
+            start = resolved[0]
+            end = resolved[-1] if len(resolved) == 2 else None
+            if start:
+                clean_title = title
+                sold_out = False
+                m = EAF_SOLD_OUT_RE.search(title)
+                if m:
+                    clean_title = title[:m.start()].strip()
+                    sold_out = True
+                events.append(make_event(
+                    source, clean_title, start,
+                    end_date=end.isoformat() if end and end != start else None,
+                    time=pending_time, url=url, category=genre,
+                    sold_out=sold_out))
         title = url = None
         genre = None
         pending_dates, pending_time = [], None
@@ -1159,19 +1246,9 @@ def parse_hawkswell_date_line(text):
             if later_year:
                 parsed[i][2] = later_year
 
-    dates = []
-    for day, mon, year in parsed:
-        if not mon:
-            continue
-        if year:
-            try:
-                d = date(year, mon, day)
-            except ValueError:
-                d = None
-        else:
-            d = infer_year(mon, day)
-        if d:
-            dates.append(d)
+    resolved = resolve_date_tokens(
+        [(mon, day, year) for day, mon, year in parsed if mon])
+    dates = [d for d in resolved if d]
 
     if not dates:
         return None, None, time_text
@@ -1310,8 +1387,7 @@ def parse_craftmonth_listing(soup, source):
         mon2n = MONTHS.get(mon2.lower()[:3])
         if not (mon1n and mon2n):
             continue
-        start = infer_year(mon1n, int(d1))
-        end = infer_year(mon2n, int(d2))
+        start, end = infer_range_years([(mon1n, int(d1)), (mon2n, int(d2))])
         if not start:
             continue
 
@@ -1429,19 +1505,18 @@ def parse_heritageweek_page(soup, source):
         # a specific place ("Donegal" -> "Donegal Town")
         town = find_specific_town(town_candidate) if town_candidate else None
 
-        dates, time_text = [], None
+        date_tokens, time_text = [], None
         for de in date_entries:
             m = HERITAGEWEEK_DATE_RE.match(de)
             mon = MONTHS.get(m.group(2).lower()[:3])
             if not mon:
                 continue
-            d = infer_year(mon, int(m.group(1)))
-            if d:
-                dates.append(d)
-                if not time_text:
-                    rest = de[m.end():].lstrip(", ").strip()
-                    if rest:
-                        time_text = rest
+            date_tokens.append((mon, int(m.group(1))))
+            if not time_text:
+                rest = de[m.end():].lstrip(", ").strip()
+                if rest:
+                    time_text = rest
+        dates = [d for d in infer_range_years(date_tokens) if d]
         if not dates:
             continue
         start = dates[0]
@@ -1530,19 +1605,9 @@ def parse_thedock_date(text):
             later_year = next((p[2] for p in matches[i + 1:] if p[2] is not None), None)
             if later_year:
                 matches[i][2] = later_year
-    dates = []
-    for day, mon, year in matches:
-        if not mon:
-            continue
-        if year:
-            try:
-                d = date(year, mon, day)
-            except ValueError:
-                d = None
-        else:
-            d = infer_year(mon, day)
-        if d:
-            dates.append(d)
+    resolved = resolve_date_tokens(
+        [(mon, day, year) for day, mon, year in matches if mon])
+    dates = [d for d in resolved if d]
     if not dates:
         return None, None
     start = dates[0]
