@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-09T23:47Z",
+ "generated_at": "2026-08-10T09:43Z",
  "failed_sources": [],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
@@ -19,20 +19,20 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
   "eaf": 0,
-  "craftmonth_donegal": 1,
-  "craftmonth_derry": 1,
-  "craftmonth_derry_city": 1,
-  "craftmonth_leitrim": 1,
-  "craftmonth_sligo": 1,
-  "craftmonth_tyrone": 1,
-  "craftmonth_fermanagh": 1,
+  "craftmonth_donegal": 0,
+  "craftmonth_derry": 0,
+  "craftmonth_derry_city": 0,
+  "craftmonth_leitrim": 0,
+  "craftmonth_sligo": 0,
+  "craftmonth_tyrone": 0,
+  "craftmonth_fermanagh": 0,
   "heritageweek": 0,
   "thedock": 0,
   "strule": 0,
@@ -309,7 +309,13 @@
   "https://www.heritageweek.ie/event-listings/water-is-life-water-heritage-day": null,
   "https://www.heritageweek.ie/event-listings/wildlife-celebration-on-the-green-mullaghmore": null,
   "https://www.heritageweek.ie/event-listings/ww1-memorial-dedication-sentry-hill": null,
-  "https://www.heritageweek.ie/event-listings/yoga-in-donegal-castle": "Donegal Town"
+  "https://www.heritageweek.ie/event-listings/yoga-in-donegal-castle": "Donegal Town",
+  "https://www.heritageweek.ie/event-listings/make-your-own-eco-cleaning-products-with-mella-obrolchain": null,
+  "https://www.heritageweek.ie/event-listings/appreciating-water": "Moville",
+  "https://www.heritageweek.ie/event-listings/biodiversity-walk-and-talk-along-the-unshin-river": "Riverstown",
+  "https://www.heritageweek.ie/event-listings/flags-protest-and-sligo-abbey-heritage-week-2026-history-talk": null,
+  "https://www.heritageweek.ie/event-listings/irish-traditional-music-with-aidan-shannon-jacinta-shannon-and-rachel-mc-govern": null,
+  "https://www.heritageweek.ie/event-listings/leitrim-field-names-project-recording-session": "Manorhamilton"
  },
  "events": [
   {
@@ -325,6 +331,141 @@
    "category": null,
    "id": "3df0a1f19014",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "eaf",
+   "venue": "Glebe Gallery & Gardens",
+   "town": "Churchill",
+   "county": "Donegal",
+   "title": "Cathal McGinley – Scattered at the Edges",
+   "date": "2026-07-05",
+   "end_date": "2026-08-30",
+   "time": "10am - 6pm (Daily)",
+   "url": "https://eaf.ie/events/cathal-mcginley-scattered-at-the-edges/",
+   "category": "Visual Arts",
+   "id": "16b05ee491cf",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "source": "eaf",
+   "venue": "Donegal County Museum",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Rockwell Kent – An American Artist in Donegal",
+   "date": "2026-07-10",
+   "end_date": "2026-09-05",
+   "time": "Monday – Friday 10am - 4.30pm, (Closed 12.30pm - 1pm), Saturday, 1pm - 4.30pm",
+   "url": "https://eaf.ie/events/rockwell-kent-an-american-artist-in-donegal/",
+   "category": "Visual Arts",
+   "id": "377b45f33d4b",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "source": "eaf",
+   "venue": "An Gailearaí, Ionad Áislann, Páirc Ghnó Ghaoth Dobhair, F92 PT38",
+   "town": "Gaoth Dobhair",
+   "county": "Donegal",
+   "title": "Déanta i nDún na nGall – Made in Donegal",
+   "date": "2026-07-11",
+   "end_date": "2026-09-04",
+   "time": "11am-5pm, Monday, Tuesday, Thursday & Friday 1pm-8pm, Wednesdays",
+   "url": "https://eaf.ie/events/deanta-i-ndun-na-ngall-made-in-donegal/",
+   "category": "Visual Arts",
+   "id": "472238298297",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "source": "eaf",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Barbara Knežević: Gvozdene Kapije | The Iron Gates",
+   "date": "2026-07-11",
+   "end_date": "2026-09-19",
+   "time": "11am - 5pm Tuesday – Friday, 1pm - 5pm Saturdays",
+   "url": "https://eaf.ie/events/barbara-knezevic-gvozdene-kapije-the-iron-gates/",
+   "category": "Visual Arts",
+   "id": "7c5a438cacfa",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "source": "eaf",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "The Rain Tells Us Everything",
+   "date": "2026-07-11",
+   "end_date": "2026-09-19",
+   "time": "11am - 5pm Tuesday – Friday, 1pm - 5pm Saturdays",
+   "url": "https://eaf.ie/events/the-rain-tells-us-everything/",
+   "category": "Visual Arts",
+   "id": "a1544879aff4",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "source": "craftmonth_leitrim",
+   "venue": "The Leitrim Design House",
+   "town": null,
+   "county": "Leitrim",
+   "title": "Richard West – Exhibition",
+   "date": "2026-07-17",
+   "end_date": "2026-08-22",
+   "url": "https://augustcraftmonth.org/acm-event/richard-west-exhibition/",
+   "category": "Exhibition, Craft/Hobbies",
+   "id": "007a1b416f7f",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "source": "craftmonth_donegal",
+   "venue": "Donegal Designer Makers",
+   "town": "Ardara",
+   "county": "Donegal",
+   "title": "Land, Sea & Sky (Tir, Farraige Agus Speir)",
+   "date": "2026-07-31",
+   "end_date": "2026-08-31",
+   "url": "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/",
+   "category": "Exhibition, Craft/Hobbies",
+   "id": "57c2d97b3ef9",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "source": "craftmonth_derry",
+   "venue": "Derry Designer Makers",
+   "town": null,
+   "county": "Derry",
+   "title": "Derry Designer Makers – Meet our Creatives",
+   "date": "2026-08-01",
+   "end_date": "2026-08-31",
+   "url": "https://augustcraftmonth.org/acm-event/derry-designer-makers-meet-our-creatives/",
+   "category": "Open Studio, Exhibition, Meet the Maker, Kids/Family, Demonstration, Craft/Hobbies",
+   "id": "d1feab938335",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "source": "craftmonth_donegal",
+   "venue": "Kevin Callaghan",
+   "town": "Donegal Town",
+   "county": "Donegal",
+   "title": "Kevin Callaghan Pottery Shop & Open Studio",
+   "date": "2026-08-01",
+   "end_date": "2026-08-31",
+   "url": "https://augustcraftmonth.org/acm-event/kcp-pottery-shop-studio/",
+   "category": "Workshop, Open Studio, Exhibition, Meet the Maker, Demonstration, Craft/Hobbies",
+   "id": "b3ea9c8b0d8a",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "source": "craftmonth_tyrone",
+   "venue": "Sharyn Kelly",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "August Craft Month in Strule Arts Centre with Sharyn Kelly",
+   "date": "2026-08-01",
+   "end_date": "2026-08-29",
+   "url": "https://augustcraftmonth.org/acm-event/august-craft-month-in-strule-arts-centre-with-sharyn-kelly/",
+   "category": "Exhibition, Craft/Hobbies",
+   "id": "cb7f1eee0e2b",
+   "first_seen": "2026-08-10"
   },
   {
    "source": "craftmonth_sligo",
@@ -1955,6 +2096,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "heritageweek",
+   "venue": "Riverstown Tidy Towns",
+   "town": "Riverstown",
+   "county": "Sligo",
+   "title": "Biodiversity walk and talk along the Unshin river",
+   "date": "2026-08-18",
+   "time": "7pm - 9pm",
+   "url": "https://www.heritageweek.ie/event-listings/biodiversity-walk-and-talk-along-the-unshin-river",
+   "category": null,
+   "id": "f2bb19918b6e",
+   "first_seen": "2026-08-10"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Roe Valley Arts and Cultural Centre",
    "town": "Limavady",
@@ -1979,6 +2133,19 @@
    "category": null,
    "id": "8e90ad8cdea9",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "ACRES Breifne",
+   "town": "Manorhamilton",
+   "county": "Leitrim",
+   "title": "Leitrim Field Names Project: Recording Session",
+   "date": "2026-08-19",
+   "time": "4pm - 7pm",
+   "url": "https://www.heritageweek.ie/event-listings/leitrim-field-names-project-recording-session",
+   "category": null,
+   "id": "c0972962a5a0",
+   "first_seen": "2026-08-10"
   },
   {
    "source": "heritageweek",
@@ -2215,6 +2382,19 @@
    "first_seen": "2026-08-09"
   },
   {
+   "source": "heritageweek",
+   "venue": "OPW",
+   "town": null,
+   "county": "Sligo",
+   "title": "Flags, Protest and Sligo Abbey – Heritage Week 2026 History Talk",
+   "date": "2026-08-19",
+   "time": "2pm - 4pm",
+   "url": "https://www.heritageweek.ie/event-listings/flags-protest-and-sligo-abbey-heritage-week-2026-history-talk",
+   "category": null,
+   "id": "96052a561c53",
+   "first_seen": "2026-08-10"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Roe Valley Arts and Cultural Centre",
    "town": "Limavady",
@@ -2239,6 +2419,19 @@
    "category": null,
    "id": "2a9e2583b8bd",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Sligo Abbey",
+   "town": null,
+   "county": "Sligo",
+   "title": "Irish Traditional music with Aidan Shannon, Jacinta Shannon and Rachel Mc Govern",
+   "date": "2026-08-19",
+   "time": "3pm - 4:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/irish-traditional-music-with-aidan-shannon-jacinta-shannon-and-rachel-mc-govern",
+   "category": null,
+   "id": "6e0d0d0be3c8",
+   "first_seen": "2026-08-10"
   },
   {
    "source": "heritageweek",
@@ -3610,6 +3803,19 @@
   },
   {
    "source": "heritageweek",
+   "venue": "The Old Schoolhouse Community Café",
+   "town": null,
+   "county": "Sligo",
+   "title": "'Make Your Own Eco-Cleaning Products' with Mella O’Brolchain",
+   "date": "2026-08-22",
+   "time": "11am - 12pm",
+   "url": "https://www.heritageweek.ie/event-listings/make-your-own-eco-cleaning-products-with-mella-obrolchain",
+   "category": null,
+   "id": "a37a01c25d89",
+   "first_seen": "2026-08-10"
+  },
+  {
+   "source": "heritageweek",
    "venue": "Tireragh Community Support Ltd",
    "town": null,
    "county": "Sligo",
@@ -3895,6 +4101,19 @@
    "category": null,
    "id": "ec705cb5681d",
    "first_seen": "2026-08-09"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Kathleen O'Hara Farren",
+   "town": "Moville",
+   "county": "Donegal",
+   "title": "Appreciating Water",
+   "date": "2026-08-23",
+   "time": "2pm - 4pm",
+   "url": "https://www.heritageweek.ie/event-listings/appreciating-water",
+   "category": null,
+   "id": "f38b9b6d01e6",
+   "first_seen": "2026-08-10"
   },
   {
    "source": "heritageweek",
@@ -8092,62 +8311,6 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "eaf",
-   "venue": "Glebe Gallery & Gardens",
-   "town": "Churchill",
-   "county": "Donegal",
-   "title": "Cathal McGinley – Scattered at the Edges",
-   "date": "2027-07-05",
-   "end_date": "2026-08-30",
-   "time": "10am - 6pm (Daily)",
-   "url": "https://eaf.ie/events/cathal-mcginley-scattered-at-the-edges/",
-   "category": "Visual Arts",
-   "id": "8de264c5a8a9",
-   "first_seen": "2026-08-02"
-  },
-  {
-   "source": "eaf",
-   "venue": "Donegal County Museum",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Rockwell Kent – An American Artist in Donegal",
-   "date": "2027-07-10",
-   "end_date": "2026-09-05",
-   "time": "Monday – Friday 10am - 4.30pm, (Closed 12.30pm - 1pm), Saturday, 1pm - 4.30pm",
-   "url": "https://eaf.ie/events/rockwell-kent-an-american-artist-in-donegal/",
-   "category": "Visual Arts",
-   "id": "99f9da705504",
-   "first_seen": "2026-08-02"
-  },
-  {
-   "source": "eaf",
-   "venue": "An Gailearaí, Ionad Áislann, Páirc Ghnó Ghaoth Dobhair, F92 PT38",
-   "town": "Gaoth Dobhair",
-   "county": "Donegal",
-   "title": "Déanta i nDún na nGall – Made in Donegal",
-   "date": "2027-07-11",
-   "end_date": "2026-09-04",
-   "time": "11am-5pm, Monday, Tuesday, Thursday & Friday 1pm-8pm, Wednesdays",
-   "url": "https://eaf.ie/events/deanta-i-ndun-na-ngall-made-in-donegal/",
-   "category": "Visual Arts",
-   "id": "3a1183187e13",
-   "first_seen": "2026-08-02"
-  },
-  {
-   "source": "eaf",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Barbara Knežević: Gvozdene Kapije | The Iron Gates",
-   "date": "2027-07-11",
-   "end_date": "2026-09-19",
-   "time": "11am - 5pm Tuesday – Friday, 1pm - 5pm Saturdays",
-   "url": "https://eaf.ie/events/barbara-knezevic-gvozdene-kapije-the-iron-gates/",
-   "category": "Visual Arts",
-   "id": "134e297f958f",
-   "first_seen": "2026-08-02"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -8186,10 +8349,6 @@
    "time": "6:00 pm",
    "url": "https://regionalculturalcentre.com/exhibitions/the-rain-tells-us-everything-catherine-mcdonald-katie-nolan-and-niamh-schmidtke-gallery-2-foyer-gallery/",
    "category": "Exhibition",
-   "merged_from": [
-    "eaf",
-    "rcc"
-   ],
    "id": "cecb99220148",
    "first_seen": "2026-08-01"
   },
@@ -8208,19 +8367,6 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "craftmonth_leitrim",
-   "venue": "The Leitrim Design House",
-   "town": null,
-   "county": "Leitrim",
-   "title": "Richard West – Exhibition",
-   "date": "2027-07-17",
-   "end_date": "2026-08-22",
-   "url": "https://augustcraftmonth.org/acm-event/richard-west-exhibition/",
-   "category": "Exhibition, Craft/Hobbies",
-   "id": "ae1effa5af25",
-   "first_seen": "2026-08-02"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -8233,58 +8379,6 @@
    "category": "Workshop, Kids/Family",
    "id": "44e18aa9a312",
    "first_seen": "2026-08-01"
-  },
-  {
-   "source": "craftmonth_donegal",
-   "venue": "Donegal Designer Makers",
-   "town": "Ardara",
-   "county": "Donegal",
-   "title": "Land, Sea & Sky (Tir, Farraige Agus Speir)",
-   "date": "2027-07-31",
-   "end_date": "2026-08-31",
-   "url": "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/",
-   "category": "Exhibition, Craft/Hobbies",
-   "id": "9f46f8ac590f",
-   "first_seen": "2026-08-08"
-  },
-  {
-   "source": "craftmonth_derry",
-   "venue": "Derry Designer Makers",
-   "town": null,
-   "county": "Derry",
-   "title": "Derry Designer Makers – Meet our Creatives",
-   "date": "2027-08-01",
-   "end_date": "2026-08-31",
-   "url": "https://augustcraftmonth.org/acm-event/derry-designer-makers-meet-our-creatives/",
-   "category": "Open Studio, Exhibition, Meet the Maker, Kids/Family, Demonstration, Craft/Hobbies",
-   "id": "7332e9fb2531",
-   "first_seen": "2026-08-09"
-  },
-  {
-   "source": "craftmonth_donegal",
-   "venue": "Kevin Callaghan",
-   "town": "Donegal Town",
-   "county": "Donegal",
-   "title": "Kevin Callaghan Pottery Shop & Open Studio",
-   "date": "2027-08-01",
-   "end_date": "2026-08-31",
-   "url": "https://augustcraftmonth.org/acm-event/kcp-pottery-shop-studio/",
-   "category": "Workshop, Open Studio, Exhibition, Meet the Maker, Demonstration, Craft/Hobbies",
-   "id": "f54e2b9819ca",
-   "first_seen": "2026-08-09"
-  },
-  {
-   "source": "craftmonth_tyrone",
-   "venue": "Sharyn Kelly",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "August Craft Month in Strule Arts Centre with Sharyn Kelly",
-   "date": "2027-08-01",
-   "end_date": "2026-08-29",
-   "url": "https://augustcraftmonth.org/acm-event/august-craft-month-in-strule-arts-centre-with-sharyn-kelly/",
-   "category": "Exhibition, Craft/Hobbies",
-   "id": "b87322659526",
-   "first_seen": "2026-08-09"
   }
  ]
 }
