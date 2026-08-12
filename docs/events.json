@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-08-10T23:51Z",
+ "generated_at": "2026-08-12T00:01Z",
  "failed_sources": [],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
-  "hawkswell": "2026-08-09T23:47Z",
+  "hawkswell": "2026-08-12T00:01Z",
   "craftmonth_donegal": "2026-08-07T23:49Z",
   "craftmonth_derry": "2026-08-07T23:49Z",
   "craftmonth_derry_city": "2026-08-07T23:49Z",
@@ -16,25 +16,25 @@
   "heritageweek": "2026-08-07T23:49Z"
  },
  "consecutive_failures": {
-  "an_grianan": 1,
-  "rcc": 1,
-  "balor": 1,
-  "abbey": 1,
+  "an_grianan": 0,
+  "rcc": 0,
+  "balor": 0,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 1,
-  "craftmonth_donegal": 1,
-  "craftmonth_derry": 1,
-  "craftmonth_derry_city": 1,
-  "craftmonth_leitrim": 1,
-  "craftmonth_sligo": 1,
-  "craftmonth_tyrone": 1,
-  "craftmonth_fermanagh": 1,
+  "eaf": 0,
+  "craftmonth_donegal": 0,
+  "craftmonth_derry": 0,
+  "craftmonth_derry_city": 0,
+  "craftmonth_leitrim": 0,
+  "craftmonth_sligo": 0,
+  "craftmonth_tyrone": 0,
+  "craftmonth_fermanagh": 0,
   "heritageweek": 0,
-  "thedock": 1,
+  "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
@@ -325,7 +325,12 @@
   "https://www.heritageweek.ie/event-listings/glenfarne-kiltyclogher-heritage-bus-tour": null,
   "https://www.heritageweek.ie/event-listings/illustrated-talk-excavations-in-church-park-field-derrygonnelly-co-fermanagh": "Derrygonnelly",
   "https://www.heritageweek.ie/event-listings/scealtaí-í-gcloch-fieldtrip-to-cronkeerin-lime-kiln-and-kiltiernan-graveyard": "Ardara",
-  "https://www.heritageweek.ie/event-listings/traditional-harvest-straw-craft": null
+  "https://www.heritageweek.ie/event-listings/traditional-harvest-straw-craft": null,
+  "https://www.heritageweek.ie/event-listings/a-heritage-walk-through-letterkenny": "Letterkenny",
+  "https://www.heritageweek.ie/event-listings/ballisodare-fishery-local-heritage-knotting-for-life-and-safeguarding-our-salmon": null,
+  "https://www.heritageweek.ie/event-listings/cothú-curaíocht-agus-cúram-living-in-service-to-the-land": "Ghaoth Dobhair",
+  "https://www.heritageweek.ie/event-listings/place-names-of-clonmany": "Clonmany",
+  "https://www.heritageweek.ie/event-listings/sketching-our-heritage": null
  },
  "events": [
   {
@@ -337,7 +342,7 @@
    "date": "2026-06-13",
    "end_date": "2026-08-22",
    "time": "11:00 am",
-   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-11",
+   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-12",
    "category": null,
    "id": "3df0a1f19014",
    "first_seen": "2026-08-01"
@@ -504,45 +509,6 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "eventbrite_donegal",
-   "venue": "Cultúrlann Uí Chanáin",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "Stormont Sources Podcast Live",
-   "date": "2026-08-11",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/stormont-sources-podcast-live/",
-   "category": null,
-   "id": "181a77cd5c1e",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Nerve Centre",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "Shoot The People",
-   "date": "2026-08-11",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/shoot-the-people/",
-   "category": null,
-   "id": "0bfa2e29ca9d",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Roe Valley Arts and Cultural Centre",
-   "town": "Limavady",
-   "county": "Derry",
-   "title": "Art & Science Rocket Adventures for 6-11yrs",
-   "date": "2026-08-11",
-   "time": "11:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/art-science-rocket-adventures-for-6-11yrs/",
-   "category": "Kids/Family",
-   "id": "90adaa242aa7",
-   "first_seen": "2026-07-20"
-  },
-  {
    "source": "craftmonth_fermanagh",
    "venue": "Belleek Pottery",
    "town": "Belleek",
@@ -641,6 +607,7 @@
    "time": "7:00PM",
    "url": "https://nervecentre.org/whats-on/our-space-summer-sounds",
    "category": "Music/Comedy",
+   "sold_out": true,
    "id": "76817af8bd51",
    "first_seen": "2026-07-21"
   },
@@ -1031,6 +998,19 @@
    "category": null,
    "id": "37291c40aed8",
    "first_seen": "2026-07-18"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Lands of Eogain",
+   "town": "Clonmany",
+   "county": "Donegal",
+   "title": "Place Names of Clonmany",
+   "date": "2026-08-15",
+   "time": "12:30pm - 1pm",
+   "url": "https://www.heritageweek.ie/event-listings/place-names-of-clonmany",
+   "category": null,
+   "id": "2533ae2a12dd",
+   "first_seen": "2026-08-12"
   },
   {
    "source": "heritageweek",
@@ -2030,6 +2010,19 @@
   },
   {
    "source": "heritageweek",
+   "venue": "North Sligo Sketchers Group",
+   "town": null,
+   "county": "Sligo",
+   "title": "Sketching the Heritage of Mullaghmore",
+   "date": "2026-08-18",
+   "time": "7:15am - 8:45am",
+   "url": "https://www.heritageweek.ie/event-listings/sketching-our-heritage",
+   "category": null,
+   "id": "8a6917ec67d0",
+   "first_seen": "2026-08-12"
+  },
+  {
+   "source": "heritageweek",
    "venue": "Riverstown Tidy Towns",
    "town": "Riverstown",
    "county": "Sligo",
@@ -2303,6 +2296,19 @@
   },
   {
    "source": "heritageweek",
+   "venue": "Jo Co Tours Letterkenny",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "A Heritage Walk Through Letterkenny",
+   "date": "2026-08-19",
+   "time": "4pm - 5:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/a-heritage-walk-through-letterkenny",
+   "category": null,
+   "id": "3708e43d5f3f",
+   "first_seen": "2026-08-12"
+  },
+  {
+   "source": "heritageweek",
    "venue": "John Taylor",
    "town": "Riverstown",
    "county": "Sligo",
@@ -2313,6 +2319,19 @@
    "category": null,
    "id": "5d833ae93ea4",
    "first_seen": "2026-08-05"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Leabharlann Ghaoth Dobhair",
+   "town": "Ghaoth Dobhair",
+   "county": "Donegal",
+   "title": "COTHÚ, CURAÍOCHT AGUS CÚRAM – LIVING IN SERVICE TO THE LAND",
+   "date": "2026-08-19",
+   "time": "1pm - 8pm",
+   "url": "https://www.heritageweek.ie/event-listings/cothú-curaíocht-agus-cúram-living-in-service-to-the-land",
+   "category": null,
+   "id": "8aec5afc27be",
+   "first_seen": "2026-08-12"
   },
   {
    "source": "heritageweek",
@@ -2849,6 +2868,19 @@
    "category": null,
    "id": "1a742620359b",
    "first_seen": "2026-08-09"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Ballisodare Fishing Club CLG",
+   "town": null,
+   "county": "Sligo",
+   "title": "Ballisodare Fishery - Heritage, Knotting and Safeguarding our Salmon",
+   "date": "2026-08-21",
+   "time": "6:30pm - 8:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/ballisodare-fishery-local-heritage-knotting-for-life-and-safeguarding-our-salmon",
+   "category": null,
+   "id": "f94fbf38d66c",
+   "first_seen": "2026-08-12"
   },
   {
    "source": "craftmonth_fermanagh",
@@ -4333,6 +4365,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "| 10:00AM",
+   "date": "2026-08-24",
+   "end_date": "2026-08-25",
+   "url": "https://nervecentre.org/whats-on/echoes-of-rembrance-immersive-arts-uk",
+   "category": "Culture",
+   "id": "e193f898c66b",
+   "first_seen": "2026-08-12"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Leitrim School of Art N41 E8H0",
    "town": "Ballinamore",
@@ -4814,12 +4859,12 @@
    "venue": "The Playhouse",
    "town": "Derry",
    "county": "Derry",
-   "title": "NATALIA BEYLIS - AROUND HERE, THE BIRDS PLANT THE TREES",
+   "title": "Around Here, The Birds Plant The Trees (Panel Discussion & Performance)",
    "date": "2026-09-03",
-   "url": "https://www.derryplayhouse.co.uk/event/natalia-beylis-around-here-the-birds-plant-the-trees",
+   "url": "https://www.derryplayhouse.co.uk/event/around-here-the-birds-plant-the-trees-panel-discussion-performance",
    "category": null,
-   "id": "d682a5c2cdd8",
-   "first_seen": "2026-08-01"
+   "id": "01fa5827cd05",
+   "first_seen": "2026-08-12"
   },
   {
    "source": "an_grianan",
@@ -5040,6 +5085,18 @@
    "category": null,
    "id": "62ab2d442f0c",
    "first_seen": "2026-08-07"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The Musicality of the Seemingly Mundane",
+   "date": "2026-09-05",
+   "url": "https://www.derryplayhouse.co.uk/event/the-musicality-of-the-seemingly-mundane",
+   "category": null,
+   "id": "26034eca65f2",
+   "first_seen": "2026-08-12"
   },
   {
    "source": "hawkswell",
@@ -5378,6 +5435,18 @@
    "category": "Music",
    "id": "d437664e9a1f",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The End Is In The Beginning",
+   "date": "2026-09-17",
+   "url": "https://www.derryplayhouse.co.uk/event/the-end-is-in-the-beginning",
+   "category": null,
+   "id": "c8a4ce6c6297",
+   "first_seen": "2026-08-12"
   },
   {
    "source": "an_grianan",
@@ -7441,6 +7510,20 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Santa Baby",
+   "date": "2026-12-17",
+   "end_date": "2026-12-18",
+   "url": "https://angrianan.com/event/santa-baby/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666907",
+   "category": "Theatre",
+   "id": "98fa9b5bd827",
+   "first_seen": "2026-08-12"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Villa Rose Hotel",
    "town": "Ballybofey",
@@ -7789,6 +7872,19 @@
    "category": null,
    "id": "dc1bc65c2fdd",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Patrick Feeneys Voice of Hope concert",
+   "date": "2027-02-04",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/patrick-feeneys-voice-of-hope-concert/",
+   "category": "Music",
+   "id": "e55479fd3f4a",
+   "first_seen": "2026-08-12"
   },
   {
    "source": "an_grianan",
