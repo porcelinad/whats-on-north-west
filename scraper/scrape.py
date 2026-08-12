@@ -329,7 +329,7 @@ BALOR_DATE_RE = re.compile(r"(\d{1,2})/(\d{1,2})/(\d{4})")
 BALOR_TIME_RE = re.compile(r"\d{1,2}:\d{2}\s*[ap]m", re.I)
 
 
-def parse_balor(soup, source):
+def parse_balor_listing(soup, source):
     """balorartscentre.com/?page_id=87 - redesigned as of ~July 2026.
     Each card: title (h3 link), a DD/MM/YYYY date (optionally a
     ' - DD/MM/YYYY' range), a separate time line, a genre category link,
@@ -373,6 +373,41 @@ def parse_balor(soup, source):
                     continue
                 if not time_text and BALOR_TIME_RE.search(a):
                     time_text = a
+    return events
+
+
+def parse_balor_ghostlight_lineup(soup):
+    """The Ghostlight Sessions' own event page lists that month's lineup
+    as the first plain-text paragraph inside <section class="em-event-
+    content"> - the paragraph before it is just a 'book online' button
+    (an image wrapped in a link, no text of its own), so the first
+    paragraph with any actual text reliably is the lineup line."""
+    section = soup.find("section", class_="em-event-content")
+    if not section:
+        return None
+    for p in section.find_all("p"):
+        text = clean(p.get_text())
+        if text:
+            return text
+    return None
+
+
+def parse_balor(source):
+    """Same listing as parse_balor_listing, plus one extra: Balor's
+    monthly 'Ghostlight Sessions' gets its lineup fetched from its own
+    event page and appended to the title (e.g. 'The Ghostlight Sessions
+    August 2026 — The Turfmen | Tanya McCole | Lorc D'), since the
+    listing card alone never shows who's actually playing that month."""
+    soup = fetch(source["url"])
+    events = parse_balor_listing(soup, source)
+    for ev in events:
+        if "ghostlight sessions" not in ev["title"].lower():
+            continue
+        lineup = cached_lookup(
+            GHOSTLIGHT_LINEUP_CACHE, ev["url"],
+            lambda ev=ev: parse_balor_ghostlight_lineup(fetch(ev["url"])))
+        if lineup:
+            ev["title"] = f"{ev['title']} — {lineup}"
     return events
 
 
@@ -682,6 +717,26 @@ def cached_town_lookup(url, fetch_and_extract_fn):
         return None  # don't cache - retry next run
     LOCATION_CACHE[url] = town  # a genuine "found nothing" IS worth caching
     return town
+
+
+# Same pattern as LOCATION_CACHE, but for Balor's Ghostlight Sessions
+# lineup, which is also permanent once an event exists.
+GHOSTLIGHT_LINEUP_CACHE = {}
+
+
+def cached_lookup(cache, key, fetch_and_extract_fn):
+    """Generic version of cached_town_lookup, for any per-event value
+    that's fetched once and permanent thereafter. Only caches a genuine
+    'fetched fine, computed a value (possibly None)' result - a fetch
+    that failed outright is left uncached so it's retried next run."""
+    if key in cache:
+        return cache[key]
+    try:
+        value = fetch_and_extract_fn()
+    except Exception:
+        return None
+    cache[key] = value
+    return value
 
 
 WEEKDAY_INDEX = {name: i for i, name in enumerate(
@@ -1833,7 +1888,7 @@ SOURCES = [
      "parser": parse_rcc},
     {"name": "balor", "venue": "Balor Arts Centre", "town": "Ballybofey",
      "county": "Donegal", "url": "https://www.balorartscentre.com/?page_id=87",
-     "parser": parse_balor},
+     "parser": parse_balor, "custom_fetch": True},
     {"name": "abbey", "venue": "Abbey Arts Centre", "town": "Ballyshannon",
      "county": "Donegal", "url": "https://abbeycentre.ie/",
      "parser": parse_abbey},
@@ -2159,11 +2214,12 @@ def load_previous():
             data.setdefault("source_last_run", {})
             data.setdefault("consecutive_failures", {})
             data.setdefault("location_cache", {})
+            data.setdefault("ghostlight_lineup_cache", {})
             return data
         except Exception:
             pass
     return {"events": [], "source_last_run": {}, "consecutive_failures": {},
-            "location_cache": {}}
+            "location_cache": {}, "ghostlight_lineup_cache": {}}
 
 
 def notify(new_events):
@@ -2193,10 +2249,11 @@ def notify(new_events):
 
 
 def main():
-    global LOCATION_CACHE
+    global LOCATION_CACHE, GHOSTLIGHT_LINEUP_CACHE
     previous = load_previous()
     prev_by_key = {event_key(e): e for e in previous.get("events", [])}
     LOCATION_CACHE = dict(previous.get("location_cache", {}))
+    GHOSTLIGHT_LINEUP_CACHE = dict(previous.get("ghostlight_lineup_cache", {}))
 
     all_events, failed = [], []
     source_last_run = dict(previous.get("source_last_run", {}))
@@ -2296,6 +2353,7 @@ def main():
         "source_last_run": source_last_run,
         "consecutive_failures": consecutive_failures,
         "location_cache": LOCATION_CACHE,
+        "ghostlight_lineup_cache": GHOSTLIGHT_LINEUP_CACHE,
         "events": final,
     }, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"Wrote {len(final)} upcoming events to {DATA_FILE}")
