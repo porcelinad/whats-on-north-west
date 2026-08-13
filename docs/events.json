@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-12T00:01Z",
+ "generated_at": "2026-08-12T23:59Z",
  "failed_sources": [],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
@@ -330,7 +330,12 @@
   "https://www.heritageweek.ie/event-listings/ballisodare-fishery-local-heritage-knotting-for-life-and-safeguarding-our-salmon": null,
   "https://www.heritageweek.ie/event-listings/cothú-curaíocht-agus-cúram-living-in-service-to-the-land": "Ghaoth Dobhair",
   "https://www.heritageweek.ie/event-listings/place-names-of-clonmany": "Clonmany",
-  "https://www.heritageweek.ie/event-listings/sketching-our-heritage": null
+  "https://www.heritageweek.ie/event-listings/sketching-our-heritage": null,
+  "https://www.heritageweek.ie/event-listings/talk-on-orourkes-of-breifni-by-francis-kelly": "Dromahair"
+ },
+ "ghostlight_lineup_cache": {
+  "https://www.balorartscentre.com/?event=the-ghostlight-sessions-august-2026": "The Turfmen | Tanya McCole | Lorc D",
+  "https://www.balorartscentre.com/?event=the-ghostlight-sessions-september-2026": "Lazember | DK | Stitch"
  },
  "events": [
   {
@@ -342,7 +347,7 @@
    "date": "2026-06-13",
    "end_date": "2026-08-22",
    "time": "11:00 am",
-   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-12",
+   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-13",
    "category": null,
    "id": "3df0a1f19014",
    "first_seen": "2026-08-01"
@@ -483,19 +488,6 @@
    "first_seen": "2026-08-10"
   },
   {
-   "source": "craftmonth_sligo",
-   "venue": "Tubbercurry Old Fair Day",
-   "town": "Tubbercurry",
-   "county": "Sligo",
-   "title": "Tubbercurry Old Fair Day",
-   "date": "2026-08-08",
-   "end_date": "2026-08-12",
-   "url": "https://augustcraftmonth.org/acm-event/tubbercurry-old-fair-day/",
-   "category": "Meet the Maker, Market, Festival, Fair, Kids/Family, Demonstration, Craft/Hobbies",
-   "id": "110e1d86a6de",
-   "first_seen": "2026-08-01"
-  },
-  {
    "source": "craftmonth_derry",
    "venue": "Fiona Shannon",
    "town": "Coleraine",
@@ -507,56 +499,6 @@
    "category": "Workshop, Craft/Hobbies",
    "id": "7303102862f7",
    "first_seen": "2026-08-01"
-  },
-  {
-   "source": "craftmonth_fermanagh",
-   "venue": "Belleek Pottery",
-   "town": "Belleek",
-   "county": "Fermanagh",
-   "title": "Belleek Pottery Hands On Experience",
-   "date": "2026-08-12",
-   "url": "https://augustcraftmonth.org/acm-event/belleek-pottery-hands-on-experience-2/",
-   "category": "Workshop, Kids/Family, Craft/Hobbies",
-   "id": "f26c1b4cfb54",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Cultúrlann Uí Chanáin",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "A New Beginning? PSNI: 25 Years On",
-   "date": "2026-08-12",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/a-new-beginning-psni-25-years-on/",
-   "category": null,
-   "id": "bd2bd0cac95a",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "mcgrorys",
-   "venue": "McGrory's Hotel",
-   "town": "Culdaff",
-   "county": "Donegal",
-   "title": "Sara Dougherty Carter",
-   "date": "2026-08-12",
-   "url": "https://www.mcgrorys.ie/entertainment/78-168/",
-   "category": "Music",
-   "id": "9ea19fa6f412",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Nerve Centre",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "Journacide: The War on Truth",
-   "date": "2026-08-12",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/journacide-the-war-on-truth/",
-   "category": null,
-   "id": "bb8d0862d92e",
-   "first_seen": "2026-07-20"
   },
   {
    "source": "eventbrite_donegal",
@@ -2231,6 +2173,19 @@
   },
   {
    "source": "heritageweek",
+   "venue": "Dromahair Heritage Group",
+   "town": "Dromahair",
+   "county": "Leitrim",
+   "title": "Talk on ORourkes of BREIFNI by Francis Kelly",
+   "date": "2026-08-19",
+   "time": "7pm - 8:45pm",
+   "url": "https://www.heritageweek.ie/event-listings/talk-on-orourkes-of-breifni-by-francis-kelly",
+   "category": null,
+   "id": "098198b9ba3b",
+   "first_seen": "2026-08-13"
+  },
+  {
+   "source": "heritageweek",
    "venue": "Drumcliffe Rathcormac Tidy Towns Committee",
    "town": null,
    "county": "Sligo",
@@ -2547,13 +2502,13 @@
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
    "county": "Donegal",
-   "title": "The Ghostlight Sessions August 2026",
+   "title": "The Ghostlight Sessions August 2026 — The Turfmen | Tanya McCole | Lorc D",
    "date": "2026-08-20",
    "time": "8:00 pm",
    "url": "https://www.balorartscentre.com/?event=the-ghostlight-sessions-august-2026",
    "category": "Music",
-   "id": "d7082f3db7d3",
-   "first_seen": "2026-07-31"
+   "id": "c7dc6b5b9c08",
+   "first_seen": "2026-08-13"
   },
   {
    "source": "heritageweek",
@@ -3109,7 +3064,7 @@
    "title": "Biodiversity and Invasive Species Walk and Talk",
    "date": "2026-08-21",
    "time": "6pm - 8:30pm",
-   "url": "https://www.heritageweek.ie/event-listings/biodiversity-and-invasive-species-walk-and-talk-2",
+   "url": "https://www.heritageweek.ie/event-listings/biodiversity-and-invasive-species-walk-and-talk-3",
    "merged_from": [
     "heritageweek"
    ],
@@ -4404,6 +4359,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "An Grianán Youth Theatre Open Day",
+   "date": "2026-08-26",
+   "end_date": "2026-08-26",
+   "url": "https://angrianan.com/event/an-grianan-youth-theatre-open-day/",
+   "category": "Workshop",
+   "id": "060b2a614f08",
+   "first_seen": "2026-08-13"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Leitrim School of Art N41 E8H0",
    "town": "Ballinamore",
@@ -5415,13 +5383,13 @@
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
    "county": "Donegal",
-   "title": "The Ghostlight Sessions September 2026",
+   "title": "The Ghostlight Sessions September 2026 — Lazember | DK | Stitch",
    "date": "2026-09-17",
    "time": "8:00 pm",
    "url": "https://www.balorartscentre.com/?event=the-ghostlight-sessions-september-2026",
    "category": "Music",
-   "id": "33c4f60ae39e",
-   "first_seen": "2026-08-07"
+   "id": "1630f46e4beb",
+   "first_seen": "2026-08-13"
   },
   {
    "source": "strule",
@@ -5444,6 +5412,9 @@
    "title": "The End Is In The Beginning",
    "date": "2026-09-17",
    "url": "https://www.derryplayhouse.co.uk/event/the-end-is-in-the-beginning",
+   "merged_from": [
+    "playhouse"
+   ],
    "category": null,
    "id": "c8a4ce6c6297",
    "first_seen": "2026-08-12"
@@ -6040,6 +6011,19 @@
    "category": "Film",
    "id": "bb93c0f22345",
    "first_seen": "2026-08-05"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "As I Lay Dreaming by Shaun Byrne",
+   "date": "2026-10-07",
+   "url": "https://angrianan.com/event/as-i-lay-dreaming/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666947",
+   "category": "Theatre",
+   "id": "653800deb2b2",
+   "first_seen": "2026-08-13"
   },
   {
    "source": "ardhowen",
@@ -6979,12 +6963,38 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
+   "title": "Aliens",
+   "date": "2026-11-09",
+   "url": "https://angrianan.com/event/aliens/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666943/events/128662077/seats?zone=Default",
+   "category": "Theatre",
+   "id": "8f307c9c0412",
+   "first_seen": "2026-08-13"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
    "title": "The Canterbury Tales – Encore Productions",
    "date": "2026-11-11",
    "url": "https://angrianan.com/event/the-canterbury-tales-encore-productions/",
    "category": "Theatre",
    "id": "bbca63f4377a",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Donegal Giving Conference",
+   "date": "2026-11-12",
+   "end_date": "2026-11-12",
+   "url": "https://angrianan.com/event/donegal-giving-conference/",
+   "category": "Variety",
+   "id": "820307808afd",
+   "first_seen": "2026-08-13"
   },
   {
    "source": "rcc",
@@ -8312,6 +8322,19 @@
    "category": "Comedy",
    "id": "c85948718fa2",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "The Highstool Prophets – This Is The Life Tour",
+   "date": "2027-04-09",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/the-highstool-prophets-this-is-the-life-tour/",
+   "category": "Music",
+   "id": "05a5e0d8584f",
+   "first_seen": "2026-08-13"
   },
   {
    "source": "ardhowen",
