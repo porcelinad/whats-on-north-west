@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-12T23:59Z",
+ "generated_at": "2026-08-14T00:00Z",
  "failed_sources": [],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
@@ -331,7 +331,13 @@
   "https://www.heritageweek.ie/event-listings/cothú-curaíocht-agus-cúram-living-in-service-to-the-land": "Ghaoth Dobhair",
   "https://www.heritageweek.ie/event-listings/place-names-of-clonmany": "Clonmany",
   "https://www.heritageweek.ie/event-listings/sketching-our-heritage": null,
-  "https://www.heritageweek.ie/event-listings/talk-on-orourkes-of-breifni-by-francis-kelly": "Dromahair"
+  "https://www.heritageweek.ie/event-listings/talk-on-orourkes-of-breifni-by-francis-kelly": "Dromahair",
+  "https://www.heritageweek.ie/event-listings/all-the-hours-2": null,
+  "https://www.heritageweek.ie/event-listings/introduction-to-freshwater-science-drumboe-woods": null,
+  "https://www.heritageweek.ie/event-listings/mystery-heritage-bus-tour": null,
+  "https://www.heritageweek.ie/event-listings/newpark-garden-and-historic-building-open-afternoon": "Ballymote",
+  "https://www.heritageweek.ie/event-listings/opening-of-our-woodland-walk": "Manorcunningham",
+  "https://www.heritageweek.ie/event-listings/wellness-with-weeds": "Dunfanaghy"
  },
  "ghostlight_lineup_cache": {
   "https://www.balorartscentre.com/?event=the-ghostlight-sessions-august-2026": "The Turfmen | Tanya McCole | Lorc D",
@@ -347,7 +353,7 @@
    "date": "2026-06-13",
    "end_date": "2026-08-22",
    "time": "11:00 am",
-   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-13",
+   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-14",
    "category": null,
    "id": "3df0a1f19014",
    "first_seen": "2026-08-01"
@@ -486,85 +492,6 @@
    "category": "Exhibition, Craft/Hobbies",
    "id": "cb7f1eee0e2b",
    "first_seen": "2026-08-10"
-  },
-  {
-   "source": "craftmonth_derry",
-   "venue": "Fiona Shannon",
-   "town": "Coleraine",
-   "county": "Derry",
-   "title": "4-Day Intensive Throwing Course for 18+yrs",
-   "date": "2026-08-10",
-   "end_date": "2026-08-13",
-   "url": "https://augustcraftmonth.org/acm-event/4-day-intensive-throwing-course-for-18yrs/",
-   "category": "Workshop, Craft/Hobbies",
-   "id": "7303102862f7",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Cultúrlann Uí Chanáin",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Youth Voices: For the Future of Ireland",
-   "date": "2026-08-13",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/youth-voices-for-the-future-of-ireland/",
-   "category": null,
-   "id": "71a07c00a663",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Gracie's Bar Sligo",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "3 Bucks Left - Comedy Show",
-   "date": "2026-08-13",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/3-bucks-left-comedy-show/",
-   "category": null,
-   "id": "aca976500b27",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Nerve Centre",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "Celtic Utopia",
-   "date": "2026-08-13",
-   "time": "18:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/celtic-utopia/",
-   "category": null,
-   "id": "57eb94970e4a",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Our Space | Summer Sounds",
-   "date": "2026-08-13",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/our-space-summer-sounds",
-   "category": "Music/Comedy",
-   "sold_out": true,
-   "id": "76817af8bd51",
-   "first_seen": "2026-07-21"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Nerve Centre",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "The Time is Now! The Story of the Craigavon Two",
-   "date": "2026-08-13",
-   "time": "19:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-time-is-now-the-story-of-the-craigavon-two/",
-   "category": null,
-   "id": "fdaffc980022",
-   "first_seen": "2026-07-20"
   },
   {
    "source": "craftmonth_tyrone",
@@ -1155,6 +1082,19 @@
    "venue": "Sligo Abbey",
    "town": null,
    "county": "Sligo",
+   "title": "All the Hours",
+   "date": "2026-08-15",
+   "time": "6pm - 7pm",
+   "url": "https://www.heritageweek.ie/event-listings/all-the-hours-2",
+   "category": null,
+   "id": "f0cbd53077ec",
+   "first_seen": "2026-08-14"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Sligo Abbey",
+   "town": null,
+   "county": "Sligo",
    "title": "Book Launch - Harry Keaney's 'A Wall that Speaks'",
    "date": "2026-08-15",
    "time": "4:30pm - 5:30pm",
@@ -1230,7 +1170,7 @@
   },
   {
    "source": "craftmonth_sligo",
-   "venue": "Yard Studios - Alison Hunter, Mary Cooper",
+   "venue": "Yard Studios",
    "town": null,
    "county": "Sligo",
    "title": "Yard Studios Open Morning",
@@ -1830,6 +1770,19 @@
   },
   {
    "source": "heritageweek",
+   "venue": "Donegal Local Development Company & Drumbarnett Farms",
+   "town": "Manorcunningham",
+   "county": "Donegal",
+   "title": "Opening of our Woodland Walk",
+   "date": "2026-08-18",
+   "time": "7pm - 8pm",
+   "url": "https://www.heritageweek.ie/event-listings/opening-of-our-woodland-walk",
+   "category": null,
+   "id": "4938671ba8d5",
+   "first_seen": "2026-08-14"
+  },
+  {
+   "source": "heritageweek",
    "venue": "Donegal Town Walking Tours",
    "town": "Donegal Town",
    "county": "Donegal",
@@ -2040,6 +1993,19 @@
    "category": null,
    "id": "c0972962a5a0",
    "first_seen": "2026-08-10"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "CALM Project Peaceplus",
+   "town": null,
+   "county": "Donegal",
+   "title": "Introduction to Freshwater Science - Drumboe Woods",
+   "date": "2026-08-19",
+   "time": "11am - 12:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/introduction-to-freshwater-science-drumboe-woods",
+   "category": null,
+   "id": "e4b9452e6591",
+   "first_seen": "2026-08-14"
   },
   {
    "source": "heritageweek",
@@ -2723,6 +2689,19 @@
   },
   {
    "source": "heritageweek",
+   "venue": "Newpark Demesne and Juniper Barn",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Newpark Demesne, Juniper Barn and Gardens",
+   "date": "2026-08-20",
+   "time": "1pm - 5pm",
+   "url": "https://www.heritageweek.ie/event-listings/newpark-garden-and-historic-building-open-afternoon",
+   "category": null,
+   "id": "c506c2e35e8d",
+   "first_seen": "2026-08-14"
+  },
+  {
+   "source": "heritageweek",
    "venue": "Newpark House, Co. Sligo in association with Historic Houses of Ireland",
    "town": "Ballymote",
    "county": "Sligo",
@@ -2952,6 +2931,19 @@
    "category": null,
    "id": "19d2a01d63d4",
    "first_seen": "2026-08-02"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Dunkineely Community Ltd",
+   "town": null,
+   "county": "Donegal",
+   "title": "Mystery Heritage Bus Tour",
+   "date": "2026-08-21",
+   "time": "9:30am - 6:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/mystery-heritage-bus-tour",
+   "category": null,
+   "id": "703048fad3ab",
+   "first_seen": "2026-08-14"
   },
   {
    "source": "heritageweek",
@@ -3319,6 +3311,19 @@
    "category": null,
    "id": "296fddca514e",
    "first_seen": "2026-08-11"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "The Workhouse, Dunfanaghy",
+   "town": "Dunfanaghy",
+   "county": "Donegal",
+   "title": "Wellness with 'Weeds'",
+   "date": "2026-08-21",
+   "time": "11am - 1pm",
+   "url": "https://www.heritageweek.ie/event-listings/wellness-with-weeds",
+   "category": null,
+   "id": "63f7f29e8dc6",
+   "first_seen": "2026-08-14"
   },
   {
    "source": "heritageweek",
@@ -3859,7 +3864,7 @@
    "title": "Céilí Dancing Course with Grace Meenan and Margaret Campbell",
    "date": "2026-08-22",
    "time": "8pm - 9pm",
-   "url": "https://www.heritageweek.ie/event-listings/céilí-dancing-course-with-grace-meenan-and-margaret-campbell",
+   "url": "https://www.heritageweek.ie/event-listings/céilí-dancing-course-with-grace-meenan-and-margaret-campbell-2",
    "merged_from": [
     "heritageweek"
    ],
@@ -4460,6 +4465,19 @@
    "first_seen": "2026-08-07"
   },
   {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Same Hands, Different Stage - Costume Making Workshop",
+   "date": "2026-08-27",
+   "end_date": "2026-08-29",
+   "url": "https://www.derryplayhouse.co.uk/event/same-hands-different-stage-costume-making-workshop",
+   "category": null,
+   "id": "fac71eaa473d",
+   "first_seen": "2026-08-14"
+  },
+  {
    "source": "craftmonth_derry",
    "venue": "Adam Frew",
    "town": null,
@@ -4651,6 +4669,22 @@
    "category": "Market, Craft/Hobbies",
    "id": "3775629cc7dc",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Workshop: Writing for Non – Human Entities with Barbara Knežević",
+   "date": "2026-08-29",
+   "time": "2:00 pm",
+   "url": "https://regionalculturalcentre.com/events/workshop-writing-for-non-human-entities-with-barbara-knezevic/",
+   "category": "Workshop",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "498bf4ab5ebf",
+   "first_seen": "2026-08-14"
   },
   {
    "source": "playhouse",
@@ -7164,10 +7198,7 @@
    "date": "2026-11-20",
    "time": "8:00 pm",
    "url": "https://regionalculturalcentre.com/events/rcc-music-tommy-sands/",
-   "merged_from": [
-    "rcc"
-   ],
-   "category": null,
+   "category": "Music",
    "id": "56a27cfbf3d4",
    "first_seen": "2026-07-14"
   },
