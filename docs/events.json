@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-08-14T00:00Z",
+ "generated_at": "2026-08-14T23:38Z",
  "failed_sources": [],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
-  "hawkswell": "2026-08-12T00:01Z",
+  "hawkswell": "2026-08-14T23:38Z",
   "craftmonth_donegal": "2026-08-07T23:49Z",
   "craftmonth_derry": "2026-08-07T23:49Z",
   "craftmonth_derry_city": "2026-08-07T23:49Z",
@@ -337,7 +337,10 @@
   "https://www.heritageweek.ie/event-listings/mystery-heritage-bus-tour": null,
   "https://www.heritageweek.ie/event-listings/newpark-garden-and-historic-building-open-afternoon": "Ballymote",
   "https://www.heritageweek.ie/event-listings/opening-of-our-woodland-walk": "Manorcunningham",
-  "https://www.heritageweek.ie/event-listings/wellness-with-weeds": "Dunfanaghy"
+  "https://www.heritageweek.ie/event-listings/wellness-with-weeds": "Dunfanaghy",
+  "https://www.heritageweek.ie/event-listings/book-launch-by-brendan-rohan": "Dunfanaghy",
+  "https://www.heritageweek.ie/event-listings/kids-cinema-song-of-the-sea": "Dunfanaghy",
+  "https://www.heritageweek.ie/event-listings/kids-cinema-the-secret-of-kells": "Dunfanaghy"
  },
  "ghostlight_lineup_cache": {
   "https://www.balorartscentre.com/?event=the-ghostlight-sessions-august-2026": "The Turfmen | Tanya McCole | Lorc D",
@@ -353,7 +356,7 @@
    "date": "2026-06-13",
    "end_date": "2026-08-22",
    "time": "11:00 am",
-   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-14",
+   "url": "https://www.themodel.ie/?event=jack-b-yeats-summer-tours-2026&event_date=2026-08-15",
    "category": null,
    "id": "3df0a1f19014",
    "first_seen": "2026-08-01"
@@ -492,131 +495,6 @@
    "category": "Exhibition, Craft/Hobbies",
    "id": "cb7f1eee0e2b",
    "first_seen": "2026-08-10"
-  },
-  {
-   "source": "craftmonth_tyrone",
-   "venue": "Ann Omagh",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Omagh Crafty Kids Craft Fair",
-   "date": "2026-08-14",
-   "url": "https://augustcraftmonth.org/acm-event/omagh-crafty-kids-craft-fair/",
-   "category": "Fair, Kids/Family, Craft/Hobbies",
-   "id": "00f9f84915f9",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "craftmonth_derry",
-   "venue": "Atlantic Craft NI",
-   "town": "Coleraine",
-   "county": "Derry",
-   "title": "Gathering Basket Masterclass for 18+yrs",
-   "date": "2026-08-14",
-   "url": "https://augustcraftmonth.org/acm-event/gathering-basket-masterclass-for-18yrs/",
-   "category": "Workshop, Craft/Hobbies",
-   "id": "94117c320d52",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "craftmonth_fermanagh",
-   "venue": "Belleek Pottery",
-   "town": "Belleek",
-   "county": "Fermanagh",
-   "title": "Belleek Pottery Hands On Experience",
-   "date": "2026-08-14",
-   "url": "https://augustcraftmonth.org/acm-event/belleek-pottery-hands-on-experience-5/",
-   "category": "Workshop, Kids/Family, Craft/Hobbies",
-   "id": "13aaf1ee4d64",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Cultúrlann Uí Chanáin",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "Ireland’s Unity - Vote YES",
-   "date": "2026-08-14",
-   "time": "13:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/irelands-unity-vote-yes/",
-   "category": null,
-   "id": "7677bbd6f089",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "craftmonth_derry",
-   "venue": "Eleanor-Jane (E-J) McCartney",
-   "town": null,
-   "county": "Derry",
-   "title": "Tiffany Glass Workshop with Eleanor-Jane McCartney at The Giant’s Causeway",
-   "date": "2026-08-14",
-   "url": "https://augustcraftmonth.org/acm-event/tiffany-glass-workshop-with-eleanor-jane-mccartney-at-the-giants-causeway/",
-   "category": "Workshop, Craft/Hobbies",
-   "id": "4afe680fa3b8",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Holywell Trust",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "Coercive Control: Where Is the Line?",
-   "date": "2026-08-14",
-   "time": "13:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/coercive-control-where-is-the-line/",
-   "category": null,
-   "id": "b7ff92a975d9",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Leitrim School of Art N41 E8H0",
-   "town": "Ballinamore",
-   "county": "Leitrim",
-   "title": "One Day Ceramic Workshop, Friday 14th Aug 2026, 10am-4pm",
-   "date": "2026-08-14",
-   "time": "10:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/one-day-ceramic-workshop-friday-14th-aug-2026-10am-4pm/",
-   "category": null,
-   "id": "c7d0a790b763",
-   "first_seen": "2026-08-02"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Nerve Centre",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "A People’s Emergency Briefing - Screening + Panel Discussion",
-   "date": "2026-08-14",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/a-peoples-emergency-briefing-screening-panel-discussion/",
-   "category": null,
-   "id": "661b19394459",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "craftmonth_sligo",
-   "venue": "Rachel Quinn Ceramics",
-   "town": null,
-   "county": "Sligo",
-   "title": "Fresh Leaf Indigo Dyeing Demonstration",
-   "date": "2026-08-14",
-   "url": "https://augustcraftmonth.org/acm-event/fresh-leaf-indigo-dyeing-demonstration/",
-   "category": "Workshop, Craft/Hobbies",
-   "id": "33a7b436ae5d",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "The Abbey Hotel",
-   "town": "Donegal Town",
-   "county": "Donegal",
-   "title": "Neon Beatz Disco",
-   "date": "2026-08-14",
-   "time": "21:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/neon-beatz-disco/",
-   "category": null,
-   "id": "17e040a6260a",
-   "first_seen": "2026-08-02"
   },
   {
    "source": "heritageweek",
@@ -1391,19 +1269,6 @@
   },
   {
    "source": "heritageweek",
-   "venue": "Irish Landmark Trust",
-   "town": "Dungloe",
-   "county": "Donegal",
-   "title": "Open Day at Termon House",
-   "date": "2026-08-16",
-   "time": "10am - 4pm",
-   "url": "https://www.heritageweek.ie/event-listings/irish-landmark-trust-open-day-at-termon-house-in-dungloe-donegal",
-   "category": null,
-   "id": "525fd1bd5887",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "heritageweek",
    "venue": "Isaac Butt Heritage Committee",
    "town": null,
    "county": "Donegal",
@@ -1689,6 +1554,19 @@
    "category": null,
    "id": "96a49712ba26",
    "first_seen": "2026-08-08"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "The Workhouse, Dunfanaghy",
+   "town": "Dunfanaghy",
+   "county": "Donegal",
+   "title": "Kids Cinema - Song of the Sea",
+   "date": "2026-08-17",
+   "time": "2pm - 3:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/kids-cinema-song-of-the-sea",
+   "category": "Kids/Family",
+   "id": "a8242fe44ab1",
+   "first_seen": "2026-08-15"
   },
   {
    "source": "heritageweek",
@@ -1980,6 +1858,19 @@
    "category": null,
    "id": "83dc8eab35ce",
    "first_seen": "2026-08-11"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "The Workhouse, Dunfanaghy",
+   "town": "Dunfanaghy",
+   "county": "Donegal",
+   "title": "Book Launch by Brendan Rohan",
+   "date": "2026-08-18",
+   "time": "5pm - 6pm",
+   "url": "https://www.heritageweek.ie/event-listings/book-launch-by-brendan-rohan",
+   "category": null,
+   "id": "548195894e70",
+   "first_seen": "2026-08-15"
   },
   {
    "source": "heritageweek",
@@ -2702,19 +2593,6 @@
   },
   {
    "source": "heritageweek",
-   "venue": "Newpark House, Co. Sligo in association with Historic Houses of Ireland",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Visit Newpark House Gardens, Co. Sligo in association with Historic Houses of Ireland",
-   "date": "2026-08-20",
-   "time": "1pm - 5pm",
-   "url": "https://www.heritageweek.ie/event-listings/visit-newpark-house-gardens-co-sligo-in-association-with-historic-houses-of-ireland",
-   "category": null,
-   "id": "b5e5146b0e21",
-   "first_seen": "2026-08-09"
-  },
-  {
-   "source": "heritageweek",
    "venue": "Patricia O Reilly",
    "town": "Carrick on Shannon",
    "county": "Leitrim",
@@ -2751,6 +2629,19 @@
    "category": null,
    "id": "68e668b3b60d",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "The Workhouse, Dunfanaghy",
+   "town": "Dunfanaghy",
+   "county": "Donegal",
+   "title": "Kids Cinema- The Secret of Kells",
+   "date": "2026-08-20",
+   "time": "2pm - 3:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/kids-cinema-the-secret-of-kells",
+   "category": "Kids/Family",
+   "id": "2fdd6e1e8ae9",
+   "first_seen": "2026-08-15"
   },
   {
    "source": "craftmonth_derry",
@@ -3056,7 +2947,7 @@
    "title": "Biodiversity and Invasive Species Walk and Talk",
    "date": "2026-08-21",
    "time": "6pm - 8:30pm",
-   "url": "https://www.heritageweek.ie/event-listings/biodiversity-and-invasive-species-walk-and-talk-3",
+   "url": "https://www.heritageweek.ie/event-listings/biodiversity-and-invasive-species-walk-and-talk-2",
    "merged_from": [
     "heritageweek"
    ],
@@ -4533,16 +4424,16 @@
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "RCC Music: The Tunney family & Guests – Where Songs Do Thunder (Book launch and concert)",
+   "title": "RCC Music: The Tunney family & Guests – Where Songs Do Thunder (Book Launch & Concert)",
    "date": "2026-08-28",
    "time": "8:00 pm",
    "url": "https://regionalculturalcentre.com/events/rcc-music-the-tunney-family-guests-where-songs-do-thunder-book-launch-and-concert/",
+   "category": "Spoken Word",
    "merged_from": [
     "rcc"
    ],
-   "category": null,
-   "id": "382b95e6fe7d",
-   "first_seen": "2026-08-09"
+   "id": "bc0a984d76c2",
+   "first_seen": "2026-08-15"
   },
   {
    "source": "playhouse",
@@ -4685,6 +4576,18 @@
    ],
    "id": "498bf4ab5ebf",
    "first_seen": "2026-08-14"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Pride Silent Disco",
+   "date": "2026-08-29",
+   "url": "https://www.derryplayhouse.co.uk/event/pride-silent-disco",
+   "category": null,
+   "id": "1e6375009a04",
+   "first_seen": "2026-08-15"
   },
   {
    "source": "playhouse",
@@ -5190,6 +5093,19 @@
    "category": "Music",
    "id": "ab30dc1f8732",
    "first_seen": "2026-07-17"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "The Sand Park – A play written & performed by Seamus O'Rourke",
+   "date": "2026-09-09",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-sand-park-2",
+   "category": null,
+   "id": "77c05e7cc149",
+   "first_seen": "2026-08-15"
   },
   {
    "source": "nervecentre",
@@ -6021,6 +5937,18 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Iron Mountain Literature Festival 2026 – Challenging Perspectives on Contemporary Society",
+   "date": "2026-10-04",
+   "url": "https://www.thedock.ie/whats-on/iron-mountain-literature-festival-2026",
+   "category": "Literature",
+   "id": "8c9253365e96",
+   "first_seen": "2026-08-15"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -6785,18 +6713,6 @@
    "url": "https://struleartscentre.co.uk/show/jack-keogh-in-concert-with-special-guest-hugo-duncan/",
    "category": "Music",
    "id": "f56cfb83961b",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Who Shot Queen Medb? – The Story of the Táin & Cruachán Aí",
-   "date": "2026-10-29",
-   "url": "https://www.thedock.ie/whats-on/who-shot-queen-medb",
-   "category": "Literature",
-   "id": "7f4d6ce2d5d7",
    "first_seen": "2026-08-01"
   },
   {
@@ -8550,20 +8466,6 @@
    "url": "https://regionalculturalcentre.com/exhibitions/the-rain-tells-us-everything-catherine-mcdonald-katie-nolan-and-niamh-schmidtke-gallery-2-foyer-gallery/",
    "category": "Exhibition",
    "id": "cecb99220148",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Kids: Storytime",
-   "date": "2027-07-15",
-   "end_date": "2026-08-19",
-   "time": "10:00 am",
-   "url": "https://regionalculturalcentre.com/events/rcc-kids-art-workshops/",
-   "category": "Workshop, Kids/Family",
-   "id": "ed6332de15c9",
    "first_seen": "2026-08-01"
   },
   {
