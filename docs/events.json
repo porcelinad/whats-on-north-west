@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-08-23T23:36Z",
+ "generated_at": "2026-08-24T23:37Z",
  "failed_sources": [],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
-  "hawkswell": "2026-08-22T23:35Z",
+  "hawkswell": "2026-08-24T23:37Z",
   "craftmonth_donegal": "2026-08-07T23:49Z",
   "craftmonth_derry": "2026-08-07T23:49Z",
   "craftmonth_derry_city": "2026-08-07T23:49Z",
@@ -468,31 +468,6 @@
    "category": "Exhibition, Craft/Hobbies",
    "id": "cb7f1eee0e2b",
    "first_seen": "2026-08-10"
-  },
-  {
-   "source": "craftmonth_fermanagh",
-   "venue": "Belleek Pottery",
-   "town": "Belleek",
-   "county": "Fermanagh",
-   "title": "Belleek Pottery Hands On Experience",
-   "date": "2026-08-24",
-   "url": "https://augustcraftmonth.org/acm-event/belleek-pottery-hands-on-experience-3/",
-   "category": "Workshop, Kids/Family, Craft/Hobbies",
-   "id": "f85e7139dd1b",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Leitrim School of Art N41 E8H0",
-   "town": "Ballinamore",
-   "county": "Leitrim",
-   "title": "Italian Beginners, 6 Mon Eve's,7-9pm, Aug 24, 31, Sep 7, 14, 21, & 28",
-   "date": "2026-08-24",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/italian-beginners-6-mon-eves-7-9pm-aug-24-31-sep-7-14-21-28/",
-   "category": null,
-   "id": "23dd25585d26",
-   "first_seen": "2026-07-20"
   },
   {
    "source": "nervecentre",
@@ -1297,12 +1272,12 @@
    "venue": "The Playhouse",
    "town": "Derry",
    "county": "Derry",
-   "title": "The Musicality of the Seemingly Mundane",
+   "title": "Sound Recording Workshop",
    "date": "2026-09-05",
-   "url": "https://www.derryplayhouse.co.uk/event/the-musicality-of-the-seemingly-mundane",
+   "url": "https://www.derryplayhouse.co.uk/event/sound-recording-workshop",
    "category": null,
-   "id": "26034eca65f2",
-   "first_seen": "2026-08-12"
+   "id": "a4087c0a0bfc",
+   "first_seen": "2026-08-25"
   },
   {
    "source": "hawkswell",
@@ -1342,6 +1317,18 @@
    "category": null,
    "id": "62ada800c7d4",
    "first_seen": "2026-08-21"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Dare to Dream",
+   "date": "2026-09-06",
+   "url": "https://www.derryplayhouse.co.uk/event/dare-to-dream",
+   "category": null,
+   "id": "6fe03e500834",
+   "first_seen": "2026-08-25"
   },
   {
    "source": "hawkswell",
@@ -4433,16 +4420,17 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "playhouse",
-   "venue": "The Playhouse",
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
-   "title": "Why Is Harry Styles Ruining My Life",
-   "date": "2027-02-11",
-   "url": "https://www.derryplayhouse.co.uk/event/why-is-harry-styles-ruining-my-life",
-   "category": null,
-   "id": "cf32e24ea011",
-   "first_seen": "2026-08-16"
+   "title": "Introductory Filmmaking Course | BFI Film Academy Northern Ireland | Nerve Centre, Derry",
+   "date": "2027-02-08",
+   "end_date": "2027-02-12",
+   "url": "https://nervecentre.org/whats-on/introductory-filmmaking-course-bfi-film-academy-northern-ireland-nerve-centre-derry",
+   "category": "Workshop",
+   "id": "00390d3904c7",
+   "first_seen": "2026-08-25"
   },
   {
    "source": "strule",
@@ -5991,6 +5979,149 @@
    "category": null,
    "id": "99bc2008cdaf",
    "first_seen": "2026-08-24"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Ballybofey, Stranorlar & District Historical Society",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Twin Towns Historical Photo Show",
+   "date": "2027-08-17",
+   "time": "8pm - 10pm",
+   "url": "https://www.heritageweek.ie/event-listings/twin-towns-historical-photo-show",
+   "category": null,
+   "id": "1f6e88d14eb2",
+   "first_seen": "2026-08-25"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Donegal Castle OPW",
+   "town": "Donegal Town",
+   "county": "Donegal",
+   "title": "'Weaving workshop with Errigal Handweaver at Donegal Castle'",
+   "date": "2027-08-17",
+   "time": "11am - 12:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/weaving-workshop-with-errigal-handweaver-at-donegal-castle-4",
+   "category": null,
+   "id": "dc851ba79fd8",
+   "first_seen": "2026-08-25"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Donegal County Library Service, Donegal Studies",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Fá Bhruach an Chladaigh le Cormac Mac Giolla Easbuig",
+   "date": "2027-08-17",
+   "time": "1:30pm - 2:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/fá-bhruach-an-chladaigh",
+   "category": null,
+   "id": "6ab2be45c494",
+   "first_seen": "2026-08-25"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Friends of Rossnowlagh",
+   "town": null,
+   "county": "Donegal",
+   "title": "From Belalt to Kieltra: Rossnowlagh Beach Heritage Walk",
+   "date": "2027-08-17",
+   "time": "2pm - 4pm",
+   "url": "https://www.heritageweek.ie/event-listings/from-belalt-to-kieltra-rossnowlagh-beach-heritage-walk",
+   "category": null,
+   "id": "ec64f09d1651",
+   "first_seen": "2026-08-25"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Glebe Gallery",
+   "town": "Churchill",
+   "county": "Donegal",
+   "title": "Lunchtime Garden Walk",
+   "date": "2027-08-17",
+   "time": "12pm - 1pm",
+   "url": "https://www.heritageweek.ie/event-listings/lunchtime-garden-walk",
+   "category": null,
+   "id": "27413bc96416",
+   "first_seen": "2026-08-25"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Glebe Gallery",
+   "town": "Churchill",
+   "county": "Donegal",
+   "title": "The Influence of plants on the Derek Hill Collection",
+   "date": "2027-08-17",
+   "time": "2:15pm - 3pm",
+   "url": "https://www.heritageweek.ie/event-listings/the-influence-of-plants-on-the-derek-hill-collection",
+   "category": null,
+   "id": "d8ffb3a06b78",
+   "first_seen": "2026-08-25"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Letterkenny Cathedral Quarter",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Letterkenny Cathedral Quarter Jaunt",
+   "date": "2027-08-17",
+   "time": "8pm - 8:45pm",
+   "url": "https://www.heritageweek.ie/event-listings/letterkenny-cathedral-quarter-jaunt",
+   "category": null,
+   "id": "44eece5d6db6",
+   "first_seen": "2026-08-25"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Michael Bell, Nature Learn",
+   "town": null,
+   "county": "Sligo",
+   "title": "Dragonflies at Colgagh Lough",
+   "date": "2027-08-17",
+   "time": "11am - 1pm",
+   "url": "https://www.heritageweek.ie/event-listings/dragonflies-at-colgagh-lough",
+   "category": null,
+   "id": "47012e21bece",
+   "first_seen": "2026-08-25"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Roe Valley Arts and Cultural Centre",
+   "town": "Limavady",
+   "county": "Derry",
+   "title": "Watercolour Explorers for 6-11yrs",
+   "date": "2027-08-17",
+   "time": "11:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/watercolour-explorers-for-6-11yrs/",
+   "category": "Kids/Family",
+   "id": "a99109897651",
+   "first_seen": "2026-08-25"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Temple House Estate",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "A brief tour of the house and conversation about its history.",
+   "date": "2027-08-17",
+   "time": "2pm - 3:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/a-brief-tour-of-the-house-and-conversation-about-its-history",
+   "category": null,
+   "id": "03484852a79d",
+   "first_seen": "2026-08-25"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "The Workhouse, Dunfanaghy",
+   "town": "Dunfanaghy",
+   "county": "Donegal",
+   "title": "Kids Cinema - Song of the Sea",
+   "date": "2027-08-17",
+   "time": "2pm - 3:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/kids-cinema-song-of-the-sea",
+   "category": "Kids/Family",
+   "id": "b933d3bd43b4",
+   "first_seen": "2026-08-25"
   }
  ]
 }
