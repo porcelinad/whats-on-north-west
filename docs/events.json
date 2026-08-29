@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-28T06:56Z",
+ "generated_at": "2026-08-29T04:10Z",
  "failed_sources": [],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
@@ -25,7 +25,7 @@
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 2,
+  "eaf": 3,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -38,7 +38,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 1
+  "playhouse": 2
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -509,73 +509,6 @@
    "first_seen": "2026-08-02"
   },
   {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Icons of the 70s show",
-   "date": "2026-08-28",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/icons-of-the-70s-show/",
-   "category": "Music",
-   "id": "1e50b40d2054",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Queers for Years | Nerve Cinema",
-   "date": "2026-08-28",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/queers-for-years-nerve-cinema",
-   "category": "Film",
-   "id": "982024f1fe24",
-   "first_seen": "2026-07-21"
-  },
-  {
-   "source": "craftmonth_sligo",
-   "venue": "Rachel Quinn Ceramics",
-   "town": null,
-   "county": "Sligo",
-   "title": "Discover the art of eco-printing with Naomi from The Wild Things",
-   "date": "2026-08-28",
-   "url": "https://augustcraftmonth.org/acm-event/discover-the-art-of-eco-printing-with-naomi-from-the-wild-things/",
-   "category": "Workshop, Craft/Hobbies",
-   "id": "4684943c725e",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Music: The Tunney family & Guests – Where Songs Do Thunder (Book Launch & Concert)",
-   "date": "2026-08-28",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-music-the-tunney-family-guests-where-songs-do-thunder-book-launch-and-concert/",
-   "category": "Spoken Word",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "bc0a984d76c2",
-   "first_seen": "2026-08-15"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Graphite & Easel; Life Drawing Sessions",
-   "date": "2026-08-28",
-   "time": "10:30 am",
-   "url": "https://www.themodel.ie/?event=graphite-and-easel&event_date=2026-08-28",
-   "category": null,
-   "id": "b9905983130b",
-   "first_seen": "2026-08-27"
-  },
-  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -879,6 +812,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Tenx9 Storytelling | Back to School",
+   "date": "2026-09-03",
+   "time": "7:30PM",
+   "url": "https://nervecentre.org/whats-on/tenx9-storytelling-back-to-school",
+   "category": "Music/Comedy",
+   "id": "98365e51de74",
+   "first_seen": "2026-08-29"
+  },
+  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -902,9 +848,6 @@
    "time": "7:00 pm",
    "url": "https://regionalculturalcentre.com/events/intermediate-painting-with-ann-quinn/",
    "category": "Workshop",
-   "merged_from": [
-    "rcc"
-   ],
    "id": "d7d2f5e72ed8",
    "first_seen": "2026-08-05"
   },
@@ -1142,6 +1085,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Music School Band Night",
+   "date": "2026-09-05",
+   "time": "7:30PM",
+   "url": "https://nervecentre.org/whats-on/music-school-band-night",
+   "category": "Music/Comedy",
+   "id": "26d1bd37f0ec",
+   "first_seen": "2026-08-29"
+  },
+  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -1149,7 +1105,7 @@
    "title": "Open Collection: An Exhibition in the Making",
    "date": "2026-09-05",
    "end_date": "2026-10-03",
-   "time": "1:00 pm",
+   "time": "2:00 pm",
    "url": "https://regionalculturalcentre.com/exhibitions/open-collection-an-exhibition-in-the-making/",
    "category": "Exhibition",
    "id": "0fd98d4fe383",
@@ -1167,21 +1123,6 @@
    "category": "Comedy",
    "id": "f2cda88a2840",
    "first_seen": "2026-08-01"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Governors House Tour & Goal Talk – European Heritage Open Days 2026",
-   "date": "2026-09-05",
-   "url": "https://struleartscentre.co.uk/show/governors-house-tour-goal-talk-european-heritage-open-days-2026/",
-   "category": "Spoken Word",
-   "merged_from": [
-    "strule"
-   ],
-   "id": "0275ef6377b6",
-   "first_seen": "2026-08-28"
   },
   {
    "source": "thedock",
@@ -1245,19 +1186,6 @@
    "category": "Music",
    "id": "56fd2e37c005",
    "first_seen": "2026-07-31"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Omagh Walking Tour – European Heritage Open Days 2026",
-   "date": "2026-09-06",
-   "time": "2:30pm",
-   "url": "https://struleartscentre.co.uk/show/omagh-walking-tour-2026-european-heritage-open-days/",
-   "category": "Spoken Word",
-   "id": "9cd684473b5b",
-   "first_seen": "2026-08-28"
   },
   {
    "source": "themodel",
@@ -1435,13 +1363,13 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
-   "title": "Letters Across The Atlantic – Tyrones Emigrant Stories – European & Heritage Open Da...",
+   "title": "Letters Across The Atlantic – part of European Heritage Open Days 2026",
    "date": "2026-09-10",
    "time": "7:00pm",
    "url": "https://struleartscentre.co.uk/show/letters-across-the-atlantic-tyrones-emigrant-stories/",
    "category": "Spoken Word",
-   "id": "5d677714b811",
-   "first_seen": "2026-08-28"
+   "id": "35d8611df9a6",
+   "first_seen": "2026-08-29"
   },
   {
    "source": "themodel",
@@ -1513,6 +1441,19 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
+   "title": "Railways That Shaped Tyrone & Exhibition Tour – European Heritage Open Days 2026",
+   "date": "2026-09-11",
+   "time": "7:00pm",
+   "url": "https://struleartscentre.co.uk/show/railways-that-shaped-tyrone-exhibition-tour-european-heritage-open-days-2026/",
+   "category": "Spoken Word",
+   "id": "1ade8edf5475",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
    "title": "Réalta",
    "date": "2026-09-11",
    "time": "8:00pm",
@@ -1578,6 +1519,34 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
+   "title": "Governors House Tour & Goal Talk – European Heritage Open Days 2026",
+   "date": "2026-09-12",
+   "url": "https://struleartscentre.co.uk/show/governors-house-tour-goal-talk-european-heritage-open-days-2026/",
+   "category": "Spoken Word",
+   "merged_from": [
+    "strule"
+   ],
+   "id": "2795a292bb4b",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Omagh In-Spires (4 Church Tour) – European Heritage Open Days 2026",
+   "date": "2026-09-12",
+   "time": "3:00pm",
+   "url": "https://struleartscentre.co.uk/show/omagh-in-spires-4-church-tour-european-heritage-open-days-2026/",
+   "category": "Spoken Word",
+   "id": "65079e14ea9a",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
    "title": "Sinéad Willox Album Launch – Seoda Uladh",
    "date": "2026-09-12",
    "time": "8:00pm",
@@ -1597,6 +1566,19 @@
    "category": null,
    "id": "a58ba5852bc0",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Omagh Walking Tour – European Heritage Open Days 2026",
+   "date": "2026-09-13",
+   "time": "2:30pm",
+   "url": "https://struleartscentre.co.uk/show/omagh-walking-tour-2026-european-heritage-open-days/",
+   "category": "Spoken Word",
+   "id": "17a4785c091a",
+   "first_seen": "2026-08-29"
   },
   {
    "source": "eventbrite_donegal",
@@ -2002,6 +1984,22 @@
    "first_seen": "2026-08-02"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Cinema: A Private Life",
+   "date": "2026-09-24",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-a-private-life/",
+   "category": "Film",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "c9ea6167ddf0",
+   "first_seen": "2026-08-29"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -2054,6 +2052,19 @@
    "category": null,
    "id": "4ba5a11a28cf",
    "first_seen": "2026-08-26"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Sunshine on Leith – Dementia Friendly",
+   "date": "2026-09-25",
+   "time": "11:00am",
+   "url": "https://struleartscentre.co.uk/show/sunshine-on-leith-dementia-friendly/",
+   "category": "Film",
+   "id": "ee491fe61a26",
+   "first_seen": "2026-08-29"
   },
   {
    "source": "strule",
@@ -2130,9 +2141,6 @@
    "time": "2:00 pm",
    "url": "https://regionalculturalcentre.com/events/michelle-doherty-paint-sip/",
    "category": "Workshop",
-   "merged_from": [
-    "rcc"
-   ],
    "id": "dfab3433a8f9",
    "first_seen": "2026-08-05"
   },
@@ -2226,6 +2234,22 @@
    "category": "Workshop",
    "id": "d6d3b2a8ca5f",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Cinema: The Last Viking",
+   "date": "2026-10-01",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-the-last-viking/",
+   "category": "Film",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "0c748962b5da",
+   "first_seen": "2026-08-29"
   },
   {
    "source": "strule",
@@ -2535,6 +2559,22 @@
    "first_seen": "2026-07-31"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Cinema: Have You Never Heard of Bill Fuller?",
+   "date": "2026-10-08",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-have-you-never-heard-of-bill-fuller/",
+   "category": "Film",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "dafd9ecedf84",
+   "first_seen": "2026-08-29"
+  },
+  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -2749,6 +2789,22 @@
    "category": "Music",
    "id": "20a06ed51f72",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Cinema: DJ Ahmet",
+   "date": "2026-10-15",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-dj-ahmet/",
+   "category": "Film",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "0bacb44c3e45",
+   "first_seen": "2026-08-29"
   },
   {
    "source": "thedock",
@@ -2988,17 +3044,43 @@
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
    "county": "Donegal",
+   "title": "RCC Cinema: Babystar",
+   "date": "2026-10-22",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-babystar/",
+   "category": "Film",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "90533b1f3525",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
    "title": "RCC Make! Weaving with Emily Waszak",
    "date": "2026-10-22",
    "end_date": "2026-11-05",
    "time": "7:00 pm",
    "url": "https://regionalculturalcentre.com/events/weaving-with-emily-waszak/",
    "category": "Workshop",
-   "merged_from": [
-    "rcc"
-   ],
    "id": "90ab6cccb222",
    "first_seen": "2026-08-05"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Ghosts, Graves & Gruesome Tales",
+   "date": "2026-10-22",
+   "time": "7:00pm",
+   "url": "https://struleartscentre.co.uk/show/ghosts-graves-gruesome-tales/",
+   "category": "Spoken Word",
+   "id": "17d1ba64d21b",
+   "first_seen": "2026-08-29"
   },
   {
    "source": "an_grianan",
@@ -3087,9 +3169,6 @@
    "time": "2:00 pm",
    "url": "https://regionalculturalcentre.com/events/rcc-make-cathal-mc-ginley-still-life-drawing-with-colour/",
    "category": "Workshop",
-   "merged_from": [
-    "rcc"
-   ],
    "id": "6639a17d3119",
    "first_seen": "2026-08-05"
   },
@@ -3848,9 +3927,6 @@
    "time": "2:00 pm",
    "url": "https://regionalculturalcentre.com/events/rcc-make-photography-with-declan-devlin/",
    "category": "Workshop",
-   "merged_from": [
-    "rcc"
-   ],
    "id": "f95ed0c2875f",
    "first_seen": "2026-08-05"
   },
@@ -6182,6 +6258,20 @@
   },
   {
    "source": "heritageweek",
+   "venue": "Donegal Library Service",
+   "town": "Ghaoth Dobhair",
+   "county": "Donegal",
+   "title": "Taispeántas le Eoin Cahill - The Places we tell Stories of",
+   "date": "2027-08-17",
+   "end_date": "2027-08-21",
+   "time": "9:30am - 5:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/taispeántas-le-eoin-cahill-the-places-we-tell-stories-of",
+   "category": null,
+   "id": "1850a1dc196f",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
    "venue": "Friends of Rossnowlagh",
    "town": null,
    "county": "Donegal",
@@ -7366,6 +7456,558 @@
    "category": null,
    "id": "650b6f89f881",
    "first_seen": "2026-08-28"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Ballisodare Fishing Club CLG",
+   "town": null,
+   "county": "Sligo",
+   "title": "Ballisodare Fishery - Heritage, Knotting and Safeguarding our Salmon",
+   "date": "2027-08-21",
+   "time": "6:30pm - 8:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/ballisodare-fishery-local-heritage-knotting-for-life-and-safeguarding-our-salmon",
+   "category": null,
+   "id": "41a90d1137a6",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Cloonacool Heritage Group",
+   "town": null,
+   "county": "Sligo",
+   "title": "The Poems of Johnny Carroll",
+   "date": "2027-08-21",
+   "time": "9pm - 11:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/the-poems-of-johnny-carroll",
+   "category": null,
+   "id": "fedfa7f2e3a7",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Community Water Officer, River Basin Management Service",
+   "town": "Glenties",
+   "county": "Donegal",
+   "title": "Discover Biodiversity along the Owenea River",
+   "date": "2027-08-21",
+   "time": "2pm - 4pm",
+   "url": "https://www.heritageweek.ie/event-listings/discover-biodiversity-along-the-owenea-river-3",
+   "category": null,
+   "id": "b15f49ab003f",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Donegal Bay Trust",
+   "town": null,
+   "county": "Sligo",
+   "title": "Wildlife Celebration on the Green - Mullaghmore",
+   "date": "2027-08-21",
+   "time": "2:30pm - 4:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/wildlife-celebration-on-the-green-mullaghmore",
+   "category": null,
+   "id": "77fd251d992b",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Donegal County Museum",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "'Newtown By The Sea' Talk",
+   "date": "2027-08-21",
+   "time": "7pm - 8pm",
+   "url": "https://www.heritageweek.ie/event-listings/newtown-by-the-sea-talk-2",
+   "category": null,
+   "id": "4251c7ffd518",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Donegal G.A.P. Heritage and History Group",
+   "town": "Ardara",
+   "county": "Donegal",
+   "title": "Scealtaí i gCloch - Fieldtrip to Cronkeerin Lime Kiln and Kiltiernan Graveyard",
+   "date": "2027-08-21",
+   "time": "6:30pm - 8:15pm",
+   "url": "https://www.heritageweek.ie/event-listings/scealtaí-í-gcloch-fieldtrip-to-cronkeerin-lime-kiln-and-kiltiernan-graveyard",
+   "category": null,
+   "id": "ef327d08e2ff",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Donegal Library Service",
+   "town": "Buncrana",
+   "county": "Donegal",
+   "title": "Spoken Word - Writing with Writers Open Mic Night",
+   "date": "2027-08-21",
+   "time": "7pm - 8:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/spoken-word-writing-with-writers-open-mic-night",
+   "category": null,
+   "id": "58a482820245",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Donegal Railway Heritage Museum",
+   "town": "Donegal Town",
+   "county": "Donegal",
+   "title": "Get Ready With Me: Eighteenth Century Style",
+   "date": "2027-08-21",
+   "time": "3pm - 4pm",
+   "url": "https://www.heritageweek.ie/event-listings/get-ready-with-me-eighteenth-century-style",
+   "category": null,
+   "id": "936f1292d4ef",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Dunkineely Community Centre",
+   "town": "Dunkineely",
+   "county": "Donegal",
+   "title": "Mystery Bus Tour",
+   "date": "2027-08-21",
+   "time": "09:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/mystery-bus-tour/",
+   "category": null,
+   "id": "8e8f00af099a",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Dunkineely Community Ltd",
+   "town": null,
+   "county": "Donegal",
+   "title": "Mystery Heritage Bus Tour",
+   "date": "2027-08-21",
+   "time": "9:30am - 6:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/mystery-heritage-bus-tour",
+   "category": null,
+   "id": "683d45a6c35a",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Dunkineely Community Ltd",
+   "town": "Dunkineely",
+   "county": "Donegal",
+   "title": "Rahan Castle, 'Girona', and Official Unveiling of McSwyne's Graveslab Replica",
+   "date": "2027-08-21",
+   "time": "4:30pm - 6:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/rahan-castle-girona-and-official-unveiling-of-mcswynes-graveslab-replica",
+   "category": null,
+   "id": "c9d471093c6a",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Friends of Nature Sligo",
+   "town": null,
+   "county": "Sligo",
+   "title": "Heritage Week Mini BioBlitz",
+   "date": "2027-08-21",
+   "time": "10:30am - 2:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/heritage-week-mini-bioblitz",
+   "category": null,
+   "id": "4bf628386ce8",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Glebe Gallery",
+   "town": "Churchill",
+   "county": "Donegal",
+   "title": "WORLDS WITHIN WORLDS: STAGING & STORYTELLING AT THE GLEBE HOUSE",
+   "date": "2027-08-21",
+   "time": "1pm - 1:45pm",
+   "url": "https://www.heritageweek.ie/event-listings/worlds-within-worlds-staging-storytelling-at-the-glebe-house",
+   "category": null,
+   "id": "570f7587c613",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Glenveagh National Park",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Brendan Farren Willow Weaving",
+   "date": "2027-08-21",
+   "time": "10am - 4pm",
+   "url": "https://www.heritageweek.ie/event-listings/brendan-farren-willow-weaving",
+   "category": null,
+   "id": "b643cc745bbe",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Glenveagh National Park",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Johnny Shiels Spinning Wheel Demo",
+   "date": "2027-08-21",
+   "time": "10am - 4pm",
+   "url": "https://www.heritageweek.ie/event-listings/johnny-shiels-spinning-wheel-demo",
+   "category": null,
+   "id": "1ac77d55e370",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Glenveagh National Park",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "McNutts Tweed Talk & Popup Shop",
+   "date": "2027-08-21",
+   "time": "10am - 11am",
+   "url": "https://www.heritageweek.ie/event-listings/mcnutts-talk-popup",
+   "category": null,
+   "id": "fa5c475abae9",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Glenveagh National Park",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "The Arty Fox: Pop Up Children’s Woodlands Arts & Crafts",
+   "date": "2027-08-21",
+   "time": "12pm - 3pm",
+   "url": "https://www.heritageweek.ie/event-listings/the-arty-fox-pop-up-childrens-woodlands-arts-crafts",
+   "category": "Kids/Family",
+   "id": "afeb827f9cd2",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Habitat for Knowledge",
+   "town": null,
+   "county": "Sligo",
+   "title": "Biodiversity and Invasive Species Walk and Talk",
+   "date": "2027-08-21",
+   "time": "6pm - 8:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/biodiversity-and-invasive-species-walk-and-talk-3",
+   "merged_from": [
+    "heritageweek"
+   ],
+   "category": null,
+   "id": "6d2c99a29ec8",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Katie Kearns",
+   "town": null,
+   "county": "Leitrim",
+   "title": "Folk Medicine and Modernity at St. Hugh’s Well",
+   "date": "2027-08-21",
+   "time": "2pm - 3pm",
+   "url": "https://www.heritageweek.ie/event-listings/folk-medicine-and-modernity-at-st-hughs-well-ballinagleara",
+   "category": null,
+   "id": "d31a3d9b0c73",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Kiltyclogher Heritage Centre/ The Rainbow",
+   "town": null,
+   "county": "Leitrim",
+   "title": "The Glenfarne kiltyclogher Heritage Bus Tour",
+   "date": "2027-08-21",
+   "time": "10:45am - 1:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/the-glenfarne-kiltyclogher-heritage-bus-tour",
+   "category": null,
+   "id": "3589715e08be",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Kinnegar Brewing",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Jack Houston: An Fhidil Bhriste | The Broken Fiddle - Album Launch",
+   "date": "2027-08-21",
+   "time": "19:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/jack-houston-an-fhidil-bhriste-the-broken-fiddle-album-launch/",
+   "category": null,
+   "id": "5d0346944987",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Leitrim Volunteer Centre",
+   "town": "Dromahair",
+   "county": "Leitrim",
+   "title": "Discover Dromahair Heritage Walk and Art Workshop",
+   "date": "2027-08-21",
+   "time": "11am - 1pm",
+   "url": "https://www.heritageweek.ie/event-listings/discover-dromahair-heritage-walk-and-art-workshop",
+   "category": null,
+   "id": "328e9c939720",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Letterkenny Community Heritage Group",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Guided Stroll Through the \"Foot of the Town\"",
+   "date": "2027-08-21",
+   "time": "7:30pm - 9pm",
+   "url": "https://www.heritageweek.ie/event-listings/guided-stroll-through-the-foot-of-the-town",
+   "category": null,
+   "id": "c4b28555f49f",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Lough Eske Heritage and Community Group",
+   "town": null,
+   "county": "Donegal",
+   "title": "Lough Eske/Ardnamona Heritage Walk",
+   "date": "2027-08-21",
+   "time": "6:30pm - 9:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/lough-eske-ardnamona-heritage-walk",
+   "category": null,
+   "id": "64b9bb40ecb0",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Rannóg na Gaeilge, Comhairle Contae Dhún na nGall",
+   "town": null,
+   "county": "Donegal",
+   "title": "Turas Bus go Co. Shligigh",
+   "date": "2027-08-21",
+   "time": "9:30am - 5:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/turas-bus-go-co-shligigh-2-2",
+   "category": null,
+   "id": "9aba079ed1cf",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Donegal Mela – ‘Taare Zameen Par’",
+   "date": "2027-08-21",
+   "time": "7:00 pm",
+   "url": "https://regionalculturalcentre.com/events/donegal-mela-taare-zameen-par/",
+   "category": "Film",
+   "id": "2506e5d9770e",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Roe Valley Arts and Cultural Centre",
+   "town": "Limavady",
+   "county": "Derry",
+   "title": "Comic Book Illustration for 6-11yrs | Session 1",
+   "date": "2027-08-21",
+   "time": "10:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/comic-book-illustration-for-6-11yrs-session-1/",
+   "category": "Kids/Family",
+   "id": "1566a3fba3a5",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "ST EUNAN'S CATHEDRAL CHURCH, RAPHOE, CO DONEGAL",
+   "town": "Raphoe",
+   "county": "Donegal",
+   "title": "Open Day at St Eunan's Cathedral Raphoe",
+   "date": "2027-08-21",
+   "time": "12pm - 3pm",
+   "url": "https://www.heritageweek.ie/event-listings/tour-and-tea-at-st-eunans-cathedral-raphoe",
+   "category": null,
+   "id": "4f37fc3134d4",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Sligo Abbey",
+   "town": null,
+   "county": "Sligo",
+   "title": "Turais treoraithe de Mhainistir Shligigh trí mheán na Gaeilge",
+   "date": "2027-08-21",
+   "time": "11:30am - 12:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/turais-treoraithe-de-mhainister-shligigh-trí-mheán-na-gaeilge",
+   "category": null,
+   "id": "039f29571ba1",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Sligo Abbey",
+   "town": null,
+   "county": "Sligo",
+   "title": "Ukarainian Language Tours of Sligo Abbey",
+   "date": "2027-08-21",
+   "time": "10:30am - 11:30am",
+   "url": "https://www.heritageweek.ie/event-listings/ukarainian-language-tours-of-sligo-abbey",
+   "category": null,
+   "id": "861725320956",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Sligo Field Club",
+   "town": null,
+   "county": "Sligo",
+   "title": "Sligo's Founding Father Maurice Fitzgerald",
+   "date": "2027-08-21",
+   "time": "4pm - 5pm",
+   "url": "https://www.heritageweek.ie/event-listings/talk-sligos-founding-father-maurice-fitzgerald",
+   "category": null,
+   "id": "e686a20c10e4",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Sligo Folk Park (Riverstown Enterprises Development (Sligo) Ltd )",
+   "town": null,
+   "county": "Sligo",
+   "title": "The Lasting Influence of Sligo Woman on Irish Culture",
+   "date": "2027-08-21",
+   "time": "8pm - 10pm",
+   "url": "https://www.heritageweek.ie/event-listings/the-lasting-influence-of-sligo-woman-on-irish-culture-part-2",
+   "category": null,
+   "id": "2c48398eb5b0",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "St Patricks Hall",
+   "town": "Strabane",
+   "county": "Tyrone",
+   "title": "Jesus Christ Superstar",
+   "date": "2027-08-21",
+   "time": "19:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/jesus-christ-superstar/",
+   "category": null,
+   "id": "ecde0948d021",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "Templeboy Aughris Rural Action (TARA)",
+   "town": null,
+   "county": "Sligo",
+   "title": "Guided Tour of Aughris Coastal Walk",
+   "date": "2027-08-21",
+   "time": "7pm - 8:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/guided-tour-of-aughris-coastal-walk",
+   "category": null,
+   "id": "8e657fcfdedc",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "The Organic Centre",
+   "town": null,
+   "county": "Leitrim",
+   "title": "'Cures of Ireland' talk with author Cecily Gilligan",
+   "date": "2027-08-21",
+   "time": "12pm - 1pm",
+   "url": "https://www.heritageweek.ie/event-listings/cures-of-ireland-talk-with-author-cecily-gilligan",
+   "category": null,
+   "id": "dece80a6397a",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "The Rainbow Ballroom of Romance",
+   "town": null,
+   "county": "Leitrim",
+   "title": "Glenfarne Kiltyclogher Heritage Bus Tour",
+   "date": "2027-08-21",
+   "time": "11am - 2:30pm",
+   "url": "https://www.heritageweek.ie/event-listings/glenfarne-kiltyclogher-heritage-bus-tour",
+   "category": null,
+   "id": "443ece4f6b6e",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "The Workhouse, Dunfanaghy",
+   "town": "Dunfanaghy",
+   "county": "Donegal",
+   "title": "Wellness with 'Weeds'",
+   "date": "2027-08-21",
+   "time": "11am - 1pm",
+   "url": "https://www.heritageweek.ie/event-listings/wellness-with-weeds",
+   "category": null,
+   "id": "848d0598270f",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "sligo co council",
+   "town": null,
+   "county": "Sligo",
+   "title": "Tour of City Hall Sligo Town",
+   "date": "2027-08-21",
+   "time": "12pm - 1pm",
+   "url": "https://www.heritageweek.ie/event-listings/tour-of-city-hall-sligo-town",
+   "category": null,
+   "id": "a68a9c7aaa34",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "west town",
+   "town": "Tory Island",
+   "county": "Donegal",
+   "title": "Meet the Artists and Crafters on Tory Island",
+   "date": "2027-08-21",
+   "time": "6pm - 6:45pm",
+   "url": "https://www.heritageweek.ie/event-listings/meet-the-artists-and-crafters-on-tory-island",
+   "merged_from": [
+    "heritageweek"
+   ],
+   "category": null,
+   "id": "901dd45cbfbe",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "west town",
+   "town": "Tory Island",
+   "county": "Donegal",
+   "title": "Natural Heritage at Risk: Preliminary results from constant effort monitoring of Tory Island waders",
+   "date": "2027-08-21",
+   "time": "2pm - 3pm",
+   "url": "https://www.heritageweek.ie/event-listings/natural-heritage-at-risk-preliminary-results-from-constant-effort-monitoring-of-tory-island-waders",
+   "category": null,
+   "id": "fa19806b5bf6",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "west town",
+   "town": "Tory Island",
+   "county": "Donegal",
+   "title": "Photography Course with Owen Clarke",
+   "date": "2027-08-21",
+   "time": "1pm - 2pm",
+   "url": "https://www.heritageweek.ie/event-listings/photography-course-with-owen-clarke",
+   "category": null,
+   "id": "62f3400af97c",
+   "first_seen": "2026-08-29"
+  },
+  {
+   "source": "heritageweek",
+   "venue": "west town",
+   "town": "Tory Island",
+   "county": "Donegal",
+   "title": "Transports: History of the Boats on the island- Mickey Rodgers",
+   "date": "2027-08-21",
+   "time": "4pm - 5pm",
+   "url": "https://www.heritageweek.ie/event-listings/transports-history-of-the-boats-on-the-island-mickey-rodgers",
+   "category": null,
+   "id": "30bb199d383c",
+   "first_seen": "2026-08-29"
   }
  ]
 }
