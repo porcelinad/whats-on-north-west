@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-01T01:50Z",
+ "generated_at": "2026-09-02T01:02Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -8,7 +8,7 @@
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
-  "hawkswell": "2026-08-30T01:16Z",
+  "hawkswell": "2026-09-02T01:02Z",
   "craftmonth_donegal": "2026-09-01T01:50Z",
   "craftmonth_derry": "2026-09-01T01:50Z",
   "craftmonth_derry_city": "2026-09-01T01:50Z",
@@ -28,7 +28,7 @@
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 6,
+  "eaf": 7,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 5
+  "playhouse": 6
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -418,19 +418,6 @@
    "category": "Exhibition, Craft/Hobbies",
    "id": "0a32ed98a0db",
    "first_seen": "2026-08-01"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "500 Miles | Nerve Cinema",
-   "date": "2026-09-01",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/500-miles-nerve-cinema",
-   "category": "Film",
-   "id": "ada290871cbc",
-   "first_seen": "2026-08-05"
   },
   {
    "source": "hawkswell",
@@ -1195,6 +1182,7 @@
    "date": "2026-09-12",
    "url": "https://struleartscentre.co.uk/show/governors-house-tour-goal-talk-european-heritage-open-days-2026/",
    "category": "Spoken Word",
+   "sold_out": true,
    "merged_from": [
     "strule"
    ],
@@ -1251,6 +1239,19 @@
    "category": "Spoken Word",
    "id": "17a4785c091a",
    "first_seen": "2026-08-29"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Sligo Pride presents: Blindr",
+   "date": "2026-09-13",
+   "time": "8:00 pm",
+   "url": "https://www.themodel.ie/?event=sligo-pride-blindr&event_date=2026-09-13",
+   "category": null,
+   "id": "268883ffa1ce",
+   "first_seen": "2026-09-02"
   },
   {
    "source": "eventbrite_donegal",
@@ -2793,6 +2794,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Seventh Heaven: 'The Motherland' EP Launch",
+   "date": "2026-10-23",
+   "time": "7:00PM",
+   "url": "https://nervecentre.org/whats-on/seventh-heaven-the-motherland-ep-launch",
+   "category": "Music/Comedy",
+   "id": "816536b8b35c",
+   "first_seen": "2026-09-02"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -4121,6 +4135,19 @@
    "sold_out": true,
    "id": "7adf6770bf73",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Meadhbh Walsh in Concert",
+   "date": "2027-01-22",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/meadhbh-walsh-in-concert/",
+   "category": "Music",
+   "id": "4ccb93c08a75",
+   "first_seen": "2026-09-02"
   },
   {
    "source": "strule",
@@ -8603,6 +8630,19 @@
    "category": null,
    "id": "3d0edce6deda",
    "first_seen": "2026-09-01"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim School of Art N41 E8H0",
+   "town": "Ballinamore",
+   "county": "Leitrim",
+   "title": "Let’s Write About Intimacy, 6 x Tuesday eve's, from Aug 25th, 7-9pm",
+   "date": "2027-08-25",
+   "time": "19:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/lets-write-about-intimacy-6-x-tuesday-eves-from-aug-25th-7-9pm/",
+   "category": null,
+   "id": "b044abb4103a",
+   "first_seen": "2026-09-02"
   }
  ]
 }
