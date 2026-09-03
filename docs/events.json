@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-02T01:02Z",
+ "generated_at": "2026-09-03T01:07Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -28,7 +28,7 @@
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 7,
+  "eaf": 8,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 6
+  "playhouse": 7
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -418,44 +418,6 @@
    "category": "Exhibition, Craft/Hobbies",
    "id": "0a32ed98a0db",
    "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Ceol Binn Linn – Lunchtime @ The Well",
-   "date": "2026-09-02",
-   "time": "1.10pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/ceol-binn-linn",
-   "category": "Music",
-   "id": "f9b3e1d287d8",
-   "first_seen": "2026-07-28"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Tuner | Nerve Cinema",
-   "date": "2026-09-02",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/tuner-nerve-cinema",
-   "category": "Film",
-   "id": "6182dcb123f0",
-   "first_seen": "2026-08-05"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Blue Road — The Edna O'Brien Story – Classic Cinema",
-   "date": "2026-09-02",
-   "url": "https://www.thedock.ie/whats-on/blue-road-the-edna-obrien-story",
-   "category": "Film",
-   "id": "a3b4bffd5ac3",
-   "first_seen": "2026-08-07"
   },
   {
    "source": "eventbrite_donegal",
@@ -1696,6 +1658,7 @@
    "time": "8:00pm",
    "url": "https://ardhowen.com/show/the-love-hungry-farmer/",
    "category": "Drama",
+   "sold_out": true,
    "id": "9bc507814430",
    "first_seen": "2026-08-01"
   },
@@ -2621,6 +2584,18 @@
    "first_seen": "2026-08-27"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Wildcrafting Pathways – Book Launch with Joanna Sweeney",
+   "date": "2026-10-17",
+   "url": "https://www.thedock.ie/whats-on/wildcrafting-pathways",
+   "category": "Spoken Word",
+   "id": "e1522e9efa57",
+   "first_seen": "2026-09-03"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -3040,6 +3015,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Stardust – Dementia Friendly",
+   "date": "2026-10-30",
+   "time": "11:00am",
+   "url": "https://struleartscentre.co.uk/show/stardust-dementia-friendly/",
+   "category": "Film",
+   "id": "d21ffa738e9c",
+   "first_seen": "2026-09-03"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -3349,6 +3337,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Ulster Orchestra Primary Schools’ Concert",
+   "date": "2026-11-16",
+   "time": "11:00am",
+   "url": "https://struleartscentre.co.uk/show/ulster-orchestra-primary-schools-concert-6/",
+   "category": "Music",
+   "id": "88b988fc11a4",
+   "first_seen": "2026-09-03"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -3593,6 +3594,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "How To Marry A Millionaie – Dementia Friendly",
+   "date": "2026-11-27",
+   "time": "11:00am",
+   "url": "https://struleartscentre.co.uk/show/how-to-marry-a-millionaie-dementia-friendly/",
+   "category": "Film",
+   "id": "b59f2cf690c3",
+   "first_seen": "2026-09-03"
+  },
+  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -3705,6 +3719,19 @@
    "category": "Kids/Family",
    "id": "47f6da509584",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Cabaret na Comhairle / Christmas Cheer Concert 2026",
+   "date": "2026-12-09",
+   "url": "https://angrianan.com/event/cabaret-na-comhairle-christmas-cheer-concert-2026/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873667362/events/128664449/seats?zone=Auditorium",
+   "category": "Variety",
+   "id": "772d5dbfcb0b",
+   "first_seen": "2026-09-03"
   },
   {
    "source": "an_grianan",
@@ -3861,6 +3888,19 @@
    "category": "Music",
    "id": "a700507121f2",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Home Alone – Dementia Friendly",
+   "date": "2026-12-18",
+   "time": "11:00am",
+   "url": "https://struleartscentre.co.uk/show/home-alone-dementia-friendly/",
+   "category": "Film",
+   "id": "a9631797439e",
+   "first_seen": "2026-09-03"
   },
   {
    "source": "strule",
@@ -8643,6 +8683,19 @@
    "category": null,
    "id": "b044abb4103a",
    "first_seen": "2026-09-02"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim School of Art N41 E8H0",
+   "town": "Ballinamore",
+   "county": "Leitrim",
+   "title": "Novel Writing, 6 Wed's 7-9pm, Aug 26th, Sep 2nd, 9th, 16th, 23rd, & 30th",
+   "date": "2027-08-26",
+   "time": "19:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/novel-writing-6-weds-7-9pm-aug-26th-sep-2nd-9th-16th-23rd-30th/",
+   "category": null,
+   "id": "cba8dbb52dba",
+   "first_seen": "2026-09-03"
   }
  ]
 }
