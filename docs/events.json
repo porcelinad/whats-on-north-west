@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-03T01:07Z",
+ "generated_at": "2026-09-04T00:59Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -9,26 +9,26 @@
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
   "hawkswell": "2026-09-02T01:02Z",
-  "craftmonth_donegal": "2026-09-01T01:50Z",
-  "craftmonth_derry": "2026-09-01T01:50Z",
-  "craftmonth_derry_city": "2026-09-01T01:50Z",
-  "craftmonth_leitrim": "2026-09-01T01:50Z",
-  "craftmonth_sligo": "2026-09-01T01:50Z",
-  "craftmonth_tyrone": "2026-09-01T01:50Z",
-  "craftmonth_fermanagh": "2026-09-01T01:50Z",
-  "heritageweek": "2026-09-01T01:50Z"
+  "craftmonth_donegal": "2026-09-04T00:59Z",
+  "craftmonth_derry": "2026-09-04T00:59Z",
+  "craftmonth_derry_city": "2026-09-04T00:59Z",
+  "craftmonth_leitrim": "2026-09-04T00:59Z",
+  "craftmonth_sligo": "2026-09-04T00:59Z",
+  "craftmonth_tyrone": "2026-09-04T00:59Z",
+  "craftmonth_fermanagh": "2026-09-04T00:59Z",
+  "heritageweek": "2026-09-04T00:59Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 8,
+  "eaf": 9,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 7
+  "playhouse": 8
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -420,45 +420,6 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "eventbrite_donegal",
-   "venue": "Holywell Trust",
-   "town": "Londonderry",
-   "county": "Derry",
-   "title": "Northern Ireland Peace Index Report Launch",
-   "date": "2026-09-03",
-   "time": "12:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/northern-ireland-peace-index-report-launch/",
-   "category": null,
-   "id": "b44510a29cf2",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Tenx9 Storytelling | Back to School",
-   "date": "2026-09-03",
-   "time": "7:30PM",
-   "url": "https://nervecentre.org/whats-on/tenx9-storytelling-back-to-school",
-   "category": "Music/Comedy",
-   "id": "98365e51de74",
-   "first_seen": "2026-08-29"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Evlana Ensemble: Headland",
-   "date": "2026-09-03",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/evlana-ensemble-headland/",
-   "category": "Music",
-   "id": "701e9b3f554c",
-   "first_seen": "2026-07-31"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -471,44 +432,6 @@
    "category": "Workshop",
    "id": "d7d2f5e72ed8",
    "first_seen": "2026-08-05"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Exhibition Launch – ‘Time Lapse’ by Maria Noonan McDermott",
-   "date": "2026-09-03",
-   "time": "7:00pm",
-   "url": "https://struleartscentre.co.uk/show/exhibition-launch-time-lapse-by-maria-noonan-mcdermott/",
-   "category": "Exhibition",
-   "id": "873a3ae7f85f",
-   "first_seen": "2026-08-18"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Illuminations – Open Mic Poetry",
-   "date": "2026-09-03",
-   "time": "8:00 pm",
-   "url": "https://www.themodel.ie/?event=illuminations&event_date=2026-09-03",
-   "category": null,
-   "id": "4fcbb93e52d7",
-   "first_seen": "2026-08-27"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Around Here, The Birds Plant The Trees (Panel Discussion & Performance)",
-   "date": "2026-09-03",
-   "url": "https://www.derryplayhouse.co.uk/event/around-here-the-birds-plant-the-trees-panel-discussion-performance",
-   "category": null,
-   "id": "01fa5827cd05",
-   "first_seen": "2026-08-12"
   },
   {
    "source": "an_grianan",
@@ -1058,6 +981,32 @@
    "first_seen": "2026-08-27"
   },
   {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The People&#8217;s Hall Tour",
+   "date": "2026-09-11",
+   "url": "https://www.saintcolumbshall.com/whatson/the-peoples-hall-tour/2026-09-11/",
+   "category": null,
+   "id": "eb47d751b027",
+   "first_seen": "2026-09-04"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Lunchtime Jazz with Gerarda McCann and the Bob Quick Quartet",
+   "date": "2026-09-11",
+   "time": "12:00pm",
+   "url": "https://struleartscentre.co.uk/show/lunchtime-jazz-with-gerarda-mccann-and-the-bob-quick-quartet/",
+   "category": "Music",
+   "sold_out": true,
+   "id": "ae849891b7fb",
+   "first_seen": "2026-09-04"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -1402,6 +1351,18 @@
    "first_seen": "2026-08-21"
   },
   {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The People&#8217;s Hall Tour",
+   "date": "2026-09-18",
+   "url": "https://www.saintcolumbshall.com/whatson/the-peoples-hall-tour/2026-09-18/",
+   "category": null,
+   "id": "90415d550e09",
+   "first_seen": "2026-09-04"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -1490,6 +1451,18 @@
    "category": "Music",
    "id": "b7acea3de5ce",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Mise-en-scène",
+   "date": "2026-09-19",
+   "url": "https://www.saintcolumbshall.com/whatson/mise-en-scene/",
+   "category": null,
+   "id": "4a03e7a5c2c7",
+   "first_seen": "2026-09-04"
   },
   {
    "source": "strule",
@@ -1956,6 +1929,19 @@
    "first_seen": "2026-08-07"
   },
   {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Think Left",
+   "date": "2026-10-02",
+   "end_date": "2026-10-04",
+   "url": "https://www.saintcolumbshall.com/whatson/think-left/",
+   "category": null,
+   "id": "7368b6c25e05",
+   "first_seen": "2026-09-04"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -2274,6 +2260,18 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The People&#8217;s Hall Tour",
+   "date": "2026-10-09",
+   "url": "https://www.saintcolumbshall.com/whatson/the-peoples-hall-tour/2026-10-09/",
+   "category": null,
+   "id": "12cb1dbd2720",
+   "first_seen": "2026-09-04"
+  },
+  {
    "source": "thedock",
    "venue": "The Dock",
    "town": "Carrick-on-Shannon",
@@ -2479,6 +2477,18 @@
    "category": "Comedy",
    "id": "556a8869cba5",
    "first_seen": "2026-07-17"
+  },
+  {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The People&#8217;s Hall Tour",
+   "date": "2026-10-16",
+   "url": "https://www.saintcolumbshall.com/whatson/the-peoples-hall-tour/2026-10-16/",
+   "category": null,
+   "id": "a8ffb65a5aa4",
+   "first_seen": "2026-09-04"
   },
   {
    "source": "thedock",
@@ -2782,6 +2792,18 @@
    "first_seen": "2026-09-02"
   },
   {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The People&#8217;s Hall Tour",
+   "date": "2026-10-23",
+   "url": "https://www.saintcolumbshall.com/whatson/the-peoples-hall-tour/2026-10-23/",
+   "category": null,
+   "id": "fb476415100c",
+   "first_seen": "2026-09-04"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -2896,6 +2918,19 @@
    "category": "Music",
    "id": "cd8ff5ae1879",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Derry Halloween",
+   "date": "2026-10-28",
+   "end_date": "2026-10-31",
+   "url": "https://www.saintcolumbshall.com/whatson/derry-halloween/",
+   "category": null,
+   "id": "1cef55c33bc9",
+   "first_seen": "2026-09-04"
   },
   {
    "source": "strule",
@@ -4242,18 +4277,6 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "st_columbs",
-   "venue": "St Columb's Hall",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Maccana – The Unseen Growth of Winter",
-   "date": "2027-01-30",
-   "url": "https://www.saintcolumbshall.com/whatson/maccana-the-unseen-growth-of-winter/",
-   "category": null,
-   "id": "dc1bc65c2fdd",
-   "first_seen": "2026-07-20"
-  },
-  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -4732,6 +4755,19 @@
    "first_seen": "2026-07-21"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Give My Head Peace Live",
+   "date": "2027-04-01",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/give-my-head-peace-live/",
+   "category": "Comedy",
+   "id": "b8fe9b428ca9",
+   "first_seen": "2026-09-04"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -4963,6 +4999,19 @@
    "category": "Music",
    "id": "4917e6898aa0",
    "first_seen": "2026-08-22"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "The Summer Country With The Stars Show 2027",
+   "date": "2027-06-17",
+   "time": "7:30pm",
+   "url": "https://struleartscentre.co.uk/show/the-summer-country-with-the-stars-show-2027/",
+   "category": "Music",
+   "id": "1c7977d54de5",
+   "first_seen": "2026-09-04"
   },
   {
    "source": "rcc",
@@ -8696,6 +8745,19 @@
    "category": null,
    "id": "cba8dbb52dba",
    "first_seen": "2026-09-03"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Abhainn Studio",
+   "town": "Enniscrone",
+   "county": "Sligo",
+   "title": "Monk ⎸ `````Abhainn Studio, Enniscrone",
+   "date": "2027-08-27",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/monk-abhainn-studio-enniscrone/",
+   "category": null,
+   "id": "22e3e3b64ccc",
+   "first_seen": "2026-09-04"
   }
  ]
 }
