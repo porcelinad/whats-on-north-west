@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-04T00:59Z",
+ "generated_at": "2026-09-05T00:58Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -8,7 +8,7 @@
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
-  "hawkswell": "2026-09-02T01:02Z",
+  "hawkswell": "2026-09-05T00:58Z",
   "craftmonth_donegal": "2026-09-04T00:59Z",
   "craftmonth_derry": "2026-09-04T00:59Z",
   "craftmonth_derry_city": "2026-09-04T00:59Z",
@@ -22,13 +22,13 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 9,
+  "eaf": 10,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 8
+  "playhouse": 9
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -366,20 +366,6 @@
   },
   {
    "source": "eaf",
-   "venue": "An Gailearaí, Ionad Áislann, Páirc Ghnó Ghaoth Dobhair, F92 PT38",
-   "town": "Gaoth Dobhair",
-   "county": "Donegal",
-   "title": "Déanta i nDún na nGall – Made in Donegal",
-   "date": "2026-07-11",
-   "end_date": "2026-09-04",
-   "time": "11am-5pm, Monday, Tuesday, Thursday & Friday 1pm-8pm, Wednesdays",
-   "url": "https://eaf.ie/events/deanta-i-ndun-na-ngall-made-in-donegal/",
-   "category": "Visual Arts",
-   "id": "472238298297",
-   "first_seen": "2026-08-10"
-  },
-  {
-   "source": "eaf",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
    "county": "Donegal",
@@ -434,32 +420,6 @@
    "first_seen": "2026-08-05"
   },
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "David Nihill: Taking Tangents Tour",
-   "date": "2026-09-04",
-   "url": "https://angrianan.com/event/david-nihill-taking-tangents-tour/",
-   "booking_url": "https://angrianan.ticketsolve.com/shows/873665104/events",
-   "category": "Comedy",
-   "id": "fddc44c4af94",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Shell Town – Art Deco Speakeasy",
-   "date": "2026-09-04",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/shell-town",
-   "category": null,
-   "id": "f708a456aee8",
-   "first_seen": "2026-08-05"
-  },
-  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -472,58 +432,6 @@
    "category": "Comedy",
    "id": "c27f5df6993a",
    "first_seen": "2026-07-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Dancing at Lughnasa – by Brian Friel",
-   "date": "2026-09-04",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/dancing-at-lughnasa-2",
-   "category": "Theatre",
-   "id": "f7276e3be663",
-   "first_seen": "2026-07-28"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Leitrim Sculpture Centre",
-   "town": "Manorhamilton",
-   "county": "Leitrim",
-   "title": "Welding Workshop",
-   "date": "2026-09-04",
-   "time": "10:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/welding-workshop/",
-   "category": null,
-   "id": "723d876609e5",
-   "first_seen": "2026-07-27"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Chris Boldt",
-   "date": "2026-09-04",
-   "time": "8:00PM",
-   "url": "https://nervecentre.org/whats-on/chris-boldt",
-   "category": "Music/Comedy",
-   "id": "d790ce3bff9c",
-   "first_seen": "2026-07-21"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Bump & Baby",
-   "date": "2026-09-04",
-   "time": "10:00 am",
-   "url": "https://www.themodel.ie/?event=baby-and-bump&event_date=2026-09-04",
-   "category": null,
-   "id": "1b28e9845391",
-   "first_seen": "2026-08-27"
   },
   {
    "source": "abbey",
@@ -569,13 +477,13 @@
    "venue": "Art Deco Theatre",
    "town": "Ballymote",
    "county": "Sligo",
-   "title": "The General – With live musical accompaniment",
+   "title": "The General CANCELLED – With live musical accompaniment",
    "date": "2026-09-05",
    "time": "8pm",
    "url": "https://www.hawkswell.com/whats-on/shows/the-general",
    "category": null,
-   "id": "1d30bf98ecfe",
-   "first_seen": "2026-07-28"
+   "id": "1bb1c7809d46",
+   "first_seen": "2026-09-05"
   },
   {
    "source": "hawkswell",
@@ -874,6 +782,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Ardhowen Theatre 40th Anniversary Celebration",
+   "date": "2026-09-10",
+   "time": "6:00pm",
+   "url": "https://ardhowen.com/show/ardhowen-theatre-40th-anniversary-celebration/",
+   "category": "Community",
+   "id": "6abdaa67b0c8",
+   "first_seen": "2026-09-05"
+  },
+  {
    "source": "hawkswell",
    "venue": "Hawk's Well Theatre",
    "town": "Sligo",
@@ -1059,6 +980,32 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Seeing the Words Hearing the Words – A Celebration of John McGahern",
+   "date": "2026-09-12",
+   "time": "10.30am & 5pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/seeing-the-words-hearing-the-words-a-celebration-of-john-mcgahern",
+   "category": null,
+   "id": "a649c4ffb8d0",
+   "first_seen": "2026-09-05"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "That They May Face The Rising Sun",
+   "date": "2026-09-12",
+   "time": "7.30pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/that-they-may-face-the-rising-sun",
+   "category": null,
+   "id": "1207f2d93d4c",
+   "first_seen": "2026-09-05"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -1070,6 +1017,19 @@
    "category": "Music",
    "id": "27e961ec55d9",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Vittorio Angelone – You Can't Say Nothing Anymore",
+   "date": "2026-09-12",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/vittorio-angelone-2",
+   "category": "Comedy",
+   "id": "d0f8792f39f6",
+   "first_seen": "2026-09-05"
   },
   {
    "source": "eventbrite_donegal",
@@ -1125,6 +1085,19 @@
    "category": "Music",
    "id": "ef5f4346ed41",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Exhibition Opening | Cathy Wilkes | 4pm",
+   "date": "2026-09-12",
+   "time": "4:00 pm",
+   "url": "https://www.themodel.ie/?exhibition=cathy-wilkes-2026&event_date=2026-09-12",
+   "category": null,
+   "id": "42bc2e1ff650",
+   "first_seen": "2026-09-05"
   },
   {
    "source": "playhouse",
@@ -1214,6 +1187,7 @@
    "time": "7:00PM",
    "url": "https://nervecentre.org/whats-on/tony-nerve-cinema",
    "category": "Film",
+   "sold_out": true,
    "id": "f712645168e6",
    "first_seen": "2026-08-05"
   },
@@ -1282,6 +1256,19 @@
    "category": null,
    "id": "67b4ce9a6409",
    "first_seen": "2026-08-27"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Exhibition Launch | Desire Lines; curated by aemi",
+   "date": "2026-09-17",
+   "time": "Open all day",
+   "url": "/?exhibition=desire-lines-aemi-tour-2026&event_date=2026-09-17",
+   "category": null,
+   "id": "8f4f45e93244",
+   "first_seen": "2026-09-05"
   },
   {
    "source": "playhouse",
@@ -1399,6 +1386,45 @@
    "category": "News",
    "id": "f40d40d78a9b",
    "first_seen": "2026-08-26"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Culture Night 2026",
+   "date": "2026-09-18",
+   "time": "Open all day",
+   "url": "https://www.themodel.ie/?event=culture-night-2026&event_date=2026-09-18",
+   "category": null,
+   "id": "591014e29cdf",
+   "first_seen": "2026-09-05"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Culture Night | Collage Workshop",
+   "date": "2026-09-18",
+   "time": "6:00 pm",
+   "url": "https://www.themodel.ie/?event=culture-night-collage-workshop&event_date=2026-09-18",
+   "category": null,
+   "id": "97d85f5400f4",
+   "first_seen": "2026-09-05"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Culture Night | Crash Ensemble",
+   "date": "2026-09-18",
+   "time": "8:00 pm",
+   "url": "https://www.themodel.ie/?event=culture-night-crash-ensemble&event_date=2026-09-18",
+   "category": null,
+   "id": "c2cf6d17cdd3",
+   "first_seen": "2026-09-05"
   },
   {
    "source": "abbey",
@@ -1874,6 +1900,19 @@
    "first_seen": "2026-08-19"
   },
   {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Illuminations – Open Mic Poetry",
+   "date": "2026-10-01",
+   "time": "8:00 pm",
+   "url": "https://www.themodel.ie/?event=illuminations&event_date=2026-10-01",
+   "category": null,
+   "id": "656f7b2009c5",
+   "first_seen": "2026-09-05"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -1954,6 +1993,19 @@
    "sold_out": true,
    "id": "6dacf8acfdf1",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Bump & Baby",
+   "date": "2026-10-02",
+   "time": "10:00 am",
+   "url": "https://www.themodel.ie/?event=baby-and-bump&event_date=2026-10-02",
+   "category": null,
+   "id": "6f84b1bb5ff3",
+   "first_seen": "2026-09-05"
   },
   {
    "source": "an_grianan",
@@ -3633,13 +3685,13 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
-   "title": "How To Marry A Millionaie – Dementia Friendly",
+   "title": "How To Marry A Millionaire – Dementia Friendly",
    "date": "2026-11-27",
    "time": "11:00am",
    "url": "https://struleartscentre.co.uk/show/how-to-marry-a-millionaie-dementia-friendly/",
    "category": "Film",
-   "id": "b59f2cf690c3",
-   "first_seen": "2026-09-03"
+   "id": "ac44e6de5f0b",
+   "first_seen": "2026-09-05"
   },
   {
    "source": "playhouse",
@@ -8758,6 +8810,19 @@
    "category": null,
    "id": "22e3e3b64ccc",
    "first_seen": "2026-09-04"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Music: The Tunney family & Guests – Where Songs Do Thunder (Book Launch & Concert)",
+   "date": "2027-08-28",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-music-the-tunney-family-guests-where-songs-do-thunder-book-launch-and-concert/",
+   "category": "Spoken Word",
+   "id": "77550f1c8fb9",
+   "first_seen": "2026-09-05"
   }
  ]
 }
