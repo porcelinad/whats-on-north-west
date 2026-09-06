@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-05T00:58Z",
+ "generated_at": "2026-09-06T00:59Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -28,7 +28,7 @@
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 10,
+  "eaf": 11,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 9
+  "playhouse": 10
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -352,20 +352,6 @@
  "events": [
   {
    "source": "eaf",
-   "venue": "Donegal County Museum",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Rockwell Kent – An American Artist in Donegal",
-   "date": "2026-07-10",
-   "end_date": "2026-09-05",
-   "time": "Monday – Friday 10am - 4.30pm, (Closed 12.30pm - 1pm), Saturday, 1pm - 4.30pm",
-   "url": "https://eaf.ie/events/rockwell-kent-an-american-artist-in-donegal/",
-   "category": "Visual Arts",
-   "id": "377b45f33d4b",
-   "first_seen": "2026-08-10"
-  },
-  {
-   "source": "eaf",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
    "county": "Donegal",
@@ -420,136 +406,6 @@
    "first_seen": "2026-08-05"
   },
   {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "How's Your Father starring Conal Gallen",
-   "date": "2026-09-04",
-   "end_date": "2026-09-05",
-   "time": "8:00 pm - 10:00 pm",
-   "url": "https://www.balorartscentre.com/?event=hows-your-father-starring-conal-gallen",
-   "category": "Comedy",
-   "id": "c27f5df6993a",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "abbey",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "At The End Of The Day",
-   "date": "2026-09-05",
-   "url": "https://abbeycentre.ie/eventer/at-the-end-of-the-day",
-   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173673976",
-   "category": null,
-   "id": "d106b2d5bf64",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "We Have Him Back!",
-   "date": "2026-09-05",
-   "url": "https://angrianan.com/event/we-have-him-back/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662980/events/128647333/seats?zone=Default",
-   "category": "Theatre",
-   "id": "6e3489c44300",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Superstar Wrestling",
-   "date": "2026-09-05",
-   "time": "6:00pm",
-   "url": "https://ardhowen.com/show/superstar-wrestling/",
-   "category": null,
-   "id": "510dc1e6d1d6",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "The General CANCELLED – With live musical accompaniment",
-   "date": "2026-09-05",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/the-general",
-   "category": null,
-   "id": "1bb1c7809d46",
-   "first_seen": "2026-09-05"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Anne Gildea - Further Adventures in WOMANING",
-   "date": "2026-09-05",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/anne-gildea-further-adventures-in-womaning",
-   "category": "Comedy",
-   "id": "9346e94ff465",
-   "first_seen": "2026-07-28"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Mahon's Hotel",
-   "town": "Irvinestown",
-   "county": "Fermanagh",
-   "title": "Tully in Concert",
-   "date": "2026-09-05",
-   "time": "20:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/tully-in-concert/",
-   "category": null,
-   "id": "b2fc370f715b",
-   "first_seen": "2026-08-02"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Manor House Country Hotel",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Brunch, Beats & Cruise with DJ Bob!! Sat 5th September 2026",
-   "date": "2026-09-05",
-   "time": "13:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/brunch-beats-cruise-with-dj-bob-sat-5th-september-2026/",
-   "category": null,
-   "id": "2f58f6baf467",
-   "first_seen": "2026-08-02"
-  },
-  {
-   "source": "mcgrorys",
-   "venue": "McGrory's Hotel",
-   "town": "Culdaff",
-   "county": "Donegal",
-   "title": "Emma Langford",
-   "date": "2026-09-05",
-   "url": "https://www.mcgrorys.ie/entertainment/78-169/",
-   "category": "Music",
-   "id": "a935e4f46a28",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Music School Band Night",
-   "date": "2026-09-05",
-   "time": "7:30PM",
-   "url": "https://nervecentre.org/whats-on/music-school-band-night",
-   "category": "Music/Comedy",
-   "id": "26d1bd37f0ec",
-   "first_seen": "2026-08-29"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -564,31 +420,6 @@
    "first_seen": "2026-08-28"
   },
   {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Conor Moore Me, Myself and Them",
-   "date": "2026-09-05",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/conor-moore-me-myself-and-them/",
-   "category": "Comedy",
-   "id": "f2cda88a2840",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Mundy – Live in Concert",
-   "date": "2026-09-05",
-   "url": "https://www.thedock.ie/whats-on/mundy-2",
-   "category": "Music",
-   "id": "99cf4d459737",
-   "first_seen": "2026-08-01"
-  },
-  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -600,18 +431,6 @@
    "category": null,
    "id": "62ab2d442f0c",
    "first_seen": "2026-08-07"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Sound Recording Workshop",
-   "date": "2026-09-05",
-   "url": "https://www.derryplayhouse.co.uk/event/sound-recording-workshop",
-   "category": null,
-   "id": "a4087c0a0bfc",
-   "first_seen": "2026-08-25"
   },
   {
    "source": "hawkswell",
@@ -2867,6 +2686,18 @@
    "category": "Music",
    "id": "72adffc58972",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Clare Sands – They Tried to Bury Us",
+   "date": "2026-10-23",
+   "url": "https://www.thedock.ie/whats-on/clare-sands",
+   "category": "Music",
+   "id": "47d6a36e991d",
+   "first_seen": "2026-09-06"
   },
   {
    "source": "an_grianan",
@@ -8823,6 +8654,58 @@
    "category": "Spoken Word",
    "id": "77550f1c8fb9",
    "first_seen": "2026-09-05"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Garvagh High School Site - Meeting Point",
+   "town": "Garvagh",
+   "county": "Derry",
+   "title": "Garvagh Forest Bat Walk",
+   "date": "2027-08-29",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/garvagh-forest-bat-walk/",
+   "category": null,
+   "id": "692e8db17cc3",
+   "first_seen": "2026-09-06"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim School of Art N41 E8H0",
+   "town": "Ballinamore",
+   "county": "Leitrim",
+   "title": "Digital Photography for Beginners Part 1, Sat 29th Aug 2026, 10am-4pm",
+   "date": "2027-08-29",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/digital-photography-for-beginners-part-1-sat-29th-aug-2026-10am-4pm/",
+   "category": null,
+   "id": "536319cd3e4d",
+   "first_seen": "2026-09-06"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim School of Art N41 E8H0",
+   "town": "Ballinamore",
+   "county": "Leitrim",
+   "title": "Painting Workshop, 1 Day. Sat 29th Aug 2026 ,10:00am-3:00pm",
+   "date": "2027-08-29",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/painting-workshop-1-day-sat-29th-aug-2026-10-00am-3-00pm/",
+   "category": null,
+   "id": "e1ee37b3cd16",
+   "first_seen": "2026-09-06"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Workshop: Writing for Non – Human Entities with Barbara Knežević",
+   "date": "2027-08-29",
+   "time": "2:00 pm",
+   "url": "https://regionalculturalcentre.com/events/workshop-writing-for-non-human-entities-with-barbara-knezevic/",
+   "category": "Workshop",
+   "id": "a112f029c1c8",
+   "first_seen": "2026-09-06"
   }
  ]
 }
