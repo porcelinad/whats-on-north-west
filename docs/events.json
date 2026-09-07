@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-06T00:59Z",
+ "generated_at": "2026-09-07T01:02Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -9,26 +9,26 @@
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
   "hawkswell": "2026-09-05T00:58Z",
-  "craftmonth_donegal": "2026-09-04T00:59Z",
-  "craftmonth_derry": "2026-09-04T00:59Z",
-  "craftmonth_derry_city": "2026-09-04T00:59Z",
-  "craftmonth_leitrim": "2026-09-04T00:59Z",
-  "craftmonth_sligo": "2026-09-04T00:59Z",
-  "craftmonth_tyrone": "2026-09-04T00:59Z",
-  "craftmonth_fermanagh": "2026-09-04T00:59Z",
-  "heritageweek": "2026-09-04T00:59Z"
+  "craftmonth_donegal": "2026-09-07T01:02Z",
+  "craftmonth_derry": "2026-09-07T01:02Z",
+  "craftmonth_derry_city": "2026-09-07T01:02Z",
+  "craftmonth_leitrim": "2026-09-07T01:02Z",
+  "craftmonth_sligo": "2026-09-07T01:02Z",
+  "craftmonth_tyrone": "2026-09-07T01:02Z",
+  "craftmonth_fermanagh": "2026-09-07T01:02Z",
+  "heritageweek": "2026-09-07T01:02Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 11,
+  "eaf": 12,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 10
+  "playhouse": 11
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -418,70 +418,6 @@
    "category": "Exhibition",
    "id": "0fd98d4fe383",
    "first_seen": "2026-08-28"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Afronauts",
-   "date": "2026-09-05",
-   "end_date": "2026-09-06",
-   "url": "https://www.derryplayhouse.co.uk/event/afronauts",
-   "category": null,
-   "id": "62ab2d442f0c",
-   "first_seen": "2026-08-07"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Singin' In The Rain",
-   "date": "2026-09-06",
-   "time": "6pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/singin-in-the-rain-2",
-   "category": null,
-   "id": "6849637b5a73",
-   "first_seen": "2026-08-08"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "SEOID Album Launch – With special guest artists Kenny Donagher, Kerrie Herrity, John Dwyer, Fiachra Guihen",
-   "date": "2026-09-06",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/seoid-album-launch",
-   "category": "Music",
-   "id": "56fd2e37c005",
-   "first_seen": "2026-07-31"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Informal Music Afternoon in September",
-   "date": "2026-09-06",
-   "time": "1:00 pm",
-   "url": "https://www.themodel.ie/?event=ima-sep26&event_date=2026-09-06",
-   "category": null,
-   "id": "62ada800c7d4",
-   "first_seen": "2026-08-21"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Dare to Dream",
-   "date": "2026-09-06",
-   "url": "https://www.derryplayhouse.co.uk/event/dare-to-dream",
-   "category": null,
-   "id": "6fe03e500834",
-   "first_seen": "2026-08-25"
   },
   {
    "source": "hawkswell",
@@ -8706,6 +8642,19 @@
    "category": "Workshop",
    "id": "a112f029c1c8",
    "first_seen": "2026-09-06"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim School of Art N41 E8H0",
+   "town": "Ballinamore",
+   "county": "Leitrim",
+   "title": "One Day Ceramic Workshop, Sunday 30th Aug 2026, 10am-4pm",
+   "date": "2027-08-30",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/one-day-ceramic-workshop-sunday-30th-aug-2026-10am-4pm/",
+   "category": null,
+   "id": "ded477705571",
+   "first_seen": "2026-09-07"
   }
  ]
 }
