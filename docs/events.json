@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-07T01:02Z",
+ "generated_at": "2026-09-08T01:13Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -8,7 +8,7 @@
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
-  "hawkswell": "2026-09-05T00:58Z",
+  "hawkswell": "2026-09-08T01:13Z",
   "craftmonth_donegal": "2026-09-07T01:02Z",
   "craftmonth_derry": "2026-09-07T01:02Z",
   "craftmonth_derry_city": "2026-09-07T01:02Z",
@@ -22,13 +22,13 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 2,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 12,
+  "eaf": 13,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 11
+  "playhouse": 12
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -420,19 +420,6 @@
    "first_seen": "2026-08-28"
   },
   {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Studio",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Tiny Trees – With Jackie Maguire",
-   "date": "2026-09-07",
-   "time": "11am & 12pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/tiny-trees",
-   "category": "Kids/Family",
-   "id": "893db976530b",
-   "first_seen": "2026-07-28"
-  },
-  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -440,7 +427,7 @@
    "title": "The Macbeth Project",
    "date": "2026-09-08",
    "time": "10:00am",
-   "url": "https://ardhowen.com/show/the-macbeth-project/",
+   "url": "https://ardhowen.com/show/the-macbeth-project-2/",
    "category": "Drama",
    "id": "e397cb14705a",
    "first_seen": "2026-08-01"
@@ -867,6 +854,32 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "The Godfather",
+   "date": "2026-09-13",
+   "time": "6pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-godfather",
+   "category": null,
+   "id": "07bc019cdbfa",
+   "first_seen": "2026-09-08"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "The Lion King",
+   "date": "2026-09-13",
+   "time": "2pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-lion-king",
+   "category": null,
+   "id": "d8f6a80cf470",
+   "first_seen": "2026-09-08"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -906,6 +919,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "To Hell in a Handbag: The Secret Lives of Canon Chasuble & Miss Prism – by Helen Norton and Jonathan White",
+   "date": "2026-09-15",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/to-hell-in-a-handbag-the-secret-lives-of-canon-chasuble-miss-prism",
+   "category": "Theatre",
+   "id": "37c68862473f",
+   "first_seen": "2026-09-08"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -931,6 +957,19 @@
    "category": "Music",
    "id": "cd2fd1c2e7f9",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Muireann Nic Amhlaoibh, Pauline Scanlon, Tom Morrow & John Doyle",
+   "date": "2026-09-16",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/muireann-nic-amhlaoibh-pauline-scanlon-tom-morrow-john-doyle",
+   "category": "Music",
+   "id": "56a10270619d",
+   "first_seen": "2026-09-08"
   },
   {
    "source": "nervecentre",
@@ -985,6 +1024,19 @@
    "category": "Music",
    "id": "1630f46e4beb",
    "first_seen": "2026-08-13"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Conal Gallen - How's Your Father?",
+   "date": "2026-09-17",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/conal-gallen-hows-your-father",
+   "category": "Theatre",
+   "id": "66b3edf46fde",
+   "first_seen": "2026-09-08"
   },
   {
    "source": "strule",
@@ -2079,6 +2131,19 @@
    "first_seen": "2026-09-04"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "In Jimmy Kennedys Footsteps: Denmark Street Revisted",
+   "date": "2026-10-09",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/in-jimmy-kennedys-footsteps-denmark-street-revisted/",
+   "category": "Festival",
+   "id": "ea51f3204db2",
+   "first_seen": "2026-09-08"
+  },
+  {
    "source": "thedock",
    "venue": "The Dock",
    "town": "Carrick-on-Shannon",
@@ -2165,6 +2230,19 @@
    "category": null,
    "id": "05e7585e42aa",
    "first_seen": "2026-08-26"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "My Song Goes ’Round the World",
+   "date": "2026-10-10",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/my-song-goes-round-the-world/",
+   "category": "Festival",
+   "id": "5e0ff059d86e",
+   "first_seen": "2026-09-08"
   },
   {
    "source": "eventbrite_donegal",
@@ -4715,6 +4793,20 @@
    "category": "Spoken Word",
    "id": "bc4c82e21e4a",
    "first_seen": "2026-07-18"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Get Into The Habit",
+   "date": "2027-04-23",
+   "end_date": "2027-04-24",
+   "url": "https://angrianan.com/event/get-into-the-habit/",
+   "booking_url": "https://angrianan.ticketsolve.com/shows/873667449/events",
+   "category": "Drama",
+   "id": "cbc70b7df26b",
+   "first_seen": "2026-09-08"
   },
   {
    "source": "strule",
