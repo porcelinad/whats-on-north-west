@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-08T01:13Z",
+ "generated_at": "2026-09-09T01:15Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -22,13 +22,13 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 2,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 13,
+  "eaf": 14,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 12
+  "playhouse": 13
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -420,45 +420,6 @@
    "first_seen": "2026-08-28"
   },
   {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "The Macbeth Project",
-   "date": "2026-09-08",
-   "time": "10:00am",
-   "url": "https://ardhowen.com/show/the-macbeth-project-2/",
-   "category": "Drama",
-   "id": "e397cb14705a",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "The Sand Park – A play written & performed by Seamus O'Rourke",
-   "date": "2026-09-08",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/the-sand-park",
-   "category": "Theatre",
-   "id": "d37586d4767d",
-   "first_seen": "2026-08-10"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Normal | Nerve Cinema",
-   "date": "2026-09-08",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/normal-nerve-cinema",
-   "category": "Film",
-   "id": "b881ec059908",
-   "first_seen": "2026-08-05"
-  },
-  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -694,6 +655,19 @@
    "category": "Music",
    "id": "0e08ac39ad4a",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Graphite & Easel; Life Drawing Sessions",
+   "date": "2026-09-11",
+   "time": "10:30 am",
+   "url": "https://www.themodel.ie/?event=graphite-and-easel&event_date=2026-09-11",
+   "category": null,
+   "id": "f95bb5d45673",
+   "first_seen": "2026-09-09"
   },
   {
    "source": "eventbrite_donegal",
@@ -1923,6 +1897,19 @@
    "first_seen": "2026-08-15"
   },
   {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Informal Music Afternoon in October",
+   "date": "2026-10-04",
+   "time": "1:00 pm",
+   "url": "https://www.themodel.ie/?event=ima-oct26&event_date=2026-10-04",
+   "category": null,
+   "id": "7ab41fa4cf16",
+   "first_seen": "2026-09-09"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -2207,6 +2194,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Tales, Verse and Mumming",
+   "date": "2026-10-10",
+   "time": "7:00 pm",
+   "url": "https://www.balorartscentre.com/?event=tales-verse-and-mumming",
+   "category": "Spoken Word",
+   "id": "06e26c448105",
+   "first_seen": "2026-09-09"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -2256,6 +2256,45 @@
    "category": null,
    "id": "429825ba2684",
    "first_seen": "2026-08-02"
+  },
+  {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Vision & Voices",
+   "date": "2026-10-11",
+   "time": "8:00 pm",
+   "url": "https://www.balorartscentre.com/?event=vision-voices",
+   "category": "Drama",
+   "id": "23261fbfa04c",
+   "first_seen": "2026-09-09"
+  },
+  {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Great | Crossing Lines",
+   "date": "2026-10-12",
+   "time": "8:30 pm - 10:15 pm",
+   "url": "https://www.balorartscentre.com/?event=great-crossing-lines",
+   "category": "Film",
+   "id": "f1da2cbcbc08",
+   "first_seen": "2026-09-09"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "The Unfinished Broadside",
+   "date": "2026-10-13",
+   "time": "7:30pm",
+   "url": "https://ardhowen.com/show/the-unfinished-broadside/",
+   "category": "Music",
+   "id": "d38818e38dc3",
+   "first_seen": "2026-09-09"
   },
   {
    "source": "nervecentre",
@@ -2555,6 +2594,19 @@
    "category": "Theatre",
    "id": "8d6a99f6d586",
    "first_seen": "2026-07-31"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Homicide Timeline Training Including Coercive Control",
+   "date": "2026-10-21",
+   "time": "9:00am",
+   "url": "https://ardhowen.com/show/homicide-timeline-training-including-coercive-control/",
+   "category": "Adult Workshop",
+   "id": "8a765b789b47",
+   "first_seen": "2026-09-09"
   },
   {
    "source": "nervecentre",
@@ -3501,6 +3553,20 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Cinderella 2 - The Sisters Revenge!",
+   "date": "2026-11-27",
+   "end_date": "2026-12-12",
+   "time": "4:00 pm - 8:00 pm",
+   "url": "https://www.balorartscentre.com/?event=cinderella-2-the-sisters-revenge",
+   "category": "Panto",
+   "id": "12670eb3048d",
+   "first_seen": "2026-09-09"
+  },
+  {
    "source": "mcgrorys",
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
@@ -3989,6 +4055,19 @@
    "category": "Comedy",
    "id": "84542fb784c8",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Chasing Abbey",
+   "date": "2027-01-02",
+   "time": "8:00PM",
+   "url": "https://nervecentre.org/whats-on/chasing-abbey",
+   "category": "Music/Comedy",
+   "id": "7cb9e8d9582a",
+   "first_seen": "2026-09-09"
   },
   {
    "source": "an_grianan",
