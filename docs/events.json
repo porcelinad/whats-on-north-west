@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-09T01:15Z",
+ "generated_at": "2026-09-10T01:05Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -9,26 +9,26 @@
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
   "hawkswell": "2026-09-08T01:13Z",
-  "craftmonth_donegal": "2026-09-07T01:02Z",
-  "craftmonth_derry": "2026-09-07T01:02Z",
-  "craftmonth_derry_city": "2026-09-07T01:02Z",
-  "craftmonth_leitrim": "2026-09-07T01:02Z",
-  "craftmonth_sligo": "2026-09-07T01:02Z",
-  "craftmonth_tyrone": "2026-09-07T01:02Z",
-  "craftmonth_fermanagh": "2026-09-07T01:02Z",
-  "heritageweek": "2026-09-07T01:02Z"
+  "craftmonth_donegal": "2026-09-10T01:05Z",
+  "craftmonth_derry": "2026-09-10T01:05Z",
+  "craftmonth_derry_city": "2026-09-10T01:05Z",
+  "craftmonth_leitrim": "2026-09-10T01:05Z",
+  "craftmonth_sligo": "2026-09-10T01:05Z",
+  "craftmonth_tyrone": "2026-09-10T01:05Z",
+  "craftmonth_fermanagh": "2026-09-10T01:05Z",
+  "heritageweek": "2026-09-10T01:05Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 14,
+  "eaf": 15,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 13
+  "playhouse": 14
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -424,58 +424,6 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "Lisa O’Neill",
-   "date": "2026-09-09",
-   "url": "https://angrianan.com/event/lisa-oneill/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666288/events/128660658/seats?zone=Default",
-   "category": "Music",
-   "id": "ab30dc1f8732",
-   "first_seen": "2026-07-17"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "The Sand Park – A play written & performed by Seamus O'Rourke",
-   "date": "2026-09-09",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/the-sand-park-2",
-   "category": null,
-   "id": "77c05e7cc149",
-   "first_seen": "2026-08-15"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Nirvanna the Band the Show the Movie | Nerve Cinema",
-   "date": "2026-09-09",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/nirvanna-the-band-the-show-the-movie-nerve-cinema",
-   "category": "Film",
-   "id": "0aa8e70d1dd1",
-   "first_seen": "2026-08-05"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Irish Language Taster Session 2026",
-   "date": "2026-09-09",
-   "time": "7:30pm",
-   "url": "https://struleartscentre.co.uk/show/irish-language-taster-session-2026/",
-   "category": "Adult Workshop",
-   "id": "4dc76156de36",
-   "first_seen": "2026-08-22"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
    "title": "The ELO Tribute Show",
    "date": "2026-09-10",
    "url": "https://angrianan.com/event/the-elo-show/",
@@ -538,6 +486,19 @@
    "category": "Spoken Word",
    "id": "35d8611df9a6",
    "first_seen": "2026-08-29"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Film screening: Once Upon a Time in the Cinema",
+   "date": "2026-09-10",
+   "time": "8:00 pm",
+   "url": "/?event=sligo-film-society-2026-27&event_date=2026-09-10",
+   "category": null,
+   "id": "356e871c688a",
+   "first_seen": "2026-09-10"
   },
   {
    "source": "themodel",
@@ -765,7 +726,20 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
-   "title": "Governors House Tour & Goal Talk – European Heritage Open Days 2026",
+   "title": "Gallery Tour by Maria Noonan McDermott",
+   "date": "2026-09-12",
+   "time": "2:00pm",
+   "url": "https://struleartscentre.co.uk/show/gallery-tour-by-maria-noonan-mcdermott/",
+   "category": "Spoken Word",
+   "id": "20679b96639e",
+   "first_seen": "2026-09-10"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Governors House Tour & Gaol Talk – European Heritage Open Days 2026",
    "date": "2026-09-12",
    "url": "https://struleartscentre.co.uk/show/governors-house-tour-goal-talk-european-heritage-open-days-2026/",
    "category": "Spoken Word",
@@ -773,8 +747,8 @@
    "merged_from": [
     "strule"
    ],
-   "id": "2795a292bb4b",
-   "first_seen": "2026-08-29"
+   "id": "266843a63885",
+   "first_seen": "2026-09-10"
   },
   {
    "source": "strule",
@@ -871,13 +845,13 @@
    "venue": "The Model",
    "town": "Sligo",
    "county": "Sligo",
-   "title": "Sligo Pride presents: Blindr",
+   "title": "Sligo Pride; Blindr",
    "date": "2026-09-13",
    "time": "8:00 pm",
    "url": "https://www.themodel.ie/?event=sligo-pride-blindr&event_date=2026-09-13",
    "category": null,
-   "id": "268883ffa1ce",
-   "first_seen": "2026-09-02"
+   "id": "d3bc6d0b1fe3",
+   "first_seen": "2026-09-10"
   },
   {
    "source": "eventbrite_donegal",
@@ -1595,6 +1569,7 @@
    "time": "7:00PM",
    "url": "https://nervecentre.org/whats-on/teenage-sex-and-death-at-camp-miasma-nerve-cinema",
    "category": "Film",
+   "sold_out": true,
    "id": "5f59e2522f78",
    "first_seen": "2026-08-05"
   },
@@ -1679,6 +1654,19 @@
    "category": "Exhibition",
    "id": "3bf258f207ba",
    "first_seen": "2026-08-19"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Film screening: Blue Heron",
+   "date": "2026-10-01",
+   "time": "8:00 pm",
+   "url": "/?event=sligo-film-society-2026-27&event_date=2026-10-01",
+   "category": null,
+   "id": "2eb4fb1dc2a4",
+   "first_seen": "2026-09-10"
   },
   {
    "source": "themodel",
@@ -1774,6 +1762,19 @@
    "sold_out": true,
    "id": "6dacf8acfdf1",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Gallery Tour by Anushiya Sundaralingam",
+   "date": "2026-10-02",
+   "time": "11:00am",
+   "url": "https://struleartscentre.co.uk/show/gallery-tour-by-anushiya-sundaralingam/",
+   "category": "Spoken Word",
+   "id": "8e221e551e4b",
+   "first_seen": "2026-09-10"
   },
   {
    "source": "themodel",
@@ -2869,6 +2870,35 @@
    "first_seen": "2026-07-21"
   },
   {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Hocus Pocus | Halloween Nerve Cinema",
+   "date": "2026-10-28",
+   "time": "2:00PM",
+   "url": "https://nervecentre.org/whats-on/hocus-pocus-halloween-nerve-cinema",
+   "category": "Film",
+   "id": "dcf4279014d1",
+   "first_seen": "2026-09-10"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The Goonies (4K Restoration) | Halloween Nerve Cinema",
+   "date": "2026-10-28",
+   "time": "4:00PM",
+   "url": "https://nervecentre.org/whats-on/the-goonies-nerve-cinema",
+   "category": "Film",
+   "merged_from": [
+    "nervecentre"
+   ],
+   "id": "02fe933d3ee3",
+   "first_seen": "2026-09-10"
+  },
+  {
    "source": "st_columbs",
    "venue": "St Columb's Hall",
    "town": "Derry",
@@ -2935,6 +2965,35 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Gremlins (4K Restoration) | Halloween Nerve Cinema",
+   "date": "2026-10-29",
+   "time": "4:00PM",
+   "url": "https://nervecentre.org/whats-on/gremlins-nerve-cinema",
+   "category": "Film",
+   "merged_from": [
+    "nervecentre"
+   ],
+   "id": "9ac0f8d17c0d",
+   "first_seen": "2026-09-10"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The Exorcist (Extended Director's Cut) | Halloween Nerve Cinema",
+   "date": "2026-10-29",
+   "time": "7:00PM",
+   "url": "https://nervecentre.org/whats-on/the-exorcist-extended-directors-cut-halloween-nerve-cinema",
+   "category": "Film",
+   "id": "da84753fc773",
+   "first_seen": "2026-09-10"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -2971,6 +3030,35 @@
    "category": "Music",
    "id": "1beba8f5fe41",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Labyrinth (4K Restoration) | Halloween Nerve Cinema",
+   "date": "2026-10-30",
+   "time": "4:00PM",
+   "url": "https://nervecentre.org/whats-on/labyrinth-halloween-nerve-cinema",
+   "category": "Film",
+   "merged_from": [
+    "nervecentre"
+   ],
+   "id": "43957cc83e9d",
+   "first_seen": "2026-09-10"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The Shining (Extended Cut) | Halloween Nerve Cinema",
+   "date": "2026-10-30",
+   "time": "7:00PM",
+   "url": "https://nervecentre.org/whats-on/the-shining",
+   "category": "Film",
+   "id": "2e7338d028d2",
+   "first_seen": "2026-09-10"
   },
   {
    "source": "rcc",
@@ -3023,6 +3111,19 @@
    "category": "Music",
    "id": "1f5dfaeb2fc2",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Wallace and Gromit: The Curse of the Were-Rabbit | Halloween Nerve Cinema",
+   "date": "2026-10-31",
+   "time": "2:00PM",
+   "url": "https://nervecentre.org/whats-on/wallace-and-gromit-curse-of-the-were-rabbit-nerve-cinema",
+   "category": "Film",
+   "id": "16e25bf54ccb",
+   "first_seen": "2026-09-10"
   },
   {
    "source": "strule",
@@ -3759,6 +3860,18 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Bell X1 | Good Bones Tour 2026",
+   "date": "2026-12-11",
+   "url": "https://nervecentre.org/whats-on/bell-x1-good-bones-tour-2026",
+   "category": "Music/Comedy",
+   "id": "71e89faf20c3",
+   "first_seen": "2026-09-10"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -4212,6 +4325,19 @@
    "category": "Music",
    "id": "2f744fc3d635",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "David James & Friends in Concert",
+   "date": "2027-01-29",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/david-james-friends-in-concert-2/",
+   "category": "Music",
+   "id": "3b123c9e2ff9",
+   "first_seen": "2026-09-10"
   },
   {
    "source": "nervecentre",
@@ -4833,6 +4959,19 @@
    "category": "Music",
    "id": "05a5e0d8584f",
    "first_seen": "2026-08-13"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "The Greatest 80s Show",
+   "date": "2027-04-10",
+   "url": "https://angrianan.com/event/the-greatest-80s-show/",
+   "booking_url": "https://angrianan.ticketsolve.com/shows/873667481/events",
+   "category": "Music",
+   "id": "84e0285042fc",
+   "first_seen": "2026-09-10"
   },
   {
    "source": "ardhowen",
