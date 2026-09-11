@@ -1,14 +1,13 @@
 {
- "generated_at": "2026-09-10T01:05Z",
+ "generated_at": "2026-09-11T01:07Z",
  "failed_sources": [
-  "Earagail Arts Festival",
-  "The Playhouse"
+  "Earagail Arts Festival"
  ],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
-  "hawkswell": "2026-09-08T01:13Z",
+  "hawkswell": "2026-09-11T01:07Z",
   "craftmonth_donegal": "2026-09-10T01:05Z",
   "craftmonth_derry": "2026-09-10T01:05Z",
   "craftmonth_derry_city": "2026-09-10T01:05Z",
@@ -22,13 +21,13 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 15,
+  "eaf": 16,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +40,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 14
+  "playhouse": 0
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -396,20 +395,6 @@
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "RCC Make! Intermediate Painting with Ann Quinn",
-   "date": "2026-09-03",
-   "end_date": "2026-10-15",
-   "time": "7:00 pm",
-   "url": "https://regionalculturalcentre.com/events/intermediate-painting-with-ann-quinn/",
-   "category": "Workshop",
-   "id": "d7d2f5e72ed8",
-   "first_seen": "2026-08-05"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
    "title": "Open Collection: An Exhibition in the Making",
    "date": "2026-09-05",
    "end_date": "2026-10-03",
@@ -418,100 +403,6 @@
    "category": "Exhibition",
    "id": "0fd98d4fe383",
    "first_seen": "2026-08-28"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The ELO Tribute Show",
-   "date": "2026-09-10",
-   "url": "https://angrianan.com/event/the-elo-show/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662118/events/128644281/seats?zone=Default",
-   "category": "Music",
-   "id": "13824aa89abf",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Ardhowen Theatre 40th Anniversary Celebration",
-   "date": "2026-09-10",
-   "time": "6:00pm",
-   "url": "https://ardhowen.com/show/ardhowen-theatre-40th-anniversary-celebration/",
-   "category": "Community",
-   "id": "6abdaa67b0c8",
-   "first_seen": "2026-09-05"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Shane Martin. Wake Up! You're Here!",
-   "date": "2026-09-10",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/shane-martin-wake-up-youre-here",
-   "category": "Spoken Word",
-   "id": "5fee0e6c6eb0",
-   "first_seen": "2026-08-17"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Cinema: Romeo + Juliet (30th Anniversary)",
-   "date": "2026-09-10",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-cinema-romeo-juliet-30th-anniversary/",
-   "category": "Film",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "b998f3a4cfad",
-   "first_seen": "2026-08-26"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Letters Across The Atlantic – part of European Heritage Open Days 2026",
-   "date": "2026-09-10",
-   "time": "7:00pm",
-   "url": "https://struleartscentre.co.uk/show/letters-across-the-atlantic-tyrones-emigrant-stories/",
-   "category": "Spoken Word",
-   "id": "35d8611df9a6",
-   "first_seen": "2026-08-29"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Film screening: Once Upon a Time in the Cinema",
-   "date": "2026-09-10",
-   "time": "8:00 pm",
-   "url": "/?event=sligo-film-society-2026-27&event_date=2026-09-10",
-   "category": null,
-   "id": "356e871c688a",
-   "first_seen": "2026-09-10"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Sligo Film Society 2026/27",
-   "date": "2026-09-10",
-   "time": "8:00 pm",
-   "url": "https://www.themodel.ie/?event=sligo-film-society-2026-27&event_date=2026-09-10",
-   "category": null,
-   "id": "e2b9e8c5cf4b",
-   "first_seen": "2026-08-27"
   },
   {
    "source": "an_grianan",
@@ -585,7 +476,7 @@
    "title": "Lunchtime Jazz with Gerarda McCann and the Bob Quick Quartet",
    "date": "2026-09-11",
    "time": "12:00pm",
-   "url": "https://struleartscentre.co.uk/show/lunchtime-jazz-with-gerarda-mccann-and-the-bob-quick-quartet/",
+   "url": "https://struleartscentre.co.uk/show/lunchtime-jazz-with-gerarda-mccann-and-the-bob-quick-quartet-2/",
    "category": "Music",
    "sold_out": true,
    "id": "ae849891b7fb",
@@ -1066,6 +957,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "The Adventures of Priscilla, Queen of The Desert – Sligo Pride Screening",
+   "date": "2026-09-18",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-adventures-of-priscilla-queen-of-the-desert",
+   "category": null,
+   "id": "c3012680455c",
+   "first_seen": "2026-09-11"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -1077,6 +981,32 @@
    "category": "Comedy",
    "id": "bbc520789d4f",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Studio",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "MakeyUppers’ Mystery Bag",
+   "date": "2026-09-18",
+   "time": "6pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/makeyuppers-culture-night-for-kids",
+   "category": "Kids/Family",
+   "id": "203cbcdc7612",
+   "first_seen": "2026-09-11"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Baroque Brilliance – A Culture Night opera gala with Sligo Baroque Music Festival, in association with Hawk’s Well Theatre",
+   "date": "2026-09-18",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/baroque-brilliance",
+   "category": "Music",
+   "id": "0241898d05b4",
+   "first_seen": "2026-09-11"
   },
   {
    "source": "rcc",
@@ -1234,6 +1164,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Gazelle – Written and performed by Sinéad Sexton",
+   "date": "2026-09-19",
+   "time": "3pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/gazelle-2",
+   "category": "Theatre",
+   "id": "bcb4cfbcd78a",
+   "first_seen": "2026-09-11"
+  },
+  {
    "source": "st_columbs",
    "venue": "St Columb's Hall",
    "town": "Derry",
@@ -1345,6 +1288,19 @@
    "category": "Music",
    "id": "03cfe8635d46",
    "first_seen": "2026-08-21"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "That’s Powerful x Emergent Strategy",
+   "date": "2026-09-23",
+   "end_date": "2026-11-25",
+   "url": "https://www.derryplayhouse.co.uk/event/thats-powerful-x-emergent-strategy",
+   "category": null,
+   "id": "e3ed15004bc0",
+   "first_seen": "2026-09-11"
   },
   {
    "source": "ardhowen",
@@ -1496,6 +1452,19 @@
    "first_seen": "2026-08-27"
   },
   {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Front and Centre Second Act",
+   "date": "2026-09-25",
+   "end_date": "2026-09-27",
+   "url": "https://www.derryplayhouse.co.uk/event/front-and-centre-second-act",
+   "category": null,
+   "id": "a24bbda23d1d",
+   "first_seen": "2026-09-11"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -1558,6 +1527,18 @@
    "category": "Literature",
    "id": "ec110ba8dec9",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Front and Centre Scratch",
+   "date": "2026-09-27",
+   "url": "https://www.derryplayhouse.co.uk/event/front-and-centre-scratch",
+   "category": null,
+   "id": "5bac227a150f",
+   "first_seen": "2026-09-11"
   },
   {
    "source": "nervecentre",
@@ -2144,6 +2125,18 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Laughing Matters - Sweeten The Pill - Episode One",
+   "date": "2026-10-09",
+   "url": "https://www.derryplayhouse.co.uk/event/laughing-matters-sweeten-the-pill-episode-one",
+   "category": null,
+   "id": "0ef32d25dcde",
+   "first_seen": "2026-09-11"
+  },
+  {
    "source": "abbey",
    "venue": "Abbey Arts Centre",
    "town": "Ballyshannon",
@@ -2246,6 +2239,42 @@
    "first_seen": "2026-09-08"
   },
   {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Laughing Matters - Comedy Lecture - The Best Medicine?",
+   "date": "2026-10-10",
+   "url": "https://www.derryplayhouse.co.uk/event/laughing-matters-comedy-lecture-the-best-medicine",
+   "category": null,
+   "id": "9bc06f2fa922",
+   "first_seen": "2026-09-11"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Laughing Matters - Panel Discussion - The Great Pagliacci",
+   "date": "2026-10-10",
+   "url": "https://www.derryplayhouse.co.uk/event/laughing-matters-panel-discussion-the-great-pagliacci",
+   "category": null,
+   "id": "317eced9e80f",
+   "first_seen": "2026-09-11"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Laughing Matters - Sketch Workshop - I Have Bad News",
+   "date": "2026-10-10",
+   "url": "https://www.derryplayhouse.co.uk/event/laughing-matters-sketch-workshop-i-have-bad-news",
+   "category": null,
+   "id": "90b67cdb3231",
+   "first_seen": "2026-09-11"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Villa Rose Hotel",
    "town": "Ballybofey",
@@ -2270,6 +2299,42 @@
    "category": "Drama",
    "id": "23261fbfa04c",
    "first_seen": "2026-09-09"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Laughing Matters - Long Table - Diagnosis: Comedy",
+   "date": "2026-10-11",
+   "url": "https://www.derryplayhouse.co.uk/event/laughing-matters-long-table-diagnosis-comedy",
+   "category": null,
+   "id": "564d5b3c937b",
+   "first_seen": "2026-09-11"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Laughing Matters - Sweeten The Pill - Episode 2",
+   "date": "2026-10-11",
+   "url": "https://www.derryplayhouse.co.uk/event/laughing-matters-sweeten-the-pill-episode-2",
+   "category": null,
+   "id": "4be785f8a3b3",
+   "first_seen": "2026-09-11"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Laughing Matters - Theatre - The Funny Thing About Cancer",
+   "date": "2026-10-11",
+   "url": "https://www.derryplayhouse.co.uk/event/laughing-matters-theatre-the-funny-thing-about-cancer",
+   "category": null,
+   "id": "f58b9ac9a605",
+   "first_seen": "2026-09-11"
   },
   {
    "source": "balor",
@@ -3369,6 +3434,19 @@
    "category": null,
    "id": "0cbf80161f44",
    "first_seen": "2026-08-21"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The Human Voice by Jean Cocteau in a new version by Darren Murphy",
+   "date": "2026-11-13",
+   "end_date": "2026-11-14",
+   "url": "https://www.derryplayhouse.co.uk/event/the-human-voice-by-jean-cocteau-in-a-new-version-by-darren-murphy",
+   "category": null,
+   "id": "adcd4a38cc2a",
+   "first_seen": "2026-09-11"
   },
   {
    "source": "abbey",
@@ -4712,6 +4790,18 @@
    "category": "Music",
    "id": "2fc8c17ae693",
    "first_seen": "2026-08-28"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Peter E Davidson - Thinky Big",
+   "date": "2027-03-06",
+   "url": "https://www.derryplayhouse.co.uk/event/peter-e-davidson-thinky-big",
+   "category": null,
+   "id": "781d6600dfb9",
+   "first_seen": "2026-09-11"
   },
   {
    "source": "abbey",
@@ -8965,6 +9055,33 @@
    "category": null,
    "id": "ded477705571",
    "first_seen": "2026-09-07"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Holywell Trust",
+   "town": "Londonderry",
+   "county": "Derry",
+   "title": "Northern Ireland Peace Index Report Launch",
+   "date": "2027-09-03",
+   "time": "12:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/northern-ireland-peace-index-report-launch/",
+   "category": null,
+   "id": "588b3f031403",
+   "first_seen": "2026-09-11"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Make! Intermediate Painting with Ann Quinn",
+   "date": "2027-09-03",
+   "end_date": "2026-10-15",
+   "time": "7:00 pm",
+   "url": "https://regionalculturalcentre.com/events/intermediate-painting-with-ann-quinn/",
+   "category": "Workshop",
+   "id": "a46f577b08af",
+   "first_seen": "2026-09-11"
   }
  ]
 }
