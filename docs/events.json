@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-11T01:07Z",
+ "generated_at": "2026-09-12T01:08Z",
  "failed_sources": [
   "Earagail Arts Festival"
  ],
@@ -21,13 +21,13 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 16,
+  "eaf": 17,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -40,7 +40,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 0
+  "playhouse": 1
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -409,136 +409,6 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "Tennessee Whiskey – The Ultimate Chris Stapleton Show",
-   "date": "2026-09-11",
-   "url": "https://angrianan.com/event/tennessee-whiskey/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662828/events/128646914/seats?zone=Default",
-   "category": "Music",
-   "id": "7fd324317180",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Nashville Live",
-   "date": "2026-09-11",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/nashville-live/",
-   "category": "Music",
-   "id": "e6fec2cff69c",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Glory Days – Bruce Springsteen Tribute Show",
-   "date": "2026-09-11",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/glory-days-2",
-   "category": null,
-   "id": "5904b1418866",
-   "first_seen": "2026-08-21"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Mack Fleetwood",
-   "date": "2026-09-11",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/mack-fleetwood-2",
-   "category": "Music",
-   "id": "85d1af853986",
-   "first_seen": "2026-08-27"
-  },
-  {
-   "source": "st_columbs",
-   "venue": "St Columb's Hall",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The People&#8217;s Hall Tour",
-   "date": "2026-09-11",
-   "url": "https://www.saintcolumbshall.com/whatson/the-peoples-hall-tour/2026-09-11/",
-   "category": null,
-   "id": "eb47d751b027",
-   "first_seen": "2026-09-04"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Lunchtime Jazz with Gerarda McCann and the Bob Quick Quartet",
-   "date": "2026-09-11",
-   "time": "12:00pm",
-   "url": "https://struleartscentre.co.uk/show/lunchtime-jazz-with-gerarda-mccann-and-the-bob-quick-quartet-2/",
-   "category": "Music",
-   "sold_out": true,
-   "id": "ae849891b7fb",
-   "first_seen": "2026-09-04"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Railways That Shaped Tyrone & Exhibition Tour – European Heritage Open Days 2026",
-   "date": "2026-09-11",
-   "time": "7:00pm",
-   "url": "https://struleartscentre.co.uk/show/railways-that-shaped-tyrone-exhibition-tour-european-heritage-open-days-2026/",
-   "category": "Spoken Word",
-   "id": "1ade8edf5475",
-   "first_seen": "2026-08-29"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Réalta",
-   "date": "2026-09-11",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/realta/",
-   "category": "Music",
-   "id": "0e08ac39ad4a",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Graphite & Easel; Life Drawing Sessions",
-   "date": "2026-09-11",
-   "time": "10:30 am",
-   "url": "https://www.themodel.ie/?event=graphite-and-easel&event_date=2026-09-11",
-   "category": null,
-   "id": "f95bb5d45673",
-   "first_seen": "2026-09-09"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Áislann Chill Chartha",
-   "town": "Kilcar",
-   "county": "Donegal",
-   "title": "Onoir Live -Aisleann Centre, Kilcar , Co Donegal (11th September 2026)",
-   "date": "2026-09-11",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/onoir-live-aisleann-centre-kilcar-co-donegal-11th-september-2026/",
-   "category": null,
-   "id": "eb353e38982a",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
    "title": "Paddy McDonnell: Paddy Power FULL",
    "date": "2026-09-12",
    "url": "https://angrianan.com/event/paddy-mcdonnell-paddy-power-full/",
@@ -634,7 +504,6 @@
    "date": "2026-09-12",
    "url": "https://struleartscentre.co.uk/show/governors-house-tour-goal-talk-european-heritage-open-days-2026/",
    "category": "Spoken Word",
-   "sold_out": true,
    "merged_from": [
     "strule"
    ],
@@ -659,13 +528,13 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
-   "title": "Sinéad Willox Album Launch – Seoda Uladh",
+   "title": "Sinead Willox Album Launch – Seoda Uladh",
    "date": "2026-09-12",
    "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/sinead-wilcox-album-launch-seoda-uladh/",
+   "url": "https://struleartscentre.co.uk/show/sinead-willox-album-launch-seoda-uladh/",
    "category": "Music",
-   "id": "ef5f4346ed41",
-   "first_seen": "2026-08-01"
+   "id": "d6d4906db5c4",
+   "first_seen": "2026-09-12"
   },
   {
    "source": "themodel",
@@ -728,6 +597,7 @@
    "time": "2:30pm",
    "url": "https://struleartscentre.co.uk/show/omagh-walking-tour-2026-european-heritage-open-days/",
    "category": "Spoken Word",
+   "sold_out": true,
    "id": "17a4785c091a",
    "first_seen": "2026-08-29"
   },
@@ -1013,10 +883,26 @@
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
    "county": "Donegal",
+   "title": "Culture Night at The RCC 2026",
+   "date": "2026-09-18",
+   "time": "5:00 pm",
+   "url": "https://regionalculturalcentre.com/events/culture-night-at-the-rcc-2026/",
+   "category": "Workshop",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "b556bd76f101",
+   "first_seen": "2026-09-12"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
    "title": "Norman Gibson – Still Life Gola Island",
    "date": "2026-09-18",
    "end_date": "2026-10-03",
-   "time": "6:00 pm",
+   "time": "5:00 pm",
    "url": "https://regionalculturalcentre.com/exhibitions/norman-gibson-still-life-gola-island/",
    "category": "Exhibition",
    "id": "0ccf363c71ab",
@@ -1948,6 +1834,19 @@
    "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
+   "title": "Puppet Panic: A Halloween Creative Lab!",
+   "date": "2026-10-07",
+   "end_date": "2026-10-21",
+   "url": "https://nervecentre.org/whats-on/puppet-panic-a-halloween-creative-lab",
+   "category": "Workshop",
+   "id": "b8565171c773",
+   "first_seen": "2026-09-12"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
    "title": "Rip it Up: A Hard Day's Night | Nerve Cinema",
    "date": "2026-10-07",
    "time": "7:00PM",
@@ -2770,6 +2669,20 @@
    "first_seen": "2026-07-17"
   },
   {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Ballybofey & Stranorlar One-Act Drama Festival",
+   "date": "2026-10-23",
+   "end_date": "2026-10-25",
+   "time": "8:00 pm",
+   "url": "https://www.balorartscentre.com/?event=ballybofey-stranorlar-one-act-drama-festival",
+   "category": "Drama",
+   "id": "3a7dec4d6783",
+   "first_seen": "2026-09-12"
+  },
+  {
    "source": "mcgrorys",
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
@@ -3408,6 +3321,19 @@
    "category": null,
    "id": "eb0b817a6184",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Sunset Theory | Youth Show",
+   "date": "2026-11-13",
+   "time": "7:00PM",
+   "url": "https://nervecentre.org/whats-on/sunset-theory-youth-show",
+   "category": "Music/Comedy",
+   "id": "bfba0267904a",
+   "first_seen": "2026-09-12"
   },
   {
    "source": "rcc",
@@ -4137,9 +4063,6 @@
    "date": "2026-12-19",
    "time": "2:00 pm",
    "url": "https://regionalculturalcentre.com/events/rcc-make-christmas-jumper-making-with-the-ary-fox/",
-   "merged_from": [
-    "rcc"
-   ],
    "category": null,
    "sold_out": true,
    "id": "dd2d3c7d788d",
@@ -9070,18 +8993,17 @@
    "first_seen": "2026-09-11"
   },
   {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Make! Intermediate Painting with Ann Quinn",
-   "date": "2027-09-03",
-   "end_date": "2026-10-15",
-   "time": "7:00 pm",
-   "url": "https://regionalculturalcentre.com/events/intermediate-painting-with-ann-quinn/",
-   "category": "Workshop",
-   "id": "a46f577b08af",
-   "first_seen": "2026-09-11"
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim Sculpture Centre",
+   "town": "Manorhamilton",
+   "county": "Leitrim",
+   "title": "Welding Workshop",
+   "date": "2027-09-04",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/welding-workshop/",
+   "category": null,
+   "id": "921e9a751ac3",
+   "first_seen": "2026-09-12"
   }
  ]
 }
