@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-13T01:02Z",
+ "generated_at": "2026-09-14T01:07Z",
  "failed_sources": [
   "Earagail Arts Festival"
  ],
@@ -7,7 +7,7 @@
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
-  "hawkswell": "2026-09-11T01:07Z",
+  "hawkswell": "2026-09-14T01:07Z",
   "craftmonth_donegal": "2026-09-13T01:02Z",
   "craftmonth_derry": "2026-09-13T01:02Z",
   "craftmonth_derry_city": "2026-09-13T01:02Z",
@@ -21,13 +21,13 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 18,
+  "eaf": 19,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -40,7 +40,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 2
+  "playhouse": 3
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -389,59 +389,6 @@
    "category": "Exhibition, Craft/Hobbies",
    "id": "0a32ed98a0db",
    "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "The Godfather",
-   "date": "2026-09-13",
-   "time": "6pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/the-godfather",
-   "category": null,
-   "id": "07bc019cdbfa",
-   "first_seen": "2026-09-08"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "The Lion King",
-   "date": "2026-09-13",
-   "time": "2pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/the-lion-king",
-   "category": null,
-   "id": "d8f6a80cf470",
-   "first_seen": "2026-09-08"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Omagh Walking Tour – European Heritage Open Days 2026",
-   "date": "2026-09-13",
-   "time": "2:30pm",
-   "url": "https://struleartscentre.co.uk/show/omagh-walking-tour-2026-european-heritage-open-days/",
-   "category": "Spoken Word",
-   "sold_out": true,
-   "id": "17a4785c091a",
-   "first_seen": "2026-08-29"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Sligo Pride; Blindr",
-   "date": "2026-09-13",
-   "time": "8:00 pm",
-   "url": "https://www.themodel.ie/?event=sligo-pride-blindr&event_date=2026-09-13",
-   "category": null,
-   "id": "d3bc6d0b1fe3",
-   "first_seen": "2026-09-10"
   },
   {
    "source": "eventbrite_donegal",
@@ -866,6 +813,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Theme Night Social - The Poets Of Popular Music",
+   "date": "2026-09-19",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/theme-night-social-the-poets-of-popular-music",
+   "category": null,
+   "id": "29d84c898ecf",
+   "first_seen": "2026-09-14"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -883,13 +843,26 @@
    "venue": "Hawk's Well Theatre",
    "town": "Sligo",
    "county": "Sligo",
-   "title": "Gazelle – Written and performed by Sinéad Sexton",
+   "title": "Gazelle - CANCELLED – Written and performed by Sinéad Sexton",
    "date": "2026-09-19",
    "time": "3pm",
    "url": "https://www.hawkswell.com/whats-on/shows/gazelle-2",
    "category": "Theatre",
-   "id": "bcb4cfbcd78a",
-   "first_seen": "2026-09-11"
+   "id": "eb094100a298",
+   "first_seen": "2026-09-14"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Gearoid Farrelly: No Pressure",
+   "date": "2026-09-19",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/gearoid-farrelly-no-pressure",
+   "category": "Comedy",
+   "id": "c3b75c9a61e8",
+   "first_seen": "2026-09-14"
   },
   {
    "source": "st_columbs",
@@ -954,6 +927,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Theme Night Social - The Poets Of Popular Music",
+   "date": "2026-09-20",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/theme-night-social-the-poets-of-popular-music-2",
+   "category": "Music",
+   "id": "9b7a595bd80e",
+   "first_seen": "2026-09-14"
+  },
+  {
    "source": "themodel",
    "venue": "The Model",
    "town": "Sligo",
@@ -967,6 +953,32 @@
    "first_seen": "2026-08-27"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Project Lighthouse – An Interactive Performance & Live Broadcast",
+   "date": "2026-09-21",
+   "time": "10am",
+   "url": "https://www.hawkswell.com/whats-on/shows/project-lighthouse",
+   "category": "Secondary Schools",
+   "id": "69a2dec336fb",
+   "first_seen": "2026-09-14"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "ATU Theatre Design Exhibition – ATU 2nd Year Theatre Design Exhibition",
+   "date": "2026-09-22",
+   "time": "6pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/atu-theatre-design-exhibition",
+   "category": "Exhibition",
+   "id": "4d065f92a31d",
+   "first_seen": "2026-09-14"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -978,6 +990,19 @@
    "category": "Film",
    "id": "8e47b955a798",
    "first_seen": "2026-08-05"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Migrantes-Mauro Sigura & Andrea Manzoni",
+   "date": "2026-09-23",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/migrantes-mauro-sigura-andrea-manzoni",
+   "category": "Music",
+   "id": "d0cf1f0a4dd4",
+   "first_seen": "2026-09-14"
   },
   {
    "source": "nervecentre",
@@ -1029,6 +1054,19 @@
    "category": "Music",
    "id": "0f75e5848b59",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Eddi Reader & Alan Kelly Gang",
+   "date": "2026-09-24",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/eddi-reader-alan-kelly-gang",
+   "category": "Music",
+   "id": "ce5e19ba6c66",
+   "first_seen": "2026-09-14"
   },
   {
    "source": "eventbrite_donegal",
