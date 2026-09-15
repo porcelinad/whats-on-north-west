@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-14T01:07Z",
+ "generated_at": "2026-09-15T01:29Z",
  "failed_sources": [
   "Earagail Arts Festival"
  ],
@@ -21,13 +21,13 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 2,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 19,
+  "eaf": 20,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -40,7 +40,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 3
+  "playhouse": 4
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -389,19 +389,6 @@
    "category": "Exhibition, Craft/Hobbies",
    "id": "0a32ed98a0db",
    "first_seen": "2026-08-01"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Peatlands Park",
-   "town": "Dungannon",
-   "county": "Tyrone",
-   "title": "Introduction to Outdoor Education / Learning",
-   "date": "2026-09-14",
-   "time": "10:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/introduction-to-outdoor-education-learning/",
-   "category": null,
-   "id": "9e9eec707a81",
-   "first_seen": "2026-07-20"
   },
   {
    "source": "hawkswell",
@@ -1116,14 +1103,17 @@
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
    "county": "Fermanagh",
-   "title": "The Love Hungry Farmer",
+   "title": "The Love Hungry Farmer – Extra Seats",
    "date": "2026-09-25",
    "time": "8:00pm",
-   "url": "https://ardhowen.com/show/the-love-hungry-farmer/",
+   "url": "https://ardhowen.com/show/the-love-hungry-farmer-extra-seats/",
    "category": "Drama",
    "sold_out": true,
-   "id": "9bc507814430",
-   "first_seen": "2026-08-01"
+   "merged_from": [
+    "ardhowen"
+   ],
+   "id": "91f8096c6222",
+   "first_seen": "2026-09-15"
   },
   {
    "source": "balor",
@@ -2402,6 +2392,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Royal Arms & Knocknamoe Castle: Staff, Stories & Sharing Memories",
+   "date": "2026-10-19",
+   "time": "10:30am",
+   "url": "https://struleartscentre.co.uk/show/royal-arms-knocknamoe-castle-staff-stories-sharing-memories/",
+   "category": "Spoken Word",
+   "id": "96b36dd2ae1d",
+   "first_seen": "2026-09-15"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -2508,6 +2511,18 @@
    "category": "Spoken Word",
    "id": "17d1ba64d21b",
    "first_seen": "2026-08-29"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "‘The Little Mermaid’ presented by Loreto Grammar School",
+   "date": "2026-10-22",
+   "url": "https://struleartscentre.co.uk/show/the-little-mermaid-presented-by-loreto-grammer-school/",
+   "category": "Musical",
+   "id": "cddf8db5db83",
+   "first_seen": "2026-09-15"
   },
   {
    "source": "an_grianan",
@@ -3098,6 +3113,18 @@
    "category": "Music/Comedy",
    "id": "afe10d6b57b0",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Foyle Rumble 3: Dead End",
+   "date": "2026-11-07",
+   "url": "https://www.saintcolumbshall.com/whatson/foyle-rumble/",
+   "category": null,
+   "id": "e8ad6f21904f",
+   "first_seen": "2026-09-15"
   },
   {
    "source": "strule",
@@ -5021,6 +5048,19 @@
    "category": "Music",
    "id": "1c7977d54de5",
    "first_seen": "2026-09-04"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "PROUD MARY AND CITY LIMITS BAND – TINA TURNER TRIBUTE",
+   "date": "2027-06-19",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/proud-mary-and-city-limits-band-tina-turner-tribute/",
+   "category": "Music",
+   "id": "cbe50dfef4d6",
+   "first_seen": "2026-09-15"
   },
   {
    "source": "rcc",
