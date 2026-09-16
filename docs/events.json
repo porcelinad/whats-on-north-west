@@ -1,33 +1,34 @@
 {
- "generated_at": "2026-09-15T01:29Z",
+ "generated_at": "2026-09-16T01:27Z",
  "failed_sources": [
-  "Earagail Arts Festival"
+  "Earagail Arts Festival",
+  "The Playhouse"
  ],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
   "hawkswell": "2026-09-14T01:07Z",
-  "craftmonth_donegal": "2026-09-13T01:02Z",
-  "craftmonth_derry": "2026-09-13T01:02Z",
-  "craftmonth_derry_city": "2026-09-13T01:02Z",
-  "craftmonth_leitrim": "2026-09-13T01:02Z",
-  "craftmonth_sligo": "2026-09-13T01:02Z",
-  "craftmonth_tyrone": "2026-09-13T01:02Z",
-  "craftmonth_fermanagh": "2026-09-13T01:02Z",
-  "heritageweek": "2026-09-13T01:02Z"
+  "craftmonth_donegal": "2026-09-16T01:27Z",
+  "craftmonth_derry": "2026-09-16T01:27Z",
+  "craftmonth_derry_city": "2026-09-16T01:27Z",
+  "craftmonth_leitrim": "2026-09-16T01:27Z",
+  "craftmonth_sligo": "2026-09-16T01:27Z",
+  "craftmonth_tyrone": "2026-09-16T01:27Z",
+  "craftmonth_fermanagh": "2026-09-16T01:27Z",
+  "heritageweek": "2026-09-16T01:27Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 2,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 20,
+  "eaf": 21,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -40,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 4
+  "playhouse": 5
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -391,32 +392,6 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "To Hell in a Handbag: The Secret Lives of Canon Chasuble & Miss Prism – by Helen Norton and Jonathan White",
-   "date": "2026-09-15",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/to-hell-in-a-handbag-the-secret-lives-of-canon-chasuble-miss-prism",
-   "category": "Theatre",
-   "id": "37c68862473f",
-   "first_seen": "2026-09-08"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Boogie Nights (4K Restoration) | Nerve Cinema",
-   "date": "2026-09-15",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/boogie-nights-4k-restoration-nerve-cinema",
-   "category": "Film",
-   "id": "1e60e2cb9133",
-   "first_seen": "2026-08-05"
-  },
-  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -706,6 +681,7 @@
    "time": "7:30pm",
    "url": "https://struleartscentre.co.uk/show/harmonise-songs-by-the-strule/",
    "category": "Music",
+   "sold_out": true,
    "id": "035c625827e6",
    "first_seen": "2026-08-01"
   },
@@ -1648,6 +1624,19 @@
    "first_seen": "2026-08-05"
   },
   {
+   "source": "abbey",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Vital Voices",
+   "date": "2026-10-06",
+   "url": "https://abbeycentre.ie/eventer/vital-voices",
+   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173676950",
+   "category": null,
+   "id": "5ba719d2bd0a",
+   "first_seen": "2026-09-16"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -2519,7 +2508,7 @@
    "county": "Tyrone",
    "title": "‘The Little Mermaid’ presented by Loreto Grammar School",
    "date": "2026-10-22",
-   "url": "https://struleartscentre.co.uk/show/the-little-mermaid-presented-by-loreto-grammer-school/",
+   "url": "https://struleartscentre.co.uk/show/the-little-mermaid-presented-by-loreto-grammar-school/",
    "category": "Musical",
    "id": "cddf8db5db83",
    "first_seen": "2026-09-15"
@@ -4619,19 +4608,6 @@
    "category": null,
    "id": "781d6600dfb9",
    "first_seen": "2026-09-11"
-  },
-  {
-   "source": "abbey",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Heaven Can Wait – The Meat Loaf Concert Experience",
-   "date": "2027-03-07",
-   "url": "https://abbeycentre.ie/eventer/heaven-can-wait-the-meat-loaf-concert-experience",
-   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173671624",
-   "category": null,
-   "id": "71fcd959659a",
-   "first_seen": "2026-07-14"
   },
   {
    "source": "strule",
