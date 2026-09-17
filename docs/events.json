@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-16T01:27Z",
+ "generated_at": "2026-09-17T01:26Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -8,7 +8,7 @@
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
-  "hawkswell": "2026-09-14T01:07Z",
+  "hawkswell": "2026-09-17T01:26Z",
   "craftmonth_donegal": "2026-09-16T01:27Z",
   "craftmonth_derry": "2026-09-16T01:27Z",
   "craftmonth_derry_city": "2026-09-16T01:27Z",
@@ -28,7 +28,7 @@
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 21,
+  "eaf": 22,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 5
+  "playhouse": 6
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -406,46 +406,6 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Muireann Nic Amhlaoibh, Pauline Scanlon, Tom Morrow & John Doyle",
-   "date": "2026-09-16",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/muireann-nic-amhlaoibh-pauline-scanlon-tom-morrow-john-doyle",
-   "category": "Music",
-   "id": "56a10270619d",
-   "first_seen": "2026-09-08"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Tony | Nerve Cinema",
-   "date": "2026-09-16",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/tony-nerve-cinema",
-   "category": "Film",
-   "sold_out": true,
-   "id": "f712645168e6",
-   "first_seen": "2026-08-05"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "LISA O’NEILL – Tour of Ulster",
-   "date": "2026-09-16",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/lisa-oneill-tour-of-ulster/",
-   "category": "Music",
-   "id": "d22543654304",
-   "first_seen": "2026-08-01"
-  },
-  {
    "source": "themodel",
    "venue": "The Model",
    "town": "Sligo",
@@ -523,6 +483,19 @@
    "category": null,
    "id": "8f4f45e93244",
    "first_seen": "2026-09-05"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Sligo Film Society 2026/27",
+   "date": "2026-09-17",
+   "time": "8:00 pm",
+   "url": "https://www.themodel.ie/?event=sligo-film-society-2026-27&event_date=2026-09-17",
+   "category": null,
+   "id": "545aa4cc73c2",
+   "first_seen": "2026-09-17"
   },
   {
    "source": "playhouse",
@@ -737,6 +710,32 @@
    "first_seen": "2026-09-05"
   },
   {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Culture Night | Creative Family Workshops",
+   "date": "2026-09-18",
+   "time": "5:30 pm",
+   "url": "/?event=culture-night-2026&event_date=2026-09-18",
+   "category": null,
+   "id": "723d82a32a3d",
+   "first_seen": "2026-09-17"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Graphite & Easel; Life Drawing Sessions",
+   "date": "2026-09-18",
+   "time": "10:30 am",
+   "url": "https://www.themodel.ie/?event=graphite-and-easel&event_date=2026-09-18",
+   "category": null,
+   "id": "df57653b4983",
+   "first_seen": "2026-09-17"
+  },
+  {
    "source": "abbey",
    "venue": "Abbey Arts Centre",
    "town": "Ballyshannon",
@@ -844,13 +843,13 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
-   "title": "Bee Gees Gold",
+   "title": "Bee Gees Gold 26",
    "date": "2026-09-19",
    "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/bee-gees-gold/",
+   "url": "https://struleartscentre.co.uk/show/bee-gees-gold-26/",
    "category": "Music",
-   "id": "39e8c4c2e3bf",
-   "first_seen": "2026-08-01"
+   "id": "fe60e601232d",
+   "first_seen": "2026-09-17"
   },
   {
    "source": "eventbrite_donegal",
@@ -1079,17 +1078,30 @@
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
    "county": "Fermanagh",
-   "title": "The Love Hungry Farmer – Extra Seats",
+   "title": "The Love Hungry Farmer",
    "date": "2026-09-25",
    "time": "8:00pm",
-   "url": "https://ardhowen.com/show/the-love-hungry-farmer-extra-seats/",
+   "url": "https://ardhowen.com/show/the-love-hungry-farmer/",
    "category": "Drama",
    "sold_out": true,
    "merged_from": [
     "ardhowen"
    ],
-   "id": "91f8096c6222",
-   "first_seen": "2026-09-15"
+   "id": "9bc507814430",
+   "first_seen": "2026-09-17"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Rónán Ó Snodaigh & Myles O’Reilly",
+   "date": "2026-09-25",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/rónán-ó-snodaigh-myles-oreilly",
+   "category": null,
+   "id": "441aab5acd9a",
+   "first_seen": "2026-09-17"
   },
   {
    "source": "balor",
@@ -1104,6 +1116,19 @@
    "category": "Drama",
    "id": "d7c813d35091",
    "first_seen": "2026-07-16"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Keith Barry: Unhinged",
+   "date": "2026-09-25",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/keith-barry-unhinged",
+   "category": "Magic",
+   "id": "f67f79171e01",
+   "first_seen": "2026-09-17"
   },
   {
    "source": "st_columbs",
@@ -1770,6 +1795,19 @@
    "first_seen": "2026-08-29"
   },
   {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Film screening: La Grazia",
+   "date": "2026-10-08",
+   "time": "8:00 pm",
+   "url": "/?event=sligo-film-society-2026-27&event_date=2026-10-08",
+   "category": null,
+   "id": "505c48d18f1e",
+   "first_seen": "2026-09-17"
+  },
+  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -2186,6 +2224,19 @@
    "category": "Comedy",
    "id": "83c4f9a51c85",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Film screening: The Blue Trail",
+   "date": "2026-10-15",
+   "time": "8:00 pm",
+   "url": "/?event=sligo-film-society-2026-27&event_date=2026-10-15",
+   "category": null,
+   "id": "7a531e1e54ae",
+   "first_seen": "2026-09-17"
   },
   {
    "source": "ardhowen",
@@ -4263,6 +4314,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Jimmy Buckley’s Variety Show",
+   "date": "2027-01-30",
+   "time": "8:00 pm",
+   "url": "https://www.balorartscentre.com/?event=jimmy-buckleys-variety-show",
+   "category": "Music",
+   "id": "a83456e5b8e3",
+   "first_seen": "2026-09-17"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -4428,19 +4492,6 @@
    "category": "Music",
    "id": "29a6de2028a2",
    "first_seen": "2026-07-16"
-  },
-  {
-   "source": "abbey",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Tommy Flemming – The Encore Tour",
-   "date": "2027-02-17",
-   "url": "https://abbeycentre.ie/eventer/tommy-flemming-the-encore-tour",
-   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173674156",
-   "category": null,
-   "id": "cacb478aea42",
-   "first_seen": "2026-07-14"
   },
   {
    "source": "ardhowen",
@@ -5011,6 +5062,19 @@
    "category": "Music",
    "id": "4917e6898aa0",
    "first_seen": "2026-08-22"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Brian Kennedy – A Better Man Tour",
+   "date": "2027-06-05",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/brian-kennedy-a-better-man-tour/",
+   "category": "Music",
+   "id": "57655b729247",
+   "first_seen": "2026-09-17"
   },
   {
    "source": "strule",
@@ -6100,6 +6164,19 @@
    "category": null,
    "id": "99bc2008cdaf",
    "first_seen": "2026-08-24"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "A Vision of Elvis: starring Rob Kingsley",
+   "date": "2027-08-17",
+   "url": "https://angrianan.com/event/a-vision-of-elvis/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873667662/events/128665205/seats?zone=Auditorium",
+   "category": "Music",
+   "id": "dea2027f0951",
+   "first_seen": "2026-09-17"
   },
   {
    "source": "heritageweek",
