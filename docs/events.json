@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-17T01:26Z",
+ "generated_at": "2026-09-18T01:17Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -28,7 +28,7 @@
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 22,
+  "eaf": 23,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 6
+  "playhouse": 7
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -392,20 +392,6 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Onóir",
-   "date": "2026-09-16",
-   "end_date": "2026-09-17",
-   "url": "https://angrianan.com/event/onoir2026/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873660999",
-   "category": "Music",
-   "id": "cd2fd1c2e7f9",
-   "first_seen": "2026-07-14"
-  },
-  {
    "source": "themodel",
    "venue": "The Model",
    "town": "Sligo",
@@ -418,99 +404,6 @@
    "category": null,
    "id": "0bbc2d4d13d8",
    "first_seen": "2026-08-27"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "The Ghostlight Sessions September 2026 — Lazember | DK | Stitch",
-   "date": "2026-09-17",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=the-ghostlight-sessions-september-2026",
-   "category": "Music",
-   "id": "1630f46e4beb",
-   "first_seen": "2026-08-13"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Conal Gallen - How's Your Father?",
-   "date": "2026-09-17",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/conal-gallen-hows-your-father",
-   "category": "Theatre",
-   "id": "66b3edf46fde",
-   "first_seen": "2026-09-08"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Robert Mizzell’s Nashville Songbook",
-   "date": "2026-09-17",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/robert-mizzells-nashville-songbook/",
-   "category": "Music",
-   "id": "d437664e9a1f",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Adaptation Film Festival | All that Glitters | School Screening",
-   "date": "2026-09-17",
-   "time": "10:30 am",
-   "url": "/?event=13th-adaptation-film-festival-2026&event_date=2026-09-17",
-   "category": null,
-   "id": "67b4ce9a6409",
-   "first_seen": "2026-08-27"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Exhibition Launch | Desire Lines; curated by aemi",
-   "date": "2026-09-17",
-   "time": "Open all day",
-   "url": "/?exhibition=desire-lines-aemi-tour-2026&event_date=2026-09-17",
-   "category": null,
-   "id": "8f4f45e93244",
-   "first_seen": "2026-09-05"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Sligo Film Society 2026/27",
-   "date": "2026-09-17",
-   "time": "8:00 pm",
-   "url": "https://www.themodel.ie/?event=sligo-film-society-2026-27&event_date=2026-09-17",
-   "category": null,
-   "id": "545aa4cc73c2",
-   "first_seen": "2026-09-17"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The End Is In The Beginning",
-   "date": "2026-09-17",
-   "url": "https://www.derryplayhouse.co.uk/event/the-end-is-in-the-beginning",
-   "merged_from": [
-    "playhouse"
-   ],
-   "category": null,
-   "id": "c8a4ce6c6297",
-   "first_seen": "2026-08-12"
   },
   {
    "source": "an_grianan",
@@ -1129,6 +1022,19 @@
    "category": "Magic",
    "id": "f67f79171e01",
    "first_seen": "2026-09-17"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Other Voices 2026",
+   "date": "2026-09-25",
+   "end_date": "2026-09-26",
+   "url": "https://nervecentre.org/whats-on/other-voices-2026",
+   "category": "Music/Comedy",
+   "id": "f214d8de9756",
+   "first_seen": "2026-09-18"
   },
   {
    "source": "st_columbs",
@@ -2265,6 +2171,19 @@
    "first_seen": "2026-07-17"
   },
   {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Our Space | Pre-Halloween Show",
+   "date": "2026-10-16",
+   "time": "7:00PM",
+   "url": "https://nervecentre.org/whats-on/our-space-halloween-show",
+   "category": "Music/Comedy",
+   "id": "840a85d6e5dd",
+   "first_seen": "2026-09-18"
+  },
+  {
    "source": "st_columbs",
    "venue": "St Columb's Hall",
    "town": "Derry",
@@ -3307,19 +3226,6 @@
    "category": null,
    "id": "adcd4a38cc2a",
    "first_seen": "2026-09-11"
-  },
-  {
-   "source": "abbey",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Abba Forever",
-   "date": "2026-11-14",
-   "url": "https://abbeycentre.ie/eventer/abba-forever",
-   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173671785",
-   "category": null,
-   "id": "4395369cdece",
-   "first_seen": "2026-07-14"
   },
   {
    "source": "ardhowen",
@@ -9004,6 +8910,19 @@
    "category": "Exhibition",
    "id": "91a0643bbbaa",
    "first_seen": "2026-09-13"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Cinema: Romeo + Juliet (30th Anniversary)",
+   "date": "2027-09-10",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-romeo-juliet-30th-anniversary/",
+   "category": "Film",
+   "id": "409c47a89391",
+   "first_seen": "2026-09-18"
   }
  ]
 }
