@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-18T01:17Z",
+ "generated_at": "2026-09-19T01:11Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -9,14 +9,14 @@
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
   "hawkswell": "2026-09-17T01:26Z",
-  "craftmonth_donegal": "2026-09-16T01:27Z",
-  "craftmonth_derry": "2026-09-16T01:27Z",
-  "craftmonth_derry_city": "2026-09-16T01:27Z",
-  "craftmonth_leitrim": "2026-09-16T01:27Z",
-  "craftmonth_sligo": "2026-09-16T01:27Z",
-  "craftmonth_tyrone": "2026-09-16T01:27Z",
-  "craftmonth_fermanagh": "2026-09-16T01:27Z",
-  "heritageweek": "2026-09-16T01:27Z"
+  "craftmonth_donegal": "2026-09-19T01:11Z",
+  "craftmonth_derry": "2026-09-19T01:11Z",
+  "craftmonth_derry_city": "2026-09-19T01:11Z",
+  "craftmonth_leitrim": "2026-09-19T01:11Z",
+  "craftmonth_sligo": "2026-09-19T01:11Z",
+  "craftmonth_tyrone": "2026-09-19T01:11Z",
+  "craftmonth_fermanagh": "2026-09-19T01:11Z",
+  "heritageweek": "2026-09-19T01:11Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
@@ -28,7 +28,7 @@
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 23,
+  "eaf": 24,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 7
+  "playhouse": 8
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -400,103 +400,10 @@
    "date": "2026-09-16",
    "end_date": "2026-09-20",
    "time": "10:30 am",
-   "url": "https://www.themodel.ie/?event=13th-adaptation-film-festival-2026&event_date=2026-09-16",
+   "url": "https://www.themodel.ie/?event=13th-adaptation-film-festival-2026&event_date=2026-09-18",
    "category": null,
    "id": "0bbc2d4d13d8",
    "first_seen": "2026-08-27"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Culture Night 2026",
-   "date": "2026-09-18",
-   "url": "https://angrianan.com/event/culture-night-2026-culture-night-cabaret/",
-   "category": "Variety",
-   "id": "366345193d4f",
-   "first_seen": "2026-07-31"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Gerry Guthrie in concert with guests John Glenn and Raymond Kelly",
-   "date": "2026-09-18",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/gerry-guthrie-in-concert-with-guests-john-glenn-and-raymond-kelly/",
-   "category": "Music",
-   "id": "a6f43f67a749",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "The Adventures of Priscilla, Queen of The Desert – Sligo Pride Screening",
-   "date": "2026-09-18",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/the-adventures-of-priscilla-queen-of-the-desert",
-   "category": null,
-   "id": "c3012680455c",
-   "first_seen": "2026-09-11"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Tadhg J Devery - Pints, Dentures & Rock ’n’ Roll",
-   "date": "2026-09-18",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=tadhg-j-devery-pints-dentures-rock-n-roll",
-   "category": "Comedy",
-   "id": "bbc520789d4f",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Studio",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "MakeyUppers’ Mystery Bag",
-   "date": "2026-09-18",
-   "time": "6pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/makeyuppers-culture-night-for-kids",
-   "category": "Kids/Family",
-   "id": "203cbcdc7612",
-   "first_seen": "2026-09-11"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Baroque Brilliance – A Culture Night opera gala with Sligo Baroque Music Festival, in association with Hawk’s Well Theatre",
-   "date": "2026-09-18",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/baroque-brilliance",
-   "category": "Music",
-   "id": "0241898d05b4",
-   "first_seen": "2026-09-11"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Culture Night at The RCC 2026",
-   "date": "2026-09-18",
-   "time": "5:00 pm",
-   "url": "https://regionalculturalcentre.com/events/culture-night-at-the-rcc-2026/",
-   "category": "Workshop",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "b556bd76f101",
-   "first_seen": "2026-09-12"
   },
   {
    "source": "rcc",
@@ -511,122 +418,6 @@
    "category": "Exhibition",
    "id": "0ccf363c71ab",
    "first_seen": "2026-08-21"
-  },
-  {
-   "source": "st_columbs",
-   "venue": "St Columb's Hall",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The People&#8217;s Hall Tour",
-   "date": "2026-09-18",
-   "url": "https://www.saintcolumbshall.com/whatson/the-peoples-hall-tour/2026-09-18/",
-   "category": null,
-   "id": "90415d550e09",
-   "first_seen": "2026-09-04"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Gallery Tour – ‘Time Lapse’ with Artist Maria Noonan McDermott",
-   "date": "2026-09-18",
-   "time": "12:30pm",
-   "url": "https://struleartscentre.co.uk/show/gallery-tour-time-lapse-with-artist-maria-noonan-mcdermott/",
-   "category": "Exhibition",
-   "id": "7ddf7576f1a1",
-   "first_seen": "2026-08-18"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Harmonise – Songs by the Strule",
-   "date": "2026-09-18",
-   "time": "7:30pm",
-   "url": "https://struleartscentre.co.uk/show/harmonise-songs-by-the-strule/",
-   "category": "Music",
-   "sold_out": true,
-   "id": "035c625827e6",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Culture Night 2026 – Oíche Chultúir 2026",
-   "date": "2026-09-18",
-   "url": "https://www.thedock.ie/whats-on/culture-night-2026",
-   "category": "News",
-   "id": "f40d40d78a9b",
-   "first_seen": "2026-08-26"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Culture Night 2026",
-   "date": "2026-09-18",
-   "time": "Open all day",
-   "url": "https://www.themodel.ie/?event=culture-night-2026&event_date=2026-09-18",
-   "category": null,
-   "id": "591014e29cdf",
-   "first_seen": "2026-09-05"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Culture Night | Collage Workshop",
-   "date": "2026-09-18",
-   "time": "6:00 pm",
-   "url": "https://www.themodel.ie/?event=culture-night-collage-workshop&event_date=2026-09-18",
-   "category": null,
-   "id": "97d85f5400f4",
-   "first_seen": "2026-09-05"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Culture Night | Crash Ensemble",
-   "date": "2026-09-18",
-   "time": "8:00 pm",
-   "url": "https://www.themodel.ie/?event=culture-night-crash-ensemble&event_date=2026-09-18",
-   "category": null,
-   "id": "c2cf6d17cdd3",
-   "first_seen": "2026-09-05"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Culture Night | Creative Family Workshops",
-   "date": "2026-09-18",
-   "time": "5:30 pm",
-   "url": "/?event=culture-night-2026&event_date=2026-09-18",
-   "category": null,
-   "id": "723d82a32a3d",
-   "first_seen": "2026-09-17"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Graphite & Easel; Life Drawing Sessions",
-   "date": "2026-09-18",
-   "time": "10:30 am",
-   "url": "https://www.themodel.ie/?event=graphite-and-easel&event_date=2026-09-18",
-   "category": null,
-   "id": "df57653b4983",
-   "first_seen": "2026-09-17"
   },
   {
    "source": "abbey",
@@ -650,7 +441,7 @@
    "date": "2026-09-19",
    "url": "https://angrianan.com/event/harvest-a-tribute-to-neil-young/",
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662033/events/128643035/seats?zone=Default",
-   "category": null,
+   "category": "Workshop",
    "id": "aa3028017caf",
    "first_seen": "2026-07-14"
   },
@@ -2484,6 +2275,19 @@
    "first_seen": "2026-09-15"
   },
   {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Film screening: Bitter Christmas",
+   "date": "2026-10-22",
+   "time": "8:00 pm",
+   "url": "/?event=sligo-film-society-2026-27&event_date=2026-10-22",
+   "category": null,
+   "id": "d16023db827c",
+   "first_seen": "2026-09-19"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -2824,6 +2628,18 @@
    "category": "Music",
    "id": "f56cfb83961b",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Who Shot Queen Medb? – The Story of the Táin & Cruachán Aí",
+   "date": "2026-10-29",
+   "url": "https://www.thedock.ie/whats-on/who-shot-queen-medb",
+   "category": "Literature",
+   "id": "7f4d6ce2d5d7",
+   "first_seen": "2026-09-19"
   },
   {
    "source": "an_grianan",
@@ -3253,6 +3069,18 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Maiden City Card Show",
+   "date": "2026-11-14",
+   "url": "https://www.saintcolumbshall.com/whatson/maiden-city-card-show/",
+   "category": null,
+   "id": "64c2b24cfbd6",
+   "first_seen": "2026-09-19"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -3405,6 +3233,18 @@
    "category": "Music",
    "id": "ed9783d057a9",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Londonderry Musical Society presents… A Night of Musicals",
+   "date": "2026-11-21",
+   "url": "https://www.saintcolumbshall.com/whatson/londonderry-musical-society-presents-a-night-of-musicals/",
+   "category": null,
+   "id": "cd6853402479",
+   "first_seen": "2026-09-19"
   },
   {
    "source": "strule",
@@ -3575,6 +3415,18 @@
    "first_seen": "2026-08-05"
   },
   {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Steelstown GAC presents&#8230; The City Quid Games",
+   "date": "2026-11-28",
+   "url": "https://www.saintcolumbshall.com/whatson/steelstown-gac-presents-the-city-quid-games/",
+   "category": null,
+   "id": "1ac66dc78200",
+   "first_seen": "2026-09-19"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -3716,6 +3568,18 @@
    "first_seen": "2026-09-10"
   },
   {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Aladdin &#8211; the Christmas Pantomime",
+   "date": "2026-12-11",
+   "url": "https://www.saintcolumbshall.com/whatson/aladdin-the-christmas-pantomime/2026-12-11/",
+   "category": null,
+   "id": "ffbb601cf413",
+   "first_seen": "2026-09-19"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -3738,6 +3602,18 @@
    "category": "Music",
    "id": "7e3254d77917",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Aladdin &#8211; the Christmas Pantomime",
+   "date": "2026-12-12",
+   "url": "https://www.saintcolumbshall.com/whatson/aladdin-the-christmas-pantomime/2026-12-12/",
+   "category": null,
+   "id": "00267c690633",
+   "first_seen": "2026-09-19"
   },
   {
    "source": "strule",
@@ -3779,6 +3655,18 @@
    "first_seen": "2026-08-22"
   },
   {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Aladdin &#8211; the Christmas Pantomime",
+   "date": "2026-12-13",
+   "url": "https://www.saintcolumbshall.com/whatson/aladdin-the-christmas-pantomime/2026-12-13/",
+   "category": null,
+   "id": "eeae846e50ae",
+   "first_seen": "2026-09-19"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -3790,6 +3678,30 @@
    "category": "Music",
    "id": "063b1a28ad8d",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Aladdin &#8211; the Christmas Pantomime",
+   "date": "2026-12-15",
+   "url": "https://www.saintcolumbshall.com/whatson/aladdin-the-christmas-pantomime/2026-12-15/",
+   "category": null,
+   "id": "0df145f9aa90",
+   "first_seen": "2026-09-19"
+  },
+  {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Aladdin &#8211; the Christmas Pantomime",
+   "date": "2026-12-16",
+   "url": "https://www.saintcolumbshall.com/whatson/aladdin-the-christmas-pantomime/2026-12-16/",
+   "category": null,
+   "id": "e1b1d940d59a",
+   "first_seen": "2026-09-19"
   },
   {
    "source": "an_grianan",
@@ -3804,6 +3716,18 @@
    "category": "Theatre",
    "id": "98fa9b5bd827",
    "first_seen": "2026-08-12"
+  },
+  {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Aladdin &#8211; the Christmas Pantomime",
+   "date": "2026-12-17",
+   "url": "https://www.saintcolumbshall.com/whatson/aladdin-the-christmas-pantomime/2026-12-17/",
+   "category": null,
+   "id": "2d9b12c9683c",
+   "first_seen": "2026-09-19"
   },
   {
    "source": "eventbrite_donegal",
@@ -3843,6 +3767,21 @@
    "category": "Music",
    "id": "a700507121f2",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Aladdin &#8211; the Christmas Pantomime",
+   "date": "2026-12-18",
+   "url": "https://www.saintcolumbshall.com/whatson/aladdin-the-christmas-pantomime/2026-12-18/1/",
+   "merged_from": [
+    "st_columbs"
+   ],
+   "category": null,
+   "id": "1f21347f7ea0",
+   "first_seen": "2026-09-19"
   },
   {
    "source": "strule",
@@ -3909,6 +3848,18 @@
    "first_seen": "2026-08-05"
   },
   {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Aladdin &#8211; the Christmas Pantomime",
+   "date": "2026-12-19",
+   "url": "https://www.saintcolumbshall.com/whatson/aladdin-the-christmas-pantomime/2026-12-19/",
+   "category": null,
+   "id": "8b16d826b8c5",
+   "first_seen": "2026-09-19"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -3945,6 +3896,18 @@
    "category": "Music",
    "id": "e3dcef91e3b0",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Aladdin &#8211; the Christmas Pantomime",
+   "date": "2026-12-20",
+   "url": "https://www.saintcolumbshall.com/whatson/aladdin-the-christmas-pantomime/2026-12-20/",
+   "category": null,
+   "id": "a09c49d53a16",
+   "first_seen": "2026-09-19"
   },
   {
    "source": "ardhowen",
@@ -8923,6 +8886,19 @@
    "category": "Film",
    "id": "409c47a89391",
    "first_seen": "2026-09-18"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Áislann Chill Chartha",
+   "town": "Kilcar",
+   "county": "Donegal",
+   "title": "Onoir Live -Aisleann Centre, Kilcar , Co Donegal (11th September 2026)",
+   "date": "2027-09-11",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/onoir-live-aisleann-centre-kilcar-co-donegal-11th-september-2026/",
+   "category": null,
+   "id": "7da84e175a7b",
+   "first_seen": "2026-09-19"
   }
  ]
 }
