@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-19T01:11Z",
+ "generated_at": "2026-09-20T01:12Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -8,7 +8,7 @@
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
-  "hawkswell": "2026-09-17T01:26Z",
+  "hawkswell": "2026-09-20T01:12Z",
   "craftmonth_donegal": "2026-09-19T01:11Z",
   "craftmonth_derry": "2026-09-19T01:11Z",
   "craftmonth_derry_city": "2026-09-19T01:11Z",
@@ -22,13 +22,13 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 24,
+  "eaf": 25,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 8
+  "playhouse": 9
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -347,37 +347,10 @@
  },
  "ghostlight_lineup_cache": {
   "https://www.balorartscentre.com/?event=the-ghostlight-sessions-august-2026": "The Turfmen | Tanya McCole | Lorc D",
-  "https://www.balorartscentre.com/?event=the-ghostlight-sessions-september-2026": "Lazember | DK | Stitch"
+  "https://www.balorartscentre.com/?event=the-ghostlight-sessions-september-2026": "Lazember | DK | Stitch",
+  "https://www.balorartscentre.com/?event=the-ghostlight-sessions-october-2026": "GL OCt TSolve – 1"
  },
  "events": [
-  {
-   "source": "eaf",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Barbara Knežević: Gvozdene Kapije | The Iron Gates",
-   "date": "2026-07-11",
-   "end_date": "2026-09-19",
-   "time": "11am - 5pm Tuesday – Friday, 1pm - 5pm Saturdays",
-   "url": "https://eaf.ie/events/barbara-knezevic-gvozdene-kapije-the-iron-gates/",
-   "category": "Visual Arts",
-   "id": "7c5a438cacfa",
-   "first_seen": "2026-08-10"
-  },
-  {
-   "source": "eaf",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The Rain Tells Us Everything",
-   "date": "2026-07-11",
-   "end_date": "2026-09-19",
-   "time": "11am - 5pm Tuesday – Friday, 1pm - 5pm Saturdays",
-   "url": "https://eaf.ie/events/the-rain-tells-us-everything/",
-   "category": "Visual Arts",
-   "id": "a1544879aff4",
-   "first_seen": "2026-08-10"
-  },
   {
    "source": "craftmonth_leitrim",
    "venue": "The Leitrim Design House",
@@ -400,7 +373,7 @@
    "date": "2026-09-16",
    "end_date": "2026-09-20",
    "time": "10:30 am",
-   "url": "https://www.themodel.ie/?event=13th-adaptation-film-festival-2026&event_date=2026-09-18",
+   "url": "https://www.themodel.ie/?event=13th-adaptation-film-festival-2026&event_date=2026-09-19",
    "category": null,
    "id": "0bbc2d4d13d8",
    "first_seen": "2026-08-27"
@@ -418,159 +391,6 @@
    "category": "Exhibition",
    "id": "0ccf363c71ab",
    "first_seen": "2026-08-21"
-  },
-  {
-   "source": "abbey",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Greatest 80s Show",
-   "date": "2026-09-19",
-   "url": "https://abbeycentre.ie/eventer/greatest-80s-show",
-   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173671902",
-   "category": null,
-   "id": "c92573836333",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Harvest: A Tribute to Neil Young",
-   "date": "2026-09-19",
-   "url": "https://angrianan.com/event/harvest-a-tribute-to-neil-young/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662033/events/128643035/seats?zone=Default",
-   "category": "Workshop",
-   "id": "aa3028017caf",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Glory Days – A Bruce Springsteen Tribute",
-   "date": "2026-09-19",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/glory-days-a-bruce-springsteen-tribute/",
-   "category": "Music",
-   "id": "b61dc0297eec",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Theme Night Social - The Poets Of Popular Music",
-   "date": "2026-09-19",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/theme-night-social-the-poets-of-popular-music",
-   "category": null,
-   "id": "29d84c898ecf",
-   "first_seen": "2026-09-14"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Nashville Live!",
-   "date": "2026-09-19",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=nashville-live",
-   "category": "Music",
-   "id": "b7acea3de5ce",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Gazelle - CANCELLED – Written and performed by Sinéad Sexton",
-   "date": "2026-09-19",
-   "time": "3pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/gazelle-2",
-   "category": "Theatre",
-   "id": "eb094100a298",
-   "first_seen": "2026-09-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Gearoid Farrelly: No Pressure",
-   "date": "2026-09-19",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/gearoid-farrelly-no-pressure",
-   "category": "Comedy",
-   "id": "c3b75c9a61e8",
-   "first_seen": "2026-09-14"
-  },
-  {
-   "source": "st_columbs",
-   "venue": "St Columb's Hall",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Mise-en-scène",
-   "date": "2026-09-19",
-   "url": "https://www.saintcolumbshall.com/whatson/mise-en-scene/",
-   "category": null,
-   "id": "4a03e7a5c2c7",
-   "first_seen": "2026-09-04"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Bee Gees Gold 26",
-   "date": "2026-09-19",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/bee-gees-gold-26/",
-   "category": "Music",
-   "id": "fe60e601232d",
-   "first_seen": "2026-09-17"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "The Abbey Hotel Donegal",
-   "town": "Donegal Town",
-   "county": "Donegal",
-   "title": "The Cowgirl Experience™ Abbey Hotel, Donegal",
-   "date": "2026-09-19",
-   "time": "16:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-cowgirl-experience-abbey-hotel-donegal/",
-   "category": null,
-   "id": "49220ba8377b",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Muireann Nic Amhlaoibh, Pauline Scanlon, Tom Morrow, and John Doyle – Music Network",
-   "date": "2026-09-19",
-   "url": "https://www.thedock.ie/whats-on/muireann",
-   "category": "Music",
-   "id": "6fb809baf41e",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Killian Sundermann - Killian Dollar Baby",
-   "date": "2026-09-19",
-   "url": "https://www.derryplayhouse.co.uk/event/killian-sundermann-killian-dollar-baby",
-   "category": null,
-   "id": "b325f71f5e91",
-   "first_seen": "2026-08-01"
   },
   {
    "source": "hawkswell",
@@ -919,6 +739,32 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Sligo Sounds & Stories – Two short films from Sligo’s past from filmmaker Trevor Sweeney",
+   "date": "2026-09-26",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/sligo-sounds-stories",
+   "category": null,
+   "id": "9d330c111f55",
+   "first_seen": "2026-09-20"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "The Coronas",
+   "date": "2026-09-26",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-coronas",
+   "category": "Music",
+   "id": "63bf535db3f3",
+   "first_seen": "2026-09-20"
+  },
+  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -970,6 +816,45 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "E.T.",
+   "date": "2026-09-27",
+   "time": "2pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/e-t",
+   "category": null,
+   "id": "062dc6eb00c6",
+   "first_seen": "2026-09-20"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Jaws",
+   "date": "2026-09-27",
+   "time": "6pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/jaws",
+   "category": null,
+   "id": "9ef7773a89fa",
+   "first_seen": "2026-09-20"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "The Speks",
+   "date": "2026-09-27",
+   "time": "2pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-speks-4",
+   "category": "Kids/Family",
+   "id": "72a8baa348a7",
+   "first_seen": "2026-09-20"
+  },
+  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -980,6 +865,19 @@
    "category": null,
    "id": "5bac227a150f",
    "first_seen": "2026-09-11"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Psycho Spaghetti- A Comic Journey Inside The Teenage Mind",
+   "date": "2026-09-29",
+   "time": "11am",
+   "url": "https://www.hawkswell.com/whats-on/shows/psycho-spaghetti-a-comic-journey-inside-the-teenage-mind-2",
+   "category": "Secondary Schools",
+   "id": "c5cdb98c6e95",
+   "first_seen": "2026-09-20"
   },
   {
    "source": "nervecentre",
@@ -1034,6 +932,19 @@
    "sold_out": true,
    "id": "6bbda8707375",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Seamie O’Dowd – Headful of Echoes",
+   "date": "2026-10-01",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/seamie-odowd-headful-of-echoes-20th-anniversary",
+   "category": "Music",
+   "id": "10365926be60",
+   "first_seen": "2026-09-20"
   },
   {
    "source": "nervecentre",
@@ -1895,6 +1806,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "The Ghostlight Sessions October 2026 — GL OCt TSolve – 1",
+   "date": "2026-10-15",
+   "time": "8:00 pm",
+   "url": "https://www.balorartscentre.com/?event=the-ghostlight-sessions-october-2026",
+   "category": "Music",
+   "id": "3ee0bbce0f4e",
+   "first_seen": "2026-09-20"
+  },
+  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -2733,6 +2657,18 @@
    "category": "Film",
    "id": "d21ffa738e9c",
    "first_seen": "2026-09-03"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Pebbledash – Salt, Glass & Spit Tour",
+   "date": "2026-10-30",
+   "url": "https://www.thedock.ie/whats-on/pebbledash",
+   "category": "Music",
+   "id": "f47128fa554a",
+   "first_seen": "2026-09-20"
   },
   {
    "source": "an_grianan",
@@ -4970,20 +4906,6 @@
    "category": "Music",
    "id": "cbe50dfef4d6",
    "first_seen": "2026-09-15"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The Rain Tells Us Everything – Catherine McDonald, Katie Nolan, and Niamh Schmidtke (Gallery 2 + Foyer Gallery)",
-   "date": "2027-07-11",
-   "end_date": "2026-09-19",
-   "time": "6:00 pm",
-   "url": "https://regionalculturalcentre.com/exhibitions/the-rain-tells-us-everything-catherine-mcdonald-katie-nolan-and-niamh-schmidtke-gallery-2-foyer-gallery/",
-   "category": "Exhibition",
-   "id": "cecb99220148",
-   "first_seen": "2026-08-01"
   },
   {
    "source": "eventbrite_donegal",
@@ -8899,6 +8821,19 @@
    "category": null,
    "id": "7da84e175a7b",
    "first_seen": "2026-09-19"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Marble Arch Caves (Open Year-Round)",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "New Moon Crystal Caves: An Underground Sound Journey",
+   "date": "2027-09-12",
+   "time": "16:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/new-moon-crystal-caves-an-underground-sound-journey/",
+   "category": null,
+   "id": "a3802d148eab",
+   "first_seen": "2026-09-20"
   }
  ]
 }
