@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-20T01:12Z",
+ "generated_at": "2026-09-21T01:07Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -22,13 +22,13 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 25,
+  "eaf": 26,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 9
+  "playhouse": 10
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -365,20 +365,6 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "13th Adaptation Film Festival 2026",
-   "date": "2026-09-16",
-   "end_date": "2026-09-20",
-   "time": "10:30 am",
-   "url": "https://www.themodel.ie/?event=13th-adaptation-film-festival-2026&event_date=2026-09-19",
-   "category": null,
-   "id": "0bbc2d4d13d8",
-   "first_seen": "2026-08-27"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -391,32 +377,6 @@
    "category": "Exhibition",
    "id": "0ccf363c71ab",
    "first_seen": "2026-08-21"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Theme Night Social - The Poets Of Popular Music",
-   "date": "2026-09-20",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/theme-night-social-the-poets-of-popular-music-2",
-   "category": "Music",
-   "id": "9b7a595bd80e",
-   "first_seen": "2026-09-14"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Adaptation Film Festival | The Tin Drum",
-   "date": "2026-09-20",
-   "time": "10:30 am",
-   "url": "/?event=13th-adaptation-film-festival-2026&event_date=2026-09-20",
-   "category": null,
-   "id": "ca87e5f5c716",
-   "first_seen": "2026-08-27"
   },
   {
    "source": "hawkswell",
