@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-21T01:07Z",
+ "generated_at": "2026-09-22T01:36Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -9,14 +9,14 @@
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
   "hawkswell": "2026-09-20T01:12Z",
-  "craftmonth_donegal": "2026-09-19T01:11Z",
-  "craftmonth_derry": "2026-09-19T01:11Z",
-  "craftmonth_derry_city": "2026-09-19T01:11Z",
-  "craftmonth_leitrim": "2026-09-19T01:11Z",
-  "craftmonth_sligo": "2026-09-19T01:11Z",
-  "craftmonth_tyrone": "2026-09-19T01:11Z",
-  "craftmonth_fermanagh": "2026-09-19T01:11Z",
-  "heritageweek": "2026-09-19T01:11Z"
+  "craftmonth_donegal": "2026-09-22T01:36Z",
+  "craftmonth_derry": "2026-09-22T01:36Z",
+  "craftmonth_derry_city": "2026-09-22T01:36Z",
+  "craftmonth_leitrim": "2026-09-22T01:36Z",
+  "craftmonth_sligo": "2026-09-22T01:36Z",
+  "craftmonth_tyrone": "2026-09-22T01:36Z",
+  "craftmonth_fermanagh": "2026-09-22T01:36Z",
+  "heritageweek": "2026-09-22T01:36Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
@@ -28,7 +28,7 @@
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 26,
+  "eaf": 27,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 10
+  "playhouse": 11
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -383,19 +383,6 @@
    "venue": "Hawk's Well Theatre",
    "town": "Sligo",
    "county": "Sligo",
-   "title": "Project Lighthouse – An Interactive Performance & Live Broadcast",
-   "date": "2026-09-21",
-   "time": "10am",
-   "url": "https://www.hawkswell.com/whats-on/shows/project-lighthouse",
-   "category": "Secondary Schools",
-   "id": "69a2dec336fb",
-   "first_seen": "2026-09-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
    "title": "ATU Theatre Design Exhibition – ATU 2nd Year Theatre Design Exhibition",
    "date": "2026-09-22",
    "time": "6pm",
@@ -684,19 +671,6 @@
    "category": null,
    "id": "a24bbda23d1d",
    "first_seen": "2026-09-11"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "THE ELVIS SPECTACULAR SHOW Starring CIARAN HOULIHAN with his TCB BAND and THE SWEET SENSATIONS",
-   "date": "2026-09-26",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/the-elvis-spectacular-show-starring-ciaran-houlihan-with-his-tcb-band-and-the-sweet-sensations/",
-   "category": "Music",
-   "id": "0550f7cfa214",
-   "first_seen": "2026-08-01"
   },
   {
    "source": "hawkswell",
@@ -1139,7 +1113,7 @@
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "Django Donegal: Angelo Debarre Trio with Alexandre Cavaliere",
+   "title": "Django Donegal: Rocky Gresset",
    "date": "2026-10-03",
    "time": "8:00 pm",
    "url": "https://regionalculturalcentre.com/events/django-donegal-angelo-debarre-trio-with-alexandre-cavaliere/",
@@ -1147,8 +1121,8 @@
    "merged_from": [
     "rcc"
    ],
-   "id": "ea83cf576ab1",
-   "first_seen": "2026-08-07"
+   "id": "e7d5f4dc0161",
+   "first_seen": "2026-09-22"
   },
   {
    "source": "rcc",
@@ -1249,6 +1223,7 @@
    "county": "Donegal",
    "title": "As I Lay Dreaming by Shaun Byrne",
    "date": "2026-10-07",
+   "end_date": "2026-10-07",
    "url": "https://angrianan.com/event/as-i-lay-dreaming/",
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666947",
    "category": "Theatre",
@@ -8794,6 +8769,19 @@
    "category": null,
    "id": "a3802d148eab",
    "first_seen": "2026-09-20"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Peatlands Park",
+   "town": "Dungannon",
+   "county": "Tyrone",
+   "title": "Introduction to Outdoor Education / Learning",
+   "date": "2027-09-14",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/introduction-to-outdoor-education-learning/",
+   "category": null,
+   "id": "fa6c7aeb0386",
+   "first_seen": "2026-09-22"
   }
  ]
 }
