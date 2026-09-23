@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-22T01:36Z",
+ "generated_at": "2026-09-23T01:30Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -8,7 +8,7 @@
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
-  "hawkswell": "2026-09-20T01:12Z",
+  "hawkswell": "2026-09-23T01:30Z",
   "craftmonth_donegal": "2026-09-22T01:36Z",
   "craftmonth_derry": "2026-09-22T01:36Z",
   "craftmonth_derry_city": "2026-09-22T01:36Z",
@@ -22,13 +22,13 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 27,
+  "eaf": 28,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 11
+  "playhouse": 12
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -377,32 +377,6 @@
    "category": "Exhibition",
    "id": "0ccf363c71ab",
    "first_seen": "2026-08-21"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "ATU Theatre Design Exhibition – ATU 2nd Year Theatre Design Exhibition",
-   "date": "2026-09-22",
-   "time": "6pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/atu-theatre-design-exhibition",
-   "category": "Exhibition",
-   "id": "4d065f92a31d",
-   "first_seen": "2026-09-14"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Ish | Nerve Cinema",
-   "date": "2026-09-22",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/ish-nerve-cinema",
-   "category": "Film",
-   "id": "8e47b955a798",
-   "first_seen": "2026-08-05"
   },
   {
    "source": "hawkswell",
@@ -962,6 +936,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "The Old Market Street Swing Band – With support from Felip Carbonell & Eddie McFarlane",
+   "date": "2026-10-02",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-old-market-street-swing-band",
+   "category": null,
+   "id": "6e45ca57414b",
+   "first_seen": "2026-09-23"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -973,6 +960,19 @@
    "category": "Music",
    "id": "9fc602a6fcfa",
    "first_seen": "2026-08-20"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Rory's Stories: The Good Ol' Days",
+   "date": "2026-10-02",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/rorys-stories-the-good-ol-days",
+   "category": "Comedy",
+   "id": "90afe78ef60b",
+   "first_seen": "2026-09-23"
   },
   {
    "source": "nervecentre",
@@ -1070,6 +1070,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "The Lodger – With live piano accompaniment",
+   "date": "2026-10-03",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-lodger",
+   "category": null,
+   "id": "93960151f766",
+   "first_seen": "2026-09-23"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -1092,6 +1105,7 @@
    "time": "7:00PM",
    "url": "https://nervecentre.org/whats-on/jordan-okeefe",
    "category": "Music/Comedy",
+   "sold_out": true,
    "id": "bd94b56e8ffd",
    "first_seen": "2026-08-08"
   },
@@ -2049,6 +2063,7 @@
    "time": "9:00am",
    "url": "https://ardhowen.com/show/homicide-timeline-training-including-coercive-control/",
    "category": "Adult Workshop",
+   "sold_out": true,
    "id": "8a765b789b47",
    "first_seen": "2026-09-09"
   },
@@ -3937,6 +3952,18 @@
    "first_seen": "2026-07-18"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Beauty and the Beast",
+   "date": "2027-01-16",
+   "url": "https://ardhowen.com/show/beauty-and-the-beast/",
+   "category": "Panto",
+   "id": "3ce9753f185f",
+   "first_seen": "2026-09-23"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Atlantic Apartotel",
    "town": "Bundoran",
@@ -4065,6 +4092,18 @@
    "category": "Music",
    "id": "a83456e5b8e3",
    "first_seen": "2026-09-17"
+  },
+  {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Maccana – The Unseen Growth of Winter",
+   "date": "2027-01-30",
+   "url": "https://www.saintcolumbshall.com/whatson/maccana-the-unseen-growth-of-winter/",
+   "category": null,
+   "id": "dc1bc65c2fdd",
+   "first_seen": "2026-09-23"
   },
   {
    "source": "ardhowen",
