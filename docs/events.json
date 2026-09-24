@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-23T01:30Z",
+ "generated_at": "2026-09-24T01:26Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -22,13 +22,13 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 2,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 28,
+  "eaf": 29,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 12
+  "playhouse": 13
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -379,44 +379,6 @@
    "first_seen": "2026-08-21"
   },
   {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Migrantes-Mauro Sigura & Andrea Manzoni",
-   "date": "2026-09-23",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/migrantes-mauro-sigura-andrea-manzoni",
-   "category": "Music",
-   "id": "d0cf1f0a4dd4",
-   "first_seen": "2026-09-14"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Italian Film Club: The Last One for the Road | Nerve Cinema",
-   "date": "2026-09-23",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/italian-film-club-the-last-one-for-the-road-reel-lives",
-   "category": "Film",
-   "id": "ed9f866bc54d",
-   "first_seen": "2026-08-05"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Natalia Beylis, Augustė Vickunaitė, Jan Anderzén, and Dimitris Mitakos – Trado",
-   "date": "2026-09-23",
-   "url": "https://www.thedock.ie/whats-on/trado",
-   "category": "Music",
-   "id": "03cfe8635d46",
-   "first_seen": "2026-08-21"
-  },
-  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -671,19 +633,6 @@
    "category": "Music",
    "id": "63bf535db3f3",
    "first_seen": "2026-09-20"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC MUSIC: Migrantes featuring Mauro Sigura (oud) & Andrea Manzoni (piano)",
-   "date": "2026-09-26",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/migrantes-mauro-sigura-andrea-manzoni/",
-   "category": "Music",
-   "id": "6e7c7ac14109",
-   "first_seen": "2026-08-08"
   },
   {
    "source": "rcc",
@@ -1267,6 +1216,7 @@
    "end_date": "2026-10-21",
    "url": "https://nervecentre.org/whats-on/puppet-panic-a-halloween-creative-lab",
    "category": "Workshop",
+   "sold_out": true,
    "id": "b8565171c773",
    "first_seen": "2026-09-12"
   },
@@ -2686,6 +2636,18 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Once Upon a Time in a Cinema – Classic Cinema",
+   "date": "2026-11-04",
+   "url": "https://www.thedock.ie/whats-on/once-upon-a-time-in-a-cinema",
+   "category": "Film",
+   "id": "3fb3992bf6a4",
+   "first_seen": "2026-09-24"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -2811,6 +2773,20 @@
    "category": "Theatre",
    "id": "8f307c9c0412",
    "first_seen": "2026-08-13"
+  },
+  {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Footloose",
+   "date": "2026-11-10",
+   "end_date": "2026-11-14",
+   "time": "8:00 pm - 10:15 pm",
+   "url": "https://www.balorartscentre.com/?event=footloose",
+   "category": "Musical",
+   "id": "2ee01b60d883",
+   "first_seen": "2026-09-24"
   },
   {
    "source": "an_grianan",
@@ -3004,6 +2980,19 @@
    "category": "Theatre",
    "id": "b14c3616b15f",
    "first_seen": "2026-07-16"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre & Brunswick Moviebowl",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Foyle Film Festival 2026",
+   "date": "2026-11-18",
+   "end_date": "2026-11-29",
+   "url": "https://nervecentre.org/whats-on/foyle-film-festival-2026",
+   "category": "Film",
+   "id": "230367e68313",
+   "first_seen": "2026-09-24"
   },
   {
    "source": "an_grianan",
@@ -4335,6 +4324,19 @@
    "category": "Music",
    "id": "a93516763a74",
    "first_seen": "2026-08-06"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Adam Kay: Undoctored",
+   "date": "2027-02-22",
+   "url": "https://angrianan.com/event/adam-kay-undoctored/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873667762",
+   "category": "Comedy",
+   "id": "f220de3b9b5c",
+   "first_seen": "2026-09-24"
   },
   {
    "source": "an_grianan",
