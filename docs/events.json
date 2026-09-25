@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-24T01:26Z",
+ "generated_at": "2026-09-25T01:32Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -9,26 +9,26 @@
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
   "hawkswell": "2026-09-23T01:30Z",
-  "craftmonth_donegal": "2026-09-22T01:36Z",
-  "craftmonth_derry": "2026-09-22T01:36Z",
-  "craftmonth_derry_city": "2026-09-22T01:36Z",
-  "craftmonth_leitrim": "2026-09-22T01:36Z",
-  "craftmonth_sligo": "2026-09-22T01:36Z",
-  "craftmonth_tyrone": "2026-09-22T01:36Z",
-  "craftmonth_fermanagh": "2026-09-22T01:36Z",
-  "heritageweek": "2026-09-22T01:36Z"
+  "craftmonth_donegal": "2026-09-25T01:32Z",
+  "craftmonth_derry": "2026-09-25T01:32Z",
+  "craftmonth_derry_city": "2026-09-25T01:32Z",
+  "craftmonth_leitrim": "2026-09-25T01:32Z",
+  "craftmonth_sligo": "2026-09-25T01:32Z",
+  "craftmonth_tyrone": "2026-09-25T01:32Z",
+  "craftmonth_fermanagh": "2026-09-25T01:32Z",
+  "heritageweek": "2026-09-25T01:32Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 2,
+  "abbey": 3,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 29,
+  "eaf": 30,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 13
+  "playhouse": 14
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -392,61 +392,6 @@
    "first_seen": "2026-09-11"
   },
   {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Music In Fermanagh Presents Michael Collins and Michael Mc Hale",
-   "date": "2026-09-24",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/music-in-fermanagh-presents-michael-collins-and-michael-mc-hale/",
-   "category": "Music",
-   "id": "0f75e5848b59",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Eddi Reader & Alan Kelly Gang",
-   "date": "2026-09-24",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/eddi-reader-alan-kelly-gang",
-   "category": "Music",
-   "id": "ce5e19ba6c66",
-   "first_seen": "2026-09-14"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Joes Bar",
-   "town": "Strabane",
-   "county": "Tyrone",
-   "title": "SHANE TODD AT JOES BAR",
-   "date": "2026-09-24",
-   "time": "19:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/shane-todd-at-joes-bar/",
-   "category": null,
-   "id": "ed64794e2821",
-   "first_seen": "2026-08-02"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Cinema: A Private Life",
-   "date": "2026-09-24",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-cinema-a-private-life/",
-   "category": "Film",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "c9ea6167ddf0",
-   "first_seen": "2026-08-29"
-  },
-  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -551,7 +496,7 @@
    "title": "Sunshine on Leith – Dementia Friendly",
    "date": "2026-09-25",
    "time": "11:00am",
-   "url": "https://struleartscentre.co.uk/show/sunshine-on-leith-dementia-friendly/",
+   "url": "https://struleartscentre.co.uk/show/sunshine-on-leith-dementia-friendly-2/",
    "category": "Film",
    "id": "ee491fe61a26",
    "first_seen": "2026-08-29"
@@ -872,6 +817,19 @@
    "first_seen": "2026-09-05"
   },
   {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Sligo Film Society 2026/27",
+   "date": "2026-10-01",
+   "time": "8:00 pm",
+   "url": "https://www.themodel.ie/?event=sligo-film-society-2026-27&event_date=2026-10-01",
+   "category": null,
+   "id": "e435f0c3f3fb",
+   "first_seen": "2026-09-25"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -997,13 +955,13 @@
    "venue": "The Model",
    "town": "Sligo",
    "county": "Sligo",
-   "title": "Bump & Baby",
+   "title": "Graphite & Easel; Life Drawing Sessions",
    "date": "2026-10-02",
-   "time": "10:00 am",
-   "url": "https://www.themodel.ie/?event=baby-and-bump&event_date=2026-10-02",
+   "time": "10:30 am",
+   "url": "https://www.themodel.ie/?event=graphite-and-easel&event_date=2026-10-02",
    "category": null,
-   "id": "6f84b1bb5ff3",
-   "first_seen": "2026-09-05"
+   "id": "babcd3b65bbe",
+   "first_seen": "2026-09-25"
   },
   {
    "source": "an_grianan",
@@ -1114,6 +1072,19 @@
    "sold_out": true,
    "id": "493b0b46f58c",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Young Model Call-Out!",
+   "date": "2026-10-03",
+   "time": "11:00 am",
+   "url": "https://www.themodel.ie/?event=young-model-call-out-2026&event_date=2026-10-03",
+   "category": null,
+   "id": "4e5ae37fc436",
+   "first_seen": "2026-09-25"
   },
   {
    "source": "thedock",
@@ -1415,6 +1386,32 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Bump & Baby",
+   "date": "2026-10-09",
+   "time": "10:00 am",
+   "url": "https://www.themodel.ie/?event=baby-and-bump&event_date=2026-10-09",
+   "category": null,
+   "id": "1c847b9d0b3f",
+   "first_seen": "2026-09-25"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Con Brio presents: Daniel Lebhardt",
+   "date": "2026-10-09",
+   "time": "7:30 pm",
+   "url": "?event=con-brio-26-27&event_date=2026-10-09",
+   "category": null,
+   "id": "520f238f5493",
+   "first_seen": "2026-09-25"
+  },
+  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -1625,6 +1622,20 @@
    "category": null,
    "id": "f58b9ac9a605",
    "first_seen": "2026-09-11"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "WAINFEST: Cark Angel – Little John Nee",
+   "date": "2026-10-12",
+   "url": "https://angrianan.com/event/wainfest-cark-angel-little-john-nee-sold-out/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873667293",
+   "category": "Theatre",
+   "sold_out": true,
+   "id": "ddf2458869fb",
+   "first_seen": "2026-09-25"
   },
   {
    "source": "balor",
@@ -2013,7 +2024,6 @@
    "time": "9:00am",
    "url": "https://ardhowen.com/show/homicide-timeline-training-including-coercive-control/",
    "category": "Adult Workshop",
-   "sold_out": true,
    "id": "8a765b789b47",
    "first_seen": "2026-09-09"
   },
@@ -2042,6 +2052,19 @@
    "category": "Variety",
    "id": "a98b5791cfd5",
    "first_seen": "2026-07-17"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Enniskillen Drama Festival",
+   "date": "2026-10-22",
+   "time": "7:30pm",
+   "url": "https://ardhowen.com/show/enniskillen-drama-festival-3/",
+   "category": "Drama",
+   "id": "d3f67cce9040",
+   "first_seen": "2026-09-25"
   },
   {
    "source": "rcc",
@@ -2138,6 +2161,19 @@
    "first_seen": "2026-07-17"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Enniskillen Drama Festival",
+   "date": "2026-10-23",
+   "time": "7:30pm",
+   "url": "https://ardhowen.com/show/enniskillen-drama-festival-2/",
+   "category": "Drama",
+   "id": "5cdaeba77312",
+   "first_seen": "2026-09-25"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -2225,6 +2261,19 @@
    "category": "Theatre",
    "id": "9df01b8335c1",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Enniskillen Drama Festival",
+   "date": "2026-10-24",
+   "time": "7:00pm",
+   "url": "https://ardhowen.com/show/enniskillen-drama-festival/",
+   "category": "Drama",
+   "id": "7d3fe7f56c86",
+   "first_seen": "2026-09-25"
   },
   {
    "source": "eventbrite_donegal",
@@ -2773,6 +2822,20 @@
    "category": "Theatre",
    "id": "8f307c9c0412",
    "first_seen": "2026-08-13"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "In Plain Sight",
+   "date": "2026-11-10",
+   "end_date": "2026-11-11",
+   "url": "https://angrianan.com/event/in-plain-sight/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873667815",
+   "category": "Theatre",
+   "id": "674c9ff56af6",
+   "first_seen": "2026-09-25"
   },
   {
    "source": "balor",
@@ -3379,6 +3442,18 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "CHRISTMAS PARTY CELEBRATION - WITH THE YETIS",
+   "date": "2026-12-05",
+   "url": "https://www.mcgrorys.ie/entertainment/78-191/",
+   "category": "Music",
+   "id": "69d3f4826776",
+   "first_seen": "2026-09-25"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -3834,6 +3909,18 @@
    "category": "Music",
    "id": "d6eccabf72a5",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "mcgrorys",
+   "venue": "McGrory's Hotel",
+   "town": "Culdaff",
+   "county": "Donegal",
+   "title": "NEW YEARS EVE CELEBRATION - WITH DC4",
+   "date": "2026-12-31",
+   "url": "https://www.mcgrorys.ie/entertainment/78-192/",
+   "category": "Music",
+   "id": "d9c26d3e7387",
+   "first_seen": "2026-09-25"
   },
   {
    "source": "ardhowen",
