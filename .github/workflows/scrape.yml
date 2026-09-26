@@ -35,6 +35,6 @@ jobs:
         run: |
           git config user.name "events-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/events.json
+          git add docs/nw/events.json
           git diff --cached --quiet || git commit -m "Update events ($(date -u +%Y-%m-%d))"
           git push
