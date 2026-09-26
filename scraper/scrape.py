@@ -1,6 +1,6 @@
 """
 North West What's On - event scraper
-Scrapes cultural venues in Donegal / Sligo / Derry into docs/events.json
+Scrapes cultural venues in Donegal / Sligo / Derry into docs/nw/events.json
 and sends an ntfy push notification when new events appear.
 
 Each venue has its own small parser. They all work the same way:
@@ -28,7 +28,7 @@ from bs4 import BeautifulSoup, NavigableString
 # ---------------------------------------------------------------- config
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA_FILE = ROOT / "docs" / "events.json"
+DATA_FILE = ROOT / "docs" / "nw" / "events.json"
 
 HEADERS = {
     "User-Agent": (
@@ -39,11 +39,6 @@ HEADERS = {
     "Accept-Language": "en-GB,en;q=0.9",
 }
 
-# Eventbrite specifically gets a fuller browser-like header set (used only
-# by fetch_text, not the shared fetch() the WordPress venues use) - mixing
-# these into every request made some sites' bot-protection MORE suspicious,
-# since a Referer of google.com alongside Sec-Fetch-Site: none is actually
-# self-contradictory and can look like a spoofed request.
 EVENTBRITE_HEADERS = dict(HEADERS, **{
     "Accept-Encoding": "gzip, deflate, br",
     "Connection": "keep-alive",
@@ -53,17 +48,8 @@ EVENTBRITE_HEADERS = dict(HEADERS, **{
     "Sec-Fetch-Site": "none",
     "Sec-Fetch-User": "?1",
 })
-# (connect_timeout, read_timeout) - if a host is genuinely unreachable
-# (e.g. blocking GitHub's server IPs, as Eventbrite did), that fails fast
-# on the connect phase rather than hanging for a full 30s per attempt.
-# A slow-but-working site still gets a generous 20s to actually respond.
 TIMEOUT = (8, 20)
 NOW = datetime.now(timezone.utc)
-# TODAY must reflect the Irish calendar date, not the UTC one - Ireland is
-# UTC+1 during summer (BST), so Irish midnight happens at 23:00 UTC the
-# day before. Using raw UTC here meant that for roughly the first hour of
-# every Irish day (00:00-01:00 IST), TODAY was still "yesterday" by UTC's
-# clock, so that day's already-past single-day events weren't dropped yet.
 TODAY = NOW.astimezone(ZoneInfo("Europe/Dublin")).date()
 
 NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "").strip()
@@ -92,8 +78,6 @@ SKIP_LINK_TEXT = {
 }
 
 
-# ---------------------------------------------------------------- helpers
-
 def fetch(url):
     last_exc = None
     for attempt in range(2):
@@ -113,12 +97,6 @@ def clean(text):
 
 
 def infer_year(month, day):
-    """Venue listings only show current/upcoming events, so if a date
-    without a year would fall in the past, it means next year. A small
-    grace period (not e.g. 90 days) avoids wrongly rolling a date that's
-    only just passed forward a whole year, while still correctly rolling
-    forward dates many months out (some venues list up to a year ahead,
-    so a wide grace period would wrongly keep those in the past year)."""
     for year in (TODAY.year, TODAY.year + 1):
         try:
             d = date(year, month, day)
@@ -130,21 +108,6 @@ def infer_year(month, day):
 
 
 def infer_range_years(tokens):
-    """Resolves the year for a list of (month, day) tokens making up a
-    single date RANGE together, rather than inferring each one
-    independently against TODAY via infer_year(). A range's start can
-    easily be more than infer_year()'s 7-day grace period in the past
-    while the event is still genuinely ongoing (e.g. an exhibition
-    running 1-31 August, checked on the 9th) - inferring the start on
-    its own would wrongly roll it forward a full year even though the
-    end date makes clear the event is still this year. Anchors on the
-    LAST token (the one that actually determines whether the event is
-    still relevant), then works backward assigning each earlier token
-    the SAME year as the one after it, correcting back one year only if
-    that would put it AFTER the following token (a genuine year-
-    boundary-crossing range, e.g. 28 Dec - 3 Jan). Returns a list the
-    same length as tokens, with None for any date that couldn't be
-    resolved at all."""
     if not tokens:
         return []
     n = len(tokens)
@@ -170,16 +133,6 @@ def infer_range_years(tokens):
 
 
 def resolve_date_tokens(tokens):
-    """Like infer_range_years, but for tokens that may already carry an
-    explicit year - (month, day, year_or_None) triples - rather than
-    needing inference for all of them (EAF occasionally states a year
-    explicitly, e.g. 'Saturday 9th January 2027', when a run crosses
-    into next year). Resolves right-to-left: the last token uses its
-    own explicit year if given, else infer_year(); each earlier token
-    uses its own explicit year if given, else the same year as the
-    token after it, correcting back one year only if that would put it
-    after the following token (a genuine year-boundary-crossing
-    range)."""
     if not tokens:
         return []
     n = len(tokens)
@@ -217,7 +170,6 @@ def resolve_date_tokens(tokens):
 
 
 def genre_from_text(text):
-    """Return 'Comedy, Music' etc. if a text node is purely a genre list."""
     t = clean(text).strip("|").strip()
     if not t or len(t) > 80:
         return None
@@ -229,7 +181,6 @@ def genre_from_text(text):
 
 
 def walk(soup):
-    """Yield ('text', str) and ('link', href, text) in document order."""
     body = soup.body or soup
     for node in body.descendants:
         if isinstance(node, NavigableString):
@@ -253,10 +204,7 @@ def make_event(source, title, start, **extra):
     return ev
 
 
-# ---------------------------------------------------------------- parsers
-
 def parse_an_grianan(soup, source):
-    """angrianan.com/events/ - date lines appear BEFORE each title link."""
     date_re = re.compile(
         r"(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+"
         r"([A-Za-z]+)\s+(\d{1,2})\b", re.I)
@@ -272,7 +220,7 @@ def parse_an_grianan(soup, source):
                     d = infer_year(mon, int(m.group(2)))
                     if d:
                         dates.append(d)
-        else:  # link
+        else:
             href, text = a, b
             if "ticketsolve.com" in href:
                 booking = href
@@ -287,7 +235,6 @@ def parse_an_grianan(soup, source):
 
 
 def parse_rcc(soup, source):
-    """regionalculturalcentre.com/whats-on/ - dates come AFTER each title."""
     date_re = re.compile(
         r"(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+([A-Za-z]{3})\s+(\d{1,2}),\s*"
         r"(\d{1,2}:\d{2}\s*[ap]m)", re.I)
@@ -330,11 +277,6 @@ BALOR_TIME_RE = re.compile(r"\d{1,2}:\d{2}\s*[ap]m", re.I)
 
 
 def parse_balor_listing(soup, source):
-    """balorartscentre.com/?page_id=87 - redesigned as of ~July 2026.
-    Each card: title (h3 link), a DD/MM/YYYY date (optionally a
-    ' - DD/MM/YYYY' range), a separate time line, a genre category link,
-    a description, then a duplicate 'More Info' link (same href as the
-    title) which triggers finalising the event."""
     events = []
     title = url = genre = None
     dates_found, time_text = [], None
@@ -377,11 +319,6 @@ def parse_balor_listing(soup, source):
 
 
 def parse_balor_ghostlight_lineup(soup):
-    """The Ghostlight Sessions' own event page lists that month's lineup
-    as the first plain-text paragraph inside <section class="em-event-
-    content"> - the paragraph before it is just a 'book online' button
-    (an image wrapped in a link, no text of its own), so the first
-    paragraph with any actual text reliably is the lineup line."""
     section = soup.find("section", class_="em-event-content")
     if not section:
         return None
@@ -393,11 +330,6 @@ def parse_balor_ghostlight_lineup(soup):
 
 
 def parse_balor(source):
-    """Same listing as parse_balor_listing, plus one extra: Balor's
-    monthly 'Ghostlight Sessions' gets its lineup fetched from its own
-    event page and appended to the title (e.g. 'The Ghostlight Sessions
-    August 2026 — The Turfmen | Tanya McCole | Lorc D'), since the
-    listing card alone never shows who's actually playing that month."""
     soup = fetch(source["url"])
     events = parse_balor_listing(soup, source)
     for ev in events:
@@ -412,9 +344,6 @@ def parse_balor(source):
 
 
 def fetch_text(url):
-    """Like fetch(), but returns raw response text instead of parsed HTML -
-    needed for Eventbrite, where we read an embedded JSON blob rather than
-    the rendered markup. Uses EVENTBRITE_HEADERS, not the shared HEADERS."""
     last_exc = None
     for attempt in range(2):
         try:
@@ -429,11 +358,6 @@ def fetch_text(url):
 
 
 def extract_server_data(html):
-    """Eventbrite's destination-search pages embed the real results as
-    `window.__SERVER_DATA__ = {...}` - a plain JSON object sitting in the
-    raw HTML (rendered server-side for SEO), so no browser/JS execution
-    is needed to read it. This walks the braces to find where that
-    object ends, since it's followed by more JS, not a clean delimiter."""
     marker = "window.__SERVER_DATA__ = "
     start = html.index(marker) + len(marker)
     depth = 0
@@ -467,13 +391,6 @@ EVENTBRITE_ALLOWED_CATEGORIES = {
     "Music", "Performing & Visual Arts", "Community & Culture", "Film & Media",
 }
 
-# GitHub Actions' server IPs appear to be blocked by Eventbrite specifically
-# (a 405 even with full browser-like headers - consistent with an IP-range
-# block rather than a header/UA check). As a fallback, route through a
-# public raw-HTML proxy that has a different IP range. Direct is always
-# tried first, so if Eventbrite's block ever lifts, this quietly stops
-# being needed. This is an extra external dependency and could itself
-# become unreliable - if so, dropping Eventbrite entirely is reasonable.
 EVENTBRITE_PROXY_TEMPLATE = "https://api.allorigins.win/raw?url={}"
 
 
@@ -486,17 +403,10 @@ def fetch_eventbrite_page(url):
             print(f"  direct fetch blocked ({direct_exc}); trying proxy...")
             return fetch_text(proxy_url)
         except Exception:
-            raise direct_exc  # the direct error is more informative to log
+            raise direct_exc
 
 
 def parse_eventbrite(source):
-    """Eventbrite 'discover' pages for a region (e.g. eventbrite.ie/d/
-    ireland--donegal/all-events/) list thousands of results across many
-    pages, most of it irrelevant (sports, recurring workshops, religious
-    events, and nearby-but-out-of-county venues near the border). We page
-    through a bounded number of pages and keep only events that are: in
-    the target region specifically, not online-only, and tagged with a
-    cultural category."""
     events = []
     for page in range(1, EVENTBRITE_MAX_PAGES + 1):
         page_url = source["url"] if page == 1 else f"{source['url']}?page={page}"
@@ -535,10 +445,7 @@ def parse_eventbrite(source):
     return events
 
 
-
 def parse_abbey(soup, source):
-    """abbeycentre.ie homepage - titles link to Ticketsolve; the exact ISO
-    date is embedded in each event's social-share links (/edate/YYYY-MM-DD)."""
     edate_re = re.compile(r"/edate/(\d{4}-\d{2}-\d{2})")
     eventer_re = re.compile(r"https?://abbeycentre\.ie/eventer/[^/&\s]+")
     events, current = [], None
@@ -569,16 +476,7 @@ def parse_abbey(soup, source):
 
 MANUAL_CSV_PATH = ROOT / "scraper" / "manual-imports" / "eventbrite.csv"
 
-# Eventbrite's destination search pads results with "nearby" events once
-# genuine local listings run thin, which is how places like Warrenpoint
-# (Co. Down) or Belfast (Co. Antrim) end up in a "Donegal" search. Rather
-# than trust Eventbrite's own geography, every row's town is checked
-# against this list and assigned its real county; anything not
-# recognised is dropped entirely rather than mislabelled. This list is
-# inherently incomplete - if a genuine local event ever gets wrongly
-# excluded because its town isn't here yet, add it.
 TOWN_TO_COUNTY = {
-    # Donegal
     "letterkenny": "Donegal", "ballybofey": "Donegal", "stranorlar": "Donegal",
     "ballyshannon": "Donegal", "bundoran": "Donegal", "donegal": "Donegal",
     "donegal town": "Donegal", "killybegs": "Donegal", "glenties": "Donegal",
@@ -597,26 +495,21 @@ TOWN_TO_COUNTY = {
     "kilmacrenan": "Donegal", "manorcunningham": "Donegal",
     "newtowncunningham": "Donegal", "lifford": "Donegal", "muff": "Donegal",
     "greencastle": "Donegal", "fahan": "Donegal",
-    # Derry
     "derry": "Derry", "londonderry": "Derry", "limavady": "Derry",
     "coleraine": "Derry", "magherafelt": "Derry", "maghera": "Derry",
     "garvagh": "Derry", "eglinton": "Derry",
-    # Tyrone
     "omagh": "Tyrone", "strabane": "Tyrone", "dungannon": "Tyrone",
     "cookstown": "Tyrone", "castlederg": "Tyrone", "fintona": "Tyrone",
     "sion mills": "Tyrone",
-    # Leitrim
     "carrick-on-shannon": "Leitrim", "carrick on shannon": "Leitrim",
     "manorhamilton": "Leitrim", "ballinamore": "Leitrim",
     "drumshanbo": "Leitrim", "mohill": "Leitrim", "kinlough": "Leitrim",
     "dromahair": "Leitrim", "rossinver": "Leitrim", "drumkeeran": "Leitrim",
     "newtowngore": "Leitrim", "aughavas": "Leitrim",
-    # Sligo
     "sligo": "Sligo", "tubbercurry": "Sligo", "ballymote": "Sligo",
     "enniscrone": "Sligo", "strandhill": "Sligo", "grange": "Sligo",
     "rosses point": "Sligo", "collooney": "Sligo", "coolaney": "Sligo",
     "riverstown": "Sligo", "dromore west": "Sligo", "easkey": "Sligo",
-    # Fermanagh
     "garrison": "Fermanagh", "enniskillen": "Fermanagh", "belleek": "Fermanagh",
     "kesh": "Fermanagh", "lisnaskea": "Fermanagh", "irvinestown": "Fermanagh",
     "belcoo": "Fermanagh", "derrygonnelly": "Fermanagh",
@@ -624,8 +517,6 @@ TOWN_TO_COUNTY = {
 
 
 def _proper_town_case(key):
-    """'carrick-on-shannon' -> 'Carrick-on-Shannon', 'sion mills' ->
-    'Sion Mills', 'gaoth dobhair' -> 'Gaoth Dobhair'."""
     lower_words = {"on", "of"}
     parts = re.split(r"(-|\s+)", key)
     out = []
@@ -640,11 +531,6 @@ def _proper_town_case(key):
 
 
 TOWN_DISPLAY_CASE = {k: _proper_town_case(k) for k in TOWN_TO_COUNTY}
-# Bare county names (Donegal, Derry, etc) are also valid town values in
-# their own right (e.g. Eventbrite's "Donegal" meaning Donegal Town), but
-# must only match as a LAST resort - otherwise 'Co. Donegal' inside a
-# longer address (e.g. Fahan's) would wrongly win over the real, more
-# specific town name just because 'donegal' happens to be longer.
 _COUNTY_NAME_TOWNS = {"donegal", "derry", "sligo", "leitrim", "tyrone", "fermanagh"}
 _SPECIFIC_TOWN_ORDER = sorted(
     (k for k in TOWN_TO_COUNTY if k not in _COUNTY_NAME_TOWNS),
@@ -655,13 +541,6 @@ _FALLBACK_TOWN_ORDER = sorted(
 
 
 def find_specific_town(text):
-    """Like nearest_known_town, but only matches a genuinely specific
-    town - NEVER a bare county name - and returns None (not the
-    original text) when nothing matches, so callers can tell 'found a
-    real town' apart from 'found nothing'. Useful for checking a
-    title/venue string for a town mention, where falling back to a
-    bare county name would be actively misleading rather than just
-    imprecise."""
     if not text:
         return None
     low = text.lower()
@@ -672,15 +551,6 @@ def find_specific_town(text):
 
 
 def nearest_known_town(raw_town):
-    """Reduces a raw, possibly overly-specific or compound town/address
-    string (e.g. Heritage Week's 'Rossinver Community Centre, Co.
-    Leitrim', or EAF's 'Linsfort, Buncrana') down to the nearest REAL,
-    recognised town from TOWN_TO_COUNTY, so the town filter doesn't end
-    up cluttered with one-off venue names and townlands. Matches a known
-    town anywhere in the string as a whole word, not just as an exact
-    full-string match, since the real town name is often just one part
-    of a longer address. Falls back to the original value unchanged if
-    no known town is found anywhere in it."""
     if not raw_town:
         return raw_town
     found = find_specific_town(raw_town)
@@ -693,42 +563,24 @@ def nearest_known_town(raw_town):
     return raw_town
 
 
-# Populated from persisted state at the start of main() and written back
-# at the end. Some sources (August Craft Month, Heritage Week) only give
-# a county on their listing pages - the real town is only on each event's
-# own page. Since that town never changes once an event exists, it's
-# fetched once and cached by URL forever after, rather than being
-# re-fetched on every single run.
 LOCATION_CACHE = {}
 
 
 def cached_town_lookup(url, fetch_and_extract_fn):
-    """Returns the cached town for this event URL if known; otherwise
-    calls fetch_and_extract_fn() to fetch the event's own page and derive
-    one. Only caches the result if the fetch actually succeeded (even if
-    it found nothing) - a fetch that merely failed (timeout, blocked,
-    etc) is left uncached so it's retried on the next run, rather than
-    being permanently remembered as 'no location available'."""
     if url in LOCATION_CACHE:
         return LOCATION_CACHE[url]
     try:
         town = fetch_and_extract_fn()
     except Exception:
-        return None  # don't cache - retry next run
-    LOCATION_CACHE[url] = town  # a genuine "found nothing" IS worth caching
+        return None
+    LOCATION_CACHE[url] = town
     return town
 
 
-# Same pattern as LOCATION_CACHE, but for Balor's Ghostlight Sessions
-# lineup, which is also permanent once an event exists.
 GHOSTLIGHT_LINEUP_CACHE = {}
 
 
 def cached_lookup(cache, key, fetch_and_extract_fn):
-    """Generic version of cached_town_lookup, for any per-event value
-    that's fetched once and permanent thereafter. Only caches a genuine
-    'fetched fine, computed a value (possibly None)' result - a fetch
-    that failed outright is left uncached so it's retried next run."""
     if key in cache:
         return cache[key]
     try:
@@ -744,23 +596,6 @@ WEEKDAY_INDEX = {name: i for i, name in enumerate(
 
 
 def parse_eventbrite_date_text(text, trust_relative=True, reference_date=None):
-    """Parses Eventbrite's date text as found in a webscraper.io export:
-    an explicit date ('Fri 31 Jul, 18:30'), or a relative one ('Today at
-    09:00', 'Tomorrow at 19:30', 'Thursday at 11:00' - a bare weekday
-    means the next occurrence of that day). Relative dates are only
-    parsed when trust_relative is True - see csv_freshness_check below
-    for why that matters.
-
-    reference_date anchors what 'today'/'tomorrow'/a bare weekday
-    actually MEANS - it should be the day the CSV was captured, NOT
-    necessarily today. If even a day or two passes between capture and
-    this actually being processed (easily possible: the CSV stays
-    'fresh' for a day, and the workflow runs daily), resolving 'Friday'
-    against the CURRENT day rather than the capture day can roll a full
-    week past the already-happened, originally-intended Friday - which
-    is exactly what happened to two Ballyshannon Festival events that
-    were meant as 31 Jul/1 Aug and came out a week later as 7/8 Aug.
-    Defaults to TODAY if not given, for compatibility."""
     if reference_date is None:
         reference_date = TODAY
     if not text:
@@ -795,16 +630,6 @@ def parse_eventbrite_date_text(text, trust_relative=True, reference_date=None):
 
 
 def slugify(title):
-    """Guesses Eventbrite's own URL slug from a title, e.g. 'MacGill
-    Summer School 2026' -> 'macgill-summer-school-2026'. Won't always be
-    exactly right (Eventbrite occasionally adds words not in the visible
-    title), but lands on the real event page far more often than not -
-    and when it's wrong, eventbrite.ie/d/ireland--donegal/<slug>/ still
-    lands on Eventbrite's Donegal search, which is what we'd link to
-    anyway, so there's no downside to trying. Accented characters (common
-    in Irish-language titles, e.g. 'Tír') are transliterated to their
-    plain-ASCII equivalent rather than dropped, matching what Eventbrite
-    itself does ('Tír' -> 'tir', not 't-r')."""
     t = title.lower()
     t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode("ascii")
     t = t.replace("'", "")
@@ -816,15 +641,6 @@ CSV_STALE_AFTER_DAYS = 1
 
 
 def csv_freshness_check(prev_state):
-    """Tracks whether the manual Eventbrite CSV has changed since it was
-    last read, using a content hash stored in our own persisted state -
-    NOT file modification times, which git resets to checkout time on
-    every run and are therefore useless for this. Returns True if the
-    file is new or was last changed within CSV_STALE_AFTER_DAYS days -
-    i.e. whether 'Today'/'Tomorrow'/bare-weekday text in it can still be
-    trusted. Once a file goes stale, only its unambiguous explicit dates
-    keep being used; relative-only rows are simply dropped rather than
-    silently drifting onto the wrong day."""
     current_hash = hashlib.sha1(MANUAL_CSV_PATH.read_bytes()).hexdigest()[:12]
     prev_hash = prev_state.get("eventbrite_csv_hash")
     if current_hash != prev_hash:
@@ -840,21 +656,10 @@ def csv_freshness_check(prev_state):
 
 
 def parse_eventbrite_csv(source, prev_state=None):
-    """Eventbrite blocks GitHub Actions' servers outright (see EVENTBRITE_*
-    above), so this reads a CSV exported by hand from the webscraper.io
-    browser extension instead - no network request, so nothing to block.
-    Upload a fresh export to scraper/manual-imports/eventbrite.csv every
-    so often (weekly is plenty), always overwriting the same filename.
-    Returns None (not []) if no file has been uploaded yet, so the caller
-    can tell 'nothing uploaded' apart from 'uploaded but empty/broken'."""
     if not MANUAL_CSV_PATH.exists():
         return None
     trust_relative = (csv_freshness_check(prev_state)
                       if prev_state is not None else True)
-    # relative date text ('Friday at 18:30') must be resolved against the
-    # day the CSV was actually captured, not today - see
-    # parse_eventbrite_date_text's docstring for why that distinction
-    # matters
     reference_date = TODAY
     if prev_state is not None:
         since = prev_state.get("eventbrite_csv_since")
@@ -876,7 +681,7 @@ def parse_eventbrite_csv(source, prev_state=None):
                 start_date, time_str = parse_eventbrite_date_text(
                     row.get("data11"), trust_relative, reference_date)
             if not start_date:
-                continue  # stale relative date, or missing entirely
+                continue
             venue_text = clean(row.get("data5") or row.get("data13") or "")
             town = venue = None
             if "·" in venue_text:
@@ -885,12 +690,7 @@ def parse_eventbrite_csv(source, prev_state=None):
                 venue = venue_text or None
             county = TOWN_TO_COUNTY.get((town or "").strip().lower())
             if not county:
-                continue  # not a recognized Donegal/Derry/Sligo/Leitrim/Tyrone town
-            # Eventbrite's own bare "Donegal" location tag specifically and
-            # reliably means Donegal Town itself (confirmed against real
-            # listings), unlike other sources where a bare "Donegal"
-            # fallback usually just means "we only know the county" - so
-            # this upgrade belongs here, not as a blanket rule elsewhere
+                continue
             if town and town.strip().lower() == "donegal":
                 town = "Donegal Town"
             slug = slugify(title)
@@ -909,14 +709,6 @@ EAF_TYPE_WORDS = {"live event", "exhibition", "project"}
 
 
 def parse_eaf_date_text(text):
-    """Extracts every date found in a line like 'Monday 13th - Friday
-    17th July' or 'Saturday 9th January 2027', as raw (month, day,
-    explicit_year_or_None) tuples - year resolution is deferred until
-    all of an event's date tokens are collected together (see
-    resolve_date_tokens in finalise() below), since resolving each one
-    independently can wrongly roll an already-passed-but-still-relevant
-    start date a full year forward while the event is genuinely still
-    ongoing."""
     found = []
     for m in EAF_DATE_RE.finditer(text):
         mon = MONTHS.get(m.group(2).lower()[:3])
@@ -933,13 +725,6 @@ EAF_SOLD_OUT_RE = re.compile(
 
 
 def parse_eaf_listing(soup, source):
-    """eaf.ie/2026-events/ lists every festival event on one page: a
-    genre link, then a title link, then date/time bullet lines, then an
-    event-type label (Live Event / Exhibition / Project). 'Project'
-    entries (artist residencies with no attendable date) are skipped.
-    A sold-out show has 'DÍOLTA AMACH / SOLD OUT' (or just 'SOLD OUT')
-    appended to its title on the page - that's stripped out and turned
-    into a sold_out flag instead of being shown twice."""
     events = []
     genre = None
     title = url = None
@@ -988,8 +773,6 @@ def parse_eaf_listing(soup, source):
 
 
 def parse_eaf_event_page(soup):
-    """Each event's own page lists 'Location:' (town) and 'Venue:' (venue
-    name) as plain labelled text - not present on the listing page."""
     town = venue = None
     pending_label = None
     for kind, a, b in walk(soup):
@@ -1007,11 +790,6 @@ def parse_eaf_event_page(soup):
 
 
 def parse_eaf(source):
-    """Two-stage: scrape the listing page for what/when, then visit each
-    event's own page for its venue (not shown on the listing page). This
-    means ~1 + N requests where N is the number of live events/exhibitions
-    - a small delay is added between the per-event requests to avoid
-    hammering a small festival site's server all at once."""
     listing = fetch(source["url"])
     events = parse_eaf_listing(listing, source)
     for ev in events:
@@ -1023,19 +801,12 @@ def parse_eaf(source):
             if venue:
                 ev["venue"] = venue
         except Exception:
-            pass  # keep the event with the festival's own name as venue
+            pass
         time.sleep(0.4)
     return events
 
 
 def parse_mcgrorys(soup, source):
-    """mcgrorys.ie/entertainment - each card is an image link to the
-    event's own page, immediately followed by its title as a heading
-    (not itself a link), a description paragraph, a duplicate 'Read
-    More' link, a booking link, then an 'Event Date DD Mon YY' line.
-    The page never states a genre, but McGrory's is overwhelmingly a
-    music venue, so every event is tagged category='Music' - if that
-    ever stops being true, this is the line to revisit."""
     event_link_re = re.compile(r"/entertainment/\d+-\d+/?$")
     date_re = re.compile(r"(\d{1,2})\s+([A-Za-z]{3})\s+(\d{2})\b")
     events = []
@@ -1050,7 +821,7 @@ def parse_mcgrorys(soup, source):
         else:
             if awaiting_title and not title:
                 if "read more" in a.lower():
-                    continue  # hidden a11y label on the image link, not the title
+                    continue
                 title = a
                 awaiting_title = False
                 continue
@@ -1070,11 +841,6 @@ def parse_mcgrorys(soup, source):
 
 
 def parse_st_columbs(soup, source):
-    """saintcolumbshall.com/whatson/ embeds full event data as JSON-LD
-    (schema.org Event objects, exact ISO datetimes) - far more reliable
-    than the visible text, which Tribe Events Calendar splits oddly
-    across separate text nodes (the weekday and day number are two
-    different nodes, for instance)."""
     events = []
     for script in soup.find_all("script", type="application/ld+json"):
         try:
@@ -1109,12 +875,6 @@ NERVE_TIME_RE = re.compile(r"\|\s*(\d{1,2}:\d{2}\s*[AP]M)", re.I)
 
 
 def parse_nerve_date_line(text):
-    """Parses date lines like '31 July 2026 | 5:00PM', '20 July - 24
-    July 2026' (first date missing a year, borrowed from the second),
-    or '1 October - 30 June 2027' - a course spanning into the next
-    year, where naively borrowing the end date's year would make the
-    start date come AFTER the end date; in that case the start year is
-    stepped back by one to keep the range chronological."""
     time_text = None
     m_time = NERVE_TIME_RE.search(text)
     if m_time:
@@ -1165,30 +925,11 @@ def parse_nerve_date_line(text):
 
 
 def _nerve_has_date_token(text):
-    """NERVE_DATE_TOKEN_RE alone is too loose - '7-8 Magazine Street'
-    matches 'digit + word' just like a real date would. Only treat a
-    line as a date line if at least one match's word is an actual
-    month name."""
     return any(MONTHS.get(m.group(2).lower()[:3])
                for m in NERVE_DATE_TOKEN_RE.finditer(text))
 
 
 def parse_nervecentre(soup, source):
-    """nervecentre.org/whats-on - Nerve Centre runs events across Derry,
-    Belfast, Bangor and even Wales, so only events whose venue text
-    mentions Derry (and NOT Belfast, ruling out the one dual-city
-    workshop) are kept. Listings with no date at all, or with no venue
-    line (e.g. a book for sale), are skipped - not real attendable
-    events for this site. The button text ('Sold Out' vs 'Book Now' /
-    'Sign Up' / 'Apply Now' / 'Purchase Now') sets a sold_out flag,
-    which naturally refreshes on each day's rescrape.
-
-    A date RANGE is marked up as two separate <time> tags with a bare
-    '-' text node between them (e.g. '10 August' / '-' / '13 August
-    2026'), not one combined string like a single date is - so the
-    leading run of date-shaped-or-separator text nodes is accumulated
-    into one date_line before parsing, rather than only keeping the
-    last one seen."""
     events = []
     url = genre = None
     raw_lines = []
@@ -1212,9 +953,9 @@ def parse_nervecentre(soup, source):
         venue_text = leftover[-1] if len(leftover) > 1 else ""
         vt_lower = venue_text.lower()
         if "derry" not in vt_lower or "belfast" in vt_lower:
-            return  # not a strictly-Derry event
+            return
         if not date_line:
-            return  # no date at all - not schedulable
+            return
         start, end, time_text = parse_nerve_date_line(date_line)
         if not start:
             return
@@ -1256,15 +997,6 @@ HAWKSWELL_DATE_TOKEN_RE = re.compile(r"\b(\d{1,2})\b(?:\s+([A-Za-z]+))?(?:\s+(\d
 
 
 def parse_hawkswell_date_line(text):
-    """Parses Hawk's Well's date lines, which come in several shapes:
-    a single date+time ('Wed 22 July 2026, 1.10pm'), a genuine range
-    ('Tues 21 - Sat 25 July 2026, 5pm & 10.30pm' - dash-joined, day-only
-    on the first token borrows month/year from the second), or a list of
-    genuinely separate non-contiguous performances ('Fri 6 March & Fri
-    10 April 2026, 1pm' - '&'/',' joined). Only a dash-only join is
-    treated as a real range; any '&' or ',' between date tokens means
-    'take the first occurrence only', so we don't imply a false
-    continuous run across unrelated nights."""
     time_matches = [m.group(0) for m in HAWKSWELL_TIME_RE.finditer(text)]
     time_text = " & ".join(time_matches) if time_matches else None
     if not time_text:
@@ -1314,12 +1046,6 @@ def parse_hawkswell_date_line(text):
 
 
 def parse_hawkswell_listing(soup, source):
-    """hawkswell.com/whats-on/shows - each card is a genre tag (plain
-    div, not a link), then a single <a> wrapping the whole card (image,
-    title, optional subline, date). The genre 'Filter' buttons at the
-    top of the page are real links pointing at the same URL pattern as
-    individual shows, so they're explicitly excluded via the #wwd-tags
-    container rather than guessed at."""
     filter_hrefs = set()
     filter_div = soup.find(id="wwd-tags")
     if filter_div:
@@ -1358,10 +1084,6 @@ def parse_hawkswell_listing(soup, source):
             if href in filter_hrefs:
                 continue
             if href != url:
-                # the most recently buffered text (if any) is actually
-                # the NEW event's genre tag, captured while the OLD
-                # event's href was still active - reclaim it before
-                # finalising the old event
                 next_genre = buf.pop() if buf else None
                 finalise()
                 url = href
@@ -1374,9 +1096,6 @@ def parse_hawkswell_listing(soup, source):
 
 
 def parse_hawkswell_event_page(soup):
-    """Each event's own page has a clean 'Location' table row: either
-    the main theatre ('Hawk's Well Theatre') or their second venue in
-    Ballymote ('Art Deco Theatre, Ballymote')."""
     for th in soup.find_all("th"):
         if clean(th.get_text()).lower() == "location":
             td = th.find_next_sibling("td")
@@ -1391,11 +1110,6 @@ def parse_hawkswell_event_page(soup):
 
 
 def parse_hawkswell(source):
-    """Two-stage, same pattern as EAF: scrape the listing page for
-    what/when/genre, then visit each event's own page for its real
-    venue (the listing page has no reliable per-event location - only
-    the 'Art Deco' genre tag, which is also a style label used at the
-    main venue too, not exclusively a Ballymote marker)."""
     listing = fetch(source["url"])
     events = parse_hawkswell_listing(listing, source)
     for ev in events:
@@ -1405,7 +1119,7 @@ def parse_hawkswell(source):
             ev["venue"] = venue
             ev["town"] = town
         except Exception:
-            pass  # keep the default Hawk's Well Theatre / Sligo
+            pass
         time.sleep(0.4)
     return events
 
@@ -1415,13 +1129,6 @@ CRAFTMONTH_DATE_RE = re.compile(
 
 
 def parse_craftmonth_listing(soup, source):
-    """augustcraftmonth.org/events/?search_loc=X - each event card is
-    `<a class="acm-venue-item">` inside `#results` (there's also an
-    unrelated 'featured' carousel elsewhere on the page showing events
-    from ALL counties regardless of the filter, which is skipped by
-    only looking inside #results). The date range span has a <br/> in
-    the middle splitting it into two text nodes, so it's read directly
-    via BeautifulSoup rather than the generic text-walk."""
     results = soup.find(id="results")
     if not results:
         return []
@@ -1457,13 +1164,6 @@ def parse_craftmonth_listing(soup, source):
 
         county = COUNTY_ALIASES.get(fields.get("location", ""), fields.get("location"))
         cat_bits = [fields[k] for k in ("event type", "craft type") if fields.get(k)]
-        # the site's own 'Location:' field is county-level only, not a
-        # specific town - check the title and maker/venue name for an
-        # actual town mention (e.g. 'Rathmullan Makers Market'). If
-        # nothing specific turns up here OR from the per-event page
-        # fetch (see parse_craftmonth), town is left unset rather than
-        # falling back to the bare county name, which downstream would
-        # get misread as a specific place ("Donegal" -> "Donegal Town")
         town = find_specific_town(title) or find_specific_town(fields.get("maker"))
 
         ev = make_event(
@@ -1471,7 +1171,7 @@ def parse_craftmonth_listing(soup, source):
             end_date=end.isoformat() if end and end != start else None,
             url=href, category=", ".join(cat_bits) if cat_bits else None,
             venue=fields.get("maker"), county=county)
-        ev["town"] = town  # explicit, bypassing make_event's default-from-source
+        ev["town"] = town
         events.append(ev)
 
     next_link = soup.select_one("a.next, a[rel='next']")
@@ -1485,10 +1185,6 @@ def parse_craftmonth_listing(soup, source):
 
 
 def parse_craftmonth_event_page(soup):
-    """Individual event pages have an 'Event Address:' label followed by
-    the real street address as a separate text node right after it (e.g.
-    'Front Street Ardara Co Donegal F94 E4E4') - much more specific than
-    the always-county-level 'Event Location:' field also present."""
     texts = [a for kind, a, b in walk(soup) if kind == "text"]
     for i, t in enumerate(texts):
         if t.strip().lower() == "event address:" and i + 1 < len(texts):
@@ -1497,9 +1193,6 @@ def parse_craftmonth_event_page(soup):
 
 
 def parse_craftmonth(source):
-    """Two-stage: the listing gives title/date/genre/a rough town, then
-    each event's own page is fetched once (ever - see LOCATION_CACHE)
-    for a more precise town from its real street address."""
     soup = fetch(source["url"])
     events = parse_craftmonth_listing(soup, source)
     for ev in events:
@@ -1515,12 +1208,6 @@ HERITAGEWEEK_DATE_RE = re.compile(r"^(\d{1,2})\s+([A-Za-z]+)\b")
 
 
 def parse_heritageweek_page(soup, source):
-    """heritageweek.ie/event-listings - each card is <article
-    class="item-summary">, with an inner <ul class="list-details">
-    whose <li> items are, in order: venue (bold), 'Co. County', a
-    town/address fragment, then one <li> PER DAY for multi-day events
-    ('17 August, 9:30am - 5:30pm', '18 August, ...' etc - each its own
-    list item, not one combined string)."""
     events = []
     for article in soup.select("article.item-summary"):
         link = article.select_one("a.link-block")
@@ -1554,10 +1241,6 @@ def parse_heritageweek_page(soup, source):
             if town_candidate is None and not bare_county_re.match(item.strip()):
                 town_candidate = item
         county = COUNTY_ALIASES.get(county, county)
-        # resolved now (not left as raw address text) so an unresolved
-        # candidate doesn't later fall through to a bare county-name
-        # match in the main pipeline's normalisation and get misread as
-        # a specific place ("Donegal" -> "Donegal Town")
         town = find_specific_town(town_candidate) if town_candidate else None
 
         date_tokens, time_text = [], None
@@ -1581,18 +1264,12 @@ def parse_heritageweek_page(soup, source):
             source, title, start,
             end_date=end.isoformat() if end else None,
             time=time_text, url=href, venue=venue, county=county)
-        ev["town"] = town  # explicit, bypassing make_event's default-from-source
+        ev["town"] = town
         events.append(ev)
     return events
 
 
 def parse_heritageweek_event_page(soup):
-    """Individual event pages have a cleaner address breakdown than the
-    listing card: <ul class="event-details"> with a few specific-to-
-    general <li> lines ending in 'Co. County' (e.g. 'Port Arthur, An
-    Luinnigh' / 'Luinnigh, Gaoth Dobhair' / 'Co. Donegal') - the county
-    line itself is skipped since it's no more useful than what the
-    listing page already gave us."""
     ul = soup.select_one("ul.event-details")
     if not ul:
         return None
@@ -1607,17 +1284,6 @@ def parse_heritageweek_event_page(soup):
 
 
 def parse_heritageweek(source):
-    """Follows 'Next' pagination links (which preserve our county
-    filter query params) until no more pages remain. Capped as a
-    safety net against a genuinely broken/looping 'Next' link, not as
-    a normal termination path - the real result set is large (Donegal
-    alone has ~150 events, ~13 pages, and this query combines six
-    counties into one alphabetically-sorted list), so the cap must sit
-    well above that or events sorting late alphabetically (anything
-    from roughly S onward) silently never get fetched at all. Each
-    event's own page is then fetched once (ever - see LOCATION_CACHE)
-    for a more precise town than the listing card's address fragment
-    gives."""
     events = []
     url = source["url"]
     for _ in range(60):
@@ -1642,9 +1308,6 @@ THEDOCK_DATE_TOKEN_RE = re.compile(r"(\d{1,2})\s+([A-Za-z]+)(?:\s+(\d{4}))?")
 
 
 def parse_thedock_date(text):
-    """Parses dates like '5 September 2026' or a range like '25 — 28
-    November 2026' (first date missing month/year, borrowed from the
-    second, same approach as Hawk's Well and Nerve Centre)."""
     matches = [[int(m.group(1)),
                 MONTHS.get(m.group(2).lower()[:3]),
                 int(m.group(3)) if m.group(3) else None]
@@ -1671,11 +1334,6 @@ def parse_thedock_date(text):
 
 
 def parse_thedock(soup, source):
-    """thedock.ie/whats-on/upcoming-events - each event is <article
-    class="item-event">, with genre (.btn), title (h3.title), an
-    optional subtitle (h4.sub-title), and a date (p.date), all in
-    clean, directly-selectable elements. A single physical venue, so
-    no per-event detail fetch is needed."""
     events = []
     for article in soup.select("article.item-event"):
         link = article.select_one("a.link-block")
@@ -1708,12 +1366,6 @@ STRULE_DATE_RE = re.compile(
 
 
 def parse_strule(soup, source):
-    """struleartscentre.co.uk/whats-on/shows/ - each card (.card-show)
-    has a genre (.primary-category), title (h2), a date (p.published-
-    date), and a Book/Sold Out button. For a sold-out show, the site
-    drops the date from the listing entirely rather than showing it
-    alongside a Sold Out badge - those are skipped, since there's no
-    way to schedule an event with no visible date on this page."""
     events = []
     for card in soup.select(".card-show"):
         title_tag = card.select_one("h2")
@@ -1723,7 +1375,7 @@ def parse_strule(soup, source):
             continue
         date_text = clean(date_tag.get_text())
         if not date_text:
-            continue  # sold out - no date shown on this page
+            continue
         m = STRULE_DATE_RE.search(date_text)
         if not m:
             continue
@@ -1751,8 +1403,6 @@ THEMODEL_MAX_SPAN_DAYS = 90
 
 
 def parse_themodel_date(text):
-    """Parses lines like 'Sun., 11:00 am Jun 13, 2026 – Aug 22, 2026' or
-    'Open all day. Jan 1, 2026 – Dec 31, 2026'."""
     time_m = THEMODEL_TIME_RE.search(text)
     time_text = time_m.group(0) if time_m else None
     if not time_text and re.search(r"open all day", text, re.I):
@@ -1783,13 +1433,6 @@ def parse_themodel_date(text):
 
 
 def parse_themodel(soup, source):
-    """themodel.ie/whats-on/ - each event is <li class="grid-item">,
-    title in h3>a, and a combined weekday/time/date-range string in
-    .grid-item-meta. Standing year-round programmes that aren't real
-    discrete events (e.g. 'Gallery Tours for Groups' running Jan-Dec, or
-    'Guided Tours for Schools' running Sep-June) are skipped via a
-    90-day span cutoff, rather than a title-based denylist, so any
-    similar catchall programme is caught automatically."""
     events = []
     seen_urls = set()
     for li in soup.select("li.grid-item"):
@@ -1805,7 +1448,7 @@ def parse_themodel(soup, source):
         if not start:
             continue
         if end and (end - start).days > THEMODEL_MAX_SPAN_DAYS:
-            continue  # standing/catchall programme, not a real event
+            continue
         events.append(make_event(
             source, clean(title_tag.get_text()), start,
             end_date=end.isoformat() if end else None,
@@ -1817,13 +1460,6 @@ PLAYHOUSE_DATE_RE = re.compile(r"(\d{1,2})(?:st|nd|rd|th)\s+([A-Za-z]+)\s+(\d{4}
 
 
 def parse_playhouse_derry(soup, source):
-    """derryplayhouse.co.uk/events - each card is a div.group with a
-    title (.title.font-title-bold), a date range separated by '~'
-    (.title.font-title - a DIFFERENT class combo to the title, since
-    'font-title-bold' and 'font-title' are distinct CSS tokens, not a
-    substring match), and a link (a.gradient). No genre is exposed per
-    card here (the promo badges like 'NEW SHOW'/'LIMITED RUN' aren't
-    genres), so category is left unset, same as a few other sources."""
     events = []
     for card in soup.select("div.group"):
         title_tag = card.select_one("div.title.font-title-bold")
@@ -1857,19 +1493,11 @@ def parse_playhouse_derry(soup, source):
     return events
 
 
-# ---------------------------------------------------------------- sources
-
 CRAFTMONTH_START = TODAY.strftime("%Y%m%d")
 CRAFTMONTH_END = (TODAY + timedelta(days=120)).strftime("%Y%m%d")
 
 
 def seasonal_interval(active_months, quiet_interval=3):
-    """Returns 0 (no throttle - refresh on every run, same as an
-    unthrottled source) during active_months, or quiet_interval
-    otherwise. For genuinely seasonal sources (a festival, a themed
-    week) where new events appear frequently during their real active
-    window but the source is otherwise dormant - checking daily only
-    when it's actually worth checking daily."""
     return 0 if TODAY.month in active_months else quiet_interval
 
 
@@ -1971,11 +1599,6 @@ COUNTY_ALIASES = {
     "Derry City": "Derry",
     "Derry/Londonderry": "Derry",
 }
-# Case-insensitive lookup covering both the six real county names and all
-# known Derry variants, so a source producing "derry city", "DERRY", etc
-# (rather than our exact expected capitalisation) is still normalised
-# correctly instead of silently falling through unaliased or, worse,
-# being wrongly excluded from the region entirely.
 COUNTY_CANONICAL = {c.lower(): c for c in ALLOWED_COUNTIES}
 COUNTY_CANONICAL.update({k.lower(): v for k, v in COUNTY_ALIASES.items()})
 
@@ -1993,10 +1616,6 @@ CATEGORY_ALIASES = {
     "classical music": "Music",
     "musical theatre": "Musical",
     "maker talk": "Meet the Maker",
-    # fine-grained craft disciplines (mostly August Craft Month's own
-    # "Craft Type" taxonomy) - individually each only ever tags a
-    # handful of events, cluttering the genre list; grouped into one
-    # broader bucket instead
     "ceramics": "Craft/Hobbies",
     "glass making": "Craft/Hobbies",
     "felt": "Craft/Hobbies",
@@ -2019,8 +1638,8 @@ CATEGORY_ALIASES = {
     "multiple": "Craft/Hobbies",
 }
 CATEGORY_DROP = {
-    "spectacle",  # "Street Arts & Circus" alone covers this well
-    "art deco",  # a venue marker (Hawk's Well's Ballymote location), not a genre
+    "spectacle",
+    "art deco",
 }
 
 AGE_RANGE_RE = re.compile(r"\b(\d{1,2})\s*-\s*(\d{1,2})\s*(?:yrs?|years?)\b", re.I)
@@ -2031,12 +1650,6 @@ GENERIC_SOLD_OUT_RE = re.compile(r"\(?\bsold\s*out\b\)?", re.I)
 
 
 def apply_generic_sold_out(ev):
-    """Catches 'SOLD OUT' (any capitalisation) appearing anywhere in a
-    title from ANY source, stripping it out and setting sold_out - the
-    same treatment already built in for EAF and Nerve Centre, just
-    generalised as a safety net for every other source too. Skips
-    events a source-specific check already handled, so nothing gets
-    double-processed."""
     if ev.get("sold_out"):
         return
     title = ev.get("title", "")
@@ -2050,19 +1663,6 @@ def apply_generic_sold_out(ev):
 
 
 def normalize_category(cat):
-    """Renames some genre tags to consolidate near-duplicates (e.g.
-    'Cinema' -> 'Film'), and drops a few tokens entirely (CATEGORY_DROP)
-    rather than renaming them, where an existing tag already covers the
-    same ground well enough on its own.
-
-    Children's content specifically gets a SUBSTRING match ('child' or
-    'kids' appearing anywhere in the tag), not just another entry in the
-    exact-match alias table below - sources phrase this wildly
-    differently ('Children', "Children's Event", "Children's Theatre",
-    'For Children', "Kids' Workshop" have all shown up separately), and
-    a substring catch-all means a NEW phrasing from some future venue
-    gets folded in automatically instead of silently slipping through
-    unconsolidated until someone happens to notice and add it by hand."""
     if not cat:
         return cat
     parts = [p.strip() for p in cat.split(",")]
@@ -2084,11 +1684,6 @@ def normalize_category(cat):
 
 
 def looks_like_kids_family(title):
-    """Catches events with no genre data at all (mainly Eventbrite, which
-    has no category field in our pipeline) that are clearly for children
-    based on the title: 'kids'/'children's'/'junior', or a hyphenated age
-    range whose upper bound is under 18 ('6-11yrs' but not '18+yrs' or
-    '25 Years On', neither of which is a hyphenated range at all)."""
     if KIDS_KEYWORDS_RE.search(title):
         return True
     m = AGE_RANGE_RE.search(title)
@@ -2134,9 +1729,6 @@ def _dedup_words(title):
 
 
 def _title_containment(a, b):
-    """What fraction of the SHORTER title's (stopword-stripped) words
-    appear in the longer one - robust to one source truncating or
-    padding a title, unlike plain string-similarity ratios."""
     wa, wb = _dedup_words(a), _dedup_words(b)
     if not wa or not wb:
         return 0.0
@@ -2145,16 +1737,6 @@ def _title_containment(a, b):
 
 
 def merge_cross_source_duplicates(events):
-    """Events from different sources describing the same real-world
-    happening (e.g. a show at An Grianán that's also promoted by the
-    Earagail Arts Festival) are merged into one entry. Only ever
-    compares events sharing the exact same venue AND date - deliberately
-    conservative, so two genuinely different events at the same venue on
-    the same day are never wrongly merged, at the cost of occasionally
-    missing a real duplicate (e.g. if two sources disagree on an
-    exhibition's exact opening date by a few days). Whichever source is
-    closer to the venue itself wins the merged details (SOURCE_PRIORITY);
-    other sources only backfill fields the winner is missing."""
     groups = {}
     for ev in events:
         groups.setdefault((ev["venue"], ev["date"]), []).append(ev)
@@ -2200,8 +1782,6 @@ def merge_cross_source_duplicates(events):
     return result
 
 
-# ---------------------------------------------------------------- pipeline
-
 def event_key(ev):
     raw = f"{ev['source']}|{ev['title'].lower()}|{ev['date']}"
     return hashlib.sha1(raw.encode()).hexdigest()[:12]
@@ -2244,7 +1824,7 @@ def notify(new_events):
                       data="\n".join(lines).encode("utf-8"),
                       headers=headers, timeout=TIMEOUT)
         print(f"Sent ntfy notification for {len(new_events)} new event(s)")
-    except Exception as exc:  # never fail the run over a notification
+    except Exception as exc:
         print(f"ntfy notification failed: {exc}", file=sys.stderr)
 
 
@@ -2316,17 +1896,14 @@ def main():
                   file=sys.stderr)
             if count >= FAILURE_THRESHOLD:
                 failed.append(source["venue"])
-            # keep this venue's previously-seen events so a one-day outage
-            # doesn't wipe them (and re-announce them tomorrow)
             all_events.extend(
                 e for e in prev_by_key.values() if e["source"] == source["name"])
 
-    # drop past events, de-duplicate, stamp first_seen
     seen, final = set(), []
     for ev in merge_cross_source_duplicates(all_events):
         canon = COUNTY_CANONICAL.get((ev.get("county") or "").strip().lower())
         if not canon:
-            continue  # not a recognized Donegal/Derry/Sligo/Leitrim/Tyrone/Fermanagh county
+            continue
         ev["county"] = canon
         ev["town"] = nearest_known_town(ev.get("town"))
         ev["category"] = normalize_category(ev.get("category"))
@@ -2358,8 +1935,6 @@ def main():
     }, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"Wrote {len(final)} upcoming events to {DATA_FILE}")
 
-    # notify only about genuinely new events (skip the very first run,
-    # otherwise you'd get one giant notification for everything)
     if previous.get("events"):
         new = [e for e in final
                if e["id"] not in prev_by_key
