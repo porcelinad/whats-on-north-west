@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-25T01:32Z",
+ "generated_at": "2026-09-26T01:35Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -8,7 +8,7 @@
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-08-08T23:46Z",
-  "hawkswell": "2026-09-23T01:30Z",
+  "hawkswell": "2026-09-26T01:35Z",
   "craftmonth_donegal": "2026-09-25T01:32Z",
   "craftmonth_derry": "2026-09-25T01:32Z",
   "craftmonth_derry_city": "2026-09-25T01:32Z",
@@ -22,13 +22,13 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 3,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 30,
+  "eaf": 31,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 14
+  "playhouse": 15
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -365,20 +365,6 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Norman Gibson – Still Life Gola Island",
-   "date": "2026-09-18",
-   "end_date": "2026-10-03",
-   "time": "5:00 pm",
-   "url": "https://regionalculturalcentre.com/exhibitions/norman-gibson-still-life-gola-island/",
-   "category": "Exhibition",
-   "id": "0ccf363c71ab",
-   "first_seen": "2026-08-21"
-  },
-  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -406,36 +392,6 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "The Love Hungry Farmer",
-   "date": "2026-09-25",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/the-love-hungry-farmer/",
-   "category": "Drama",
-   "sold_out": true,
-   "merged_from": [
-    "ardhowen"
-   ],
-   "id": "9bc507814430",
-   "first_seen": "2026-09-17"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Rónán Ó Snodaigh & Myles O’Reilly",
-   "date": "2026-09-25",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/rónán-ó-snodaigh-myles-oreilly",
-   "category": null,
-   "id": "441aab5acd9a",
-   "first_seen": "2026-09-17"
-  },
-  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -448,19 +404,6 @@
    "category": "Drama",
    "id": "d7c813d35091",
    "first_seen": "2026-07-16"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Keith Barry: Unhinged",
-   "date": "2026-09-25",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/keith-barry-unhinged",
-   "category": "Magic",
-   "id": "f67f79171e01",
-   "first_seen": "2026-09-17"
   },
   {
    "source": "nervecentre",
@@ -489,44 +432,6 @@
    "first_seen": "2026-08-26"
   },
   {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Sunshine on Leith – Dementia Friendly",
-   "date": "2026-09-25",
-   "time": "11:00am",
-   "url": "https://struleartscentre.co.uk/show/sunshine-on-leith-dementia-friendly-2/",
-   "category": "Film",
-   "id": "ee491fe61a26",
-   "first_seen": "2026-08-29"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Think Twice Celine Dion Tribute",
-   "date": "2026-09-25",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/think-twice-celine-dion-tribute/",
-   "category": "Music",
-   "id": "c85a0b6366a9",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Paahto & The Bull – Patrick Cummins and John Francis Flynn",
-   "date": "2026-09-25",
-   "url": "https://www.thedock.ie/whats-on/paahto-the-bull",
-   "category": "Music",
-   "id": "4aefdf77a54b",
-   "first_seen": "2026-08-01"
-  },
-  {
    "source": "themodel",
    "venue": "The Model",
    "town": "Sligo",
@@ -535,7 +440,7 @@
    "date": "2026-09-25",
    "end_date": "2026-09-27",
    "time": "7:30 pm",
-   "url": "https://www.themodel.ie/?event=sligo-baroque-music-festival-2026&event_date=2026-09-25",
+   "url": "https://www.themodel.ie/?event=sligo-baroque-music-festival-2026&event_date=2026-09-26",
    "category": null,
    "id": "ad86227805c6",
    "first_seen": "2026-08-27"
@@ -882,19 +787,6 @@
    "first_seen": "2026-09-23"
   },
   {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Pilgrims",
-   "date": "2026-10-02",
-   "time": "8:00PM",
-   "url": "https://nervecentre.org/whats-on/pilgrims",
-   "category": "Music/Comedy",
-   "id": "c511b1f06a3b",
-   "first_seen": "2026-07-21"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -904,9 +796,6 @@
    "time": "8:00 pm",
    "url": "https://regionalculturalcentre.com/events/django-donegal-giacomo-smith-trio-with-hugo-guezbar/",
    "category": "Music",
-   "merged_from": [
-    "rcc"
-   ],
    "id": "62517732193a",
    "first_seen": "2026-08-07"
   },
@@ -1003,6 +892,19 @@
    "first_seen": "2026-08-07"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "The Six Merry Murderesses",
+   "date": "2026-10-03",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-six-merry-murderesses-2",
+   "category": "Music",
+   "id": "768b708ad9aa",
+   "first_seen": "2026-09-26"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -1039,9 +941,6 @@
    "time": "8:00 pm",
    "url": "https://regionalculturalcentre.com/events/django-donegal-angelo-debarre-trio-with-alexandre-cavaliere/",
    "category": "Music",
-   "merged_from": [
-    "rcc"
-   ],
    "id": "e7d5f4dc0161",
    "first_seen": "2026-09-22"
   },
@@ -1085,6 +984,32 @@
    "category": null,
    "id": "4e5ae37fc436",
    "first_seen": "2026-09-25"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Back To The Future",
+   "date": "2026-10-04",
+   "time": "2pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/back-to-the-future",
+   "category": null,
+   "id": "cfbbacb38a29",
+   "first_seen": "2026-09-26"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Ferris Bueller's Day Off",
+   "date": "2026-10-04",
+   "time": "6pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/ferris-buellers-day-off",
+   "category": null,
+   "id": "ca5254f0f685",
+   "first_seen": "2026-09-26"
   },
   {
    "source": "thedock",
@@ -1136,6 +1061,19 @@
    "category": null,
    "id": "5ba719d2bd0a",
    "first_seen": "2026-09-16"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Othello (Film Screening)",
+   "date": "2026-10-06",
+   "time": "11am",
+   "url": "https://www.hawkswell.com/whats-on/shows/othello",
+   "category": "Secondary Schools",
+   "id": "9750b0892fd7",
+   "first_seen": "2026-09-26"
   },
   {
    "source": "nervecentre",
@@ -1630,10 +1568,9 @@
    "county": "Donegal",
    "title": "WAINFEST: Cark Angel – Little John Nee",
    "date": "2026-10-12",
-   "url": "https://angrianan.com/event/wainfest-cark-angel-little-john-nee-sold-out/",
+   "url": "https://angrianan.com/event/wainfest-cark-angel/",
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873667293",
    "category": "Theatre",
-   "sold_out": true,
    "id": "ddf2458869fb",
    "first_seen": "2026-09-25"
   },
@@ -1934,6 +1871,19 @@
    "category": "Spoken Word",
    "id": "e1522e9efa57",
    "first_seen": "2026-09-03"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Late Nights at The Model presents Toast",
+   "date": "2026-10-17",
+   "time": "10:00 pm",
+   "url": "https://www.themodel.ie/?event=late-nights-oct26-toast&event_date=2026-10-17",
+   "category": null,
+   "id": "d632718dc762",
+   "first_seen": "2026-09-26"
   },
   {
    "source": "balor",
@@ -2490,6 +2440,22 @@
    "first_seen": "2026-09-10"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Cinema: Scream (30th Anniversary Screening)",
+   "date": "2026-10-29",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-scream-30th-anniversary-screening/",
+   "category": "Film",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "86d0a283152c",
+   "first_seen": "2026-09-26"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -2513,6 +2479,19 @@
    "category": "Literature",
    "id": "7f4d6ce2d5d7",
    "first_seen": "2026-09-19"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Film screening: Rose of Nevada",
+   "date": "2026-10-29",
+   "time": "8:00 pm",
+   "url": "/?event=sligo-film-society-2026-27&event_date=2026-10-29",
+   "category": null,
+   "id": "c67bad55249b",
+   "first_seen": "2026-09-26"
   },
   {
    "source": "an_grianan",
@@ -2746,6 +2725,18 @@
    "category": "Music/Comedy",
    "id": "7da66777e2c8",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Andrew Ryan – Honest Capacity",
+   "date": "2026-11-06",
+   "url": "https://www.thedock.ie/whats-on/honest-capacity",
+   "category": "Comedy",
+   "id": "1cdc53edd454",
+   "first_seen": "2026-09-26"
   },
   {
    "source": "an_grianan",
@@ -3065,9 +3056,26 @@
    "title": "Dream, Perform, Shine – ETB STARS",
    "date": "2026-11-19",
    "url": "https://angrianan.com/event/dream-perform-shine-etb-stars/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873667853/events/128665754/seats?zone=Auditorium",
    "category": "Variety",
    "id": "eb5ba6d74829",
    "first_seen": "2026-08-22"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Cinema: Trainspotting (30th Anniversary Screening)",
+   "date": "2026-11-19",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-trainspotting-30th-anniversary-screening/",
+   "category": "Film",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "93dbda6e3917",
+   "first_seen": "2026-09-26"
   },
   {
    "source": "an_grianan",
@@ -3788,14 +3796,14 @@
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "RCC Make! Christmas Jumper Making with The Ary Fox",
+   "title": "RCC Make! Christmas Jumper Making with The Arty Fox",
    "date": "2026-12-19",
    "time": "2:00 pm",
    "url": "https://regionalculturalcentre.com/events/rcc-make-christmas-jumper-making-with-the-ary-fox/",
    "category": null,
    "sold_out": true,
-   "id": "dd2d3c7d788d",
-   "first_seen": "2026-08-05"
+   "id": "9a50fcb80b1d",
+   "first_seen": "2026-09-26"
   },
   {
    "source": "st_columbs",
@@ -4644,6 +4652,19 @@
    "category": "Music",
    "id": "ee38e787714e",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "David O’Doherty: Highway to the David Zone",
+   "date": "2027-03-27",
+   "url": "https://angrianan.com/event/david-odoherty-highway-to-the-david-zone/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873667856/events/128665756/seats?zone=Auditorium",
+   "category": "Comedy",
+   "id": "6ae932a3fc56",
+   "first_seen": "2026-09-26"
   },
   {
    "source": "balor",
@@ -8910,6 +8931,33 @@
    "category": null,
    "id": "fa6c7aeb0386",
    "first_seen": "2026-09-22"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Culture Night at The RCC 2026",
+   "date": "2027-09-18",
+   "time": "5:00 pm",
+   "url": "https://regionalculturalcentre.com/events/culture-night-at-the-rcc-2026/",
+   "category": "Workshop",
+   "id": "471739ac6e42",
+   "first_seen": "2026-09-26"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Norman Gibson – Still Life Gola Island",
+   "date": "2027-09-18",
+   "end_date": "2026-10-03",
+   "time": "5:00 pm",
+   "url": "https://regionalculturalcentre.com/exhibitions/norman-gibson-still-life-gola-island/",
+   "category": "Exhibition",
+   "id": "503fb4c84035",
+   "first_seen": "2026-09-26"
   }
  ]
 }
