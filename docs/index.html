@@ -55,6 +55,10 @@
     text-align: center;
   }
 
+  /* --------------------------------
+     Heading
+     -------------------------------- */
+
   h1 {
     font-family: var(--display);
     font-weight: 700;
@@ -65,6 +69,8 @@
     line-height: .95;
 
     margin: 0 0 8px;
+
+    color: var(--mist);
   }
 
   h1 span {
@@ -80,6 +86,10 @@
     max-width: 32ch;
   }
 
+  /* --------------------------------
+     City cards
+     -------------------------------- */
+
   .cities {
     display: flex;
     flex-direction: column;
@@ -88,10 +98,6 @@
     width: 100%;
     max-width: 360px;
   }
-
-  /* --------------------------------
-     Normal / active city
-     -------------------------------- */
 
   .city {
     display: block;
@@ -139,11 +145,11 @@
 
   /* --------------------------------
      Galway
-     Active, but visually quieter
+     Active, but slightly muted
      -------------------------------- */
 
   .city.galway {
-    background: #e4e7e2;
+    background: #d9ded9;
     color: #34413b;
   }
 
@@ -170,7 +176,7 @@
   .city.disabled .city-name {
     color: #8b978f;
 
-    /* Leave room for the badge */
+    /* Keeps the city names clear of the badge */
     padding-right: 105px;
 
     line-height: 1.05;
@@ -201,10 +207,10 @@
 
 <body>
 
-  <h1>Out and <span>About</span></h1>
+  <h1>OUT <span>AND AB</span>OUT</h1>
 
   <p class="tag">
-    Updated daily to help you get out and about.
+    Pulled daily from each venue's own website. Pick where you're headed.
   </p>
 
   <div class="cities">
@@ -234,7 +240,7 @@
       </div>
 
       <div class="city-sub">
-        <i></i>In progress — venues added one at a time</i>
+        In progress — venues added one at a time
       </div>
     </a>
 
@@ -256,3 +262,5 @@
 
 </body>
 </html>
+
+with `AND AB` in orange and both `OUT`s in the same off-white as the rest of the page.
