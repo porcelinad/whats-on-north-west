@@ -262,17 +262,42 @@ EVENTBRITE_ALLOWED_CATEGORIES = {
     "Music", "Performing & Visual Arts", "Community & Culture", "Film & Media",
 }
 
-EVENTBRITE_PROXY_TEMPLATE = "https://api.allorigins.win/raw?url={}"
+# Originally added for Eventbrite specifically, but the same GitHub-
+# Actions-IP-blocking pattern (a site that works fine from anywhere else
+# but blocks/empties out for GH Actions' own server IPs) has since shown
+# up on other sites too (Abbey Arts Centre, The Playhouse), so this is
+# now a general-purpose fallback, not an Eventbrite-only one.
+PROXY_TEMPLATE = "https://api.allorigins.win/raw?url={}"
 
 
 def fetch_eventbrite_page(url):
     try:
         return fetch_text(url, headers=EVENTBRITE_HEADERS)
     except Exception as direct_exc:
-        proxy_url = EVENTBRITE_PROXY_TEMPLATE.format(quote(url, safe=""))
+        proxy_url = PROXY_TEMPLATE.format(quote(url, safe=""))
         try:
             print(f"  direct fetch blocked ({direct_exc}); trying proxy...")
             return fetch_text(proxy_url, headers=EVENTBRITE_HEADERS)
+        except Exception:
+            raise direct_exc
+
+
+def fetch_with_proxy_fallback(url):
+    """Like fetch(), but retries through the same public proxy if the
+    direct request is blocked - for any source hitting the same kind of
+    GitHub-Actions-IP-blocking issue Eventbrite has, confirmed by the
+    site loading fine from elsewhere (a browser, this codebase's own
+    web-fetch tooling) while GH Actions' own server gets a 403 or an
+    unexpectedly empty response. Returns parsed BeautifulSoup either
+    way, so it's a drop-in replacement for fetch() at the call site."""
+    try:
+        return fetch(url)
+    except Exception as direct_exc:
+        proxy_url = PROXY_TEMPLATE.format(quote(url, safe=""))
+        try:
+            print(f"  direct fetch blocked ({direct_exc}); trying proxy...")
+            html = fetch_text(proxy_url)
+            return BeautifulSoup(html, "lxml")
         except Exception:
             raise direct_exc
 
@@ -343,6 +368,15 @@ def parse_abbey(soup, source):
                         booking_url=current["booking"]))
                 current = None
     return events
+
+
+def parse_abbey_with_fallback(source):
+    """Abbey's site loads fine from a browser or this codebase's own
+    web-fetch tooling, but returns an empty page specifically to GitHub
+    Actions' server IPs - the same kind of blocking Eventbrite has, just
+    manifesting as an empty response rather than an explicit error."""
+    soup = fetch_with_proxy_fallback(source["url"])
+    return parse_abbey(soup, source)
 
 
 MANUAL_CSV_PATH = ROOT / "scraper" / "manual-imports" / "eventbrite.csv"
@@ -1294,6 +1328,14 @@ def parse_playhouse_derry(soup, source):
     return events
 
 
+def parse_playhouse_derry_with_fallback(source):
+    """derryplayhouse.co.uk loads fine from a browser or this codebase's
+    own web-fetch tooling, but returns a 403 specifically to GitHub
+    Actions' server IPs - the same kind of blocking Eventbrite has."""
+    soup = fetch_with_proxy_fallback(source["url"])
+    return parse_playhouse_derry(soup, source)
+
+
 CRAFTMONTH_START = TODAY.strftime("%Y%m%d")
 CRAFTMONTH_END = (TODAY + timedelta(days=120)).strftime("%Y%m%d")
 
@@ -1320,15 +1362,16 @@ SOURCES = [
      "parser": parse_balor, "custom_fetch": True},
     {"name": "abbey", "venue": "Abbey Arts Centre", "town": "Ballyshannon",
      "county": "Donegal", "url": "https://abbeycentre.ie/",
-     "parser": parse_abbey},
+     "parser": parse_abbey_with_fallback, "custom_fetch": True},
     {"name": "eventbrite_donegal", "venue": "Eventbrite (Donegal)",
      "town": "Donegal", "county": "Donegal", "region_filter": "Donegal",
      "url": "https://www.eventbrite.ie/d/ireland--donegal/all-events/",
      "parser": parse_eventbrite_csv, "manual_csv": True},
     {"name": "eaf", "venue": "Earagail Arts Festival", "town": "Donegal",
-     "county": "Donegal", "url": "https://eaf.ie/2026-events/",
+     "county": "Donegal", "url": "https://eaf.ie/2026-events",
      "parser": parse_eaf, "custom_fetch": True,
-     "min_interval_days": seasonal_interval({7, 8}, quiet_interval=7)},
+     "min_interval_days": seasonal_interval({7, 8}, quiet_interval=7),
+     "quiet_if_empty": True},
     {"name": "mcgrorys", "venue": "McGrory's Hotel", "town": "Culdaff",
      "county": "Donegal", "url": "https://www.mcgrorys.ie/entertainment",
      "parser": parse_mcgrorys},
@@ -1390,7 +1433,7 @@ SOURCES = [
      "parser": parse_themodel},
     {"name": "playhouse", "venue": "The Playhouse", "town": "Derry",
      "county": "Derry", "url": "https://www.derryplayhouse.co.uk/events",
-     "parser": parse_playhouse_derry},
+     "parser": parse_playhouse_derry_with_fallback, "custom_fetch": True},
 ]
 
 
