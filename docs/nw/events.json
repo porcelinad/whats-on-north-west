@@ -1,13 +1,12 @@
 {
- "generated_at": "2026-09-27T20:03Z",
+ "generated_at": "2026-09-27T20:15Z",
  "failed_sources": [
-  "Earagail Arts Festival",
   "The Playhouse"
  ],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
-  "eaf": "2026-08-08T23:46Z",
+  "eaf": "2026-09-27T20:15Z",
   "hawkswell": "2026-09-26T01:35Z",
   "craftmonth_donegal": "2026-09-25T01:32Z",
   "craftmonth_derry": "2026-09-25T01:32Z",
@@ -28,7 +27,7 @@
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 35,
+  "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +40,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 19
+  "playhouse": 20
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -3851,6 +3850,21 @@
    "first_seen": "2026-09-09"
   },
   {
+   "source": "eaf",
+   "venue": "Ballyliffin Hotel",
+   "town": "Ballyliffin",
+   "county": "Donegal",
+   "title": "A Winter Home with The Henry Girls – January 2027",
+   "date": "2027-01-07",
+   "end_date": "2027-01-10",
+   "time": "Various",
+   "url": "https://eaf.ie/events/a-winter-home-with-the-henry-girls-january-2027/",
+   "category": "Workshop",
+   "sold_out": true,
+   "id": "05659faf78c7",
+   "first_seen": "2026-09-27"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -3914,20 +3928,6 @@
    "category": "Music",
    "id": "d177435c06f3",
    "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eaf",
-   "venue": "Ballyliffin Hotel",
-   "town": "Ballyliffin",
-   "county": "Donegal",
-   "title": "A Winter Home with The Henry Girls – January 2027",
-   "date": "2027-01-10",
-   "time": "Various",
-   "url": "https://eaf.ie/events/a-winter-home-with-the-henry-girls-january-2027/",
-   "category": "Workshop",
-   "sold_out": true,
-   "id": "ada5af46cff8",
-   "first_seen": "2026-07-18"
   },
   {
    "source": "ardhowen",
@@ -4884,6 +4884,20 @@
    "category": "Music",
    "id": "cbe50dfef4d6",
    "first_seen": "2026-09-15"
+  },
+  {
+   "source": "eaf",
+   "venue": "Malin Presbyterian Church",
+   "town": "Malin",
+   "county": "Donegal",
+   "title": "Home with The Henry Girls – Summer 2027",
+   "date": "2027-07-12",
+   "end_date": "2027-07-16",
+   "time": "10.30am- 4.30pm (Daily)",
+   "url": "https://eaf.ie/events/home-with-the-henry-girls-2027/",
+   "category": "Workshop",
+   "id": "5bb614fcee4a",
+   "first_seen": "2026-09-27"
   },
   {
    "source": "eventbrite_donegal",
