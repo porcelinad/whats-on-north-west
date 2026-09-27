@@ -1,0 +1,12 @@
+{
+  "name": "Out and About Galway",
+  "short_name": "OaO Galway",
+  "description": "Upcoming cultural events in Galway City",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ECEFE9",
+  "theme_color": "#1E2B26",
+  "icons": [
+    { "src": "../outandabout_logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
