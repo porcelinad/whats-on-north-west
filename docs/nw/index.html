@@ -8,18 +8,18 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="../outandabout_logo.svg" type="image/svg+xml">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
 <style>
   :root{
     --mist:#ECEFE9;
     --ink:#1E2B26;
-    --ink-soft:#54645D;
+    --ink-soft:#8b978f; /* Lightened from landing page for clear dark mode reading */
     --ember:#B8481C;
-    --heather:#6F5B92;
-    --line:#C7CDC2;
+    --heather:#A795C7; /* Adjusted slightly lighter for high contrast against cards */
+    --line:#34413b; /* Darkened to blend smoothly with background */
     --stub:#FFFFFF;
 
     --display:"Barlow Condensed",sans-serif;
@@ -32,8 +32,8 @@
   }
 
   body{
-    background:var(--mist);
-    color:var(--ink);
+    background:var(--ink); /* Flipped background to dark */
+    color:var(--mist); /* Flipped default text to light */
     font-family:var(--body);
     font-size:16px;
     line-height:1.45;
@@ -52,20 +52,29 @@
 
   header{
     padding:22px 0 10px;
-    border-bottom:3px solid var(--ink);
+    border-bottom:3px solid var(--line);
   }
 
   h1{
-    font-family:"Arial Black",Arial,sans-serif;
-    font-weight:900;
+    font-family:var(--display); /* Applied matching display typography */
+    font-weight:700;
     font-size:clamp(28px,8vw,48px);
     text-transform:uppercase;
     line-height:.95;
-    letter-spacing:.01em;
+    letter-spacing:.02em;
+  }
+
+  /* Full-width dynamic black bar style */
+  h1 .black-bg{
+    background-color: #000;
+    display: block;
+    width: 100%;
+    padding: 0.2em 0.3em;
+    margin-bottom: 6px;
   }
 
   h1 .white{
-    color:#fff;
+    color:var(--mist);
   }
 
   h1 .rust{
@@ -87,7 +96,7 @@
   .controls{
     position:sticky;
     top:0;
-    background:var(--mist);
+    background:var(--ink); /* Swapped to dark to match body background */
     z-index:5;
     padding:10px 0 12px;
     border-bottom:1px solid var(--line);
@@ -120,10 +129,10 @@
     text-transform:uppercase;
     letter-spacing:.04em;
     white-space:nowrap;
-    border:1.5px solid var(--ink);
+    border:1.5px solid var(--mist); /* Inverted border to clean light tone */
     border-radius:999px;
     background:transparent;
-    color:var(--ink);
+    color:var(--mist); /* Text updated to match new layout frame */
     padding:6px 14px;
     cursor:pointer;
     flex:0 0 auto;
@@ -151,7 +160,7 @@
     font-size:14px;
     flex:1 1 0;
     min-width:0;
-    border:1.5px solid var(--ink);
+    border:1.5px solid var(--line);
     border-radius:8px;
     padding:6px 10px;
     background:var(--stub);
@@ -178,7 +187,7 @@
     font-size:14px;
     text-transform:uppercase;
     letter-spacing:.04em;
-    border:1.5px solid var(--ink);
+    border:1.5px solid var(--line);
     border-radius:8px;
     background:var(--stub);
     color:var(--ink);
@@ -188,7 +197,8 @@
     min-width:90px;
     -webkit-appearance:none;
     appearance:none;
-    background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path d="M0 0L5 6L10 0Z" fill="%231E2B26"/></svg>');
+    /* Clean fallback asset definition using exact hex configuration */
+    background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://w3.org" width="10" height="6"><path d="M0 0L5 6L10 0Z" fill="%231E2B26"/></svg>');
     background-repeat:no-repeat;
     background-position:right 10px center;
   }
@@ -270,6 +280,7 @@
     overflow:hidden;
     text-decoration:none;
     border:1px solid var(--line);
+    color:var(--ink); /* Keeps event info typography bound nicely over light card background */
   }
 
   .event:active{
@@ -298,7 +309,7 @@
     width:14px;
     height:14px;
     border-radius:50%;
-    background:var(--mist);
+    background:var(--ink); /* Swapped circle cuts to match new dark background */
     border:1px solid var(--line);
   }
 
@@ -432,8 +443,10 @@
 
   <header>
     <h1>
-      <span class="white">OUT</span>
-      <span class="rust">AND AB</span><span class="white">OUT</span>
+      <span class="black-bg">
+        <span class="white">OUT</span>
+        <span class="rust">AND AB</span><span class="white">OUT</span>
+      </span>
       <span class="white region">NORTH WEST</span>
     </h1>
 
@@ -444,1042 +457,3 @@
 
     <div class="filters">
       <select id="countyFilter"
-              class="filter-select"
-              aria-label="Filter by county"></select>
-
-      <select id="locationFilter"
-              class="filter-select"
-              aria-label="Filter by location"></select>
-
-      <select id="genreFilter"
-              class="filter-select"
-              aria-label="Filter by genre"></select>
-    </div>
-
-    <div class="search-row">
-      <input
-        id="search"
-        type="search"
-        placeholder="Search by event, venue or genre…"
-        aria-label="Search by event, venue or genre">
-
-      <button
-        id="clearFilters"
-        class="clear-btn"
-        type="button">
-        Clear all filters
-      </button>
-    </div>
-
-    <div
-      class="date-filters"
-      id="dateFilters"
-      role="group"
-      aria-label="Filter by date"></div>
-
-    <div
-      class="custom-dates"
-      id="customDates"
-      hidden>
-
-      <input
-        type="date"
-        id="dateFrom"
-        aria-label="From date">
-
-      <input
-        type="date"
-        id="dateTo"
-        aria-label="To date">
-    </div>
-
-    <p
-      class="date-error"
-      id="dateError"
-      hidden></p>
-
-    <div
-      class="extra-filters"
-      id="shapeFilters"
-      role="group"
-      aria-label="Filter by recurrence"></div>
-
-  </div>
-
-  <main id="list"></main>
-
-  <footer>
-    Pulled daily from each venue's own website. Tap an event for details
-    and booking on the venue's site.
-  </footer>
-
-</div>
-
-<script>
-
-const MONTHS=[
-  "January","February","March","April","May","June",
-  "July","August","September","October","November","December"
-];
-
-const DOWS=[
-  "Sun","Mon","Tue","Wed","Thu","Fri","Sat"
-];
-
-let EVENTS=[];
-let countySel="All";
-let genreSel="All";
-let locationSel="All";
-let query="";
-let dateSel=null;
-let customFrom="";
-let customTo="";
-let shapeSel=null;
-
-
-function normalizeTown(t){
-  return t==="Donegal" ? "Donegal Town" : t;
-}
-
-
-function locationLabel(ev){
-  return ev.town
-    ? normalizeTown(ev.town)
-    : (ev.county ? "No town listed" : null);
-}
-
-
-function addDays(iso,n){
-  const [y,m,d]=iso.split("-").map(Number);
-  return new Date(
-    Date.UTC(y,m-1,d+n)
-  ).toISOString().slice(0,10);
-}
-
-
-function weekdayOf(iso){
-  const [y,m,d]=iso.split("-").map(Number);
-  return new Date(
-    Date.UTC(y,m-1,d)
-  ).getUTCDay();
-}
-
-
-function todayISO(){
-  const parts=new Intl.DateTimeFormat(
-    "en-CA",
-    {
-      timeZone:"Europe/Dublin",
-      year:"numeric",
-      month:"2-digit",
-      day:"2-digit"
-    }
-  ).formatToParts(new Date());
-
-  const get=t=>parts.find(
-    p=>p.type===t
-  ).value;
-
-  return `${get("year")}-${get("month")}-${get("day")}`;
-}
-
-
-function weekendRange(today){
-  const wd=weekdayOf(today);
-
-  if(wd===6){
-    return {
-      from:today,
-      to:addDays(today,1)
-    };
-  }
-
-  if(wd===0){
-    return {
-      from:today,
-      to:today
-    };
-  }
-
-  const sat=addDays(today,6-wd);
-
-  return {
-    from:sat,
-    to:addDays(sat,1)
-  };
-}
-
-
-const TODAY_ISO=todayISO();
-const TOMORROW_ISO=addDays(TODAY_ISO,1);
-
-
-const el=(t,c,txt)=>{
-  const n=document.createElement(t);
-
-  if(c){
-    n.className=c;
-  }
-
-  if(txt!==undefined){
-    n.textContent=txt;
-  }
-
-  return n;
-};
-
-
-function fmt(iso){
-  const d=new Date(iso+"T12:00:00");
-
-  return {
-    dow:DOWS[d.getDay()],
-    day:d.getDate(),
-    mon:MONTHS[d.getMonth()].slice(0,3),
-    month:MONTHS[d.getMonth()],
-    key:iso.slice(0,7)
-  };
-}
-
-
-function isNew(ev,gen){
-  const first=new Date(ev.first_seen);
-  const g=new Date(gen);
-
-  return (g-first)/86400000 <= 7;
-}
-
-
-function fmtUpdated(iso){
-  try{
-    const d=new Date(iso);
-
-    if(isNaN(d)){
-      return iso;
-    }
-
-    return d.toLocaleString(
-      "en-IE",
-      {
-        day:"numeric",
-        month:"short",
-        hour:"2-digit",
-        minute:"2-digit",
-        timeZone:"Europe/Dublin"
-      }
-    );
-
-  }catch(e){
-    return iso;
-  }
-}
-
-
-function matchesShape(ev){
-
-  if(shapeSel==="single"){
-    return !ev.end_date;
-  }
-
-  if(shapeSel==="recurring"){
-    return !!ev.end_date;
-  }
-
-  return true;
-}
-
-
-function matchesGenre(ev){
-
-  if(genreSel==="All"){
-    return true;
-  }
-
-  if(genreSel==="Not listed"){
-    return !ev.category;
-  }
-
-  return (ev.category||"")
-    .split(", ")
-    .includes(genreSel);
-}
-
-
-function customRangeError(){
-
-  if(dateSel!=="custom"){
-    return null;
-  }
-
-  if(customFrom && customTo && customTo<customFrom){
-    return "End date can't be before the start date.";
-  }
-
-  if(customTo && customTo<TODAY_ISO){
-    return "That date range is in the past.";
-  }
-
-  return null;
-}
-
-
-function matchesDate(ev){
-
-  if(!dateSel){
-    return true;
-  }
-
-  const start=ev.date;
-  const end=ev.end_date||ev.date;
-
-  let from,to;
-
-  if(dateSel==="today"){
-    from=to=TODAY_ISO;
-  }
-
-  else if(dateSel==="tomorrow"){
-    from=to=TOMORROW_ISO;
-  }
-
-  else if(dateSel==="weekend"){
-    const w=weekendRange(TODAY_ISO);
-    from=w.from;
-    to=w.to;
-  }
-
-  else if(dateSel==="custom"){
-
-    if(!customFrom && !customTo){
-      return true;
-    }
-
-    from=customFrom||"0000-01-01";
-    to=customTo||"9999-12-31";
-  }
-
-  return start<=to && end>=from;
-}
-
-
-function render(gen){
-
-  const list=document.getElementById("list");
-
-  list.textContent="";
-
-  const errBox=document.getElementById("dateError");
-
-  const rangeErr=customRangeError();
-
-  errBox.hidden=!rangeErr;
-
-  if(rangeErr){
-    errBox.textContent=rangeErr;
-  }
-
-  const q=query.trim().toLowerCase();
-
-  const shown=rangeErr
-    ? []
-    : EVENTS.filter(e=>
-        (countySel==="All"||e.county===countySel) &&
-        (locationSel==="All"||locationLabel(e)===locationSel) &&
-        matchesGenre(e) &&
-        matchesDate(e) &&
-        matchesShape(e) &&
-        (
-          !q ||
-          (
-            e.title+" "+
-            e.venue+" "+
-            (e.category||"")+" "+
-            (locationLabel(e)||"")
-          )
-          .toLowerCase()
-          .includes(q)
-        )
-      );
-
-
-  shown.sort((a,b)=>{
-
-    const aOngoing=
-      a.end_date &&
-      a.date<=TODAY_ISO &&
-      a.end_date>=TODAY_ISO;
-
-    const bOngoing=
-      b.end_date &&
-      b.date<=TODAY_ISO &&
-      b.end_date>=TODAY_ISO;
-
-    const aPrimary=
-      aOngoing ? TODAY_ISO : a.date;
-
-    const bPrimary=
-      bOngoing ? TODAY_ISO : b.date;
-
-    if(aPrimary!==bPrimary){
-      return aPrimary<bPrimary ? -1 : 1;
-    }
-
-    const aSecondary=
-      aOngoing ? a.end_date : "";
-
-    const bSecondary=
-      bOngoing ? b.end_date : "";
-
-    if(aSecondary!==bSecondary){
-      return aSecondary<bSecondary ? -1 : 1;
-    }
-
-    return (a.venue+a.title)
-      .localeCompare(b.venue+b.title);
-  });
-
-
-  if(!shown.length){
-
-    list.append(
-      el(
-        "p",
-        "empty",
-        "No events match. Try clearing the filters."
-      )
-    );
-
-    return;
-  }
-
-
-  let lastMonth="";
-
-
-  for(const ev of shown){
-
-    const isOngoing=
-      ev.end_date &&
-      ev.date<=TODAY_ISO &&
-      ev.end_date>=TODAY_ISO;
-
-    const groupIso=
-      isOngoing ? TODAY_ISO : ev.date;
-
-    const f=fmt(groupIso);
-
-
-    if(f.key!==lastMonth){
-
-      lastMonth=f.key;
-
-      list.append(
-        el(
-          "h2",
-          "month",
-          f.month+" "+groupIso.slice(0,4)
-        )
-      );
-    }
-
-
-    const a=el("a","event");
-
-    a.href=ev.url||ev.booking_url||"#";
-    a.target="_blank";
-    a.rel="noopener";
-
-    if(ev.sold_out){
-      a.classList.add("sold");
-    }
-
-
-    const stub=el("div","stub");
-
-    stub.append(
-      el("span","dow",f.dow),
-      el("span","day",f.day),
-      el("span","dow",f.mon)
-    );
-
-
-    if(isOngoing){
-
-      const e2=fmt(ev.end_date);
-
-      stub.append(
-        el(
-          "span",
-          "range",
-          "Until "+e2.day+" "+e2.mon
-        )
-      );
-
-    }
-
-    else if(ev.end_date){
-
-      const e2=fmt(ev.end_date);
-
-      stub.append(
-        el(
-          "span",
-          "range",
-          "to "+e2.day+" "+e2.mon
-        )
-      );
-    }
-
-
-    const info=el("div","info");
-
-    info.append(
-      el("p","title",ev.title)
-    );
-
-
-    const meta=el("p","meta");
-
-    const loc=locationLabel(ev);
-
-    meta.innerHTML=
-      "<b>"+ev.venue+"</b>"+
-      (loc?" · "+loc:"")+
-      (ev.time?" · "+ev.time:"");
-
-    info.append(meta);
-
-
-    const tags=el("div","tags");
-
-
-    if(isNew(ev,gen)){
-      tags.append(
-        el("span","new","New")
-      );
-    }
-
-
-    if(ev.category){
-
-      ev.category
-        .split(", ")
-        .forEach(c=>{
-          tags.append(
-            el("span","tag",c)
-          );
-        });
-    }
-
-
-    if(ev.sold_out){
-
-      tags.append(
-        el("span","sold-out","Sold Out")
-      );
-    }
-
-
-    if(tags.childNodes.length){
-      info.append(tags);
-    }
-
-
-    a.append(stub,info);
-
-    list.append(a);
-  }
-}
-
-
-function setOptions(
-  select,
-  values,
-  allLabel,
-  current
-){
-
-  select.textContent="";
-
-  const opt=el(
-    "option",
-    "",
-    "All "+allLabel
-  );
-
-  opt.value="All";
-
-  select.append(opt);
-
-
-  values.forEach(v=>{
-
-    const o=el(
-      "option",
-      "",
-      v.label!==undefined
-        ? v.label
-        : v
-    );
-
-    o.value=
-      v.value!==undefined
-        ? v.value
-        : v;
-
-    select.append(o);
-  });
-
-
-  select.value=
-    [...select.options]
-      .some(o=>o.value===current)
-      ? current
-      : "All";
-
-  return select.value;
-}
-
-
-function buildCountyOptions(){
-
-  const counties=[
-    ...new Set(
-      EVENTS.map(e=>e.county)
-    )
-  ].sort((a,b)=>{
-
-    if(a==="Donegal") return -1;
-    if(b==="Donegal") return 1;
-
-    return a.localeCompare(b);
-  });
-
-
-  countySel=setOptions(
-    document.getElementById("countyFilter"),
-    counties,
-    "Counties",
-    countySel
-  );
-}
-
-
-function buildLocationOptions(){
-
-  const scoped=
-    countySel==="All"
-      ? EVENTS
-      : EVENTS.filter(
-          e=>e.county===countySel
-        );
-
-
-  const locations=[
-    ...new Set(
-      scoped
-        .map(e=>locationLabel(e))
-        .filter(Boolean)
-    )
-  ].sort((a,b)=>{
-
-    if(a==="No town listed") return 1;
-    if(b==="No town listed") return -1;
-
-    return a.localeCompare(b);
-  });
-
-
-  locationSel=setOptions(
-    document.getElementById("locationFilter"),
-    locations,
-    "Locations",
-    locationSel
-  );
-}
-
-
-function buildGenreOptions(){
-
-  const genres=new Set();
-
-  let hasUnlisted=false;
-
-
-  EVENTS.forEach(e=>{
-
-    if(e.category){
-
-      e.category
-        .split(", ")
-        .forEach(c=>genres.add(c));
-
-    }else{
-
-      hasUnlisted=true;
-    }
-  });
-
-
-  const list=[...genres].sort();
-
-
-  if(hasUnlisted){
-    list.push("Not listed");
-  }
-
-
-  genreSel=setOptions(
-    document.getElementById("genreFilter"),
-    list,
-    "Genres",
-    genreSel
-  );
-}
-
-
-function buildDateFilters(){
-
-  const box=
-    document.getElementById("dateFilters");
-
-  const customBox=
-    document.getElementById("customDates");
-
-
-  const opts=[
-    ["today","Today"],
-    ["tomorrow","Tomorrow"],
-    ["weekend","This weekend"],
-    ["custom","Custom"]
-  ];
-
-
-  opts.forEach(([val,label])=>{
-
-    const b=el(
-      "button",
-      "chip",
-      label
-    );
-
-    b.setAttribute(
-      "aria-pressed",
-      val===dateSel
-    );
-
-
-    b.onclick=()=>{
-
-      dateSel=
-        (dateSel===val)
-          ? null
-          : val;
-
-      box
-        .querySelectorAll(".chip")
-        .forEach(c=>
-          c.setAttribute(
-            "aria-pressed",
-            "false"
-          )
-        );
-
-
-      if(dateSel){
-
-        b.setAttribute(
-          "aria-pressed",
-          "true"
-        );
-      }
-
-
-      customBox.hidden=
-        dateSel!=="custom";
-
-      render(GEN);
-    };
-
-
-    box.append(b);
-  });
-}
-
-
-function buildShapeFilters(){
-
-  const box=
-    document.getElementById("shapeFilters");
-
-
-  const opts=[
-    ["single","Single date"],
-    ["recurring","Recurring"]
-  ];
-
-
-  opts.forEach(([val,label])=>{
-
-    const b=el(
-      "button",
-      "chip",
-      label
-    );
-
-    b.setAttribute(
-      "aria-pressed",
-      val===shapeSel
-    );
-
-
-    b.onclick=()=>{
-
-      shapeSel=
-        (shapeSel===val)
-          ? null
-          : val;
-
-
-      box
-        .querySelectorAll(".chip")
-        .forEach(c=>
-          c.setAttribute(
-            "aria-pressed",
-            "false"
-          )
-        );
-
-
-      if(shapeSel){
-
-        b.setAttribute(
-          "aria-pressed",
-          "true"
-        );
-      }
-
-
-      render(GEN);
-    };
-
-
-    box.append(b);
-  });
-}
-
-
-let GEN="";
-
-
-fetch("events.json?t="+Date.now())
-
-  .then(r=>{
-
-    if(!r.ok){
-      throw new Error(r.status);
-    }
-
-    return r.json();
-  })
-
-
-  .then(data=>{
-
-    EVENTS=data.events||[];
-    GEN=data.generated_at||"";
-
-
-    const u=
-      document.getElementById("updated");
-
-
-    u.textContent=
-      EVENTS.length+
-      " upcoming events · updated "+
-      fmtUpdated(GEN);
-
-
-    if((data.failed_sources||[]).length){
-
-      data.failed_sources.forEach(name=>{
-
-        u.after(
-          el(
-            "p",
-            "warn",
-            "⚠ Error loading "+name
-          )
-        );
-      });
-    }
-
-
-    buildDateFilters();
-    buildShapeFilters();
-    buildCountyOptions();
-    buildLocationOptions();
-    buildGenreOptions();
-    render(GEN);
-
-
-    document
-      .getElementById("search")
-      .addEventListener(
-        "input",
-        e=>{
-          query=e.target.value;
-          render(GEN);
-        }
-      );
-
-
-    document
-      .getElementById("dateFrom")
-      .addEventListener(
-        "change",
-        e=>{
-          customFrom=e.target.value;
-          render(GEN);
-        }
-      );
-
-
-    document
-      .getElementById("dateTo")
-      .addEventListener(
-        "change",
-        e=>{
-          customTo=e.target.value;
-          render(GEN);
-        }
-      );
-
-
-    document
-      .getElementById("countyFilter")
-      .addEventListener(
-        "change",
-        e=>{
-          countySel=e.target.value;
-          locationSel="All";
-          buildLocationOptions();
-          render(GEN);
-        }
-      );
-
-
-    document
-      .getElementById("locationFilter")
-      .addEventListener(
-        "change",
-        e=>{
-          locationSel=e.target.value;
-          render(GEN);
-        }
-      );
-
-
-    document
-      .getElementById("genreFilter")
-      .addEventListener(
-        "change",
-        e=>{
-          genreSel=e.target.value;
-          render(GEN);
-        }
-      );
-
-
-    document
-      .getElementById("clearFilters")
-      .addEventListener(
-        "click",
-        ()=>{
-
-          countySel="All";
-          genreSel="All";
-          locationSel="All";
-          query="";
-          dateSel=null;
-          customFrom="";
-          customTo="";
-          shapeSel=null;
-
-
-          document
-            .getElementById("search")
-            .value="";
-
-
-          document
-            .getElementById("dateFrom")
-            .value="";
-
-
-          document
-            .getElementById("dateTo")
-            .value="";
-
-
-          document
-            .getElementById("customDates")
-            .hidden=true;
-
-
-          document
-            .getElementById("dateError")
-            .hidden=true;
-
-
-          document
-            .querySelectorAll(
-              "#dateFilters .chip, #shapeFilters .chip"
-            )
-            .forEach(c=>
-              c.setAttribute(
-                "aria-pressed",
-                "false"
-              )
-            );
-
-
-          buildCountyOptions();
-          buildLocationOptions();
-          buildGenreOptions();
-          render(GEN);
-        }
-      );
-
-  })
-
-
-  .catch(err=>{
-
-    console.error(
-      "Failed to load or render events:",
-      err
-    );
-
-
-    document
-      .getElementById("updated")
-      .textContent="";
-
-
-    document
-      .getElementById("list")
-      .append(
-        el(
-          "p",
-          "error",
-          "Something went wrong showing events. Check the browser console "+
-          "for details, or try refreshing."
-        )
-      );
-  });
-
-</script>
-
-</body>
-</html>
