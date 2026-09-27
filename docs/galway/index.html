@@ -4,9 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#1E2B26">
-
 <title>Out and About Galway</title>
-
+<link rel="manifest" href="manifest.json">
 <link rel="icon" href="../outandabout_logo.svg" type="image/svg+xml">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,26 +50,32 @@
     padding:0 14px 80px;
   }
 
-  /* --------------------------------
-     HEADER
-     -------------------------------- */
-
   header{
     padding:22px 0 10px;
     border-bottom:3px solid var(--ink);
   }
 
   h1{
-    font-family:var(--display);
-    font-weight:700;
-    font-size:clamp(34px,9vw,46px);
-    letter-spacing:.02em;
+    font-family:"Arial Black",Arial,sans-serif;
+    font-weight:900;
+    font-size:clamp(28px,8vw,48px);
     text-transform:uppercase;
     line-height:.95;
+    letter-spacing:.01em;
   }
 
-  h1 span{
+  h1 .white{
+    color:#fff;
+  }
+
+  h1 .rust{
     color:var(--ember);
+  }
+
+  h1 .region{
+    display:block;
+    font-size:.62em;
+    margin-top:4px;
   }
 
   .updated{
@@ -78,10 +83,6 @@
     color:var(--ink-soft);
     margin-top:6px;
   }
-
-  /* --------------------------------
-     FILTER CONTROLS
-     -------------------------------- */
 
   .controls{
     position:sticky;
@@ -185,10 +186,8 @@
     cursor:pointer;
     flex:1 1 0;
     min-width:90px;
-
     -webkit-appearance:none;
     appearance:none;
-
     background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path d="M0 0L5 6L10 0Z" fill="%231E2B26"/></svg>');
     background-repeat:no-repeat;
     background-position:right 10px center;
@@ -242,10 +241,6 @@
     outline-offset:1px;
   }
 
-  /* --------------------------------
-     MONTH HEADINGS
-     -------------------------------- */
-
   .month{
     font-family:var(--display);
     font-weight:700;
@@ -265,10 +260,6 @@
     height:1px;
     background:var(--line);
   }
-
-  /* --------------------------------
-     EVENTS
-     -------------------------------- */
 
   .event{
     display:flex;
@@ -401,10 +392,6 @@
     text-decoration-color:var(--ink-soft);
   }
 
-  /* --------------------------------
-     EMPTY / ERROR / FOOTER
-     -------------------------------- */
-
   .empty,
   .error{
     padding:40px 10px;
@@ -444,16 +431,29 @@
 <div class="wrap">
 
   <header>
-    <h1>OUT <span>AND AB</span>OUT<br>GALWAY</h1>
+    <h1>
+      <span class="white">OUT</span>
+      <span class="rust">AND AB</span><span class="white">OUT</span>
+      <span class="white region">GALWAY</span>
+    </h1>
+
     <p class="updated" id="updated">Loading…</p>
   </header>
 
   <div class="controls">
 
     <div class="filters">
-      <select id="countyFilter" class="filter-select" aria-label="Filter by county"></select>
-      <select id="locationFilter" class="filter-select" aria-label="Filter by location"></select>
-      <select id="genreFilter" class="filter-select" aria-label="Filter by genre"></select>
+      <select id="countyFilter"
+              class="filter-select"
+              aria-label="Filter by county"></select>
+
+      <select id="locationFilter"
+              class="filter-select"
+              aria-label="Filter by location"></select>
+
+      <select id="genreFilter"
+              class="filter-select"
+              aria-label="Filter by genre"></select>
     </div>
 
     <div class="search-row">
@@ -461,9 +461,12 @@
         id="search"
         type="search"
         placeholder="Search by event, venue or genre…"
-        aria-label="Search by event, venue or genre"
-      >
-      <button id="clearFilters" class="clear-btn" type="button">
+        aria-label="Search by event, venue or genre">
+
+      <button
+        id="clearFilters"
+        class="clear-btn"
+        type="button">
         Clear all filters
       </button>
     </div>
@@ -472,22 +475,34 @@
       class="date-filters"
       id="dateFilters"
       role="group"
-      aria-label="Filter by date"
-    ></div>
+      aria-label="Filter by date"></div>
 
-    <div class="custom-dates" id="customDates" hidden>
-      <input type="date" id="dateFrom" aria-label="From date">
-      <input type="date" id="dateTo" aria-label="To date">
+    <div
+      class="custom-dates"
+      id="customDates"
+      hidden>
+
+      <input
+        type="date"
+        id="dateFrom"
+        aria-label="From date">
+
+      <input
+        type="date"
+        id="dateTo"
+        aria-label="To date">
     </div>
 
-    <p class="date-error" id="dateError" hidden></p>
+    <p
+      class="date-error"
+      id="dateError"
+      hidden></p>
 
     <div
       class="extra-filters"
       id="shapeFilters"
       role="group"
-      aria-label="Filter by recurrence"
-    ></div>
+      aria-label="Filter by recurrence"></div>
 
   </div>
 
@@ -501,27 +516,29 @@
 </div>
 
 <script>
+
 const MONTHS=[
-  "January","February","March","April","May","June","July",
-  "August","September","October","November","December"
+  "January","February","March","April","May","June",
+  "July","August","September","October","November","December"
 ];
 
-const DOWS=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+const DOWS=[
+  "Sun","Mon","Tue","Wed","Thu","Fri","Sat"
+];
 
-let EVENTS=[],
-    countySel="All",
-    genreSel="All",
-    locationSel="All",
-    query="";
-
-let dateSel=null,
-    customFrom="",
-    customTo="",
-    shapeSel=null;
+let EVENTS=[];
+let countySel="All";
+let genreSel="All";
+let locationSel="All";
+let query="";
+let dateSel=null;
+let customFrom="";
+let customTo="";
+let shapeSel=null;
 
 
 function normalizeTown(t){
-  return t;
+  return t==="Donegal" ? "Donegal Town" : t;
 }
 
 
@@ -559,7 +576,9 @@ function todayISO(){
     }
   ).formatToParts(new Date());
 
-  const get=t=>parts.find(p=>p.type===t).value;
+  const get=t=>parts.find(
+    p=>p.type===t
+  ).value;
 
   return `${get("year")}-${get("month")}-${get("day")}`;
 }
@@ -568,11 +587,19 @@ function todayISO(){
 function weekendRange(today){
   const wd=weekdayOf(today);
 
-  if(wd===6)
-    return {from:today,to:addDays(today,1)};
+  if(wd===6){
+    return {
+      from:today,
+      to:addDays(today,1)
+    };
+  }
 
-  if(wd===0)
-    return {from:today,to:today};
+  if(wd===0){
+    return {
+      from:today,
+      to:today
+    };
+  }
 
   const sat=addDays(today,6-wd);
 
@@ -590,11 +617,13 @@ const TOMORROW_ISO=addDays(TODAY_ISO,1);
 const el=(t,c,txt)=>{
   const n=document.createElement(t);
 
-  if(c)
+  if(c){
     n.className=c;
+  }
 
-  if(txt!==undefined)
+  if(txt!==undefined){
     n.textContent=txt;
+  }
 
   return n;
 };
@@ -625,8 +654,9 @@ function fmtUpdated(iso){
   try{
     const d=new Date(iso);
 
-    if(isNaN(d))
+    if(isNaN(d)){
       return iso;
+    }
 
     return d.toLocaleString(
       "en-IE",
@@ -638,6 +668,7 @@ function fmtUpdated(iso){
         timeZone:"Europe/Dublin"
       }
     );
+
   }catch(e){
     return iso;
   }
@@ -645,22 +676,28 @@ function fmtUpdated(iso){
 
 
 function matchesShape(ev){
-  if(shapeSel==="single")
-    return !ev.end_date;
 
-  if(shapeSel==="recurring")
+  if(shapeSel==="single"){
+    return !ev.end_date;
+  }
+
+  if(shapeSel==="recurring"){
     return !!ev.end_date;
+  }
 
   return true;
 }
 
 
 function matchesGenre(ev){
-  if(genreSel==="All")
-    return true;
 
-  if(genreSel==="Not listed")
+  if(genreSel==="All"){
+    return true;
+  }
+
+  if(genreSel==="Not listed"){
     return !ev.category;
+  }
 
   return (ev.category||"")
     .split(", ")
@@ -669,22 +706,28 @@ function matchesGenre(ev){
 
 
 function customRangeError(){
-  if(dateSel!=="custom")
+
+  if(dateSel!=="custom"){
     return null;
+  }
 
-  if(customFrom && customTo && customTo<customFrom)
+  if(customFrom && customTo && customTo<customFrom){
     return "End date can't be before the start date.";
+  }
 
-  if(customTo && customTo<TODAY_ISO)
+  if(customTo && customTo<TODAY_ISO){
     return "That date range is in the past.";
+  }
 
   return null;
 }
 
 
 function matchesDate(ev){
-  if(!dateSel)
+
+  if(!dateSel){
     return true;
+  }
 
   const start=ev.date;
   const end=ev.end_date||ev.date;
@@ -706,8 +749,10 @@ function matchesDate(ev){
   }
 
   else if(dateSel==="custom"){
-    if(!customFrom && !customTo)
+
+    if(!customFrom && !customTo){
       return true;
+    }
 
     from=customFrom||"0000-01-01";
     to=customTo||"9999-12-31";
@@ -718,6 +763,7 @@ function matchesDate(ev){
 
 
 function render(gen){
+
   const list=document.getElementById("list");
 
   list.textContent="";
@@ -728,8 +774,9 @@ function render(gen){
 
   errBox.hidden=!rangeErr;
 
-  if(rangeErr)
+  if(rangeErr){
     errBox.textContent=rangeErr;
+  }
 
   const q=query.trim().toLowerCase();
 
@@ -754,7 +801,9 @@ function render(gen){
         )
       );
 
+
   shown.sort((a,b)=>{
+
     const aOngoing=
       a.end_date &&
       a.date<=TODAY_ISO &&
@@ -765,23 +814,33 @@ function render(gen){
       b.date<=TODAY_ISO &&
       b.end_date>=TODAY_ISO;
 
-    const aPrimary=aOngoing?TODAY_ISO:a.date;
-    const bPrimary=bOngoing?TODAY_ISO:b.date;
+    const aPrimary=
+      aOngoing ? TODAY_ISO : a.date;
 
-    if(aPrimary!==bPrimary)
-      return aPrimary<bPrimary?-1:1;
+    const bPrimary=
+      bOngoing ? TODAY_ISO : b.date;
 
-    const aSecondary=aOngoing?a.end_date:"";
-    const bSecondary=bOngoing?b.end_date:"";
+    if(aPrimary!==bPrimary){
+      return aPrimary<bPrimary ? -1 : 1;
+    }
 
-    if(aSecondary!==bSecondary)
-      return aSecondary<bSecondary?-1:1;
+    const aSecondary=
+      aOngoing ? a.end_date : "";
+
+    const bSecondary=
+      bOngoing ? b.end_date : "";
+
+    if(aSecondary!==bSecondary){
+      return aSecondary<bSecondary ? -1 : 1;
+    }
 
     return (a.venue+a.title)
       .localeCompare(b.venue+b.title);
   });
 
+
   if(!shown.length){
+
     list.append(
       el(
         "p",
@@ -793,23 +852,25 @@ function render(gen){
     return;
   }
 
+
   let lastMonth="";
+
 
   for(const ev of shown){
 
-    const isOngoing =
+    const isOngoing=
       ev.end_date &&
       ev.date<=TODAY_ISO &&
       ev.end_date>=TODAY_ISO;
 
     const groupIso=
-      isOngoing
-        ? TODAY_ISO
-        : ev.date;
+      isOngoing ? TODAY_ISO : ev.date;
 
     const f=fmt(groupIso);
 
+
     if(f.key!==lastMonth){
+
       lastMonth=f.key;
 
       list.append(
@@ -821,14 +882,17 @@ function render(gen){
       );
     }
 
+
     const a=el("a","event");
 
     a.href=ev.url||ev.booking_url||"#";
     a.target="_blank";
     a.rel="noopener";
 
-    if(ev.sold_out)
+    if(ev.sold_out){
       a.classList.add("sold");
+    }
+
 
     const stub=el("div","stub");
 
@@ -837,6 +901,7 @@ function render(gen){
       el("span","day",f.day),
       el("span","dow",f.mon)
     );
+
 
     if(isOngoing){
 
@@ -850,7 +915,9 @@ function render(gen){
         )
       );
 
-    }else if(ev.end_date){
+    }
+
+    else if(ev.end_date){
 
       const e2=fmt(ev.end_date);
 
@@ -863,11 +930,13 @@ function render(gen){
       );
     }
 
+
     const info=el("div","info");
 
     info.append(
       el("p","title",ev.title)
     );
+
 
     const meta=el("p","meta");
 
@@ -880,29 +949,41 @@ function render(gen){
 
     info.append(meta);
 
+
     const tags=el("div","tags");
 
-    if(isNew(ev,gen))
+
+    if(isNew(ev,gen)){
       tags.append(
         el("span","new","New")
       );
+    }
 
-    if(ev.category)
+
+    if(ev.category){
+
       ev.category
         .split(", ")
-        .forEach(c=>
+        .forEach(c=>{
           tags.append(
             el("span","tag",c)
-          )
-        );
+          );
+        });
+    }
 
-    if(ev.sold_out)
+
+    if(ev.sold_out){
+
       tags.append(
         el("span","sold-out","Sold Out")
       );
+    }
 
-    if(tags.childNodes.length)
+
+    if(tags.childNodes.length){
       info.append(tags);
+    }
+
 
     a.append(stub,info);
 
@@ -911,7 +992,12 @@ function render(gen){
 }
 
 
-function setOptions(select,values,allLabel,current){
+function setOptions(
+  select,
+  values,
+  allLabel,
+  current
+){
 
   select.textContent="";
 
@@ -924,6 +1010,7 @@ function setOptions(select,values,allLabel,current){
   opt.value="All";
 
   select.append(opt);
+
 
   values.forEach(v=>{
 
@@ -943,6 +1030,7 @@ function setOptions(select,values,allLabel,current){
     select.append(o);
   });
 
+
   select.value=
     [...select.options]
       .some(o=>o.value===current)
@@ -959,7 +1047,14 @@ function buildCountyOptions(){
     ...new Set(
       EVENTS.map(e=>e.county)
     )
-  ].sort();
+  ].sort((a,b)=>{
+
+    if(a==="Donegal") return -1;
+    if(b==="Donegal") return 1;
+
+    return a.localeCompare(b);
+  });
+
 
   countySel=setOptions(
     document.getElementById("countyFilter"),
@@ -979,6 +1074,7 @@ function buildLocationOptions(){
           e=>e.county===countySel
         );
 
+
   const locations=[
     ...new Set(
       scoped
@@ -987,14 +1083,12 @@ function buildLocationOptions(){
     )
   ].sort((a,b)=>{
 
-    if(a==="No town listed")
-      return 1;
-
-    if(b==="No town listed")
-      return -1;
+    if(a==="No town listed") return 1;
+    if(b==="No town listed") return -1;
 
     return a.localeCompare(b);
   });
+
 
   locationSel=setOptions(
     document.getElementById("locationFilter"),
@@ -1008,24 +1102,32 @@ function buildLocationOptions(){
 function buildGenreOptions(){
 
   const genres=new Set();
+
   let hasUnlisted=false;
+
 
   EVENTS.forEach(e=>{
 
     if(e.category){
+
       e.category
         .split(", ")
         .forEach(c=>genres.add(c));
+
     }else{
+
       hasUnlisted=true;
     }
-
   });
+
 
   const list=[...genres].sort();
 
-  if(hasUnlisted)
+
+  if(hasUnlisted){
     list.push("Not listed");
+  }
+
 
   genreSel=setOptions(
     document.getElementById("genreFilter"),
@@ -1038,8 +1140,12 @@ function buildGenreOptions(){
 
 function buildDateFilters(){
 
-  const box=document.getElementById("dateFilters");
-  const customBox=document.getElementById("customDates");
+  const box=
+    document.getElementById("dateFilters");
+
+  const customBox=
+    document.getElementById("customDates");
+
 
   const opts=[
     ["today","Today"],
@@ -1047,6 +1153,7 @@ function buildDateFilters(){
     ["weekend","This weekend"],
     ["custom","Custom"]
   ];
+
 
   opts.forEach(([val,label])=>{
 
@@ -1060,6 +1167,7 @@ function buildDateFilters(){
       "aria-pressed",
       val===dateSel
     );
+
 
     b.onclick=()=>{
 
@@ -1077,17 +1185,22 @@ function buildDateFilters(){
           )
         );
 
-      if(dateSel)
+
+      if(dateSel){
+
         b.setAttribute(
           "aria-pressed",
           "true"
         );
+      }
+
 
       customBox.hidden=
         dateSel!=="custom";
 
       render(GEN);
     };
+
 
     box.append(b);
   });
@@ -1099,10 +1212,12 @@ function buildShapeFilters(){
   const box=
     document.getElementById("shapeFilters");
 
+
   const opts=[
     ["single","Single date"],
     ["recurring","Recurring"]
   ];
+
 
   opts.forEach(([val,label])=>{
 
@@ -1117,12 +1232,14 @@ function buildShapeFilters(){
       val===shapeSel
     );
 
+
     b.onclick=()=>{
 
       shapeSel=
         (shapeSel===val)
           ? null
           : val;
+
 
       box
         .querySelectorAll(".chip")
@@ -1133,14 +1250,19 @@ function buildShapeFilters(){
           )
         );
 
-      if(shapeSel)
+
+      if(shapeSel){
+
         b.setAttribute(
           "aria-pressed",
           "true"
         );
+      }
+
 
       render(GEN);
     };
+
 
     box.append(b);
   });
@@ -1149,27 +1271,34 @@ function buildShapeFilters(){
 
 let GEN="";
 
+
 fetch("events.json?t="+Date.now())
 
   .then(r=>{
-    if(!r.ok)
+
+    if(!r.ok){
       throw new Error(r.status);
+    }
 
     return r.json();
   })
+
 
   .then(data=>{
 
     EVENTS=data.events||[];
     GEN=data.generated_at||"";
 
+
     const u=
       document.getElementById("updated");
+
 
     u.textContent=
       EVENTS.length+
       " upcoming events · updated "+
       fmtUpdated(GEN);
+
 
     if((data.failed_sources||[]).length){
 
@@ -1182,18 +1311,17 @@ fetch("events.json?t="+Date.now())
             "⚠ Error loading "+name
           )
         );
-
       });
     }
 
+
     buildDateFilters();
     buildShapeFilters();
-
     buildCountyOptions();
     buildLocationOptions();
     buildGenreOptions();
-
     render(GEN);
+
 
     document
       .getElementById("search")
@@ -1205,6 +1333,7 @@ fetch("events.json?t="+Date.now())
         }
       );
 
+
     document
       .getElementById("dateFrom")
       .addEventListener(
@@ -1214,6 +1343,7 @@ fetch("events.json?t="+Date.now())
           render(GEN);
         }
       );
+
 
     document
       .getElementById("dateTo")
@@ -1225,6 +1355,7 @@ fetch("events.json?t="+Date.now())
         }
       );
 
+
     document
       .getElementById("countyFilter")
       .addEventListener(
@@ -1232,11 +1363,11 @@ fetch("events.json?t="+Date.now())
         e=>{
           countySel=e.target.value;
           locationSel="All";
-
           buildLocationOptions();
           render(GEN);
         }
       );
+
 
     document
       .getElementById("locationFilter")
@@ -1248,6 +1379,7 @@ fetch("events.json?t="+Date.now())
         }
       );
 
+
     document
       .getElementById("genreFilter")
       .addEventListener(
@@ -1258,6 +1390,7 @@ fetch("events.json?t="+Date.now())
         }
       );
 
+
     document
       .getElementById("clearFilters")
       .addEventListener(
@@ -1267,32 +1400,37 @@ fetch("events.json?t="+Date.now())
           countySel="All";
           genreSel="All";
           locationSel="All";
-
           query="";
           dateSel=null;
           customFrom="";
           customTo="";
           shapeSel=null;
 
+
           document
             .getElementById("search")
             .value="";
+
 
           document
             .getElementById("dateFrom")
             .value="";
 
+
           document
             .getElementById("dateTo")
             .value="";
+
 
           document
             .getElementById("customDates")
             .hidden=true;
 
+
           document
             .getElementById("dateError")
             .hidden=true;
+
 
           document
             .querySelectorAll(
@@ -1305,14 +1443,16 @@ fetch("events.json?t="+Date.now())
               )
             );
 
+
           buildCountyOptions();
           buildLocationOptions();
           buildGenreOptions();
-
           render(GEN);
         }
       );
+
   })
+
 
   .catch(err=>{
 
@@ -1321,9 +1461,11 @@ fetch("events.json?t="+Date.now())
       err
     );
 
+
     document
       .getElementById("updated")
       .textContent="";
+
 
     document
       .getElementById("list")
@@ -1331,8 +1473,13 @@ fetch("events.json?t="+Date.now())
         el(
           "p",
           "error",
-          "Something went wrong showing events. Check the browser console for details, or try refreshing."
+          "Something went wrong showing events. Check the browser console "+
+          "for details, or try refreshing."
         )
       );
   });
+
 </script>
+
+</body>
+</html>
