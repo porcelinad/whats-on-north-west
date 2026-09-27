@@ -1,0 +1,34 @@
+name: Scrape Galway events
+on:
+  workflow_dispatch: {}    # manual "Run workflow" button only - no daily
+                           # schedule yet, since Galway isn't live and is
+                           # still being built out venue by venue
+permissions:
+  contents: write
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run Galway scraper
+        env:
+          # Both optional - safely resolve to empty strings if these
+          # secrets/variables don't exist yet, which just means no push
+          # notifications are sent (fine for now, not live yet). Add
+          # NTFY_TOPIC_GALWAY / PAGE_URL_GALWAY as repo secrets/variables
+          # whenever Galway notifications are wanted.
+          NTFY_TOPIC_GALWAY: ${{ secrets.NTFY_TOPIC_GALWAY }}
+          PAGE_URL_GALWAY: ${{ vars.PAGE_URL_GALWAY }}
+        run: python scraper/scrape_galway.py
+      - name: Commit updated events
+        run: |
+          git config user.name "events-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/galway/events.json
+          git diff --cached --quiet || git commit -m "Update Galway events ($(date -u +%Y-%m-%d))"
+          git push
