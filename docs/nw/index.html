@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#1E2B26">
 <title>North West What's On</title>
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="../outandabout_logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -156,12 +156,6 @@ let dateSel=null, customFrom="", customTo="", shapeSel=null;
 function normalizeTown(t){
   return t==="Donegal" ? "Donegal Town" : t;
 }
-// Some events genuinely have no town-level precision (only a source's
-// own county-level info was ever available). Those show the bare
-// county name here - NOT normalizeTown's "Donegal"->"Donegal Town"
-// conversion, which is reserved for sources that actually confirmed a
-// specific town, since applying it to an unresolved fallback would
-// falsely claim a precision the data doesn't have.
 function locationLabel(ev){
   return ev.town ? normalizeTown(ev.town) : (ev.county ? "No town listed" : null);
 }
@@ -260,13 +254,6 @@ function render(gen){
     matchesGenre(e) && matchesDate(e) && matchesShape(e) &&
     (!q || (e.title+" "+e.venue+" "+(e.category||"")+" "+(locationLabel(e)||""))
             .toLowerCase().includes(q)));
-  // Sort by the date actually shown as the big number on each card -
-  // an ongoing event displays TODAY, not its end date, so it must sort
-  // alongside other today-dated events (not jump ahead to wherever its
-  // end date falls among unrelated future events). End date is only
-  // used as a tie-breaker BETWEEN ongoing events, so several running
-  // at once still order correctly by their own "Until X" among
-  // themselves.
   shown.sort((a,b)=>{
     const aOngoing=a.end_date && a.date<=TODAY_ISO && a.end_date>=TODAY_ISO;
     const bOngoing=b.end_date && b.date<=TODAY_ISO && b.end_date>=TODAY_ISO;
