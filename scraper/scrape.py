@@ -282,21 +282,24 @@ def fetch_eventbrite_page(url):
             raise direct_exc
 
 
-def fetch_with_proxy_fallback(url):
+def fetch_with_proxy_fallback(url, headers=None):
     """Like fetch(), but retries through the same public proxy if the
     direct request is blocked - for any source hitting the same kind of
     GitHub-Actions-IP-blocking issue Eventbrite has, confirmed by the
     site loading fine from elsewhere (a browser, this codebase's own
-    web-fetch tooling) while GH Actions' own server gets a 403 or an
-    unexpectedly empty response. Returns parsed BeautifulSoup either
-    way, so it's a drop-in replacement for fetch() at the call site."""
+    web-fetch tooling) while GH Actions' own server gets a 403, a 404
+    on a URL that genuinely exists, or an unexpectedly empty response.
+    Returns parsed BeautifulSoup either way, so it's a drop-in
+    replacement for fetch() at the call site. Accepts a fuller header
+    set for a site whose blocking looks like active bot detection
+    (an explicit 403) rather than a plain IP-range block."""
     try:
-        return fetch(url)
+        return fetch(url, headers=headers)
     except Exception as direct_exc:
         proxy_url = PROXY_TEMPLATE.format(quote(url, safe=""))
         try:
             print(f"  direct fetch blocked ({direct_exc}); trying proxy...")
-            html = fetch_text(proxy_url)
+            html = fetch_text(proxy_url, headers=headers)
             return BeautifulSoup(html, "lxml")
         except Exception:
             raise direct_exc
@@ -539,19 +542,25 @@ def parse_eventbrite_csv(source, prev_state=None):
 
 EAF_DATE_RE = re.compile(
     r"(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?\s*"
-    r"(\d{1,2})(?:st|nd|rd|th)\s+([A-Za-z]+)(?:\s+(\d{4}))?", re.I)
+    r"(\d{1,2})(?:st|nd|rd|th)(?:\s+([A-Za-z]+))?(?:\s+(\d{4}))?", re.I)
 EAF_TYPE_WORDS = {"live event", "exhibition", "project"}
 
 
 def parse_eaf_date_text(text):
+    """Extracts every date found in a line like 'Monday 13th - Friday
+    17th July' or 'Saturday 9th January 2027', as raw (day, month_or_
+    None, year_or_None) tuples. A day with no month name of its own
+    (the FIRST half of a range like 'Thursday 7th - Sunday 10th
+    January', where only the second date states the month) is still
+    captured here rather than silently dropped by requiring a month
+    match - its month gets borrowed from a later token once all of an
+    event's date tokens are collected together (see finalise() below)."""
     found = []
     for m in EAF_DATE_RE.finditer(text):
-        mon = MONTHS.get(m.group(2).lower()[:3])
-        if not mon:
-            continue
         day = int(m.group(1))
+        mon = MONTHS.get(m.group(2).lower()[:3]) if m.group(2) else None
         year = int(m.group(3)) if m.group(3) else None
-        found.append((mon, day, year))
+        found.append((day, mon, year))
     return found
 
 
@@ -568,8 +577,20 @@ def parse_eaf_listing(soup, source):
     def finalise(type_word):
         nonlocal title, url, genre, pending_dates, pending_time
         if title and url and type_word != "project" and pending_dates:
-            resolved = resolve_date_tokens(pending_dates)
-            start = resolved[0]
+            # borrow month (and year) from a later token when an earlier
+            # one doesn't have its own - same pattern used for Hawk's
+            # Well, Nerve Centre and The Dock's date ranges
+            for i in range(len(pending_dates) - 1):
+                day, mon, yr = pending_dates[i]
+                if mon is None:
+                    later = next((p for p in pending_dates[i + 1:]
+                                  if p[1] is not None), None)
+                    if later:
+                        pending_dates[i] = (
+                            day, later[1], yr if yr is not None else later[2])
+            tokens = [(mon, day, yr) for day, mon, yr in pending_dates if mon]
+            resolved = resolve_date_tokens(tokens) if tokens else []
+            start = resolved[0] if resolved else None
             end = resolved[-1] if len(resolved) == 2 else None
             if start:
                 clean_title = title
@@ -625,6 +646,11 @@ def parse_eaf_event_page(soup):
 
 
 def parse_eaf(source):
+    """Two-stage: scrape the listing page for what/when, then visit each
+    event's own page for its venue (not shown on the listing page). This
+    means ~1 + N requests where N is the number of live events/exhibitions
+    - a small delay is added between the per-event requests to avoid
+    hammering a small festival site's server all at once."""
     listing = fetch(source["url"])
     events = parse_eaf_listing(listing, source)
     for ev in events:
@@ -1331,8 +1357,11 @@ def parse_playhouse_derry(soup, source):
 def parse_playhouse_derry_with_fallback(source):
     """derryplayhouse.co.uk loads fine from a browser or this codebase's
     own web-fetch tooling, but returns a 403 specifically to GitHub
-    Actions' server IPs - the same kind of blocking Eventbrite has."""
-    soup = fetch_with_proxy_fallback(source["url"])
+    Actions' server IPs - the same kind of blocking Eventbrite has. The
+    explicit 403 (rather than a silent empty page, like Abbey) looks
+    like active bot detection, so this uses Eventbrite's fuller,
+    more-complete browser header set rather than the plain default."""
+    soup = fetch_with_proxy_fallback(source["url"], headers=EVENTBRITE_HEADERS)
     return parse_playhouse_derry(soup, source)
 
 
@@ -1368,7 +1397,7 @@ SOURCES = [
      "url": "https://www.eventbrite.ie/d/ireland--donegal/all-events/",
      "parser": parse_eventbrite_csv, "manual_csv": True},
     {"name": "eaf", "venue": "Earagail Arts Festival", "town": "Donegal",
-     "county": "Donegal", "url": "https://eaf.ie/2026-events",
+     "county": "Donegal", "url": "https://eaf.ie/2027-events/",
      "parser": parse_eaf, "custom_fetch": True,
      "min_interval_days": seasonal_interval({7, 8}, quiet_interval=7),
      "quiet_if_empty": True},
