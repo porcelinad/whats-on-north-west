@@ -7,6 +7,11 @@ Each venue has its own small parser. They all work the same way:
 walk the page top-to-bottom, spot event links and date text, and pair
 them up. This avoids relying on fragile CSS class names, so minor site
 redesigns are less likely to break things.
+
+Shared, region-agnostic logic (date resolution, generic dedup, the
+page-walking helpers) lives in common.py, reused by every region's
+scraper. Everything below is specific to the North West: its venues,
+its town/county whitelist, its category vocabulary.
 """
 
 import csv
@@ -25,20 +30,25 @@ from urllib.parse import quote
 import requests
 from bs4 import BeautifulSoup, NavigableString
 
+from common import (
+    HEADERS, TIMEOUT, NOW, TODAY, MONTHS, WEEKDAY_INDEX,
+    fetch, fetch_text, clean, walk, make_event,
+    infer_year, infer_range_years, resolve_date_tokens,
+    make_town_resolver, cached_lookup,
+    apply_generic_sold_out, looks_like_kids_family, apply_kids_family_tag,
+    merge_cross_source_duplicates, event_key, load_previous, notify,
+)
+
 # ---------------------------------------------------------------- config
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = ROOT / "docs" / "nw" / "events.json"
 
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-    ),
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-GB,en;q=0.9",
-}
-
+# Eventbrite specifically gets a fuller browser-like header set (used only
+# by fetch_text, not the shared fetch() the WordPress venues use) - mixing
+# these into every request made some sites' bot-protection MORE suspicious,
+# since a Referer of google.com alongside Sec-Fetch-Site: none is actually
+# self-contradictory and can look like a spoofed request.
 EVENTBRITE_HEADERS = dict(HEADERS, **{
     "Accept-Encoding": "gzip, deflate, br",
     "Connection": "keep-alive",
@@ -48,20 +58,9 @@ EVENTBRITE_HEADERS = dict(HEADERS, **{
     "Sec-Fetch-Site": "none",
     "Sec-Fetch-User": "?1",
 })
-TIMEOUT = (8, 20)
-NOW = datetime.now(timezone.utc)
-TODAY = NOW.astimezone(ZoneInfo("Europe/Dublin")).date()
 
 NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "").strip()
 PAGE_URL = os.environ.get("PAGE_URL", "").strip()
-
-MONTHS = {}
-for i, name in enumerate(
-    ["january", "february", "march", "april", "may", "june", "july",
-     "august", "september", "october", "november", "december"], start=1
-):
-    MONTHS[name] = i
-    MONTHS[name[:3]] = i
 
 GENRE_WORDS = {
     "comedy", "dance", "drama", "exhibition", "family", "featured", "film",
@@ -78,98 +77,8 @@ SKIP_LINK_TEXT = {
 }
 
 
-def fetch(url):
-    last_exc = None
-    for attempt in range(2):
-        try:
-            r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-            r.raise_for_status()
-            return BeautifulSoup(r.text, "lxml")
-        except Exception as exc:
-            last_exc = exc
-            if attempt < 1:
-                time.sleep(2)
-    raise last_exc
-
-
-def clean(text):
-    return " ".join(str(text).split())
-
-
-def infer_year(month, day):
-    for year in (TODAY.year, TODAY.year + 1):
-        try:
-            d = date(year, month, day)
-        except ValueError:
-            continue
-        if d >= TODAY - timedelta(days=7):
-            return d
-    return None
-
-
-def infer_range_years(tokens):
-    if not tokens:
-        return []
-    n = len(tokens)
-    resolved = [None] * n
-    last_mon, last_day = tokens[-1]
-    resolved[-1] = infer_year(last_mon, last_day)
-    if not resolved[-1]:
-        return resolved
-    for i in range(n - 2, -1, -1):
-        mon, day = tokens[i]
-        anchor = resolved[i + 1]
-        try:
-            d = date(anchor.year, mon, day)
-        except ValueError:
-            continue
-        if d > anchor:
-            try:
-                d = date(anchor.year - 1, mon, day)
-            except ValueError:
-                continue
-        resolved[i] = d
-    return resolved
-
-
-def resolve_date_tokens(tokens):
-    if not tokens:
-        return []
-    n = len(tokens)
-    resolved = [None] * n
-    mon, day, yr = tokens[-1]
-    if yr:
-        try:
-            resolved[-1] = date(yr, mon, day)
-        except ValueError:
-            resolved[-1] = None
-    else:
-        resolved[-1] = infer_year(mon, day)
-    if not resolved[-1]:
-        return resolved
-    for i in range(n - 2, -1, -1):
-        mon, day, yr = tokens[i]
-        anchor = resolved[i + 1]
-        if yr:
-            try:
-                resolved[i] = date(yr, mon, day)
-            except ValueError:
-                pass
-            continue
-        try:
-            d = date(anchor.year, mon, day)
-        except ValueError:
-            continue
-        if d > anchor:
-            try:
-                d = date(anchor.year - 1, mon, day)
-            except ValueError:
-                continue
-        resolved[i] = d
-    return resolved
-
-
 def genre_from_text(text):
+    """Return 'Comedy, Music' etc. if a text node is purely a genre list."""
     t = clean(text).strip("|").strip()
     if not t or len(t) > 80:
         return None
@@ -178,30 +87,6 @@ def genre_from_text(text):
         keep = [p for p in parts if p.lower() not in ("featured", "live event")]
         return ", ".join(keep) or None
     return None
-
-
-def walk(soup):
-    body = soup.body or soup
-    for node in body.descendants:
-        if isinstance(node, NavigableString):
-            t = clean(node)
-            if t:
-                yield ("text", t, None)
-        elif getattr(node, "name", None) == "a":
-            yield ("link", node.get("href", ""), clean(node.get_text(" ")))
-
-
-def make_event(source, title, start, **extra):
-    ev = {
-        "source": source["name"],
-        "venue": source["venue"],
-        "town": source["town"],
-        "county": source["county"],
-        "title": title,
-        "date": start.isoformat(),
-    }
-    ev.update({k: v for k, v in extra.items() if v})
-    return ev
 
 
 def parse_an_grianan(soup, source):
@@ -343,20 +228,6 @@ def parse_balor(source):
     return events
 
 
-def fetch_text(url):
-    last_exc = None
-    for attempt in range(2):
-        try:
-            r = requests.get(url, headers=EVENTBRITE_HEADERS, timeout=TIMEOUT)
-            r.raise_for_status()
-            return r.text
-        except Exception as exc:
-            last_exc = exc
-            if attempt < 1:
-                time.sleep(2)
-    raise last_exc
-
-
 def extract_server_data(html):
     marker = "window.__SERVER_DATA__ = "
     start = html.index(marker) + len(marker)
@@ -396,12 +267,12 @@ EVENTBRITE_PROXY_TEMPLATE = "https://api.allorigins.win/raw?url={}"
 
 def fetch_eventbrite_page(url):
     try:
-        return fetch_text(url)
+        return fetch_text(url, headers=EVENTBRITE_HEADERS)
     except Exception as direct_exc:
         proxy_url = EVENTBRITE_PROXY_TEMPLATE.format(quote(url, safe=""))
         try:
             print(f"  direct fetch blocked ({direct_exc}); trying proxy...")
-            return fetch_text(proxy_url)
+            return fetch_text(proxy_url, headers=EVENTBRITE_HEADERS)
         except Exception:
             raise direct_exc
 
@@ -516,83 +387,13 @@ TOWN_TO_COUNTY = {
 }
 
 
-def _proper_town_case(key):
-    lower_words = {"on", "of"}
-    parts = re.split(r"(-|\s+)", key)
-    out = []
-    for i, p in enumerate(parts):
-        if p == "-" or p.isspace():
-            out.append(p)
-        elif p.lower() in lower_words and i != 0:
-            out.append(p.lower())
-        else:
-            out.append(p.capitalize())
-    return "".join(out)
-
-
-TOWN_DISPLAY_CASE = {k: _proper_town_case(k) for k in TOWN_TO_COUNTY}
 _COUNTY_NAME_TOWNS = {"donegal", "derry", "sligo", "leitrim", "tyrone", "fermanagh"}
-_SPECIFIC_TOWN_ORDER = sorted(
-    (k for k in TOWN_TO_COUNTY if k not in _COUNTY_NAME_TOWNS),
-    key=len, reverse=True)
-_FALLBACK_TOWN_ORDER = sorted(
-    (k for k in TOWN_TO_COUNTY if k in _COUNTY_NAME_TOWNS),
-    key=len, reverse=True)
-
-
-def find_specific_town(text):
-    if not text:
-        return None
-    low = text.lower()
-    for key in _SPECIFIC_TOWN_ORDER:
-        if re.search(r"\b" + re.escape(key) + r"\b", low):
-            return TOWN_DISPLAY_CASE[key]
-    return None
-
-
-def nearest_known_town(raw_town):
-    if not raw_town:
-        return raw_town
-    found = find_specific_town(raw_town)
-    if found:
-        return found
-    low = raw_town.lower()
-    for key in _FALLBACK_TOWN_ORDER:
-        if re.search(r"\b" + re.escape(key) + r"\b", low):
-            return TOWN_DISPLAY_CASE[key]
-    return raw_town
+find_specific_town, nearest_known_town = make_town_resolver(
+    TOWN_TO_COUNTY, _COUNTY_NAME_TOWNS)
 
 
 LOCATION_CACHE = {}
-
-
-def cached_town_lookup(url, fetch_and_extract_fn):
-    if url in LOCATION_CACHE:
-        return LOCATION_CACHE[url]
-    try:
-        town = fetch_and_extract_fn()
-    except Exception:
-        return None
-    LOCATION_CACHE[url] = town
-    return town
-
-
 GHOSTLIGHT_LINEUP_CACHE = {}
-
-
-def cached_lookup(cache, key, fetch_and_extract_fn):
-    if key in cache:
-        return cache[key]
-    try:
-        value = fetch_and_extract_fn()
-    except Exception:
-        return None
-    cache[key] = value
-    return value
-
-
-WEEKDAY_INDEX = {name: i for i, name in enumerate(
-    ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"])}
 
 
 def parse_eventbrite_date_text(text, trust_relative=True, reference_date=None):
@@ -1196,8 +997,8 @@ def parse_craftmonth(source):
     soup = fetch(source["url"])
     events = parse_craftmonth_listing(soup, source)
     for ev in events:
-        town = cached_town_lookup(
-            ev["url"],
+        town = cached_lookup(
+            LOCATION_CACHE, ev["url"],
             lambda ev=ev: parse_craftmonth_event_page(fetch(ev["url"])))
         if town:
             ev["town"] = town
@@ -1296,8 +1097,8 @@ def parse_heritageweek(source):
         url = next_link["href"]
 
     for ev in events:
-        town = cached_town_lookup(
-            ev["url"],
+        town = cached_lookup(
+            LOCATION_CACHE, ev["url"],
             lambda ev=ev: parse_heritageweek_event_page(fetch(ev["url"])))
         if town:
             ev["town"] = town
@@ -1642,25 +1443,6 @@ CATEGORY_DROP = {
     "art deco",
 }
 
-AGE_RANGE_RE = re.compile(r"\b(\d{1,2})\s*-\s*(\d{1,2})\s*(?:yrs?|years?)\b", re.I)
-KIDS_KEYWORDS_RE = re.compile(r"\b(kids?|children'?s?|junior)\b", re.I)
-
-
-GENERIC_SOLD_OUT_RE = re.compile(r"\(?\bsold\s*out\b\)?", re.I)
-
-
-def apply_generic_sold_out(ev):
-    if ev.get("sold_out"):
-        return
-    title = ev.get("title", "")
-    if not re.search(r"\bsold\s*out\b", title, re.I):
-        return
-    cleaned = GENERIC_SOLD_OUT_RE.sub("", title)
-    cleaned = re.sub(r"^[\s\-–—:|/]+|[\s\-–—:|/]+$", "", cleaned)
-    cleaned = re.sub(r"\s+", " ", cleaned).strip()
-    ev["title"] = cleaned or title
-    ev["sold_out"] = True
-
 
 def normalize_category(cat):
     if not cat:
@@ -1683,30 +1465,12 @@ def normalize_category(cat):
     return ", ".join(deduped) if deduped else None
 
 
-def looks_like_kids_family(title):
-    if KIDS_KEYWORDS_RE.search(title):
-        return True
-    m = AGE_RANGE_RE.search(title)
-    return bool(m and int(m.group(2)) < 18)
-
-
-def apply_kids_family_tag(ev):
-    if not looks_like_kids_family(ev["title"]):
-        return
-    existing = [p.strip() for p in (ev.get("category") or "").split(",") if p.strip()]
-    if "Kids/Family" not in existing:
-        existing.append("Kids/Family")
-    ev["category"] = ", ".join(existing)
-
-
 SOURCE_PRIORITY = {
     "an_grianan": 0, "rcc": 1, "balor": 2, "abbey": 3,
     "mcgrorys": 4, "st_columbs": 5,
     "eaf": 10, "eventbrite_donegal": 11,
 }
 
-DEDUP_STOPWORDS = {"the", "a", "an", "with", "and", "at", "in", "on", "of",
-                    "by", "to", "for"}
 DEDUP_NOISE_PREFIXES = [
     re.compile(r"^rcc kids:\s*", re.I),
     re.compile(r"^eaf:\s*", re.I),
@@ -1718,119 +1482,10 @@ DEDUP_ALIASES = [
 DEDUP_THRESHOLD = 0.7
 
 
-def _dedup_words(title):
-    t = title.lower()
-    for pat in DEDUP_NOISE_PREFIXES:
-        t = pat.sub("", t)
-    for pat, repl in DEDUP_ALIASES:
-        t = pat.sub(repl, t)
-    t = re.sub(r"[^a-z0-9 ]+", " ", t)
-    return {w for w in t.split() if w and w not in DEDUP_STOPWORDS}
-
-
-def _title_containment(a, b):
-    wa, wb = _dedup_words(a), _dedup_words(b)
-    if not wa or not wb:
-        return 0.0
-    smaller, larger = (wa, wb) if len(wa) <= len(wb) else (wb, wa)
-    return len(smaller & larger) / len(smaller)
-
-
-def merge_cross_source_duplicates(events):
-    groups = {}
-    for ev in events:
-        groups.setdefault((ev["venue"], ev["date"]), []).append(ev)
-
-    result = []
-    for group in groups.values():
-        if len(group) == 1:
-            result.append(group[0])
-            continue
-
-        parent = list(range(len(group)))
-
-        def find(i):
-            while parent[i] != i:
-                parent[i] = parent[parent[i]]
-                i = parent[i]
-            return i
-
-        for i in range(len(group)):
-            for j in range(i + 1, len(group)):
-                if _title_containment(group[i]["title"],
-                                       group[j]["title"]) >= DEDUP_THRESHOLD:
-                    ri, rj = find(i), find(j)
-                    if ri != rj:
-                        parent[rj] = ri
-
-        clusters = {}
-        for i in range(len(group)):
-            clusters.setdefault(find(i), []).append(group[i])
-
-        for members in clusters.values():
-            if len(members) == 1:
-                result.append(members[0])
-                continue
-            members.sort(key=lambda e: SOURCE_PRIORITY.get(e["source"], 99))
-            winner = dict(members[0])
-            for loser in members[1:]:
-                for k, v in loser.items():
-                    if v and not winner.get(k):
-                        winner[k] = v
-            winner["merged_from"] = sorted({m["source"] for m in members})
-            result.append(winner)
-    return result
-
-
-def event_key(ev):
-    raw = f"{ev['source']}|{ev['title'].lower()}|{ev['date']}"
-    return hashlib.sha1(raw.encode()).hexdigest()[:12]
-
-
-def load_previous():
-    if DATA_FILE.exists():
-        try:
-            data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
-            data.setdefault("source_last_run", {})
-            data.setdefault("consecutive_failures", {})
-            data.setdefault("location_cache", {})
-            data.setdefault("ghostlight_lineup_cache", {})
-            return data
-        except Exception:
-            pass
-    return {"events": [], "source_last_run": {}, "consecutive_failures": {},
-            "location_cache": {}, "ghostlight_lineup_cache": {}}
-
-
-def notify(new_events):
-    if not NTFY_TOPIC or not new_events:
-        return
-    lines = [
-        f"{e['title']} — {date.fromisoformat(e['date']).strftime('%a %d %b')}"
-        f" — {e['venue']}"
-        for e in sorted(new_events, key=lambda e: e["date"])[:12]
-    ]
-    if len(new_events) > 12:
-        lines.append(f"...and {len(new_events) - 12} more")
-    headers = {
-        "Title": f"{len(new_events)} new event"
-                 f"{'s' if len(new_events) != 1 else ''} announced",
-        "Tags": "performing_arts",
-    }
-    if PAGE_URL:
-        headers["Click"] = PAGE_URL
-    try:
-        requests.post(f"https://ntfy.sh/{NTFY_TOPIC}",
-                      data="\n".join(lines).encode("utf-8"),
-                      headers=headers, timeout=TIMEOUT)
-        print(f"Sent ntfy notification for {len(new_events)} new event(s)")
-    except Exception as exc:
-        print(f"ntfy notification failed: {exc}", file=sys.stderr)
-
-
 def main():
     global LOCATION_CACHE, GHOSTLIGHT_LINEUP_CACHE
-    previous = load_previous()
+    previous = load_previous(DATA_FILE, extra_defaults={
+        "location_cache": {}, "ghostlight_lineup_cache": {}})
     prev_by_key = {event_key(e): e for e in previous.get("events", [])}
     LOCATION_CACHE = dict(previous.get("location_cache", {}))
     GHOSTLIGHT_LINEUP_CACHE = dict(previous.get("ghostlight_lineup_cache", {}))
@@ -1900,7 +1555,10 @@ def main():
                 e for e in prev_by_key.values() if e["source"] == source["name"])
 
     seen, final = set(), []
-    for ev in merge_cross_source_duplicates(all_events):
+    for ev in merge_cross_source_duplicates(
+            all_events, source_priority=SOURCE_PRIORITY,
+            noise_prefixes=DEDUP_NOISE_PREFIXES, aliases=DEDUP_ALIASES,
+            threshold=DEDUP_THRESHOLD):
         canon = COUNTY_CANONICAL.get((ev.get("county") or "").strip().lower())
         if not canon:
             continue
@@ -1940,7 +1598,7 @@ def main():
                if e["id"] not in prev_by_key
                and e["source"] not in [s["name"] for s in SOURCES
                                        if s["venue"] in failed]]
-        notify(new)
+        notify(new, NTFY_TOPIC, PAGE_URL)
 
     if failed:
         print(f"Completed with failures: {', '.join(failed)}", file=sys.stderr)
