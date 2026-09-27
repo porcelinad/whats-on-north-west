@@ -268,6 +268,12 @@ EVENTBRITE_ALLOWED_CATEGORIES = {
 # up on other sites too (Abbey Arts Centre, The Playhouse), so this is
 # now a general-purpose fallback, not an Eventbrite-only one.
 PROXY_TEMPLATE = "https://api.allorigins.win/raw?url={}"
+# A second, different proxy provider - for a source (The Playhouse) whose
+# blocking got MORE specific (403, then a different 401) as fixes were
+# tried, including through the first proxy, suggesting an adaptive
+# block worth routing around via an entirely different provider's IP
+# range rather than continuing to adjust headers through the same one.
+ALT_PROXY_TEMPLATE = "https://api.codetabs.com/v1/proxy?quest={}"
 
 
 def fetch_eventbrite_page(url):
@@ -282,9 +288,9 @@ def fetch_eventbrite_page(url):
             raise direct_exc
 
 
-def fetch_with_proxy_fallback(url, headers=None):
-    """Like fetch(), but retries through the same public proxy if the
-    direct request is blocked - for any source hitting the same kind of
+def fetch_with_proxy_fallback(url, headers=None, proxy_template=None):
+    """Like fetch(), but retries through a public proxy if the direct
+    request is blocked - for any source hitting the same kind of
     GitHub-Actions-IP-blocking issue Eventbrite has, confirmed by the
     site loading fine from elsewhere (a browser, this codebase's own
     web-fetch tooling) while GH Actions' own server gets a 403, a 404
@@ -292,11 +298,13 @@ def fetch_with_proxy_fallback(url, headers=None):
     Returns parsed BeautifulSoup either way, so it's a drop-in
     replacement for fetch() at the call site. Accepts a fuller header
     set for a site whose blocking looks like active bot detection
-    (an explicit 403) rather than a plain IP-range block."""
+    (an explicit 403) rather than a plain IP-range block, and a
+    different proxy_template for a source where the default proxy
+    (PROXY_TEMPLATE) is itself getting blocked too."""
     try:
         return fetch(url, headers=headers)
     except Exception as direct_exc:
-        proxy_url = PROXY_TEMPLATE.format(quote(url, safe=""))
+        proxy_url = (proxy_template or PROXY_TEMPLATE).format(quote(url, safe=""))
         try:
             print(f"  direct fetch blocked ({direct_exc}); trying proxy...")
             html = fetch_text(proxy_url, headers=headers)
@@ -1356,12 +1364,14 @@ def parse_playhouse_derry(soup, source):
 
 def parse_playhouse_derry_with_fallback(source):
     """derryplayhouse.co.uk loads fine from a browser or this codebase's
-    own web-fetch tooling, but returns a 403 specifically to GitHub
-    Actions' server IPs - the same kind of blocking Eventbrite has. The
-    explicit 403 (rather than a silent empty page, like Abbey) looks
-    like active bot detection, so this uses Eventbrite's fuller,
-    more-complete browser header set rather than the plain default."""
-    soup = fetch_with_proxy_fallback(source["url"], headers=EVENTBRITE_HEADERS)
+    own web-fetch tooling, but returns a 403 (then a 401, once fuller
+    headers were tried) specifically to GitHub Actions' server IPs -
+    the same kind of blocking Eventbrite has, just more adaptive. Given
+    the default proxy also got blocked here, this routes through a
+    different provider instead."""
+    soup = fetch_with_proxy_fallback(
+        source["url"], headers=EVENTBRITE_HEADERS,
+        proxy_template=ALT_PROXY_TEMPLATE)
     return parse_playhouse_derry(soup, source)
 
 
