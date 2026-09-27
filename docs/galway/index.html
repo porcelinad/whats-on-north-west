@@ -457,3 +457,618 @@
 
     <div class="filters">
       <select id="countyFilter"
+              class="filter-select"
+              aria-label="Filter by county"></select>
+
+      <select id="locationFilter"
+              class="filter-select"
+              aria-label="Filter by location"></select>
+
+      <select id="genreFilter"
+              class="filter-select"
+              aria-label="Filter by genre"></select>
+    </div>
+
+    <div class="search-row">
+      <input
+        id="search"
+        type="search"
+        placeholder="Search by event, venue or genre…"
+        aria-label="Search by event, venue or genre">
+
+      <button
+        id="clearFilters"
+        class="clear-btn"
+        type="button">
+        Clear all filters
+      </button>
+    </div>
+
+    <div
+      class="date-filters"
+      id="dateFilters"
+      role="group"
+      aria-label="Filter by date"></div>
+
+    <div
+      class="custom-dates"
+      id="customDates"
+      hidden>
+
+      <input
+        type="date"
+        id="dateFrom"
+        aria-label="From date">
+
+      <input
+        type="date"
+        id="dateTo"
+        aria-label="To date">
+    </div>
+
+    <p
+      class="date-error"
+      id="dateError"
+      hidden></p>
+
+    <div
+      class="extra-filters"
+      id="shapeFilters"
+      role="group"
+      aria-label="Filter by recurrence"></div>
+
+  </div>
+
+  <main id="list"></main>
+
+  <footer>
+    Pulled daily from each venue's own website. Tap an event for details
+    and booking on the venue's site.
+  </footer>
+
+</div>
+
+<script>
+
+const MONTHS=[
+  "January","February","March","April","May","June",
+  "July","August","September","October","November","December"
+];
+
+const DOWS=[
+  "Sun","Mon","Tue","Wed","Thu","Fri","Sat"
+];
+
+let EVENTS=[];
+let countySel="All";
+let genreSel="All";
+let locationSel="All";
+let query="";
+let dateSel=null;
+let customFrom="";
+let customTo="";
+let shapeSel=null;
+
+
+function normalizeTown(t){
+  return t==="Donegal" ? "Donegal Town" : t;
+}
+
+
+function locationLabel(ev){
+  return ev.town
+    ? normalizeTown(ev.town)
+    : (ev.county ? "No town listed" : null);
+}
+
+
+function addDays(iso,n){
+  const [y,m,d]=iso.split("-").map(Number);
+  return new Date(
+    Date.UTC(y,m-1,d+n)
+  ).toISOString().slice(0,10);
+}
+
+
+function weekdayOf(iso){
+  const [y,m,d]=iso.split("-").map(Number);
+  return new Date(
+    Date.UTC(y,m-1,d)
+  ).getUTCDay();
+}
+
+
+function todayISO(){
+  const parts=new Intl.DateTimeFormat(
+    "en-CA",
+    {
+      timeZone:"Europe/Dublin",
+      year:"numeric",
+      month:"2-digit",
+      day:"2-digit"
+    }
+  ).formatToParts(new Date());
+
+  const get=t=>parts.find(
+    p=>p.type===t
+  ).value;
+
+  return `${get("year")}-${get("month")}-${get("day")}`;
+}
+
+
+function weekendRange(today){
+  const wd=weekdayOf(today);
+
+  if(wd===6){
+    return {
+      from:today,
+      to:addDays(today,1)
+    };
+  }
+
+  if(wd===0){
+    return {
+      from:today,
+      to:today
+    };
+  }
+
+  const sat=addDays(today,6-wd);
+
+  return {
+    from:sat,
+    to:addDays(sat,1)
+  };
+}
+
+
+const TODAY_ISO=todayISO();
+const TOMORROW_ISO=addDays(TODAY_ISO,1);
+
+
+const el=(t,c,txt)=>{
+  const n=document.createElement(t);
+
+  if(c){
+    n.className=c;
+  }
+
+  if(txt!==undefined){
+    n.textContent=txt;
+  }
+
+  return n;
+};
+
+
+function fmt(iso){
+  const d=new Date(iso+"T12:00:00");
+
+  return {
+    dow:DOWS[d.getDay()],
+    day:d.getDate(),
+    mon:MONTHS[d.getMonth()].slice(0,3),
+    month:MONTHS[d.getMonth()],
+    key:iso.slice(0,7)
+  };
+}
+
+
+function isNew(ev,gen){
+  const first=new Date(ev.first_seen);
+  const g=new Date(gen);
+
+  return (g-first)/86400000 <= 7;
+}
+
+
+function fmtUpdated(iso){
+  try{
+    const d=new Date(iso);
+
+    if(isNaN(d)){
+      return iso;
+    }
+
+    return d.toLocaleString(
+      "en-IE",
+      {
+        day:"numeric",
+        month:"short",
+        hour:"2-digit",
+        minute:"2-digit",
+        timeZone:"Europe/Dublin"
+      }
+    );
+
+  }catch(e){
+    return iso;
+  }
+}
+
+
+function matchesShape(ev){
+
+  if(shapeSel==="single"){
+    return !ev.end_date;
+  }
+
+  if(shapeSel==="recurring"){
+    return !!ev.end_date;
+  }
+
+  return true;
+}
+
+
+function matchesGenre(ev){
+
+  if(genreSel==="All"){
+    return true;
+  }
+
+  if(genreSel==="Not listed"){
+    return !ev.category;
+  }
+
+  return (ev.category||"")
+    .split(", ")
+    .includes(genreSel);
+}
+
+
+function customRangeError(){
+
+  if(dateSel!=="custom"){
+    return null;
+  }
+
+  if(customFrom && customTo && customTo<customFrom){
+    return "End date can't be before the start date.";
+  }
+
+  if(customTo && customTo<TODAY_ISO){
+    return "That date range is in the past.";
+  }
+
+  return null;
+}
+
+
+function matchesDate(ev){
+
+  if(!dateSel){
+    return true;
+  }
+
+  const start=ev.date;
+  const end=ev.end_date||ev.date;
+
+  let from,to;
+
+  if(dateSel==="today"){
+    from=to=TODAY_ISO;
+  }
+
+  else if(dateSel==="tomorrow"){
+    from=to=TOMORROW_ISO;
+  }
+
+  else if(dateSel==="weekend"){
+    const w=weekendRange(TODAY_ISO);
+    from=w.from;
+    to=w.to;
+  }
+
+  else if(dateSel==="custom"){
+
+    if(!customFrom && !customTo){
+      return true;
+    }
+
+    from=customFrom||"0000-01-01";
+    to=customTo||"9999-12-31";
+  }
+
+  return start<=to && end>=from;
+}
+
+
+function render(gen){
+
+  const list=document.getElementById("list");
+
+  list.textContent="";
+
+  const errBox=document.getElementById("dateError");
+
+  const rangeErr=customRangeError();
+
+  errBox.hidden=!rangeErr;
+
+  if(rangeErr){
+    errBox.textContent=rangeErr;
+  }
+
+  const q=query.trim().toLowerCase();
+
+  const shown=rangeErr
+    ? []
+    : EVENTS.filter(e=>
+        (countySel==="All"||e.county===countySel) &&
+        (locationSel==="All"||locationLabel(e)===locationSel) &&
+        matchesGenre(e) &&
+        matchesDate(e) &&
+        matchesShape(e) &&
+        (!q ||
+          (e.title||"").toLowerCase().includes(q) ||
+          (e.venue||"").toLowerCase().includes(q) ||
+          (locationLabel(e)||"").toLowerCase().includes(q) ||
+          (e.category||"").toLowerCase().includes(q)
+        )
+      );
+
+  if(!EVENTS.length){
+    list.appendChild(el("div","empty","No events loaded."));
+    return;
+  }
+
+  if(!shown.length){
+    list.appendChild(el("div","empty","No matching events found."));
+    return;
+  }
+
+  let currentMonthKey=null;
+
+  shown.forEach(ev=>{
+    const f=fmt(ev.date);
+
+    if(f.key!==currentMonthKey){
+      currentMonthKey=f.key;
+      list.appendChild(
+        el("div","month",`${f.month} ${f.key.slice(0,4)}`)
+      );
+    }
+
+    const a=el("a","event");
+    a.href=ev.url;
+    a.target="_blank";
+    a.rel="noopener";
+
+    if(ev.sold_out){
+      a.classList.add("sold");
+    }
+
+    const stub=el("div","stub");
+    stub.appendChild(el("div","dow",f.dow));
+    stub.appendChild(el("div","day",f.day));
+
+    if(ev.end_date){
+      stub.appendChild(el("div","range","Run"));
+    }
+
+    a.appendChild(stub);
+
+    const info=el("div","info");
+    info.appendChild(el("div","title",ev.title));
+
+    const meta=el("div","meta");
+    const v=el("b",undefined,ev.venue);
+    meta.appendChild(v);
+
+    const loc=locationLabel(ev);
+    if(loc){
+      meta.appendChild(document.createTextNode(` · ${loc}`));
+    }
+
+    info.appendChild(meta);
+
+    const tags=el("div","tags");
+
+    if(isNew(ev,gen)){
+      tags.appendChild(el("span","new","New"));
+    }
+
+    if(ev.sold_out){
+      tags.appendChild(el("span","sold-out","Sold Out"));
+    }
+
+    if(ev.category){
+      ev.category.split(", ").forEach(cat=>{
+        tags.appendChild(el("span","tag",cat));
+      });
+    }
+
+    if(tags.children.length){
+      info.appendChild(tags);
+    }
+
+    a.appendChild(info);
+    list.appendChild(a);
+  });
+}
+
+
+function buildSelect(id,options,activeSel,onChange){
+  const select=document.getElementById(id);
+  select.textContent="";
+
+  options.forEach(opt=>{
+    const o=document.createElement("option");
+    o.value=opt;
+    o.textContent=opt;
+    o.selected=(opt===activeSel);
+    select.appendChild(o);
+  });
+
+  select.onchange=e=>{
+    onChange(e.target.value);
+  };
+}
+
+
+function updateFilters(){
+  const counties=new Set(["All"]);
+  const locations=new Set(["All"]);
+  const genres=new Set(["All"]);
+
+  EVENTS.forEach(e=>{
+    if(e.county) counties.add(e.county);
+    const loc=locationLabel(e);
+    if(loc) locations.add(loc);
+    if(e.category){
+      e.category.split(", ").forEach(g=>genres.add(g));
+    }
+  });
+
+  const sortedCounties=Array.from(counties).sort();
+  const sortedLocations=Array.from(locations).sort();
+  const sortedGenres=Array.from(genres).sort();
+
+  if(!sortedCounties.includes(countySel)) countySel="All";
+  if(!sortedLocations.includes(locationSel)) locationSel="All";
+  if(!sortedGenres.includes(genreSel)) genreSel="All";
+
+  buildSelect("countyFilter",sortedCounties,countySel,val=>{
+    countySel=val;
+    updateFilters();
+  });
+
+  buildSelect("locationFilter",sortedLocations,locationSel,val=>{
+    locationSel=val;
+    render();
+  });
+
+  buildSelect("genreFilter",sortedGenres,genreSel,val=>{
+    genreSel=val;
+    render();
+  });
+
+  render();
+}
+
+
+function renderDateFilters(){
+  const container=document.getElementById("dateFilters");
+  container.textContent="";
+
+  const opts=[
+    {id:null,label:"All Dates"},
+    {id:"today",label:"Today"},
+    {id:"tomorrow",label:"Tomorrow"},
+    {id:"weekend",label:"This Weekend"},
+    {id:"custom",label:"Custom…"}
+  ];
+
+  opts.forEach(o=>{
+    const btn=el("button","chip",o.label);
+    btn.type="button";
+    btn.setAttribute("aria-pressed",dateSel===o.id?"true":"false");
+
+    btn.onclick=()=>{
+      dateSel=o.id;
+      document.getElementById("customDates").hidden=(dateSel!=="custom");
+      renderDateFilters();
+    };
+
+    container.appendChild(btn);
+  });
+
+  render();
+}
+
+
+function renderShapeFilters(){
+  const container=document.getElementById("shapeFilters");
+  container.textContent="";
+
+  const opts=[
+    {id:null,label:"All Shows"},
+    {id:"single",label:"Single Dates"},
+    {id:"recurring",label:"Runs / Festivals"}
+  ];
+
+  opts.forEach(o=>{
+    const btn=el("button","chip",o.label);
+    btn.type="button";
+    btn.setAttribute("aria-pressed",shapeSel===o.id?"true":"false");
+
+    btn.onclick=()=>{
+      shapeSel=o.id;
+      renderShapeFilters();
+    };
+
+    container.appendChild(btn);
+  });
+
+  render();
+}
+
+
+document.getElementById("search").oninput=e=>{
+  query=e.target.value;
+  render();
+};
+
+
+document.getElementById("dateFrom").onchange=e=>{
+  customFrom=e.target.value;
+  render();
+};
+
+
+document.getElementById("dateTo").onchange=e=>{
+  customTo=e.target.value;
+  render();
+};
+
+
+document.getElementById("clearFilters").onclick=()=>{
+  countySel="All";
+  locationSel="All";
+  genreSel="All";
+  query="";
+  dateSel=null;
+  customFrom="";
+  customTo="";
+  shapeSel=null;
+
+  document.getElementById("search").value="";
+  document.getElementById("dateFrom").value="";
+  document.getElementById("dateTo").value="";
+  document.getElementById("customDates").hidden=true;
+
+  updateFilters();
+  renderDateFilters();
+  renderShapeFilters();
+};
+
+
+async function init(){
+  const uEl=document.getElementById("updated");
+
+  try{
+    const res=await fetch("data.json");
+    if(!res.ok) throw new Error("Network response error");
+
+    const data=await res.json();
+    EVENTS=data.events||[];
+
+    uEl.textContent=`Last updated: ${fmtUpdated(data.generated)}`;
+    updateFilters();
+    renderDateFilters();
+    renderShapeFilters();
+
+  }catch(e){
+    uEl.textContent="Failed to load events data.";
+    const list=document.getElementById("list");
+    list.appendChild(el("div","error","Could not load the schedule. Please refresh."));
+  }
+}
+
+init();
+
+</script>
+</body>
+</html>
