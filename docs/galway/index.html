@@ -1049,6 +1049,7 @@ async function init(){
   const uEl=document.getElementById("updated");
 
   try{
+    // CHANGE THIS LINE FROM: fetch("data.json");
     const res=await fetch("../data.json"); 
     if(!res.ok) throw new Error("Network response error");
 
