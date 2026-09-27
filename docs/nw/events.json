@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-26T19:01Z",
+ "generated_at": "2026-09-27T01:29Z",
  "failed_sources": [
   "Earagail Arts Festival",
   "The Playhouse"
@@ -22,13 +22,13 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 2,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
-  "eaf": 32,
+  "eaf": 33,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
   "craftmonth_derry_city": 0,
@@ -41,7 +41,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 16
+  "playhouse": 17
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -378,60 +378,6 @@
    "first_seen": "2026-09-11"
   },
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Hello Charlie",
-   "date": "2026-09-25",
-   "end_date": "2026-09-26",
-   "url": "https://angrianan.com/event/hello-charlie/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873664308",
-   "category": "Theatre",
-   "id": "ae6499e05fe0",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Tick, Tick...Boom!",
-   "date": "2026-09-25",
-   "end_date": "2026-09-26",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=tick-tick-boom",
-   "category": "Drama",
-   "id": "d7c813d35091",
-   "first_seen": "2026-07-16"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Other Voices 2026",
-   "date": "2026-09-25",
-   "end_date": "2026-09-26",
-   "url": "https://nervecentre.org/whats-on/other-voices-2026",
-   "category": "Music/Comedy",
-   "id": "f214d8de9756",
-   "first_seen": "2026-09-18"
-  },
-  {
-   "source": "st_columbs",
-   "venue": "St Columb's Hall",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Other Voices",
-   "date": "2026-09-25",
-   "end_date": "2026-09-26",
-   "url": "https://www.saintcolumbshall.com/whatson/other-voices/",
-   "category": null,
-   "id": "4ba5a11a28cf",
-   "first_seen": "2026-08-26"
-  },
-  {
    "source": "themodel",
    "venue": "The Model",
    "town": "Sligo",
@@ -440,7 +386,7 @@
    "date": "2026-09-25",
    "end_date": "2026-09-27",
    "time": "7:30 pm",
-   "url": "https://www.themodel.ie/?event=sligo-baroque-music-festival-2026&event_date=2026-09-26",
+   "url": "https://www.themodel.ie/?event=sligo-baroque-music-festival-2026&event_date=2026-09-27",
    "category": null,
    "id": "ad86227805c6",
    "first_seen": "2026-08-27"
@@ -457,70 +403,6 @@
    "category": null,
    "id": "a24bbda23d1d",
    "first_seen": "2026-09-11"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Sligo Sounds & Stories – Two short films from Sligo’s past from filmmaker Trevor Sweeney",
-   "date": "2026-09-26",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/sligo-sounds-stories",
-   "category": null,
-   "id": "9d330c111f55",
-   "first_seen": "2026-09-20"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "The Coronas",
-   "date": "2026-09-26",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/the-coronas",
-   "category": "Music",
-   "id": "63bf535db3f3",
-   "first_seen": "2026-09-20"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC MUSIC: Migrantes featuring Mauro Sigura (oud) & Andrea Manzoni (piano)",
-   "date": "2026-09-26",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/migrantes-mauro-sigura-andrea-manzoni/",
-   "category": "Music",
-   "id": "6e7c7ac14109",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Adrian Knight Comedy Hypontist",
-   "date": "2026-09-26",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/adrian-knight-comedy-hypontist/",
-   "category": "Theatre",
-   "id": "2838f328f0c4",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Favourite Books – Conversations on Books",
-   "date": "2026-09-26",
-   "url": "https://www.thedock.ie/whats-on/favourite-books",
-   "category": "Literature",
-   "id": "ec110ba8dec9",
-   "first_seen": "2026-08-01"
   },
   {
    "source": "hawkswell",
@@ -2932,6 +2814,18 @@
    "category": "Music",
    "id": "c7be8ddd79b9",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Mr. Bergmann of Deadman's Point – Nth Degree Productions",
+   "date": "2026-11-13",
+   "url": "https://www.thedock.ie/whats-on/mr-bergmann-of-deadmans-point",
+   "category": "Theatre",
+   "id": "0ca993ab6b0b",
+   "first_seen": "2026-09-27"
   },
   {
    "source": "themodel",
@@ -8958,6 +8852,19 @@
    "category": "Exhibition",
    "id": "503fb4c84035",
    "first_seen": "2026-09-26"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "The Abbey Hotel Donegal",
+   "town": "Donegal Town",
+   "county": "Donegal",
+   "title": "The Cowgirl Experience™ Abbey Hotel, Donegal",
+   "date": "2027-09-19",
+   "time": "16:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-cowgirl-experience-abbey-hotel-donegal/",
+   "category": null,
+   "id": "0b033ab7054e",
+   "first_seen": "2026-09-27"
   }
  ]
 }
