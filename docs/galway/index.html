@@ -16,10 +16,10 @@
   :root{
     --mist:#ECEFE9;
     --ink:#1E2B26;
-    --ink-soft:#8b978f; /* Lightened for readability on dark background */
+    --ink-soft:#8b978f; /* Lightened from landing page for clear dark mode reading */
     --ember:#B8481C;
-    --heather:#6F5B92;
-    --line:#34413b; /* Darkened to blend with dark background */
+    --heather:#A795C7; /* Adjusted slightly lighter for high contrast against cards */
+    --line:#34413b; /* Darkened to blend smoothly with background */
     --stub:#FFFFFF;
 
     --display:"Barlow Condensed",sans-serif;
@@ -32,8 +32,8 @@
   }
 
   body{
-    background:var(--ink); /* Flipped to dark */
-    color:var(--mist); /* Flipped to light */
+    background:var(--ink); /* Flipped background to dark */
+    color:var(--mist); /* Flipped default text to light */
     font-family:var(--body);
     font-size:16px;
     line-height:1.45;
@@ -56,15 +56,15 @@
   }
 
   h1{
-    font-family:var(--display);
+    font-family:var(--display); /* Applied matching display typography */
     font-weight:700;
     font-size:clamp(28px,8vw,48px);
     text-transform:uppercase;
     line-height:.95;
     letter-spacing:.02em;
-    color: var(--mist);
   }
 
+  /* Full-width dynamic black bar style */
   h1 .black-bg{
     background-color: #000;
     display: block;
@@ -73,7 +73,11 @@
     margin-bottom: 6px;
   }
 
-  h1 .rust {
+  h1 .white{
+    color:var(--mist);
+  }
+
+  h1 .rust{
     color:var(--ember);
   }
 
@@ -92,9 +96,343 @@
   .controls{
     position:sticky;
     top:0;
-    background:var(--ink); /* Flipped to match dark background */
+    background:var(--ink); /* Swapped to dark to match body background */
     z-index:5;
     padding:10px 0 12px;
+    border-bottom:1px solid var(--line);
+  }
+
+  .date-filters{
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    padding-bottom:8px;
+    scrollbar-width:none;
+    justify-content:center;
+  }
+
+  .date-filters::-webkit-scrollbar{
+    display:none;
+  }
+
+  .extra-filters{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin-bottom:8px;
+  }
+
+  .chip{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    white-space:nowrap;
+    border:1.5px solid var(--mist); /* Inverted border to clean light tone */
+    border-radius:999px;
+    background:transparent;
+    color:var(--mist); /* Text updated to match new layout frame */
+    padding:6px 14px;
+    cursor:pointer;
+    flex:0 0 auto;
+    transition:background .15s,color .15s;
+  }
+
+  .chip[aria-pressed="true"]{
+    background:var(--ember);
+    border-color:var(--ember);
+    color:#fff;
+  }
+
+  .custom-dates{
+    display:flex;
+    gap:8px;
+    margin-bottom:8px;
+  }
+
+  .custom-dates[hidden]{
+    display:none;
+  }
+
+  .custom-dates input[type="date"]{
+    font:inherit;
+    font-size:14px;
+    flex:1 1 0;
+    min-width:0;
+    border:1.5px solid var(--line);
+    border-radius:8px;
+    padding:6px 10px;
+    background:var(--stub);
+    color:var(--ink);
+  }
+
+  .date-error{
+    font-size:13px;
+    color:var(--ember);
+    font-weight:700;
+    margin:-4px 0 8px;
+  }
+
+  .filters{
+    display:flex;
+    gap:8px;
+    margin-bottom:8px;
+    flex-wrap:wrap;
+  }
+
+  .filter-select{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    border:1.5px solid var(--line);
+    border-radius:8px;
+    background:var(--stub);
+    color:var(--ink);
+    padding:7px 26px 7px 12px;
+    cursor:pointer;
+    flex:1 1 0;
+    min-width:90px;
+    -webkit-appearance:none;
+    appearance:none;
+    /* Clean fallback asset definition using exact hex configuration */
+    background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path d="M0 0L5 6L10 0Z" fill="%231E2B26"/></svg>');
+    background-repeat:no-repeat;
+    background-position:right 10px center;
+  }
+
+  .filter-select:focus{
+    outline:2px solid var(--ember);
+    outline-offset:1px;
+  }
+
+  .search-row{
+    display:flex;
+    gap:8px;
+    margin-bottom:10px;
+  }
+
+  .clear-btn{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    white-space:nowrap;
+    border:1.5px solid var(--ember);
+    border-radius:8px;
+    background:var(--ember);
+    color:#fff;
+    padding:0 14px;
+    cursor:pointer;
+    flex:0 0 auto;
+  }
+
+  .clear-btn:active{
+    opacity:.85;
+  }
+
+  #search{
+    padding:9px 12px;
+    font:inherit;
+    font-size:15px;
+    flex:1;
+    min-width:0;
+    border:1.5px solid var(--line);
+    border-radius:8px;
+    background:var(--stub);
+    color:var(--ink);
+  }
+
+  #search:focus{
+    outline:2px solid var(--ember);
+    outline-offset:1px;
+  }
+
+  .month{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:22px;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    color:var(--ink-soft);
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:26px 0 10px;
+  }
+
+  .month::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:var(--line);
+  }
+
+  .event{
+    display:flex;
+    gap:0;
+    background:var(--stub);
+    border-radius:10px;
+    margin-bottom:10px;
+    overflow:hidden;
+    text-decoration:none;
+    border:1px solid var(--line);
+    color:var(--ink); /* Keeps event info typography bound nicely over light card background */
+  }
+
+  .event:active{
+    transform:scale(.995);
+  }
+
+  .stub{
+    flex:0 0 74px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:12px 6px;
+    border-right:2px dashed var(--line);
+    position:relative;
+    font-family:var(--display);
+    text-transform:uppercase;
+    text-align:center;
+  }
+
+  .stub::before,
+  .stub::after{
+    content:"";
+    position:absolute;
+    right:-7px;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:var(--ink); /* Swapped circle cuts to match new dark background */
+    border:1px solid var(--line);
+  }
+
+  .stub::before{
+    top:-8px;
+  }
+
+  .stub::after{
+    bottom:-8px;
+  }
+
+  .dow{
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:.15em;
+    color:var(--ink-soft);
+  }
+
+  .day{
+    font-size:30px;
+    font-weight:700;
+    line-height:1;
+    margin:2px 0;
+  }
+
+  .range{
+    font-size:11px;
+    color:var(--ink-soft);
+    letter-spacing:.05em;
+  }
+
+  .info{
+    padding:12px 14px;
+    min-width:0;
+    flex:1;
+  }
+
+  .title{
+    font-weight:700;
+    font-size:16.5px;
+    line-height:1.25;
+  }
+
+  .meta{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    margin-top:4px;
+  }
+
+  .meta b{
+    font-weight:700;
+    color:var(--ink);
+  }
+
+  .tags{
+    margin-top:6px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    align-items:center;
+  }
+
+  .tag{
+    font-size:11.5px;
+    letter-spacing:.04em;
+    color:var(--heather);
+    border:1px solid currentColor;
+    border-radius:4px;
+    padding:1px 6px;
+  }
+
+  .new,
+  .sold-out{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:.1em;
+    background:var(--ember);
+    color:#fff;
+    border-radius:4px;
+    padding:2px 7px;
+    text-transform:uppercase;
+  }
+
+  .event.sold{
+    opacity:.55;
+  }
+
+  .event.sold .title{
+    text-decoration:line-through;
+    text-decoration-color:var(--ink-soft);
+  }
+
+  .empty,
+  .error{
+    padding:40px 10px;
+    text-align:center;
+    color:var(--ink-soft);
+  }
+
+  .warn{
+    display:block;
+    margin-top:10px;
+    padding:8px 12px;
+    font-size:14px;
+    font-weight:700;
+    color:#fff;
+    background:var(--ember);
+    border-radius:6px;
+  }
+
+  footer{
+    margin-top:34px;
+    font-size:12.5px;
+    color:var(--ink-soft);
+    border-top:1px solid var(--line);
+    padding-top:12px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{
+      transition:none!important;
+    }
   }
 </style>
 </head>
@@ -105,9 +443,13 @@
 
   <header>
     <h1>
-      <span class="black-bg">Out <span class="rust">and ab</span>out</span>
-      <span class="region rust">Galway</span>
+      <span class="black-bg">
+        <span class="white">OUT</span>
+        <span class="rust">AND AB</span><span class="white">OUT</span>
+      </span>
+      <span class="white region">GALWAY</span>
     </h1>
+
     <p class="updated" id="updated">Loading…</p>
   </header>
 
@@ -115,359 +457,3 @@
 
     <div class="filters">
       <select id="countyFilter"
-              class="filter-select"
-              aria-label="Filter by county"></select>
-
-      <select id="locationFilter"
-              class="filter-select"
-              aria-label="Filter by location"></select>
-
-      <select id="genreFilter"
-              class="filter-select"
-              aria-label="Filter by genre"></select>
-    </div>
-
-    <div class="search-row">
-      <input
-        id="search"
-        type="search"
-        placeholder="Search by event, venue or genre…"
-        aria-label="Search by event, venue or genre">
-
-      <button
-        id="clearFilters"
-        class="clear-btn"
-        type="button">
-        Clear all filters
-      </button>
-    </div>
-
-    <div
-      class="date-filters"
-      id="dateFilters"
-      role="group"
-      aria-label="Filter by date"></div>
-
-    <div
-      class="custom-dates"
-      id="customDates"
-      hidden>
-
-      <input
-        type="date"
-        id="dateFrom"
-        aria-label="From date">
-
-      <input
-        type="date"
-        id="dateTo"
-        aria-label="To date">
-    </div>
-
-    <p
-      class="date-error"
-      id="dateError"
-      hidden></p>
-
-    <div
-      class="extra-filters"
-      id="shapeFilters"
-      role="group"
-      aria-label="Filter by recurrence"></div>
-
-  </div>
-
-  <main id="list"></main>
-
-  <footer>
-    Pulled daily from each venue's own website. Tap an event for details
-    and booking on the venue's site.
-  </footer>
-
-</div>
-
-<script>
-
-const MONTHS=[
-  "January","February","March","April","May","June",
-  "July","August","September","October","November","December"
-];
-
-const DOWS=[
-  "Sun","Mon","Tue","Wed","Thu","Fri","Sat"
-];
-
-let EVENTS=[];
-let countySel="All";
-let genreSel="All";
-let locationSel="All";
-let query="";
-let dateSel=null;
-let customFrom="";
-let customTo="";
-let shapeSel=null;
-
-
-function normalizeTown(t){
-  return t==="Donegal" ? "Donegal Town" : t;
-}
-
-
-function locationLabel(ev){
-  return ev.town
-    ? normalizeTown(ev.town)
-    : (ev.county ? "No town listed" : null);
-}
-
-
-function addDays(iso,n){
-  const [y,m,d]=iso.split("-").map(Number);
-  return new Date(
-    Date.UTC(y,m-1,d+n)
-  ).toISOString().slice(0,10);
-}
-
-
-function weekdayOf(iso){
-  const [y,m,d]=iso.split("-").map(Number);
-  return new Date(
-    Date.UTC(y,m-1,d)
-  ).getUTCDay();
-}
-
-
-function todayISO(){
-  const parts=new Intl.DateTimeFormat(
-    "en-CA",
-    {
-      timeZone:"Europe/Dublin",
-      year:"numeric",
-      month:"2-digit",
-      day:"2-digit"
-    }
-  ).formatToParts(new Date());
-
-  const get=t=>parts.find(
-    p=>p.type===t
-  ).value;
-
-  return `${get("year")}-${get("month")}-${get("day")}`;
-}
-
-
-function weekendRange(today){
-  const wd=weekdayOf(today);
-
-  if(wd===6){
-    return {
-      from:today,
-      to:addDays(today,1)
-    };
-  }
-
-  if(wd===0){
-    return {
-      from:today,
-      to:today
-    };
-  }
-
-  const sat=addDays(today,6-wd);
-
-  return {
-    from:sat,
-    to:addDays(sat,1)
-  };
-}
-
-
-const TODAY_ISO=todayISO();
-const TOMORROW_ISO=addDays(TODAY_ISO,1);
-
-
-const el=(t,c,txt)=>{
-  const n=document.createElement(t);
-
-  if(c){
-    n.className=c;
-  }
-
-  if(txt!==undefined){
-    n.textContent=txt;
-  }
-
-  return n;
-};
-
-
-function fmt(iso){
-  const d=new Date(iso+"T12:00:00");
-
-  return {
-    dow:DOWS[d.getDay()],
-    day:d.getDate(),
-    mon:MONTHS[d.getMonth()].slice(0,3),
-    month:MONTHS[d.getMonth()],
-    key:iso.slice(0,7)
-  };
-}
-
-
-function isNew(ev,gen){
-  const first=new Date(ev.first_seen);
-  const g=new Date(gen);
-
-  return (g-first)/86400000 <= 7;
-}
-
-
-function fmtUpdated(iso){
-  try{
-    const d=new Date(iso);
-
-    if(isNaN(d)){
-      return iso;
-    }
-
-    return d.toLocaleString(
-      "en-IE",
-      {
-        day:"numeric",
-        month:"short",
-        hour:"2-digit",
-        minute:"2-digit",
-        timeZone:"Europe/Dublin"
-      }
-    );
-
-  }catch(e){
-    return iso;
-  }
-}
-
-
-function matchesShape(ev){
-
-  if(shapeSel==="single"){
-    return !ev.end_date;
-  }
-
-  if(shapeSel==="recurring"){
-    return !!ev.end_date;
-  }
-
-  return true;
-}
-
-
-function matchesGenre(ev){
-
-  if(genreSel==="All"){
-    return true;
-  }
-
-  if(genreSel==="Not listed"){
-    return !ev.category;
-  }
-
-  return (ev.category||"")
-    .split(", ")
-    .includes(genreSel);
-}
-
-
-function customRangeError(){
-
-  if(dateSel!=="custom"){
-    return null;
-  }
-
-  if(customFrom && customTo && customTo<customFrom){
-    return "End date can't be before the start date.";
-  }
-
-  if(customTo && customTo<TODAY_ISO){
-    return "That date range is in the past.";
-  }
-
-  return null;
-}
-
-
-function matchesDate(ev){
-
-  if(!dateSel){
-    return true;
-  }
-
-  const start=ev.date;
-  const end=ev.end_date||ev.date;
-
-  let from,to;
-
-  if(dateSel==="today"){
-    from=to=TODAY_ISO;
-  }
-
-  else if(dateSel==="tomorrow"){
-    from=to=TOMORROW_ISO;
-  }
-
-  else if(dateSel==="weekend"){
-    const w=weekendRange(TODAY_ISO);
-    from=w.from;
-    to=w.to;
-  }
-
-  else if(dateSel==="custom"){
-
-    if(!customFrom && !customTo){
-      return true;
-    }
-
-    from=customFrom||"0000-01-01";
-    to=customTo||"9999-12-31";
-  }
-
-  return start<=to && end>=from;
-}
-
-
-function render(gen){
-
-  const list=document.getElementById("list");
-
-  list.textContent="";
-
-  const errBox=document.getElementById("dateError");
-
-  const rangeErr=customRangeError();
-
-  errBox.hidden=!rangeErr;
-
-  if(rangeErr){
-    errBox.textContent=rangeErr;
-  }
-
-  const q=query.trim().toLowerCase();
-
-  const shown=rangeErr
-    ? []
-    : EVENTS.filter(e=>
-        (countySel==="All"||e.county===countySel) &&
-        (locationSel==="All"||locationLabel(e)===locationSel) &&
-        matchesGenre(e) &&
-        matchesDate(e) &&
-        matchesShape(e) &&
-        (!q || 
-          (e.title || "").toLowerCase().includes(q) || 
-          (e.venue || "").toLowerCase().includes(q) || 
-          (e.category || "").toLowerCase().includes(q)
-        )
-      );
-
-  // Complete your remaining card rendering loops here using the filtered "shown" array
-}
-</script>
-</body>
-</html>
