@@ -25,9 +25,13 @@
   .wrap{max-width:640px;margin:0 auto;padding:0 14px 80px}
 
   header{padding:22px 0 10px;border-bottom:3px solid var(--ink)}
-  h1{font-family:var(--display);font-weight:700;font-size:clamp(34px,9vw,46px);
-     letter-spacing:.02em;text-transform:uppercase;line-height:.95}
-  h1 span{color:var(--ember)}
+  h1{font-family:"Arial Black",Arial,sans-serif;font-weight:900;
+     font-size:clamp(20px,6.2vw,40px);text-transform:uppercase;line-height:1.05;
+     background:#000;padding:.5em .7em;border-radius:12px;display:block;
+     text-align:center;white-space:nowrap}
+  h1 .white{color:#fff}
+  h1 .rust{color:var(--ember)}
+  h1 .small{font-size:.68em}
   .updated{font-size:13px;color:var(--ink-soft);margin-top:6px}
 
   .controls{position:sticky;top:0;background:var(--mist);z-index:5;
@@ -115,7 +119,7 @@
 <body>
 <div class="wrap">
   <header>
-    <h1>North West<br>What's <span>On</span></h1>
+    <h1><span class="white">Out</span> <span class="rust small">and</span> <span class="rust">Ab</span><span class="white">out</span> <span class="rust">NW</span></h1>
     <p class="updated" id="updated">Loading…</p>
   </header>
 
