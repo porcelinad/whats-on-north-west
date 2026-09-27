@@ -1,4 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1E2B26">
+<title>Out and About North West</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="../outandabout_logo.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
 <style>
+  :root{
+    --mist:#ECEFE9;
+    --ink:#1E2B26;
+    --ink-soft:#54645D;
+    --ember:#B8481C;
+    --heather:#6F5B92;
+    --line:#C7CDC2;
+    --stub:#FFFFFF;
+
+    --display:"Barlow Condensed",sans-serif;
+    --body:"Atkinson Hyperlegible",system-ui,sans-serif;
+  }
+
+  *{
+    box-sizing:border-box;
+    margin:0;
+  }
+
+  body{
+    background:var(--mist);
+    color:var(--ink);
+    font-family:var(--body);
+    font-size:16px;
+    line-height:1.45;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{
+    color:inherit;
+  }
+
+  .wrap{
+    max-width:640px;
+    margin:0 auto;
+    padding:0 14px 80px;
+  }
+
+  header{
+    padding:22px 0 10px;
+    border-bottom:3px solid var(--ink);
+  }
+
   h1{
     font-family:"Arial Black",Arial,sans-serif;
     font-weight:900;
@@ -8,11 +64,59 @@
     letter-spacing:.01em;
   }
 
-  h1 .white{color:#fff}
-  h1 .rust{color:var(--ember)}
+  h1 .black-bg{
+    background-color: #000;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 0.2em 0.3em;
+    margin-bottom: 6px;
+  }
+
+  h1 .white{
+    color:#fff;
+  }
+
+  h1 .rust{
+    color:var(--ember);
+  }
+
   h1 .region{
     display:block;
     font-size:.62em;
     margin-top:4px;
   }
+
+  .updated{
+    font-size:13px;
+    color:var(--ink-soft);
+    margin-top:6px;
+  }
+
+  .controls{
+    position:sticky;
+    top:0;
+    background:var(--mist);
+    z-index:5;
+    padding:10px 0 12px;
+  }
 </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <h1>
+      <span class="black-bg">Out and About</span>
+      <span class="region rust">North West</span>
+    </h1>
+    <div class="updated">Last updated: Just now</div>
+  </header>
+
+  <div class="controls">
+    <!-- Controls content goes here -->
+  </div>
+</div>
+
+</body>
+</html>
