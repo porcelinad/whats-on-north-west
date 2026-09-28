@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-27T20:24Z",
+ "generated_at": "2026-09-28T01:41Z",
  "failed_sources": [
   "The Playhouse"
  ],
@@ -8,14 +8,14 @@
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-09-27T20:15Z",
   "hawkswell": "2026-09-26T01:35Z",
-  "craftmonth_donegal": "2026-09-25T01:32Z",
-  "craftmonth_derry": "2026-09-25T01:32Z",
-  "craftmonth_derry_city": "2026-09-25T01:32Z",
-  "craftmonth_leitrim": "2026-09-25T01:32Z",
-  "craftmonth_sligo": "2026-09-25T01:32Z",
-  "craftmonth_tyrone": "2026-09-25T01:32Z",
-  "craftmonth_fermanagh": "2026-09-25T01:32Z",
-  "heritageweek": "2026-09-25T01:32Z"
+  "craftmonth_donegal": "2026-09-28T01:41Z",
+  "craftmonth_derry": "2026-09-28T01:41Z",
+  "craftmonth_derry_city": "2026-09-28T01:41Z",
+  "craftmonth_leitrim": "2026-09-28T01:41Z",
+  "craftmonth_sligo": "2026-09-28T01:41Z",
+  "craftmonth_tyrone": "2026-09-28T01:41Z",
+  "craftmonth_fermanagh": "2026-09-28T01:41Z",
+  "heritageweek": "2026-09-28T01:41Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
@@ -40,7 +40,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 21
+  "playhouse": 22
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -374,84 +374,6 @@
    "url": "https://www.derryplayhouse.co.uk/event/thats-powerful-x-emergent-strategy",
    "category": null,
    "id": "e3ed15004bc0",
-   "first_seen": "2026-09-11"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Sligo Baroque Music Festival 2026",
-   "date": "2026-09-25",
-   "end_date": "2026-09-27",
-   "time": "7:30 pm",
-   "url": "https://www.themodel.ie/?event=sligo-baroque-music-festival-2026&event_date=2026-09-27",
-   "category": null,
-   "id": "ad86227805c6",
-   "first_seen": "2026-08-27"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Front and Centre Second Act",
-   "date": "2026-09-25",
-   "end_date": "2026-09-27",
-   "url": "https://www.derryplayhouse.co.uk/event/front-and-centre-second-act",
-   "category": null,
-   "id": "a24bbda23d1d",
-   "first_seen": "2026-09-11"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "E.T.",
-   "date": "2026-09-27",
-   "time": "2pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/e-t",
-   "category": null,
-   "id": "062dc6eb00c6",
-   "first_seen": "2026-09-20"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Jaws",
-   "date": "2026-09-27",
-   "time": "6pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/jaws",
-   "category": null,
-   "id": "9ef7773a89fa",
-   "first_seen": "2026-09-20"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "The Speks",
-   "date": "2026-09-27",
-   "time": "2pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/the-speks-4",
-   "category": "Kids/Family",
-   "id": "72a8baa348a7",
-   "first_seen": "2026-09-20"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Front and Centre Scratch",
-   "date": "2026-09-27",
-   "url": "https://www.derryplayhouse.co.uk/event/front-and-centre-scratch",
-   "category": null,
-   "id": "5bac227a150f",
    "first_seen": "2026-09-11"
   },
   {
