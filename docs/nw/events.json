@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-28T01:41Z",
+ "generated_at": "2026-09-29T02:35Z",
  "failed_sources": [
   "The Playhouse"
  ],
@@ -7,7 +7,7 @@
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-09-27T20:15Z",
-  "hawkswell": "2026-09-26T01:35Z",
+  "hawkswell": "2026-09-29T02:35Z",
   "craftmonth_donegal": "2026-09-28T01:41Z",
   "craftmonth_derry": "2026-09-28T01:41Z",
   "craftmonth_derry_city": "2026-09-28T01:41Z",
@@ -21,7 +21,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -40,7 +40,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 22
+  "playhouse": 23
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -457,19 +457,6 @@
    "first_seen": "2026-09-20"
   },
   {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Creative Media Courses",
-   "date": "2026-10-01",
-   "end_date": "2027-06-30",
-   "url": "https://nervecentre.org/whats-on/creative-media-courses-apply-now",
-   "category": "Workshop",
-   "id": "d6d3b2a8ca5f",
-   "first_seen": "2026-07-21"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -717,7 +704,6 @@
    "time": "7:00PM",
    "url": "https://nervecentre.org/whats-on/jordan-okeefe",
    "category": "Music/Comedy",
-   "sold_out": true,
    "id": "bd94b56e8ffd",
    "first_seen": "2026-08-08"
   },
@@ -984,6 +970,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "A Lecture by Martin A. Timoney – Archaeological Recognitions in Connacht and Clare from 1966 to 2026.",
+   "date": "2026-10-08",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/a-lecture-by-martin-a-timoney",
+   "category": null,
+   "id": "be6a470bcea5",
+   "first_seen": "2026-09-29"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -996,6 +995,19 @@
    "category": "Drama",
    "id": "ca13072835d6",
    "first_seen": "2026-07-31"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Aoife Dunne - Good Grief",
+   "date": "2026-10-08",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/aoife-dunne-good-grief",
+   "category": "Comedy",
+   "id": "61323efa2617",
+   "first_seen": "2026-09-29"
   },
   {
    "source": "rcc",
@@ -1063,6 +1075,19 @@
    "category": "Music",
    "id": "b4e75015a18e",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "An Evening with Kristin Hersh",
+   "date": "2026-10-09",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/an-evening-with-kristin-hersh",
+   "category": "Music",
+   "id": "a9daef7298ec",
+   "first_seen": "2026-09-29"
   },
   {
    "source": "eventbrite_donegal",
@@ -1216,6 +1241,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "A Tribute To The Music Of John Denver with Marc Roberts",
+   "date": "2026-10-10",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/a-tribute-to-the-music-of-john-denver-with-marc-roberts",
+   "category": null,
+   "id": "0532de28c2ec",
+   "first_seen": "2026-09-29"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -1227,6 +1265,19 @@
    "category": "Spoken Word",
    "id": "06e26c448105",
    "first_seen": "2026-09-09"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Ardal O’Hanlon: Not Himself",
+   "date": "2026-10-10",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/ardal-ohanlon-not-himself",
+   "category": "Comedy",
+   "id": "f55f2016d48e",
+   "first_seen": "2026-09-29"
   },
   {
    "source": "nervecentre",
@@ -1777,6 +1828,7 @@
    "time": "9:00am",
    "url": "https://ardhowen.com/show/homicide-timeline-training-including-coercive-control/",
    "category": "Adult Workshop",
+   "sold_out": true,
    "id": "8a765b789b47",
    "first_seen": "2026-09-09"
   },
@@ -3226,6 +3278,19 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Claudia Buckley’s Country Christmas",
+   "date": "2026-12-02",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/claudia-buckleys-country-christmas/",
+   "category": "Music",
+   "id": "06114ce59468",
+   "first_seen": "2026-09-29"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -3837,6 +3902,19 @@
    "category": "Music",
    "id": "0b937edb08a4",
    "first_seen": "2026-07-18"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Cash Returns – Still Goin To Jackson",
+   "date": "2027-01-09",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/cash-returns-still-goin-to-jackson/",
+   "category": "Music",
+   "id": "6040db4e0270",
+   "first_seen": "2026-09-29"
   },
   {
    "source": "an_grianan",
