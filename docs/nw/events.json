@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-29T02:35Z",
+ "generated_at": "2026-09-30T02:08Z",
  "failed_sources": [
   "The Playhouse"
  ],
@@ -21,7 +21,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -40,7 +40,7 @@
   "strule": 0,
   "ardhowen": 0,
   "themodel": 0,
-  "playhouse": 23
+  "playhouse": 24
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -375,33 +375,6 @@
    "category": null,
    "id": "e3ed15004bc0",
    "first_seen": "2026-09-11"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Psycho Spaghetti- A Comic Journey Inside The Teenage Mind",
-   "date": "2026-09-29",
-   "time": "11am",
-   "url": "https://www.hawkswell.com/whats-on/shows/psycho-spaghetti-a-comic-journey-inside-the-teenage-mind-2",
-   "category": "Secondary Schools",
-   "id": "c5cdb98c6e95",
-   "first_seen": "2026-09-20"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Teenage Sex and Death at Camp Miasma | Nerve Cinema",
-   "date": "2026-09-29",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/teenage-sex-and-death-at-camp-miasma-nerve-cinema",
-   "category": "Film",
-   "sold_out": true,
-   "id": "5f59e2522f78",
-   "first_seen": "2026-08-05"
   },
   {
    "source": "nervecentre",
@@ -1468,6 +1441,18 @@
    "first_seen": "2026-08-05"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Post-Photography: Artists in Conversation – Alan Phelan & Ailbhe Ní Bhriain",
+   "date": "2026-10-13",
+   "url": "https://www.thedock.ie/whats-on/post-photography-artists-in-conversation",
+   "category": "Visual Arts",
+   "id": "525cefdc0fd7",
+   "first_seen": "2026-09-30"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -1846,6 +1831,22 @@
    "first_seen": "2026-08-08"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Great | Crossing Lines",
+   "date": "2026-10-21",
+   "time": "7:00 pm",
+   "url": "https://regionalculturalcentre.com/events/great-crossing-lines/",
+   "merged_from": [
+    "rcc"
+   ],
+   "category": null,
+   "id": "400560892512",
+   "first_seen": "2026-09-30"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -2053,6 +2054,20 @@
    "category": "Music",
    "id": "47d6a36e991d",
    "first_seen": "2026-09-06"
+  },
+  {
+   "source": "themodel",
+   "venue": "The Model",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Kieran Quinn’s Teenage Theme Night #39",
+   "date": "2026-10-23",
+   "end_date": "2026-10-25",
+   "time": "8:00 pm",
+   "url": "https://www.themodel.ie/?event=k-quinn-teens39&event_date=2026-10-23",
+   "category": null,
+   "id": "ca808d069ec0",
+   "first_seen": "2026-09-30"
   },
   {
    "source": "an_grianan",
@@ -2789,18 +2804,6 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Mr. Bergmann of Deadman's Point – Nth Degree Productions",
-   "date": "2026-11-13",
-   "url": "https://www.thedock.ie/whats-on/mr-bergmann-of-deadmans-point",
-   "category": "Theatre",
-   "id": "0ca993ab6b0b",
-   "first_seen": "2026-09-27"
-  },
-  {
    "source": "themodel",
    "venue": "The Model",
    "town": "Sligo",
@@ -3129,13 +3132,13 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
-   "title": "Acts of Memory Screening and Q&A session with local award winning fimmaker Mariéad McClean",
+   "title": "Acts of Memory Screening and Q&A session with local award winning filmmaker Mairéad McClean",
    "date": "2026-11-26",
    "time": "7:00pm",
    "url": "https://struleartscentre.co.uk/show/acts-of-memory-screening-and-qa-session-with-local-award-winning-fimmaker-mariead-mcclean/",
    "category": "Film",
-   "id": "b95ec2300379",
-   "first_seen": "2026-08-28"
+   "id": "376db3e3806b",
+   "first_seen": "2026-09-30"
   },
   {
    "source": "ardhowen",
@@ -3921,13 +3924,12 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "For the Love of Shane MacGowan",
+   "title": "For the Love of Shane MacGowan – CANCELLED",
    "date": "2027-01-10",
    "url": "https://angrianan.com/event/for-the-love-of-shane-macgowan-2/",
-   "booking_url": "https://angrianan.ticketsolve.com/shows/873660772/events",
    "category": "Music",
-   "id": "d177435c06f3",
-   "first_seen": "2026-07-14"
+   "id": "81e439529492",
+   "first_seen": "2026-09-30"
   },
   {
    "source": "ardhowen",
@@ -4082,6 +4084,19 @@
    "category": null,
    "id": "dc1bc65c2fdd",
    "first_seen": "2026-09-23"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "The Greatest 80s Show",
+   "date": "2027-01-30",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/the-greatest-80s-show-2/",
+   "category": "Music",
+   "id": "ca8ec25df875",
+   "first_seen": "2026-09-30"
   },
   {
    "source": "ardhowen",
@@ -4780,6 +4795,19 @@
    "category": null,
    "id": "7f3f10a392e5",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Rory’s Stories The Good Ol’ Days",
+   "date": "2027-05-15",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/rorys-stories-the-good-ol-days/",
+   "category": "Comedy",
+   "id": "3948fc6a8779",
+   "first_seen": "2026-09-30"
   },
   {
    "source": "ardhowen",
@@ -8643,19 +8671,6 @@
    "category": null,
    "id": "22e3e3b64ccc",
    "first_seen": "2026-09-04"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Music: The Tunney family & Guests – Where Songs Do Thunder (Book Launch & Concert)",
-   "date": "2027-08-28",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-music-the-tunney-family-guests-where-songs-do-thunder-book-launch-and-concert/",
-   "category": "Spoken Word",
-   "id": "77550f1c8fb9",
-   "first_seen": "2026-09-05"
   },
   {
    "source": "eventbrite_donegal",
