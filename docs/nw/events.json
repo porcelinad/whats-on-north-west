@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-30T02:08Z",
+ "generated_at": "2026-10-01T02:10Z",
  "failed_sources": [
   "The Playhouse"
  ],
@@ -8,14 +8,14 @@
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-09-27T20:15Z",
   "hawkswell": "2026-09-29T02:35Z",
-  "craftmonth_donegal": "2026-09-28T01:41Z",
-  "craftmonth_derry": "2026-09-28T01:41Z",
-  "craftmonth_derry_city": "2026-09-28T01:41Z",
-  "craftmonth_leitrim": "2026-09-28T01:41Z",
-  "craftmonth_sligo": "2026-09-28T01:41Z",
-  "craftmonth_tyrone": "2026-09-28T01:41Z",
-  "craftmonth_fermanagh": "2026-09-28T01:41Z",
-  "heritageweek": "2026-09-28T01:41Z"
+  "craftmonth_donegal": "2026-10-01T02:10Z",
+  "craftmonth_derry": "2026-10-01T02:10Z",
+  "craftmonth_derry_city": "2026-10-01T02:10Z",
+  "craftmonth_leitrim": "2026-10-01T02:10Z",
+  "craftmonth_sligo": "2026-10-01T02:10Z",
+  "craftmonth_tyrone": "2026-10-01T02:10Z",
+  "craftmonth_fermanagh": "2026-10-01T02:10Z",
+  "heritageweek": "2026-10-01T02:10Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
@@ -39,8 +39,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 0,
-  "playhouse": 24
+  "themodel": 1,
+  "playhouse": 25
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -351,19 +351,6 @@
  },
  "events": [
   {
-   "source": "craftmonth_leitrim",
-   "venue": "The Leitrim Design House",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Feltmakers Ireland – Essence of Nature Exhibition",
-   "date": "2026-08-25",
-   "end_date": "2026-09-30",
-   "url": "https://augustcraftmonth.org/acm-event/feltmakers-ireland-essence-of-nature-exhibition/",
-   "category": "Exhibition, Craft/Hobbies",
-   "id": "0a32ed98a0db",
-   "first_seen": "2026-08-01"
-  },
-  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -375,19 +362,6 @@
    "category": null,
    "id": "e3ed15004bc0",
    "first_seen": "2026-09-11"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Rip it Up: This is England | Nerve Cinema",
-   "date": "2026-09-30",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/rip-it-up-this-is-england-nerve-cinema",
-   "category": "Film",
-   "id": "d13266f2505e",
-   "first_seen": "2026-08-08"
   },
   {
    "source": "an_grianan",
@@ -1415,6 +1389,22 @@
    "first_seen": "2026-09-09"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Wainfest! School Event: Mischief and Mystery in Moominvalley",
+   "date": "2026-10-12",
+   "time": "11:00 am",
+   "url": "https://regionalculturalcentre.com/events/wainfest-school-event-mischief-and-mystery-in-moominvalley/",
+   "merged_from": [
+    "rcc"
+   ],
+   "category": null,
+   "id": "50ca3dd07abb",
+   "first_seen": "2026-10-01"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -1439,6 +1429,19 @@
    "category": "Film",
    "id": "2ec7317a90ba",
    "first_seen": "2026-08-05"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Taster Tuesday: Community Games Night",
+   "date": "2026-10-13",
+   "time": "6:30PM",
+   "url": "https://nervecentre.org/whats-on/taster-tuesday-community-games-night",
+   "category": "Music/Comedy",
+   "id": "13632537910d",
+   "first_seen": "2026-10-01"
   },
   {
    "source": "thedock",
@@ -1521,6 +1524,22 @@
    "first_seen": "2026-08-29"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Wainfest! Schools Event: Niall DeBurca",
+   "date": "2026-10-15",
+   "time": "10:00 am",
+   "url": "https://regionalculturalcentre.com/events/wainfest-schools-event-niall-deburca/",
+   "merged_from": [
+    "rcc"
+   ],
+   "category": null,
+   "id": "5b3bf348b644",
+   "first_seen": "2026-10-01"
+  },
+  {
    "source": "thedock",
    "venue": "The Dock",
    "town": "Carrick-on-Shannon",
@@ -1583,6 +1602,22 @@
    "category": "Music/Comedy",
    "id": "840a85d6e5dd",
    "first_seen": "2026-09-18"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Wainfest! School Screening: A Bug’s Life",
+   "date": "2026-10-16",
+   "time": "10:30 am",
+   "url": "https://regionalculturalcentre.com/events/wainfest-school-screening-a-bugs-life/",
+   "merged_from": [
+    "rcc"
+   ],
+   "category": null,
+   "id": "2de4c9d9ea93",
+   "first_seen": "2026-10-01"
   },
   {
    "source": "st_columbs",
@@ -1686,6 +1721,22 @@
    "category": "Exhibition",
    "id": "0d92f5870a9f",
    "first_seen": "2026-08-21"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Wainfest – Drive-In Movie",
+   "date": "2026-10-17",
+   "time": "2:00 pm",
+   "url": "https://regionalculturalcentre.com/events/wainfest-drive-in-movie/",
+   "category": "Workshop",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "e49b6ac4c4d1",
+   "first_seen": "2026-10-01"
   },
   {
    "source": "st_columbs",
@@ -7614,19 +7665,6 @@
    "first_seen": "2026-08-29"
   },
   {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Donegal Mela – ‘Taare Zameen Par’",
-   "date": "2027-08-21",
-   "time": "7:00 pm",
-   "url": "https://regionalculturalcentre.com/events/donegal-mela-taare-zameen-par/",
-   "category": "Film",
-   "id": "2506e5d9770e",
-   "first_seen": "2026-08-29"
-  },
-  {
    "source": "eventbrite_donegal",
    "venue": "Roe Valley Arts and Cultural Centre",
    "town": "Limavady",
@@ -8712,19 +8750,6 @@
    "first_seen": "2026-09-06"
   },
   {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Workshop: Writing for Non – Human Entities with Barbara Knežević",
-   "date": "2027-08-29",
-   "time": "2:00 pm",
-   "url": "https://regionalculturalcentre.com/events/workshop-writing-for-non-human-entities-with-barbara-knezevic/",
-   "category": "Workshop",
-   "id": "a112f029c1c8",
-   "first_seen": "2026-09-06"
-  },
-  {
    "source": "eventbrite_donegal",
    "venue": "Leitrim School of Art N41 E8H0",
    "town": "Ballinamore",
@@ -8802,19 +8827,6 @@
    "category": "Exhibition",
    "id": "91a0643bbbaa",
    "first_seen": "2026-09-13"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Cinema: Romeo + Juliet (30th Anniversary)",
-   "date": "2027-09-10",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-cinema-romeo-juliet-30th-anniversary/",
-   "category": "Film",
-   "id": "409c47a89391",
-   "first_seen": "2026-09-18"
   },
   {
    "source": "eventbrite_donegal",
