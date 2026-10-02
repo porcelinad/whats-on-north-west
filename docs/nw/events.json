@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-01T02:10Z",
+ "generated_at": "2026-10-02T02:17Z",
  "failed_sources": [
   "The Playhouse"
  ],
@@ -7,7 +7,7 @@
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
   "eaf": "2026-09-27T20:15Z",
-  "hawkswell": "2026-09-29T02:35Z",
+  "hawkswell": "2026-10-02T02:17Z",
   "craftmonth_donegal": "2026-10-01T02:10Z",
   "craftmonth_derry": "2026-10-01T02:10Z",
   "craftmonth_derry_city": "2026-10-01T02:10Z",
@@ -21,7 +21,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -39,8 +39,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 1,
-  "playhouse": 25
+  "themodel": 2,
+  "playhouse": 26
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -368,118 +368,10 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "Ardal O’Hanlon: Not Himself",
-   "date": "2026-10-01",
-   "url": "https://angrianan.com/event/ardal-ohanlon-not-himself/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873661064/events/128635591/seats?zone=Default",
-   "category": "Comedy",
-   "id": "517da0ea42b6",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "EMER MAGUIRE: PERFECTLY CHAOTIC",
-   "date": "2026-10-01",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/emer-maguire-perfectly-chaotic/",
-   "category": "Comedy",
-   "sold_out": true,
-   "id": "6bbda8707375",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Seamie O’Dowd – Headful of Echoes",
-   "date": "2026-10-01",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/seamie-odowd-headful-of-echoes-20th-anniversary",
-   "category": "Music",
-   "id": "10365926be60",
-   "first_seen": "2026-09-20"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Cinema: The Last Viking",
-   "date": "2026-10-01",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-cinema-the-last-viking/",
-   "category": "Film",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "0c748962b5da",
-   "first_seen": "2026-08-29"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Opening of ‘What Remains…’ by Anushiya Sundaralingm",
-   "date": "2026-10-01",
-   "time": "7:00pm",
-   "url": "https://struleartscentre.co.uk/show/opening-of-what-remains-by-anushiya-sundaralingm/",
-   "category": "Exhibition",
-   "id": "3bf258f207ba",
-   "first_seen": "2026-08-19"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Film screening: Blue Heron",
-   "date": "2026-10-01",
-   "time": "8:00 pm",
-   "url": "/?event=sligo-film-society-2026-27&event_date=2026-10-01",
-   "category": null,
-   "id": "2eb4fb1dc2a4",
-   "first_seen": "2026-09-10"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Illuminations – Open Mic Poetry",
-   "date": "2026-10-01",
-   "time": "8:00 pm",
-   "url": "https://www.themodel.ie/?event=illuminations&event_date=2026-10-01",
-   "category": null,
-   "id": "656f7b2009c5",
-   "first_seen": "2026-09-05"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Sligo Film Society 2026/27",
-   "date": "2026-10-01",
-   "time": "8:00 pm",
-   "url": "https://www.themodel.ie/?event=sligo-film-society-2026-27&event_date=2026-10-01",
-   "category": null,
-   "id": "e435f0c3f3fb",
-   "first_seen": "2026-09-25"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
    "title": "Burke and Hare: Body Snatchers, Serial Killers, Ulstermen with Andrew Johnston",
    "date": "2026-10-02",
    "url": "https://angrianan.com/event/burke-and-hare-andrew-johnston/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873663401/events/128648339/seats?zone=Default",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873663401",
    "category": "Spoken Word",
    "id": "1e56f9203825",
    "first_seen": "2026-07-14"
@@ -564,19 +456,6 @@
    "first_seen": "2026-08-01"
   },
   {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Gallery Tour by Anushiya Sundaralingam",
-   "date": "2026-10-02",
-   "time": "11:00am",
-   "url": "https://struleartscentre.co.uk/show/gallery-tour-by-anushiya-sundaralingam/",
-   "category": "Spoken Word",
-   "id": "8e221e551e4b",
-   "first_seen": "2026-09-10"
-  },
-  {
    "source": "themodel",
    "venue": "The Model",
    "town": "Sligo",
@@ -651,6 +530,7 @@
    "time": "7:00PM",
    "url": "https://nervecentre.org/whats-on/jordan-okeefe",
    "category": "Music/Comedy",
+   "sold_out": true,
    "id": "bd94b56e8ffd",
    "first_seen": "2026-08-08"
   },
@@ -1314,6 +1194,32 @@
    "first_seen": "2026-08-02"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Matilda",
+   "date": "2026-10-11",
+   "time": "2pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/matilda",
+   "category": null,
+   "id": "3371b4cc5bf7",
+   "first_seen": "2026-10-02"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Pulp Fiction",
+   "date": "2026-10-11",
+   "time": "6pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/pulp-fiction",
+   "category": null,
+   "id": "0b9c0b351be7",
+   "first_seen": "2026-10-02"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -1890,10 +1796,10 @@
    "date": "2026-10-21",
    "time": "7:00 pm",
    "url": "https://regionalculturalcentre.com/events/great-crossing-lines/",
+   "category": "Film",
    "merged_from": [
     "rcc"
    ],
-   "category": null,
    "id": "400560892512",
    "first_seen": "2026-09-30"
   },
@@ -8906,6 +8812,19 @@
    "category": null,
    "id": "0b033ab7054e",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Joes Bar",
+   "town": "Strabane",
+   "county": "Tyrone",
+   "title": "SHANE TODD AT JOES BAR",
+   "date": "2027-09-24",
+   "time": "19:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/shane-todd-at-joes-bar/",
+   "category": null,
+   "id": "f93f17d6eba5",
+   "first_seen": "2026-10-02"
   }
  ]
 }
