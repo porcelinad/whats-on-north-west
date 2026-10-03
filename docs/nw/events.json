@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-02T02:17Z",
+ "generated_at": "2026-10-03T02:00Z",
  "failed_sources": [
   "The Playhouse"
  ],
@@ -21,7 +21,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 2,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -39,8 +39,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 2,
-  "playhouse": 26
+  "themodel": 3,
+  "playhouse": 27
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -364,71 +364,6 @@
    "first_seen": "2026-09-11"
   },
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Burke and Hare: Body Snatchers, Serial Killers, Ulstermen with Andrew Johnston",
-   "date": "2026-10-02",
-   "url": "https://angrianan.com/event/burke-and-hare-andrew-johnston/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873663401",
-   "category": "Spoken Word",
-   "id": "1e56f9203825",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "The Old Market Street Swing Band – With support from Felip Carbonell & Eddie McFarlane",
-   "date": "2026-10-02",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/the-old-market-street-swing-band",
-   "category": null,
-   "id": "6e45ca57414b",
-   "first_seen": "2026-09-23"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "A Night To Remember",
-   "date": "2026-10-02",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=a-night-to-remember",
-   "category": "Music",
-   "id": "9fc602a6fcfa",
-   "first_seen": "2026-08-20"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Rory's Stories: The Good Ol' Days",
-   "date": "2026-10-02",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/rorys-stories-the-good-ol-days",
-   "category": "Comedy",
-   "id": "90afe78ef60b",
-   "first_seen": "2026-09-23"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Django Donegal: Giacomo Smith Trio with Hugo Guezbar",
-   "date": "2026-10-02",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/django-donegal-giacomo-smith-trio-with-hugo-guezbar/",
-   "category": "Music",
-   "id": "62517732193a",
-   "first_seen": "2026-08-07"
-  },
-  {
    "source": "st_columbs",
    "venue": "St Columb's Hall",
    "town": "Derry",
@@ -440,33 +375,6 @@
    "category": null,
    "id": "7368b6c25e05",
    "first_seen": "2026-09-04"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Emer Maguire – Perfectly Chaotic",
-   "date": "2026-10-02",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/emer-maguire-perfectly-chaotic/",
-   "category": "Comedy",
-   "sold_out": true,
-   "id": "6dacf8acfdf1",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Graphite & Easel; Life Drawing Sessions",
-   "date": "2026-10-02",
-   "time": "10:30 am",
-   "url": "https://www.themodel.ie/?event=graphite-and-easel&event_date=2026-10-02",
-   "category": null,
-   "id": "babcd3b65bbe",
-   "first_seen": "2026-09-25"
   },
   {
    "source": "an_grianan",
@@ -1821,13 +1729,13 @@
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
    "county": "Fermanagh",
-   "title": "Enniskillen Drama Festival",
+   "title": "Enniskillen One Act Drama Festival",
    "date": "2026-10-22",
    "time": "7:30pm",
    "url": "https://ardhowen.com/show/enniskillen-drama-festival-3/",
    "category": "Drama",
-   "id": "d3f67cce9040",
-   "first_seen": "2026-09-25"
+   "id": "8e4aabcc2dd6",
+   "first_seen": "2026-10-03"
   },
   {
    "source": "rcc",
@@ -1928,13 +1836,13 @@
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
    "county": "Fermanagh",
-   "title": "Enniskillen Drama Festival",
+   "title": "Enniskillen One Act Drama Festival",
    "date": "2026-10-23",
    "time": "7:30pm",
    "url": "https://ardhowen.com/show/enniskillen-drama-festival-2/",
    "category": "Drama",
-   "id": "5cdaeba77312",
-   "first_seen": "2026-09-25"
+   "id": "804b8e21f6f0",
+   "first_seen": "2026-10-03"
   },
   {
    "source": "balor",
@@ -2044,13 +1952,13 @@
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
    "county": "Fermanagh",
-   "title": "Enniskillen Drama Festival",
+   "title": "Enniskillen One Act Drama Festival",
    "date": "2026-10-24",
    "time": "7:00pm",
    "url": "https://ardhowen.com/show/enniskillen-drama-festival/",
    "category": "Drama",
-   "id": "7d3fe7f56c86",
-   "first_seen": "2026-09-25"
+   "id": "7730fb58089c",
+   "first_seen": "2026-10-03"
   },
   {
    "source": "eventbrite_donegal",
@@ -2242,22 +2150,6 @@
    "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
-   "title": "Gremlins (4K Restoration) | Halloween Nerve Cinema",
-   "date": "2026-10-29",
-   "time": "4:00PM",
-   "url": "https://nervecentre.org/whats-on/gremlins-nerve-cinema",
-   "category": "Film",
-   "merged_from": [
-    "nervecentre"
-   ],
-   "id": "9ac0f8d17c0d",
-   "first_seen": "2026-09-10"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
    "title": "The Exorcist (Extended Director's Cut) | Halloween Nerve Cinema",
    "date": "2026-10-29",
    "time": "7:00PM",
@@ -2265,6 +2157,22 @@
    "category": "Film",
    "id": "da84753fc773",
    "first_seen": "2026-09-10"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The Nightmare Before Christmas (4K Restoration) | Halloween Nerve Cinema",
+   "date": "2026-10-29",
+   "time": "2:00PM",
+   "url": "https://nervecentre.org/whats-on/the-nightmare-before-christmas-halloween-nerve-cinema",
+   "category": "Film",
+   "merged_from": [
+    "nervecentre"
+   ],
+   "id": "b50223477d03",
+   "first_seen": "2026-10-03"
   },
   {
    "source": "rcc",
@@ -2677,6 +2585,7 @@
    "title": "The Canterbury Tales – Encore Productions",
    "date": "2026-11-11",
    "url": "https://angrianan.com/event/the-canterbury-tales-encore-productions/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666135/events/128660232/seats?zone=Default",
    "category": "Theatre",
    "id": "bbca63f4377a",
    "first_seen": "2026-07-14"
@@ -3302,6 +3211,18 @@
    "first_seen": "2026-09-25"
   },
   {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Fine and Dandy Market",
+   "date": "2026-12-06",
+   "url": "https://www.saintcolumbshall.com/whatson/fine-and-dandy-market-2/",
+   "category": null,
+   "id": "6606ea4b755a",
+   "first_seen": "2026-10-03"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -3744,6 +3665,19 @@
    "category": "Music",
    "id": "a90e69a26b84",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Blackwater Céilí Band in Concert",
+   "date": "2026-12-29",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/blackwater-ceili-band-in-concert/",
+   "category": "Music",
+   "id": "458e9c1f5841",
+   "first_seen": "2026-10-03"
   },
   {
    "source": "ardhowen",
@@ -4624,6 +4558,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "David McSavage: Pig Ignorant",
+   "date": "2027-04-09",
+   "url": "https://angrianan.com/event/david-mcsavage-pig-ignorant/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873668032/events/128666052/seats?zone=Auditorium",
+   "category": "Comedy",
+   "id": "046a95fb36b0",
+   "first_seen": "2026-10-03"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -4714,6 +4661,19 @@
    "category": "Drama",
    "id": "cbc70b7df26b",
    "first_seen": "2026-09-08"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "When Ireland Rocked",
+   "date": "2027-04-23",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/when-ireland-rocked-2/",
+   "category": "Music",
+   "id": "1381a0bb3445",
+   "first_seen": "2026-10-03"
   },
   {
    "source": "strule",
