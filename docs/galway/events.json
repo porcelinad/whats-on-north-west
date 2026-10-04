@@ -1,9 +1,10 @@
 {
- "generated_at": "2026-10-04T13:30Z",
+ "generated_at": "2026-10-04T13:43Z",
  "failed_sources": [],
  "source_last_run": {},
  "consecutive_failures": {
-  "tht": 0
+  "tht": 0,
+  "monroes": 0
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -24,6 +25,19 @@
    "category": "Community",
    "id": "ee0061abe440",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Outpost Comedy Club: Dan Stephens",
+   "date": "2026-10-05",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/outpost-comedy-club-19",
+   "category": "Comedy",
+   "id": "2d14f9dbb7cb",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -51,6 +65,19 @@
    "category": "Theatre",
    "id": "67dd42c8c68d",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Songwriters Open Mic",
+   "date": "2026-10-06",
+   "time": "Sign up from 7.30pm - 8pm",
+   "url": "https://monroes.ie/products/songwriters-open-mic-copy-13",
+   "category": "Music",
+   "id": "a18ab6b302aa",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -92,6 +119,32 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Astro Bloc",
+   "date": "2026-10-08",
+   "time": "Doors 9pm",
+   "url": "https://monroes.ie/products/astro-bloc",
+   "category": "Music",
+   "id": "dc6a4e3dd0ad",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Camille O'Sullivan",
+   "date": "2026-10-08",
+   "time": "Doors 7pm",
+   "url": "https://monroes.ie/products/camille-osullivan",
+   "category": "Music",
+   "id": "c29be0465207",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway",
@@ -128,6 +181,19 @@
    "url": "https://tht.ie/4884/baboro-2026",
    "category": "Kids/Family, Workshop",
    "id": "2136a0c33dbc",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Coldplace",
+   "date": "2026-10-09",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/coldplace-1",
+   "category": "Music",
+   "id": "740bcc001785",
    "first_seen": "2026-10-04"
   },
   {
@@ -204,6 +270,19 @@
    "url": "https://tht.ie/4884/baboro-2026",
    "category": "Kids/Family, Literature",
    "id": "e751396db8d4",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Huartan",
+   "date": "2026-10-10",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/huartan",
+   "category": "Music",
+   "id": "5fbe94270044",
    "first_seen": "2026-10-04"
   },
   {
@@ -401,6 +480,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Outpost Comedy Club: Owen Colgan",
+   "date": "2026-10-12",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/outpost-comedy-club-20",
+   "category": "Comedy",
+   "id": "d06d72132ef2",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Áras na nGael",
    "town": "Galway",
@@ -523,6 +615,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Fontaines C.D.",
+   "date": "2026-10-15",
+   "time": "Doors 7pm",
+   "url": "https://monroes.ie/products/fontaines-c-d",
+   "category": "Music",
+   "id": "06feaaf33c5e",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "St. Nicholas Church",
    "town": "Galway",
@@ -558,6 +663,19 @@
    "url": "https://tht.ie/4884/baboro-2026",
    "category": "For Adults",
    "id": "0b7883a25a79",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Just One Direction",
+   "date": "2026-10-16",
+   "time": "Doors 7.30pm",
+   "url": "https://monroes.ie/products/just-one-direction",
+   "category": "Music",
+   "id": "bd17269c4a40",
    "first_seen": "2026-10-04"
   },
   {
@@ -622,6 +740,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Kris Drever",
+   "date": "2026-10-17",
+   "time": "Doors 7pm",
+   "url": "https://monroes.ie/products/kris-drever",
+   "category": "Music",
+   "id": "d2d0b670b529",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Áras na nGael",
    "town": "Galway",
@@ -682,6 +813,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Jacek Stachursky",
+   "date": "2026-10-18",
+   "time": "Doors 6.30pm",
+   "url": "https://monroes.ie/products/jacek-stachursky",
+   "category": "Music",
+   "id": "aa92de888f3c",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway",
@@ -704,6 +848,19 @@
    "category": "Music",
    "id": "1152b9598576",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Outpost Comedy Club: Breda Hegarty",
+   "date": "2026-10-19",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/outpost-comedy-club-21",
+   "category": "Comedy",
+   "id": "ae6d0af614e3",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -799,6 +956,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Heineken Greenlight: Joshua Idehen + F3miii",
+   "date": "2026-10-23",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/heineken-greenlight-joshua-idehen-f3miii",
+   "category": "Music",
+   "id": "d79c4fe2172f",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "St. Nicholas Church",
    "town": "Galway",
@@ -826,6 +996,45 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Big Bag of Sticks",
+   "date": "2026-10-24",
+   "time": "Doors 7.30pm",
+   "url": "https://monroes.ie/products/big-bag-of-sticks",
+   "category": "Music",
+   "id": "d1782d24daf6",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Therapy Horse",
+   "date": "2026-10-24",
+   "time": "Doors 10pm",
+   "url": "https://monroes.ie/products/therapy-horse",
+   "category": "Music",
+   "id": "c55f843d9519",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Whiplash - Tribute to Metallica - ALL AGES SHOW",
+   "date": "2026-10-24",
+   "time": "Doors 2pm",
+   "url": "https://monroes.ie/products/whiplash-4",
+   "category": "Music",
+   "id": "56c5424b7347",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway",
@@ -850,6 +1059,32 @@
    "category": "Comedy",
    "id": "4245c61b1dd9",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Daft Punk Experience",
+   "date": "2026-10-25",
+   "time": "Doors 9pm",
+   "url": "https://monroes.ie/products/daft-punk-experience",
+   "category": "Music",
+   "id": "b6aef1c31c94",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Michael McGovern",
+   "date": "2026-10-25",
+   "time": "Doors 7pm",
+   "url": "https://monroes.ie/products/michael-mcgovern",
+   "category": "Music",
+   "id": "2a01770f1db0",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -892,6 +1127,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "The Beat",
+   "date": "2026-10-29",
+   "time": "Doors 7.30pm",
+   "url": "https://monroes.ie/products/the-beat-1",
+   "category": "Music",
+   "id": "486ae9bc5111",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway",
@@ -903,6 +1151,32 @@
    "category": "Theatre",
    "id": "619778ca2cc9",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Daoirí Farrell",
+   "date": "2026-10-30",
+   "time": "Doors 7pm",
+   "url": "https://monroes.ie/products/daoiri-farrell-2",
+   "category": "Music",
+   "id": "21d0dc9e3ab0",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Eamonn’s Vision",
+   "date": "2026-10-30",
+   "time": "Doors 9pm",
+   "url": "https://monroes.ie/products/eamonns-vision",
+   "category": "Music",
+   "id": "5f006047e638",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -957,6 +1231,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Songwriters Open Mic",
+   "date": "2026-11-03",
+   "time": "Sign up from 7.30pm - 8pm",
+   "url": "https://monroes.ie/products/songwriters-open-mic-copy-14",
+   "category": "Music",
+   "id": "83b45102ccef",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway",
@@ -983,6 +1270,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Gilli Apter",
+   "date": "2026-11-05",
+   "time": "Doors 7.30pm",
+   "url": "https://monroes.ie/products/gilli-apter",
+   "category": "Music",
+   "id": "c83259c42a37",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Black Box Theatre",
    "town": "Galway",
@@ -994,6 +1294,32 @@
    "category": "Music",
    "id": "481a083ce544",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "How I Became A Wave",
+   "date": "2026-11-06",
+   "time": "Doors 7pm",
+   "url": "https://monroes.ie/products/how-i-became-a-wave",
+   "category": "Music",
+   "id": "7c158d48ff4f",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Project Smok",
+   "date": "2026-11-06",
+   "time": "Doors 9pm",
+   "url": "https://monroes.ie/products/project-smok-2",
+   "category": "Music",
+   "id": "44692361834c",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -1020,6 +1346,19 @@
    "booking_url": "https://eu.bingoloco.com/galway",
    "category": "Variety",
    "id": "ad31fd419c9d",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Smash Hits!",
+   "date": "2026-11-07",
+   "time": "Doors 9pm",
+   "url": "https://monroes.ie/products/smash-hits-9",
+   "category": "Music",
+   "id": "f3480590418e",
    "first_seen": "2026-10-04"
   },
   {
@@ -1102,6 +1441,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Deuce - A Tribute to Rory Gallagher",
+   "date": "2026-11-13",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/deuce-1",
+   "category": "Music",
+   "id": "0c649ee39073",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway",
@@ -1113,6 +1465,32 @@
    "category": "Theatre",
    "id": "1888d591651e",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Andrew Ryan",
+   "date": "2026-11-14",
+   "time": "Doors 7pm",
+   "url": "https://monroes.ie/products/andrew-ryan",
+   "category": "Music",
+   "id": "697c483236ff",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Andrew Ryan (Extra show)",
+   "date": "2026-11-14",
+   "time": "Doors 5pm",
+   "url": "https://monroes.ie/products/andrew-ryan-1",
+   "category": "Music",
+   "id": "a9acfe410fd6",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -1196,6 +1574,32 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Abuse Your Illusion – Guns N’ Roses Tribute",
+   "date": "2026-11-20",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/abuse-your-illusion-1",
+   "category": "Music",
+   "id": "9d4019585c40",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Bicurious",
+   "date": "2026-11-20",
+   "time": "Doors 10pm",
+   "url": "https://monroes.ie/products/bicurious",
+   "category": "Music",
+   "id": "33d5499da447",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Black Box Theatre",
    "town": "Galway",
@@ -1207,6 +1611,19 @@
    "category": "Sport",
    "id": "48d57f616db7",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Pauric O'Meara",
+   "date": "2026-11-21",
+   "time": "Doors 7pm",
+   "url": "https://monroes.ie/products/pauric-omeara",
+   "category": "Music",
+   "id": "8dcaa3888a90",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -1260,6 +1677,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Arborist",
+   "date": "2026-11-26",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/arborist",
+   "category": "Music",
+   "id": "59f31ded04b0",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway",
@@ -1272,6 +1702,19 @@
    "category": "Community",
    "id": "e18c86989068",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "The Noughties",
+   "date": "2026-11-28",
+   "time": "Doors 10pm",
+   "url": "https://monroes.ie/products/noughty-1",
+   "category": "Music",
+   "id": "94280d4cbe91",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -1297,6 +1740,19 @@
    "category": "Community",
    "id": "e58bbeee67fe",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Songwriters Open Mic",
+   "date": "2026-12-01",
+   "time": "Sign up from 7.30pm - 8pm",
+   "url": "https://monroes.ie/products/songwriters-open-mic-copy-15",
+   "category": "Music",
+   "id": "d0c73ed38d96",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -1416,6 +1872,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Clare Sands",
+   "date": "2026-12-10",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/clare-sands",
+   "category": "Music",
+   "id": "ad48d540246e",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway",
@@ -1427,6 +1896,32 @@
    "category": "Music",
    "id": "dc42bf6f4e4f",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "The Essential Collection - A Tribute to George Michael",
+   "date": "2026-12-11",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/the-essential-collection",
+   "category": "Music",
+   "id": "52356427fa75",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Alabama 3",
+   "date": "2026-12-12",
+   "time": "Doors 7pm",
+   "url": "https://monroes.ie/products/alabama-4",
+   "category": "Music",
+   "id": "af9a80e5e087",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -1470,6 +1965,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Liam Ó Maonlaí & Rónán Ó Snodaigh",
+   "date": "2026-12-16",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/liam-o-maonlai-ronan-o-snodaigh",
+   "category": "Music",
+   "id": "b2d112271e8f",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway",
@@ -1509,6 +2017,19 @@
    "category": "Dance",
    "id": "41eac973a21e",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "2 Toke Pass",
+   "date": "2026-12-23",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/2-toke-pass",
+   "category": "Music",
+   "id": "0aef757e45b2",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -1641,6 +2162,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Rushified - A Tribute to Rush",
+   "date": "2027-01-30",
+   "time": "Doors 7.pm",
+   "url": "https://monroes.ie/products/rushified-1",
+   "category": "Music",
+   "id": "692800388ae5",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway",
@@ -1665,6 +2199,19 @@
    "category": "Dance",
    "id": "f6292cdeb821",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Conor McLain",
+   "date": "2027-02-04",
+   "time": "Doors 7.30pm",
+   "url": "https://monroes.ie/products/conor-mclain",
+   "category": "Music",
+   "id": "86075cede957",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -1810,6 +2357,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Paddy Casey",
+   "date": "2027-02-19",
+   "time": "Doors 7.30pm",
+   "url": "https://monroes.ie/products/paddy-casey-3",
+   "category": "Music",
+   "id": "deb61ec52e38",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Black Box Theatre",
    "town": "Galway",
@@ -1834,6 +2394,32 @@
    "category": "Music",
    "id": "0d3b59fddadb",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "When Ireland Rocked",
+   "date": "2027-03-05",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/when-ireland-rocked-2",
+   "category": "Music",
+   "id": "df6e31a8f463",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Shane Daniel Byrne",
+   "date": "2027-03-06",
+   "time": "Doors 7pm",
+   "url": "https://monroes.ie/products/shane-daniel-byrne-1",
+   "category": "Music",
+   "id": "aafeea3becc3",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -1886,6 +2472,19 @@
    "category": "Music",
    "id": "a6494cb1d034",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Michael McGoldrick, John McCusker and John Doyle",
+   "date": "2027-03-26",
+   "time": "Doors 7pm",
+   "url": "https://monroes.ie/products/michael-mcgoldrick-john-mccusker-and-john-doyle",
+   "category": "Music",
+   "id": "c0321935c684",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -2003,6 +2602,19 @@
    "category": "Talk",
    "id": "58322628a7f5",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Kieran Goss & Annie Kinsella",
+   "date": "2027-05-06",
+   "time": "Show 8pm",
+   "url": "https://monroes.ie/products/kieran-goss-amp-annie-kinsella",
+   "category": "Music",
+   "id": "ccea583ebef6",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
