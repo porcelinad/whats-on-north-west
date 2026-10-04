@@ -1,27 +1,27 @@
 {
- "generated_at": "2026-10-03T02:00Z",
+ "generated_at": "2026-10-04T02:41Z",
  "failed_sources": [
   "The Playhouse"
  ],
  "source_last_run": {
   "eventbrite_csv_hash": "190d9959f231",
   "eventbrite_csv_since": "2026-08-02T17:41Z",
-  "eaf": "2026-09-27T20:15Z",
+  "eaf": "2026-10-04T02:41Z",
   "hawkswell": "2026-10-02T02:17Z",
-  "craftmonth_donegal": "2026-10-01T02:10Z",
-  "craftmonth_derry": "2026-10-01T02:10Z",
-  "craftmonth_derry_city": "2026-10-01T02:10Z",
-  "craftmonth_leitrim": "2026-10-01T02:10Z",
-  "craftmonth_sligo": "2026-10-01T02:10Z",
-  "craftmonth_tyrone": "2026-10-01T02:10Z",
-  "craftmonth_fermanagh": "2026-10-01T02:10Z",
-  "heritageweek": "2026-10-01T02:10Z"
+  "craftmonth_donegal": "2026-10-04T02:41Z",
+  "craftmonth_derry": "2026-10-04T02:41Z",
+  "craftmonth_derry_city": "2026-10-04T02:41Z",
+  "craftmonth_leitrim": "2026-10-04T02:41Z",
+  "craftmonth_sligo": "2026-10-04T02:41Z",
+  "craftmonth_tyrone": "2026-10-04T02:41Z",
+  "craftmonth_fermanagh": "2026-10-04T02:41Z",
+  "heritageweek": "2026-10-04T02:41Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 2,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -39,8 +39,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 3,
-  "playhouse": 27
+  "themodel": 4,
+  "playhouse": 28
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -377,98 +377,6 @@
    "first_seen": "2026-09-04"
   },
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Rory’s Stories: The Good Ol’ Days",
-   "date": "2026-10-03",
-   "url": "https://angrianan.com/event/rorys-stories-the-good-ol-days/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873660598",
-   "category": "Comedy",
-   "id": "b74853c3e2cb",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "The Lodger – With live piano accompaniment",
-   "date": "2026-10-03",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/the-lodger",
-   "category": null,
-   "id": "93960151f766",
-   "first_seen": "2026-09-23"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Paul Sherry",
-   "date": "2026-10-03",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=paul-sherry",
-   "category": "Music",
-   "id": "da22fce0d340",
-   "first_seen": "2026-08-07"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "The Six Merry Murderesses",
-   "date": "2026-10-03",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/the-six-merry-murderesses-2",
-   "category": "Music",
-   "id": "768b708ad9aa",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Jordan O'Keefe",
-   "date": "2026-10-03",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/jordan-okeefe",
-   "category": "Music/Comedy",
-   "sold_out": true,
-   "id": "bd94b56e8ffd",
-   "first_seen": "2026-08-08"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Stuart Reid — Boogers, Books and Big Bottom Burps!",
-   "date": "2026-10-03",
-   "time": "2:00PM",
-   "url": "https://nervecentre.org/whats-on/stuart-reid-boogers-books-and-big-bottom-burps",
-   "category": "Music/Comedy",
-   "id": "c5d42d763d2a",
-   "first_seen": "2026-07-31"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Django Donegal: Rocky Gresset",
-   "date": "2026-10-03",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/django-donegal-angelo-debarre-trio-with-alexandre-cavaliere/",
-   "category": "Music",
-   "id": "e7d5f4dc0161",
-   "first_seen": "2026-09-22"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -481,33 +389,6 @@
    "category": "Exhibition",
    "id": "6d0d161a8b28",
    "first_seen": "2026-08-21"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Onóir – The Brotherhood Tour",
-   "date": "2026-10-03",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/onoir-the-brotherhood-tour/",
-   "category": "Music",
-   "sold_out": true,
-   "id": "493b0b46f58c",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Young Model Call-Out!",
-   "date": "2026-10-03",
-   "time": "11:00 am",
-   "url": "https://www.themodel.ie/?event=young-model-call-out-2026&event_date=2026-10-03",
-   "category": null,
-   "id": "4e5ae37fc436",
-   "first_seen": "2026-09-25"
   },
   {
    "source": "hawkswell",
@@ -2150,6 +2031,22 @@
    "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
+   "title": "Gremlins (4K Restoration) | Halloween Nerve Cinema",
+   "date": "2026-10-29",
+   "time": "4:00PM",
+   "url": "https://nervecentre.org/whats-on/gremlins-nerve-cinema",
+   "category": "Film",
+   "merged_from": [
+    "nervecentre"
+   ],
+   "id": "9ac0f8d17c0d",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
    "title": "The Exorcist (Extended Director's Cut) | Halloween Nerve Cinema",
    "date": "2026-10-29",
    "time": "7:00PM",
@@ -2157,22 +2054,6 @@
    "category": "Film",
    "id": "da84753fc773",
    "first_seen": "2026-09-10"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The Nightmare Before Christmas (4K Restoration) | Halloween Nerve Cinema",
-   "date": "2026-10-29",
-   "time": "2:00PM",
-   "url": "https://nervecentre.org/whats-on/the-nightmare-before-christmas-halloween-nerve-cinema",
-   "category": "Film",
-   "merged_from": [
-    "nervecentre"
-   ],
-   "id": "b50223477d03",
-   "first_seen": "2026-10-03"
   },
   {
    "source": "rcc",
@@ -8681,20 +8562,6 @@
    "first_seen": "2026-09-13"
   },
   {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Open Collection: An Exhibition in the Making",
-   "date": "2027-09-05",
-   "end_date": "2026-10-03",
-   "time": "2:00 pm",
-   "url": "https://regionalculturalcentre.com/exhibitions/open-collection-an-exhibition-in-the-making/",
-   "category": "Exhibition",
-   "id": "91a0643bbbaa",
-   "first_seen": "2026-09-13"
-  },
-  {
    "source": "eventbrite_donegal",
    "venue": "Áislann Chill Chartha",
    "town": "Kilcar",
@@ -8744,20 +8611,6 @@
    "url": "https://regionalculturalcentre.com/events/culture-night-at-the-rcc-2026/",
    "category": "Workshop",
    "id": "471739ac6e42",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Norman Gibson – Still Life Gola Island",
-   "date": "2027-09-18",
-   "end_date": "2026-10-03",
-   "time": "5:00 pm",
-   "url": "https://regionalculturalcentre.com/exhibitions/norman-gibson-still-life-gola-island/",
-   "category": "Exhibition",
-   "id": "503fb4c84035",
    "first_seen": "2026-09-26"
   },
   {
