@@ -1,11 +1,12 @@
 {
- "generated_at": "2026-10-04T14:07Z",
+ "generated_at": "2026-10-04T14:20Z",
  "failed_sources": [],
  "source_last_run": {},
  "consecutive_failures": {
   "tht": 0,
   "monroes": 0,
-  "roisindubh": 0
+  "roisindubh": 0,
+  "gfs": 0
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -14,6 +15,20 @@
   "https://tht.ie/4907/fairy-tree": "The Mick Lally Theatre, Druid Lane"
  },
  "events": [
+  {
+   "source": "gfs",
+   "venue": "Eye Cinema",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "The Cycle of Love (Galway Film Society)",
+   "date": "2026-10-04",
+   "end_date": "2026-10-05",
+   "time": "Sunday 5pm and 8pm, Monday 6:30pm",
+   "url": "https://www.tickettailor.com/events/galwayfilmsociety/2415267",
+   "category": "Film",
+   "id": "bfa0ceaf8e62",
+   "first_seen": "2026-10-04"
+  },
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
@@ -582,6 +597,20 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "gfs",
+   "venue": "Eye Cinema",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "My Father's Shadow (Galway Film Society)",
+   "date": "2026-10-11",
+   "end_date": "2026-10-12",
+   "time": "Sunday 5pm and 8pm, Monday 6:30pm (Open Caption & Audio Description available)",
+   "url": "https://www.tickettailor.com/events/galwayfilmsociety/2415268",
+   "category": "Film",
+   "id": "e0d19ab26a6e",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Galway Rowing Club",
    "town": "Galway",
@@ -852,6 +881,19 @@
    "url": "https://tht.ie/4884/baboro-2026",
    "category": "Kids/Family, Performance",
    "id": "b11d84f0fa02",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "gfs",
+   "venue": "Eye Cinema",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Colours of Time (additional screening) (Galway Film Society)",
+   "date": "2026-10-15",
+   "time": "6:30pm",
+   "url": "https://www.tickettailor.com/events/galwayfilmsociety/2445692",
+   "category": "Film",
+   "id": "301d591f19a4",
    "first_seen": "2026-10-04"
   },
   {
@@ -1178,6 +1220,20 @@
    "url": "https://tht.ie/4884/baboro-2026",
    "category": "Kids/Family, Workshop",
    "id": "e0d99befe901",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "gfs",
+   "venue": "Eye Cinema",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "The Stranger (Galway Film Society)",
+   "date": "2026-10-18",
+   "end_date": "2026-10-19",
+   "time": "Sunday 5pm and 8pm, Monday 6:30pm",
+   "url": "https://www.tickettailor.com/events/galwayfilmsociety/2417357",
+   "category": "Film",
+   "id": "71596905d586",
    "first_seen": "2026-10-04"
   },
   {
@@ -2116,6 +2172,20 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "gfs",
+   "venue": "Eye Cinema",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Just an Illusion (Galway Film Society)",
+   "date": "2026-11-01",
+   "end_date": "2026-11-02",
+   "time": "Sunday 5pm and 8pm, Monday 6:30pm",
+   "url": "https://www.tickettailor.com/events/galwayfilmsociety/2417358",
+   "category": "Film",
+   "id": "d3edded67513",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway",
@@ -2366,6 +2436,20 @@
    "url": "https://roisindubh.net/listings/powerhuas-2026-11-07-230000-81112",
    "category": "Music",
    "id": "271cf17f47b9",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "gfs",
+   "venue": "Eye Cinema",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Cactus Pears (Galway Film Society)",
+   "date": "2026-11-08",
+   "end_date": "2026-11-09",
+   "time": "Sunday 5pm and 8pm, Monday 6:30pm",
+   "url": "https://www.tickettailor.com/events/galwayfilmsociety/2417399",
+   "category": "Film",
+   "id": "5b36dc054f00",
    "first_seen": "2026-10-04"
   },
   {
@@ -2675,6 +2759,20 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "gfs",
+   "venue": "Eye Cinema",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Blue Heron (Galway Film Society)",
+   "date": "2026-11-15",
+   "end_date": "2026-11-16",
+   "time": "Sunday 5pm and 8pm, Monday 6:30pm",
+   "url": "https://www.tickettailor.com/events/galwayfilmsociety/2417400",
+   "category": "Film",
+   "id": "ccf9ea15e6ef",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway",
@@ -2894,7 +2992,6 @@
    "date": "2026-11-21",
    "time": "8pm",
    "url": "https://roisindubh.net/listings/club-gass-presents-haute-and-freddy-2026-11-21-200000-81512",
-   "sold_out": true,
    "category": "Music",
    "id": "13cf2ccae0cc",
    "first_seen": "2026-10-04"
@@ -2923,6 +3020,20 @@
    "url": "https://roisindubh.net/listings/powerhuas-2026-11-21-230000-81114",
    "category": "Music",
    "id": "6a9616745961",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "gfs",
+   "venue": "Eye Cinema",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "DJ Ahmet (Galway Film Society)",
+   "date": "2026-11-22",
+   "end_date": "2026-11-23",
+   "time": "Sunday 5pm and 8pm, Monday 6:30pm",
+   "url": "https://www.tickettailor.com/events/galwayfilmsociety/2417449",
+   "category": "Film",
+   "id": "e05302603623",
    "first_seen": "2026-10-04"
   },
   {
@@ -3172,6 +3283,20 @@
    "url": "https://roisindubh.net/listings/tom-stade-rules-2026-11-28-200000-81182",
    "category": "Comedy",
    "id": "006301451ef6",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "gfs",
+   "venue": "Eye Cinema",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "All That's Left of You (Galway Film Society)",
+   "date": "2026-11-29",
+   "end_date": "2026-11-30",
+   "time": "Sunday 5pm and 8pm, Monday 6:30pm (Open Caption)",
+   "url": "https://www.tickettailor.com/events/galwayfilmsociety/2417450",
+   "category": "Film",
+   "id": "c0fb0f993e96",
    "first_seen": "2026-10-04"
   },
   {
@@ -3460,6 +3585,20 @@
    "category": "Music",
    "id": "b185f7a78970",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "gfs",
+   "venue": "Eye Cinema",
+   "town": "Galway",
+   "county": "Galway",
+   "title": "Amélie (Galway Film Society)",
+   "date": "2026-12-06",
+   "end_date": "2026-12-07",
+   "time": "Sunday 5pm and 8pm, Monday 6:30pm (Open Caption)",
+   "url": "https://www.tickettailor.com/events/galwayfilmsociety/2417451",
+   "category": "Film",
+   "id": "b5f2634f1087",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "roisindubh",
