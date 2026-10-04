@@ -589,16 +589,20 @@ def roisin_events(items, source):
             (it["venue"], it["dt"].date(), it["title"].lower()), []).append(it)
     events = []
     for g in groups.values():
-        first, times = g[0], []
+        first, times, sessions = g[0], [], []
         for it in g:
             t = roisin_time(it["dt"])
             if t and t not in times:
                 times.append(t)
+                sessions.append({k: v for k, v in {
+                    "time": t, "url": it["url"], "booking_url": it["booking"],
+                    "sold_out": it["sold"]}.items() if v})
         events.append(make_event(
             source, first["title"], first["dt"].date(),
             time=" & ".join(times) or None, url=first["url"],
             booking_url=next((i["booking"] for i in g if i["booking"]), None),
             sold_out=all(i["sold"] for i in g),
+            sessions=sessions if len(sessions) > 1 else None,
             category=first["category"], venue=first["venue"]))
     return events
 
@@ -664,7 +668,7 @@ GFS_SMALL_WORDS = {"a", "an", "and", "as", "at", "but", "by", "for", "in",
                    "of", "on", "or", "the", "to", "vs"}
 # capitals that really are initials, so stay capitals; every OTHER shouted
 # word - including short ones like MY, ME or IT - is capitalised normally
-GFS_ACRONYMS = {"DJ", "TV", "UK", "US", "USA", "USSR", "UN", "EU", "MC",
+GFS_ACRONYMS = {"DJ", "TV", "UK", "US", "USA", "USSR", "UN", "EU", "MC", "LEGO",
                 "OK", "AI", "CD", "DVD", "BBC", "RTE", "FBI", "CIA", "JFK"}
 GFS_TIMES_RE = re.compile(
     r"Screening times?\s+(?:is|are)\s*[:\-]?\s*(.+?)(?:\.(?=\s|$|[A-Z])|$)", re.I)
@@ -1407,8 +1411,10 @@ def ll_next_url(soup, page_url):
     for a in soup.find_all("a", href=True):
         rel = a.get("rel") or []
         rel = rel.split() if isinstance(rel, str) else rel
-        if "next" in [r.lower() for r in rel] or re.fullmatch(
-                r"next(?: events)?\s*(?:\u00bb|>|&raquo;)?", clean(a.get_text(" ")), re.I):
+        labels = [clean(a.get_text(" ")), clean(a.get("title") or ""),
+                  clean(a.get("aria-label") or "")]
+        if "next" in [r.lower() for r in rel] or any(re.fullmatch(
+                r"next(?: events)?\s*(?:\u00bb|>|&raquo;)?", t, re.I) for t in labels):
             href = a["href"].strip()
             if href and not href.startswith("#"):
                 return urljoin(page_url, href)
@@ -1625,6 +1631,246 @@ def parse_musicforgalway(soup, source):
     return mfg_events(raws, source)
 
 
+# ------------------------------------------------------- Galway City Museum
+#
+# galwaycitymuseum.ie/events/ is the 'Events Calendar' plugin's Photo view.
+# Its Next button swaps the list in without changing the URL (the page loads
+# the next batch behind the scenes) - the same situation as Roisin Dubh. The
+# page also advertises the plugin's built-in data API (the 'tec-api-origin'
+# meta tag): /wp-json/tribe/events/v1/events returns every upcoming event,
+# including ones in progress, as JSON with exact dates and times, and a
+# 'next_rest_url' for the following batch. That is used first.
+#
+# If the API isn't there (or is blocked), the page itself is read: embedded
+# JSON-LD if it has any, otherwise each event's card (found from its
+# /event/<slug>/ link, so the markup around it doesn't matter), with the
+# year inferred, following the page's own Next link.
+#
+# Two museum habits are handled:
+#   - the same workshop is often listed twice in a day as separate events
+#     (e.g. a LEGO workshop at 11:30 and again at 2pm). They'd collide on
+#     the same title and date, so they become ONE card with both times.
+#   - titles start with a SHOUTED type - 'FAMILY WORKSHOP: ...',
+#     'STORYTELLING: ...'. That prefix becomes the genre, and the title is
+#     tidied out of capitals.
+
+GCM_API = "https://galwaycitymuseum.ie/wp-json/tribe/events/v1/events"
+GCM_MAX_PAGES = 6
+GCM_PREFIX_GENRES = {
+    "family workshop": "Workshop, Kids/Family", "workshop": "Workshop",
+    "talk": "Talk", "lecture": "Talk", "illustrated talk": "Talk",
+    "tour": "Tour", "gallery tour": "Tour", "film": "Film",
+}
+GCM_MONTH = r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?"
+GCM_DAY_RE = re.compile(r"\b(" + GCM_MONTH + r")\s+(\d{1,2})\b", re.I)
+GCM_TIME_RE = re.compile(r"(\d{1,2}):(\d{2})\s*([ap]m)", re.I)
+
+
+def tidy_shouting(raw):
+    """Takes capitals out of the SHOUTED parts of a title, and only those:
+    the type prefix before the first colon ('FAMILY WORKSHOP:'), and any run
+    of two or more capitalised words ('SPOOKY HALLOWEEN'). A capitalised
+    word on its own is left alone, so initialisms and brands survive - the
+    NLI, UCD, LEGO. Known acronyms inside a shouted run also stay."""
+    words = raw.split(" ")
+
+    def caps(w):
+        core = re.sub(r"[^A-Za-z\u00c0-\u00ff]", "", w)
+        return len(core) >= 2 and core.isupper()
+
+    colon = next((k for k, w in enumerate(words) if w.endswith(":")), None)
+    out = list(words)
+    for i, w in enumerate(words):
+        if not caps(w):
+            continue
+        in_prefix = colon is not None and i <= colon
+        in_run = (i > 0 and caps(words[i - 1])) or (i + 1 < len(words) and caps(words[i + 1]))
+        if not (in_prefix or in_run):
+            continue
+        core = re.sub(r"[^A-Za-z\u00c0-\u00ff]", "", w)
+        if core in GFS_ACRONYMS:
+            continue
+        after_colon = i > 0 and words[i - 1].endswith(":")
+        if i > 0 and core.lower() in GFS_SMALL_WORDS and not after_colon:
+            out[i] = w.lower()
+        else:
+            out[i] = re.sub(r"[A-Za-z\u00c0-\u00ff]", lambda m: m.group().upper(),
+                            w.lower(), count=1)
+    return " ".join(out)
+
+
+def gcm_category(title, rest_cats):
+    m = re.match(r"\s*([A-Za-z ]{3,30}):", title)
+    if m:
+        prefix = m.group(1).strip()
+        mapped = GCM_PREFIX_GENRES.get(prefix.lower())
+        if mapped:
+            return mapped
+        if prefix.isupper():
+            return prefix.title()
+    return ", ".join(dict.fromkeys(c for c in rest_cats if c)) or None
+
+
+def gcm_json(url, params=None):
+    headers = dict(HEADERS, **{"Accept": "application/json, text/plain, */*"})
+    r = requests.get(url, params=params, headers=headers, timeout=TIMEOUT)
+    r.raise_for_status()
+    return r.json()
+
+
+def gcm_raw_from_rest(ev, source):
+    title = clean(unescape(ev.get("title") or ""))
+    try:
+        st = datetime.strptime(ev.get("start_date") or "", "%Y-%m-%d %H:%M:%S")
+    except ValueError:
+        return None
+    if not title:
+        return None
+    end = None
+    try:
+        en = datetime.strptime(ev.get("end_date") or "", "%Y-%m-%d %H:%M:%S").date()
+        end = en if en != st.date() else None
+    except ValueError:
+        pass
+    timed = not ev.get("all_day") and (st.hour, st.minute) != (0, 0)
+    venue = ev.get("venue")
+    venue = venue[0] if isinstance(venue, list) and venue else venue
+    vname = clean(unescape(venue.get("venue") or "")) if isinstance(venue, dict) else ""
+    cats = [clean(unescape(c.get("name") or "")) for c in (ev.get("categories") or [])
+            if isinstance(c, dict)]
+    return {"title": title, "start": st.date(), "end": end,
+            "minutes": st.hour * 60 + st.minute if timed else None,
+            "time": clock12(st.hour, st.minute) if timed else None,
+            "url": ev.get("url") or source["url"],
+            "venue": vname or source["venue"], "cats": cats}
+
+
+def gcm_fetch_rest(source):
+    raws, url, params = [], GCM_API, {"per_page": 50}
+    for _ in range(GCM_MAX_PAGES):
+        data = gcm_json(url, params)
+        batch = data.get("events") if isinstance(data, dict) else None
+        if not isinstance(batch, list):
+            raise ValueError("unexpected response from the events API")
+        raws.extend(r for r in (gcm_raw_from_rest(e, source) for e in batch) if r)
+        url, params = (data.get("next_rest_url") or None), None
+        if not url:
+            break
+        time.sleep(0.3)
+    return raws
+
+
+def gcm_raw_from_html(page, source):
+    """JSON-LD if the page has any; otherwise each card found from its
+    /event/<slug>/ link."""
+    items = ll_jsonld_events_raw(page)
+    if items:
+        out = []
+        for f in (ld_fields(i) for i in items):
+            if f:
+                m = re.match(r"(\d{1,2}):(\d{2})", f["time"] or "")
+                out.append({"title": f["title"], "start": f["start"], "end": f["end"],
+                            "minutes": None, "time": f["time"], "url": f["url"] or source["url"],
+                            "venue": source["venue"], "cats": []})
+        return out
+    slug_re = re.compile(r"/event/([^/]+)/?")
+    best, out = {}, []
+    for a in page.find_all("a", href=True):
+        m = slug_re.search(urlparse(a["href"]).path)
+        text = clean(a.get_text(" "))
+        if not m or not text:
+            continue
+        in_heading = a.find_parent(re.compile(r"^h[1-6]$")) is not None
+        if m.group(1) not in best or (in_heading and not best[m.group(1)][1]):
+            best[m.group(1)] = (a, in_heading)
+    for slug, (a, _) in best.items():
+        card = a
+        while card.parent is not None and card.parent.name not in ("body", "html", "[document]"):
+            slugs = {slug_re.search(urlparse(x["href"]).path).group(1)
+                     for x in card.parent.find_all("a", href=True)
+                     if slug_re.search(urlparse(x["href"]).path)}
+            if len(slugs) > 1:
+                break
+            card = card.parent
+        heading = card.find(re.compile(r"^h[1-6]$"))
+        title = clean((heading or a).get_text(" "))
+        rest = clean(card.get_text(" ")).replace(title, " ")
+        dm = GCM_DAY_RE.search(rest)
+        if not dm:
+            continue
+        dates = md_dates(dm.group(1), dm.group(2), None)
+        second = GCM_DAY_RE.search(rest, dm.end()) if re.match(r"\s*[-\u2013]\s*", rest[dm.end():]) else None
+        if second:
+            dates = md_dates(dm.group(1), dm.group(2), None, second.group(1), second.group(2), None)
+        if not dates:
+            continue
+        tm = GCM_TIME_RE.search(rest)
+        out.append({"title": title, "start": dates[0], "end": dates[1],
+                    "minutes": (int(tm.group(1)) % 12 + (12 if tm.group(3).lower() == "pm" else 0)) * 60
+                               + int(tm.group(2)) if tm else None,
+                    "time": ll_clock(tm.group(1), tm.group(2), tm.group(3)) if tm else None,
+                    "url": urljoin(source["url"], a["href"]), "venue": source["venue"], "cats": []})
+    return out
+
+
+def gcm_fetch_html(source):
+    page, page_url, raws, seen = fetch(source["url"]), source["url"], [], set()
+    for n in range(GCM_MAX_PAGES):
+        found = gcm_raw_from_html(page, source)
+        fresh = [r for r in found if (r["title"], r["start"], r["time"]) not in seen]
+        seen.update((r["title"], r["start"], r["time"]) for r in found)
+        raws.extend(fresh)
+        if n == 0 and not found:
+            if re.search(r"events found|no upcoming|no events", page.get_text(" "), re.I):
+                return []
+            raise ValueError("no events found - the layout has changed, "
+                             "or the page is empty or blocked")
+        nxt = ll_next_url(page, page_url)
+        if not nxt or not fresh:
+            break
+        try:
+            page, page_url = fetch(nxt), nxt
+        except Exception as exc:
+            print(f"  could not read Galway City Museum page {n + 2}: {exc}", file=sys.stderr)
+            break
+        time.sleep(0.4)
+    return raws
+
+
+def gcm_events(raws, source):
+    groups = {}
+    for r in sorted(raws, key=lambda r: (r["start"], r["minutes"] or 0)):
+        groups.setdefault((r["title"].lower(), r["start"], r["venue"]), []).append(r)
+    events = []
+    for g in groups.values():
+        first, times, sessions = g[0], [], []
+        for r in g:
+            if r["time"] and r["time"] not in times:
+                times.append(r["time"])
+                sessions.append({"time": r["time"], "url": r["url"]})
+        venue = ("Galway City Museum" if re.search(r"city museum", first["venue"], re.I)
+                 else first["venue"])
+        events.append(make_event(
+            source, tidy_shouting(first["title"]), first["start"],
+            end_date=first["end"].isoformat() if first["end"] else None,
+            time=" & ".join(times) or None, url=first["url"], venue=venue,
+            sessions=sessions if len(sessions) > 1 else None,
+            category=gcm_category(first["title"], first["cats"])))
+    return events
+
+
+def parse_galway_museum(source):
+    try:
+        raws = gcm_fetch_rest(source)
+        route = "events API"
+    except Exception as exc:
+        print(f"  Galway City Museum: events API unavailable ({exc}); "
+              f"reading the page instead", file=sys.stderr)
+        raws, route = gcm_fetch_html(source), "page"
+    print(f"  Galway City Museum: read via the {route}")
+    return gcm_events(raws, source)
+
+
 SOURCES = [
     {"name": "tht", "venue": "Town Hall Theatre", "town": "Galway City",
      "county": "Galway", "url": "https://tht.ie/all",
@@ -1655,6 +1901,9 @@ SOURCES = [
     {"name": "musicforgalway", "venue": "Music for Galway", "town": "Galway City",
      "county": "Galway", "url": "https://musicforgalway.ie/calendar-view/",
      "parser": parse_musicforgalway, "quiet_if_empty": True},
+    {"name": "galway_city_museum", "venue": "Galway City Museum", "town": "Galway City",
+     "county": "Galway", "url": "https://galwaycitymuseum.ie/events/",
+     "parser": parse_galway_museum, "custom_fetch": True, "quiet_if_empty": True},
 ]
 
 
@@ -1741,16 +1990,77 @@ def normalize_category(cat):
 # Empty for now - grows as real cross-source duplicates turn up, same as
 # the North West's own DEDUP_NOISE_PREFIXES/DEDUP_ALIASES did over time.
 # lowest number wins when two sources list the same event - the venue's own
-# listing (Arts Centre, Mick Lally, An Taibhdhearc, Leisureland, Music for Galway, then THT) beats a promoter that cross-lists them
+# listing (Arts Centre, Mick Lally, An Taibhdhearc, Leisureland, City Museum, Music for Galway, then THT) beats a promoter that cross-lists them
 SOURCE_PRIORITY = {"gac": 0, "mick_lally": 1, "taibhdhearc": 2,
-                   "leisureland": 3, "musicforgalway": 4, "tht": 5,
-                   "monroes": 6, "roisindubh": 7, "gfs": 8}
+                   "leisureland": 3, "galway_city_museum": 4,
+                   "musicforgalway": 5, "tht": 6, "monroes": 7,
+                   "roisindubh": 8, "gfs": 9}
 DEDUP_NOISE_PREFIXES = []
 DEDUP_ALIASES = []
 DEDUP_THRESHOLD = 0.7
 
 
 # ---------------------------------------------------------------- pipeline
+
+def _time_sort_key(text):
+    """Minutes since midnight from the first clock time in a string such as
+    '2pm', '11:30am' or 'Doors 8pm', so sessions sort chronologically."""
+    m = re.search(r"(\d{1,2})(?::(\d{2}))?\s*(am|pm)", text or "", re.I)
+    if not m:
+        return 0
+    return ((int(m.group(1)) % 12 + (12 if m.group(3).lower() == "pm" else 0)) * 60
+            + int(m.group(2) or 0))
+
+
+def merge_same_day_sessions(events):
+    """One card for the same show on the same day at different times. Without
+    this, a source that lists a repeat as a separate event (two shows a
+    night, a workshop at 11am and again at 2pm) would have all but the first
+    silently dropped by the final de-duplication, which keys on source +
+    title + date. Each session keeps its own time and link, so the page can
+    show a chip per session; the card is sold out only if every session is.
+    Only single-day events that HAVE a time and no sessions list yet are
+    considered - sources that already merged their own sessions (Galway City
+    Museum, Roisin Dubh) pass straight through - and only when the times
+    differ; identical repeats are left for the normal de-duplication."""
+    groups, order = {}, []
+    for e in events:
+        if e.get("end_date") or e.get("sessions") or not e.get("time"):
+            order.append(e)
+            continue
+        key = (e["source"], (e.get("venue") or "").lower(),
+               e["title"].strip().lower(), e["date"])
+        if key not in groups:
+            groups[key] = []
+            order.append(key)
+        groups[key].append(e)
+    out = []
+    for item in order:
+        if not isinstance(item, tuple):
+            out.append(item)
+            continue
+        group = groups[item]
+        by_time = {}
+        for e in sorted(group, key=lambda e: _time_sort_key(e["time"])):
+            by_time.setdefault(e["time"], e)
+        if len(by_time) < 2:
+            out.extend(group)
+            continue
+        ordered = list(by_time.values())
+        merged = dict(ordered[0])
+        merged["time"] = " & ".join(by_time)
+        merged["sessions"] = [
+            {k: v for k, v in {"time": t, "url": e.get("url"),
+                               "booking_url": e.get("booking_url"),
+                               "sold_out": e.get("sold_out")}.items() if v}
+            for t, e in by_time.items()]
+        if all(e.get("sold_out") for e in ordered):
+            merged["sold_out"] = True
+        else:
+            merged.pop("sold_out", None)
+        out.append(merged)
+    return out
+
 
 def main():
     previous = load_previous(DATA_FILE, extra_defaults={"venue_cache": {}})
@@ -1795,7 +2105,7 @@ def main():
 
     seen, final, outside = set(), [], []
     for ev in merge_cross_source_duplicates(
-            all_events, source_priority=SOURCE_PRIORITY,
+            merge_same_day_sessions(all_events), source_priority=SOURCE_PRIORITY,
             noise_prefixes=DEDUP_NOISE_PREFIXES, aliases=DEDUP_ALIASES,
             threshold=DEDUP_THRESHOLD, merge_same_source=False):
         canon = COUNTY_CANONICAL.get((ev.get("county") or "").strip().lower())
