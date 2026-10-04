@@ -12,14 +12,16 @@ scrapers at once.
 import json
 import os
 import re
+import requests
 import sys
 import time
 from datetime import date, datetime, timedelta, timezone
+from html import unescape
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import quote, urljoin, urlparse
 
 from common import (
-    TODAY, MONTHS,
+    TODAY, MONTHS, HEADERS, TIMEOUT,
     fetch, clean, walk, make_event,
     infer_range_years,
     make_town_resolver,
@@ -410,6 +412,218 @@ def parse_monroes(soup, source):
     return events
 
 
+# ------------------------------------------------------------- Róisín Dubh
+#
+# roisindubh.net/listings/ is an empty shell: its listings are filled in by
+# JavaScript, which calls a JSON endpoint once per month -
+#     /remote/searchlistings.json   with   {"query": "", "month": "11/2026"}
+# and /remote/listing-month-selector.json says which months exist. This calls
+# the same endpoints directly (no browser needed). Each result is a full
+# listing - title, an `alias` (the listing's URL slug, so the 'non-guessable'
+# URLs are simply handed to us), the exact start date-time, venue, sold-out
+# state and ticket link - so no per-event page visits are needed either.
+#
+# The request is a POST (confirmed in the browser's dev tools); whether its
+# body is JSON or form-encoded wasn't shown, though the payload looked like
+# JSON - so JSON is tried first, then form, on the second month. A style only
+# counts as working if what comes back is really for the month asked for -
+# a server that can't parse a request tends to quietly return the CURRENT
+# month instead, which would otherwise duplicate it across every month.
+
+ROISIN_BASE = "https://roisindubh.net"
+ROISIN_API = ROISIN_BASE + "/remote/searchlistings.json"
+ROISIN_MONTHS_API = ROISIN_BASE + "/remote/listing-month-selector.json"
+ROISIN_STYLES = ("post_json", "post_form")
+ROISIN_MAX_MONTHS = 14
+# Recurring nights to leave out, lower-case - e.g. {"last orders"}
+ROISIN_SKIP_TITLES = set()
+_ROISIN_STYLE = None   # whichever request style turned out to work
+
+ROISIN_COMEDY_RE = re.compile(r"\bcomed(?:y|ian|ians)\b|\bstand-?up\b", re.I)
+ROISIN_FAMILY_RE = re.compile(
+    r"whole family|family show|family[- ]friendly"
+    r"|suitable for ages\s*(?:[1-9]|1[0-7])\b", re.I)
+
+
+def _roisin_headers():
+    return dict(HEADERS, **{
+        "Accept": "application/json, text/plain, */*",
+        "X-Requested-With": "XMLHttpRequest",
+        "Referer": ROISIN_BASE + "/listings/",
+        "Origin": ROISIN_BASE,
+    })
+
+
+def _roisin_request(style, label):
+    payload = {"query": "", "month": label}
+    headers = _roisin_headers()
+    if style == "post_json":
+        r = requests.post(ROISIN_API, json=payload, headers=headers, timeout=TIMEOUT)
+    else:
+        r = requests.post(ROISIN_API, data=payload, headers=headers, timeout=TIMEOUT)
+    r.raise_for_status()
+    return r.json()
+
+
+def roisin_months():
+    """[(label, year, month), ...] from this month on. The labels are read
+    from the site's own month selector, so whatever format it sends
+    ('11/2026', '1/2027'...) is exactly what gets asked for; if that can't
+    be read, the next 12 months are generated zero-padded instead."""
+    found, seen = [], set()
+    try:
+        r = requests.get(ROISIN_MONTHS_API, headers=_roisin_headers(), timeout=TIMEOUT)
+        r.raise_for_status()
+        text = r.text.replace("\\/", "/")   # PHP escapes slashes in JSON
+        for mm, yy in re.findall(r"\b(\d{1,2})/(20\d{2})\b", text):
+            key = (int(yy), int(mm))
+            if 1 <= key[1] <= 12 and key >= (TODAY.year, TODAY.month) and key not in seen:
+                seen.add(key)
+                found.append((f"{mm}/{yy}", key[0], key[1]))
+    except Exception as exc:
+        print(f"  could not read Róisín Dubh's month list ({exc}); "
+              f"generating it instead", file=sys.stderr)
+    if found:
+        return sorted(found, key=lambda t: (t[1], t[2]))[:ROISIN_MAX_MONTHS]
+    out, y, m = [], TODAY.year, TODAY.month
+    for _ in range(12):
+        out.append((f"{m:02d}/{y}", y, m))
+        m, y = (1, y + 1) if m == 12 else (m + 1, y)
+    return out
+
+
+def roisin_fetch_month(label, year, mon):
+    """The raw results for one month. Until a request style has proven
+    itself (by returning real listings for the right month) every style is
+    tried; after that only the one that worked."""
+    global _ROISIN_STYLE
+    styles = [_ROISIN_STYLE] if _ROISIN_STYLE else list(ROISIN_STYLES)
+    prefix = f"{year:04d}-{mon:02d}"
+    last_exc, valid_empty = None, False
+    for style in styles:
+        try:
+            data = _roisin_request(style, label)
+        except Exception as exc:
+            last_exc = exc
+            continue
+        results = data.get("results") if isinstance(data, dict) else None
+        if not (data.get("success") and isinstance(results, list)):
+            last_exc = ValueError(f"unexpected response to a {style} request")
+            continue
+        if not results:
+            if _ROISIN_STYLE is None:
+                valid_empty = True   # not proof - try the other styles too
+                continue
+            return results
+        if not any((r.get("event_date_time") or "").startswith(prefix) for r in results):
+            last_exc = ValueError(f"a {style} request returned the wrong month")
+            continue
+        if _ROISIN_STYLE is None:
+            _ROISIN_STYLE = style
+            print(f"  Róisín Dubh: requests work as {style}")
+        total = data.get("total")
+        if isinstance(total, int) and total != len(results):
+            print(f"  WARNING {label}: the site reports {total} listings but "
+                  f"returned {len(results)} - possibly truncated", file=sys.stderr)
+        return results
+    if valid_empty:
+        return []
+    raise last_exc or RuntimeError("no request style worked")
+
+
+def roisin_time(dt):
+    if dt.hour == 0 and dt.minute == 0:
+        return None   # midnight is a placeholder, not a start time
+    hour, suffix = dt.hour % 12 or 12, "am" if dt.hour < 12 else "pm"
+    return f"{hour}{suffix}" if dt.minute == 0 else f"{hour}:{dt.minute:02d}{suffix}"
+
+
+def roisin_item(r, source):
+    """A tidy dict from one raw result, or None if it shouldn't be listed
+    (postponed, untitled, or no usable date). The date and time come from
+    event_date_time, NOT the URL slug - the slug keeps the time the listing
+    was first created with, which can be out of date (a Silent Disco slug
+    says 20:00 where the event is actually at 23:00)."""
+    if r.get("postponed"):
+        return None
+    title = clean(unescape(r.get("pagetitle") or ""))
+    alias = (r.get("alias") or "").strip()
+    if not title or not alias or title.lower() in ROISIN_SKIP_TITLES:
+        return None
+    try:
+        dt = datetime.fromisoformat((r.get("event_date_time") or "").strip())
+    except ValueError:
+        return None
+    booking = (r.get("external_ticket_url") or "").strip()
+    if not re.fullmatch(r"https?://\S+", booking):
+        booking = None   # also drops the odd malformed one
+    # ticket_remaining behaves like a flag, so only call it sold out when
+    # tickets are actually on sale for an allocation that's now used up
+    sold = (bool(r.get("on_sale")) and (r.get("ticket_allocation") or 0) > 0
+            and not (r.get("ticket_remaining") or 0))
+    text = " ".join((title, r.get("introtext") or "",
+                     re.sub(r"<[^>]+>", " ", r.get("content") or "")))
+    cats = ["Comedy" if ROISIN_COMEDY_RE.search(text) else "Music"]
+    if ROISIN_FAMILY_RE.search(text):
+        cats.append("Kids/Family")
+    return {"title": title, "dt": dt, "booking": booking, "sold": sold,
+            "venue": clean(unescape(r.get("name") or "")) or source["venue"],
+            "url": ROISIN_BASE + "/listings/" + quote(alias, safe="-._~,"),
+            "category": ", ".join(cats)}
+
+
+def roisin_events(items, source):
+    # a ticket tier listed as its own gig ('<Show> - Early Bird',
+    # '<Show> - Club Gass Bundle') duplicates the main listing - drop it
+    keep = [b for b in items if not any(
+        a is not b and a["venue"] == b["venue"]
+        and a["dt"].date() == b["dt"].date()
+        and b["title"].lower().startswith(a["title"].lower() + " - ")
+        for a in items)]
+    # one show at two times on the same day is one card, with both times
+    groups = {}
+    for it in sorted(keep, key=lambda i: i["dt"]):
+        groups.setdefault(
+            (it["venue"], it["dt"].date(), it["title"].lower()), []).append(it)
+    events = []
+    for g in groups.values():
+        first, times = g[0], []
+        for it in g:
+            t = roisin_time(it["dt"])
+            if t and t not in times:
+                times.append(t)
+        events.append(make_event(
+            source, first["title"], first["dt"].date(),
+            time=" & ".join(times) or None, url=first["url"],
+            booking_url=next((i["booking"] for i in g if i["booking"]), None),
+            sold_out=all(i["sold"] for i in g),
+            category=first["category"], venue=first["venue"]))
+    return events
+
+
+def parse_roisindubh(source):
+    items, summary = [], []
+    months = roisin_months()
+    # Work out the request style on the SECOND month, not the current one:
+    # a server that can't read a badly-formed request falls back to the
+    # current month, which would look perfectly valid if that's also the
+    # month being asked for - but is obviously wrong for any other.
+    order = months[1:2] + months[:1] + months[2:] if len(months) > 1 else months
+    for label, year, mon in order:
+        try:
+            results = roisin_fetch_month(label, year, mon)
+        except Exception as exc:
+            if _ROISIN_STYLE is None:
+                raise   # never got a working request - nothing to build on
+            print(f"  could not fetch Róisín Dubh {label}: {exc}", file=sys.stderr)
+            continue
+        summary.append(f"{label}={len(results)}")
+        items.extend(i for i in (roisin_item(r, source) for r in results) if i)
+        time.sleep(0.3)
+    print("  Róisín Dubh listings by month: " + ", ".join(summary))
+    return roisin_events(items, source)
+
+
 SOURCES = [
     {"name": "tht", "venue": "Town Hall Theatre", "town": "Galway",
      "county": "Galway", "url": "https://tht.ie/all",
@@ -417,6 +631,9 @@ SOURCES = [
     {"name": "monroes", "venue": "Monroe's Live", "town": "Galway",
      "county": "Galway", "url": "https://monroes.ie/pages/gigs",
      "parser": parse_monroes},
+    {"name": "roisindubh", "venue": "R\u00f3is\u00edn Dubh", "town": "Galway",
+     "county": "Galway", "url": "https://roisindubh.net/listings/",
+     "parser": parse_roisindubh, "custom_fetch": True},
 ]
 
 
@@ -482,7 +699,9 @@ def normalize_category(cat):
 
 # Empty for now - grows as real cross-source duplicates turn up, same as
 # the North West's own DEDUP_NOISE_PREFIXES/DEDUP_ALIASES did over time.
-SOURCE_PRIORITY = {}
+# lowest number wins when two sources list the same event - the venue's own
+# listing (THT) beats a promoter that cross-lists its shows
+SOURCE_PRIORITY = {"tht": 0, "monroes": 1, "roisindubh": 2}
 DEDUP_NOISE_PREFIXES = []
 DEDUP_ALIASES = []
 DEDUP_THRESHOLD = 0.7
@@ -502,11 +721,15 @@ def main():
 
     for source in SOURCES:
         try:
-            soup = fetch(source["url"])
-            found = source["parser"](soup, source)
+            if source.get("custom_fetch"):
+                soup, found = None, source["parser"](source)
+            else:
+                soup = fetch(source["url"])
+                found = source["parser"](soup, source)
             print(f"{source['venue']}: {len(found)} events")
             if not found:
-                extra = f" Page preview: {soup.get_text(' ', strip=True)[:200]!r}"
+                extra = (f" Page preview: {soup.get_text(' ', strip=True)[:200]!r}"
+                         if soup is not None else "")
                 raise ValueError(
                     "parsed zero events - selectors may be stale, filters "
                     "may be too strict, or the site blocked this request."
