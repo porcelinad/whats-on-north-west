@@ -16,10 +16,11 @@ import sys
 import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urljoin, urlparse
 
 from common import (
     TODAY, MONTHS,
-    fetch, clean, make_event,
+    fetch, clean, walk, make_event,
     infer_range_years,
     make_town_resolver,
     apply_generic_sold_out, apply_kids_family_tag,
@@ -344,10 +345,78 @@ def parse_tht(soup, source):
 
 # ---------------------------------------------------------------- sources
 
+# ------------------------------------------------------------ Monroe's Live
+
+MONROES_DATE_RE = re.compile(
+    r"^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+([A-Za-z]{3})[a-z]*\s+"
+    r"(\d{1,2})\s+(\d{4})$", re.I)
+MONROES_TIME_RE = re.compile(r"\d.*(?:am|pm)\b", re.I)
+
+
+def parse_monroes(soup, source):
+    """monroes.ie/pages/gigs - a Shopify page. Each gig is a link to its
+    ticket product (/products/<slug>), then a heading with the FULL date
+    including the year ('Thu Oct 08 2026', so no year inference is
+    needed), then a 'Doors 7pm'-style line (kept as the event's time). A
+    sold-out gig has an extra 'Sold Out' link to the same product. Built
+    on the page's link/text order rather than its CSS classes, so a theme
+    tweak is less likely to break it. The page gives no genre: Monroe's
+    is a live-music venue that also hosts an 'Outpost Comedy Club' night,
+    so everything is Music unless the title says comedy."""
+    events, cur, sold_href = [], None, None
+
+    def norm(href):
+        return urlparse(href).path.rstrip("/")
+
+    def finalise():
+        if cur and cur["date"]:
+            comedy = re.search(r"\bcomedy\b", cur["title"], re.I)
+            events.append(make_event(
+                source, cur["title"], cur["date"], time=cur["time"],
+                url=cur["url"], sold_out=cur["sold"],
+                category="Comedy" if comedy else "Music"))
+
+    for kind, a, b in walk(soup):
+        if kind == "link":
+            href, text = a, b
+            if "/products/" not in href or not text:
+                continue   # image-only links have no text of their own
+            if text.lower() == "sold out":
+                if cur and norm(cur["url"]) == norm(href):
+                    cur["sold"] = True
+                else:
+                    sold_href = norm(href)   # the title link follows
+                continue
+            if (cur and not cur["date"] and cur["title"] == text
+                    and norm(cur["url"]) == norm(href)):
+                continue   # the same title link repeated
+            finalise()
+            cur = {"title": text, "url": urljoin(source["url"], href),
+                   "sold": sold_href == norm(href), "date": None, "time": None}
+            sold_href = None
+        elif cur:
+            if cur["date"] is None:
+                m = MONROES_DATE_RE.match(a)
+                mon = MONTHS.get(m.group(1).lower()) if m else None
+                if mon:
+                    try:
+                        cur["date"] = date(int(m.group(3)), mon, int(m.group(2)))
+                    except ValueError:
+                        pass
+            elif (cur["time"] is None and MONROES_TIME_RE.search(a)
+                    and a.lower() != "sold out"):
+                cur["time"] = a
+    finalise()
+    return events
+
+
 SOURCES = [
     {"name": "tht", "venue": "Town Hall Theatre", "town": "Galway",
      "county": "Galway", "url": "https://tht.ie/all",
      "parser": parse_tht},
+    {"name": "monroes", "venue": "Monroe's Live", "town": "Galway",
+     "county": "Galway", "url": "https://monroes.ie/pages/gigs",
+     "parser": parse_monroes},
 ]
 
 
