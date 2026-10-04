@@ -50,22 +50,37 @@
     padding:0 14px 80px;
   }
 
-  header{
-    padding:22px 0 10px;
-    border-bottom:3px solid var(--ink);
+  /* --------------------------------
+     Header band
+     Mirrors the landing page: dark ink, centred, the same condensed
+     heading with the two OUTs in the page's off-white and AND AB in
+     ember, and the region name beneath in smaller type.
+     -------------------------------- */
+
+  .site-header{
+    background:var(--ink);
+    color:var(--mist);
+    text-align:center;
+    padding:28px 14px 22px;
+  }
+
+  .site-header-inner{
+    max-width:640px;
+    margin:0 auto;
   }
 
   h1{
-    font-family:"Arial Black",Arial,sans-serif;
-    font-weight:900;
-    font-size:clamp(28px,8vw,48px);
+    font-family:var(--display);
+    font-weight:700;
+    font-size:clamp(38px,10vw,58px);
     text-transform:uppercase;
     line-height:.95;
-    letter-spacing:.01em;
+    letter-spacing:.02em;
+    color:var(--mist);
   }
 
   h1 .white{
-    color:#fff;
+    color:var(--mist);
   }
 
   h1 .rust{
@@ -74,14 +89,15 @@
 
   h1 .region{
     display:block;
-    font-size:.62em;
-    margin-top:4px;
+    font-size:.42em;
+    letter-spacing:.14em;
+    margin-top:10px;
   }
 
   .updated{
     font-size:13px;
-    color:var(--ink-soft);
-    margin-top:6px;
+    color:#c7cec9;
+    margin-top:12px;
   }
 
   .controls{
@@ -428,9 +444,9 @@
 
 <body>
 
-<div class="wrap">
+<header class="site-header">
+  <div class="site-header-inner">
 
-  <header>
     <h1>
       <span class="white">OUT</span>
       <span class="rust">AND AB</span><span class="white">OUT</span>
@@ -438,7 +454,11 @@
     </h1>
 
     <p class="updated" id="updated">Loading…</p>
-  </header>
+
+  </div>
+</header>
+
+<div class="wrap">
 
   <div class="controls">
 
