@@ -1289,7 +1289,7 @@ def ll_category(title, text):
     return "Music" if LL_MUSIC_RE.search(blob) else None
 
 
-def ll_jsonld_events(soup):
+def ll_jsonld_events_raw(soup):
     items = []
     for script in soup.find_all("script", type="application/ld+json"):
         try:
@@ -1308,35 +1308,45 @@ def ll_jsonld_events(soup):
     return items
 
 
+def ld_fields(item):
+    """The fields we use from one schema.org Event, or None if it has no
+    usable title or date."""
+    title = clean(unescape(item.get("name") or ""))
+    start_text, end_text = item.get("startDate") or "", item.get("endDate") or ""
+    try:
+        start = date.fromisoformat(start_text[:10])
+    except ValueError:
+        return None
+    if not title:
+        return None
+    end = None
+    try:
+        e = date.fromisoformat(end_text[:10])
+        end = e if e != start else None
+    except ValueError:
+        pass
+    clock = re.match(r"\d{4}-\d{2}-\d{2}T(\d{2}):(\d{2})", start_text)
+    time_text = (clock12(int(clock.group(1)), int(clock.group(2)))
+                 if clock and (clock.group(1), clock.group(2)) != ("00", "00") else None)
+    offers = item.get("offers")
+    offers = offers if isinstance(offers, list) else [offers or {}]
+    sold = any("soldout" in str(o.get("availability", "")).lower().replace(" ", "")
+               for o in offers if isinstance(o, dict))
+    return {"title": title, "start": start, "end": end, "time": time_text,
+            "url": item.get("url") or "", "sold": sold,
+            "desc": re.sub(r"<[^>]+>", " ", unescape(item.get("description") or ""))}
+
+
 def ll_events_from_jsonld(items, source):
     events = []
-    for item in items:
-        title = clean(unescape(item.get("name") or ""))
-        start_text, end_text = item.get("startDate") or "", item.get("endDate") or ""
-        try:
-            start = date.fromisoformat(start_text[:10])
-        except ValueError:
+    for f in (ld_fields(i) for i in items):
+        if not f:
             continue
-        if not title:
-            continue
-        end = None
-        try:
-            e = date.fromisoformat(end_text[:10])
-            end = e if e != start else None
-        except ValueError:
-            pass
-        clock = re.match(r"\d{4}-\d{2}-\d{2}T(\d{2}):(\d{2})", start_text)
-        time_text = (clock12(int(clock.group(1)), int(clock.group(2)))
-                     if clock and (clock.group(1), clock.group(2)) != ("00", "00") else None)
-        offers = item.get("offers")
-        offers = offers if isinstance(offers, list) else [offers or {}]
-        sold = any("soldout" in str(o.get("availability", "")).lower().replace(" ", "")
-                   for o in offers if isinstance(o, dict))
-        desc = re.sub(r"<[^>]+>", " ", unescape(item.get("description") or ""))
         events.append(make_event(
-            source, title, start, end_date=end.isoformat() if end else None,
-            time=time_text, url=item.get("url") or source["url"], sold_out=sold,
-            category=ll_category(title, desc)))
+            source, f["title"], f["start"],
+            end_date=f["end"].isoformat() if f["end"] else None,
+            time=f["time"], url=f["url"] or source["url"], sold_out=f["sold"],
+            category=ll_category(f["title"], f["desc"])))
     return events
 
 
@@ -1408,7 +1418,7 @@ def ll_next_url(soup, page_url):
 def parse_leisureland(soup, source):
     page, page_url, events, seen = soup, source["url"], [], set()
     for n in range(LL_MAX_PAGES):
-        items = ll_jsonld_events(page)
+        items = ll_jsonld_events_raw(page)
         found = (ll_events_from_jsonld(items, source) if items
                  else ll_events_from_text(page, source))
         new = [e for e in found if (e["title"], e["date"]) not in seen]
@@ -1429,6 +1439,190 @@ def parse_leisureland(soup, source):
             break
         time.sleep(0.4)
     return events
+
+
+# ----------------------------------------------------------- Music for Galway
+#
+# musicforgalway.ie/calendar-view/ is the 'Events Calendar' list view again:
+# each concert is a title, a date line like 'October 17 @ 5:00 pm - 6:00 pm'
+# (NO YEAR) and 'at <venue>'. MfG is a classical-music society whose season
+# is spread across the city and county - St Nicholas' Collegiate Church, the
+# University's spaces (including the O'Donoghue Centre, which has no
+# listings page of its own), Leisureland, the Mick Lally Theatre, and
+# further out in Gort and Loughrea - so this one source covers concerts at
+# venues that otherwise have no feed. The venue comes from each event, not
+# the source.
+#
+# As with Leisureland, the page's embedded JSON-LD is read first (exact
+# dates, and a venue name per event); failing that the visible text is read
+# and the year inferred. Three things are filtered out:
+#   - the page's 'Past Events' list. Dates have no year, so an old date
+#     would otherwise be pushed forward to NEXT year.
+#   - 'Artist Profile' entries: about a dozen placeholder pages, dated far
+#     ahead with no venue. Anything without a venue is left out.
+#   - events at the Town Hall Theatre, which THT already lists in full
+#     (MfG's Beethoven Quartets umbrella would duplicate its five concerts).
+
+MFG_MAX_PAGES = 4
+MFG_SKIP_VENUES = {"Town Hall Theatre"}
+MFG_VENUE_NAMES = {
+    "the mick lally theatre": "Mick Lally Theatre",
+    "leisureland": "Leisureland",
+    "town hall theatre": "Town Hall Theatre",
+}
+MFG_DATE_RE = re.compile(
+    r"(?P<m1>[A-Za-z]{3,9})\s+(?P<d1>\d{1,2})(?:,?\s+(?P<y1>\d{4}))?"
+    r"(?:\s*@\s*(?P<t1>\d{1,2}:\d{2}\s*[ap]m)(?:\s*-\s*(?P<t2>\d{1,2}:\d{2}\s*[ap]m))?)?"
+    r"(?:\s*-\s*(?P<m2>[A-Za-z]{3,9})\s+(?P<d2>\d{1,2})(?:,?\s+(?P<y2>\d{4}))?"
+    r"(?:\s*@\s*(?P<t3>\d{1,2}:\d{2}\s*[ap]m))?)?", re.I)
+
+
+def mfg_clock(text):
+    m = re.match(r"(\d{1,2}):(\d{2})\s*([ap]m)", text or "", re.I)
+    return ll_clock(m.group(1), m.group(2), m.group(3)) if m else None
+
+
+def md_dates(m1, d1, y1, m2=None, d2=None, y2=None):
+    """(start, end_or_None) from month/day (and maybe year) parts, inferring
+    a missing year the way every year-less source here does."""
+    mon1 = MONTHS.get((m1 or "").lower()[:3])
+    if not mon1:
+        return None
+    mon2 = MONTHS.get((m2 or "").lower()[:3]) if m2 else None
+    if y1:
+        start = _mk_date(int(y1), mon1, int(d1))
+        end = _mk_date(int(y2 or y1), mon2, int(d2)) if mon2 and d2 else None
+    else:
+        tokens = [(mon1, int(d1))] + ([(mon2, int(d2))] if mon2 and d2 else [])
+        got = [d for d in infer_range_years(tokens) if d]
+        start, end = (got[0], got[-1] if len(got) > 1 else None) if got else (None, None)
+    if not start:
+        return None
+    return start, (end if end and end != start else None)
+
+
+def mfg_venue(raw):
+    """(venue, town_or_None) with names tidied so the same place matches
+    across sources: curly apostrophes straightened, ', University of Galway'
+    and ', Salthill' dropped (Salthill is part of the city), a trailing
+    ', <known town>' split off into the town (', Gort' -> town Gort)."""
+    v = clean(raw).replace("\u2019", "'")
+    v = re.sub(r",\s*University of Galway$", "", v, flags=re.I)
+    if re.search(r"o'donoghue", v, re.I):
+        return "O'Donoghue Centre", None
+    town = None
+    parts = [p.strip() for p in v.split(",")]
+    if len(parts) > 1:
+        tail = parts[-1]
+        if tail.lower() == "salthill":
+            v = ", ".join(parts[:-1])
+        else:
+            found = find_specific_town(tail)
+            if found and found != "Galway City":
+                v, town = ", ".join(parts[:-1]), found
+    return MFG_VENUE_NAMES.get(v.lower(), v), town
+
+
+def mfg_is_date_line(t):
+    m = MFG_DATE_RE.match(t)
+    return bool(m and len(t) <= 160 and MONTHS.get(m["m1"].lower()[:3])
+                and re.fullmatch(r"(?:\s*(?:@\s*)?at\b.*)?", t[m.end():], re.I | re.S))
+
+
+def mfg_raw_from_jsonld(items):
+    out = []
+    for item in items:
+        f = ld_fields(item)
+        if not f:
+            continue
+        loc = item.get("location")
+        loc = loc[0] if isinstance(loc, list) and loc else loc
+        out.append({**f, "venue_raw": clean(unescape(loc.get("name") or ""))
+                    if isinstance(loc, dict) else ""})
+    return out
+
+
+def mfg_raw_from_text(soup):
+    strings = _visible_strings(soup)
+    marker = next((i for i, s in enumerate(strings)
+                   if clean(s).lower() == "past events"), None)
+    past = {id(s) for s in strings[marker + 1:]} if marker is not None else set()
+    out = []
+    for node, card in _date_cards(soup, mfg_is_date_line):
+        if id(node) in past:
+            continue
+        text = clean(node)
+        m = MFG_DATE_RE.match(text)
+        dates = md_dates(m["m1"], m["d1"], m["y1"], m["m2"], m["d2"], m["y2"])
+        if not dates:
+            continue
+        heading = card.find(re.compile(r"^h[1-6]$"))
+        title = clean(heading.get_text(" ")) if heading else None
+        cs = _visible_strings(card)
+        idx = next((i for i, s in enumerate(cs) if s is node), 0)
+        if not title:
+            prev = [clean(s) for s in cs[:idx] if clean(s)]
+            title = prev[-1] if prev else None
+        if not title:
+            continue
+        link = (heading.find("a", href=True) if heading else None) \
+            or card.find("a", href=True)
+        href = link["href"].strip() if link else ""
+        # venue: 'at <venue>' in the date line itself, or in the text after it
+        rest = re.sub(r"^\s*(?:@\s*)?at\b\s*", "", text[m.end():], flags=re.I).strip()
+        if not rest:
+            after = [clean(s) for s in cs[idx + 1:]]
+            rest = next((t for t in after if t and t.lower() != "at"), "")
+        out.append({"title": title, "start": dates[0], "end": dates[1],
+                    "time": mfg_clock(m["t1"]), "url": href, "sold": False,
+                    "desc": "", "venue_raw": rest})
+    return out
+
+
+def mfg_events(raws, source):
+    events, skipped = [], []
+    for r in raws:
+        if not r["venue_raw"] or r["title"].lower().startswith("artist profile"):
+            continue
+        venue, town = mfg_venue(r["venue_raw"])
+        if venue in MFG_SKIP_VENUES:
+            skipped.append(r["title"])
+            continue
+        events.append(make_event(
+            source, r["title"], r["start"],
+            end_date=r["end"].isoformat() if r.get("end") else None,
+            time=r.get("time"), sold_out=r.get("sold"),
+            url=urljoin(source["url"], r["url"]) if r.get("url") else source["url"],
+            category="Music, Classical", venue=venue, town=town))
+    if skipped:
+        print(f"  Music for Galway: at the Town Hall Theatre, so left to THT: "
+              + "; ".join(skipped))
+    return events
+
+
+def parse_musicforgalway(soup, source):
+    page, page_url, raws, seen = soup, source["url"], [], set()
+    for n in range(MFG_MAX_PAGES):
+        items = ll_jsonld_events_raw(page)
+        found = mfg_raw_from_jsonld(items) if items else mfg_raw_from_text(page)
+        fresh = [r for r in found if (r["title"], r["start"]) not in seen]
+        seen.update((r["title"], r["start"]) for r in found)
+        raws.extend(fresh)
+        if n == 0 and not found:
+            if re.search(r"upcoming events|no events|no upcoming", page.get_text(" "), re.I):
+                return []
+            raise ValueError("no events found - the layout has changed, "
+                             "or the page is empty or blocked")
+        nxt = ll_next_url(page, page_url)
+        if not nxt or not fresh:
+            break
+        try:
+            page, page_url = fetch(nxt), nxt
+        except Exception as exc:
+            print(f"  could not read Music for Galway page {n + 2}: {exc}", file=sys.stderr)
+            break
+        time.sleep(0.4)
+    return mfg_events(raws, source)
 
 
 SOURCES = [
@@ -1458,6 +1652,9 @@ SOURCES = [
     {"name": "leisureland", "venue": "Leisureland", "town": "Galway City",
      "county": "Galway", "url": "https://www.leisureland.ie/events/",
      "parser": parse_leisureland, "quiet_if_empty": True},
+    {"name": "musicforgalway", "venue": "Music for Galway", "town": "Galway City",
+     "county": "Galway", "url": "https://musicforgalway.ie/calendar-view/",
+     "parser": parse_musicforgalway, "quiet_if_empty": True},
 ]
 
 
@@ -1544,10 +1741,10 @@ def normalize_category(cat):
 # Empty for now - grows as real cross-source duplicates turn up, same as
 # the North West's own DEDUP_NOISE_PREFIXES/DEDUP_ALIASES did over time.
 # lowest number wins when two sources list the same event - the venue's own
-# listing (Arts Centre, Mick Lally, An Taibhdhearc, Leisureland, then THT) beats a promoter that cross-lists them
+# listing (Arts Centre, Mick Lally, An Taibhdhearc, Leisureland, Music for Galway, then THT) beats a promoter that cross-lists them
 SOURCE_PRIORITY = {"gac": 0, "mick_lally": 1, "taibhdhearc": 2,
-                   "leisureland": 3, "tht": 4, "monroes": 5,
-                   "roisindubh": 6, "gfs": 7}
+                   "leisureland": 3, "musicforgalway": 4, "tht": 5,
+                   "monroes": 6, "roisindubh": 7, "gfs": 8}
 DEDUP_NOISE_PREFIXES = []
 DEDUP_ALIASES = []
 DEDUP_THRESHOLD = 0.7
