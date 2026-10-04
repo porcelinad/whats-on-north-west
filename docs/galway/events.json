@@ -1,12 +1,14 @@
 {
- "generated_at": "2026-10-04T14:20Z",
+ "generated_at": "2026-10-04T16:59Z",
  "failed_sources": [],
  "source_last_run": {},
  "consecutive_failures": {
   "tht": 0,
   "monroes": 0,
   "roisindubh": 0,
-  "gfs": 0
+  "gfs": 0,
+  "gac": 0,
+  "mick_lally": 0
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -18,7 +20,7 @@
   {
    "source": "gfs",
    "venue": "Eye Cinema",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Cycle of Love (Galway Film Society)",
    "date": "2026-10-04",
@@ -32,7 +34,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2026-10-04",
@@ -45,7 +47,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2026-10-04",
@@ -58,7 +60,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Robyn Hitchcock",
    "date": "2026-10-04",
@@ -71,7 +73,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Q Factor!!",
    "date": "2026-10-04",
@@ -84,7 +86,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Outpost Comedy Club: Dan Stephens",
    "date": "2026-10-05",
@@ -97,7 +99,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bounce",
    "date": "2026-10-05",
@@ -110,7 +112,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Happiness Then",
    "date": "2026-10-05",
@@ -123,7 +125,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Little Songbird",
    "date": "2026-10-05",
@@ -137,7 +139,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Songwriters Open Mic",
    "date": "2026-10-06",
@@ -150,7 +152,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2026-10-06",
@@ -163,7 +165,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Tuesday Comedy Showcase with Aideen McQueen",
    "date": "2026-10-06",
@@ -176,7 +178,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Made In Tennessee",
    "date": "2026-10-06",
@@ -189,7 +191,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Heroes of Tomorrow",
    "date": "2026-10-07",
@@ -202,7 +204,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "La Chimera",
    "date": "2026-10-07",
@@ -215,7 +217,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Astro Bloc",
    "date": "2026-10-08",
@@ -228,7 +230,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Camille O'Sullivan",
    "date": "2026-10-08",
@@ -241,7 +243,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Meet the Fawkers",
    "date": "2026-10-08",
@@ -254,7 +256,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Rua Rí",
    "date": "2026-10-08",
@@ -267,7 +269,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Lisa Murray",
    "date": "2026-10-08",
@@ -280,7 +282,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Life Support",
    "date": "2026-10-08",
@@ -293,7 +295,7 @@
   {
    "source": "tht",
    "venue": "Galway City Museum",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "See Saw Swing (Baboró)",
    "date": "2026-10-09",
@@ -306,7 +308,7 @@
   {
    "source": "tht",
    "venue": "Grattan Beach, Salthill",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Get Curious on the Shore (Baboró)",
    "date": "2026-10-09",
@@ -319,7 +321,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Coldplace",
    "date": "2026-10-09",
@@ -332,7 +334,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Dubh Me Do",
    "date": "2026-10-09",
@@ -345,7 +347,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Hoa-Hoa-Hoa Rave",
    "date": "2026-10-09",
@@ -359,7 +361,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Jake Xerxes Fussell",
    "date": "2026-10-09",
@@ -372,7 +374,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Macdara Yeates",
    "date": "2026-10-09",
@@ -385,7 +387,7 @@
   {
    "source": "tht",
    "venue": "The Hardiman Building",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Making Space for Children's Thinking (Baboró)",
    "date": "2026-10-09",
@@ -397,7 +399,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Souvenirshop (Baboró)",
    "date": "2026-10-09",
@@ -410,7 +412,7 @@
   {
    "source": "tht",
    "venue": "An Taibhdhearc",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bígí Linn (Baboró)",
    "date": "2026-10-10",
@@ -422,7 +424,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "A Teen Odyssey (Baboró)",
    "date": "2026-10-10",
@@ -435,7 +437,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Not Falling (Baboró)",
    "date": "2026-10-10",
@@ -446,9 +448,22 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "gac",
+   "venue": "Galway Arts Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Exhibition ⁄",
+   "date": "2026-10-10",
+   "end_date": "2026-10-18",
+   "url": "https://www.galwayartscentre.ie/whats-on/borneo-x-ireland-cultural-exchange/",
+   "category": "Exhibition",
+   "id": "d4a0d0fa83c1",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Mick Lally Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Moving Words (Baboró)",
    "date": "2026-10-10",
@@ -461,7 +476,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Huartan",
    "date": "2026-10-10",
@@ -474,7 +489,7 @@
   {
    "source": "tht",
    "venue": "O'Donoghue Centre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Nightmare Club - Spooky Storycraft (Baboró)",
    "date": "2026-10-10",
@@ -486,7 +501,7 @@
   {
    "source": "tht",
    "venue": "O'Donoghue Centre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Welcome, Little Passengers! (Baboró)",
    "date": "2026-10-10",
@@ -498,7 +513,7 @@
   {
    "source": "tht",
    "venue": "O'Donoghue Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Kafka's Doll (Baboró)",
    "date": "2026-10-10",
@@ -511,7 +526,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2026-10-10",
@@ -524,7 +539,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "These Charming Men",
    "date": "2026-10-10",
@@ -537,7 +552,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2026-10-10",
@@ -550,7 +565,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Wild West (Baboró)",
    "date": "2026-10-10",
@@ -562,7 +577,7 @@
   {
    "source": "tht",
    "venue": "Áras na Mac Léinn",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Music Explorers (Baboró)",
    "date": "2026-10-10",
@@ -574,7 +589,7 @@
   {
    "source": "tht",
    "venue": "Áras na Mac Léinn",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Sing Write Record (Baboró)",
    "date": "2026-10-10",
@@ -586,7 +601,7 @@
   {
    "source": "tht",
    "venue": "Áras na Mac Léinn",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Singing Garden (Baboró)",
    "date": "2026-10-10",
@@ -599,7 +614,7 @@
   {
    "source": "gfs",
    "venue": "Eye Cinema",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "My Father's Shadow (Galway Film Society)",
    "date": "2026-10-11",
@@ -613,7 +628,7 @@
   {
    "source": "tht",
    "venue": "Galway Rowing Club",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Play and Create (Baboró)",
    "date": "2026-10-11",
@@ -625,7 +640,7 @@
   {
    "source": "tht",
    "venue": "O'Donoghue Centre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Finding Your Voice (Baboró)",
    "date": "2026-10-11",
@@ -637,7 +652,7 @@
   {
    "source": "tht",
    "venue": "O'Donoghue Centre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Writing for Samhain (Baboró)",
    "date": "2026-10-11",
@@ -649,7 +664,7 @@
   {
    "source": "tht",
    "venue": "Outset Gallery, Cornstore Mall",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Illustrating a Character (Baboró)",
    "date": "2026-10-11",
@@ -661,7 +676,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2026-10-11",
@@ -674,7 +689,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2026-10-11",
@@ -687,7 +702,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Wran",
    "date": "2026-10-11",
@@ -700,7 +715,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Circus is for Every Body (Baboró)",
    "date": "2026-10-11",
@@ -712,7 +727,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Shorts for Families (Baboró)",
    "date": "2026-10-11",
@@ -724,7 +739,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Shorts for Wee Ones (Baboró)",
    "date": "2026-10-11",
@@ -736,7 +751,7 @@
   {
    "source": "tht",
    "venue": "Aniar, Dominic St.",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Make Your Own Butter! (Baboró)",
    "date": "2026-10-12",
@@ -748,7 +763,7 @@
   {
    "source": "tht",
    "venue": "Mick Lally Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Meet the Early Years Network for the Arts (Baboró)",
    "date": "2026-10-12",
@@ -760,7 +775,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Outpost Comedy Club: Owen Colgan",
    "date": "2026-10-12",
@@ -773,7 +788,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "An Evening with Kristin Hersh",
    "date": "2026-10-12",
@@ -786,7 +801,7 @@
   {
    "source": "tht",
    "venue": "Áras na nGael",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Can't I just make art? (Baboró)",
    "date": "2026-10-12",
@@ -798,7 +813,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Antarctica! (Baboró)",
    "date": "2026-10-13",
@@ -810,7 +825,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2026-10-13",
@@ -823,7 +838,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Tuesday Comedy Showcase",
    "date": "2026-10-13",
@@ -836,7 +851,7 @@
   {
    "source": "tht",
    "venue": "An Taibhdhearc",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Shades of Shadows (Baboró)",
    "date": "2026-10-14",
@@ -849,7 +864,7 @@
   {
    "source": "tht",
    "venue": "Mick Lally Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Cultivate (Baboró)",
    "date": "2026-10-14",
@@ -861,7 +876,7 @@
   {
    "source": "tht",
    "venue": "Mick Lally Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Your Kids, Our Kids (Baboró)",
    "date": "2026-10-14",
@@ -873,7 +888,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Fabulous Tale of BasarKus (Baboró)",
    "date": "2026-10-14",
@@ -886,7 +901,7 @@
   {
    "source": "gfs",
    "venue": "Eye Cinema",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Colours of Time (additional screening) (Galway Film Society)",
    "date": "2026-10-15",
@@ -897,21 +912,27 @@
    "first_seen": "2026-10-04"
   },
   {
-   "source": "tht",
+   "source": "gac",
    "venue": "Galway Arts Centre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
-   "title": "Curator's Talk: Borneo x Ireland Cultural Exchange (Baboró)",
+   "title": "Talk ⁄",
    "date": "2026-10-15",
-   "url": "https://tht.ie/4884/baboro-2026",
-   "category": "For Adults",
-   "id": "f9f620c69171",
+   "time": "7pm-8pm",
+   "url": "https://www.galwayartscentre.ie/whats-on/curators-talk-borneo-x-ireland-cultural-exchange/",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668663",
+   "category": "Talk",
+   "merged_from": [
+    "gac",
+    "tht"
+   ],
+   "id": "b337ec04622a",
    "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
    "venue": "Mick Lally Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Community Gathering for Creatives (Baboró)",
    "date": "2026-10-15",
@@ -923,7 +944,7 @@
   {
    "source": "tht",
    "venue": "Mick Lally Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Meet the CYPA Team (Baboró)",
    "date": "2026-10-15",
@@ -935,7 +956,7 @@
   {
    "source": "tht",
    "venue": "Mick Lally Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Story Worlds (Baboró)",
    "date": "2026-10-15",
@@ -947,7 +968,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Fontaines C.D.",
    "date": "2026-10-15",
@@ -960,7 +981,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Peer Pleasure",
    "date": "2026-10-15",
@@ -973,7 +994,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "MDR",
    "date": "2026-10-15",
@@ -986,7 +1007,7 @@
   {
    "source": "tht",
    "venue": "St. Nicholas Church",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bóthar na Smaointe & An Uile Bhealach Abhaile",
    "date": "2026-10-15",
@@ -999,7 +1020,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Witch Hunting (Baboró)",
    "date": "2026-10-16",
@@ -1012,7 +1033,7 @@
   {
    "source": "tht",
    "venue": "Galway Dance Studio",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Breakdance with Anne Nguyen (Baboró)",
    "date": "2026-10-16",
@@ -1024,7 +1045,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Just One Direction",
    "date": "2026-10-16",
@@ -1037,7 +1058,7 @@
   {
    "source": "tht",
    "venue": "O'Donoghue Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Sticky Dance (Baboró)",
    "date": "2026-10-16",
@@ -1050,7 +1071,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Club GASS",
    "date": "2026-10-16",
@@ -1063,7 +1084,7 @@
   {
    "source": "tht",
    "venue": "Áras na nGael",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Nach féidir liom an ealaín a chumadh? (Baboró)",
    "date": "2026-10-16",
@@ -1075,7 +1096,7 @@
   {
    "source": "tht",
    "venue": "Galway City Museum",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "See Saw Swing (Baboró)",
    "date": "2026-10-17",
@@ -1087,7 +1108,7 @@
   {
    "source": "tht",
    "venue": "Galway Dance Studio",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Audience as Collaborator (Baboró)",
    "date": "2026-10-17",
@@ -1099,7 +1120,7 @@
   {
    "source": "tht",
    "venue": "Galway Rowing Club",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Play and Create (Baboró)",
    "date": "2026-10-17",
@@ -1111,7 +1132,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Kris Drever",
    "date": "2026-10-17",
@@ -1124,7 +1145,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "FreakMag Presents Technoparty",
    "date": "2026-10-17",
@@ -1137,7 +1158,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2026-10-17",
@@ -1150,7 +1171,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Love Buzz",
    "date": "2026-10-17",
@@ -1163,7 +1184,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Driven Snow",
    "date": "2026-10-17",
@@ -1176,7 +1197,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2026-10-17",
@@ -1189,7 +1210,7 @@
   {
    "source": "tht",
    "venue": "Áras na nGael",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Make a Samhain Wreath (Baboró)",
    "date": "2026-10-17",
@@ -1201,7 +1222,7 @@
   {
    "source": "tht",
    "venue": "Áras na nGael",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Seisúin na nÓg (Baboró)",
    "date": "2026-10-17",
@@ -1213,7 +1234,7 @@
   {
    "source": "tht",
    "venue": "Brigid's Garden",
-   "town": "Galway",
+   "town": "Rosscahill",
    "county": "Galway",
    "title": "Down to Earth Forest School (Baboró)",
    "date": "2026-10-18",
@@ -1225,7 +1246,7 @@
   {
    "source": "gfs",
    "venue": "Eye Cinema",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Stranger (Galway Film Society)",
    "date": "2026-10-18",
@@ -1239,7 +1260,7 @@
   {
    "source": "tht",
    "venue": "Galway Dance Studio",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Discover Dance: Krump (Baboró)",
    "date": "2026-10-18",
@@ -1251,7 +1272,7 @@
   {
    "source": "tht",
    "venue": "Galway Rowing Club",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Spooky Disco (Baboró)",
    "date": "2026-10-18",
@@ -1263,7 +1284,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Jacek Stachursky",
    "date": "2026-10-18",
@@ -1276,7 +1297,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2026-10-18",
@@ -1289,7 +1310,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2026-10-18",
@@ -1302,7 +1323,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Barceló Brothers (Baboró)",
    "date": "2026-10-18",
@@ -1314,7 +1335,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Dire Straits John Illsley",
    "date": "2026-10-19",
@@ -1326,7 +1347,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Outpost Comedy Club: Breda Hegarty",
    "date": "2026-10-19",
@@ -1339,7 +1360,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Haven For Artists",
    "date": "2026-10-19",
@@ -1352,7 +1373,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Dr David Coleman",
    "date": "2026-10-19",
@@ -1365,7 +1386,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "#GCF26 Opening Gala - Tommy Tiernan...",
    "date": "2026-10-20",
@@ -1378,7 +1399,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2026-10-20",
@@ -1391,7 +1412,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Tommy Tiernan: World Tour Of Galway #GCF26",
    "date": "2026-10-20",
@@ -1405,7 +1426,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Tuesday Comedy Showcase feat. Darren Gaffney #GCF26",
    "date": "2026-10-20",
@@ -1419,7 +1440,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "#GCF26 Black Box Gala - Tommy Tiernan...",
    "date": "2026-10-21",
@@ -1432,7 +1453,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Deirdre O'Kane and Friends #GCF26",
    "date": "2026-10-21",
@@ -1446,7 +1467,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Late Night KARLnival feat. Karl Spain #GCF26",
    "date": "2026-10-21",
@@ -1460,7 +1481,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Tigh-He-He Comedy Club feat. Emer Maguire #GCF26",
    "date": "2026-10-21",
@@ -1474,7 +1495,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Kavanaghs: Married With Parents",
    "date": "2026-10-21",
@@ -1488,7 +1509,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "#GCF26 Black Box Gala - Emma Doran...",
    "date": "2026-10-22",
@@ -1499,9 +1520,23 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "gac",
+   "venue": "Galway Arts Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Workshop ⁄",
+   "date": "2026-10-22",
+   "time": "18:30 - 20:30",
+   "url": "https://www.galwayartscentre.ie/whats-on/character-characterisations-fiction-workshop/",
+   "booking_url": "https://www.eventbrite.ie/e/john-patrick-mchugh-character-characterisations-fiction-workshop-tickets-2002639858727?aff=oddtdtcreator&_gl=1*5xowct*_up*MQ..*_ga*NDI0MDYzNzU5LjE3OTA3OTI3ODg.*_ga_TQVES5V6SH*czE3OTA3OTI3ODgkbzEkZzEkdDE3OTA3OTI4MTEkajM3JGwwJGgw",
+   "category": "Workshop",
+   "id": "3ac0a5a16110",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Late Night KARLnival feat. Karl Spain #GCF26",
    "date": "2026-10-22",
@@ -1515,7 +1550,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Improv All Stars #GCF26",
    "date": "2026-10-22",
@@ -1529,7 +1564,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Tigh-He-He Comedy Club feat. Danny O'Brien #GCF26",
    "date": "2026-10-22",
@@ -1543,7 +1578,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Counting Swans",
    "date": "2026-10-22",
@@ -1557,7 +1592,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Jack Dee: Jack's Joke Show",
    "date": "2026-10-23",
@@ -1570,7 +1605,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Heineken Greenlight: Joshua Idehen + F3miii",
    "date": "2026-10-23",
@@ -1583,7 +1618,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Late Night KARLnival feat. Karl Spain #GCF26",
    "date": "2026-10-23",
@@ -1597,7 +1632,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Rhys Darby and Friends #GCF26",
    "date": "2026-10-23",
@@ -1611,7 +1646,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Tigh-He-He Comedy Club feat. Spencer Jones #GCF26",
    "date": "2026-10-23",
@@ -1625,7 +1660,7 @@
   {
    "source": "tht",
    "venue": "St. Nicholas Church",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "TIME by Luxmuralis",
    "date": "2026-10-23",
@@ -1639,7 +1674,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "#GCF26 Black Box Gala - David McSavage...",
    "date": "2026-10-24",
@@ -1652,7 +1687,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Big Bag of Sticks",
    "date": "2026-10-24",
@@ -1665,7 +1700,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Therapy Horse",
    "date": "2026-10-24",
@@ -1678,7 +1713,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Whiplash - Tribute to Metallica - ALL AGES SHOW",
    "date": "2026-10-24",
@@ -1691,7 +1726,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Exiled In Ireland Film Premiere #GCF26",
    "date": "2026-10-24",
@@ -1705,7 +1740,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Jack Dee and Friends #GCF26",
    "date": "2026-10-24",
@@ -1719,7 +1754,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2026-10-24",
@@ -1732,7 +1767,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Late Night KARLnival feat. Karl Spain #GCF26",
    "date": "2026-10-24",
@@ -1746,7 +1781,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Improv All Stars #GCF26",
    "date": "2026-10-24",
@@ -1760,7 +1795,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Tigh-He-He Comedy Club feat. Micky Bartlett #GCF26",
    "date": "2026-10-24",
@@ -1774,7 +1809,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Emma Doran",
    "date": "2026-10-24",
@@ -1787,7 +1822,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Mike Wozniak: The Bench",
    "date": "2026-10-25",
@@ -1800,7 +1835,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Daft Punk Experience",
    "date": "2026-10-25",
@@ -1813,7 +1848,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Michael McGovern",
    "date": "2026-10-25",
@@ -1826,7 +1861,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Heineken Green Light: Getdown Services",
    "date": "2026-10-25",
@@ -1839,7 +1874,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2026-10-25",
@@ -1852,7 +1887,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Vanessa Larry Mitchell: Teardrops On My Dildo #GCF26",
    "date": "2026-10-25",
@@ -1866,7 +1901,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Festival Closing Gala #GCF26",
    "date": "2026-10-26",
@@ -1880,7 +1915,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Vanessa Larry Mitchell: Teardrops On My Dildo #GCF26",
    "date": "2026-10-26",
@@ -1894,7 +1929,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2026-10-27",
@@ -1907,7 +1942,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Cable",
    "date": "2026-10-27",
@@ -1920,7 +1955,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Mother Courage and her Children",
    "date": "2026-10-28",
@@ -1932,9 +1967,22 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "mick_lally",
+   "venue": "Mick Lally Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "DEAD AIR by Alfrun Rose",
+   "date": "2026-10-28",
+   "end_date": "2026-10-29",
+   "url": "https://www.druid.ie/about/the-mick-lally-theatre/whats-on/dead-air-by-alfrun-rose",
+   "category": "Theatre",
+   "id": "e2a0b5e207a0",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Brake Loose",
    "date": "2026-10-28",
@@ -1948,7 +1996,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Delivery",
    "date": "2026-10-28",
@@ -1961,7 +2009,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Scenes Between - An Echo Acting Showcase",
    "date": "2026-10-28",
@@ -1974,7 +2022,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Beat",
    "date": "2026-10-29",
@@ -1987,7 +2035,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "So Fetch - 2000s Halloween Party",
    "date": "2026-10-29",
@@ -2000,7 +2048,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Sadhbh Keane",
    "date": "2026-10-29",
@@ -2013,7 +2061,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Hysterically Shopping!to some sort of end...",
    "date": "2026-10-29",
@@ -2026,7 +2074,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Daoirí Farrell",
    "date": "2026-10-30",
@@ -2039,7 +2087,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Eamonn’s Vision",
    "date": "2026-10-30",
@@ -2052,7 +2100,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Dubh Me Do",
    "date": "2026-10-30",
@@ -2065,7 +2113,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Hallowe'en Sisco",
    "date": "2026-10-30",
@@ -2078,7 +2126,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Fireman Sam Live",
    "date": "2026-10-30",
@@ -2091,7 +2139,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Foy Vance: World Tour",
    "date": "2026-10-30",
@@ -2109,7 +2157,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "And So I Watch You From Afar & Caspian",
    "date": "2026-10-31",
@@ -2122,7 +2170,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Halloween Silent Disco For Kids",
    "date": "2026-10-31",
@@ -2135,7 +2183,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2026-10-31",
@@ -2148,7 +2196,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2026-10-31",
@@ -2161,7 +2209,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Halloween Spooktacular",
    "date": "2026-11-01",
@@ -2174,7 +2222,7 @@
   {
    "source": "gfs",
    "venue": "Eye Cinema",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Just an Illusion (Galway Film Society)",
    "date": "2026-11-01",
@@ -2188,7 +2236,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2026-11-01",
@@ -2201,7 +2249,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2026-11-01",
@@ -2214,7 +2262,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Physical Landscape",
    "date": "2026-11-02",
@@ -2227,7 +2275,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Songwriters Open Mic",
    "date": "2026-11-03",
@@ -2240,7 +2288,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2026-11-03",
@@ -2253,7 +2301,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Mersey Beatles",
    "date": "2026-11-03",
@@ -2264,9 +2312,22 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "mick_lally",
+   "venue": "Mick Lally Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "4.48 Psychosis by Sarah Kane",
+   "date": "2026-11-04",
+   "end_date": "2026-11-07",
+   "url": "https://www.druid.ie/about/the-mick-lally-theatre/whats-on/4-48-psychosis",
+   "category": "Theatre",
+   "id": "905e73c9fe39",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Hot Mess",
    "date": "2026-11-04",
@@ -2279,7 +2340,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Gilli Apter",
    "date": "2026-11-05",
@@ -2292,7 +2353,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Total Stone Roses",
    "date": "2026-11-05",
@@ -2305,7 +2366,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Ash Fuller",
    "date": "2026-11-05",
@@ -2318,7 +2379,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Dexys Midnight Runners",
    "date": "2026-11-06",
@@ -2334,9 +2395,22 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "gac",
+   "venue": "Galway Arts Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Exhibition ⁄",
+   "date": "2026-11-06",
+   "end_date": "2026-11-22",
+   "url": "https://www.galwayartscentre.ie/whats-on/veruca-salt/",
+   "category": "Exhibition",
+   "id": "063b0c7a2986",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "How I Became A Wave",
    "date": "2026-11-06",
@@ -2349,7 +2423,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Project Smok",
    "date": "2026-11-06",
@@ -2362,7 +2436,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Romeo & Juliet",
    "date": "2026-11-06",
@@ -2376,7 +2450,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bingo Loco",
    "date": "2026-11-07",
@@ -2389,7 +2463,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Smash Hits!",
    "date": "2026-11-07",
@@ -2402,7 +2476,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2026-11-07",
@@ -2415,7 +2489,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Nerina Pallot",
    "date": "2026-11-07",
@@ -2428,7 +2502,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2026-11-07",
@@ -2441,7 +2515,7 @@
   {
    "source": "gfs",
    "venue": "Eye Cinema",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Cactus Pears (Galway Film Society)",
    "date": "2026-11-08",
@@ -2455,7 +2529,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Ed Harcourt & Noble",
    "date": "2026-11-08",
@@ -2468,7 +2542,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2026-11-08",
@@ -2481,7 +2555,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2026-11-08",
@@ -2494,7 +2568,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Ralph McTell - Somewhere Down the Road",
    "date": "2026-11-08",
@@ -2507,7 +2581,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bounce",
    "date": "2026-11-09",
@@ -2520,7 +2594,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2026-11-10",
@@ -2533,7 +2607,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Jamie Duffy",
    "date": "2026-11-10",
@@ -2546,7 +2620,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "KhakiKid",
    "date": "2026-11-11",
@@ -2560,7 +2634,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Andy Irvine & Quilty",
    "date": "2026-11-11",
@@ -2576,9 +2650,23 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "gac",
+   "venue": "Galway Arts Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Workshop ⁄",
+   "date": "2026-11-12",
+   "time": "18:30 - 20:30",
+   "url": "https://www.galwayartscentre.ie/whats-on/writing-whats-real-responsible-nonfiction-workshop/",
+   "booking_url": "https://www.eventbrite.ie/e/ali-watkins-writing-whats-real-responsible-nonfiction-workshop-tickets-2002643437431?aff=oddtdtcreator&_gl=1*14xbiy0*_up*MQ..*_ga*NDI0MDYzNzU5LjE3OTA3OTI3ODg.*_ga_TQVES5V6SH*czE3OTA3OTI3ODgkbzEkZzEkdDE3OTA3OTI4NzIkajQyJGwwJGgw",
+   "category": "Workshop",
+   "id": "fb4dc9f0bd77",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "TEDxGalway",
    "date": "2026-11-12",
@@ -2591,7 +2679,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Importance of Being Earnest",
    "date": "2026-11-12",
@@ -2605,7 +2693,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Sharon Shannon & Mike McGoldrick",
    "date": "2026-11-13",
@@ -2618,7 +2706,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Deuce - A Tribute to Rory Gallagher",
    "date": "2026-11-13",
@@ -2631,7 +2719,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Swiftogeddon - 20 years of Taylor special",
    "date": "2026-11-13",
@@ -2644,7 +2732,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "THE FRANK & WALTERS ' Grand Parade' 30th Anniversary Tour",
    "date": "2026-11-13",
@@ -2657,7 +2745,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Rory's Stories - The Good Ol' Days",
    "date": "2026-11-13",
@@ -2670,7 +2758,7 @@
   {
    "source": "roisindubh",
    "venue": "Leisureland",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Misadventures of the 3 Little Pigs",
    "date": "2026-11-14",
@@ -2683,7 +2771,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Andrew Ryan",
    "date": "2026-11-14",
@@ -2696,7 +2784,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Andrew Ryan (Extra show)",
    "date": "2026-11-14",
@@ -2709,7 +2797,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2026-11-14",
@@ -2722,7 +2810,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2026-11-14",
@@ -2735,7 +2823,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "find-joy",
    "date": "2026-11-14",
@@ -2748,7 +2836,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Gearóid Farrelly: No Pressure",
    "date": "2026-11-14",
@@ -2761,7 +2849,7 @@
   {
    "source": "gfs",
    "venue": "Eye Cinema",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Blue Heron (Galway Film Society)",
    "date": "2026-11-15",
@@ -2775,7 +2863,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2026-11-15",
@@ -2788,7 +2876,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2026-11-15",
@@ -2801,7 +2889,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Seamus Fogarty",
    "date": "2026-11-15",
@@ -2814,7 +2902,7 @@
   {
    "source": "tht",
    "venue": "The Mick Lally Theatre, Druid Lane",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Shamtown - A Musical Show",
    "date": "2026-11-15",
@@ -2828,7 +2916,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Michael English: Irish Concert Tour 2026",
    "date": "2026-11-15",
@@ -2841,7 +2929,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "An Evening in Ireland with Jeff Tweedy",
    "date": "2026-11-16",
@@ -2854,7 +2942,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2026-11-17",
@@ -2867,7 +2955,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Back to the 80s!",
    "date": "2026-11-18",
@@ -2881,7 +2969,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "All Shook Up",
    "date": "2026-11-18",
@@ -2893,9 +2981,23 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "gac",
+   "venue": "Galway Arts Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Workshop ⁄",
+   "date": "2026-11-19",
+   "time": "18:30 - 20:30",
+   "url": "https://www.galwayartscentre.ie/whats-on/whats-the-story-storytelling-workshop/",
+   "booking_url": "https://www.eventbrite.ie/e/orla-mc-govern-whats-the-story-storytelling-workshop-tickets-2002644316059?aff=oddtdtcreator&_gl=1*174h4i6*_up*MQ..*_ga*NDI0MDYzNzU5LjE3OTA3OTI3ODg.*_ga_TQVES5V6SH*czE3OTA3OTI3ODgkbzEkZzEkdDE3OTA3OTI5MjIkajYwJGwwJGgw",
+   "category": "Workshop",
+   "id": "d08a2a1a12b5",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Shobsy",
    "date": "2026-11-19",
@@ -2908,7 +3010,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Abuse Your Illusion – Guns N’ Roses Tribute",
    "date": "2026-11-20",
@@ -2921,7 +3023,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bicurious",
    "date": "2026-11-20",
@@ -2934,7 +3036,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Johnluke",
    "date": "2026-11-20",
@@ -2947,7 +3049,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Heron Red",
    "date": "2026-11-20",
@@ -2960,7 +3062,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Over the Top Wrestling",
    "date": "2026-11-21",
@@ -2973,7 +3075,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Pauric O'Meara",
    "date": "2026-11-21",
@@ -2986,12 +3088,13 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Club Gass Presents Haute and Freddy",
    "date": "2026-11-21",
    "time": "8pm",
    "url": "https://roisindubh.net/listings/club-gass-presents-haute-and-freddy-2026-11-21-200000-81512",
+   "sold_out": true,
    "category": "Music",
    "id": "13cf2ccae0cc",
    "first_seen": "2026-10-04"
@@ -2999,7 +3102,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2026-11-21",
@@ -3012,7 +3115,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2026-11-21",
@@ -3025,7 +3128,7 @@
   {
    "source": "gfs",
    "venue": "Eye Cinema",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "DJ Ahmet (Galway Film Society)",
    "date": "2026-11-22",
@@ -3039,7 +3142,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2026-11-22",
@@ -3052,7 +3155,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2026-11-22",
@@ -3065,7 +3168,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Sandro Ford: Lager Than Life",
    "date": "2026-11-22",
@@ -3079,7 +3182,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Anam Music Therapy Fundraising Concert",
    "date": "2026-11-22",
@@ -3092,7 +3195,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Folklore, Female Aging & The Hag",
    "date": "2026-11-23",
@@ -3106,7 +3209,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Witches in Art - Let's celebrate!",
    "date": "2026-11-23",
@@ -3119,7 +3222,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "LEO Galway's Annual Local Food & Craft Gift Fair 2026",
    "date": "2026-11-24",
@@ -3132,7 +3235,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2026-11-24",
@@ -3145,7 +3248,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "A Night at The Musicals",
    "date": "2026-11-24",
@@ -3157,7 +3260,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Arborist",
    "date": "2026-11-26",
@@ -3170,7 +3273,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "McGrath",
    "date": "2026-11-26",
@@ -3183,7 +3286,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bryan Murphy in Concert",
    "date": "2026-11-26",
@@ -3196,7 +3299,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Adult DVD",
    "date": "2026-11-27",
@@ -3209,7 +3312,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Name In LIghts",
    "date": "2026-11-27",
@@ -3223,7 +3326,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Noughties",
    "date": "2026-11-28",
@@ -3236,7 +3339,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2026-11-28",
@@ -3249,7 +3352,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Pa Sheehy",
    "date": "2026-11-28",
@@ -3262,7 +3365,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2026-11-28",
@@ -3275,7 +3378,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Tom Stade Rules",
    "date": "2026-11-28",
@@ -3288,7 +3391,7 @@
   {
    "source": "gfs",
    "venue": "Eye Cinema",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "All That's Left of You (Galway Film Society)",
    "date": "2026-11-29",
@@ -3302,7 +3405,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2026-11-29",
@@ -3315,7 +3418,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2026-11-29",
@@ -3328,7 +3431,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Mike Denver with Guest Claudia Buckley",
    "date": "2026-11-29",
@@ -3341,7 +3444,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Aaron Rowe",
    "date": "2026-11-30",
@@ -3355,7 +3458,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Scléip Gael Linn - Réamhbhabhta Chúige Chonnacht",
    "date": "2026-12-01",
@@ -3367,7 +3470,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Songwriters Open Mic",
    "date": "2026-12-01",
@@ -3380,7 +3483,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2026-12-01",
@@ -3393,7 +3496,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Gareth - Halfway Home Tour",
    "date": "2026-12-02",
@@ -3406,7 +3509,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Susan O'Neill",
    "date": "2026-12-03",
@@ -3419,7 +3522,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Mary Coughlan",
    "date": "2026-12-03",
@@ -3432,7 +3535,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Paul Doran",
    "date": "2026-12-03",
@@ -3445,7 +3548,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bish Bash - The School Talent Show",
    "date": "2026-12-04",
@@ -3458,7 +3561,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Undertones",
    "date": "2026-12-04",
@@ -3472,7 +3575,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Death Milkshake: Cadeaux du ciel EP Launch Show",
    "date": "2026-12-04",
@@ -3485,7 +3588,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Andy Fairweather Low and the Low Riders",
    "date": "2026-12-04",
@@ -3498,7 +3601,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Because I'm Worth It",
    "date": "2026-12-04",
@@ -3511,7 +3614,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "BoolaBoom",
    "date": "2026-12-05",
@@ -3524,7 +3627,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2026-12-05",
@@ -3537,7 +3640,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2026-12-05",
@@ -3550,7 +3653,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Eve Darcy - Married Without Children",
    "date": "2026-12-05",
@@ -3563,7 +3666,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Seán Keane & Big Band",
    "date": "2026-12-05",
@@ -3576,7 +3679,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "WhistleBlast's Night Before Christmas",
    "date": "2026-12-05",
@@ -3589,7 +3692,7 @@
   {
    "source": "gfs",
    "venue": "Eye Cinema",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Amélie (Galway Film Society)",
    "date": "2026-12-06",
@@ -3603,7 +3706,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2026-12-06",
@@ -3616,7 +3719,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2026-12-06",
@@ -3629,7 +3732,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bounce",
    "date": "2026-12-07",
@@ -3642,7 +3745,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Celtic Nutcracker",
    "date": "2026-12-07",
@@ -3655,7 +3758,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Esmeralda Road",
    "date": "2026-12-08",
@@ -3668,7 +3771,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2026-12-08",
@@ -3681,7 +3784,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Tommy Tiernan: World Tour Of Galway",
    "date": "2026-12-09",
@@ -3695,7 +3798,7 @@
   {
    "source": "roisindubh",
    "venue": "Leisureland",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Tommy Tiernan: World Tour Of Galway",
    "date": "2026-12-10",
@@ -3709,7 +3812,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Clare Sands",
    "date": "2026-12-10",
@@ -3722,7 +3825,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Florence Road",
    "date": "2026-12-10",
@@ -3736,7 +3839,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Really Good Time",
    "date": "2026-12-10",
@@ -3749,7 +3852,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "ABBA Forever",
    "date": "2026-12-10",
@@ -3762,7 +3865,7 @@
   {
    "source": "roisindubh",
    "venue": "Leisureland",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Tommy Tiernan: World Tour Of Galway",
    "date": "2026-12-11",
@@ -3776,7 +3879,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Essential Collection - A Tribute to George Michael",
    "date": "2026-12-11",
@@ -3789,7 +3892,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Florence Road",
    "date": "2026-12-11",
@@ -3803,7 +3906,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Alabama 3",
    "date": "2026-12-12",
@@ -3816,7 +3919,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2026-12-12",
@@ -3829,7 +3932,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Riptide Movement",
    "date": "2026-12-12",
@@ -3842,7 +3945,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2026-12-12",
@@ -3855,7 +3958,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Sing Along Socials: \"A Very Merry Craicmas\"",
    "date": "2026-12-12",
@@ -3868,7 +3971,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Nutcracker",
    "date": "2026-12-12",
@@ -3882,7 +3985,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2026-12-13",
@@ -3895,7 +3998,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2026-12-13",
@@ -3908,7 +4011,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Script: Irish Pub Sessions (6pm)",
    "date": "2026-12-14",
@@ -3922,7 +4025,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Script: Irish Pub Sessions (9pm)",
    "date": "2026-12-14",
@@ -3936,7 +4039,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Picture This",
    "date": "2026-12-15",
@@ -3950,7 +4053,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2026-12-15",
@@ -3963,7 +4066,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Phil Coulter - Gold & Silver Days",
    "date": "2026-12-15",
@@ -3976,7 +4079,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Liam Ó Maonlaí & Rónán Ó Snodaigh",
    "date": "2026-12-16",
@@ -3989,7 +4092,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Crooners at Christmas",
    "date": "2026-12-16",
@@ -4002,7 +4105,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Morgana",
    "date": "2026-12-17",
@@ -4015,7 +4118,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Mack Fleetwood",
    "date": "2026-12-18",
@@ -4028,7 +4131,7 @@
   {
    "source": "tht",
    "venue": "The Mick Lally Theatre, Druid Lane",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Fairy Tree",
    "date": "2026-12-18",
@@ -4042,7 +4145,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Over the Rainbow",
    "date": "2026-12-18",
@@ -4056,7 +4159,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2026-12-19",
@@ -4069,7 +4172,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Clockworks",
    "date": "2026-12-19",
@@ -4082,7 +4185,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2026-12-19",
@@ -4095,7 +4198,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2026-12-20",
@@ -4108,7 +4211,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Mick Flannery",
    "date": "2026-12-20",
@@ -4122,7 +4225,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2026-12-20",
@@ -4135,7 +4238,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2026-12-22",
@@ -4148,7 +4251,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "2 Toke Pass",
    "date": "2026-12-23",
@@ -4161,7 +4264,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2026-12-26",
@@ -4174,7 +4277,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2026-12-26",
@@ -4187,7 +4290,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2026-12-27",
@@ -4200,7 +4303,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2026-12-27",
@@ -4213,7 +4316,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2026-12-29",
@@ -4226,7 +4329,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Year Grunge Broke",
    "date": "2026-12-29",
@@ -4239,7 +4342,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "#Goldilocks & The 3 Bears",
    "date": "2026-12-29",
@@ -4252,7 +4355,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-01-02",
@@ -4265,7 +4368,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-01-02",
@@ -4278,7 +4381,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2027-01-03",
@@ -4291,7 +4394,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2027-01-03",
@@ -4304,7 +4407,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-01-05",
@@ -4317,7 +4420,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-01-09",
@@ -4330,7 +4433,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-01-09",
@@ -4343,7 +4446,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2027-01-10",
@@ -4356,7 +4459,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2027-01-10",
@@ -4369,7 +4472,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bounce",
    "date": "2027-01-11",
@@ -4382,7 +4485,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-01-12",
@@ -4395,7 +4498,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Reeling in The Showband Years",
    "date": "2027-01-13",
@@ -4408,7 +4511,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "David O'Doherty: Highway to the David Zone",
    "date": "2027-01-14",
@@ -4421,7 +4524,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-01-16",
@@ -4434,7 +4537,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-01-16",
@@ -4447,7 +4550,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2027-01-17",
@@ -4460,7 +4563,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2027-01-17",
@@ -4473,7 +4576,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-01-19",
@@ -4486,7 +4589,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Paddy Power FULL",
    "date": "2027-01-20",
@@ -4499,7 +4602,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Danny O'Brien: Sure Look, Be Grand",
    "date": "2027-01-22",
@@ -4512,7 +4615,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Beethoven Quartets - Friday 7:30pm",
    "date": "2027-01-22",
@@ -4525,7 +4628,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-01-23",
@@ -4538,7 +4641,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-01-23",
@@ -4551,7 +4654,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Beethoven Quartets - Saturday 3pm",
    "date": "2027-01-23",
@@ -4564,7 +4667,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Beethoven Quartets - Saturday 7:30pm",
    "date": "2027-01-23",
@@ -4577,7 +4680,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Conneely Inc.",
    "date": "2027-01-24",
@@ -4590,7 +4693,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2027-01-24",
@@ -4603,7 +4706,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Beethoven Quartets - Sunday 12 noon",
    "date": "2027-01-24",
@@ -4616,7 +4719,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Beethoven Quartets - Sunday 4pm",
    "date": "2027-01-24",
@@ -4629,7 +4732,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-01-26",
@@ -4642,7 +4745,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Snuts",
    "date": "2027-01-27",
@@ -4655,7 +4758,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Gold Panda",
    "date": "2027-01-28",
@@ -4668,7 +4771,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Sinéad Culbert - I'm No Wonder Woman",
    "date": "2027-01-28",
@@ -4681,7 +4784,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "DUG",
    "date": "2027-01-29",
@@ -4694,7 +4797,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Rushified - A Tribute to Rush",
    "date": "2027-01-30",
@@ -4707,7 +4810,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-01-30",
@@ -4720,7 +4823,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-01-30",
@@ -4733,7 +4836,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Neil Delamere - Neil's On Wheels",
    "date": "2027-01-30",
@@ -4746,7 +4849,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2027-01-31",
@@ -4759,7 +4862,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Sabres of Paradise (club show)",
    "date": "2027-01-31",
@@ -4772,7 +4875,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Art of Andalucia",
    "date": "2027-01-31",
@@ -4785,7 +4888,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-02-02",
@@ -4798,7 +4901,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Conor McLain",
    "date": "2027-02-04",
@@ -4811,7 +4914,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Derek Ryan Live in Concert",
    "date": "2027-02-04",
@@ -4824,7 +4927,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Andrew Lloyd Webber and Beyond",
    "date": "2027-02-05",
@@ -4837,7 +4940,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-02-06",
@@ -4850,7 +4953,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-02-06",
@@ -4863,7 +4966,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Chris Kent - That's All I Need Now",
    "date": "2027-02-06",
@@ -4876,7 +4979,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Blaze Bayley Iron Maiden Anniversary Show",
    "date": "2027-02-07",
@@ -4889,7 +4992,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2027-02-07",
@@ -4902,7 +5005,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Tommy Fleming: The Encore Tour",
    "date": "2027-02-08",
@@ -4915,7 +5018,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-02-09",
@@ -4928,7 +5031,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Anton Jablokov - Heart & Fire",
    "date": "2027-02-10",
@@ -4941,7 +5044,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Kate Nash",
    "date": "2027-02-11",
@@ -4954,7 +5057,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "An Evening with Josh Ritter",
    "date": "2027-02-11",
@@ -4972,7 +5075,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Doireann Ní Ghlacáin",
    "date": "2027-02-12",
@@ -4985,7 +5088,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Jimmy Buckley's 'Anything Goes' Variety Show",
    "date": "2027-02-12",
@@ -4998,7 +5101,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-02-13",
@@ -5011,7 +5114,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-02-13",
@@ -5024,7 +5127,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2027-02-14",
@@ -5037,7 +5140,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Patrick Feeney's Voice of Hope Show",
    "date": "2027-02-14",
@@ -5050,7 +5153,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bounce",
    "date": "2027-02-15",
@@ -5063,7 +5166,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-02-16",
@@ -5076,7 +5179,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Eddi Reader and Band",
    "date": "2027-02-16",
@@ -5089,7 +5192,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Celine - My Heart Will Go On",
    "date": "2027-02-18",
@@ -5102,7 +5205,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Adam Kay: Undoctored",
    "date": "2027-02-19",
@@ -5115,7 +5218,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Paddy Casey",
    "date": "2027-02-19",
@@ -5128,7 +5231,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "John Colleary: Mighty Quack",
    "date": "2027-02-19",
@@ -5141,7 +5244,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-02-20",
@@ -5154,7 +5257,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Paddy Keyes",
    "date": "2027-02-20",
@@ -5167,7 +5270,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-02-20",
@@ -5180,7 +5283,7 @@
   {
    "source": "roisindubh",
    "venue": "St. Nicholas' Collegiate Church",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "An Evening with LAMBCHOP",
    "date": "2027-02-20",
@@ -5194,7 +5297,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2027-02-21",
@@ -5207,7 +5310,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-02-23",
@@ -5220,7 +5323,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "BABYRAT",
    "date": "2027-02-24",
@@ -5233,7 +5336,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Gary Delaney - Gary On Laughing",
    "date": "2027-02-27",
@@ -5251,7 +5354,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-02-27",
@@ -5264,7 +5367,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-02-27",
@@ -5277,7 +5380,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2027-02-28",
@@ -5290,7 +5393,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Heaven Can Wait",
    "date": "2027-02-28",
@@ -5303,7 +5406,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-03-02",
@@ -5316,7 +5419,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "When Ireland Rocked",
    "date": "2027-03-05",
@@ -5329,7 +5432,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Shane Daniel Byrne",
    "date": "2027-03-06",
@@ -5342,7 +5445,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-03-06",
@@ -5355,7 +5458,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Sharon Mannion: I Will, Yeah",
    "date": "2027-03-06",
@@ -5368,7 +5471,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-03-06",
@@ -5381,7 +5484,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Open Mic Night",
    "date": "2027-03-07",
@@ -5394,7 +5497,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-03-09",
@@ -5407,7 +5510,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Karma Police - A tribute to Radiohead",
    "date": "2027-03-12",
@@ -5420,7 +5523,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Chris Kent - That's All I Need Now",
    "date": "2027-03-12",
@@ -5433,7 +5536,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-03-13",
@@ -5446,7 +5549,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-03-13",
@@ -5459,7 +5562,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Sleeping Beauty",
    "date": "2027-03-14",
@@ -5472,7 +5575,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bounce",
    "date": "2027-03-15",
@@ -5485,7 +5588,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-03-16",
@@ -5498,7 +5601,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bernard O'Shea: Pick Up Drop Off",
    "date": "2027-03-18",
@@ -5511,7 +5614,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "MozART Group - Classical Music with a comedy twist",
    "date": "2027-03-19",
@@ -5524,7 +5627,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Nashville Live",
    "date": "2027-03-19",
@@ -5537,7 +5640,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-03-20",
@@ -5550,7 +5653,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-03-20",
@@ -5563,7 +5666,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Seann Walsh: This Is Torture",
    "date": "2027-03-23",
@@ -5576,7 +5679,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-03-23",
@@ -5589,7 +5692,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Michael McGoldrick, John McCusker and John Doyle",
    "date": "2027-03-26",
@@ -5602,7 +5705,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-03-27",
@@ -5615,7 +5718,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Onóir",
    "date": "2027-03-27",
@@ -5628,7 +5731,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-03-27",
@@ -5641,7 +5744,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-03-30",
@@ -5654,7 +5757,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "An Evening with Vladimir Šmicer and Patrik Berger",
    "date": "2027-03-31",
@@ -5667,7 +5770,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "A Night at the Opry",
    "date": "2027-04-01",
@@ -5680,7 +5783,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Goldie Lookin Chain",
    "date": "2027-04-02",
@@ -5693,7 +5796,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Anne Gildea - You're Welcome",
    "date": "2027-04-02",
@@ -5706,7 +5809,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-04-03",
@@ -5719,7 +5822,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-04-03",
@@ -5732,7 +5835,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bootleg Eagles - 50th Anniversary Celebration of Hotel California",
    "date": "2027-04-04",
@@ -5745,7 +5848,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-04-06",
@@ -5758,7 +5861,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Dubliner - The Luke Kelly Story",
    "date": "2027-04-09",
@@ -5771,7 +5874,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-04-10",
@@ -5784,7 +5887,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Powerhaus",
    "date": "2027-04-10",
@@ -5797,7 +5900,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Jack Lukeman Presents: Hit The Road Jack",
    "date": "2027-04-10",
@@ -5810,7 +5913,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bounce",
    "date": "2027-04-12",
@@ -5823,7 +5926,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-04-13",
@@ -5836,7 +5939,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-04-17",
@@ -5849,7 +5952,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Hollie McNish",
    "date": "2027-04-20",
@@ -5862,7 +5965,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-04-20",
@@ -5875,7 +5978,7 @@
   {
    "source": "roisindubh",
    "venue": "Leisureland",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Paul Smith: Happy (Balcony Seating)",
    "date": "2027-04-21",
@@ -5888,7 +5991,7 @@
   {
    "source": "roisindubh",
    "venue": "Leisureland",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Paul Smith: Happy (General Seating)",
    "date": "2027-04-21",
@@ -5901,7 +6004,7 @@
   {
    "source": "roisindubh",
    "venue": "Leisureland",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Paul Smith: Happy (VIP Front Rows)",
    "date": "2027-04-21",
@@ -5914,7 +6017,7 @@
   {
    "source": "roisindubh",
    "venue": "Leisureland",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Paul Smith: Happy (Balcony Seating)",
    "date": "2027-04-22",
@@ -5927,7 +6030,7 @@
   {
    "source": "roisindubh",
    "venue": "Leisureland",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Paul Smith: Happy (General Seating)",
    "date": "2027-04-22",
@@ -5940,7 +6043,7 @@
   {
    "source": "roisindubh",
    "venue": "Leisureland",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Paul Smith: Happy (VIP Front Rows)",
    "date": "2027-04-22",
@@ -5953,7 +6056,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-04-24",
@@ -5966,7 +6069,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-04-27",
@@ -5979,7 +6082,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Paddy - The Life and Times of Paddy Armstrong",
    "date": "2027-04-29",
@@ -5992,7 +6095,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Remembering Joe Dolan - Celebrating a Life",
    "date": "2027-04-30",
@@ -6005,7 +6108,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-05-01",
@@ -6018,7 +6121,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-05-04",
@@ -6031,7 +6134,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Blindboy Live Podcast Show",
    "date": "2027-05-05",
@@ -6044,7 +6147,7 @@
   {
    "source": "monroes",
    "venue": "Monroe's Live",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Kieran Goss & Annie Kinsella",
    "date": "2027-05-06",
@@ -6057,7 +6160,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-05-08",
@@ -6070,7 +6173,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bounce",
    "date": "2027-05-10",
@@ -6083,7 +6186,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-05-11",
@@ -6096,7 +6199,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Highstool Prophets",
    "date": "2027-05-14",
@@ -6109,7 +6212,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-05-15",
@@ -6122,7 +6225,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Mack Fleetwood",
    "date": "2027-05-15",
@@ -6135,7 +6238,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Glory Days - A Bruce Springsteen Tribute Show",
    "date": "2027-05-16",
@@ -6148,7 +6251,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "HERstory: The Katie Taylor Story",
    "date": "2027-05-17",
@@ -6162,7 +6265,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-05-18",
@@ -6175,7 +6278,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-05-22",
@@ -6188,7 +6291,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-05-25",
@@ -6201,7 +6304,7 @@
   {
    "source": "tht",
    "venue": "Black Box Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Ruby Wax: Absolutely Famous",
    "date": "2027-05-27",
@@ -6219,7 +6322,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Beatles Complete",
    "date": "2027-05-28",
@@ -6232,7 +6335,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-05-29",
@@ -6245,7 +6348,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-06-01",
@@ -6258,7 +6361,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Eric and Little Ern",
    "date": "2027-06-02",
@@ -6271,7 +6374,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Hang Massive",
    "date": "2027-06-04",
@@ -6285,7 +6388,7 @@
   {
    "source": "roisindubh",
    "venue": "Leisureland",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Jason Byrne: 30 Years Byrning",
    "date": "2027-06-05",
@@ -6298,7 +6401,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-06-05",
@@ -6311,7 +6414,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-06-08",
@@ -6324,7 +6427,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-06-12",
@@ -6337,7 +6440,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-06-15",
@@ -6350,7 +6453,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-06-19",
@@ -6363,7 +6466,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-06-22",
@@ -6376,7 +6479,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Ed Byrne - No Dramas",
    "date": "2027-06-23",
@@ -6389,7 +6492,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Legends of the 60s Show",
    "date": "2027-06-25",
@@ -6402,7 +6505,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-06-26",
@@ -6415,7 +6518,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Rhythm of the Dance",
    "date": "2027-06-26",
@@ -6428,7 +6531,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "KAI - My Revolution",
    "date": "2027-06-28",
@@ -6441,7 +6544,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-06-29",
@@ -6454,7 +6557,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-07-03",
@@ -6467,7 +6570,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bounce",
    "date": "2027-07-05",
@@ -6480,7 +6583,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-07-06",
@@ -6493,7 +6596,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Last Orders",
    "date": "2027-07-10",
@@ -6506,7 +6609,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-07-13",
@@ -6519,7 +6622,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-07-20",
@@ -6532,7 +6635,7 @@
   {
    "source": "tht",
    "venue": "Town Hall Theatre",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "The Dinosaur That Pooped - The Rock Show",
    "date": "2027-08-26",
@@ -6545,7 +6648,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "Bounce",
    "date": "2027-09-06",
@@ -6558,7 +6661,7 @@
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
-   "town": "Galway",
+   "town": "Galway City",
    "county": "Galway",
    "title": "This Is The Kit",
    "date": "2027-09-25",
