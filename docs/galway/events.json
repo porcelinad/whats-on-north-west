@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-04T17:47Z",
+ "generated_at": "2026-10-04T18:07Z",
  "failed_sources": [],
  "source_last_run": {},
  "consecutive_failures": {
@@ -11,7 +11,8 @@
   "mick_lally": 0,
   "taibhdhearc": 0,
   "leisureland": 0,
-  "musicforgalway": 0
+  "musicforgalway": 0,
+  "galway_city_museum": 0
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -1997,6 +1998,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "galway_city_museum",
+   "venue": "Galway City Museum",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Family Workshop: Make a Traditional Jack-o’-Lantern",
+   "date": "2026-10-27",
+   "time": "11am",
+   "url": "https://galwaycitymuseum.ie/event/family-workshop-make-a-traditional-jack-o-lantern/",
+   "category": "Workshop, Kids/Family",
+   "id": "0692447d7921",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -2035,6 +2049,29 @@
    "category": "Theatre, Kids/Family",
    "id": "85141b8abbdb",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "galway_city_museum",
+   "venue": "Galway City Museum",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Family Workshop: Spooky Halloween in LEGO®",
+   "date": "2026-10-28",
+   "time": "11:30am & 2pm",
+   "url": "https://galwaycitymuseum.ie/event/family-workshop-spooky-halloween-in-lego/",
+   "sessions": [
+    {
+     "time": "11:30am",
+     "url": "https://galwaycitymuseum.ie/event/family-workshop-spooky-halloween-in-lego/"
+    },
+    {
+     "time": "2pm",
+     "url": "https://galwaycitymuseum.ie/event/family-workshop-spooky-halloween-in-lego-2/"
+    }
+   ],
+   "category": "Workshop, Kids/Family",
+   "id": "39fb5116bdb2",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "mick_lally",
@@ -2090,6 +2127,55 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "galway_city_museum",
+   "venue": "Galway City Museum",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Museum Lates",
+   "date": "2026-10-29",
+   "time": "5pm",
+   "url": "https://galwaycitymuseum.ie/event/museum-lates-3/",
+   "category": null,
+   "id": "e671b72de5ad",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "galway_city_museum",
+   "venue": "Galway City Museum",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Storytelling: Spooky Samhain Tales",
+   "date": "2026-10-29",
+   "time": "1:30pm & 2:15pm",
+   "url": "https://galwaycitymuseum.ie/event/storytelling-spooky-samhain-tales/",
+   "sessions": [
+    {
+     "time": "1:30pm",
+     "url": "https://galwaycitymuseum.ie/event/storytelling-spooky-samhain-tales/"
+    },
+    {
+     "time": "2:15pm",
+     "url": "https://galwaycitymuseum.ie/event/storytelling-spooky-samhain-tales-2/"
+    }
+   ],
+   "category": "Storytelling",
+   "id": "533a8c706499",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "galway_city_museum",
+   "venue": "Galway City Museum",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Workshop: Spooky Stories & Art",
+   "date": "2026-10-29",
+   "time": "11am",
+   "url": "https://galwaycitymuseum.ie/event/workshop-spooky-stories-art/",
+   "category": "Workshop",
+   "id": "09abd8103337",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "monroes",
    "venue": "Monroe's Live",
    "town": "Galway City",
@@ -2140,6 +2226,42 @@
    "category": "Theatre",
    "id": "619778ca2cc9",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "galway_city_museum",
+   "venue": "Galway City Museum",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Storytelling: Spooky Samhain Tales",
+   "date": "2026-10-30",
+   "time": "1:30pm & 2:15pm",
+   "url": "https://galwaycitymuseum.ie/event/storytelling-spooky-samhain-tales-4/",
+   "sessions": [
+    {
+     "time": "1:30pm",
+     "url": "https://galwaycitymuseum.ie/event/storytelling-spooky-samhain-tales-4/"
+    },
+    {
+     "time": "2:15pm",
+     "url": "https://galwaycitymuseum.ie/event/storytelling-spooky-samhain-tales-5/"
+    }
+   ],
+   "category": "Storytelling",
+   "id": "2bfe0b886c0a",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "galway_city_museum",
+   "venue": "Galway City Museum",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Workshop: Traditional Halloween Masks",
+   "date": "2026-10-30",
+   "time": "11am",
+   "url": "https://galwaycitymuseum.ie/event/workshop-traditional-halloween-masks/",
+   "category": "Workshop",
+   "id": "dde3526f7e3c",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "leisureland",
@@ -2236,6 +2358,19 @@
    ],
    "id": "dcc25085244e",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "galway_city_museum",
+   "venue": "Galway City Museum",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Talk & Taste Event: Traditional Halloween Fare",
+   "date": "2026-10-31",
+   "time": "2pm",
+   "url": "https://galwaycitymuseum.ie/event/talk-taste-event-traditional-halloween-fare/",
+   "category": "Talks",
+   "id": "ace1173f9452",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "roisindubh",
@@ -2393,6 +2528,19 @@
    "category": "Music",
    "id": "6b7f6d564ee5",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "galway_city_museum",
+   "venue": "Westside Resource Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Westside Talk: The Murder of Michael Walsh, 1920 with Brendan McGowan",
+   "date": "2026-11-03",
+   "time": "10:45am",
+   "url": "https://galwaycitymuseum.ie/event/westside-talk-the-murder-of-michael-walsh-1920-with-brendan-mcgowan/",
+   "category": "Westside Talk",
+   "id": "0fdc5f18df29",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "mick_lally",
@@ -3371,6 +3519,18 @@
    "time": "5:30pm & 8pm",
    "url": "https://roisindubh.net/listings/folklore,-female-aging-and-the-hag-2026-11-23-173000-81700",
    "booking_url": "https://www.eventbrite.co.uk/e/2002197461505?utm_source=Venue_speaker&utm_medium=Venue_speaker&utm_campaign=na&utm_content=na",
+   "sessions": [
+    {
+     "time": "5:30pm",
+     "url": "https://roisindubh.net/listings/folklore,-female-aging-and-the-hag-2026-11-23-173000-81700",
+     "booking_url": "https://www.eventbrite.co.uk/e/2002197461505?utm_source=Venue_speaker&utm_medium=Venue_speaker&utm_campaign=na&utm_content=na"
+    },
+    {
+     "time": "8pm",
+     "url": "https://roisindubh.net/listings/folklore,-female-aging-and-the-hag-2026-11-23-200000-81699",
+     "booking_url": "https://www.eventbrite.co.uk/e/2002197773438?utm_source=Venue_speaker&utm_medium=Venue_speaker&utm_campaign=na&utm_content=na"
+    }
+   ],
    "category": "Music",
    "id": "b8e18c86a41c",
    "first_seen": "2026-10-04"
@@ -3673,6 +3833,19 @@
    "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2026-12-01-200000-81460",
    "category": "Music",
    "id": "248d78af493c",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "galway_city_museum",
+   "venue": "Westside Resource Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Westside Talk: Medieval Pilgrims from Galway to Santiago de Compostela with Dr Bernadette Cunningham",
+   "date": "2026-12-01",
+   "time": "10:45am",
+   "url": "https://galwaycitymuseum.ie/event/westside-talk-medieval-pilgrims-from-galway-to-santiago-de-compostela-with-dr-bernadette-cunningham/",
+   "category": "Westside Talk",
+   "id": "eb7cf9044637",
    "first_seen": "2026-10-04"
   },
   {
@@ -4662,6 +4835,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "galway_city_museum",
+   "venue": "Westside Resource Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Westside Talk: The Reliquary of St Ursula with Eóin Ó Néill",
+   "date": "2027-01-05",
+   "time": "10:45am",
+   "url": "https://galwaycitymuseum.ie/event/westside-talk-the-reliquary-of-st-ursula-with-eoin-o-neill/",
+   "category": "Westside Talk",
+   "id": "b9dc13024dc5",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "leisureland",
    "venue": "Leisureland",
    "town": "Galway City",
@@ -5153,6 +5339,19 @@
    "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2027-02-02-200000-81469",
    "category": "Music",
    "id": "799b25e61561",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "galway_city_museum",
+   "venue": "Westside Resource Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Westside Talk: Some Historic Buildings in Galway with Michael Scott",
+   "date": "2027-02-02",
+   "time": "10:45am",
+   "url": "https://galwaycitymuseum.ie/event/westside-talk-some-historic-buildings-in-galway-with-michael-scott/",
+   "category": "Westside Talk",
+   "id": "783a3d48cad4",
    "first_seen": "2026-10-04"
   },
   {
@@ -5724,6 +5923,19 @@
    "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2027-03-02-200000-81473",
    "category": "Music",
    "id": "4f4220fec3f9",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "galway_city_museum",
+   "venue": "Westside Resource Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Westside Talk: Westside through History with William Henry",
+   "date": "2027-03-02",
+   "time": "10:45am",
+   "url": "https://galwaycitymuseum.ie/event/westside-talk-westside-through-history-with-william-henry/",
+   "category": "Westside Talk",
+   "id": "1e5134492424",
    "first_seen": "2026-10-04"
   },
   {
