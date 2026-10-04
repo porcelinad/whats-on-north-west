@@ -408,6 +408,74 @@
     text-decoration-color:var(--ink-soft);
   }
 
+  /* --------------------------------
+     Several sessions in one day
+     The card is a <div>, not a link (a link can't contain links). Its
+     title is the card's own link, stretched over the whole card; the
+     time chips sit above that as links of their own, one per session.
+     -------------------------------- */
+
+  .event.multi{
+    position:relative;
+  }
+
+  .event.multi .title a.stretch{
+    color:inherit;
+    text-decoration:none;
+  }
+
+  .event.multi .title a.stretch::after{
+    content:"";
+    position:absolute;
+    inset:0;
+  }
+
+  .event.multi:has(.stretch:focus-visible){
+    outline:2px solid var(--ember);
+    outline-offset:2px;
+  }
+
+  .sessions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:8px;
+    position:relative;
+    z-index:2;
+  }
+
+  .session{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:14px;
+    letter-spacing:.04em;
+    text-decoration:none;
+    color:var(--ink);
+    border:1.5px solid var(--ink);
+    border-radius:999px;
+    padding:5px 13px;
+    min-height:32px;
+    display:inline-flex;
+    align-items:center;
+    transition:background .15s,color .15s;
+  }
+
+  .session:hover{
+    background:var(--ember);
+    border-color:var(--ember);
+    color:#fff;
+  }
+
+  .session:focus-visible{
+    outline:2px solid var(--ember);
+    outline-offset:2px;
+  }
+
+  .session.sold{
+    opacity:.55;
+    text-decoration:line-through;
+  }
+
   .empty,
   .error{
     padding:40px 10px;
@@ -903,11 +971,19 @@ function render(gen){
     }
 
 
-    const a=el("a","event");
+    const sessions=(ev.sessions||[]).filter(s=>s&&s.time);
 
-    a.href=ev.url||ev.booking_url||"#";
-    a.target="_blank";
-    a.rel="noopener";
+    const multi=sessions.length>1;
+
+    const mainUrl=ev.url||ev.booking_url||"#";
+
+    const a=el(multi?"div":"a",multi?"event multi":"event");
+
+    if(!multi){
+      a.href=mainUrl;
+      a.target="_blank";
+      a.rel="noopener";
+    }
 
     if(ev.sold_out){
       a.classList.add("sold");
@@ -953,9 +1029,24 @@ function render(gen){
 
     const info=el("div","info");
 
-    info.append(
-      el("p","title",ev.title)
-    );
+    const titleEl=el("p","title");
+
+    if(multi){
+
+      const tl=el("a","stretch",ev.title);
+
+      tl.href=mainUrl;
+      tl.target="_blank";
+      tl.rel="noopener";
+
+      titleEl.append(tl);
+
+    }else{
+
+      titleEl.textContent=ev.title;
+    }
+
+    info.append(titleEl);
 
 
     const meta=el("p","meta");
@@ -965,9 +1056,40 @@ function render(gen){
     meta.innerHTML=
       "<b>"+ev.venue+"</b>"+
       (loc?" · "+loc:"")+
-      (ev.time?" · "+ev.time:"");
+      (!multi&&ev.time?" · "+ev.time:"");
 
     info.append(meta);
+
+
+    if(multi){
+
+      const row=el("div","sessions");
+
+      row.setAttribute("role","group");
+      row.setAttribute("aria-label","Choose a time");
+
+      sessions.forEach(s=>{
+
+        const chip=el("a","session",s.time);
+
+        chip.href=s.url||s.booking_url||mainUrl;
+        chip.target="_blank";
+        chip.rel="noopener";
+
+        chip.setAttribute(
+          "aria-label",
+          ev.title+" at "+s.time+(s.sold_out?" (sold out)":"")
+        );
+
+        if(s.sold_out){
+          chip.classList.add("sold");
+        }
+
+        row.append(chip);
+      });
+
+      info.append(row);
+    }
 
 
     const tags=el("div","tags");
