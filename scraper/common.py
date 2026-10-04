@@ -387,7 +387,7 @@ def _title_containment(a, b, noise_prefixes=(), aliases=()):
 
 def merge_cross_source_duplicates(events, source_priority=None,
                                    noise_prefixes=(), aliases=(),
-                                   threshold=0.7):
+                                   threshold=0.7, merge_same_source=True):
     """Events from different sources describing the same real-world
     happening (e.g. a show at a venue that's also promoted by a
     festival or a tourism-board aggregator) are merged into one entry.
@@ -403,7 +403,16 @@ def merge_cross_source_duplicates(events, source_priority=None,
     noise (e.g. 'RCC Kids: ') or normalise its own recurring
     abbreviations (e.g. 'IADF' -> 'irish aerial dance fest') before
     comparing titles for similarity - pass empty tuples for a region
-    with no such patterns yet."""
+    with no such patterns yet.
+
+    merge_same_source: by default (kept for the North West scraper's
+    existing behaviour) two events from the SAME source can also be
+    merged if their titles are similar enough. That is wrong for a
+    source that legitimately lists several similarly-titled events on
+    one day at one venue - e.g. 'Beethoven Quartets - Saturday 3pm' and
+    '... Saturday 7:30pm' are two separate ticketed concerts, but score
+    0.75 against a 0.7 threshold and one silently vanishes. Pass False
+    to only ever merge events from DIFFERENT sources."""
     source_priority = source_priority or {}
     groups = {}
     for ev in events:
@@ -425,6 +434,9 @@ def merge_cross_source_duplicates(events, source_priority=None,
 
         for i in range(len(group)):
             for j in range(i + 1, len(group)):
+                if (not merge_same_source
+                        and group[i]["source"] == group[j]["source"]):
+                    continue
                 if _title_containment(group[i]["title"], group[j]["title"],
                                        noise_prefixes, aliases) >= threshold:
                     ri, rj = find(i), find(j)
