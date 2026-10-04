@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-04T16:59Z",
+ "generated_at": "2026-10-04T17:47Z",
  "failed_sources": [],
  "source_last_run": {},
  "consecutive_failures": {
@@ -8,7 +8,10 @@
   "roisindubh": 0,
   "gfs": 0,
   "gac": 0,
-  "mick_lally": 0
+  "mick_lally": 0,
+  "taibhdhearc": 0,
+  "leisureland": 0,
+  "musicforgalway": 0
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -1208,6 +1211,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "musicforgalway",
+   "venue": "St. Nicholas' Collegiate Church",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Everything is Connected",
+   "date": "2026-10-17",
+   "time": "5pm",
+   "url": "https://musicforgalway.ie/event/everything-is-connected/",
+   "category": "Music, Classical",
+   "id": "e74b9f4bd596",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Áras na nGael",
    "town": "Galway City",
@@ -1318,6 +1334,19 @@
    "url": "https://roisindubh.net/listings/open-mic-night-2026-10-18-200000-81024",
    "category": "Music",
    "id": "0a756635ce2a",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "musicforgalway",
+   "venue": "Sullivan's Royal Hotel",
+   "town": "Gort",
+   "county": "Galway",
+   "title": "MfG Encore: Everything is Connected",
+   "date": "2026-10-18",
+   "time": "5pm",
+   "url": "https://musicforgalway.ie/event/mfg-encore-everything-is-connected/",
+   "category": "Music, Classical",
+   "id": "a2a4e3ddaea5",
    "first_seen": "2026-10-04"
   },
   {
@@ -1438,6 +1467,20 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "taibhdhearc",
+   "venue": "An Taibhdhearc",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "PYGMALION 26 - Aisling Ghéar",
+   "date": "2026-10-21",
+   "end_date": "2026-10-24",
+   "time": "8pm",
+   "url": "https://antaibhdhearc.ticketsolve.com/ticketbooth/shows/873690291",
+   "category": "Theatre, Irish Language",
+   "id": "172a48393ef4",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Black Box Theatre",
    "town": "Galway City",
@@ -1531,6 +1574,20 @@
    "booking_url": "https://www.eventbrite.ie/e/john-patrick-mchugh-character-characterisations-fiction-workshop-tickets-2002639858727?aff=oddtdtcreator&_gl=1*5xowct*_up*MQ..*_ga*NDI0MDYzNzU5LjE3OTA3OTI3ODg.*_ga_TQVES5V6SH*czE3OTA3OTI3ODgkbzEkZzEkdDE3OTA3OTI4MTEkajM3JGwwJGgw",
    "category": "Workshop",
    "id": "3ac0a5a16110",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "DARA Ó BRIAIN – RE:Creation",
+   "date": "2026-10-22",
+   "time": "7pm",
+   "url": "https://www.leisureland.ie/calendar/dara-o-briain-recreation-4/",
+   "sold_out": true,
+   "category": "Comedy",
+   "id": "26e852266176",
    "first_seen": "2026-10-04"
   },
   {
@@ -1833,6 +1890,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Emma Doran: Emmaculate",
+   "date": "2026-10-25",
+   "time": "7pm",
+   "url": "https://www.leisureland.ie/calendar/emma-doran-emmaculate/",
+   "category": "Comedy",
+   "id": "631ca6fca035",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "monroes",
    "venue": "Monroe's Live",
    "town": "Galway City",
@@ -2070,6 +2140,19 @@
    "category": "Theatre",
    "id": "619778ca2cc9",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Katzeye The Tribute Experience",
+   "date": "2026-10-30",
+   "time": "7:30pm",
+   "url": "https://www.leisureland.ie/calendar/katzye-the-tribute-experience/",
+   "category": "Music",
+   "id": "9880a438b063",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "monroes",
@@ -2325,6 +2408,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh (Top Bar)",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "The Blow In's",
+   "date": "2026-11-04",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/the-blow-ins-2026-11-04-200000-81708",
+   "category": "Music",
+   "id": "f873944b7ef8",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway City",
@@ -2348,6 +2444,19 @@
    "url": "https://monroes.ie/products/gilli-apter",
    "category": "Music",
    "id": "c83259c42a37",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "musicforgalway",
+   "venue": "O'Donoghue Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Lunchtime Concert:<br>THE PALE BLUE DOT<br>Documentary Film Screening:<br>THE FARTHEST",
+   "date": "2026-11-05",
+   "time": "1pm",
+   "url": "https://musicforgalway.ie/event/lunchtime-concert-the-pale-blue-dot/",
+   "category": "Music, Classical",
+   "id": "e71c08174adc",
    "first_seen": "2026-10-04"
   },
   {
@@ -2605,6 +2714,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "TULCA: 50 Foot Woman, Molly Vulpyne Band, Ria Rua",
+   "date": "2026-11-10",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/tulca-50-foot-woman,-molly-vulpyne-band,-ria-rua-2026-11-10-200000-81709",
+   "category": "Music",
+   "id": "2b5627e2f22e",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway City",
@@ -2661,6 +2783,23 @@
    "booking_url": "https://www.eventbrite.ie/e/ali-watkins-writing-whats-real-responsible-nonfiction-workshop-tickets-2002643437431?aff=oddtdtcreator&_gl=1*14xbiy0*_up*MQ..*_ga*NDI0MDYzNzU5LjE3OTA3OTI3ODg.*_ga_TQVES5V6SH*czE3OTA3OTI3ODgkbzEkZzEkdDE3OTA3OTI4NzIkajQyJGwwJGgw",
    "category": "Workshop",
    "id": "fb4dc9f0bd77",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "A TASTE OF CELLISSIMO with National Symphony Orchestra Ireland",
+   "date": "2026-11-12",
+   "time": "7:30pm",
+   "url": "https://www.leisureland.ie/calendar/a-taste-of-cellissimo-with-national-symphony-orchestra-ireland/",
+   "category": "Music",
+   "merged_from": [
+    "leisureland",
+    "musicforgalway"
+   ],
+   "id": "41048b33970a",
    "first_seen": "2026-10-04"
   },
   {
@@ -2756,16 +2895,20 @@
    "first_seen": "2026-09-27"
   },
   {
-   "source": "roisindubh",
+   "source": "leisureland",
    "venue": "Leisureland",
    "town": "Galway City",
    "county": "Galway",
    "title": "The Misadventures of the 3 Little Pigs",
    "date": "2026-11-14",
    "time": "3pm",
-   "url": "https://roisindubh.net/listings/the-misadventures-of-the-3-little-pigs-2026-11-14-150000-81274",
-   "category": "Music, Kids/Family",
-   "id": "546bc9774e4e",
+   "url": "https://www.leisureland.ie/calendar/the-misadventures-of-the-3-little-pigs/",
+   "category": "Music",
+   "merged_from": [
+    "leisureland",
+    "roisindubh"
+   ],
+   "id": "76fbe4921abb",
    "first_seen": "2026-10-04"
   },
   {
@@ -3008,6 +3151,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "80s Icons Show",
+   "date": "2026-11-20",
+   "time": "8pm",
+   "url": "https://www.leisureland.ie/calendar/80s-icons-show-3/",
+   "category": "Music",
+   "id": "d504223632e7",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "monroes",
    "venue": "Monroe's Live",
    "town": "Galway City",
@@ -3057,6 +3213,19 @@
    "url": "https://roisindubh.net/listings/heron-red-2026-11-20-200000-81632",
    "category": "Music",
    "id": "1391394e831c",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "musicforgalway",
+   "venue": "Siobhán McKenna Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Lunchtime Concert:<br>JJ McNamara, piano",
+   "date": "2026-11-20",
+   "time": "1pm",
+   "url": "https://musicforgalway.ie/event/lunchtime-concert-jj-mcnamara-piano/",
+   "category": "Music, Classical",
+   "id": "4a029d5964a8",
    "first_seen": "2026-10-04"
   },
   {
@@ -3294,6 +3463,19 @@
    "url": "https://roisindubh.net/listings/bryan-murphy-in-concert-2026-11-26-200000-81694",
    "category": "Music",
    "id": "4f84c600148b",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "musicforgalway",
+   "venue": "Michael D. Higgins Auditorium (Lower Aula)",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Emily Anderson Concert with ConTempo Quartet",
+   "date": "2026-11-27",
+   "time": "7:30pm",
+   "url": "https://musicforgalway.ie/event/emily-anderson-concert-with-contempo-quartet/",
+   "category": "Music, Classical",
+   "id": "89c535b469f8",
    "first_seen": "2026-10-04"
   },
   {
@@ -3730,6 +3912,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "musicforgalway",
+   "venue": "St. Nicholas' Collegiate Church",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Galway Messiah",
+   "date": "2026-12-06",
+   "time": "7:30pm",
+   "url": "https://musicforgalway.ie/event/galway-messiah-26/",
+   "category": "Music, Classical",
+   "id": "ab942d2b6a1a",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -3796,17 +3991,21 @@
    "first_seen": "2026-10-04"
   },
   {
-   "source": "roisindubh",
+   "source": "leisureland",
    "venue": "Leisureland",
    "town": "Galway City",
    "county": "Galway",
    "title": "Tommy Tiernan: World Tour Of Galway",
    "date": "2026-12-10",
    "time": "7pm",
-   "url": "https://roisindubh.net/listings/tommy-tiernan-world-tour-of-galway-2026-12-10-190000-81503",
-   "sold_out": true,
+   "url": "https://www.leisureland.ie/calendar/tommy-tiernan-world-tour-of-galway/",
    "category": "Comedy",
-   "id": "fedc74db678b",
+   "sold_out": true,
+   "merged_from": [
+    "leisureland",
+    "roisindubh"
+   ],
+   "id": "9d651ec663fe",
    "first_seen": "2026-10-04"
   },
   {
@@ -3863,17 +4062,21 @@
    "first_seen": "2026-09-27"
   },
   {
-   "source": "roisindubh",
+   "source": "leisureland",
    "venue": "Leisureland",
    "town": "Galway City",
    "county": "Galway",
    "title": "Tommy Tiernan: World Tour Of Galway",
    "date": "2026-12-11",
    "time": "7pm",
-   "url": "https://roisindubh.net/listings/tommy-tiernan-world-tour-of-galway-2026-12-11-190000-81504",
-   "sold_out": true,
+   "url": "https://www.leisureland.ie/calendar/tommy-tiernan-world-tour-of-galway-2/",
    "category": "Comedy",
-   "id": "f1edbaa5b1ec",
+   "sold_out": true,
+   "merged_from": [
+    "leisureland",
+    "roisindubh"
+   ],
+   "id": "12e23471b737",
    "first_seen": "2026-10-04"
   },
   {
@@ -3901,6 +4104,19 @@
    "sold_out": true,
    "category": "Music",
    "id": "7d493d4f72c5",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Madra Salach",
+   "date": "2026-12-12",
+   "time": "7pm",
+   "url": "https://www.leisureland.ie/calendar/madra-salach/",
+   "category": "Music",
+   "id": "67f8eab8118a",
    "first_seen": "2026-10-04"
   },
   {
@@ -4116,6 +4332,20 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Jamie McIntyre",
+   "date": "2026-12-18",
+   "time": "7pm",
+   "url": "https://www.leisureland.ie/calendar/jamie-mcintyre/",
+   "sold_out": true,
+   "category": "Music",
+   "id": "50db18b9fdd9",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -4155,6 +4385,20 @@
    "category": "Dance",
    "id": "41eac973a21e",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Jamie McIntyre",
+   "date": "2026-12-19",
+   "time": "7pm",
+   "url": "https://www.leisureland.ie/calendar/jamie-mcintyre-2/",
+   "sold_out": true,
+   "category": "Music",
+   "id": "9c5c8f76dd50",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "roisindubh",
@@ -4415,6 +4659,19 @@
    "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2027-01-05-200000-81465",
    "category": "Music",
    "id": "81998bd9f799",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "The High Kings",
+   "date": "2027-01-08",
+   "time": "8pm",
+   "url": "https://www.leisureland.ie/calendar/the-high-kings-3/",
+   "category": "Music",
+   "id": "1d7885ba4dbe",
    "first_seen": "2026-10-04"
   },
   {
@@ -4899,6 +5156,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "An Audience With Liverpool Legends",
+   "date": "2027-02-04",
+   "time": "5:30pm",
+   "url": "https://www.leisureland.ie/calendar/an-audience-with-liverpool-legends/",
+   "category": null,
+   "id": "2cbf8b0fc450",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "monroes",
    "venue": "Monroe's Live",
    "town": "Galway City",
@@ -5073,6 +5343,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "musicforgalway",
+   "venue": "Mick Lally Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Kafka Fragments",
+   "date": "2027-02-12",
+   "time": "7:30pm",
+   "url": "https://musicforgalway.ie/event/kafka-fragments/",
+   "category": "Music, Classical",
+   "id": "8bc1c5bfdd3a",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -5188,6 +5471,19 @@
    "category": "Music",
    "id": "346c680fab20",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "musicforgalway",
+   "venue": "O'Donoghue Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Lunchtime Concert:<BR>Levi Andreassen",
+   "date": "2027-02-18",
+   "time": "1pm",
+   "url": "https://musicforgalway.ie/event/lunchtime-concert-levi-andreassen/",
+   "category": "Music, Classical",
+   "id": "868f59a0b54c",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -5352,6 +5648,20 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Jarlath Regan – Craic Pot",
+   "date": "2027-02-27",
+   "time": "7pm",
+   "url": "https://www.leisureland.ie/calendar/jarlath-regan-craic-pot/",
+   "sold_out": true,
+   "category": "Comedy",
+   "id": "dd3c127a3c4f",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -5414,6 +5724,19 @@
    "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2027-03-02-200000-81473",
    "category": "Music",
    "id": "4f4220fec3f9",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Country Girl The Musical",
+   "date": "2027-03-05",
+   "time": "7:30pm",
+   "url": "https://www.leisureland.ie/calendar/country-girl-the-musical/",
+   "category": "Music",
+   "id": "b1fd2217dfd1",
    "first_seen": "2026-10-04"
   },
   {
@@ -5560,6 +5883,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "musicforgalway",
+   "venue": "The Hardiman Ballroom",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "John O’Conor, piano",
+   "date": "2027-03-14",
+   "time": "3pm",
+   "url": "https://musicforgalway.ie/event/john-oconor-piano/",
+   "category": "Music, Classical",
+   "id": "af01f82db0e9",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway City",
@@ -5700,6 +6036,19 @@
    "url": "https://monroes.ie/products/michael-mcgoldrick-john-mccusker-and-john-doyle",
    "category": "Music",
    "id": "c0321935c684",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "musicforgalway",
+   "venue": "St. Nicholas' Collegiate Church",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Music for Good Friday",
+   "date": "2027-03-26",
+   "time": "5pm",
+   "url": "https://musicforgalway.ie/event/music-for-good-friday-4/",
+   "category": "Music, Classical",
+   "id": "1398cbeb80be",
    "first_seen": "2026-10-04"
   },
   {
@@ -5859,6 +6208,32 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "musicforgalway",
+   "venue": "St. Joseph's Church, Presentation Rd",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Paddington Trio",
+   "date": "2027-04-08",
+   "time": "7:30pm",
+   "url": "https://musicforgalway.ie/event/paddington-trio/",
+   "category": "Music, Classical",
+   "id": "c79b59c97957",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "musicforgalway",
+   "venue": "Mount Carmel Chapel",
+   "town": "Loughrea",
+   "county": "Galway",
+   "title": "MfG Encore: Paddington Trio",
+   "date": "2027-04-09",
+   "time": "7:30pm",
+   "url": "https://musicforgalway.ie/event/mfg-encore-paddington-trio/",
+   "category": "Music, Classical",
+   "id": "0530ac9fccf1",
+   "first_seen": "2026-10-04"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway City",
@@ -5870,6 +6245,19 @@
    "category": "Music",
    "id": "26cd61e65cb9",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Sharon Shannon & Frances Black & Mary Coughlan",
+   "date": "2027-04-10",
+   "time": "8pm",
+   "url": "https://www.leisureland.ie/calendar/sharon-shannon-frances-black-mary-coughlan-2/",
+   "category": "Music",
+   "id": "eb98f5402fa1",
+   "first_seen": "2026-10-04"
   },
   {
    "source": "roisindubh",
@@ -5976,81 +6364,37 @@
    "first_seen": "2026-10-04"
   },
   {
-   "source": "roisindubh",
+   "source": "leisureland",
    "venue": "Leisureland",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Paul Smith: Happy (Balcony Seating)",
+   "title": "Paul Smith: Happy",
    "date": "2027-04-21",
    "time": "7pm",
-   "url": "https://roisindubh.net/listings/paul-smith-happy-%28balcony-seating%29-2027-04-21-190000-80972",
+   "url": "https://www.leisureland.ie/calendar/paul-smith-happy/",
    "category": "Comedy",
-   "id": "bdf1df88d50c",
+   "merged_from": [
+    "leisureland",
+    "roisindubh"
+   ],
+   "id": "49bbf9ecfc7b",
    "first_seen": "2026-10-04"
   },
   {
-   "source": "roisindubh",
+   "source": "leisureland",
    "venue": "Leisureland",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Paul Smith: Happy (General Seating)",
-   "date": "2027-04-21",
-   "time": "7pm",
-   "url": "https://roisindubh.net/listings/paul-smith-happy-%28general-seating%29-2027-04-21-190000-80968",
-   "category": "Comedy",
-   "id": "e96a9b4d465e",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Leisureland",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Paul Smith: Happy (VIP Front Rows)",
-   "date": "2027-04-21",
-   "time": "7pm",
-   "url": "https://roisindubh.net/listings/paul-smith-happy-%28vip-front-rows%29-2027-04-21-190000-80971",
-   "category": "Comedy",
-   "id": "054919981ba5",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Leisureland",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Paul Smith: Happy (Balcony Seating)",
+   "title": "Paul Smith: Happy",
    "date": "2027-04-22",
    "time": "7pm",
-   "url": "https://roisindubh.net/listings/paul-smith-happy-%28balcony-seating%29-2027-04-22-190000-80975",
+   "url": "https://www.leisureland.ie/calendar/paul-smith-happy-2/",
    "category": "Comedy",
-   "id": "d5f9515bc04c",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Leisureland",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Paul Smith: Happy (General Seating)",
-   "date": "2027-04-22",
-   "time": "7pm",
-   "url": "https://roisindubh.net/listings/paul-smith-happy-%28general-seating%29-2027-04-22-190000-80973",
-   "category": "Comedy",
-   "id": "aca880056b21",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Leisureland",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Paul Smith: Happy (VIP Front Rows)",
-   "date": "2027-04-22",
-   "time": "7pm",
-   "url": "https://roisindubh.net/listings/paul-smith-happy-%28vip-front-rows%29-2027-04-22-190000-80974",
-   "category": "Comedy",
-   "id": "10d1b3970c56",
+   "merged_from": [
+    "leisureland",
+    "roisindubh"
+   ],
+   "id": "d2e6530cbecc",
    "first_seen": "2026-10-04"
   },
   {
@@ -6386,16 +6730,20 @@
    "first_seen": "2026-10-04"
   },
   {
-   "source": "roisindubh",
+   "source": "leisureland",
    "venue": "Leisureland",
    "town": "Galway City",
    "county": "Galway",
    "title": "Jason Byrne: 30 Years Byrning",
    "date": "2027-06-05",
    "time": "7pm",
-   "url": "https://roisindubh.net/listings/jason-byrne-30-years-byrning-2027-06-05-190000-81550",
+   "url": "https://www.leisureland.ie/calendar/jason-byrne-30-years-byrning/",
    "category": "Comedy",
-   "id": "c7a2c1cf77a9",
+   "merged_from": [
+    "leisureland",
+    "roisindubh"
+   ],
+   "id": "4e759679175d",
    "first_seen": "2026-10-04"
   },
   {
