@@ -15,6 +15,7 @@ import re
 import requests
 import sys
 import time
+import unicodedata
 from bs4 import Comment
 from datetime import date, datetime, timedelta, timezone
 from html import unescape
@@ -1089,6 +1090,347 @@ def parse_mick_lally(soup, source):
     return events
 
 
+# --------------------------------------------------------- An Taibhdhearc
+#
+# antaibhdhearc.com is a Squarespace site whose home page ("What's On") has an
+# Events block: each event is a title linking straight to its ticket page
+# (Ticketsolve, Resident Advisor...), a date line like '21-24 October 2026,
+# 8pm', a venue line, a price and a Tickets link. Very few events at a time.
+#
+# The theatre is the National Irish Language Theatre and the site has an
+# English/Irish toggle, so the date line is read in either language
+# (Deireadh Fomhair, Mean Fomhair, 'Dhe hAoine 23...'). Everything staged
+# here is in Irish, so each event is tagged 'Irish Language'.
+#
+# Like the Mick Lally parser it finds each DATE LINE and works outwards to
+# that event's card, rather than depending on the site's CSS classes.
+#
+# Two kinds of listing are left out, and logged so nothing vanishes
+# unnoticed: tours to schools (not a public event) and anything located in
+# another county - e.g. 'Touring schools | Maigh Eo' (Mayo). A non-Galway
+# county is passed through as that county, so it's the pipeline's county
+# whitelist that decides; add the county to ALLOWED_COUNTIES to show it.
+
+TA_IRISH_MONTHS = [
+    (r"mean fomhair", "September"), (r"deireadh fomhair", "October"),
+    (r"eanair", "January"), (r"feabhra", "February"), (r"marta", "March"),
+    (r"aibrean", "April"), (r"bealtaine", "May"), (r"meitheamh", "June"),
+    (r"iuil", "July"), (r"lunasa", "August"), (r"samhain", "November"),
+    (r"nollaig", "December"),
+]
+TA_MONTH_NAME_RE = re.compile(
+    r"\b(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|"
+    r"aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\b", re.I)
+TA_TIME_RE = re.compile(r",?\s*(\d{1,2}(?:[.:]\d{2})?\s*(?:am|pm))\s*$", re.I)
+TA_MUSIC_RE = re.compile(
+    r"seoladh albam|\balbam\b|album|ceolchoirm|concert|\bgig\b|\bceol\b", re.I)
+TA_COMEDY_RE = re.compile(r"\bgreann\b|\bcomed(?:y|ian)\b|\bstand-?up\b", re.I)
+TA_SCHOOLS_RE = re.compile(r"\bschools?\b|\bscoileanna\b", re.I)
+TA_PRICE_RE = re.compile(r"^(?:\u20ac|\u00a3)|^free\b|^saor\b|^\d+(?:[.,]\d+)?$", re.I)
+TA_OTHER_COUNTIES = {
+    "maigh eo": "Mayo", "mayo": "Mayo", "ros comain": "Roscommon",
+    "roscommon": "Roscommon", "an clar": "Clare", "clare": "Clare",
+    "sligeach": "Sligo", "sligo": "Sligo", "baile atha cliath": "Dublin",
+    "dublin": "Dublin", "corcaigh": "Cork", "cork": "Cork",
+    "luimneach": "Limerick", "limerick": "Limerick",
+}
+
+
+def ta_plain(text):
+    """The text without accents (e -> e, o -> o) but otherwise unchanged."""
+    return "".join(c for c in unicodedata.normalize("NFKD", text)
+                   if not unicodedata.combining(c))
+
+
+def ta_english(text):
+    """A date line with Irish month names (and 'agus') turned into English."""
+    plain = ta_plain(text)
+    for pat, eng in TA_IRISH_MONTHS:
+        plain = re.sub(r"\b" + pat + r"\b", eng, plain, flags=re.I)
+    return re.sub(r"\bagus\b", "&", plain, flags=re.I)
+
+
+def ta_is_date_line(t):
+    n = ta_english(t)
+    return bool(len(t) <= 80 and re.match(r"(?:[A-Za-z]+\s+){0,2}\d{1,2}\b", n)
+                and TA_MONTH_NAME_RE.search(n) and re.search(r"\b(?:19|20)\d{2}\b", n))
+
+
+def ta_split_time(line):
+    m = TA_TIME_RE.search(line)
+    if not m:
+        return line, None
+    return line[:m.start()], m.group(1).replace(" ", "").replace(".", ":").lower()
+
+
+def _date_cards(soup, is_date_line):
+    """[(date_text_node, its_card_element)] - the card being the largest
+    element that holds just that one date line."""
+    nodes = [s for s in _visible_strings(soup) if is_date_line(clean(s))]
+
+    def dates_in(el):
+        return sum(1 for s in _visible_strings(el) if is_date_line(clean(s)))
+
+    out = []
+    for node in nodes:
+        card = node.parent
+        while (card.parent is not None
+               and card.parent.name not in ("body", "html", "[document]")
+               and dates_in(card.parent) == 1):
+            card = card.parent
+        out.append((node, card))
+    return out
+
+
+def ta_category(title):
+    base = ("Comedy" if TA_COMEDY_RE.search(title)
+            else "Music" if TA_MUSIC_RE.search(title) else "Theatre")
+    return base + ", Irish Language"
+
+
+def parse_taibhdhearc(soup, source):
+    cards = _date_cards(soup, ta_is_date_line)
+    if not cards:
+        if re.search(r"\b(?:Events|Imeachta\w*)\b", soup.get_text(" ")):
+            return []   # an Events section with nothing in it is normal
+        raise ValueError("no events section found - the layout has changed, "
+                         "or the page is empty or blocked")
+    events, left_out = [], []
+    for node, card in cards:
+        heading = card.find(re.compile(r"^h[1-6]$"))
+        title = clean(heading.get_text(" ")) if heading else None
+        strings = _visible_strings(card)
+        idx = next((i for i, s in enumerate(strings) if s is node), 0)
+        if not title:
+            prev = [clean(s) for s in strings[:idx] if clean(s)]
+            title = prev[-1] if prev else None
+        if not title:
+            continue
+        link = ((heading.find("a", href=True) if heading else None)
+                or node.find_parent("a", href=True) or card.find("a", href=True))
+        href = link["href"].strip() if link else ""
+        url = (urljoin(source["url"], href)
+               if href and not re.match(r"(?i)(?:mailto|tel|javascript):|#", href)
+               else source["url"])
+
+        # the venue line is the first thing after the date that isn't a
+        # price or a link's own text ('Tickets', 'More Information')
+        link_texts = {clean(a.get_text(" ")) for a in card.find_all("a")}
+        after = [clean(s) for s in strings[idx + 1:]]
+        loc = next((t for t in after
+                    if t and t not in link_texts and not TA_PRICE_RE.match(t)), "")
+        parts = [p.strip() for p in loc.split("|") if p.strip()]
+        venue = parts[0] if parts else source["venue"]
+        place = parts[-1] if len(parts) > 1 else ""
+
+        if TA_SCHOOLS_RE.search(loc):
+            left_out.append(f"{title} (tour of schools)")
+            continue
+        county = TA_OTHER_COUNTIES.get(ta_plain(place).lower().strip())
+        if county:
+            left_out.append(f"{title} ({county})")
+        town = find_specific_town(place) if place and not county else None
+
+        date_part, time_text = ta_split_time(clean(node))
+        for start, end in mlt_parse_dates(ta_english(date_part)):
+            events.append(make_event(
+                source, title, start,
+                end_date=end.isoformat() if end else None,
+                time=time_text, url=url, category=ta_category(title),
+                venue=venue, town=town, county=county))
+    # events in another county are returned with that county, so the
+    # pipeline's whitelist (not this parser) decides - but say so here
+    if left_out:
+        print("  An Taibhdhearc: not listed (a schools tour, or outside "
+              "Galway): " + "; ".join(left_out))
+    return events
+
+
+# --------------------------------------------------------------- Leisureland
+#
+# leisureland.ie/events/ looks like the WordPress 'Events Calendar' list view:
+# each event is a title, a date line such as 'October 12 @ 8:00 pm' (NO YEAR),
+# and a short description, ten or so to a page with a 'next' link. That
+# plugin also embeds each event as schema.org JSON-LD, with an exact ISO date
+# and the event's own URL - the same route St Columb's Hall uses in the North
+# West - so that's read first, and it also gives the year for free. If a page
+# has no JSON-LD, the visible date lines are read instead and the year is
+# inferred (an upcoming-events list never reaches far into the past, so a
+# date that's already gone means next year).
+#
+# Leisureland is a big events centre (concerts, comedy, expos, conferences):
+# nothing on the page says which, so the genre comes from words in the title
+# and description - Comedy or Music when there are clear cues, otherwise none
+# rather than a wrong guess (a wedding expo isn't Music). Salthill is part of
+# Galway City, so the town stays 'Galway City'.
+
+LL_MAX_PAGES = 6
+LL_COMEDY_RE = re.compile(
+    r"\bcomed(?:y|ian|ians)\b|\bstand-?up\b|\blaughs?\b|\bone-liners?\b", re.I)
+LL_MUSIC_RE = re.compile(
+    r"\b(?:singer|album|albums|band|songs?|concert|musician|musicians|music)\b", re.I)
+LL_DATE_RE = re.compile(
+    r"(?P<mon>[A-Za-z]{3,9})\s+(?P<day>\d{1,2})(?:,?\s+(?P<year>\d{4}))?\s*@\s*"
+    r"(?P<h1>\d{1,2}):(?P<n1>\d{2})\s*(?P<ap1>[ap]m)"
+    r"(?:\s*[-\u2013]\s*(?:(?P<mon2>[A-Za-z]{3,9})\s+(?P<day2>\d{1,2})"
+    r"(?:,?\s+(?P<year2>\d{4}))?\s*@\s*)?"
+    r"(?P<h2>\d{1,2}):(?P<n2>\d{2})\s*(?P<ap2>[ap]m))?", re.I)
+
+
+def ll_clock(hour12, minute, ap):
+    h = int(hour12) % 12 + (12 if ap.lower() == "pm" else 0)
+    return clock12(h, int(minute))
+
+
+def ll_category(title, text):
+    blob = f"{title} {text}"
+    if LL_COMEDY_RE.search(blob):
+        return "Comedy"
+    return "Music" if LL_MUSIC_RE.search(blob) else None
+
+
+def ll_jsonld_events(soup):
+    items = []
+    for script in soup.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(script.string or script.get_text())
+        except (json.JSONDecodeError, TypeError):
+            continue
+        batch = data if isinstance(data, list) else (
+            data.get("@graph", [data]) if isinstance(data, dict) else [])
+        for item in batch:
+            if not isinstance(item, dict):
+                continue
+            kinds = item.get("@type")
+            kinds = kinds if isinstance(kinds, list) else [kinds]
+            if any(isinstance(k, str) and k.endswith("Event") for k in kinds):
+                items.append(item)
+    return items
+
+
+def ll_events_from_jsonld(items, source):
+    events = []
+    for item in items:
+        title = clean(unescape(item.get("name") or ""))
+        start_text, end_text = item.get("startDate") or "", item.get("endDate") or ""
+        try:
+            start = date.fromisoformat(start_text[:10])
+        except ValueError:
+            continue
+        if not title:
+            continue
+        end = None
+        try:
+            e = date.fromisoformat(end_text[:10])
+            end = e if e != start else None
+        except ValueError:
+            pass
+        clock = re.match(r"\d{4}-\d{2}-\d{2}T(\d{2}):(\d{2})", start_text)
+        time_text = (clock12(int(clock.group(1)), int(clock.group(2)))
+                     if clock and (clock.group(1), clock.group(2)) != ("00", "00") else None)
+        offers = item.get("offers")
+        offers = offers if isinstance(offers, list) else [offers or {}]
+        sold = any("soldout" in str(o.get("availability", "")).lower().replace(" ", "")
+                   for o in offers if isinstance(o, dict))
+        desc = re.sub(r"<[^>]+>", " ", unescape(item.get("description") or ""))
+        events.append(make_event(
+            source, title, start, end_date=end.isoformat() if end else None,
+            time=time_text, url=item.get("url") or source["url"], sold_out=sold,
+            category=ll_category(title, desc)))
+    return events
+
+
+def ll_is_date_line(t):
+    return bool(len(t) <= 60 and LL_DATE_RE.fullmatch(t)
+                and MONTHS.get(LL_DATE_RE.fullmatch(t)["mon"].lower()[:3]))
+
+
+def ll_events_from_text(soup, source):
+    events = []
+    for node, card in _date_cards(soup, ll_is_date_line):
+        m = LL_DATE_RE.fullmatch(clean(node))
+        mon = MONTHS[m["mon"].lower()[:3]]
+        day = int(m["day"])
+        if m["year"]:
+            try:
+                start = date(int(m["year"]), mon, day)
+            except ValueError:
+                continue
+            end = None
+        else:
+            tokens = [(mon, day)]
+            if m["mon2"] or m["day2"]:
+                mon2 = MONTHS.get((m["mon2"] or m["mon"]).lower()[:3])
+                if mon2 and m["day2"]:
+                    tokens.append((mon2, int(m["day2"])))
+            resolved = [d for d in infer_range_years(tokens) if d]
+            if not resolved:
+                continue
+            start, end = resolved[0], (resolved[-1] if len(resolved) > 1 else None)
+        if end == start:
+            end = None
+        heading = card.find(re.compile(r"^h[1-6]$"))
+        title = clean(heading.get_text(" ")) if heading else None
+        strings = _visible_strings(card)
+        idx = next((i for i, s in enumerate(strings) if s is node), 0)
+        if not title:
+            prev = [clean(s) for s in strings[:idx] if clean(s)]
+            title = prev[-1] if prev else None
+        if not title:
+            continue
+        link = (heading.find("a", href=True) if heading else None) \
+            or node.find_parent("a", href=True) or card.find("a", href=True)
+        href = link["href"].strip() if link else ""
+        url = (urljoin(source["url"], href)
+               if href and not re.match(r"(?i)(?:mailto|tel|javascript):|#", href)
+               else source["url"])
+        card_text = clean(card.get_text(" "))
+        events.append(make_event(
+            source, title, start, end_date=end.isoformat() if end else None,
+            time=ll_clock(m["h1"], m["n1"], m["ap1"]), url=url,
+            sold_out=bool(re.search(r"\bsold out\b", card_text, re.I)),
+            category=ll_category(title, card_text)))
+    return events
+
+
+def ll_next_url(soup, page_url):
+    for a in soup.find_all("a", href=True):
+        rel = a.get("rel") or []
+        rel = rel.split() if isinstance(rel, str) else rel
+        if "next" in [r.lower() for r in rel] or re.fullmatch(
+                r"next(?: events)?\s*(?:\u00bb|>|&raquo;)?", clean(a.get_text(" ")), re.I):
+            href = a["href"].strip()
+            if href and not href.startswith("#"):
+                return urljoin(page_url, href)
+    return None
+
+
+def parse_leisureland(soup, source):
+    page, page_url, events, seen = soup, source["url"], [], set()
+    for n in range(LL_MAX_PAGES):
+        items = ll_jsonld_events(page)
+        found = (ll_events_from_jsonld(items, source) if items
+                 else ll_events_from_text(page, source))
+        new = [e for e in found if (e["title"], e["date"]) not in seen]
+        seen.update((e["title"], e["date"]) for e in found)
+        events.extend(new)
+        if n == 0 and not found:
+            if re.search(r"upcoming events|no events|no upcoming", page.get_text(" "), re.I):
+                return []   # an events list with nothing in it is normal
+            raise ValueError("no events found - the layout has changed, "
+                             "or the page is empty or blocked")
+        nxt = ll_next_url(page, page_url)
+        if not nxt or not new:
+            break
+        try:
+            page, page_url = fetch(nxt), nxt
+        except Exception as exc:
+            print(f"  could not read Leisureland page {n + 2}: {exc}", file=sys.stderr)
+            break
+        time.sleep(0.4)
+    return events
+
+
 SOURCES = [
     {"name": "tht", "venue": "Town Hall Theatre", "town": "Galway City",
      "county": "Galway", "url": "https://tht.ie/all",
@@ -1110,6 +1452,12 @@ SOURCES = [
      "county": "Galway",
      "url": "https://www.druid.ie/about/the-mick-lally-theatre/whats-on",
      "parser": parse_mick_lally},
+    {"name": "taibhdhearc", "venue": "An Taibhdhearc", "town": "Galway City",
+     "county": "Galway", "url": "https://www.antaibhdhearc.com/",
+     "parser": parse_taibhdhearc, "quiet_if_empty": True},
+    {"name": "leisureland", "venue": "Leisureland", "town": "Galway City",
+     "county": "Galway", "url": "https://www.leisureland.ie/events/",
+     "parser": parse_leisureland, "quiet_if_empty": True},
 ]
 
 
@@ -1196,9 +1544,10 @@ def normalize_category(cat):
 # Empty for now - grows as real cross-source duplicates turn up, same as
 # the North West's own DEDUP_NOISE_PREFIXES/DEDUP_ALIASES did over time.
 # lowest number wins when two sources list the same event - the venue's own
-# listing (the Arts Centre, Mick Lally Theatre, then THT) beats a promoter that cross-lists them
-SOURCE_PRIORITY = {"gac": 0, "mick_lally": 1, "tht": 2, "monroes": 3,
-                   "roisindubh": 4, "gfs": 5}
+# listing (Arts Centre, Mick Lally, An Taibhdhearc, Leisureland, then THT) beats a promoter that cross-lists them
+SOURCE_PRIORITY = {"gac": 0, "mick_lally": 1, "taibhdhearc": 2,
+                   "leisureland": 3, "tht": 4, "monroes": 5,
+                   "roisindubh": 6, "gfs": 7}
 DEDUP_NOISE_PREFIXES = []
 DEDUP_ALIASES = []
 DEDUP_THRESHOLD = 0.7
@@ -1247,13 +1596,14 @@ def main():
             all_events.extend(
                 e for e in prev_by_key.values() if e["source"] == source["name"])
 
-    seen, final = set(), []
+    seen, final, outside = set(), [], []
     for ev in merge_cross_source_duplicates(
             all_events, source_priority=SOURCE_PRIORITY,
             noise_prefixes=DEDUP_NOISE_PREFIXES, aliases=DEDUP_ALIASES,
             threshold=DEDUP_THRESHOLD, merge_same_source=False):
         canon = COUNTY_CANONICAL.get((ev.get("county") or "").strip().lower())
         if not canon:
+            outside.append(f"{ev['title']} ({ev.get('county') or 'no county'})")
             continue
         ev["county"] = canon
         venue_town = GALWAY_VENUE_TOWNS.get((ev.get("venue") or "").strip().lower())
@@ -1273,6 +1623,9 @@ def main():
             "first_seen", TODAY.isoformat())
         final.append(ev)
 
+    if outside:
+        print(f"Left out as outside {', '.join(sorted(ALLOWED_COUNTIES))}: "
+              + "; ".join(outside))
     final.sort(key=lambda e: (e["date"], e["venue"], e["title"]))
 
     now = datetime.now(timezone.utc)
