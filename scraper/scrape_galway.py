@@ -13,6 +13,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -205,6 +206,72 @@ def expand_tht_festival(summary_text, fest_title, fest_start, fest_end,
     return events
 
 
+# Venue for rows THT's listing doesn't name one for: read from each event's
+# own page, where it's the <p> straight after the title <h1>, e.g.
+#   <div class="presents">...</div><h1>Bothar na Smaointe...</h1>
+#   <p>St. Nicholas Church</p>
+# Fetched once per event URL, ever - persisted in events.json like the
+# North West's location cache. Only a venue actually FOUND is cached, so
+# a page that failed to load (or whose layout wasn't recognised) is simply
+# retried next run rather than being remembered as 'no venue'.
+THT_VENUE_CACHE = {}
+THT_VENUE_MAX_LEN = 80   # a venue is a short line; anything longer is prose
+
+
+def parse_tht_event_page_venue(soup, title=None):
+    """The venue line from a THT event page, or None. Matches the <h1>
+    to the event's own title (so a site-header <h1>, if there is one,
+    can't be mistaken for it); if no <h1> matches, only trusts the page
+    when it has exactly one <h1> followed by a <p>, rather than guessing
+    between several."""
+    def norm(t):
+        return re.sub(r"\W+", "", t or "").lower()
+
+    want, cands = norm(title), []
+    for h1 in soup.find_all("h1"):
+        p = h1.find_next_sibling("p")
+        text = clean(p.get_text(" ")) if p else ""
+        if text and len(text) <= THT_VENUE_MAX_LEN:
+            cands.append((norm(h1.get_text()), text))
+    if want:
+        for got, text in cands:
+            if got and (got == want or got in want or want in got):
+                return text
+    return cands[0][1] if len(cands) == 1 else None
+
+
+def tht_event_page_venue(url, title):
+    cached = THT_VENUE_CACHE.get(url)
+    if cached:
+        return cached
+    try:
+        venue = parse_tht_event_page_venue(fetch(url), title)
+    except Exception as exc:
+        print(f"  could not read venue for {title!r}: {exc}", file=sys.stderr)
+        return None
+    if venue:
+        THT_VENUE_CACHE[url] = venue
+    time.sleep(0.4)   # be gentle - per-event page requests
+    return venue
+
+
+# The 5th cell of each THT listing row says WHERE the show is, as a code.
+THT_VENUE_BY_CODE = {
+    "tht": "Town Hall Theatre",
+    "studio": "Town Hall Theatre",     # a smaller stage inside the Town Hall
+    "black box": "Black Box Theatre",  # its own, separate venue
+}
+# 'Other' (and any code not listed above) means off-site, with no venue
+# named on the listing page - so the venue is read from the event's own
+# page (see above) instead of being guessed (these were previously all
+# mislabelled Town Hall Theatre). If that page can't be read, True shows
+# the event anyway under a placeholder venue that points people to the
+# event page for the details (retried next run); False skips it until the
+# venue can be found.
+THT_INCLUDE_OFFSITE = True
+THT_OFFSITE_VENUE = "Off-site (see event page)"
+
+
 def parse_tht(soup, source):
     """tht.ie/all - the 'At A Glance' listing is one clean HTML table,
     one <tr data-all> per event: genre in td.type, title and its own
@@ -212,15 +279,15 @@ def parse_tht(soup, source):
     td.date, and a Ticketsolve booking link (when the event is ticketed
     at all - free/unticketed events have an empty td.buy) captured as a
     bonus extra. A 5th cell names which of the venue's several
-    performance spaces (main house, Black Box, Studio, or an occasional
-    off-site 'Other') hosts it. That isn't surfaced as a separate venue
-    for now - every plain row is labelled Town Hall Theatre. UNVERIFIED
-    ASSUMPTION: THT's own festival programme lists 'Black Box Theatre'
-    as a venue distinct from 'Town Hall', so the 'Black Box' and 'Other'
-    codes may really be off-site. Genre and the
+    performance spaces hosts it: 'THT' (the main house) and 'Studio' (a
+    smaller stage inside the Town Hall) are both the Town Hall Theatre;
+    'Black Box' is its own separate venue, Black Box Theatre; 'Other' is
+    off-site with no venue named on this listing, so each of those rows'
+    own event page is read once (ever - cached) for the venue instead.
+    Genre and the
     event's own link are both already right here on the listing table -
     no per-event page visits needed at all."""
-    events = []
+    events, unresolved = [], []
     for tr in soup.select("tr[data-all]"):
         type_td = tr.select_one("td.type")
         title_a = tr.select_one("td.title a")
@@ -251,12 +318,27 @@ def parse_tht(soup, source):
             if shows:
                 events.extend(shows)
                 continue
+        tds = tr.find_all("td")
+        code = tds[4].get_text(strip=True).lower() if len(tds) > 4 else ""
+        venue = THT_VENUE_BY_CODE.get(code)
+        if venue is None:
+            venue = tht_event_page_venue(url, title)
+            if venue is None:
+                unresolved.append(title)
+                if not THT_INCLUDE_OFFSITE:
+                    continue
         events.append(make_event(
             source, title, start,
             end_date=end.isoformat() if end else None,
             url=url,
             booking_url=buy_a.get("href") if buy_a else None,
-            category=category))
+            category=category,
+            venue=venue or THT_OFFSITE_VENUE))
+    if unresolved:
+        action = ("shown under a placeholder venue" if THT_INCLUDE_OFFSITE
+                  else "skipped")
+        print(f"  no venue found for {len(unresolved)} off-site row(s), "
+              f"{action}: " + "; ".join(unresolved))
     return events
 
 
@@ -340,7 +422,8 @@ DEDUP_THRESHOLD = 0.7
 # ---------------------------------------------------------------- pipeline
 
 def main():
-    previous = load_previous(DATA_FILE)
+    previous = load_previous(DATA_FILE, extra_defaults={"venue_cache": {}})
+    THT_VENUE_CACHE.update(previous.get("venue_cache", {}))
     prev_by_key = {event_key(e): e for e in previous.get("events", [])}
 
     all_events, failed = [], []
@@ -405,6 +488,7 @@ def main():
         "failed_sources": failed,
         "source_last_run": source_last_run,
         "consecutive_failures": consecutive_failures,
+        "venue_cache": THT_VENUE_CACHE,
         "events": final,
     }, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"Wrote {len(final)} upcoming events to {DATA_FILE}")
