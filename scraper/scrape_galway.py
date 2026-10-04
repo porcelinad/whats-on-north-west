@@ -15,6 +15,7 @@ import re
 import requests
 import sys
 import time
+from bs4 import Comment
 from datetime import date, datetime, timedelta, timezone
 from html import unescape
 from pathlib import Path
@@ -937,6 +938,154 @@ def parse_gac(soup, source):
             category=", ".join(dict.fromkeys(genres)) or None,
             venue=(gac_venue(details.get("Location")) or gac_venue(card_venue)
                    or THT_OFFSITE_VENUE)))
+    if not seen:
+        raise ValueError("no event cards found - the layout has changed, "
+                         "or the page is empty or blocked")
+    return events
+
+
+# ---------------------------------------------------- Mick Lally Theatre
+#
+# druid.ie/about/the-mick-lally-theatre/whats-on lists "upcoming events by
+# Druid and visiting companies" at the theatre: each is an image, a title and
+# a date line like 'Fri 13 - Sat 14 February 2026' (the year is always given;
+# the month appears once, at the END of a range). There are no times and no
+# genres on the page. Druid's main site shows nothing for these because many
+# of them are visiting companies' own shows.
+#
+# Built to need very little from the markup: it finds each DATE LINE, climbs
+# from it to the largest element holding just that one date (the event's
+# card), takes the title from a heading in the card or else the text just
+# above the date, and the link from the card if it has one (otherwise the
+# What's On page itself). The page's intro, nav and mailto links never get
+# mistaken for an event's link.
+
+MLT_DAY_RE = re.compile(
+    r"(?:(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+)?(\d{1,2})"
+    r"(?:\s+([A-Za-z]{3,9}))?(?:\s+(\d{4}))?")
+MLT_MONTH_RE = re.compile(r"\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b", re.I)
+MLT_COMEDY_RE = re.compile(r"\bcomed(?:y|ian|ians)\b|\bstand-?up\b", re.I)
+MLT_MUSIC_RE = re.compile(
+    r"\b(?:concert|gig|live music|album launch|trio|quartet|orchestra|sessions?)\b", re.I)
+
+
+def mlt_is_date_line(t):
+    return bool(len(t) <= 80
+                and re.match(r"(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+\d{1,2}\b", t)
+                and re.search(r"\b(?:19|20)\d{2}\b", t) and MLT_MONTH_RE.search(t))
+
+
+def _mk_date(y, m, d):
+    try:
+        return date(y, m, d)
+    except (TypeError, ValueError):
+        return None
+
+
+def mlt_parse_dates(line):
+    """'Fri 13 - Sat 14 February 2026' -> [(Feb 13, Feb 14)]. A dash joins a
+    run into one range; a comma, '&' or 'and' starts a separate run (one
+    event each, rather than a false continuous range). A month or year
+    missing from an earlier date is borrowed from the one after it, and
+    corrected where that can't be right - 'Sat 31 - Mon 2 November' starts
+    in October, '30 Dec - 2 Jan 2027' starts the year before."""
+    toks, last = [], 0
+    for m in MLT_DAY_RE.finditer(line):
+        word = (m.group(2) or "")[:3].lower()
+        toks.append({"d": int(m.group(1)), "m": MONTHS.get(word) if word else None,
+                     "y": int(m.group(3)) if m.group(3) else None,
+                     "sep": line[last:m.start()], "borrowed": False})
+        last = m.end()
+    cm = cy = None
+    for t in reversed(toks):
+        if t["m"] is None and cm:
+            t["m"], t["borrowed"] = cm, True
+        elif t["m"]:
+            cm = t["m"]
+        if t["y"] is None:
+            t["y"] = cy
+        else:
+            cy = t["y"]
+    groups, cur = [], []
+    for t in toks:
+        if cur and re.search(r"[,&]|\band\b", t["sep"], re.I):
+            groups.append(cur)
+            cur = []
+        cur.append(t)
+    if cur:
+        groups.append(cur)
+    runs = []
+    for g in groups:
+        first, lastt = g[0], g[-1]
+        end = _mk_date(lastt["y"], lastt["m"], lastt["d"])
+        if not end:
+            continue
+        if first is lastt:
+            runs.append((end, None))
+            continue
+        start = _mk_date(first["y"], first["m"], first["d"])
+        if (start is None or start > end) and first["y"] and first["m"]:
+            y, m = first["y"], first["m"]
+            if first["borrowed"]:
+                m, y = (12, y - 1) if m == 1 else (m - 1, y)
+            else:
+                y -= 1
+            start = _mk_date(y, m, first["d"])
+        if start and start <= end:
+            runs.append((start, end if end != start else None))
+    return runs
+
+
+def mlt_category(title):
+    if MLT_COMEDY_RE.search(title):
+        return "Comedy"
+    if MLT_MUSIC_RE.search(title):
+        return "Music"
+    return "Theatre"
+
+
+def _visible_strings(el):
+    return [s for s in el.find_all(string=True)
+            if not isinstance(s, Comment) and s.parent.name not in ("script", "style")]
+
+
+def parse_mick_lally(soup, source):
+    date_nodes = [s for s in _visible_strings(soup) if mlt_is_date_line(clean(s))]
+    if not date_nodes:
+        raise ValueError("no date lines found - the layout has changed, "
+                         "or the page is empty or blocked")
+
+    def dates_in(el):
+        return sum(1 for s in _visible_strings(el) if mlt_is_date_line(clean(s)))
+
+    events = []
+    for node in date_nodes:
+        card = node.parent
+        while (card.parent is not None
+               and card.parent.name not in ("body", "html", "[document]")
+               and dates_in(card.parent) == 1):
+            card = card.parent
+        heading = card.find(re.compile(r"^h[1-6]$"))
+        title = clean(heading.get_text(" ")) if heading else None
+        if not title or mlt_is_date_line(title):
+            strings = _visible_strings(card)
+            idx = next((i for i, s in enumerate(strings) if s is node), 0)
+            prev = [clean(s) for s in strings[:idx] if clean(s)]
+            title = prev[-1] if prev else None
+        if not title or len(title) < 2:
+            continue
+        link = (node.find_parent("a", href=True)
+                or (card if card.name == "a" and card.get("href") else None)
+                or card.find("a", href=True))
+        href = link["href"].strip() if link else ""
+        url = (urljoin(source["url"], href)
+               if href and not re.match(r"(?i)(?:mailto|tel|javascript):|#", href)
+               else source["url"])
+        for start, end in mlt_parse_dates(clean(node)):
+            events.append(make_event(
+                source, title, start,
+                end_date=end.isoformat() if end else None,
+                url=url, category=mlt_category(title)))
     return events
 
 
@@ -956,7 +1105,11 @@ SOURCES = [
      "parser": parse_gfs},
     {"name": "gac", "venue": "Galway Arts Centre", "town": "Galway City",
      "county": "Galway", "url": "https://www.galwayartscentre.ie/whats-on/",
-     "parser": parse_gac},
+     "parser": parse_gac, "quiet_if_empty": True},
+    {"name": "mick_lally", "venue": "Mick Lally Theatre", "town": "Galway City",
+     "county": "Galway",
+     "url": "https://www.druid.ie/about/the-mick-lally-theatre/whats-on",
+     "parser": parse_mick_lally},
 ]
 
 
@@ -1043,8 +1196,9 @@ def normalize_category(cat):
 # Empty for now - grows as real cross-source duplicates turn up, same as
 # the North West's own DEDUP_NOISE_PREFIXES/DEDUP_ALIASES did over time.
 # lowest number wins when two sources list the same event - the venue's own
-# listing (the Arts Centre, then THT) beats a promoter that cross-lists them
-SOURCE_PRIORITY = {"gac": 0, "tht": 1, "monroes": 2, "roisindubh": 3, "gfs": 4}
+# listing (the Arts Centre, Mick Lally Theatre, then THT) beats a promoter that cross-lists them
+SOURCE_PRIORITY = {"gac": 0, "mick_lally": 1, "tht": 2, "monroes": 3,
+                   "roisindubh": 4, "gfs": 5}
 DEDUP_NOISE_PREFIXES = []
 DEDUP_ALIASES = []
 DEDUP_THRESHOLD = 0.7
@@ -1070,6 +1224,10 @@ def main():
                 soup = fetch(source["url"])
                 found = source["parser"](soup, source)
             print(f"{source['venue']}: {len(found)} events")
+            if not found and source.get("quiet_if_empty"):
+                print("  (nothing upcoming - normal for this source, not a failure)")
+                consecutive_failures[source["name"]] = 0
+                continue
             if not found:
                 extra = (f" Page preview: {soup.get_text(' ', strip=True)[:200]!r}"
                          if soup is not None else "")
