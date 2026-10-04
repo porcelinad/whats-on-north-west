@@ -788,20 +788,175 @@ def parse_gfs(soup, source):
     return events
 
 
+# ------------------------------------------------------- Galway Arts Centre
+#
+# galwayartscentre.ie/whats-on/ is a WordPress site. Its "Upcoming" list is
+# one card per event - types, a date or date range, the venue, a title and a
+# link to the event's own page - and each event page has an "Event Details"
+# block (Date, Time, Location, Ticketing...) plus a booking link. The listing
+# supplies the set of events and their dates; each upcoming event's own page
+# then supplies the time, the location, the booking link and, if the card
+# doesn't carry it, the title. Built from the pages' TEXT (links, separators,
+# labels) rather than their CSS classes, so a theme tweak is less likely to
+# break it.
+#
+# Standing programmes are left out. The centre lists multi-year 'Archive'
+# projects (e.g. 2026-2031) and a weekly 'Gallery Lates' umbrella that runs
+# for twenty months. Those aren't events you can attend, and as 'ongoing'
+# cards they'd sit at the top of every day for years - so anything of type
+# Archive, or lasting more than GAC_MAX_SPAN_DAYS, is skipped. (Individual
+# Gallery Lates evenings are listed as their own events once scheduled.)
+
+GAC_MAX_SPAN_DAYS = 180
+GAC_NON_GENRE = {"festival", "event", "project", "tour", "archive"}
+GAC_TYPE_NAMES = {"screening": "Film"}
+GAC_DATE = r"\d{1,2}\s+[A-Za-z]{3,9}\s+\d{4}"
+GAC_RANGE_RE = re.compile(
+    "(" + GAC_DATE + r")(?:\s*[\u2013\u2014-]\s*(" + GAC_DATE + r"))?")
+GAC_LABELS = {"Date", "Time", "Duration", "Location", "Ages", "Ticketing",
+              "Event Type", "Additional Info", "Price", "Booking"}
+GAC_BOOK_WORDS = {"BOOKING", "BOOK NOW", "BOOK TICKETS", "BOOK"}
+
+
+def gac_date(text):
+    m = re.match(r"\s*(\d{1,2})\s+([A-Za-z]{3})[A-Za-z]*\s+(\d{4})", text or "")
+    mon = MONTHS.get(m.group(2).lower()) if m else None
+    if not mon:
+        return None
+    try:
+        return date(int(m.group(3)), mon, int(m.group(1)))
+    except ValueError:
+        return None
+
+
+def gac_venue(text):
+    """'Galway Arts Centre | 47 Dominick Street' and '47 Dominick Street'
+    are the gallery; the Nuns Island theatre is its own space; 'Off-site:
+    Please see event info' (or nothing) means unknown -> None."""
+    low = (text or "").lower()
+    if not low or "off-site" in low:
+        return None
+    if "nuns island" in low or "nun's island" in low:
+        return "Nuns Island Theatre"
+    if "dominick" in low or "galway arts centre" in low:
+        return "Galway Arts Centre"
+    return clean(text)
+
+
+def gac_event_page(page):
+    """(title, details, booking_url) from an event's own page. The Event
+    Details block is a run of label/value text: 'Date' '15/10/2026' 'Time'
+    '7pm-8pm' 'Location' ... up to 'Social Share'."""
+    h1 = page.find("h1")
+    title = clean(h1.get_text(" ")) if h1 else None
+    strings = list(page.stripped_strings)
+    details, label = {}, None
+    try:
+        start = strings.index("Event Details") + 1
+    except ValueError:
+        start = len(strings)
+    for s in strings[start:]:
+        if s == "Social Share":
+            break
+        if s in GAC_LABELS:
+            label = s
+            details[label] = []
+        elif label:
+            details[label].append(s)
+    details = {k: clean(" ".join(v)) for k, v in details.items()}
+    booking = next((a["href"] for a in page.find_all("a", href=True)
+                    if clean(a.get_text()).upper() in GAC_BOOK_WORDS
+                    and re.fullmatch(r"https?://\S+", a["href"].strip())), None)
+    return title, details, booking
+
+
+def parse_gac(soup, source):
+    events, seen = [], set()
+    for a in soup.find_all("a", href=True):
+        path = urlparse(a["href"]).path
+        if not re.fullmatch(r"/whats-on/[^/]+/?", path):
+            continue    # the nav's own 'What's On' links have no slug
+        text = clean(a.get_text(" "))
+        if "read more" not in text.lower() or path in seen:
+            continue    # image-only duplicates of a card link
+        seen.add(path)
+        dm = GAC_RANGE_RE.search(text)
+        start = gac_date(dm.group(1)) if dm else None
+        if not start:
+            continue
+        end = gac_date(dm.group(2)) if dm.group(2) else None
+        types = [clean(t) for t in re.split(
+            r"\s*\u2044\s*|\s+/\s+", text[:dm.start()].strip(" \u2044/|")) if clean(t)]
+        # 'Types / date | venue | title description Read More'
+        parts = [p.strip() for p in text[dm.end():].split("|")]
+        if parts and parts[0] == "":
+            parts = parts[1:]
+        card_venue = parts[0] if len(parts) >= 2 else None
+        heading = a.find(re.compile(r"^h[1-6]$"))
+        title = clean(heading.get_text(" ")) if heading else None
+        url = urljoin(source["url"], a["href"]).split("?")[0]
+
+        if "archive" in (t.lower() for t in types):
+            continue
+        last = end or start
+        if last < TODAY or (last - start).days > GAC_MAX_SPAN_DAYS:
+            continue
+
+        details, booking = {}, None
+        try:
+            page_title, details, booking = gac_event_page(fetch(url))
+            title = title or page_title
+        except Exception as exc:
+            print(f"  could not read {url}: {exc}", file=sys.stderr)
+        time.sleep(0.4)
+        if not title:
+            print(f"  skipping {url}: no title found", file=sys.stderr)
+            continue
+
+        # the event page's own date is the more reliable of the two
+        page_dates = [date(int(y), int(m), int(d)) for d, m, y in
+                      re.findall(r"(\d{1,2})/(\d{1,2})/(\d{4})", details.get("Date", ""))]
+        if page_dates:
+            start, end = page_dates[0], (page_dates[-1] if len(page_dates) > 1 else None)
+        if end == start:
+            end = None
+        if (end or start) < TODAY:
+            continue
+
+        genres = []
+        for t in types or [t.strip() for t in details.get("Event Type", "").split(",") if t.strip()]:
+            if t.lower() in GAC_NON_GENRE:
+                continue
+            genres.append(GAC_TYPE_NAMES.get(t.lower(), t))
+        t = details.get("Time")
+        events.append(make_event(
+            source, title, start,
+            end_date=end.isoformat() if end else None,
+            time=t if t and len(t) <= 40 else None,
+            url=url, booking_url=booking,
+            category=", ".join(dict.fromkeys(genres)) or None,
+            venue=(gac_venue(details.get("Location")) or gac_venue(card_venue)
+                   or THT_OFFSITE_VENUE)))
+    return events
+
+
 SOURCES = [
-    {"name": "tht", "venue": "Town Hall Theatre", "town": "Galway",
+    {"name": "tht", "venue": "Town Hall Theatre", "town": "Galway City",
      "county": "Galway", "url": "https://tht.ie/all",
      "parser": parse_tht},
-    {"name": "monroes", "venue": "Monroe's Live", "town": "Galway",
+    {"name": "monroes", "venue": "Monroe's Live", "town": "Galway City",
      "county": "Galway", "url": "https://monroes.ie/pages/gigs",
      "parser": parse_monroes},
-    {"name": "roisindubh", "venue": "R\u00f3is\u00edn Dubh", "town": "Galway",
+    {"name": "roisindubh", "venue": "R\u00f3is\u00edn Dubh", "town": "Galway City",
      "county": "Galway", "url": "https://roisindubh.net/listings/",
      "parser": parse_roisindubh, "custom_fetch": True},
-    {"name": "gfs", "venue": "Eye Cinema", "town": "Galway",
+    {"name": "gfs", "venue": "Eye Cinema", "town": "Galway City",
      "county": "Galway",
      "url": "https://www.tickettailor.com/events/galwayfilmsociety",
      "parser": parse_gfs},
+    {"name": "gac", "venue": "Galway Arts Centre", "town": "Galway City",
+     "county": "Galway", "url": "https://www.galwayartscentre.ie/whats-on/",
+     "parser": parse_gac},
 ]
 
 
@@ -815,10 +970,30 @@ COUNTY_ALIASES = {}
 COUNTY_CANONICAL = {c.lower(): c for c in ALLOWED_COUNTIES}
 COUNTY_CANONICAL.update({k.lower(): v for k, v in COUNTY_ALIASES.items()})
 
+# Everything in Galway City - Salthill included, which is a suburb of the
+# city - is shown as 'Galway City', so the Locations filter doesn't just
+# repeat the county ('Galway' / 'Galway'). Towns and villages further out
+# get their own entry here, added as sources need them (the same incremental
+# pattern as the North West's whitelist).
 TOWN_TO_COUNTY = {
     "galway": "Galway", "galway city": "Galway",
+    "rosscahill": "Galway", "oranmore": "Galway", "barna": "Galway",
+    "spiddal": "Galway", "an spid\u00e9al": "Galway", "kinvara": "Galway",
+    "athenry": "Galway", "tuam": "Galway", "loughrea": "Galway",
+    "ballinasloe": "Galway", "clifden": "Galway", "oughterard": "Galway",
+    "gort": "Galway", "claregalway": "Galway", "moycullen": "Galway",
+    "headford": "Galway", "portumna": "Galway",
+    "inis o\u00edrr": "Galway", "inis m\u00f3r": "Galway", "inis me\u00e1in": "Galway",
 }
 _COUNTY_NAME_TOWNS = {"galway"}
+
+# A venue can sit outside the city even though its source is based in it -
+# e.g. THT's Baboro programme includes a forest-school workshop at Brigit's
+# Garden in Rosscahill, about 40 minutes' drive away. Venue name
+# (lower-case) -> the town to show for events there.
+GALWAY_VENUE_TOWNS = {
+    "brigid's garden": "Rosscahill",
+}
 find_specific_town, nearest_known_town = make_town_resolver(
     TOWN_TO_COUNTY, _COUNTY_NAME_TOWNS)
 
@@ -868,8 +1043,8 @@ def normalize_category(cat):
 # Empty for now - grows as real cross-source duplicates turn up, same as
 # the North West's own DEDUP_NOISE_PREFIXES/DEDUP_ALIASES did over time.
 # lowest number wins when two sources list the same event - the venue's own
-# listing (THT) beats a promoter that cross-lists its shows
-SOURCE_PRIORITY = {"tht": 0, "monroes": 1, "roisindubh": 2}
+# listing (the Arts Centre, then THT) beats a promoter that cross-lists them
+SOURCE_PRIORITY = {"gac": 0, "tht": 1, "monroes": 2, "roisindubh": 3, "gfs": 4}
 DEDUP_NOISE_PREFIXES = []
 DEDUP_ALIASES = []
 DEDUP_THRESHOLD = 0.7
@@ -923,7 +1098,8 @@ def main():
         if not canon:
             continue
         ev["county"] = canon
-        ev["town"] = nearest_known_town(ev.get("town"))
+        venue_town = GALWAY_VENUE_TOWNS.get((ev.get("venue") or "").strip().lower())
+        ev["town"] = nearest_known_town(venue_town or ev.get("town"))
         ev["category"] = normalize_category(ev.get("category"))
         apply_kids_family_tag(ev)
         apply_generic_sold_out(ev)
