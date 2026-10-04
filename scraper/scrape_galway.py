@@ -624,6 +624,170 @@ def parse_roisindubh(source):
     return roisin_events(items, source)
 
 
+# ------------------------------------ Ticket Tailor / Galway Film Society
+#
+# tickettailor.com/events/<organiser> is plain server-rendered HTML: one card
+# per event with its title, a date line, the venue and links to the event's
+# own page. tt_cards() reads those cards for ANY Ticket Tailor organiser (the
+# organiser's name is taken from the source URL), so another venue that sells
+# through Ticket Tailor is a few lines, not a new parser. A card is found by
+# walking UP from each event link to the biggest ancestor holding only that
+# one event, then reading the card's text as a whole - so it doesn't matter
+# how the date's individual parts happen to be wrapped in tags.
+#
+# The GFS-specific part (parse_gfs): the society shows each film more than
+# once - e.g. Sunday 5pm and 8pm, Monday 6:30pm - but the listing only gives
+# the FIRST and LAST screening ("Sun 4 Oct 17:00 - Mon 5 Oct 18:30"). The full
+# list of times is a sentence on each event's own page ("Screening times are
+# ..."), so that's read from there, falling back to the listing's first and
+# last if the page can't be read. Titles are SHOUTED in capitals on the site
+# ('GFS: THE CYCLE OF LOVE') and are tidied, with the society named in
+# brackets in the same way a festival is.
+
+TT_STAMP_RE = re.compile(r"""
+    (?P<wd1>Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+
+    (?P<d1>\d{1,2})\s+(?P<m1>[A-Za-z]{3,9})\.?\s+(?P<y1>\d{4})\s+
+    (?P<h1>\d{1,2}):(?P<n1>\d{2})
+    (?:\s*[-\u2013\u2014]\s*
+        (?:(?P<wd2>Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+
+           (?P<d2>\d{1,2})\s+(?P<m2>[A-Za-z]{3,9})\.?\s+(?P<y2>\d{4})\s+)?
+        (?P<h2>\d{1,2}):(?P<n2>\d{2})
+    )?
+""", re.I | re.X)
+TT_CARD_ENDS_RE = re.compile(
+    r"\b(?:Event details|Select tickets|Sold out|Book now|Get tickets)\b", re.I)
+TT_EIRCODE_RE = re.compile(r"[,\s]*\b[A-Z]\d{2}\s?[A-Z0-9]{4}\b\s*$")
+GFS_SOCIETY = "Galway Film Society"
+GFS_SMALL_WORDS = {"a", "an", "and", "as", "at", "but", "by", "for", "in",
+                   "of", "on", "or", "the", "to", "vs"}
+# capitals that really are initials, so stay capitals; every OTHER shouted
+# word - including short ones like MY, ME or IT - is capitalised normally
+GFS_ACRONYMS = {"DJ", "TV", "UK", "US", "USA", "USSR", "UN", "EU", "MC",
+                "OK", "AI", "CD", "DVD", "BBC", "RTE", "FBI", "CIA", "JFK"}
+GFS_TIMES_RE = re.compile(
+    r"Screening times?\s+(?:is|are)\s*[:\-]?\s*(.+?)(?:\.(?=\s|$|[A-Z])|$)", re.I)
+
+
+def clock12(hour, minute):
+    h, suffix = hour % 12 or 12, "am" if hour < 12 else "pm"
+    return f"{h}{suffix}" if minute == 0 else f"{h}:{minute:02d}{suffix}"
+
+
+def tt_cards(soup, source):
+    """The events on a Ticket Tailor organiser page, as plain dicts."""
+    org = urlparse(source["url"]).path.rstrip("/").rsplit("/", 1)[-1]
+    id_re = re.compile(r"/events/" + re.escape(org) + r"/(\d+)")
+    seen, cards = set(), []
+    for a in soup.find_all("a", href=True):
+        m = id_re.search(a["href"])
+        title = clean(a.get_text(" "))
+        if (not m or not title or m.group(1) in seen
+                or title.lower() in ("event details", "select tickets")):
+            continue
+        seen.add(m.group(1))
+        node = a
+        while node.parent is not None and node.parent.name not in (
+                "body", "html", "[document]"):
+            ids = {id_re.search(x["href"]).group(1)
+                   for x in node.parent.find_all("a", href=True)
+                   if id_re.search(x["href"])}
+            if len(ids) > 1:
+                break
+            node = node.parent
+        text = clean(node.get_text(" "))
+        dm = TT_STAMP_RE.search(text)
+        if not dm:
+            continue
+        mon1 = MONTHS.get(dm["m1"].lower()[:3])
+        try:
+            start = date(int(dm["y1"]), mon1, int(dm["d1"]))
+        except (TypeError, ValueError):
+            continue
+        end, t2 = None, None
+        if dm["h2"]:
+            t2 = (int(dm["h2"]), int(dm["n2"]))
+            if dm["d2"]:
+                try:
+                    e = date(int(dm["y2"]), MONTHS.get(dm["m2"].lower()[:3]),
+                             int(dm["d2"]))
+                    end = e if e != start else None
+                except (TypeError, ValueError):
+                    pass
+        venue = clean(TT_CARD_ENDS_RE.split(text[dm.end():])[0]).strip(" ,-")
+        venue = TT_EIRCODE_RE.sub("", venue).strip(" ,-")
+        cards.append({
+            "title": title, "start": start, "end": end,
+            "t1": (int(dm["h1"]), int(dm["n1"])), "t2": t2,
+            "wd1": dm["wd1"].capitalize(),
+            "wd2": dm["wd2"].capitalize() if dm["wd2"] else None,
+            "venue": venue,
+            "sold": bool(re.search(r"\bsold out\b", text, re.I)),
+            "url": urljoin(source["url"], a["href"]).split("?")[0]})
+    return cards
+
+
+def gfs_title(raw):
+    """'GFS: MY FATHER'S SHADOW' -> "My Father's Shadow". Only words that
+    are entirely in capitals are touched, so mixed-case text such as
+    '(additional screening)' is left as written; known acronyms like
+    DJ or TV stay capitals; small words (of, the, and...) go lower-case."""
+    t = re.sub(r"^\s*GFS\s*:\s*", "", raw, flags=re.I)
+    out, prev = [], ""
+    for i, w in enumerate(t.split(" ")):
+        core = re.sub(r"[^A-Za-z\u00c0-\u00ff]", "", w)
+        if core and core.isupper():
+            low = core.lower()
+            after_colon = prev.endswith(":")
+            if i > 0 and low in GFS_SMALL_WORDS and not after_colon:
+                w = w.lower()
+            elif core not in GFS_ACRONYMS:
+                w = re.sub(r"[A-Za-z\u00c0-\u00ff]", lambda m: m.group().upper(),
+                           w.lower(), count=1)
+        out.append(w)
+        prev = w
+    return " ".join(out)
+
+
+def gfs_screening_times(url):
+    """The 'Screening times are ...' sentence from an event's own page, or
+    None. Smallest page blocks are tried first so the match comes from the
+    paragraph itself, not a wrapper that has swallowed the paragraphs after
+    it."""
+    try:
+        page = fetch(url)
+    except Exception as exc:
+        print(f"  could not read screening times at {url}: {exc}", file=sys.stderr)
+        time.sleep(0.4)
+        return None
+    time.sleep(0.4)
+    blocks = sorted(page.find_all(["p", "li", "div"]),
+                    key=lambda b: len(b.get_text()))
+    for block in blocks:
+        m = GFS_TIMES_RE.search(clean(block.get_text()))
+        if m:
+            t = m.group(1).strip(" .")
+            if 0 < len(t) <= 80:
+                return t
+    return None
+
+
+def parse_gfs(soup, source):
+    events = []
+    for c in tt_cards(soup, source):
+        if c["end"] and c["t2"]:
+            fallback = (f"{c['wd1']} {clock12(*c['t1'])} \u2013 "
+                        f"{c['wd2']} {clock12(*c['t2'])}")
+        else:
+            fallback = clock12(*c["t1"])
+        events.append(make_event(
+            source, f"{gfs_title(c['title'])} ({GFS_SOCIETY})", c["start"],
+            end_date=c["end"].isoformat() if c["end"] else None,
+            time=gfs_screening_times(c["url"]) or fallback,
+            url=c["url"], venue=c["venue"] or source["venue"],
+            category="Film", sold_out=c["sold"]))
+    return events
+
+
 SOURCES = [
     {"name": "tht", "venue": "Town Hall Theatre", "town": "Galway",
      "county": "Galway", "url": "https://tht.ie/all",
@@ -634,6 +798,10 @@ SOURCES = [
     {"name": "roisindubh", "venue": "R\u00f3is\u00edn Dubh", "town": "Galway",
      "county": "Galway", "url": "https://roisindubh.net/listings/",
      "parser": parse_roisindubh, "custom_fetch": True},
+    {"name": "gfs", "venue": "Eye Cinema", "town": "Galway",
+     "county": "Galway",
+     "url": "https://www.tickettailor.com/events/galwayfilmsociety",
+     "parser": parse_gfs},
 ]
 
 
