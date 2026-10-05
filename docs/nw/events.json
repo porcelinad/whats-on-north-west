@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-04T18:13Z",
+ "generated_at": "2026-10-05T02:02Z",
  "failed_sources": [
   "The Model",
   "The Playhouse"
@@ -8,7 +8,7 @@
   "eventbrite_csv_hash": "9c0553cea73a",
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-10-04T02:41Z",
-  "hawkswell": "2026-10-02T02:17Z",
+  "hawkswell": "2026-10-05T02:02Z",
   "craftmonth_donegal": "2026-10-04T02:41Z",
   "craftmonth_derry": "2026-10-04T02:41Z",
   "craftmonth_derry_city": "2026-10-04T02:41Z",
@@ -22,7 +22,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -40,8 +40,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 5,
-  "playhouse": 29
+  "themodel": 6,
+  "playhouse": 30
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -365,19 +365,6 @@
    "first_seen": "2026-09-11"
   },
   {
-   "source": "st_columbs",
-   "venue": "St Columb's Hall",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Think Left",
-   "date": "2026-10-02",
-   "end_date": "2026-10-04",
-   "url": "https://www.saintcolumbshall.com/whatson/think-left/",
-   "category": null,
-   "id": "7368b6c25e05",
-   "first_seen": "2026-09-04"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -390,57 +377,6 @@
    "category": "Exhibition",
    "id": "6d0d161a8b28",
    "first_seen": "2026-08-21"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Back To The Future",
-   "date": "2026-10-04",
-   "time": "2pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/back-to-the-future",
-   "category": null,
-   "id": "cfbbacb38a29",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Ferris Bueller's Day Off",
-   "date": "2026-10-04",
-   "time": "6pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/ferris-buellers-day-off",
-   "category": null,
-   "id": "ca5254f0f685",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Iron Mountain Literature Festival 2026 – Challenging Perspectives on Contemporary Society",
-   "date": "2026-10-04",
-   "url": "https://www.thedock.ie/whats-on/iron-mountain-literature-festival-2026",
-   "category": "Literature",
-   "id": "8c9253365e96",
-   "first_seen": "2026-08-15"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Informal Music Afternoon in October",
-   "date": "2026-10-04",
-   "time": "1:00 pm",
-   "url": "https://www.themodel.ie/?event=ima-oct26&event_date=2026-10-04",
-   "category": null,
-   "id": "7ab41fa4cf16",
-   "first_seen": "2026-09-09"
   },
   {
    "source": "an_grianan",
@@ -1101,6 +1037,19 @@
    "first_seen": "2026-09-09"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Cherish The Ladies",
+   "date": "2026-10-11",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/cherish-the-ladies-3",
+   "category": "Music",
+   "id": "af94ce335d47",
+   "first_seen": "2026-10-05"
+  },
+  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -1192,6 +1141,19 @@
    "first_seen": "2026-09-09"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Romeo & Juliet",
+   "date": "2026-10-13",
+   "time": "12pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/romeo-juliet-2",
+   "category": "Secondary Schools",
+   "id": "64a03ced7883",
+   "first_seen": "2026-10-05"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -1228,6 +1190,19 @@
    "category": "Visual Arts",
    "id": "525cefdc0fd7",
    "first_seen": "2026-09-30"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Some of Our Children – Quintessence Theatre",
+   "date": "2026-10-14",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/some-of-our-children",
+   "category": "Theatre, Kids/Family",
+   "id": "6e7b58f59992",
+   "first_seen": "2026-10-05"
   },
   {
    "source": "nervecentre",
@@ -1269,6 +1244,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Palestinians Are Your Eyes – A worldwide reading to never forget",
+   "date": "2026-10-15",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/palestinians-are-your-eyes",
+   "category": null,
+   "id": "c5e23762917a",
+   "first_seen": "2026-10-05"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -1280,6 +1268,19 @@
    "category": "Music",
    "id": "3ee0bbce0f4e",
    "first_seen": "2026-09-20"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "David O'Doherty: Highway to the David Zone",
+   "date": "2026-10-15",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/david-odoherty-highway-to-the-david-zone",
+   "category": "Comedy",
+   "id": "3e54c0cc8e65",
+   "first_seen": "2026-10-05"
   },
   {
    "source": "rcc",
@@ -1363,6 +1364,19 @@
    "category": "Comedy",
    "id": "556a8869cba5",
    "first_seen": "2026-07-17"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Jack Lukeman – Chez Jack L + All the Hits",
+   "date": "2026-10-16",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/jack-lukeman-2",
+   "category": "Music",
+   "id": "8a909d5daf6f",
+   "first_seen": "2026-10-05"
   },
   {
    "source": "nervecentre",
@@ -3005,6 +3019,18 @@
    "category": "Music",
    "id": "c7be8ddd79b9",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Mr. Bergmann of Deadman's Point – Nth Degree Productions",
+   "date": "2026-11-13",
+   "url": "https://www.thedock.ie/whats-on/mr-bergmann-of-deadmans-point",
+   "category": "Theatre",
+   "id": "0ca993ab6b0b",
+   "first_seen": "2026-10-05"
   },
   {
    "source": "themodel",
