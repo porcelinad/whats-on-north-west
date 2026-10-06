@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T02:02Z",
+ "generated_at": "2026-10-06T03:00Z",
  "failed_sources": [
   "The Model",
   "The Playhouse"
@@ -22,7 +22,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -40,8 +40,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 6,
-  "playhouse": 30
+  "themodel": 7,
+  "playhouse": 31
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -379,19 +379,6 @@
    "first_seen": "2026-08-21"
   },
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Earthfall – Undercurrent",
-   "date": "2026-10-05",
-   "url": "https://angrianan.com/event/earthfall-undercurrent/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666779/events/128661654/seats?zone=Default",
-   "category": "Theatre",
-   "id": "4c1924e3e832",
-   "first_seen": "2026-08-05"
-  },
-  {
    "source": "abbey",
    "venue": "Abbey Arts Centre",
    "town": "Ballyshannon",
@@ -456,32 +443,6 @@
    "category": "Music",
    "id": "b0753a3ea706",
    "first_seen": "2026-08-01"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Carefree Travel",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "AMA River Cruises",
-   "date": "2026-10-07",
-   "time": "12:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/ama-river-cruises/",
-   "category": null,
-   "id": "e86d31dc3843",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Lola Montez",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Junior cert results party with DJ Ois Bosh",
-   "date": "2026-10-07",
-   "time": "19:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/junior-cert-results-party-with-dj-ois-bosh/",
-   "category": "Kids/Family",
-   "id": "91fc006a7802",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "nervecentre",
@@ -576,19 +537,6 @@
    "first_seen": "2026-07-31"
   },
   {
-   "source": "eventbrite_donegal",
-   "venue": "Flowerfield Arts Centre",
-   "town": "Coleraine",
-   "county": "Derry",
-   "title": "National Theatre Live | The Misanthrope",
-   "date": "2026-10-08",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/national-theatre-live-the-misanthrope/",
-   "category": null,
-   "id": "7b4567b3ff06",
-   "first_seen": "2026-10-04"
-  },
-  {
    "source": "hawkswell",
    "venue": "Hawk's Well Theatre",
    "town": "Sligo",
@@ -600,19 +548,6 @@
    "category": "Comedy",
    "id": "61323efa2617",
    "first_seen": "2026-09-29"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Kiltoy Roundabout",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Daredevil Circus Letterkenny",
-   "date": "2026-10-08",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/daredevil-circus-letterkenny/",
-   "category": null,
-   "id": "f0f348240611",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "rcc",
@@ -693,32 +628,6 @@
    "category": "Music",
    "id": "a9daef7298ec",
    "first_seen": "2026-09-29"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Joes Bar",
-   "town": "Strabane",
-   "county": "Tyrone",
-   "title": "Ro Boyle On Tour 'SHOWED UP ' Joe's Bar Strabane",
-   "date": "2026-10-09",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/ro-boyle-on-tour-showed-up-joes-bar-strabane/",
-   "category": null,
-   "id": "752b203242de",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Kee's Hotel",
-   "town": "Stranorlar",
-   "county": "Donegal",
-   "title": "Frances Browne Poetry Competition - Awards Evening 2026",
-   "date": "2026-10-09",
-   "time": "19:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/frances-browne-poetry-competition-awards-evening-2026/",
-   "category": null,
-   "id": "2482a0d20ce9",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "mcgrorys",
@@ -883,32 +792,6 @@
    "category": "Spoken Word",
    "id": "06e26c448105",
    "first_seen": "2026-09-09"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Clayton Hotel Sligo",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Ladies DIY Skills Class – Sligo",
-   "date": "2026-10-10",
-   "time": "10:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/ladies-diy-skills-class-sligo/",
-   "category": null,
-   "id": "a5f1045ace87",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Clayton Hotel Sligo",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "The Masked Singer",
-   "date": "2026-10-10",
-   "time": "18:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-masked-singer/",
-   "category": null,
-   "id": "f58c10afd8bd",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "hawkswell",
@@ -2384,22 +2267,6 @@
    "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
-   "title": "Gremlins (4K Restoration) | Halloween Nerve Cinema",
-   "date": "2026-10-29",
-   "time": "4:00PM",
-   "url": "https://nervecentre.org/whats-on/gremlins-nerve-cinema",
-   "category": "Film",
-   "merged_from": [
-    "nervecentre"
-   ],
-   "id": "9ac0f8d17c0d",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
    "title": "The Exorcist (Extended Director's Cut) | Halloween Nerve Cinema",
    "date": "2026-10-29",
    "time": "7:00PM",
@@ -2407,6 +2274,22 @@
    "category": "Film",
    "id": "da84753fc773",
    "first_seen": "2026-09-10"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The Nightmare Before Christmas (4K Restoration) | Halloween Nerve Cinema",
+   "date": "2026-10-29",
+   "time": "2:00PM",
+   "url": "https://nervecentre.org/whats-on/the-nightmare-before-christmas-halloween-nerve-cinema",
+   "category": "Film",
+   "merged_from": [
+    "nervecentre"
+   ],
+   "id": "b50223477d03",
+   "first_seen": "2026-10-06"
   },
   {
    "source": "rcc",
@@ -2669,19 +2552,6 @@
    "category": "Film",
    "id": "3fb3992bf6a4",
    "first_seen": "2026-09-24"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Moving Pictures — Rush Tribute 2026",
-   "date": "2026-11-05",
-   "time": "8:00PM",
-   "url": "https://nervecentre.org/whats-on/moving-pictures-rush-tribute-3",
-   "category": "Music/Comedy",
-   "id": "7893974d46f9",
-   "first_seen": "2026-07-21"
   },
   {
    "source": "an_grianan",
@@ -3779,6 +3649,19 @@
    "first_seen": "2026-09-19"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Brass and Choral Christmas Spectacular 2026",
+   "date": "2026-12-11",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/brass-and-choral-christmas-spectacular-2026/",
+   "category": "Music",
+   "id": "5fef19e65661",
+   "first_seen": "2026-10-06"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -3902,6 +3785,18 @@
    "category": null,
    "id": "0df145f9aa90",
    "first_seen": "2026-09-19"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Little Red Riding Hood’s Christmas Adventure:",
+   "date": "2026-12-16",
+   "url": "https://ardhowen.com/show/little-red-riding-hoods-christmas-adventure/",
+   "category": "Kids/Family",
+   "id": "9b08e38266c4",
+   "first_seen": "2026-10-06"
   },
   {
    "source": "st_columbs",
@@ -4360,12 +4255,13 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "For the Love of Shane MacGowan – CANCELLED",
+   "title": "The Yacht Rock Show",
    "date": "2027-01-10",
-   "url": "https://angrianan.com/event/for-the-love-of-shane-macgowan-2/",
+   "url": "https://angrianan.com/event/the-yacht-rock-show/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873668058/events/128666124/seats?zone=Auditorium",
    "category": "Music",
-   "id": "81e439529492",
-   "first_seen": "2026-09-30"
+   "id": "4c63a6418077",
+   "first_seen": "2026-10-06"
   },
   {
    "source": "ardhowen",
@@ -5245,6 +5141,19 @@
    "category": "Music",
    "id": "234a5964e018",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Dead Asset",
+   "date": "2027-05-01",
+   "url": "https://angrianan.com/event/dead-asset/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873668063/events/128666128/seats?zone=Auditorium",
+   "category": "Drama",
+   "id": "5facaae70205",
+   "first_seen": "2026-10-06"
   },
   {
    "source": "playhouse",
