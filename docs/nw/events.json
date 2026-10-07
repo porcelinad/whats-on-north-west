@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06T03:00Z",
+ "generated_at": "2026-10-07T02:24Z",
  "failed_sources": [
   "The Model",
   "The Playhouse"
@@ -9,14 +9,14 @@
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-10-04T02:41Z",
   "hawkswell": "2026-10-05T02:02Z",
-  "craftmonth_donegal": "2026-10-04T02:41Z",
-  "craftmonth_derry": "2026-10-04T02:41Z",
-  "craftmonth_derry_city": "2026-10-04T02:41Z",
-  "craftmonth_leitrim": "2026-10-04T02:41Z",
-  "craftmonth_sligo": "2026-10-04T02:41Z",
-  "craftmonth_tyrone": "2026-10-04T02:41Z",
-  "craftmonth_fermanagh": "2026-10-04T02:41Z",
-  "heritageweek": "2026-10-04T02:41Z"
+  "craftmonth_donegal": "2026-10-07T02:24Z",
+  "craftmonth_derry": "2026-10-07T02:24Z",
+  "craftmonth_derry_city": "2026-10-07T02:24Z",
+  "craftmonth_leitrim": "2026-10-07T02:24Z",
+  "craftmonth_sligo": "2026-10-07T02:24Z",
+  "craftmonth_tyrone": "2026-10-07T02:24Z",
+  "craftmonth_fermanagh": "2026-10-07T02:24Z",
+  "heritageweek": "2026-10-07T02:24Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
@@ -40,8 +40,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 7,
-  "playhouse": 31
+  "themodel": 8,
+  "playhouse": 32
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -379,45 +379,6 @@
    "first_seen": "2026-08-21"
   },
   {
-   "source": "abbey",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Vital Voices",
-   "date": "2026-10-06",
-   "url": "https://abbeycentre.ie/eventer/vital-voices",
-   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173676950",
-   "category": null,
-   "id": "5ba719d2bd0a",
-   "first_seen": "2026-09-16"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Othello (Film Screening)",
-   "date": "2026-10-06",
-   "time": "11am",
-   "url": "https://www.hawkswell.com/whats-on/shows/othello",
-   "category": "Secondary Schools",
-   "id": "9750b0892fd7",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Late Fame | Nerve Cinema",
-   "date": "2026-10-06",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/late-fame-nerve-cinema",
-   "category": "Film",
-   "id": "bb93c0f22345",
-   "first_seen": "2026-08-05"
-  },
-  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -589,19 +550,6 @@
    "category": null,
    "id": "22d8e9d23ab2",
    "first_seen": "2026-08-01"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Gearóid Farrelly: No Pressure",
-   "date": "2026-10-09",
-   "url": "https://angrianan.com/event/gearoid-farrelly-no-pressure/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873659681/events/128627550/seats?zone=Default",
-   "category": "Comedy",
-   "id": "a54d9f5ca2c2",
-   "first_seen": "2026-07-14"
   },
   {
    "source": "ardhowen",
@@ -2771,6 +2719,19 @@
    "category": "Musical",
    "id": "2ee01b60d883",
    "first_seen": "2026-09-24"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Artist Talk on the exhibition ‘Print & Process’ by Omagh Printmakers.",
+   "date": "2026-11-10",
+   "time": "11:00am",
+   "url": "https://struleartscentre.co.uk/show/artist-talk-on-the-exhibition-print-process-by-omagh-printmakers/",
+   "category": "Spoken Word",
+   "id": "f6731282dc54",
+   "first_seen": "2026-10-07"
   },
   {
    "source": "an_grianan",
@@ -5205,6 +5166,19 @@
    "category": "Variety",
    "id": "20e498acb28c",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Gearóid Farrelly: No Pressure",
+   "date": "2027-05-29",
+   "url": "https://angrianan.com/event/gearoid-farrelly-no-pressure/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873659681/events/128627550/seats?zone=Default",
+   "category": "Comedy",
+   "id": "a09a7d99aa1c",
+   "first_seen": "2026-10-07"
   },
   {
    "source": "ardhowen",
