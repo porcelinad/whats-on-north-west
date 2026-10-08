@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-07T02:24Z",
+ "generated_at": "2026-10-08T02:42Z",
  "failed_sources": [
   "The Model",
   "The Playhouse"
@@ -8,7 +8,7 @@
   "eventbrite_csv_hash": "9c0553cea73a",
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-10-04T02:41Z",
-  "hawkswell": "2026-10-05T02:02Z",
+  "hawkswell": "2026-10-08T02:42Z",
   "craftmonth_donegal": "2026-10-07T02:24Z",
   "craftmonth_derry": "2026-10-07T02:24Z",
   "craftmonth_derry_city": "2026-10-07T02:24Z",
@@ -22,7 +22,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -40,8 +40,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 8,
-  "playhouse": 32
+  "themodel": 9,
+  "playhouse": 33
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -377,72 +377,6 @@
    "category": "Exhibition",
    "id": "6d0d161a8b28",
    "first_seen": "2026-08-21"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "As I Lay Dreaming by Shaun Byrne",
-   "date": "2026-10-07",
-   "end_date": "2026-10-07",
-   "url": "https://angrianan.com/event/as-i-lay-dreaming/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666947",
-   "category": "Theatre",
-   "id": "653800deb2b2",
-   "first_seen": "2026-08-13"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Made In Tennessee",
-   "date": "2026-10-07",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/made-in-tennessee/",
-   "category": "Music",
-   "id": "b0753a3ea706",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Puppet Panic: A Halloween Creative Lab!",
-   "date": "2026-10-07",
-   "end_date": "2026-10-21",
-   "url": "https://nervecentre.org/whats-on/puppet-panic-a-halloween-creative-lab",
-   "category": "Workshop",
-   "sold_out": true,
-   "id": "b8565171c773",
-   "first_seen": "2026-09-12"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Rip it Up: A Hard Day's Night | Nerve Cinema",
-   "date": "2026-10-07",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/rip-it-up-a-hard-days-night-nerve-cinema",
-   "category": "Film",
-   "id": "bb0534670b26",
-   "first_seen": "2026-08-08"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "It Was Just an Accident – Classic Cinema",
-   "date": "2026-10-07",
-   "url": "https://www.thedock.ie/whats-on/it-was-just-an-accident",
-   "category": "Film",
-   "id": "387e3fe203b2",
-   "first_seen": "2026-08-07"
   },
   {
    "source": "an_grianan",
@@ -1011,6 +945,22 @@
    "first_seen": "2026-10-01"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Love Your Coast Photography Exhibition",
+   "date": "2026-10-13",
+   "time": "9:30 am",
+   "url": "https://regionalculturalcentre.com/events/love-your-coast-photography-exhibition/",
+   "category": "Exhibition",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "e4803fbd1129",
+   "first_seen": "2026-10-08"
+  },
+  {
    "source": "thedock",
    "venue": "The Dock",
    "town": "Carrick-on-Shannon",
@@ -1182,6 +1132,19 @@
    "category": "Music",
    "id": "c49afc3bc74c",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Conal Gallen - How's Your Father?",
+   "date": "2026-10-16",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/conal-gallen-hows-your-father-2",
+   "category": null,
+   "id": "d1e09d494dfc",
+   "first_seen": "2026-10-08"
   },
   {
    "source": "balor",
@@ -1613,7 +1576,6 @@
    "time": "9:00am",
    "url": "https://ardhowen.com/show/homicide-timeline-training-including-coercive-control/",
    "category": "Adult Workshop",
-   "sold_out": true,
    "id": "8a765b789b47",
    "first_seen": "2026-09-09"
   },
@@ -2215,6 +2177,22 @@
    "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
+   "title": "Gremlins (4K Restoration) | Halloween Nerve Cinema",
+   "date": "2026-10-29",
+   "time": "4:00PM",
+   "url": "https://nervecentre.org/whats-on/gremlins-nerve-cinema",
+   "category": "Film",
+   "merged_from": [
+    "nervecentre"
+   ],
+   "id": "9ac0f8d17c0d",
+   "first_seen": "2026-10-08"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
    "title": "The Exorcist (Extended Director's Cut) | Halloween Nerve Cinema",
    "date": "2026-10-29",
    "time": "7:00PM",
@@ -2222,22 +2200,6 @@
    "category": "Film",
    "id": "da84753fc773",
    "first_seen": "2026-09-10"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The Nightmare Before Christmas (4K Restoration) | Halloween Nerve Cinema",
-   "date": "2026-10-29",
-   "time": "2:00PM",
-   "url": "https://nervecentre.org/whats-on/the-nightmare-before-christmas-halloween-nerve-cinema",
-   "category": "Film",
-   "merged_from": [
-    "nervecentre"
-   ],
-   "id": "b50223477d03",
-   "first_seen": "2026-10-06"
   },
   {
    "source": "rcc",
@@ -2488,6 +2450,19 @@
    "category": "Theatre",
    "id": "348727067d83",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Escape the Internet with Lucas Rizzotto",
+   "date": "2026-11-04",
+   "time": "7:00PM",
+   "url": "https://nervecentre.org/whats-on/escape-the-internet-with-lucas-rizzotto",
+   "category": "Music/Comedy",
+   "id": "7eeedb8cb22b",
+   "first_seen": "2026-10-08"
   },
   {
    "source": "thedock",
@@ -2938,6 +2913,18 @@
    "category": null,
    "id": "64c2b24cfbd6",
    "first_seen": "2026-09-19"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Lemoncello – Perfect Place",
+   "date": "2026-11-14",
+   "url": "https://www.thedock.ie/whats-on/lemoncello",
+   "category": "Music",
+   "id": "1e2b324a7179",
+   "first_seen": "2026-10-08"
   },
   {
    "source": "an_grianan",
@@ -5089,6 +5076,19 @@
    "category": "Comedy",
    "id": "ddbedf0d2dec",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Gary Gamble’s Nip and Tuck",
+   "date": "2027-04-29",
+   "url": "https://angrianan.com/event/gary-gambles-nip-and-tuck/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873668103",
+   "category": "Theatre",
+   "id": "8f81ed7f7f0b",
+   "first_seen": "2026-10-08"
   },
   {
    "source": "ardhowen",
