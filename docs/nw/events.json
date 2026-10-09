@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T02:42Z",
+ "generated_at": "2026-10-09T02:57Z",
  "failed_sources": [
   "The Model",
   "The Playhouse"
@@ -22,7 +22,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 2,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -40,8 +40,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 9,
-  "playhouse": 33
+  "themodel": 10,
+  "playhouse": 34
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -379,45 +379,6 @@
    "first_seen": "2026-08-21"
   },
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Dr David Coleman: Ready for Anything: Building Emotional Resilience in Children and Teenagers",
-   "date": "2026-10-08",
-   "url": "https://angrianan.com/event/dr-david-coleman-2026/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873663825/events/128649368/seats?zone=Default",
-   "category": "Spoken Word, Kids/Family",
-   "id": "843510d9e9e0",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Anthony Toner",
-   "date": "2026-10-08",
-   "time": "9:00pm",
-   "url": "https://ardhowen.com/show/anthony-toner-3/",
-   "category": "Music",
-   "id": "5e2ec5fdbc4e",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "A Lecture by Martin A. Timoney – Archaeological Recognitions in Connacht and Clare from 1966 to 2026.",
-   "date": "2026-10-08",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/a-lecture-by-martin-a-timoney",
-   "category": null,
-   "id": "be6a470bcea5",
-   "first_seen": "2026-09-29"
-  },
-  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -430,60 +391,6 @@
    "category": "Drama",
    "id": "ca13072835d6",
    "first_seen": "2026-07-31"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Aoife Dunne - Good Grief",
-   "date": "2026-10-08",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/aoife-dunne-good-grief",
-   "category": "Comedy",
-   "id": "61323efa2617",
-   "first_seen": "2026-09-29"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Cinema: Have You Never Heard of Bill Fuller?",
-   "date": "2026-10-08",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-cinema-have-you-never-heard-of-bill-fuller/",
-   "category": "Film",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "dafd9ecedf84",
-   "first_seen": "2026-08-29"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Film screening: La Grazia",
-   "date": "2026-10-08",
-   "time": "8:00 pm",
-   "url": "/?event=sligo-film-society-2026-27&event_date=2026-10-08",
-   "category": null,
-   "id": "505c48d18f1e",
-   "first_seen": "2026-09-17"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "William Thompson - Touch Grass",
-   "date": "2026-10-08",
-   "url": "https://www.derryplayhouse.co.uk/event/william-thompson-touch-grass",
-   "category": null,
-   "id": "22d8e9d23ab2",
-   "first_seen": "2026-08-01"
   },
   {
    "source": "ardhowen",
@@ -885,10 +792,10 @@
    "date": "2026-10-12",
    "time": "11:00 am",
    "url": "https://regionalculturalcentre.com/events/wainfest-school-event-mischief-and-mystery-in-moominvalley/",
+   "category": "Literature",
    "merged_from": [
     "rcc"
    ],
-   "category": null,
    "id": "50ca3dd07abb",
    "first_seen": "2026-10-01"
   },
@@ -1021,6 +928,7 @@
    "time": "8:00pm",
    "url": "https://ardhowen.com/show/michael-english/",
    "category": "Music",
+   "sold_out": true,
    "id": "20a06ed51f72",
    "first_seen": "2026-08-01"
   },
@@ -1576,6 +1484,7 @@
    "time": "9:00am",
    "url": "https://ardhowen.com/show/homicide-timeline-training-including-coercive-control/",
    "category": "Adult Workshop",
+   "sold_out": true,
    "id": "8a765b789b47",
    "first_seen": "2026-09-09"
   },
@@ -2092,6 +2001,22 @@
    ],
    "id": "02fe933d3ee3",
    "first_seen": "2026-09-10"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Kids: Spooky Art Workshops with The Arty Fox",
+   "date": "2026-10-28",
+   "time": "11:00 am",
+   "url": "https://regionalculturalcentre.com/events/spooky-art-workshops-with-the-arty-fox/",
+   "category": "Workshop, Kids/Family",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "0ebd9b64529d",
+   "first_seen": "2026-10-09"
   },
   {
    "source": "st_columbs",
@@ -4483,6 +4408,32 @@
    "first_seen": "2026-08-25"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Space for Everyone",
+   "date": "2027-02-10",
+   "time": "2:30pm",
+   "url": "https://ardhowen.com/show/space-for-everyone/",
+   "category": "Kids/Family",
+   "id": "2e3291f6fdcc",
+   "first_seen": "2026-10-09"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Zog & the First Aid Heroes",
+   "date": "2027-02-10",
+   "time": "11:00am",
+   "url": "https://ardhowen.com/show/zog-the-first-aid-heroes/",
+   "category": "Kids/Family",
+   "id": "b040b7bd970a",
+   "first_seen": "2026-10-09"
+  },
+  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -4673,6 +4624,19 @@
    "category": "Musical",
    "id": "ef854381cb48",
    "first_seen": "2026-08-26"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Gospel Fest Goes West 2027",
+   "date": "2027-02-27",
+   "time": "7:30pm",
+   "url": "https://struleartscentre.co.uk/show/gospel-fest-goes-west-2027/",
+   "category": "Music",
+   "id": "70ec4a634fd8",
+   "first_seen": "2026-10-09"
   },
   {
    "source": "eventbrite_donegal",
@@ -5102,6 +5066,19 @@
    "category": "Music",
    "id": "234a5964e018",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Sam is for the Hills",
+   "date": "2027-04-30",
+   "url": "https://angrianan.com/event/sam-is-for-the-hills/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873668130/events/128666345/seats?zone=Auditorium",
+   "category": "Music",
+   "id": "9808c99c6202",
+   "first_seen": "2026-10-09"
   },
   {
    "source": "an_grianan",
