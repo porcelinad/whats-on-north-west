@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T02:57Z",
+ "generated_at": "2026-10-10T02:21Z",
  "failed_sources": [
   "The Model",
   "The Playhouse"
@@ -9,20 +9,20 @@
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-10-04T02:41Z",
   "hawkswell": "2026-10-08T02:42Z",
-  "craftmonth_donegal": "2026-10-07T02:24Z",
-  "craftmonth_derry": "2026-10-07T02:24Z",
-  "craftmonth_derry_city": "2026-10-07T02:24Z",
-  "craftmonth_leitrim": "2026-10-07T02:24Z",
-  "craftmonth_sligo": "2026-10-07T02:24Z",
-  "craftmonth_tyrone": "2026-10-07T02:24Z",
-  "craftmonth_fermanagh": "2026-10-07T02:24Z",
-  "heritageweek": "2026-10-07T02:24Z"
+  "craftmonth_donegal": "2026-10-10T02:21Z",
+  "craftmonth_derry": "2026-10-10T02:21Z",
+  "craftmonth_derry_city": "2026-10-10T02:21Z",
+  "craftmonth_leitrim": "2026-10-10T02:21Z",
+  "craftmonth_sligo": "2026-10-10T02:21Z",
+  "craftmonth_tyrone": "2026-10-10T02:21Z",
+  "craftmonth_fermanagh": "2026-10-10T02:21Z",
+  "heritageweek": "2026-10-10T02:21Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 2,
+  "abbey": 3,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -40,8 +40,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 10,
-  "playhouse": 34
+  "themodel": 11,
+  "playhouse": 35
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -377,133 +377,6 @@
    "category": "Exhibition",
    "id": "6d0d161a8b28",
    "first_seen": "2026-08-21"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Found Drowned - The Mysterious Death of Bella Brooks",
-   "date": "2026-10-08",
-   "end_date": "2026-10-09",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=found-drowned-the-mysterious-death-of-bella-brooks",
-   "category": "Drama",
-   "id": "ca13072835d6",
-   "first_seen": "2026-07-31"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "The Bjorn Identity – Celebrate 50 years of Dancing Queen",
-   "date": "2026-10-09",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/the-bjorn-identity-celebrate-50-years-of-dancing-queen/",
-   "category": "Music",
-   "id": "b4e75015a18e",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "An Evening with Kristin Hersh",
-   "date": "2026-10-09",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/an-evening-with-kristin-hersh",
-   "category": "Music",
-   "id": "a9daef7298ec",
-   "first_seen": "2026-09-29"
-  },
-  {
-   "source": "mcgrorys",
-   "venue": "McGrory's Hotel",
-   "town": "Culdaff",
-   "county": "Donegal",
-   "title": "Daoirí Farrell",
-   "date": "2026-10-09",
-   "url": "https://www.mcgrorys.ie/entertainment/78-167/",
-   "category": "Music",
-   "id": "2ec7cee78ad2",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "st_columbs",
-   "venue": "St Columb's Hall",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The People&#8217;s Hall Tour",
-   "date": "2026-10-09",
-   "url": "https://www.saintcolumbshall.com/whatson/the-peoples-hall-tour/2026-10-09/",
-   "category": null,
-   "id": "12cb1dbd2720",
-   "first_seen": "2026-09-04"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "In Jimmy Kennedys Footsteps: Denmark Street Revisted",
-   "date": "2026-10-09",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/in-jimmy-kennedys-footsteps-denmark-street-revisted/",
-   "category": "Festival",
-   "id": "ea51f3204db2",
-   "first_seen": "2026-09-08"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "John McGahern: A Writing Life – Frank Shovlin",
-   "date": "2026-10-09",
-   "url": "https://www.thedock.ie/whats-on/john-mcgahern-a-writing-life-frank-shovlin",
-   "category": "Literature",
-   "id": "e6fb28299e75",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Bump & Baby",
-   "date": "2026-10-09",
-   "time": "10:00 am",
-   "url": "https://www.themodel.ie/?event=baby-and-bump&event_date=2026-10-09",
-   "category": null,
-   "id": "1c847b9d0b3f",
-   "first_seen": "2026-09-25"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Con Brio presents: Daniel Lebhardt",
-   "date": "2026-10-09",
-   "time": "7:30 pm",
-   "url": "?event=con-brio-26-27&event_date=2026-10-09",
-   "category": null,
-   "id": "520f238f5493",
-   "first_seen": "2026-09-25"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Laughing Matters - Sweeten The Pill - Episode One",
-   "date": "2026-10-09",
-   "url": "https://www.derryplayhouse.co.uk/event/laughing-matters-sweeten-the-pill-episode-one",
-   "category": null,
-   "id": "0ef32d25dcde",
-   "first_seen": "2026-09-11"
   },
   {
    "source": "abbey",
@@ -2972,6 +2845,18 @@
    "first_seen": "2026-09-26"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Gealán Quartet – Prayers and Truths",
+   "date": "2026-11-19",
+   "url": "https://www.thedock.ie/whats-on/gealán-quartet",
+   "category": "Music",
+   "id": "c9bfdd0b17d8",
+   "first_seen": "2026-10-10"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -3458,6 +3343,19 @@
    "first_seen": "2026-09-03"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Community Carol Service",
+   "date": "2026-12-09",
+   "time": "7:30pm",
+   "url": "https://struleartscentre.co.uk/show/community-carol-service/",
+   "category": "Music",
+   "id": "5250783a114e",
+   "first_seen": "2026-10-10"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -3526,13 +3424,13 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
-   "title": "Brass and Choral Christmas Spectacular 2026",
+   "title": "Brass and Choral Christmas Spectacular",
    "date": "2026-12-11",
    "time": "8:00pm",
    "url": "https://struleartscentre.co.uk/show/brass-and-choral-christmas-spectacular-2026/",
    "category": "Music",
-   "id": "5fef19e65661",
-   "first_seen": "2026-10-06"
+   "id": "6bce51183c4b",
+   "first_seen": "2026-10-10"
   },
   {
    "source": "ardhowen",
@@ -3588,13 +3486,13 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
-   "title": "Tom Sweeney’s Family Christmas Cracker 2026",
+   "title": "Tom Sweeney’s Family Christmas Cracker",
    "date": "2026-12-12",
    "time": "2:00pm",
    "url": "https://struleartscentre.co.uk/show/tom-sweeneys-family-christmas-cracker-2026/",
    "category": "Kids/Family",
-   "id": "705fdc488a25",
-   "first_seen": "2026-08-22"
+   "id": "30e12b72857f",
+   "first_seen": "2026-10-10"
   },
   {
    "source": "an_grianan",
@@ -4369,19 +4267,6 @@
    "first_seen": "2026-07-14"
   },
   {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Essentially Cher",
-   "date": "2027-02-06",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/essentially-cher/",
-   "category": "Music",
-   "id": "7a390be8ddd0",
-   "first_seen": "2026-08-01"
-  },
-  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -5002,6 +4887,19 @@
    "first_seen": "2026-07-18"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Robert Mizzells Nashville Songbook",
+   "date": "2027-04-22",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/robert-mizzells-nashville-songbook/",
+   "category": null,
+   "id": "3ac8ac84eed5",
+   "first_seen": "2026-10-10"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -5234,6 +5132,19 @@
    "category": "Music",
    "id": "cbe50dfef4d6",
    "first_seen": "2026-09-15"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Simon & Garfunkel Through The Years",
+   "date": "2027-06-25",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/simon-garfunkel-through-the-years/",
+   "category": "Music",
+   "id": "91c565554d12",
+   "first_seen": "2026-10-10"
   },
   {
    "source": "eaf",
