@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T02:21Z",
+ "generated_at": "2026-10-11T01:55Z",
  "failed_sources": [
   "The Model",
   "The Playhouse"
@@ -7,8 +7,8 @@
  "source_last_run": {
   "eventbrite_csv_hash": "9c0553cea73a",
   "eventbrite_csv_since": "2026-10-04T18:13Z",
-  "eaf": "2026-10-04T02:41Z",
-  "hawkswell": "2026-10-08T02:42Z",
+  "eaf": "2026-10-11T01:55Z",
+  "hawkswell": "2026-10-11T01:55Z",
   "craftmonth_donegal": "2026-10-10T02:21Z",
   "craftmonth_derry": "2026-10-10T02:21Z",
   "craftmonth_derry_city": "2026-10-10T02:21Z",
@@ -19,10 +19,10 @@
   "heritageweek": "2026-10-10T02:21Z"
  },
  "consecutive_failures": {
-  "an_grianan": 0,
-  "rcc": 0,
-  "balor": 0,
-  "abbey": 3,
+  "an_grianan": 1,
+  "rcc": 1,
+  "balor": 1,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -37,11 +37,11 @@
   "craftmonth_tyrone": 0,
   "craftmonth_fermanagh": 0,
   "heritageweek": 0,
-  "thedock": 0,
+  "thedock": 1,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 11,
-  "playhouse": 35
+  "themodel": 12,
+  "playhouse": 36
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -377,170 +377,6 @@
    "category": "Exhibition",
    "id": "6d0d161a8b28",
    "first_seen": "2026-08-21"
-  },
-  {
-   "source": "abbey",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Paddy Power Full with Paddy McDonnell",
-   "date": "2026-10-10",
-   "url": "https://abbeycentre.ie/eventer/paddy-power-full-with-paddy-mcdonnell",
-   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173676393",
-   "category": null,
-   "id": "95a127c60d2f",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The Martin Hurson Story",
-   "date": "2026-10-10",
-   "url": "https://angrianan.com/event/the-martin-hurson-story/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873665326/events/128654014/seats?zone=Default",
-   "category": "Theatre",
-   "id": "692eaa612810",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Wainfest 2026: Donegal Junior Strings Orchestra",
-   "date": "2026-10-10",
-   "url": "https://angrianan.com/event/wainfest-2026-donegal-junior-strings-orchestra/",
-   "category": "Music, Kids/Family",
-   "id": "808a01c40de7",
-   "first_seen": "2026-07-31"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Calum MacPhail Live",
-   "date": "2026-10-10",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/calum-macphail-live/",
-   "category": "Music",
-   "id": "9922095d252a",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "A Tribute To The Music Of John Denver with Marc Roberts",
-   "date": "2026-10-10",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/a-tribute-to-the-music-of-john-denver-with-marc-roberts",
-   "category": null,
-   "id": "0532de28c2ec",
-   "first_seen": "2026-09-29"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Tales, Verse and Mumming",
-   "date": "2026-10-10",
-   "time": "7:00 pm",
-   "url": "https://www.balorartscentre.com/?event=tales-verse-and-mumming",
-   "category": "Spoken Word",
-   "id": "06e26c448105",
-   "first_seen": "2026-09-09"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Ardal O’Hanlon: Not Himself",
-   "date": "2026-10-10",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/ardal-ohanlon-not-himself",
-   "category": "Comedy",
-   "id": "f55f2016d48e",
-   "first_seen": "2026-09-29"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Ro Boyle: Showed Up",
-   "date": "2026-10-10",
-   "time": "8:00PM",
-   "url": "https://nervecentre.org/whats-on/ro-boyle-showed-up",
-   "category": "Music/Comedy",
-   "id": "879a100437b9",
-   "first_seen": "2026-07-21"
-  },
-  {
-   "source": "st_columbs",
-   "venue": "St Columb's Hall",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Fine and Dandy Market",
-   "date": "2026-10-10",
-   "url": "https://www.saintcolumbshall.com/whatson/fine-and-dandy-market/",
-   "category": null,
-   "id": "05e7585e42aa",
-   "first_seen": "2026-08-26"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "My Song Goes ’Round the World",
-   "date": "2026-10-10",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/my-song-goes-round-the-world/",
-   "category": "Festival",
-   "id": "5e0ff059d86e",
-   "first_seen": "2026-09-08"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Laughing Matters - Comedy Lecture - The Best Medicine?",
-   "date": "2026-10-10",
-   "url": "https://www.derryplayhouse.co.uk/event/laughing-matters-comedy-lecture-the-best-medicine",
-   "category": null,
-   "id": "9bc06f2fa922",
-   "first_seen": "2026-09-11"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Laughing Matters - Panel Discussion - The Great Pagliacci",
-   "date": "2026-10-10",
-   "url": "https://www.derryplayhouse.co.uk/event/laughing-matters-panel-discussion-the-great-pagliacci",
-   "category": null,
-   "id": "317eced9e80f",
-   "first_seen": "2026-09-11"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Laughing Matters - Sketch Workshop - I Have Bad News",
-   "date": "2026-10-10",
-   "url": "https://www.derryplayhouse.co.uk/event/laughing-matters-sketch-workshop-i-have-bad-news",
-   "category": null,
-   "id": "90b67cdb3231",
-   "first_seen": "2026-09-11"
   },
   {
    "source": "hawkswell",
@@ -1059,6 +895,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Theme Night Social - The Beatles",
+   "date": "2026-10-17",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/theme-night-social-the-beatles",
+   "category": null,
+   "id": "9939ad4e6018",
+   "first_seen": "2026-10-11"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -1083,6 +932,19 @@
    "category": null,
    "id": "75217b92435b",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Made in Tennessee – A Night of Country Music",
+   "date": "2026-10-17",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/made-in-tennessee-2",
+   "category": "Music",
+   "id": "7d96f2b0fb27",
+   "first_seen": "2026-10-11"
   },
   {
    "source": "eventbrite_donegal",
@@ -1204,6 +1066,32 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Goodfellas",
+   "date": "2026-10-18",
+   "time": "6pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/goodfellas",
+   "category": null,
+   "id": "86bd6838688d",
+   "first_seen": "2026-10-11"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "The Addams Family",
+   "date": "2026-10-18",
+   "time": "2pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-addams-family",
+   "category": null,
+   "id": "1a44a4cff1cf",
+   "first_seen": "2026-10-11"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -1228,6 +1116,19 @@
    "category": null,
    "id": "54532034a006",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Theme Night Social - The Beatles",
+   "date": "2026-10-18",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/theme-night-social-the-beatles-2",
+   "category": "Music",
+   "id": "c8b582dd59ec",
+   "first_seen": "2026-10-11"
   },
   {
    "source": "eventbrite_donegal",
@@ -2676,6 +2577,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "abbey",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Abba Forever",
+   "date": "2026-11-14",
+   "url": "https://abbeycentre.ie/eventer/abba-forever",
+   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173671785",
+   "category": null,
+   "id": "4395369cdece",
+   "first_seen": "2026-10-11"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -3942,21 +3856,6 @@
    "first_seen": "2026-09-09"
   },
   {
-   "source": "eaf",
-   "venue": "Ballyliffin Hotel",
-   "town": "Ballyliffin",
-   "county": "Donegal",
-   "title": "A Winter Home with The Henry Girls – January 2027",
-   "date": "2027-01-07",
-   "end_date": "2027-01-10",
-   "time": "Various",
-   "url": "https://eaf.ie/events/a-winter-home-with-the-henry-girls-january-2027/",
-   "category": "Workshop",
-   "sold_out": true,
-   "id": "05659faf78c7",
-   "first_seen": "2026-09-27"
-  },
-  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -3994,19 +3893,6 @@
    "category": "Musical",
    "id": "1c438ef81fdb",
    "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eaf",
-   "venue": "Ballyliffin Hotel",
-   "town": "Ballyliffin",
-   "county": "Donegal",
-   "title": "The Henry Girls – January 2027",
-   "date": "2027-01-09",
-   "time": "8pm",
-   "url": "https://eaf.ie/events/the-henry-girls-january-2027/",
-   "category": "Music",
-   "id": "0b937edb08a4",
-   "first_seen": "2026-07-18"
   },
   {
    "source": "strule",
@@ -4382,6 +4268,19 @@
    "first_seen": "2026-07-16"
   },
   {
+   "source": "abbey",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Tommy Flemming – The Encore Tour",
+   "date": "2027-02-17",
+   "url": "https://abbeycentre.ie/eventer/tommy-flemming-the-encore-tour",
+   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173674156",
+   "category": null,
+   "id": "cacb478aea42",
+   "first_seen": "2026-10-11"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -4573,6 +4472,19 @@
    "category": null,
    "id": "781d6600dfb9",
    "first_seen": "2026-09-11"
+  },
+  {
+   "source": "abbey",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Heaven Can Wait – The Meat Loaf Concert Experience",
+   "date": "2027-03-07",
+   "url": "https://abbeycentre.ie/eventer/heaven-can-wait-the-meat-loaf-concert-experience",
+   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173671624",
+   "category": null,
+   "id": "71fcd959659a",
+   "first_seen": "2026-10-11"
   },
   {
    "source": "strule",
@@ -5145,20 +5057,6 @@
    "category": "Music",
    "id": "91c565554d12",
    "first_seen": "2026-10-10"
-  },
-  {
-   "source": "eaf",
-   "venue": "Malin Presbyterian Church",
-   "town": "Malin",
-   "county": "Donegal",
-   "title": "Home with The Henry Girls – Summer 2027",
-   "date": "2027-07-12",
-   "end_date": "2027-07-16",
-   "time": "10.30am- 4.30pm (Daily)",
-   "url": "https://eaf.ie/events/home-with-the-henry-girls-2027/",
-   "category": "Workshop",
-   "id": "5bb614fcee4a",
-   "first_seen": "2026-09-27"
   },
   {
    "source": "eventbrite_donegal",
