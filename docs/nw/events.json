@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-11T01:55Z",
+ "generated_at": "2026-10-12T02:25Z",
  "failed_sources": [
   "The Model",
   "The Playhouse"
@@ -19,10 +19,10 @@
   "heritageweek": "2026-10-10T02:21Z"
  },
  "consecutive_failures": {
-  "an_grianan": 1,
-  "rcc": 1,
-  "balor": 1,
-  "abbey": 0,
+  "an_grianan": 0,
+  "rcc": 0,
+  "balor": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -37,11 +37,11 @@
   "craftmonth_tyrone": 0,
   "craftmonth_fermanagh": 0,
   "heritageweek": 0,
-  "thedock": 1,
+  "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 12,
-  "playhouse": 36
+  "themodel": 13,
+  "playhouse": 37
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -362,108 +362,6 @@
    "url": "https://www.derryplayhouse.co.uk/event/thats-powerful-x-emergent-strategy",
    "category": null,
    "id": "e3ed15004bc0",
-   "first_seen": "2026-09-11"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Kevin Lowery – Land’s End – An Artist’s Journey to Glenlough 100 Years After Rockwell Kent",
-   "date": "2026-10-03",
-   "end_date": "2026-11-14",
-   "time": "1:00 pm",
-   "url": "https://regionalculturalcentre.com/exhibitions/kevin-lowery-lands-end-an-artists-journey-to-glenlough-100-years-after-rockwell-kent/",
-   "category": "Exhibition",
-   "id": "6d0d161a8b28",
-   "first_seen": "2026-08-21"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Matilda",
-   "date": "2026-10-11",
-   "time": "2pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/matilda",
-   "category": null,
-   "id": "3371b4cc5bf7",
-   "first_seen": "2026-10-02"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Pulp Fiction",
-   "date": "2026-10-11",
-   "time": "6pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/pulp-fiction",
-   "category": null,
-   "id": "0b9c0b351be7",
-   "first_seen": "2026-10-02"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Vision & Voices",
-   "date": "2026-10-11",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=vision-voices",
-   "category": "Drama",
-   "id": "23261fbfa04c",
-   "first_seen": "2026-09-09"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Cherish The Ladies",
-   "date": "2026-10-11",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/cherish-the-ladies-3",
-   "category": "Music",
-   "id": "af94ce335d47",
-   "first_seen": "2026-10-05"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Laughing Matters - Long Table - Diagnosis: Comedy",
-   "date": "2026-10-11",
-   "url": "https://www.derryplayhouse.co.uk/event/laughing-matters-long-table-diagnosis-comedy",
-   "category": null,
-   "id": "564d5b3c937b",
-   "first_seen": "2026-09-11"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Laughing Matters - Sweeten The Pill - Episode 2",
-   "date": "2026-10-11",
-   "url": "https://www.derryplayhouse.co.uk/event/laughing-matters-sweeten-the-pill-episode-2",
-   "category": null,
-   "id": "4be785f8a3b3",
-   "first_seen": "2026-09-11"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Laughing Matters - Theatre - The Funny Thing About Cancer",
-   "date": "2026-10-11",
-   "url": "https://www.derryplayhouse.co.uk/event/laughing-matters-theatre-the-funny-thing-about-cancer",
-   "category": null,
-   "id": "f58b9ac9a605",
    "first_seen": "2026-09-11"
   },
   {
@@ -8269,6 +8167,20 @@
    "category": "Workshop",
    "id": "471739ac6e42",
    "first_seen": "2026-09-26"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Kevin Lowery – Land’s End – An Artist’s Journey to Glenlough 100 Years After Rockwell Kent",
+   "date": "2027-10-03",
+   "end_date": "2026-11-14",
+   "time": "1:00 pm",
+   "url": "https://regionalculturalcentre.com/exhibitions/kevin-lowery-lands-end-an-artists-journey-to-glenlough-100-years-after-rockwell-kent/",
+   "category": "Exhibition",
+   "id": "09ec578ed592",
+   "first_seen": "2026-10-12"
   }
  ]
 }
