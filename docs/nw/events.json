@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-12T02:25Z",
+ "generated_at": "2026-10-13T03:34Z",
  "failed_sources": [
   "The Model",
   "The Playhouse"
@@ -9,20 +9,20 @@
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-10-11T01:55Z",
   "hawkswell": "2026-10-11T01:55Z",
-  "craftmonth_donegal": "2026-10-10T02:21Z",
-  "craftmonth_derry": "2026-10-10T02:21Z",
-  "craftmonth_derry_city": "2026-10-10T02:21Z",
-  "craftmonth_leitrim": "2026-10-10T02:21Z",
-  "craftmonth_sligo": "2026-10-10T02:21Z",
-  "craftmonth_tyrone": "2026-10-10T02:21Z",
-  "craftmonth_fermanagh": "2026-10-10T02:21Z",
-  "heritageweek": "2026-10-10T02:21Z"
+  "craftmonth_donegal": "2026-10-13T03:34Z",
+  "craftmonth_derry": "2026-10-13T03:34Z",
+  "craftmonth_derry_city": "2026-10-13T03:34Z",
+  "craftmonth_leitrim": "2026-10-13T03:34Z",
+  "craftmonth_sligo": "2026-10-13T03:34Z",
+  "craftmonth_tyrone": "2026-10-13T03:34Z",
+  "craftmonth_fermanagh": "2026-10-13T03:34Z",
+  "heritageweek": "2026-10-13T03:34Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 2,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -40,8 +40,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 13,
-  "playhouse": 37
+  "themodel": 14,
+  "playhouse": 38
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -363,48 +363,6 @@
    "category": null,
    "id": "e3ed15004bc0",
    "first_seen": "2026-09-11"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "WAINFEST: Cark Angel – Little John Nee",
-   "date": "2026-10-12",
-   "url": "https://angrianan.com/event/wainfest-cark-angel/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873667293",
-   "category": "Theatre",
-   "id": "ddf2458869fb",
-   "first_seen": "2026-09-25"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Great | Crossing Lines",
-   "date": "2026-10-12",
-   "time": "8:30 pm - 10:15 pm",
-   "url": "https://www.balorartscentre.com/?event=great-crossing-lines",
-   "category": "Film",
-   "id": "f1da2cbcbc08",
-   "first_seen": "2026-09-09"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Wainfest! School Event: Mischief and Mystery in Moominvalley",
-   "date": "2026-10-12",
-   "time": "11:00 am",
-   "url": "https://regionalculturalcentre.com/events/wainfest-school-event-mischief-and-mystery-in-moominvalley/",
-   "category": "Literature",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "50ca3dd07abb",
-   "first_seen": "2026-10-01"
   },
   {
    "source": "ardhowen",
@@ -4081,26 +4039,26 @@
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
    "county": "Fermanagh",
-   "title": "Space for Everyone",
+   "title": "NI Science Festival Presents – Space for Everyone",
    "date": "2027-02-10",
    "time": "2:30pm",
    "url": "https://ardhowen.com/show/space-for-everyone/",
    "category": "Kids/Family",
-   "id": "2e3291f6fdcc",
-   "first_seen": "2026-10-09"
+   "id": "73a331d61801",
+   "first_seen": "2026-10-13"
   },
   {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
    "county": "Fermanagh",
-   "title": "Zog & the First Aid Heroes",
+   "title": "NI Science Festival Presents – Zog & the First Aid Heroes",
    "date": "2027-02-10",
    "time": "11:00am",
    "url": "https://ardhowen.com/show/zog-the-first-aid-heroes/",
    "category": "Kids/Family",
-   "id": "b040b7bd970a",
-   "first_seen": "2026-10-09"
+   "id": "3c6baa736c18",
+   "first_seen": "2026-10-13"
   },
   {
    "source": "playhouse",
@@ -4735,6 +4693,19 @@
    "category": "Music",
    "id": "1381a0bb3445",
    "first_seen": "2026-10-03"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "SPR!NGSTEEN!",
+   "date": "2027-04-24",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/sprngsteen/",
+   "category": "Music",
+   "id": "ed992d1f17f7",
+   "first_seen": "2026-10-13"
   },
   {
    "source": "strule",
