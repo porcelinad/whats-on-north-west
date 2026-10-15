@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14T01:55Z",
+ "generated_at": "2026-10-15T01:29Z",
  "failed_sources": [
   "The Model",
   "The Playhouse"
@@ -22,7 +22,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 3,
+  "abbey": 4,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -40,8 +40,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 15,
-  "playhouse": 39
+  "themodel": 16,
+  "playhouse": 40
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -366,32 +366,6 @@
    "first_seen": "2026-09-11"
   },
   {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Some of Our Children – Quintessence Theatre",
-   "date": "2026-10-14",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/some-of-our-children",
-   "category": "Theatre, Kids/Family",
-   "id": "6e7b58f59992",
-   "first_seen": "2026-10-05"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Everybody Digs Bill Evans | Nerve Cinema",
-   "date": "2026-10-14",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/everybody-digs-bill-evans-nerve-cinema",
-   "category": "Film",
-   "id": "4f9dd40ca79a",
-   "first_seen": "2026-08-05"
-  },
-  {
    "source": "abbey",
    "venue": "Abbey Arts Centre",
    "town": "Ballyshannon",
@@ -576,6 +550,7 @@
    "time": "7:00PM",
    "url": "https://nervecentre.org/whats-on/our-space-halloween-show",
    "category": "Music/Comedy",
+   "sold_out": true,
    "id": "840a85d6e5dd",
    "first_seen": "2026-09-18"
   },
@@ -970,6 +945,7 @@
    "time": "10:30am",
    "url": "https://struleartscentre.co.uk/show/royal-arms-knocknamoe-castle-staff-stories-sharing-memories/",
    "category": "Spoken Word",
+   "sold_out": true,
    "id": "96b36dd2ae1d",
    "first_seen": "2026-09-15"
   },
@@ -1680,6 +1656,22 @@
    "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
+   "title": "Gremlins (4K Restoration) | Halloween Nerve Cinema",
+   "date": "2026-10-29",
+   "time": "4:00PM",
+   "url": "https://nervecentre.org/whats-on/gremlins-nerve-cinema",
+   "category": "Film",
+   "merged_from": [
+    "nervecentre"
+   ],
+   "id": "9ac0f8d17c0d",
+   "first_seen": "2026-10-15"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
    "title": "The Exorcist (Extended Director's Cut) | Halloween Nerve Cinema",
    "date": "2026-10-29",
    "time": "7:00PM",
@@ -1687,22 +1679,6 @@
    "category": "Film",
    "id": "da84753fc773",
    "first_seen": "2026-09-10"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The Nightmare Before Christmas (4K Restoration) | Halloween Nerve Cinema",
-   "date": "2026-10-29",
-   "time": "2:00PM",
-   "url": "https://nervecentre.org/whats-on/the-nightmare-before-christmas-halloween-nerve-cinema",
-   "category": "Film",
-   "merged_from": [
-    "nervecentre"
-   ],
-   "id": "b50223477d03",
-   "first_seen": "2026-10-14"
   },
   {
    "source": "rcc",
