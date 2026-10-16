@@ -1,6 +1,7 @@
 {
- "generated_at": "2026-10-15T01:29Z",
+ "generated_at": "2026-10-16T01:22Z",
  "failed_sources": [
+  "Abbey Arts Centre",
   "The Model",
   "The Playhouse"
  ],
@@ -9,20 +10,20 @@
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-10-11T01:55Z",
   "hawkswell": "2026-10-14T01:55Z",
-  "craftmonth_donegal": "2026-10-13T03:34Z",
-  "craftmonth_derry": "2026-10-13T03:34Z",
-  "craftmonth_derry_city": "2026-10-13T03:34Z",
-  "craftmonth_leitrim": "2026-10-13T03:34Z",
-  "craftmonth_sligo": "2026-10-13T03:34Z",
-  "craftmonth_tyrone": "2026-10-13T03:34Z",
-  "craftmonth_fermanagh": "2026-10-13T03:34Z",
-  "heritageweek": "2026-10-13T03:34Z"
+  "craftmonth_donegal": "2026-10-16T01:22Z",
+  "craftmonth_derry": "2026-10-16T01:22Z",
+  "craftmonth_derry_city": "2026-10-16T01:22Z",
+  "craftmonth_leitrim": "2026-10-16T01:22Z",
+  "craftmonth_sligo": "2026-10-16T01:22Z",
+  "craftmonth_tyrone": "2026-10-16T01:22Z",
+  "craftmonth_fermanagh": "2026-10-16T01:22Z",
+  "heritageweek": "2026-10-16T01:22Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 4,
+  "abbey": 5,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -40,8 +41,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 16,
-  "playhouse": 40
+  "themodel": 17,
+  "playhouse": 41
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -364,129 +365,6 @@
    "category": null,
    "id": "e3ed15004bc0",
    "first_seen": "2026-09-11"
-  },
-  {
-   "source": "abbey",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Onóir",
-   "date": "2026-10-15",
-   "url": "https://abbeycentre.ie/eventer/onoir-1st-april",
-   "booking_url": "https://abbeycentre.ticketsolve.com/ticketbooth/shows/1173672766",
-   "category": null,
-   "id": "fde96886d9b0",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Michael English with Special Guest Paddy Treacy",
-   "date": "2026-10-15",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/michael-english/",
-   "category": "Music",
-   "sold_out": true,
-   "id": "20a06ed51f72",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Palestinians Are Your Eyes – A worldwide reading to never forget",
-   "date": "2026-10-15",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/palestinians-are-your-eyes",
-   "category": null,
-   "id": "c5e23762917a",
-   "first_seen": "2026-10-05"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "The Ghostlight Sessions October 2026 — GL OCt TSolve – 1",
-   "date": "2026-10-15",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=the-ghostlight-sessions-october-2026",
-   "category": "Music",
-   "id": "3ee0bbce0f4e",
-   "first_seen": "2026-09-20"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "David O'Doherty: Highway to the David Zone",
-   "date": "2026-10-15",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/david-odoherty-highway-to-the-david-zone",
-   "category": "Comedy",
-   "id": "3e54c0cc8e65",
-   "first_seen": "2026-10-05"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Cinema: DJ Ahmet",
-   "date": "2026-10-15",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-cinema-dj-ahmet/",
-   "category": "Film",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "0bacb44c3e45",
-   "first_seen": "2026-08-29"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Wainfest! Schools Event: Niall DeBurca",
-   "date": "2026-10-15",
-   "time": "10:00 am",
-   "url": "https://regionalculturalcentre.com/events/wainfest-schools-event-niall-deburca/",
-   "merged_from": [
-    "rcc"
-   ],
-   "category": null,
-   "id": "5b3bf348b644",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Tommy Tiernan – World Tour of Leitrim",
-   "date": "2026-10-15",
-   "url": "https://www.thedock.ie/whats-on/tommy-tiernan",
-   "category": "Comedy",
-   "id": "83c4f9a51c85",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Film screening: The Blue Trail",
-   "date": "2026-10-15",
-   "time": "8:00 pm",
-   "url": "/?event=sligo-film-society-2026-27&event_date=2026-10-15",
-   "category": null,
-   "id": "7a531e1e54ae",
-   "first_seen": "2026-09-17"
   },
   {
    "source": "ardhowen",
@@ -3751,6 +3629,19 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "“A Little More Than Magic” – Conor Breen (AKA – Teach)",
+   "date": "2027-01-16",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/a-little-more-than-magic-conor-breen-aka-teach/",
+   "category": "Entertainment",
+   "id": "610b17672113",
+   "first_seen": "2026-10-16"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Atlantic Apartotel",
    "town": "Bundoran",
@@ -4254,6 +4145,18 @@
    "first_seen": "2026-08-07"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Shane Daniel Byrne – Baby This Time",
+   "date": "2027-03-04",
+   "url": "https://www.thedock.ie/whats-on/baby-this-time",
+   "category": "Comedy",
+   "id": "6df52c9ce069",
+   "first_seen": "2026-10-16"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -4668,6 +4571,19 @@
    "category": "Comedy",
    "id": "ddbedf0d2dec",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Gee Atherton: Hold Fast",
+   "date": "2027-04-25",
+   "url": "https://angrianan.com/event/gee-atherton-hold-fast/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873668303/events/128667555/seats?zone=Auditorium",
+   "category": "Spoken Word",
+   "id": "e510d63660c3",
+   "first_seen": "2026-10-16"
   },
   {
    "source": "an_grianan",
