@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T01:22Z",
+ "generated_at": "2026-10-17T01:19Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "The Model",
@@ -9,7 +9,7 @@
   "eventbrite_csv_hash": "9c0553cea73a",
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-10-11T01:55Z",
-  "hawkswell": "2026-10-14T01:55Z",
+  "hawkswell": "2026-10-17T01:19Z",
   "craftmonth_donegal": "2026-10-16T01:22Z",
   "craftmonth_derry": "2026-10-16T01:22Z",
   "craftmonth_derry_city": "2026-10-16T01:22Z",
@@ -23,7 +23,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 5,
+  "abbey": 6,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -41,8 +41,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 17,
-  "playhouse": 41
+  "themodel": 18,
+  "playhouse": 42
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -367,125 +367,6 @@
    "first_seen": "2026-09-11"
   },
   {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Thunder Rolls, The Garth Brooks Tribute",
-   "date": "2026-10-16",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/thunder-rolls-the-garth-brooks-tribute/",
-   "category": "Music",
-   "id": "c49afc3bc74c",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Conal Gallen - How's Your Father?",
-   "date": "2026-10-16",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/conal-gallen-hows-your-father-2",
-   "category": null,
-   "id": "d1e09d494dfc",
-   "first_seen": "2026-10-08"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Paddy McDonnell - Gout's Out",
-   "date": "2026-10-16",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=paddy-mcdonnell-gouts-out",
-   "category": "Comedy",
-   "id": "556a8869cba5",
-   "first_seen": "2026-07-17"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Jack Lukeman – Chez Jack L + All the Hits",
-   "date": "2026-10-16",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/jack-lukeman-2",
-   "category": "Music",
-   "id": "8a909d5daf6f",
-   "first_seen": "2026-10-05"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Our Space | Pre-Halloween Show",
-   "date": "2026-10-16",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/our-space-halloween-show",
-   "category": "Music/Comedy",
-   "sold_out": true,
-   "id": "840a85d6e5dd",
-   "first_seen": "2026-09-18"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Wainfest! School Screening: A Bug’s Life",
-   "date": "2026-10-16",
-   "time": "10:30 am",
-   "url": "https://regionalculturalcentre.com/events/wainfest-school-screening-a-bugs-life/",
-   "merged_from": [
-    "rcc"
-   ],
-   "category": null,
-   "id": "2de4c9d9ea93",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "source": "st_columbs",
-   "venue": "St Columb's Hall",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The People&#8217;s Hall Tour",
-   "date": "2026-10-16",
-   "url": "https://www.saintcolumbshall.com/whatson/the-peoples-hall-tour/2026-10-16/",
-   "category": null,
-   "id": "a8ffb65a5aa4",
-   "first_seen": "2026-09-04"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Forgotten – Fishamble: The New Play Company",
-   "date": "2026-10-16",
-   "url": "https://www.thedock.ie/whats-on/forgotten",
-   "category": "Theatre",
-   "id": "8df83315c35b",
-   "first_seen": "2026-08-28"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Áislann Rann na Feirste",
-   "town": "Donegal Town",
-   "county": "Donegal",
-   "title": "Ceolta an Chéid",
-   "date": "2026-10-16",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/ceolta-an-cheid/",
-   "category": null,
-   "id": "57834b225bf9",
-   "first_seen": "2026-10-04"
-  },
-  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -507,6 +388,7 @@
    "date": "2026-10-17",
    "time": "9:00pm",
    "url": "https://ardhowen.com/show/eerieland-ghost-stories-of-the-north-of-ireland/",
+   "sold_out": true,
    "category": null,
    "id": "d6a8b53e2d7b",
    "first_seen": "2026-08-01"
@@ -842,6 +724,19 @@
   },
   {
    "source": "hawkswell",
+   "venue": "Hawk's Well Studio",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "The Deep End: Stand-up Showcase – Hosted by Terry Markey",
+   "date": "2026-10-20",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-deep-end-stand-up-showcase",
+   "category": "Comedy",
+   "id": "40ed753f6799",
+   "first_seen": "2026-10-17"
+  },
+  {
+   "source": "hawkswell",
    "venue": "Hawk's Well Theatre",
    "town": "Sligo",
    "county": "Sligo",
@@ -1121,6 +1016,19 @@
    "first_seen": "2026-10-03"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Medium Rare",
+   "date": "2026-10-23",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/medium-rare-2",
+   "category": null,
+   "id": "995b9078a669",
+   "first_seen": "2026-10-17"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -1133,6 +1041,32 @@
    "category": "Drama",
    "id": "3a7dec4d6783",
    "first_seen": "2026-09-12"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "The Whileaways & Michael McGovern",
+   "date": "2026-10-23",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-whileaways-michael-mcgovern",
+   "category": "Music",
+   "id": "bc8026dbac3d",
+   "first_seen": "2026-10-17"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well foyer",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Aoife Duignan and Friends – Lunchtime at the Well",
+   "date": "2026-10-23",
+   "time": "1pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/aoife-duignan-and-friends",
+   "category": "Music",
+   "id": "1d705eaf67b2",
+   "first_seen": "2026-10-17"
   },
   {
    "source": "eventbrite_donegal",
@@ -1236,6 +1170,19 @@
    "category": "Drama",
    "id": "7730fb58089c",
    "first_seen": "2026-10-03"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Little Folk-On The Road – with Kyle Riley",
+   "date": "2026-10-24",
+   "time": "11am",
+   "url": "https://www.hawkswell.com/whats-on/shows/little-folk-on-the-road-4",
+   "category": null,
+   "id": "739ad7288fcb",
+   "first_seen": "2026-10-17"
   },
   {
    "source": "eventbrite_donegal",
