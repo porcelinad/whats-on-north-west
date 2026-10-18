@@ -1,8 +1,7 @@
 {
- "generated_at": "2026-10-18T01:04Z",
+ "generated_at": "2026-10-18T10:53Z",
  "failed_sources": [
-  "The Model",
-  "The Playhouse"
+  "The Model"
  ],
  "source_last_run": {
   "eventbrite_csv_hash": "9c0553cea73a",
@@ -16,13 +15,14 @@
   "craftmonth_sligo": "2026-10-16T01:22Z",
   "craftmonth_tyrone": "2026-10-16T01:22Z",
   "craftmonth_fermanagh": "2026-10-16T01:22Z",
-  "heritageweek": "2026-10-16T01:22Z"
+  "heritageweek": "2026-10-16T01:22Z",
+  "allingham": "2026-10-18T10:53Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -40,8 +40,9 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 19,
-  "playhouse": 43
+  "themodel": 20,
+  "playhouse": 0,
+  "allingham": 0
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -353,19 +354,6 @@
  },
  "events": [
   {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "That’s Powerful x Emergent Strategy",
-   "date": "2026-09-23",
-   "end_date": "2026-11-25",
-   "url": "https://www.derryplayhouse.co.uk/event/thats-powerful-x-emergent-strategy",
-   "category": null,
-   "id": "e3ed15004bc0",
-   "first_seen": "2026-09-11"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -447,7 +435,7 @@
   {
    "source": "eventbrite_donegal",
    "venue": "Navenny Street",
-   "town": "Donegal Town",
+   "town": "Ballybofey",
    "county": "Donegal",
    "title": "Halloween drive in movie",
    "date": "2026-10-18",
@@ -948,6 +936,18 @@
    "first_seen": "2026-09-30"
   },
   {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Eerieland: Ghost Stories of the North of Ireland",
+   "date": "2026-10-23",
+   "url": "https://www.derryplayhouse.co.uk/event/eerieland-ghost-stories-of-the-north-of-ireland",
+   "category": null,
+   "id": "e02deb6296dc",
+   "first_seen": "2026-10-18"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -1002,7 +1002,7 @@
   {
    "source": "eventbrite_donegal",
    "venue": "Dunlewey Theatre Gweedore",
-   "town": "Donegal Town",
+   "town": "Gweedore",
    "county": "Donegal",
    "title": "Fomhair Festival presents Jamie McIntyre, Dunlewey Theatre, Donegal",
    "date": "2026-10-24",
@@ -1090,6 +1090,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The School On The Edge Of Reality",
+   "date": "2026-10-24",
+   "end_date": "2026-11-01",
+   "url": "https://www.derryplayhouse.co.uk/event/the-school-on-the-edge-of-reality",
+   "category": null,
+   "id": "a26085f0685e",
+   "first_seen": "2026-10-18"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -1103,9 +1116,21 @@
    "first_seen": "2026-07-31"
   },
   {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Faces of the Púca - Samhain Mask Making",
+   "date": "2026-10-25",
+   "url": "https://www.derryplayhouse.co.uk/event/faces-of-the-puca-samhain-mask-making",
+   "category": null,
+   "id": "5afe95287039",
+   "first_seen": "2026-10-18"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Foxhall Community Hall",
-   "town": "Donegal Town",
+   "town": "Letterkenny",
    "county": "Donegal",
    "title": "Foxhall Mega Whist",
    "date": "2026-10-26",
@@ -1237,6 +1262,19 @@
    "category": "Music",
    "id": "8725141e851b",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Skull Forge: Mask Making Workshop",
+   "date": "2026-10-28",
+   "end_date": "2026-10-29",
+   "url": "https://www.derryplayhouse.co.uk/event/skull-forge-mask-making-workshop",
+   "category": null,
+   "id": "29ec9b0c34ca",
+   "first_seen": "2026-10-18"
   },
   {
    "source": "an_grianan",
@@ -1373,6 +1411,19 @@
    "category": null,
    "id": "c67bad55249b",
    "first_seen": "2026-09-26"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The Last Class",
+   "date": "2026-10-29",
+   "end_date": "2026-11-01",
+   "url": "https://www.derryplayhouse.co.uk/event/the-last-class",
+   "category": null,
+   "id": "4b66b04d13de",
+   "first_seen": "2026-10-18"
   },
   {
    "source": "an_grianan",
@@ -1558,6 +1609,73 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Coláiste Cholmcille Drama, Film & Theatre Studies Production",
+   "date": "2026-11-04",
+   "time": "5pm",
+   "url": "https://allinghamfestival.com/events/ccbs-drama-film-theatre-studies-production/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676548/events",
+   "category": null,
+   "id": "a599df59c9f7",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Opening Night Festivities with Official Opening with Wine Reception & CCBS Choir",
+   "date": "2026-11-04",
+   "time": "7pm",
+   "url": "https://allinghamfestival.com/events/opening-of-the-festival/",
+   "category": null,
+   "id": "0407b2f41e1c",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Opening Night Festivities: Ballyshannon Drama Society presents ‘The Wonder Wheel’ by Barry Mc Kinley",
+   "date": "2026-11-04",
+   "time": "8:15pm",
+   "url": "https://allinghamfestival.com/events/ballyshannon-drama-society-the-wonder-wheel/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676516/events",
+   "category": null,
+   "id": "515f681d5f00",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Opening Night Festivities: Ballyshannon Samba Band",
+   "date": "2026-11-04",
+   "time": "6:30pm",
+   "url": "https://allinghamfestival.com/events/opening-night-festivities-ballyshannon-samba-band/",
+   "category": null,
+   "id": "e90b9bf2f2ab",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Kilbarron Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Cúpla Focal – Cómhra, Ceol, Craic agus Caife!",
+   "date": "2026-11-04",
+   "time": "2:30pm",
+   "url": "https://allinghamfestival.com/events/cupla-focal-comhra-ceol-craic-agus-caife/",
+   "category": null,
+   "id": "81effc3d068c",
+   "first_seen": "2026-10-18"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -1583,6 +1701,48 @@
    "first_seen": "2026-09-24"
   },
   {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Documentary: ‘The Essence of Eva’",
+   "date": "2026-11-05",
+   "time": "4:30pm",
+   "url": "https://allinghamfestival.com/events/documentary-the-essence-of-eva/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676517/events",
+   "category": null,
+   "id": "8e1a4ed6e2ee",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Film: ‘A Quiet Love’ + Q&A with director Garry Keane",
+   "date": "2026-11-05",
+   "time": "8:15pm",
+   "url": "https://allinghamfestival.com/events/film-a-quiet-love-garry-keane/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173675279/events",
+   "category": null,
+   "id": "3be94a933d7a",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Short Films: ‘Sam Rom’ & ‘Helen of Inver’",
+   "date": "2026-11-05",
+   "time": "7pm",
+   "url": "https://allinghamfestival.com/events/film-four-short-films/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173675276/events",
+   "category": null,
+   "id": "a97a6d69b263",
+   "first_seen": "2026-10-18"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -1594,6 +1754,99 @@
    "category": "Music",
    "id": "a20b833b7fe3",
    "first_seen": "2026-10-14"
+  },
+  {
+   "source": "allingham",
+   "venue": "Coláiste Cholmcille",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Schools’ Programme with NJ Alphonsus",
+   "date": "2026-11-05",
+   "time": "4pm",
+   "url": "https://allinghamfestival.com/events/schools-programme/",
+   "category": null,
+   "id": "6e74949e5554",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Mc Intyre's",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Open Mic in Mc Intyre’s",
+   "date": "2026-11-05",
+   "time": "10pm",
+   "url": "https://allinghamfestival.com/events/open-mic-in-mc-intyres/",
+   "category": null,
+   "id": "91999c0a860f",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Front and Centre Scratch",
+   "date": "2026-11-05",
+   "url": "https://www.derryplayhouse.co.uk/event/front-and-centre-scratch",
+   "category": null,
+   "id": "05a8b4f680df",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "An Evening with Johnny Gallagher",
+   "date": "2026-11-06",
+   "time": "7pm",
+   "url": "https://allinghamfestival.com/events/johnny-gallagher/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676520/events",
+   "category": null,
+   "id": "12b84a4f7e55",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Poetry: Mike Jennings",
+   "date": "2026-11-06",
+   "time": "3pm",
+   "url": "https://allinghamfestival.com/events/mike-jennings/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676518/events",
+   "category": null,
+   "id": "fbe13fecda4e",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "The Fifth Court Podcast",
+   "date": "2026-11-06",
+   "time": "5pm",
+   "url": "https://allinghamfestival.com/events/the-fifth-court-podcast/",
+   "category": null,
+   "id": "03a26f6f1983",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Ár Seisiún Mór – ‘The Donegal Sound’ with Mairéad Ní Mhaonaigh & Friends",
+   "date": "2026-11-06",
+   "time": "8:30pm",
+   "url": "https://allinghamfestival.com/events/ar-seisiun-mor/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173675514/events",
+   "category": null,
+   "id": "61042c8ff6d6",
+   "first_seen": "2026-10-18"
   },
   {
    "source": "an_grianan",
@@ -1619,6 +1872,32 @@
    "category": "Music",
    "id": "bc47b4ad98df",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "allingham",
+   "venue": "Ballyshannon Community Hospital",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Music in the Community Hospital",
+   "date": "2026-11-06",
+   "time": "2:30pm",
+   "url": "https://allinghamfestival.com/events/music-in-the-community-hospital/",
+   "category": null,
+   "id": "642fd1477cbb",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Bridgend Bar",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Festival Club",
+   "date": "2026-11-06",
+   "time": "10pm",
+   "url": "https://allinghamfestival.com/events/festival-club-2/",
+   "category": null,
+   "id": "1d4787728a09",
+   "first_seen": "2026-10-18"
   },
   {
    "source": "nervecentre",
@@ -1648,7 +1927,7 @@
   {
    "source": "eventbrite_donegal",
    "venue": "3H5W+84",
-   "town": "Donegal Town",
+   "town": "",
    "county": "Donegal",
    "title": "Antrim Rambler Guided Walks: Scalp, Nadaphreagnane & Asdevlin Hill, Donegal",
    "date": "2026-11-07",
@@ -1657,6 +1936,103 @@
    "category": null,
    "id": "b88563593743",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Book Launch: ‘John Mc Gahern – A Writing Life’ by Frank Shovlin",
+   "date": "2026-11-07",
+   "time": "5:30pm",
+   "url": "https://allinghamfestival.com/events/frank-shovlin-a-writing-life-definitive-biography-of-mc-gahern-papers-from-the-wife-2/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173675629/events",
+   "category": null,
+   "id": "cf92f1264570",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Elaine Feeney in conversation with Sinéad Crowley",
+   "date": "2026-11-07",
+   "time": "4pm",
+   "url": "https://allinghamfestival.com/events/elaine-feeney-with-sinead-crowley-2/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676524/events",
+   "category": null,
+   "id": "7a8fce480180",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Jack Lukeman (Jack L) in Concert",
+   "date": "2026-11-07",
+   "time": "8pm",
+   "url": "https://allinghamfestival.com/events/jack-lukeman-jack-l-in-concert/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173675631/events",
+   "category": null,
+   "id": "5d984c19394f",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Paul Howard in conversation with Róisín Ingle",
+   "date": "2026-11-07",
+   "time": "2:45pm",
+   "url": "https://allinghamfestival.com/events/roisin-ingle-paul-howard-2/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173675627/events",
+   "category": null,
+   "id": "a221bba5b489",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Primary School Competition Awards",
+   "date": "2026-11-07",
+   "time": "12pm",
+   "url": "https://allinghamfestival.com/events/primary-school-competition-awards/",
+   "category": null,
+   "id": "b0a4fd39fde1",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Seán Beattie – ‘Famous Folk of Donegal’",
+   "date": "2026-11-07",
+   "time": "1:30pm",
+   "url": "https://allinghamfestival.com/events/sean-beattie-famous-folk-of-donegal/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173675626/events",
+   "category": null,
+   "id": "e55535a52ad9",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Téa Obreht in conversation with Denise Blake",
+   "date": "2026-11-07",
+   "time": "11am",
+   "url": "https://allinghamfestival.com/events/tea-obreht-in-conversation-with-denise-blake/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676838/events",
+   "category": null,
+   "id": "b5e6a3109142",
+   "first_seen": "2026-10-18"
   },
   {
    "source": "an_grianan",
@@ -1683,6 +2059,60 @@
    "category": null,
    "id": "bcdb157a31b1",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "allingham",
+   "venue": "Coláiste Cholmcille",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Children’s Art Workshop",
+   "date": "2026-11-07",
+   "time": "10am",
+   "url": "https://allinghamfestival.com/events/childrens-art-workshop/",
+   "category": "Kids/Family",
+   "id": "3d88b6b86acc",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Dicey Reilly's",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Festival Club",
+   "date": "2026-11-07",
+   "time": "10pm",
+   "url": "https://allinghamfestival.com/events/festival-club/",
+   "category": null,
+   "id": "40ee280d7327",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Dorrian's Imperial Hotel",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Poetry & Flash Fiction (Adults) Awards Ceremony",
+   "date": "2026-11-07",
+   "time": "1pm",
+   "url": "https://allinghamfestival.com/events/literary-lunch/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676523/events",
+   "category": null,
+   "id": "74f659439559",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Kilbarron Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Creative Writing Workshop: Time to Write with Jean Tuomey",
+   "date": "2026-11-07",
+   "time": "10am",
+   "url": "https://allinghamfestival.com/events/workshop-time-to-write/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676522/events",
+   "category": null,
+   "id": "94009f07be1c",
+   "first_seen": "2026-10-18"
   },
   {
    "source": "eventbrite_donegal",
@@ -1748,6 +2178,75 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Ann Ingle in conversation with Róisín Ingle",
+   "date": "2026-11-08",
+   "time": "1:30pm",
+   "url": "https://allinghamfestival.com/events/roisin-ann-ingle-2/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676543/events",
+   "category": null,
+   "id": "219e994fcd76",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Film: ‘You’ll Never Believe who’s Dead’ + Q&A",
+   "date": "2026-11-08",
+   "time": "4:30pm",
+   "url": "https://allinghamfestival.com/events/film-youll-never-believe-whos-dead/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676544/events",
+   "category": null,
+   "id": "64bd6200d761",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Gather Again – the P. J. Drummond Cup",
+   "date": "2026-11-08",
+   "time": "11am",
+   "url": "https://allinghamfestival.com/events/gather-again/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676545/events",
+   "category": null,
+   "id": "004d1f4b4cb0",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Michael Harding: Midwinter – An Afternoon",
+   "date": "2026-11-08",
+   "time": "3pm",
+   "url": "https://allinghamfestival.com/events/michael-harding/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173675633/events",
+   "category": null,
+   "id": "5605a7138e58",
+   "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "St. Anne's",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Sunday Night Concert in St. Anne’s",
+   "date": "2026-11-08",
+   "time": "7pm",
+   "url": "https://allinghamfestival.com/events/sunday-night-concert-in-st-annes/",
+   "category": null,
+   "id": "b8bf91c089f0",
+   "first_seen": "2026-10-18"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -1763,7 +2262,7 @@
   {
    "source": "eventbrite_donegal",
    "venue": "An Gailearaí",
-   "town": "Donegal Town",
+   "town": "Gweedore",
    "county": "Donegal",
    "title": "Active Bystander Training for Artists, Creatives & Arts Workers",
    "date": "2026-11-10",
@@ -1852,6 +2351,18 @@
    "category": null,
    "id": "c32eba2ad185",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Body Count",
+   "date": "2026-11-11",
+   "url": "https://www.derryplayhouse.co.uk/event/body-count",
+   "category": null,
+   "id": "b6093270dd19",
+   "first_seen": "2026-10-18"
   },
   {
    "source": "an_grianan",
@@ -2206,7 +2717,7 @@
   {
    "source": "eventbrite_donegal",
    "venue": "Dunlewey Theatre Gweedore",
-   "town": "Donegal Town",
+   "town": "Gweedore",
    "county": "Donegal",
    "title": "Paul Brady, Dunlewey Theatre, Donegal",
    "date": "2026-11-20",
@@ -2369,6 +2880,19 @@
    "category": "Theatre",
    "id": "517906038277",
    "first_seen": "2026-07-31"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Operation Desperation: Whats Next? 16 Days of Activism against Gender-Based Violence",
+   "date": "2026-11-25",
+   "end_date": "2026-12-10",
+   "url": "https://www.derryplayhouse.co.uk/event/operation-desperation-whats-next-16-days-of-activism-against-gender-based-violence",
+   "category": null,
+   "id": "7bb6e5d77600",
+   "first_seen": "2026-10-18"
   },
   {
    "source": "eventbrite_donegal",
@@ -2844,7 +3368,7 @@
   {
    "source": "eventbrite_donegal",
    "venue": "Clanree Hotel, Conference & Leisure Centre",
-   "town": "Donegal Town",
+   "town": "Letterkenny",
    "county": "Donegal",
    "title": "ONOIR IN CONCERT",
    "date": "2026-12-13",
@@ -3137,7 +3661,7 @@
   {
    "source": "eventbrite_donegal",
    "venue": "The Social",
-   "town": "Donegal Town",
+   "town": "Gweedore",
    "county": "Donegal",
    "title": "Mamma Mia - The Live Experience. The Social, Gweedore Donegal",
    "date": "2026-12-19",
@@ -3574,6 +4098,18 @@
    "first_seen": "2026-08-12"
   },
   {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Mama's Broke - Reunion",
+   "date": "2027-02-04",
+   "url": "https://www.derryplayhouse.co.uk/event/mamas-broke-reunion",
+   "category": null,
+   "id": "337a770a6180",
+   "first_seen": "2026-10-18"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -3883,6 +4419,19 @@
    "first_seen": "2026-08-26"
   },
   {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "PADDY The Life and Times of Paddy Armstrong",
+   "date": "2027-02-26",
+   "end_date": "2027-02-27",
+   "url": "https://www.derryplayhouse.co.uk/event/paddy-the-life-and-times-of-paddy-armstrong",
+   "category": null,
+   "id": "28b79bfc844c",
+   "first_seen": "2026-10-18"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -3898,7 +4447,7 @@
   {
    "source": "eventbrite_donegal",
    "venue": "The Blue Haven Hotel, F94 P270",
-   "town": "Donegal Town",
+   "town": "Kilcar",
    "county": "Donegal",
    "title": "Andrew Strong — The Commitments",
    "date": "2027-02-28",
@@ -4035,6 +4584,18 @@
    "category": "Music",
    "id": "764b3dbe3751",
    "first_seen": "2026-08-07"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Julie",
+   "date": "2027-03-13",
+   "url": "https://www.derryplayhouse.co.uk/event/julie",
+   "category": null,
+   "id": "2b413f8a923e",
+   "first_seen": "2026-10-18"
   },
   {
    "source": "an_grianan",
