@@ -1,14 +1,13 @@
 {
- "generated_at": "2026-10-17T01:19Z",
+ "generated_at": "2026-10-18T01:04Z",
  "failed_sources": [
-  "Abbey Arts Centre",
   "The Model",
   "The Playhouse"
  ],
  "source_last_run": {
   "eventbrite_csv_hash": "9c0553cea73a",
   "eventbrite_csv_since": "2026-10-04T18:13Z",
-  "eaf": "2026-10-11T01:55Z",
+  "eaf": "2026-10-18T01:04Z",
   "hawkswell": "2026-10-17T01:19Z",
   "craftmonth_donegal": "2026-10-16T01:22Z",
   "craftmonth_derry": "2026-10-16T01:22Z",
@@ -23,7 +22,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 6,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -41,8 +40,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 18,
-  "playhouse": 42
+  "themodel": 19,
+  "playhouse": 43
  },
  "location_cache": {
   "https://augustcraftmonth.org/acm-event/land-sea-sky-tir-farraige-agus-speir/": "Ardara",
@@ -367,111 +366,6 @@
    "first_seen": "2026-09-11"
   },
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Aoife Dunne: Good Grief",
-   "date": "2026-10-17",
-   "url": "https://angrianan.com/event/aoife-dunne-good-grief/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873665704/events/128654888/seats?zone=Default",
-   "category": "Comedy",
-   "id": "3e1f8e8c1c1f",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Eerieland: Ghost Stories of the North of Ireland",
-   "date": "2026-10-17",
-   "time": "9:00pm",
-   "url": "https://ardhowen.com/show/eerieland-ghost-stories-of-the-north-of-ireland/",
-   "sold_out": true,
-   "category": null,
-   "id": "d6a8b53e2d7b",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "HAY!",
-   "date": "2026-10-17",
-   "time": "2:00pm",
-   "url": "https://ardhowen.com/show/hay/",
-   "category": "Kids/Family",
-   "id": "bd03a9e83f5d",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Theme Night Social - The Beatles",
-   "date": "2026-10-17",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/theme-night-social-the-beatles",
-   "category": null,
-   "id": "9939ad4e6018",
-   "first_seen": "2026-10-11"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Anne Gildea - Further Adventures in Womaning",
-   "date": "2026-10-17",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=anne-gildea-further-adventures-in-womaning",
-   "category": "Comedy",
-   "id": "e04fbbfc0153",
-   "first_seen": "2026-07-21"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Enniskillen Castle, the Barracks Store",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "The Ballad Of Reading Goal",
-   "date": "2026-10-17",
-   "time": "14:15",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-ballad-of-reading-goal/",
-   "category": null,
-   "id": "75217b92435b",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Made in Tennessee – A Night of Country Music",
-   "date": "2026-10-17",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/made-in-tennessee-2",
-   "category": "Music",
-   "id": "7d96f2b0fb27",
-   "first_seen": "2026-10-11"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Leitrim Sculpture Centre",
-   "town": "Manorhamilton",
-   "county": "Leitrim",
-   "title": "Introduction to the Darkroom Workshop",
-   "date": "2026-10-17",
-   "time": "10:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/introduction-to-the-darkroom-workshop/",
-   "category": null,
-   "id": "d8da5dec5192",
-   "first_seen": "2026-07-20"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -484,98 +378,6 @@
    "category": "Exhibition",
    "id": "0d92f5870a9f",
    "first_seen": "2026-08-21"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Wainfest – Drive-In Movie",
-   "date": "2026-10-17",
-   "time": "2:00 pm",
-   "url": "https://regionalculturalcentre.com/events/wainfest-drive-in-movie/",
-   "category": "Workshop",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "e49b6ac4c4d1",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "source": "st_columbs",
-   "venue": "St Columb's Hall",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The Music of The Lord of The Rings. Tribute to Howard Shore",
-   "date": "2026-10-17",
-   "url": "https://www.saintcolumbshall.com/whatson/the-music-of-the-lord-of-the-rings-tribute-to-howard-shore/",
-   "category": null,
-   "id": "13669b3ff0f0",
-   "first_seen": "2026-08-27"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Wildcrafting Pathways – Book Launch with Joanna Sweeney",
-   "date": "2026-10-17",
-   "url": "https://www.thedock.ie/whats-on/wildcrafting-pathways",
-   "category": "Spoken Word",
-   "id": "e1522e9efa57",
-   "first_seen": "2026-09-03"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Late Nights at The Model presents Toast",
-   "date": "2026-10-17",
-   "time": "10:00 pm",
-   "url": "https://www.themodel.ie/?event=late-nights-oct26-toast&event_date=2026-10-17",
-   "category": null,
-   "id": "d632718dc762",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "The Nesbitt Arms Boutique Hotel",
-   "town": "Ardara",
-   "county": "Donegal",
-   "title": "One for the Road LIVE at the Nesbitt Arms Hotel!",
-   "date": "2026-10-17",
-   "time": "22:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/one-for-the-road-live-at-the-nesbitt-arms-hotel/",
-   "category": null,
-   "id": "6ac34d9b1d5c",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "The Old Courthouse",
-   "town": "Lifford",
-   "county": "Donegal",
-   "title": "Lore - Live at Lifford Old Courthouse",
-   "date": "2026-10-17",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/lore-live-at-lifford-old-courthouse/",
-   "category": null,
-   "id": "11ad5663ca26",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "The Ritz Multiplex, Burn Road, Cookstown, UK",
-   "town": "Cookstown",
-   "county": "Tyrone",
-   "title": "Filmas \"(NE)TOBULI MELAGIAI\" - COOKSTOWN",
-   "date": "2026-10-17",
-   "time": "19:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/filmas-ne-tobuli-melagiai-cookstown/",
-   "category": null,
-   "id": "4d4a9a9e37d7",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "hawkswell",
@@ -3486,6 +3288,21 @@
    "first_seen": "2026-09-09"
   },
   {
+   "source": "eaf",
+   "venue": "Ballyliffin Hotel",
+   "town": "Ballyliffin",
+   "county": "Donegal",
+   "title": "A Winter Home with The Henry Girls – January 2027",
+   "date": "2027-01-07",
+   "end_date": "2027-01-10",
+   "time": "Various",
+   "url": "https://eaf.ie/events/a-winter-home-with-the-henry-girls-january-2027/",
+   "category": "Workshop",
+   "sold_out": true,
+   "id": "05659faf78c7",
+   "first_seen": "2026-10-18"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -3523,6 +3340,19 @@
    "category": "Musical",
    "id": "1c438ef81fdb",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "eaf",
+   "venue": "Ballyliffin Hotel",
+   "town": "Ballyliffin",
+   "county": "Donegal",
+   "title": "The Henry Girls – January 2027",
+   "date": "2027-01-09",
+   "time": "8pm",
+   "url": "https://eaf.ie/events/the-henry-girls-january-2027/",
+   "category": "Music",
+   "id": "0b937edb08a4",
+   "first_seen": "2026-10-18"
   },
   {
    "source": "strule",
@@ -4738,6 +4568,20 @@
    "category": "Music",
    "id": "91c565554d12",
    "first_seen": "2026-10-10"
+  },
+  {
+   "source": "eaf",
+   "venue": "Malin Presbyterian Church",
+   "town": "Malin",
+   "county": "Donegal",
+   "title": "Home with The Henry Girls – Summer 2027",
+   "date": "2027-07-12",
+   "end_date": "2027-07-16",
+   "time": "10.30am- 4.30pm (Daily)",
+   "url": "https://eaf.ie/events/home-with-the-henry-girls-2027/",
+   "category": "Workshop",
+   "id": "5bb614fcee4a",
+   "first_seen": "2026-10-18"
   },
   {
    "source": "eventbrite_donegal",
