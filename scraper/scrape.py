@@ -59,6 +59,18 @@ EVENTBRITE_HEADERS = dict(HEADERS, **{
     "Sec-Fetch-User": "?1",
 })
 
+# The Playhouse's team agreed to whitelist this project specifically, by
+# User-Agent - a clear, honest, self-identifying string (like any
+# legitimate crawler uses) is far easier for a web team to whitelist
+# than trying to match a generic "looks like a browser" string, which
+# is what every other source still uses deliberately. Scoped to
+# Playhouse only, not the shared default HEADERS, since several other
+# sources currently work precisely BECAUSE they look like a normal
+# browser - a blanket change risks new blocks elsewhere.
+PLAYHOUSE_HEADERS = dict(HEADERS, **{
+    "User-Agent": "OutAndAboutBot/1.0 (+https://outandabout.ie)",
+})
+
 NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "").strip()
 PAGE_URL = os.environ.get("PAGE_URL", "").strip()
 
@@ -501,6 +513,39 @@ def csv_freshness_check(prev_state):
     return (TODAY - since_date).days <= CSV_STALE_AFTER_DAYS
 
 
+# Venues confirmed to be in Donegal Town itself, and venue-name hints
+# for places Eventbrite files under a bare "Donegal". Only add entries
+# here that have been checked - a wrong entry mislabels events.
+DONEGAL_TOWN_VENUES = {"mccafferty's at the pier", "st.john bosco centre",
+                       "st john bosco centre"}
+BARE_DONEGAL_VENUE_HINTS = {"clanree": "Letterkenny",
+                            "navenny": "Ballybofey",
+                            "foxhall": "Letterkenny",
+                            "blue haven": "Kilcar"}
+# Whole-venue-name matches only, for names too generic to match as a
+# substring (An Gailearaí is simply Irish for "the gallery").
+BARE_DONEGAL_EXACT_VENUES = {"an gailearaí": "Gweedore",
+                             "an gailearai": "Gweedore"}
+
+
+def resolve_bare_donegal(venue, title):
+    """Town for an Eventbrite row whose location is just "Donegal"."""
+    v = (venue or "").lower()
+    if v.strip() in DONEGAL_TOWN_VENUES:
+        return "Donegal Town"
+    if v.strip() in BARE_DONEGAL_EXACT_VENUES:
+        return BARE_DONEGAL_EXACT_VENUES[v.strip()]
+    for hint, hint_town in BARE_DONEGAL_VENUE_HINTS.items():
+        if hint in v:
+            return hint_town
+    found = find_specific_town(venue) or find_specific_town(title)
+    if found:
+        return found
+    if "donegal town" in f"{venue or ''} {title or ''}".lower():
+        return "Donegal Town"
+    return ""
+
+
 def parse_eventbrite_csv(source, prev_state=None):
     if not MANUAL_CSV_PATH.exists():
         return None
@@ -538,13 +583,59 @@ def parse_eventbrite_csv(source, prev_state=None):
             if not county:
                 continue
             if town and town.strip().lower() == "donegal":
-                town = "Donegal Town"
+                # Eventbrite uses a bare "Donegal" for ANY venue it
+                # can't place more precisely, so it does NOT mean
+                # Donegal Town. Work the real town out from the venue
+                # and title; if that fails, leave the town blank
+                # ("No town listed") rather than guess.
+                town = resolve_bare_donegal(venue, title)
             slug = slugify(title)
             url = (f"https://www.eventbrite.ie/d/ireland--donegal/{slug}/"
                    if slug else source["url"])
             events.append(make_event(
                 source, title, start_date, time=time_str,
                 venue=venue, town=town, county=county, url=url))
+    return events
+
+
+ALLINGHAM_DATE_RE = re.compile(r"([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})")
+
+
+def parse_allingham(soup, source):
+    """Allingham Arts Festival (Ballyshannon): one /events/ page, one
+    <article class="events-list__item"> per event, with the full date
+    (including year), time, venue and price/booking link as text."""
+    events = []
+    for art in soup.select("article.events-list__item"):
+        link = art.select_one("a.events-list__title-link")
+        title_tag = art.select_one(".events-list__title-lead") or link
+        date_tag = art.select_one(".events-list__date")
+        if not (link and title_tag and date_tag):
+            continue
+        m = ALLINGHAM_DATE_RE.search(clean(date_tag.get_text()))
+        mon = MONTHS.get(m.group(1).lower()[:3]) if m else None
+        if not mon:
+            continue
+        try:
+            start = date(int(m.group(3)), mon, int(m.group(2)))
+        except ValueError:
+            continue
+        time_tag = art.select_one(".events-list__time")
+        venue_tag = art.select_one(".events-list__venue")
+        venue = clean(venue_tag.get_text()) if venue_tag else None
+        if venue:
+            # "Abbey Arts Centre - T1" -> the venue, not the screen
+            venue = re.sub(r"\s+[-–]\s+(?:T\d|Theatre\s*\d)\s*$", "",
+                           venue).strip()
+        entry = art.select_one("a.events-list__entry")
+        booking = entry.get("href") if entry else None
+        entry_text = clean(art.select_one(".events-list__entry").get_text()) \
+            if art.select_one(".events-list__entry") else ""
+        events.append(make_event(
+            source, clean(title_tag.get_text()), start,
+            time=clean(time_tag.get_text()) if time_tag else None,
+            url=link.get("href"), booking_url=booking, venue=venue,
+            sold_out="sold out" in entry_text.lower()))
     return events
 
 
@@ -1018,7 +1109,7 @@ def parse_craftmonth_listing(soup, source):
         mon2n = MONTHS.get(mon2.lower()[:3])
         if not (mon1n and mon2n):
             continue
-        start, end = infer_range_years([(mon1n, int(d1)), (mon2n, int(d2))])
+        start, end = infer_annual_festival_years([(mon1n, int(d1)), (mon2n, int(d2))])
         if not start:
             continue
 
@@ -1073,6 +1164,25 @@ def parse_craftmonth(source):
     return events
 
 
+def infer_annual_festival_years(tokens):
+    """Year inference for once-a-year festival listings (Heritage Week,
+    August Craft Month) whose dates carry no year. Their pages stay up
+    after the festival, so from September on every date looks 'past' and
+    infer_range_years() would roll the whole lot forward into next year
+    - showing this August's events as next August's. After the
+    festival, keep them in the current year (they're then past and drop
+    out). Before it, normal inference applies."""
+    if TODAY.month >= 9:
+        out = []
+        for mon, day in tokens:
+            try:
+                out.append(date(TODAY.year, mon, day))
+            except ValueError:
+                out.append(None)
+        return out
+    return infer_range_years(tokens)
+
+
 HERITAGEWEEK_DATE_RE = re.compile(r"^(\d{1,2})\s+([A-Za-z]+)\b")
 
 
@@ -1123,7 +1233,7 @@ def parse_heritageweek_page(soup, source):
                 rest = de[m.end():].lstrip(", ").strip()
                 if rest:
                     time_text = rest
-        dates = [d for d in infer_range_years(date_tokens) if d]
+        dates = [d for d in infer_annual_festival_years(date_tokens) if d]
         if not dates:
             continue
         start = dates[0]
@@ -1363,14 +1473,15 @@ def parse_playhouse_derry(soup, source):
 
 
 def parse_playhouse_derry_with_fallback(source):
-    """derryplayhouse.co.uk loads fine from a browser or this codebase's
-    own web-fetch tooling, but returns a 403 (then a 401, once fuller
-    headers were tried) specifically to GitHub Actions' server IPs -
-    the same kind of blocking Eventbrite has, just more adaptive. Given
-    the default proxy also got blocked here, this routes through a
-    different provider instead."""
+    """derryplayhouse.co.uk's team has agreed to whitelist this project's
+    requests by the self-identifying User-Agent in PLAYHOUSE_HEADERS, so
+    that's used for the direct attempt. The proxy fallback is kept as a
+    safety net in case whitelisting takes a little while to propagate on
+    their end, or ever lapses - using the same identifying header
+    through the proxy too, in case their firewall checks it regardless
+    of the request's origin."""
     soup = fetch_with_proxy_fallback(
-        source["url"], headers=EVENTBRITE_HEADERS,
+        source["url"], headers=PLAYHOUSE_HEADERS,
         proxy_template=ALT_PROXY_TEMPLATE)
     return parse_playhouse_derry(soup, source)
 
@@ -1410,6 +1521,11 @@ SOURCES = [
      "county": "Donegal", "url": "https://eaf.ie/2027-events/",
      "parser": parse_eaf, "custom_fetch": True,
      "min_interval_days": seasonal_interval({7, 8}, quiet_interval=7),
+     "quiet_if_empty": True},
+    {"name": "allingham", "venue": "Allingham Arts Festival",
+     "town": "Ballyshannon", "county": "Donegal",
+     "url": "https://allinghamfestival.com/events/",
+     "parser": parse_allingham, "min_interval_days": 3,
      "quiet_if_empty": True},
     {"name": "mcgrorys", "venue": "McGrory's Hotel", "town": "Culdaff",
      "county": "Donegal", "url": "https://www.mcgrorys.ie/entertainment",
@@ -1550,7 +1666,7 @@ def normalize_category(cat):
 SOURCE_PRIORITY = {
     "an_grianan": 0, "rcc": 1, "balor": 2, "abbey": 3,
     "mcgrorys": 4, "st_columbs": 5,
-    "eaf": 10, "eventbrite_donegal": 11,
+    "eaf": 10, "eventbrite_donegal": 11, "allingham": 12,
 }
 
 DEDUP_NOISE_PREFIXES = [
@@ -1646,6 +1762,9 @@ def main():
             continue
         ev["county"] = canon
         ev["town"] = nearest_known_town(ev.get("town"))
+        # a bare "Donegal" is only a county fallback, not Donegal Town
+        if (ev["town"] or "").strip().lower() == "donegal":
+            ev["town"] = ""
         ev["category"] = normalize_category(ev.get("category"))
         apply_kids_family_tag(ev)
         apply_generic_sold_out(ev)
