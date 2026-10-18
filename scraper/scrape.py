@@ -517,15 +517,26 @@ def csv_freshness_check(prev_state):
 # for places Eventbrite files under a bare "Donegal". Only add entries
 # here that have been checked - a wrong entry mislabels events.
 DONEGAL_TOWN_VENUES = {"mccafferty's at the pier", "st.john bosco centre",
-                       "st john bosco centre"}
+                       "st john bosco centre", "the abbey hotel"}
 BARE_DONEGAL_VENUE_HINTS = {"clanree": "Letterkenny",
                             "navenny": "Ballybofey",
                             "foxhall": "Letterkenny",
-                            "blue haven": "Kilcar"}
+                            "blue haven": "Kilcar",
+                            "organic centre": "Rossinver",
+                            "mayflower community": "Drumshanbo"}
 # Whole-venue-name matches only, for names too generic to match as a
 # substring (An Gailearaí is simply Irish for "the gallery").
 BARE_DONEGAL_EXACT_VENUES = {"an gailearaí": "Gweedore",
                              "an gailearai": "Gweedore"}
+
+
+EVENTBRITE_TOWN_ALIASES = {
+    "londonderry county borough": "Derry",
+    "dunglow": "Dungloe",
+}
+# Eventbrite sometimes gives just a county name as the "town"
+BARE_COUNTY_LABELS = {"leitrim": "Leitrim", "tyrone": "Tyrone",
+                      "fermanagh": "Fermanagh"}
 
 
 def resolve_bare_donegal(venue, title):
@@ -535,6 +546,9 @@ def resolve_bare_donegal(venue, title):
         return "Donegal Town"
     if v.strip() in BARE_DONEGAL_EXACT_VENUES:
         return BARE_DONEGAL_EXACT_VENUES[v.strip()]
+    if "leitrim school of art" in v:
+        # Ballinamore unless the title names another town
+        return find_specific_town(title) or "Ballinamore"
     for hint, hint_town in BARE_DONEGAL_VENUE_HINTS.items():
         if hint in v:
             return hint_town
@@ -566,11 +580,15 @@ def parse_eventbrite_csv(source, prev_state=None):
             title = clean(row.get("data") or row.get("data6") or "")
             if not title:
                 continue
-            start_date, time_str = parse_eventbrite_date_text(
-                row.get("data2"), trust_relative, reference_date)
-            if not start_date:
+            # the date lives in a different numbered column depending on
+            # how the Web Scraper sitemap was set up (data2/data11 in the
+            # original, data15 in the 2026-10 re-scrape), so try each
+            start_date = time_str = None
+            for col in ("data2", "data11", "data15"):
                 start_date, time_str = parse_eventbrite_date_text(
-                    row.get("data11"), trust_relative, reference_date)
+                    row.get(col), trust_relative, reference_date)
+                if start_date:
+                    break
             if not start_date:
                 continue
             venue_text = clean(row.get("data5") or row.get("data13") or "")
@@ -579,7 +597,16 @@ def parse_eventbrite_csv(source, prev_state=None):
                 town, venue = (p.strip() for p in venue_text.split("·", 1))
             else:
                 venue = venue_text or None
+            # Eventbrite's own spellings for places we name differently
+            if town:
+                town = EVENTBRITE_TOWN_ALIASES.get(town.strip().lower(), town)
             county = TOWN_TO_COUNTY.get((town or "").strip().lower())
+            if (not county and town
+                    and town.strip().lower() in BARE_COUNTY_LABELS):
+                # a bare county name ("Leitrim") rather than a town:
+                # keep the county, work the town out from venue/title
+                county = BARE_COUNTY_LABELS[town.strip().lower()]
+                town = resolve_bare_donegal(venue, title)
             if not county:
                 continue
             if town and town.strip().lower() == "donegal":
@@ -636,6 +663,70 @@ def parse_allingham(soup, source):
             time=clean(time_tag.get_text()) if time_tag else None,
             url=link.get("href"), booking_url=booking, venue=venue,
             sold_out="sold out" in entry_text.lower()))
+    return events
+
+
+FOMHAIR_DATE_RE = re.compile(
+    r"(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?\s*"
+    r"(\d{1,2})(?:st|nd|rd|th)?\s+(?:of\s+)?([A-Za-z]+)\s+(\d{4})", re.I)
+FOMHAIR_TITLE_RE = re.compile(
+    r"((?:F[oó]mhair Festival\s+)?presents\s+.+?)"
+    r"(?:\s+plus\s+special\s+guests|\s+(?:at|Live At)\s+|,|!|\s+on\s+"
+    r"(?:Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day|\s+Halloween)", re.I)
+FOMHAIR_VENUE_RE = re.compile(
+    r"(?:\bat|Live At)\s+((?:The\s+)?[A-Z][^,!.]+?(?:,\s*[A-Z][\w ]+?)?)"
+    r"\s*(?:,|!|\s+on\s+\w+day|\s+Halloween|$)")
+
+
+def parse_fomhair(soup, source):
+    """Fomhair Festival (Donegal): a free-text single page. Each event
+    is a paragraph ('Fomhair Festival presents X ... at VENUE, TOWN on
+    Saturday 24th October 2026!') followed by a 'Buy Tickets' link to
+    Eventbrite, so the page text is read in order and an event is
+    closed off at each distinct ticket link."""
+    for tag in soup(["script", "style", "noscript"]):
+        tag.decompose()
+    events, block, seen = [], [], set()
+    for kind, a, b in walk(soup):
+        if kind == "text":
+            block.append(a)
+            continue
+        if "eventbrite" not in a or a in seen:
+            continue
+        seen.add(a)
+        text = " ".join(block)
+        block = []
+        # the block holds everything since the previous ticket link, so
+        # work from the LAST 'presents' sentence onward
+        idx = text.lower().rfind("presents")
+        start_at = max(0, text.rfind("Fomhair", 0, idx + 1)) if idx >= 0 else 0
+        text = text[start_at:]
+        m = FOMHAIR_DATE_RE.search(text)
+        mon = MONTHS.get(m.group(2).lower()[:3]) if m else None
+        if not mon:
+            continue
+        try:
+            when = date(int(m.group(3)), mon, int(m.group(1)))
+        except ValueError:
+            continue
+        tm = FOMHAIR_TITLE_RE.search(text)
+        title = clean(tm.group(1)) if tm else None
+        if not title:
+            continue
+        vm = FOMHAIR_VENUE_RE.search(text)
+        venue = clean(vm.group(1)) if vm else None
+        time_m = re.search(r"\bShow\s+(\d{1,2}(?:[.:]\d{2})?\s*[ap]m)",
+                           text, re.I)
+        time_str = time_m.group(1).replace(" ", "") if time_m else None
+        low = re.sub(r"pre[\s-]*sale\s*[-–]?\s*sold\s*out", "", text.lower())
+        sold = bool(re.search(r"general\s*sale\s*[-–]?\s*sold\s*out", low))
+        ev = make_event(source, title, when, time=time_str, url=a,
+                        booking_url=a, venue=venue, sold_out=sold)
+        town = find_specific_town(venue) or find_specific_town(text)
+        ev["town"] = town
+        if venue and town and venue.lower().endswith(", " + town.lower()):
+            ev["venue"] = venue[:-(len(town) + 2)].strip()
+        events.append(ev)
     return events
 
 
@@ -1527,6 +1618,10 @@ SOURCES = [
      "url": "https://allinghamfestival.com/events/",
      "parser": parse_allingham, "min_interval_days": 3,
      "quiet_if_empty": True},
+    {"name": "fomhair", "venue": "Fomhair Festival", "town": "",
+     "county": "Donegal", "url": "https://fomhairfestival.ie/",
+     "parser": parse_fomhair, "min_interval_days": 3,
+     "quiet_if_empty": True},
     {"name": "mcgrorys", "venue": "McGrory's Hotel", "town": "Culdaff",
      "county": "Donegal", "url": "https://www.mcgrorys.ie/entertainment",
      "parser": parse_mcgrorys},
@@ -1666,7 +1761,7 @@ def normalize_category(cat):
 SOURCE_PRIORITY = {
     "an_grianan": 0, "rcc": 1, "balor": 2, "abbey": 3,
     "mcgrorys": 4, "st_columbs": 5,
-    "eaf": 10, "eventbrite_donegal": 11, "allingham": 12,
+    "eaf": 10, "eventbrite_donegal": 11, "allingham": 12, "fomhair": 9,
 }
 
 DEDUP_NOISE_PREFIXES = [
