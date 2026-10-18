@@ -558,7 +558,7 @@ let shapeSel=null;
 
 
 function normalizeTown(t){
-  return t==="Donegal" ? "Donegal Town" : t;
+  return t;
 }
 
 
@@ -1306,7 +1306,10 @@ fetch("events.json?t="+Date.now())
 
   .then(data=>{
 
-    EVENTS=data.events||[];
+    // Drop anything that has already finished, even if the data file
+    // is stale (e.g. a scrape that hasn't run for a while).
+    EVENTS=(data.events||[]).filter(
+      e=>(e.end_date||e.date)>=TODAY_ISO);
     GEN=data.generated_at||"";
 
 
