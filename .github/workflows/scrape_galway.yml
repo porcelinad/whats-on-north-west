@@ -1,8 +1,17 @@
 name: Scrape Galway events
 on:
-  workflow_dispatch: {}    # manual "Run workflow" button only - no daily
-                           # schedule yet, since Galway isn't live and is
-                           # still being built out venue by venue
+  schedule:
+    # Same two-schedule trick as the North West workflow (GitHub's cron
+    # is UTC-only with no daylight-saving awareness): one entry for
+    # Apr-Oct (BST, UTC+1), one for Nov-Mar (GMT, UTC+0), each landing at
+    # 00:47 Irish local time. Deliberately 15 minutes AFTER the North
+    # West run (00:15), since both workflows commit and push to the same
+    # branch - staggering them keeps them from racing each other. The
+    # month-based approximation (rather than exact clock-change dates)
+    # can be up to an hour off for the week or so around a clock change.
+    - cron: "47 23 * 4-10 *"       # Apr-Oct (BST): 23:47 UTC = 00:47 BST
+    - cron: "47 0 * 11,12,1,2,3 *" # Nov-Mar (GMT): 00:47 UTC = 00:47 GMT
+  workflow_dispatch: {}    # manual "Run workflow" button still works too
 permissions:
   contents: write
 jobs:
@@ -31,4 +40,8 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add docs/galway/events.json
           git diff --cached --quiet || git commit -m "Update Galway events ($(date -u +%Y-%m-%d))"
+          # If the North West workflow pushed while this one was running,
+          # replay this commit on top of it first (the two only ever
+          # touch different files, so this always applies cleanly).
+          git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
