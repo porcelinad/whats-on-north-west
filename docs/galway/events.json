@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T11:58Z",
+ "generated_at": "2026-10-19T01:47Z",
  "failed_sources": [],
  "source_last_run": {},
  "consecutive_failures": {
@@ -12,7 +12,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 1
+  "galway_city_museum": 2
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -37,61 +37,6 @@
    "first_seen": "2026-10-04"
   },
   {
-   "source": "taibhdhearc",
-   "venue": "An Taibhdhearc",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "BABORÓ 2026 - Shades of Shadows",
-   "date": "2026-10-14",
-   "end_date": "2026-10-18",
-   "url": "https://www.baboro.ie/festival/programme/shades-of-shadows",
-   "category": "Theatre, Irish Language",
-   "merged_from": [
-    "taibhdhearc",
-    "tht"
-   ],
-   "id": "2c7a9a8d1de3",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "The Fabulous Tale of BasarKus (Baboró)",
-   "date": "2026-10-14",
-   "end_date": "2026-10-18",
-   "url": "https://tht.ie/4884/baboro-2026",
-   "category": "Kids/Family, Performance",
-   "id": "b11d84f0fa02",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "O'Donoghue Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "The Sticky Dance (Baboró)",
-   "date": "2026-10-16",
-   "end_date": "2026-10-18",
-   "url": "https://tht.ie/4884/baboro-2026",
-   "category": "Kids/Family, Performance",
-   "id": "f828fce97a4a",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Brigid's Garden",
-   "town": "Rosscahill",
-   "county": "Galway",
-   "title": "Down to Earth Forest School (Baboró)",
-   "date": "2026-10-18",
-   "url": "https://tht.ie/4884/baboro-2026",
-   "category": "Kids/Family, Workshop",
-   "id": "e0d99befe901",
-   "first_seen": "2026-10-04"
-  },
-  {
    "source": "gfs",
    "venue": "Eye Cinema",
    "town": "Galway City",
@@ -103,108 +48,6 @@
    "url": "https://www.tickettailor.com/events/galwayfilmsociety/2417357",
    "category": "Film",
    "id": "71596905d586",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Galway Dance Studio",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Discover Dance: Krump (Baboró)",
-   "date": "2026-10-18",
-   "url": "https://tht.ie/4884/baboro-2026",
-   "category": "Kids/Family, Workshop",
-   "id": "9c40f2a23c97",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Galway Rowing Club",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Spooky Disco (Baboró)",
-   "date": "2026-10-18",
-   "url": "https://tht.ie/4884/baboro-2026",
-   "category": "Kids/Family, Music",
-   "id": "c2bdc621d7aa",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Jacek Stachursky",
-   "date": "2026-10-18",
-   "time": "Doors 6.30pm",
-   "url": "https://monroes.ie/products/jacek-stachursky",
-   "category": "Music",
-   "id": "aa92de888f3c",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "John Conneely Inc.",
-   "date": "2026-10-18",
-   "time": "11:59pm",
-   "url": "https://roisindubh.net/listings/john-conneely-inc.-2026-10-18-235900-80896",
-   "category": "Music",
-   "id": "bb9821a675f5",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Man Of Steel",
-   "date": "2026-10-18",
-   "time": "2pm",
-   "url": "https://roisindubh.net/listings/man-of-steel-2026-10-18-140000-81712",
-   "booking_url": "https://eventmaster.ie/event/oZJZhk3tLm",
-   "category": "Music",
-   "id": "5c3165b3b0ff",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Open Mic Night",
-   "date": "2026-10-18",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/open-mic-night-2026-10-18-200000-81024",
-   "category": "Music",
-   "id": "0a756635ce2a",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "musicforgalway",
-   "venue": "Sullivan's Royal Hotel",
-   "town": "Gort",
-   "county": "Galway",
-   "title": "MfG Encore: Everything is Connected",
-   "date": "2026-10-18",
-   "time": "5pm",
-   "url": "https://musicforgalway.ie/event/mfg-encore-everything-is-connected/",
-   "category": "Music, Classical",
-   "id": "a2a4e3ddaea5",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "The Barceló Brothers (Baboró)",
-   "date": "2026-10-18",
-   "url": "https://tht.ie/4884/baboro-2026",
-   "category": "Kids/Family, Music",
-   "id": "3bf94ef09a94",
    "first_seen": "2026-10-04"
   },
   {
@@ -3122,6 +2965,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Drag Queens Christmas Party",
+   "date": "2026-12-05",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/drag-queens-christmas-party",
+   "category": "Music",
+   "id": "accda3a309c7",
+   "first_seen": "2026-10-19"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -5316,6 +5172,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Roll With It - The Ultimate Oasis Experience",
+   "date": "2027-03-13",
+   "time": "Doors 7.30pm",
+   "url": "https://monroes.ie/products/roll-with-it-2",
+   "category": "Music",
+   "id": "82689fddb4e2",
+   "first_seen": "2026-10-19"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -6102,6 +5971,19 @@
    "category": "Music",
    "id": "9a5c81379a5a",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Tadhg J Devery",
+   "date": "2027-05-21",
+   "time": "Doors 7.30pm",
+   "url": "https://monroes.ie/products/tadhg-j-devery",
+   "category": "Music",
+   "id": "e3a763efb04e",
+   "first_seen": "2026-10-19"
   },
   {
    "source": "roisindubh",
