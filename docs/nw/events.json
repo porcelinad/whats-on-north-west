@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T01:18Z",
+ "generated_at": "2026-10-20T01:50Z",
  "failed_sources": [
   "The Model"
  ],
@@ -7,7 +7,7 @@
   "eventbrite_csv_hash": "9c0553cea73a",
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-10-18T01:04Z",
-  "hawkswell": "2026-10-17T01:19Z",
+  "hawkswell": "2026-10-20T01:50Z",
   "craftmonth_donegal": "2026-10-19T01:18Z",
   "craftmonth_derry": "2026-10-19T01:18Z",
   "craftmonth_derry_city": "2026-10-19T01:18Z",
@@ -23,7 +23,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -41,7 +41,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 21,
+  "themodel": 22,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -385,46 +385,6 @@
   },
   {
    "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Eerieland: Ghost Stories of the North & North West of Ireland",
-   "date": "2026-10-19",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/eerieland-ghost-stories-of-the-north-north-west-of-ireland",
-   "category": "Spoken Word",
-   "id": "8aafc34fc49d",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Royal Arms & Knocknamoe Castle: Staff, Stories & Sharing Memories",
-   "date": "2026-10-19",
-   "time": "10:30am",
-   "url": "https://struleartscentre.co.uk/show/royal-arms-knocknamoe-castle-staff-stories-sharing-memories-2/",
-   "category": "Spoken Word",
-   "sold_out": true,
-   "id": "96b36dd2ae1d",
-   "first_seen": "2026-09-15"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "The Factory Performance Space",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Mother Courage and her Children by Bertolt Brecht",
-   "date": "2026-10-19",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/mother-courage-and-her-children-by-bertolt-brecht/",
-   "category": "Kids/Family",
-   "id": "8473d387d4ad",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "hawkswell",
    "venue": "Hawk's Well Studio",
    "town": "Sligo",
    "county": "Sligo",
@@ -674,6 +634,7 @@
    "date": "2026-10-22",
    "url": "https://struleartscentre.co.uk/show/the-little-mermaid-presented-by-loreto-grammar-school/",
    "category": "Musical",
+   "sold_out": true,
    "id": "cddf8db5db83",
    "first_seen": "2026-09-15"
   },
@@ -951,6 +912,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "The Wran",
+   "date": "2026-10-24",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/the-wran",
+   "category": "Music",
+   "id": "df566c832563",
+   "first_seen": "2026-10-20"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Learmount Resource Centre, Community Centre.",
    "town": "Derry",
@@ -1054,6 +1028,19 @@
    "first_seen": "2026-07-31"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Frankie Gavin & De Dannan",
+   "date": "2026-10-25",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/frankie-gavin-de-dannan",
+   "category": "Music",
+   "id": "20ef6c1eff7a",
+   "first_seen": "2026-10-20"
+  },
+  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -1064,6 +1051,20 @@
    "category": null,
    "id": "5afe95287039",
    "first_seen": "2026-10-18"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Trick or Treat Street – A Halloween Experience at The Art Deco",
+   "date": "2026-10-26",
+   "end_date": "2026-10-30",
+   "time": "Various times",
+   "url": "https://www.hawkswell.com/whats-on/shows/trick-or-treat-street",
+   "category": null,
+   "id": "8f2c216d0ce2",
+   "first_seen": "2026-10-20"
   },
   {
    "source": "eventbrite_donegal",
@@ -1077,6 +1078,19 @@
    "category": null,
    "id": "be498bcce751",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Studio",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Tiny Trees – With Jackie Maguire",
+   "date": "2026-10-26",
+   "time": "11am & 12pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/tiny-trees",
+   "category": "Kids/Family",
+   "id": "73414f94a7ef",
+   "first_seen": "2026-10-20"
   },
   {
    "source": "eventbrite_donegal",
@@ -1103,6 +1117,19 @@
    "category": "Kids/Family",
    "id": "3254d6d0cefe",
    "first_seen": "2026-08-22"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Carrie",
+   "date": "2026-10-27",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/carrie",
+   "category": null,
+   "id": "1458a8faafa1",
+   "first_seen": "2026-10-20"
   },
   {
    "source": "balor",
@@ -2743,6 +2770,18 @@
    "category": "Music",
    "id": "56a27cfbf3d4",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Micky Bartlett - I'm Only Gonna Say This Once",
+   "date": "2026-11-20",
+   "url": "https://www.derryplayhouse.co.uk/event/micky-bartlett-im-only-gonna-say-this-once",
+   "category": null,
+   "id": "1a545fe1c6c8",
+   "first_seen": "2026-10-20"
   },
   {
    "source": "an_grianan",
@@ -5187,6 +5226,19 @@
    "category": "Exhibition",
    "id": "09ec578ed592",
    "first_seen": "2026-10-12"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Wainfest! School Event: Mischief and Mystery in Moominvalley",
+   "date": "2027-10-12",
+   "time": "11:00 am",
+   "url": "https://regionalculturalcentre.com/events/wainfest-school-event-mischief-and-mystery-in-moominvalley/",
+   "category": null,
+   "id": "bf795834d465",
+   "first_seen": "2026-10-20"
   }
  ]
 }
