@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T01:47Z",
+ "generated_at": "2026-10-20T02:07Z",
  "failed_sources": [],
  "source_last_run": {},
  "consecutive_failures": {
@@ -12,7 +12,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 2
+  "galway_city_museum": 3
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -35,71 +35,6 @@
    "category": "Exhibition",
    "id": "d4a0d0fa83c1",
    "first_seen": "2026-10-04"
-  },
-  {
-   "source": "gfs",
-   "venue": "Eye Cinema",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "The Stranger (Galway Film Society)",
-   "date": "2026-10-18",
-   "end_date": "2026-10-19",
-   "time": "Sunday 5pm and 8pm, Monday 6:30pm",
-   "url": "https://www.tickettailor.com/events/galwayfilmsociety/2417357",
-   "category": "Film",
-   "id": "71596905d586",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Black Box Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Dire Straits John Illsley",
-   "date": "2026-10-19",
-   "url": "https://tht.ie/4770/dire-straits-john-illsley",
-   "category": "Music",
-   "id": "1152b9598576",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Outpost Comedy Club: Paddy Seery",
-   "date": "2026-10-19",
-   "time": "Doors 8pm",
-   "url": "https://monroes.ie/products/outpost-comedy-club-21",
-   "category": "Comedy",
-   "id": "7c8ac4524b60",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Haven For Artists",
-   "date": "2026-10-19",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/haven-for-artists-2026-10-19-200000-81687",
-   "category": "Music",
-   "id": "05d8ca4936dc",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Dr David Coleman",
-   "date": "2026-10-19",
-   "url": "https://tht.ie/4782/dr-david-coleman",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173666205",
-   "category": "Talk",
-   "id": "dda9470a8df4",
-   "first_seen": "2026-09-27"
   },
   {
    "source": "tht",
@@ -2532,6 +2467,7 @@
    "title": "A Night at The Musicals",
    "date": "2026-11-24",
    "url": "https://tht.ie/4899/a-night-at-the-musicals",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669407",
    "category": "Music",
    "id": "d0f5a2300685",
    "first_seen": "2026-09-27"
@@ -3390,7 +3326,6 @@
    "date": "2026-12-12",
    "time": "8pm",
    "url": "https://roisindubh.net/listings/sing-along-socials-a-very-merry-craicmas-2026-12-12-200000-81705",
-   "sold_out": true,
    "category": "Music",
    "id": "2bde86897df9",
    "first_seen": "2026-10-04"
@@ -3570,6 +3505,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh (Top Bar)",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Meet The Fawkers",
+   "date": "2026-12-18",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/meet-the-fawkers-2026-12-18-190000-81731",
+   "category": "Music",
+   "id": "9fed437fc455",
+   "first_seen": "2026-10-20"
+  },
+  {
    "source": "tht",
    "venue": "The Mick Lally Theatre, Druid Lane",
    "town": "Galway City",
@@ -3649,6 +3597,19 @@
    "category": "Music",
    "id": "a5ebe4302c03",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Luke Thomas & The Swing Cats",
+   "date": "2026-12-20",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/luke-thomas-the-swing-cats",
+   "category": "Music",
+   "id": "5144d1b04112",
+   "first_seen": "2026-10-20"
   },
   {
    "source": "roisindubh",
@@ -4762,6 +4723,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "tht",
+   "venue": "Black Box Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Choir! Choir! Choir!",
+   "date": "2027-02-18",
+   "url": "https://tht.ie/4933/choir-choir-choir",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669398",
+   "category": "Music",
+   "id": "418a6dfd3956",
+   "first_seen": "2026-10-20"
+  },
+  {
    "source": "musicforgalway",
    "venue": "O'Donoghue Centre",
    "town": "Galway City",
@@ -5352,6 +5326,19 @@
    "category": "Music",
    "id": "a28576471906",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Black Box Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "The Academic",
+   "date": "2027-03-25",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/the-academic-2027-03-25-190000-81725",
+   "category": "Music",
+   "id": "89b119fd4b56",
+   "first_seen": "2026-10-20"
   },
   {
    "source": "monroes",
