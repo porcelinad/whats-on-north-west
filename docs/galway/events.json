@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T02:07Z",
+ "generated_at": "2026-10-21T02:04Z",
  "failed_sources": [],
  "source_last_run": {},
  "consecutive_failures": {
@@ -12,7 +12,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 3
+  "galway_city_museum": 4
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -38,60 +38,6 @@
   },
   {
    "source": "tht",
-   "venue": "Black Box Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "#GCF26 Opening Gala - Tommy Tiernan...",
-   "date": "2026-10-20",
-   "url": "https://tht.ie/4920/#gcf26-opening-gala-tommy-tiernan",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewEvent?id=6a91d6e6f49701cdad85ad1f",
-   "category": "Comedy",
-   "id": "e937c053187a",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Silent Disco On Tuesdays",
-   "date": "2026-10-20",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2026-10-20-200000-81454",
-   "category": "Music",
-   "id": "74e62c8211ec",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Tommy Tiernan: World Tour Of Galway #GCF26",
-   "date": "2026-10-20",
-   "time": "7pm",
-   "url": "https://roisindubh.net/listings/tommy-tiernan-world-tour-of-galway-gcf26-2026-10-20-190000-81617",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewEvent?id=6aa3c71277f527fe59fb7b6e",
-   "category": "Comedy",
-   "id": "3a35dfda5281",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Tuesday Comedy Showcase feat. Darren Gaffney #GCF26",
-   "date": "2026-10-20",
-   "time": "8:30pm",
-   "url": "https://roisindubh.net/listings/tuesday-comedy-showcase-feat.-darren-gaffney-gcf26-2026-10-20-203000-81633",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewEvent?id=6a91c3278d3e756f967cc434",
-   "category": "Comedy",
-   "id": "6e3a005a28ea",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
    "venue": "Leisure Land",
    "town": "Galway City",
    "county": "Galway",
@@ -102,6 +48,19 @@
    "category": "Comedy",
    "id": "89681e27c15d",
    "first_seen": "2026-10-18"
+  },
+  {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Tommy Tiernan, Sharon Mannion, Deirdre O’Kane, Bernard O’Shea & Barry Murphy",
+   "date": "2026-10-21",
+   "time": "7pm",
+   "url": "https://www.leisureland.ie/calendar/tommy-tiernan-sharon-mannion-deirdre-okane-bernard-oshea-barry-murphy/",
+   "category": null,
+   "id": "2a7d66aa15d5",
+   "first_seen": "2026-10-21"
   },
   {
    "source": "roisindubh",
@@ -702,6 +661,20 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
+   "title": "GALLOWEEN: A Night of Terror and Music for Palestine",
+   "date": "2026-10-27",
+   "time": "2:30pm",
+   "url": "https://roisindubh.net/listings/galloween-a-night-of-terror-and-music-for-palestine-2026-10-27-143000-81735",
+   "booking_url": "https://www.eventbrite.com/e/galloween-a-night-of-terror-and-music-for-palestine-tickets-2002474240358?aff=oddtdtcreator",
+   "category": "Music",
+   "id": "268a64e46fea",
+   "first_seen": "2026-10-21"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2026-10-27",
    "time": "11pm",
@@ -1145,13 +1118,13 @@
    "venue": "Town Hall Theatre",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Dark Night of the Silvery Moon",
+   "title": "Dark Side of the Silvery Moon",
    "date": "2026-10-31",
-   "url": "https://tht.ie/4928/dark-night-of-the-silvery-moon",
+   "url": "https://tht.ie/4928/dark-side-of-the-silvery-moon",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669357",
    "category": "Theatre",
-   "id": "1e6fc79ef35a",
-   "first_seen": "2026-10-18"
+   "id": "7ccf211b497c",
+   "first_seen": "2026-10-21"
   },
   {
    "source": "tht",
@@ -1420,19 +1393,6 @@
    "first_seen": "2026-09-27"
   },
   {
-   "source": "gac",
-   "venue": "Galway Arts Centre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Exhibition ⁄",
-   "date": "2026-11-06",
-   "end_date": "2026-11-22",
-   "url": "https://www.galwayartscentre.ie/whats-on/veruca-salt/",
-   "category": "Exhibition",
-   "id": "063b0c7a2986",
-   "first_seen": "2026-10-04"
-  },
-  {
    "source": "monroes",
    "venue": "Monroe's Live",
    "town": "Galway City",
@@ -1484,6 +1444,19 @@
    "category": "Variety",
    "id": "ad31fd419c9d",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "gac",
+   "venue": "Galway Arts Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Exhibition ⁄",
+   "date": "2026-11-07",
+   "end_date": "2026-11-22",
+   "url": "https://www.galwayartscentre.ie/whats-on/veruca-salt/",
+   "category": "Exhibition",
+   "id": "2128496c7ce7",
+   "first_seen": "2026-10-21"
   },
   {
    "source": "monroes",
@@ -1727,6 +1700,19 @@
    "category": "Workshop",
    "id": "fb4dc9f0bd77",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "gac",
+   "venue": "Galway Arts Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Workshop ⁄ Gallery Lates ⁄",
+   "date": "2026-11-12",
+   "time": "18:30 - 20:00",
+   "url": "https://www.galwayartscentre.ie/whats-on/workshop-on-materials-and-humanity/",
+   "category": "Workshop, Gallery Lates",
+   "id": "37e3c411fa08",
+   "first_seen": "2026-10-21"
   },
   {
    "source": "leisureland",
@@ -2538,6 +2524,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Just Like Heaven: Alt 80’s Night",
+   "date": "2026-11-27",
+   "time": "11pm",
+   "url": "https://roisindubh.net/listings/just-like-heaven-alt-80%E2%80%99s-night-2026-11-27-230000-81734",
+   "category": "Music",
+   "id": "3a74a3a9ec52",
+   "first_seen": "2026-10-21"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway City",
@@ -3066,6 +3065,7 @@
    "date": "2026-12-07",
    "end_date": "2026-12-09",
    "url": "https://tht.ie/4878/the-celtic-nutcracker",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669418",
    "category": "Dance",
    "id": "9143f3f72df3",
    "first_seen": "2026-09-27"
@@ -6371,6 +6371,19 @@
    "category": "Music",
    "id": "dd82041be6b4",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Psychic Sally",
+   "date": "2027-09-26",
+   "url": "https://tht.ie/4934/psychic-sally",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669410",
+   "category": "Variety",
+   "id": "ca69a74c2406",
+   "first_seen": "2026-10-21"
   }
  ]
 }
