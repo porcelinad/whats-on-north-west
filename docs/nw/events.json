@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T01:50Z",
+ "generated_at": "2026-10-21T01:37Z",
  "failed_sources": [
   "The Model"
  ],
@@ -16,14 +16,14 @@
   "craftmonth_tyrone": "2026-10-19T01:18Z",
   "craftmonth_fermanagh": "2026-10-19T01:18Z",
   "heritageweek": "2026-10-19T01:18Z",
-  "allingham": "2026-10-18T10:53Z",
+  "allingham": "2026-10-21T01:37Z",
   "fomhair": "2026-10-19T01:18Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 2,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -41,7 +41,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 22,
+  "themodel": 23,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -374,85 +374,6 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "Philadelphia, Here I Come!",
-   "date": "2026-10-19",
-   "end_date": "2026-10-20",
-   "url": "https://angrianan.com/event/philadelphia-here-i-come/",
-   "booking_url": "https://angrianan.ticketsolve.com/shows/873664203/events",
-   "category": "Drama",
-   "id": "a3dbc41e42e2",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Studio",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "The Deep End: Stand-up Showcase – Hosted by Terry Markey",
-   "date": "2026-10-20",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/the-deep-end-stand-up-showcase",
-   "category": "Comedy",
-   "id": "40ed753f6799",
-   "first_seen": "2026-10-17"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Grange Post Primary School: Get Your Act Together",
-   "date": "2026-10-20",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/grange-post-primary-school-get-your-act-together",
-   "category": "Music",
-   "id": "798d85823062",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Lillie's Cocktail Bar Sligo",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "SLIGO- Megan McKay is a \"Loveable Chancer\"",
-   "date": "2026-10-20",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/sligo-megan-mckay-is-a-loveable-chancer/",
-   "category": null,
-   "id": "02c9038ddc47",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Queen at Sea | Nerve Cinema",
-   "date": "2026-10-20",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/queen-at-sea-nerve-cinema",
-   "category": "Film",
-   "id": "f84a1bce1069",
-   "first_seen": "2026-08-05"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Sonny McSwine's, Letterkenny - McCafferty's Bar Group,",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The Big Student Mystery Tour 2026",
-   "date": "2026-10-20",
-   "time": "17:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-big-student-mystery-tour-2026/",
-   "category": null,
-   "id": "3bee970a4b00",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
    "title": "A Night of One Act Plays",
    "date": "2026-10-21",
    "url": "https://angrianan.com/event/a-night-of-one-act-plays-2026/",
@@ -469,7 +390,7 @@
    "title": "Homicide Timeline Training Including Coercive Control",
    "date": "2026-10-21",
    "time": "9:00am",
-   "url": "https://ardhowen.com/show/homicide-timeline-training-including-coercive-control/",
+   "url": "https://ardhowen.com/show/homicide-timeline-training-including-coercive-control-2/",
    "category": "Adult Workshop",
    "sold_out": true,
    "id": "8a765b789b47",
@@ -592,9 +513,6 @@
    "time": "8:00 pm",
    "url": "https://regionalculturalcentre.com/events/rcc-cinema-babystar/",
    "category": "Film",
-   "merged_from": [
-    "rcc"
-   ],
    "id": "90533b1f3525",
    "first_seen": "2026-08-29"
   },
@@ -1858,6 +1776,18 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
+   "title": "Accidental Comedy Club – Online",
+   "date": "2026-11-06",
+   "url": "https://angrianan.com/event/accidental-comedy-club-online/",
+   "category": "Comedy",
+   "id": "05a18a4fb8ef",
+   "first_seen": "2026-10-21"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
    "title": "Caith Amach É",
    "date": "2026-11-06",
    "url": "https://angrianan.com/event/caith-amach-e/",
@@ -2110,14 +2040,14 @@
    "venue": "Kilbarron Centre",
    "town": "Ballyshannon",
    "county": "Donegal",
-   "title": "Creative Writing Workshop: Time to Write with Jean Tuomey",
+   "title": "Creative Writing Workshop with Jean Tuomey",
    "date": "2026-11-07",
    "time": "10am",
    "url": "https://allinghamfestival.com/events/workshop-time-to-write/",
-   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676522/events",
    "category": null,
-   "id": "94009f07be1c",
-   "first_seen": "2026-10-18"
+   "sold_out": true,
+   "id": "05114c15898e",
+   "first_seen": "2026-10-21"
   },
   {
    "source": "eventbrite_donegal",
@@ -2567,6 +2497,18 @@
    "venue": "The Dock",
    "town": "Carrick-on-Shannon",
    "county": "Leitrim",
+   "title": "Amongst Women – Conversations on Books",
+   "date": "2026-11-14",
+   "url": "https://www.thedock.ie/whats-on/amongst-women",
+   "category": "Literature",
+   "id": "bedd31642c2e",
+   "first_seen": "2026-10-21"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
    "title": "Lemoncello – Perfect Place",
    "date": "2026-11-14",
    "url": "https://www.thedock.ie/whats-on/lemoncello",
@@ -2923,6 +2865,19 @@
    "category": null,
    "id": "7bb6e5d77600",
    "first_seen": "2026-10-18"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Called Out",
+   "date": "2026-11-26",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/called-out/",
+   "category": null,
+   "id": "95ff42728018",
+   "first_seen": "2026-10-21"
   },
   {
    "source": "eventbrite_donegal",
@@ -4488,6 +4443,20 @@
    "first_seen": "2026-07-20"
   },
   {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "School of Rock",
+   "date": "2027-03-02",
+   "end_date": "2027-03-06",
+   "url": "https://angrianan.com/event/school-of-rock/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873668137",
+   "category": "Musical",
+   "id": "c0c3fdd1d7ad",
+   "first_seen": "2026-10-21"
+  },
+  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -4665,6 +4634,19 @@
    "category": "Music",
    "id": "13bcd5dff456",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "A tribute to the music of John Denver - Marc Roberts",
+   "date": "2027-03-20",
+   "time": "8:00 pm",
+   "url": "https://www.balorartscentre.com/?event=a-tribute-to-the-music-of-john-denver-marc-roberts",
+   "category": "Music",
+   "id": "01b1ce15e65f",
+   "first_seen": "2026-10-21"
   },
   {
    "source": "balor",
@@ -5018,6 +5000,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Cash Returns",
+   "date": "2027-05-08",
+   "time": "8:00 pm",
+   "url": "https://www.balorartscentre.com/?event=cash-returns-7",
+   "category": "Music",
+   "id": "f8857d72cd8b",
+   "first_seen": "2026-10-21"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -5239,6 +5234,19 @@
    "category": null,
    "id": "bf795834d465",
    "first_seen": "2026-10-20"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Love Your Coast Photography Exhibition",
+   "date": "2027-10-13",
+   "time": "9:30 am",
+   "url": "https://regionalculturalcentre.com/events/love-your-coast-photography-exhibition/",
+   "category": "Exhibition",
+   "id": "72afacd7b86d",
+   "first_seen": "2026-10-21"
   }
  ]
 }
