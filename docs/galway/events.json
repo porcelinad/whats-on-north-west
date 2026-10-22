@@ -1,18 +1,20 @@
 {
- "generated_at": "2026-10-21T02:04Z",
- "failed_sources": [],
+ "generated_at": "2026-10-22T01:55Z",
+ "failed_sources": [
+  "Galway City Museum"
+ ],
  "source_last_run": {},
  "consecutive_failures": {
   "tht": 0,
   "monroes": 0,
-  "roisindubh": 0,
+  "roisindubh": 1,
   "gfs": 0,
   "gac": 0,
   "mick_lally": 0,
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 4
+  "galway_city_museum": 5
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -38,80 +40,12 @@
   },
   {
    "source": "tht",
-   "venue": "Leisure Land",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Tommy Tiernan, Sharon Mannion, Deirdre O'Kane, Bernard O'Shea & Barry Murphy",
-   "date": "2026-10-21",
-   "url": "https://tht.ie/4921/tommy-tiernan-sharon-mannion",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewEvent?id=6a91d6e738bfdf882407d240",
-   "category": "Comedy",
-   "id": "89681e27c15d",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "leisureland",
-   "venue": "Leisureland",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Tommy Tiernan, Sharon Mannion, Deirdre O’Kane, Bernard O’Shea & Barry Murphy",
-   "date": "2026-10-21",
-   "time": "7pm",
-   "url": "https://www.leisureland.ie/calendar/tommy-tiernan-sharon-mannion-deirdre-okane-bernard-oshea-barry-murphy/",
-   "category": null,
-   "id": "2a7d66aa15d5",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Deirdre O'Kane and Friends #GCF26",
-   "date": "2026-10-21",
-   "time": "7:30pm",
-   "url": "https://roisindubh.net/listings/deirdre-okane-and-friends-gcf26-2026-10-21-193000-81618",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewEvent?id=6a91d6ea9b121f50fc595f1c",
-   "category": "Comedy",
-   "id": "01f035a831ea",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Late Night KARLnival feat. Karl Spain #GCF26",
-   "date": "2026-10-21",
-   "time": "10:30pm",
-   "url": "https://roisindubh.net/listings/late-night-karlnival-feat.-karl-spain-gcf26-2026-10-21-223000-81620",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewEvent?id=6a91d6ec06f4eb38a1244cee",
-   "category": "Comedy",
-   "id": "50b3f3d0a43d",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Tigh-He-He Comedy Club feat. Emer Maguire #GCF26",
-   "date": "2026-10-21",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/tigh-he-he-comedy-club-feat.-emer-maguire-gcf26-2026-10-21-200000-81619",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewEvent?id=6a91c328e26f0da83b3c47a5",
-   "category": "Comedy",
-   "id": "cb2a2b9006c1",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway City",
    "county": "Galway",
    "title": "The Kavanaghs: Married With Parents",
    "date": "2026-10-21",
-   "end_date": "2026-10-23",
+   "end_date": "2026-10-24",
    "url": "https://tht.ie/4853/the-kavanaghs-married-with-parents",
    "booking_url": "https://galwaycomedyfestival.ie/ViewArtist?id=6a69fc14601ac606c4b7d94c",
    "category": "Theatre",
@@ -801,6 +735,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "taibhdhearc",
+   "venue": "An Taibhdhearc",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "An Taibhse (film)",
+   "date": "2026-10-29",
+   "time": "7pm",
+   "url": "https://antaibhdhearc.ticketsolve.com/shows/873691790/events",
+   "category": "Theatre, Irish Language",
+   "id": "1dfd1614846e",
+   "first_seen": "2026-10-22"
+  },
+  {
    "source": "galway_city_museum",
    "venue": "Galway City Museum",
    "town": "Galway City",
@@ -1026,11 +973,6 @@
    "url": "https://tht.ie/4714/foy-vance-world-tour",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173665141",
    "category": "Theatre",
-   "time": "8pm",
-   "merged_from": [
-    "roisindubh",
-    "tht"
-   ],
    "id": "dcc25085244e",
    "first_seen": "2026-09-27"
   },
@@ -1384,11 +1326,6 @@
    "url": "https://tht.ie/4790/dexys-midnight-runners",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173666435",
    "category": "Music",
-   "time": "8pm",
-   "merged_from": [
-    "roisindubh",
-    "tht"
-   ],
    "id": "481a083ce544",
    "first_seen": "2026-09-27"
   },
@@ -1679,11 +1616,6 @@
    "url": "https://tht.ie/4725/andy-irvine-and-quilty",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173665334",
    "category": "Music",
-   "time": "8pm",
-   "merged_from": [
-    "roisindubh",
-    "tht"
-   ],
    "id": "08a61e311035",
    "first_seen": "2026-09-27"
   },
@@ -1858,10 +1790,6 @@
    "time": "3pm",
    "url": "https://www.leisureland.ie/calendar/the-misadventures-of-the-3-little-pigs/",
    "category": "Music",
-   "merged_from": [
-    "leisureland",
-    "roisindubh"
-   ],
    "id": "76fbe4921abb",
    "first_seen": "2026-10-04"
   },
@@ -2829,6 +2757,7 @@
    "date": "2026-12-04",
    "end_date": "2026-12-05",
    "url": "https://tht.ie/4888/bish-bash-the-school-talent-show",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669433",
    "category": "Community",
    "id": "0c626c4130f8",
    "first_seen": "2026-09-27"
@@ -3120,11 +3049,6 @@
    "time": "7pm",
    "url": "https://www.leisureland.ie/calendar/tommy-tiernan-world-tour-of-galway/",
    "category": "Comedy",
-   "sold_out": true,
-   "merged_from": [
-    "leisureland",
-    "roisindubh"
-   ],
    "id": "9d651ec663fe",
    "first_seen": "2026-10-04"
   },
@@ -3191,11 +3115,6 @@
    "time": "7pm",
    "url": "https://www.leisureland.ie/calendar/tommy-tiernan-world-tour-of-galway-2/",
    "category": "Comedy",
-   "sold_out": true,
-   "merged_from": [
-    "leisureland",
-    "roisindubh"
-   ],
    "id": "12e23471b737",
    "first_seen": "2026-10-04"
   },
@@ -4584,11 +4503,6 @@
    "url": "https://tht.ie/4909/an-evening-with-josh-ritter",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668926",
    "category": "Music",
-   "time": "7pm",
-   "merged_from": [
-    "roisindubh",
-    "tht"
-   ],
    "id": "b58fca70b79d",
    "first_seen": "2026-09-27"
   },
@@ -4915,11 +4829,6 @@
    "url": "https://tht.ie/4766/gary-delaney-gary-on-laughing",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173665904",
    "category": "Comedy",
-   "time": "7pm",
-   "merged_from": [
-    "roisindubh",
-    "tht"
-   ],
    "id": "464b08feb622",
    "first_seen": "2026-09-27"
   },
@@ -5328,17 +5237,22 @@
    "first_seen": "2026-10-04"
   },
   {
-   "source": "roisindubh",
+   "source": "tht",
    "venue": "Black Box Theatre",
    "town": "Galway City",
    "county": "Galway",
    "title": "The Academic",
    "date": "2027-03-25",
-   "time": "7pm",
-   "url": "https://roisindubh.net/listings/the-academic-2027-03-25-190000-81725",
+   "url": "https://tht.ie/4932/the-academic",
+   "booking_url": "https://roisindubh.net/listings/the-academic-2027-03-25-190000-81725",
    "category": "Music",
-   "id": "89b119fd4b56",
-   "first_seen": "2026-10-20"
+   "time": "7pm",
+   "id": "e69552c81881",
+   "first_seen": "2026-10-22",
+   "merged_from": [
+    "roisindubh",
+    "tht"
+   ]
   },
   {
    "source": "monroes",
@@ -5701,10 +5615,6 @@
    "time": "7pm",
    "url": "https://www.leisureland.ie/calendar/paul-smith-happy/",
    "category": "Comedy",
-   "merged_from": [
-    "leisureland",
-    "roisindubh"
-   ],
    "id": "49bbf9ecfc7b",
    "first_seen": "2026-10-04"
   },
@@ -5718,10 +5628,6 @@
    "time": "7pm",
    "url": "https://www.leisureland.ie/calendar/paul-smith-happy-2/",
    "category": "Comedy",
-   "merged_from": [
-    "leisureland",
-    "roisindubh"
-   ],
    "id": "d2e6530cbecc",
    "first_seen": "2026-10-04"
   },
@@ -6008,11 +5914,6 @@
    "url": "https://tht.ie/4798/ruby-wax-absolutely-famous",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173666627",
    "category": "Comedy",
-   "time": "7pm",
-   "merged_from": [
-    "roisindubh",
-    "tht"
-   ],
    "id": "3232cae0fd5f",
    "first_seen": "2026-09-27"
   },
@@ -6092,10 +5993,6 @@
    "time": "7pm",
    "url": "https://www.leisureland.ie/calendar/jason-byrne-30-years-byrning/",
    "category": "Comedy",
-   "merged_from": [
-    "leisureland",
-    "roisindubh"
-   ],
    "id": "4e759679175d",
    "first_seen": "2026-10-04"
   },
