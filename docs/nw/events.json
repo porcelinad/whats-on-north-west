@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T01:37Z",
+ "generated_at": "2026-10-22T01:32Z",
  "failed_sources": [
   "The Model"
  ],
@@ -8,22 +8,22 @@
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-10-18T01:04Z",
   "hawkswell": "2026-10-20T01:50Z",
-  "craftmonth_donegal": "2026-10-19T01:18Z",
-  "craftmonth_derry": "2026-10-19T01:18Z",
-  "craftmonth_derry_city": "2026-10-19T01:18Z",
-  "craftmonth_leitrim": "2026-10-19T01:18Z",
-  "craftmonth_sligo": "2026-10-19T01:18Z",
-  "craftmonth_tyrone": "2026-10-19T01:18Z",
-  "craftmonth_fermanagh": "2026-10-19T01:18Z",
-  "heritageweek": "2026-10-19T01:18Z",
+  "craftmonth_donegal": "2026-10-22T01:32Z",
+  "craftmonth_derry": "2026-10-22T01:32Z",
+  "craftmonth_derry_city": "2026-10-22T01:32Z",
+  "craftmonth_leitrim": "2026-10-22T01:32Z",
+  "craftmonth_sligo": "2026-10-22T01:32Z",
+  "craftmonth_tyrone": "2026-10-22T01:32Z",
+  "craftmonth_fermanagh": "2026-10-22T01:32Z",
+  "heritageweek": "2026-10-22T01:32Z",
   "allingham": "2026-10-21T01:37Z",
-  "fomhair": "2026-10-19T01:18Z"
+  "fomhair": "2026-10-22T01:32Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 2,
+  "abbey": 3,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -41,7 +41,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 23,
+  "themodel": 24,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -374,88 +374,6 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "A Night of One Act Plays",
-   "date": "2026-10-21",
-   "url": "https://angrianan.com/event/a-night-of-one-act-plays-2026/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666581/events/128661421/seats?zone=Default",
-   "category": "Theatre",
-   "id": "8d6a99f6d586",
-   "first_seen": "2026-07-31"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Homicide Timeline Training Including Coercive Control",
-   "date": "2026-10-21",
-   "time": "9:00am",
-   "url": "https://ardhowen.com/show/homicide-timeline-training-including-coercive-control-2/",
-   "category": "Adult Workshop",
-   "sold_out": true,
-   "id": "8a765b789b47",
-   "first_seen": "2026-09-09"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Underneath – Written and performed by Pat Kinevane",
-   "date": "2026-10-21",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/underneath",
-   "category": "Theatre",
-   "id": "c58451c053ee",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Rip it Up: Good Vibrations | Nerve Cinema",
-   "date": "2026-10-21",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/rip-it-up-good-vibrations-nerve-cinema",
-   "category": "Film",
-   "id": "a7bfb8739bc8",
-   "first_seen": "2026-08-08"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Great | Crossing Lines",
-   "date": "2026-10-21",
-   "time": "7:00 pm",
-   "url": "https://regionalculturalcentre.com/events/great-crossing-lines/",
-   "category": "Film",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "400560892512",
-   "first_seen": "2026-09-30"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Regional Cultural Centre, Letterkenny",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Great",
-   "date": "2026-10-21",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/great/",
-   "category": null,
-   "id": "267c54a51d05",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
    "title": "A Derry Queer Open Mic (Letterkenny Edition)",
    "date": "2026-10-22",
    "url": "https://angrianan.com/event/a-derry-queer-open-mic-letterkenny-edition/",
@@ -513,6 +431,9 @@
    "time": "8:00 pm",
    "url": "https://regionalculturalcentre.com/events/rcc-cinema-babystar/",
    "category": "Film",
+   "merged_from": [
+    "rcc"
+   ],
    "id": "90533b1f3525",
    "first_seen": "2026-08-29"
   },
@@ -550,6 +471,7 @@
    "county": "Tyrone",
    "title": "‘The Little Mermaid’ presented by Loreto Grammar School",
    "date": "2026-10-22",
+   "time": "7:00pm",
    "url": "https://struleartscentre.co.uk/show/the-little-mermaid-presented-by-loreto-grammar-school/",
    "category": "Musical",
    "sold_out": true,
@@ -2666,6 +2588,19 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
+   "title": "Hallow’istmas The 13th – Online",
+   "date": "2026-11-20",
+   "end_date": "2026-11-21",
+   "url": "https://angrianan.com/event/hallowistmas-the-13th-online/",
+   "category": "Variety",
+   "id": "689a77e7273d",
+   "first_seen": "2026-10-22"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
    "title": "John Colleary: Mighty Quack",
    "date": "2026-11-20",
    "url": "https://angrianan.com/event/john-colleary-the-quack/",
@@ -2897,13 +2832,13 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
-   "title": "Acts of Memory Screening and Q&A session with local award winning filmmaker Mairéad McClean",
+   "title": "‘Acts of Memory’ NI debut screening of award-winning film",
    "date": "2026-11-26",
    "time": "7:00pm",
    "url": "https://struleartscentre.co.uk/show/acts-of-memory-screening-and-qa-session-with-local-award-winning-fimmaker-mariead-mcclean/",
    "category": "Film",
-   "id": "376db3e3806b",
-   "first_seen": "2026-09-30"
+   "id": "a01c3e64fb15",
+   "first_seen": "2026-10-22"
   },
   {
    "source": "ardhowen",
@@ -3797,6 +3732,19 @@
    "first_seen": "2026-09-09"
   },
   {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Deirdre O’Kane: All The Rage",
+   "date": "2027-01-07",
+   "url": "https://angrianan.com/event/deirdre-okane-all-the-rage/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662942",
+   "category": "Comedy",
+   "id": "22967010bd3f",
+   "first_seen": "2026-10-22"
+  },
+  {
    "source": "eaf",
    "venue": "Ballyliffin Hotel",
    "town": "Ballyliffin",
@@ -3810,19 +3758,6 @@
    "sold_out": true,
    "id": "05659faf78c7",
    "first_seen": "2026-10-18"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Deirdre O’Kane: All The Rage",
-   "date": "2027-01-08",
-   "url": "https://angrianan.com/event/deirdre-okane-all-the-rage/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662942/events/128647164/seats?zone=Default",
-   "category": "Comedy",
-   "id": "239634d15e53",
-   "first_seen": "2026-07-14"
   },
   {
    "source": "strule",
@@ -5221,6 +5156,19 @@
    "category": "Exhibition",
    "id": "09ec578ed592",
    "first_seen": "2026-10-12"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "An Evening With Dana – The Original Derry Girl",
+   "date": "2027-10-10",
+   "url": "https://angrianan.com/event/an-evening-with-dana-the-original-derry-girl/",
+   "booking_url": "https://angrianan.ticketsolve.com/shows/873668485/events",
+   "category": "Music",
+   "id": "99d1c461ad9e",
+   "first_seen": "2026-10-22"
   },
   {
    "source": "rcc",
