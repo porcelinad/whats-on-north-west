@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T01:55Z",
+ "generated_at": "2026-10-23T02:00Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -7,14 +7,14 @@
  "consecutive_failures": {
   "tht": 0,
   "monroes": 0,
-  "roisindubh": 1,
+  "roisindubh": 0,
   "gfs": 0,
   "gac": 0,
   "mick_lally": 0,
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 5
+  "galway_city_museum": 6
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -78,102 +78,6 @@
    "category": "Theatre, Irish Language",
    "id": "2766e05a928c",
    "first_seen": "2026-10-18"
-  },
-  {
-   "source": "tht",
-   "venue": "Black Box Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "#GCF26 Black Box Gala - Emma Doran...",
-   "date": "2026-10-22",
-   "url": "https://tht.ie/4922/#gcf26-black-box-gala-emma-doran",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewEvent?id=6a91d6e746d07cf40fdc2bee",
-   "category": "Comedy",
-   "id": "b0e81a89db1b",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "gac",
-   "venue": "Galway Arts Centre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Gallery Lates ⁄",
-   "date": "2026-10-22",
-   "time": "5–9pm",
-   "url": "https://www.galwayartscentre.ie/whats-on/late-opening-borneo-x-ireland-cultural-exchange/",
-   "category": "Gallery Lates",
-   "id": "a6bd9f7796b1",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "gac",
-   "venue": "Galway Arts Centre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Workshop ⁄",
-   "date": "2026-10-22",
-   "time": "18:30 - 20:30",
-   "url": "https://www.galwayartscentre.ie/whats-on/character-characterisations-fiction-workshop/",
-   "booking_url": "https://www.eventbrite.ie/e/john-patrick-mchugh-character-characterisations-fiction-workshop-tickets-2002639858727?aff=oddtdtcreator&_gl=1*5xowct*_up*MQ..*_ga*NDI0MDYzNzU5LjE3OTA3OTI3ODg.*_ga_TQVES5V6SH*czE3OTA3OTI3ODgkbzEkZzEkdDE3OTA3OTI4MTEkajM3JGwwJGgw",
-   "category": "Workshop",
-   "id": "3ac0a5a16110",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "leisureland",
-   "venue": "Leisureland",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "DARA Ó BRIAIN – RE:Creation",
-   "date": "2026-10-22",
-   "time": "7pm",
-   "url": "https://www.leisureland.ie/calendar/dara-o-briain-recreation-4/",
-   "sold_out": true,
-   "category": "Comedy",
-   "id": "26e852266176",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Late Night KARLnival feat. Karl Spain #GCF26",
-   "date": "2026-10-22",
-   "time": "10:30pm",
-   "url": "https://roisindubh.net/listings/late-night-karlnival-feat.-karl-spain-gcf26-2026-10-22-223000-81621",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewEvent?id=6a91c322c06d0a85a57c50c9",
-   "category": "Comedy",
-   "id": "88c1354bfb79",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "The Improv All Stars #GCF26",
-   "date": "2026-10-22",
-   "time": "7:30pm",
-   "url": "https://roisindubh.net/listings/the-improv-all-stars-gcf26-2026-10-22-193000-81624",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewEvent?id=6a91d6ea9b0f6f07eeecf3dd",
-   "category": "Comedy",
-   "id": "98164de7de97",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Tigh-He-He Comedy Club feat. Danny O'Brien #GCF26",
-   "date": "2026-10-22",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/tigh-he-he-comedy-club-feat.-danny-obrien-gcf26-2026-10-22-200000-81625",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewEvent?id=6a91d6ea9b0f6f07eeecf3dd",
-   "category": "Comedy",
-   "id": "a599d901304b",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -323,19 +227,6 @@
    "category": "Music",
    "id": "79720ab3ea1e",
    "first_seen": "2026-10-18"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Therapy Horse",
-   "date": "2026-10-24",
-   "time": "Doors 10pm",
-   "url": "https://monroes.ie/products/therapy-horse",
-   "category": "Music",
-   "id": "c55f843d9519",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "monroes",
@@ -973,6 +864,11 @@
    "url": "https://tht.ie/4714/foy-vance-world-tour",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173665141",
    "category": "Theatre",
+   "time": "8pm",
+   "merged_from": [
+    "roisindubh",
+    "tht"
+   ],
    "id": "dcc25085244e",
    "first_seen": "2026-09-27"
   },
@@ -1326,6 +1222,11 @@
    "url": "https://tht.ie/4790/dexys-midnight-runners",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173666435",
    "category": "Music",
+   "time": "8pm",
+   "merged_from": [
+    "roisindubh",
+    "tht"
+   ],
    "id": "481a083ce544",
    "first_seen": "2026-09-27"
   },
@@ -1616,6 +1517,11 @@
    "url": "https://tht.ie/4725/andy-irvine-and-quilty",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173665334",
    "category": "Music",
+   "time": "8pm",
+   "merged_from": [
+    "roisindubh",
+    "tht"
+   ],
    "id": "08a61e311035",
    "first_seen": "2026-09-27"
   },
@@ -1662,6 +1568,45 @@
    ],
    "id": "41048b33970a",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Christmas Jumper Day Sisco 10pm to close",
+   "date": "2026-11-12",
+   "time": "10pm",
+   "url": "https://roisindubh.net/listings/christmas-jumper-day-sisco-10pm-to-close-2026-11-12-220000-81847",
+   "category": "Music",
+   "id": "7398ad67af6e",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Christmas Jumper Day Sisco 1pm - 4pm",
+   "date": "2026-11-12",
+   "time": "1pm",
+   "url": "https://roisindubh.net/listings/christmas-jumper-day-sisco-1pm-4pm-2026-11-12-130000-81849",
+   "category": "Music",
+   "id": "8f3e6c5938a6",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Christmas Jumper Day Sisco 5.30pm - 8pm",
+   "date": "2026-11-12",
+   "time": "5:30pm",
+   "url": "https://roisindubh.net/listings/christmas-jumper-day-sisco-5.30pm-8pm-2026-11-12-173000-81848",
+   "category": "Music",
+   "id": "7f9cc1745707",
+   "first_seen": "2026-10-23"
   },
   {
    "source": "tht",
@@ -1756,6 +1701,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh (Top Bar)",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Slow Attack of The Mumbling Folk",
+   "date": "2026-11-13",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/slow-attack-of-the-mumbling-folk-2026-11-13-200000-81857",
+   "category": "Music",
+   "id": "56704b718760",
+   "first_seen": "2026-10-23"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway City",
@@ -1790,6 +1748,10 @@
    "time": "3pm",
    "url": "https://www.leisureland.ie/calendar/the-misadventures-of-the-3-little-pigs/",
    "category": "Music",
+   "merged_from": [
+    "leisureland",
+    "roisindubh"
+   ],
    "id": "76fbe4921abb",
    "first_seen": "2026-10-04"
   },
@@ -2193,6 +2155,19 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
+   "title": "Club GASS",
+   "date": "2026-11-21",
+   "time": "10pm",
+   "url": "https://roisindubh.net/listings/club-gass-2026-11-21-220000-81855",
+   "category": "Music",
+   "id": "023ecb0c2682",
+   "first_seen": "2026-10-23"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
    "title": "Club Gass Presents Haute and Freddy",
    "date": "2026-11-21",
    "time": "8pm",
@@ -2200,32 +2175,6 @@
    "sold_out": true,
    "category": "Music",
    "id": "13cf2ccae0cc",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Last Orders",
-   "date": "2026-11-21",
-   "time": "11:30pm",
-   "url": "https://roisindubh.net/listings/last-orders-2026-11-21-233000-81346",
-   "category": "Music",
-   "id": "35c25c024be5",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Powerhaus",
-   "date": "2026-11-21",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/powerhuas-2026-11-21-230000-81114",
-   "category": "Music",
-   "id": "6a9616745961",
    "first_seen": "2026-10-04"
   },
   {
@@ -3049,6 +2998,11 @@
    "time": "7pm",
    "url": "https://www.leisureland.ie/calendar/tommy-tiernan-world-tour-of-galway/",
    "category": "Comedy",
+   "sold_out": true,
+   "merged_from": [
+    "leisureland",
+    "roisindubh"
+   ],
    "id": "9d651ec663fe",
    "first_seen": "2026-10-04"
   },
@@ -3115,6 +3069,11 @@
    "time": "7pm",
    "url": "https://www.leisureland.ie/calendar/tommy-tiernan-world-tour-of-galway-2/",
    "category": "Comedy",
+   "sold_out": true,
+   "merged_from": [
+    "leisureland",
+    "roisindubh"
+   ],
    "id": "12e23471b737",
    "first_seen": "2026-10-04"
   },
@@ -4182,19 +4141,6 @@
    "first_seen": "2026-10-18"
   },
   {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Rushified - A Tribute to Rush",
-   "date": "2027-01-30",
-   "time": "Doors 7.pm",
-   "url": "https://monroes.ie/products/rushified-1",
-   "category": "Music",
-   "id": "692800388ae5",
-   "first_seen": "2026-10-04"
-  },
-  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -4351,6 +4297,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Flyte",
+   "date": "2027-02-04",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/flyte-2027-02-04-200000-81733",
+   "category": "Music",
+   "id": "c6546ee83ff8",
+   "first_seen": "2026-10-23"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway City",
@@ -4503,6 +4462,11 @@
    "url": "https://tht.ie/4909/an-evening-with-josh-ritter",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668926",
    "category": "Music",
+   "time": "7pm",
+   "merged_from": [
+    "roisindubh",
+    "tht"
+   ],
    "id": "b58fca70b79d",
    "first_seen": "2026-09-27"
   },
@@ -4829,6 +4793,11 @@
    "url": "https://tht.ie/4766/gary-delaney-gary-on-laughing",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173665904",
    "category": "Comedy",
+   "time": "7pm",
+   "merged_from": [
+    "roisindubh",
+    "tht"
+   ],
    "id": "464b08feb622",
    "first_seen": "2026-09-27"
   },
@@ -5247,12 +5216,12 @@
    "booking_url": "https://roisindubh.net/listings/the-academic-2027-03-25-190000-81725",
    "category": "Music",
    "time": "7pm",
-   "id": "e69552c81881",
-   "first_seen": "2026-10-22",
    "merged_from": [
     "roisindubh",
     "tht"
-   ]
+   ],
+   "id": "e69552c81881",
+   "first_seen": "2026-10-22"
   },
   {
    "source": "monroes",
@@ -5615,6 +5584,10 @@
    "time": "7pm",
    "url": "https://www.leisureland.ie/calendar/paul-smith-happy/",
    "category": "Comedy",
+   "merged_from": [
+    "leisureland",
+    "roisindubh"
+   ],
    "id": "49bbf9ecfc7b",
    "first_seen": "2026-10-04"
   },
@@ -5628,6 +5601,10 @@
    "time": "7pm",
    "url": "https://www.leisureland.ie/calendar/paul-smith-happy-2/",
    "category": "Comedy",
+   "merged_from": [
+    "leisureland",
+    "roisindubh"
+   ],
    "id": "d2e6530cbecc",
    "first_seen": "2026-10-04"
   },
@@ -5914,6 +5891,11 @@
    "url": "https://tht.ie/4798/ruby-wax-absolutely-famous",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173666627",
    "category": "Comedy",
+   "time": "7pm",
+   "merged_from": [
+    "roisindubh",
+    "tht"
+   ],
    "id": "3232cae0fd5f",
    "first_seen": "2026-09-27"
   },
@@ -5993,6 +5975,10 @@
    "time": "7pm",
    "url": "https://www.leisureland.ie/calendar/jason-byrne-30-years-byrning/",
    "category": "Comedy",
+   "merged_from": [
+    "leisureland",
+    "roisindubh"
+   ],
    "id": "4e759679175d",
    "first_seen": "2026-10-04"
   },
@@ -6047,6 +6033,19 @@
    "category": "Music",
    "id": "76b64b2d5182",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Flo & Joan: With Feeling",
+   "date": "2027-06-17",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/flo-and-joan-with-feeling-2027-06-17-190000-81736",
+   "category": "Comedy",
+   "id": "0ca64cd137c3",
+   "first_seen": "2026-10-23"
   },
   {
    "source": "roisindubh",
