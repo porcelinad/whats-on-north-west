@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T02:00Z",
+ "generated_at": "2026-10-24T02:01Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 6
+  "galway_city_museum": 7
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -57,19 +57,6 @@
    "venue": "An Taibhdhearc",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Aisling Ghéar’s ‘Pygmalion 26’",
-   "date": "2026-10-22",
-   "end_date": "2026-10-24",
-   "url": "https://www.antaibhdhearc.com/pygmalion-26",
-   "category": "Theatre, Irish Language",
-   "id": "b1d1314e3992",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "taibhdhearc",
-   "venue": "An Taibhdhearc",
-   "town": "Galway City",
-   "county": "Galway",
    "title": "PYGMALION 26 - Aisling Ghéar",
    "date": "2026-10-22",
    "end_date": "2026-10-24",
@@ -92,88 +79,6 @@
    "category": "Theatre",
    "id": "779af5c9f0df",
    "first_seen": "2026-09-27"
-  },
-  {
-   "source": "tht",
-   "venue": "Black Box Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Jack Dee: Jack's Joke Show",
-   "date": "2026-10-23",
-   "url": "https://tht.ie/4859/jack-dee-jacks-joke-show",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewArtist?id=6a860bfa350e228ac09bed37",
-   "category": "Comedy",
-   "id": "394ed85f13e7",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "gac",
-   "venue": "Electric Galway 36 Abbeygate Street Upper, Galway, H91 W577",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Youth Arts ⁄ Music ⁄",
-   "date": "2026-10-23",
-   "time": "7:00pm – 9:30pm",
-   "url": "https://www.galwayartscentre.ie/whats-on/youth-lates-13/",
-   "booking_url": "https://www.eventbrite.ie/e/youth-lates-tickets-2003201998101",
-   "category": "Youth Arts, Music",
-   "id": "417066212980",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Heineken Greenlight: Joshua Idehen + F3miii",
-   "date": "2026-10-23",
-   "time": "Doors 7.45pm",
-   "url": "https://monroes.ie/products/heineken-greenlight-joshua-idehen-f3miii",
-   "category": "Music",
-   "id": "d79c4fe2172f",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Late Night KARLnival feat. Karl Spain #GCF26",
-   "date": "2026-10-23",
-   "time": "10:30pm",
-   "url": "https://roisindubh.net/listings/late-night-karlnival-feat.-karl-spain-gcf26-2026-10-23-223000-81622",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewEvent?id=6a91c3235f1e98c112c15993",
-   "category": "Comedy",
-   "id": "3e4afe921125",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Rhys Darby and Friends #GCF26",
-   "date": "2026-10-23",
-   "time": "7:30pm",
-   "url": "https://roisindubh.net/listings/rhys-darby-and-friends-gcf26-2026-10-23-193000-81626",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewEvent?id=6a91d6ea1eb3d30f8e3e2bf0",
-   "category": "Comedy",
-   "id": "477166a39a5f",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Tigh-He-He Comedy Club feat. Spencer Jones #GCF26",
-   "date": "2026-10-23",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/tigh-he-he-comedy-club-feat.-spencer-jones-gcf26-2026-10-23-200000-81627",
-   "booking_url": "https://galwaycomedyfestival.ie/ViewEvent?id=6a91c3278251c7874e1cf327",
-   "category": "Comedy",
-   "id": "9273fee7f1f0",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -864,7 +769,7 @@
    "url": "https://tht.ie/4714/foy-vance-world-tour",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173665141",
    "category": "Theatre",
-   "time": "8pm",
+   "time": "6pm",
    "merged_from": [
     "roisindubh",
     "tht"
@@ -1530,6 +1435,19 @@
    "venue": "Galway Arts Centre",
    "town": "Galway City",
    "county": "Galway",
+   "title": "Gallery Lates ⁄ Workshop ⁄",
+   "date": "2026-11-12",
+   "time": "18:30 - 20:00",
+   "url": "https://www.galwayartscentre.ie/whats-on/workshop-on-materials-and-humanity/",
+   "category": "Gallery Lates, Workshop",
+   "id": "2c20839043f0",
+   "first_seen": "2026-10-24"
+  },
+  {
+   "source": "gac",
+   "venue": "Galway Arts Centre",
+   "town": "Galway City",
+   "county": "Galway",
    "title": "Workshop ⁄",
    "date": "2026-11-12",
    "time": "18:30 - 20:30",
@@ -1538,19 +1456,6 @@
    "category": "Workshop",
    "id": "fb4dc9f0bd77",
    "first_seen": "2026-10-04"
-  },
-  {
-   "source": "gac",
-   "venue": "Galway Arts Centre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Workshop ⁄ Gallery Lates ⁄",
-   "date": "2026-11-12",
-   "time": "18:30 - 20:00",
-   "url": "https://www.galwayartscentre.ie/whats-on/workshop-on-materials-and-humanity/",
-   "category": "Workshop, Gallery Lates",
-   "id": "37e3c411fa08",
-   "first_seen": "2026-10-21"
   },
   {
    "source": "leisureland",
@@ -1991,6 +1896,20 @@
    "category": "Community",
    "id": "ba920da62531",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "20TH CENTURY PADDY: THE SONGS OF SHANE MACGOWAN – ALBUM LAUNCH",
+   "date": "2026-11-18",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/20th-century-paddy-the-songs-of-shane-macgowan-%E2%80%93-album-launch-2026-11-18-200000-81858",
+   "booking_url": "https://goldendiscs.ie/pages/20th-century-paddy-the-songs-of-shane-macgowan-album-launch",
+   "category": "Music",
+   "id": "543abff409b4",
+   "first_seen": "2026-10-24"
   },
   {
    "source": "tht",
@@ -2569,17 +2488,21 @@
    "first_seen": "2026-09-27"
   },
   {
-   "source": "roisindubh",
+   "source": "leisureland",
    "venue": "Leisureland",
    "town": "Galway City",
    "county": "Galway",
    "title": "Aaron Rowe",
    "date": "2026-11-30",
    "time": "7pm",
-   "url": "https://roisindubh.net/listings/aaron-rowe-2026-11-30-190000-81716",
+   "url": "https://www.leisureland.ie/calendar/aaron-rowe/",
    "category": "Music",
-   "id": "e7f10bd639df",
-   "first_seen": "2026-10-04"
+   "merged_from": [
+    "leisureland",
+    "roisindubh"
+   ],
+   "id": "b81457c00e77",
+   "first_seen": "2026-10-24"
   },
   {
    "source": "monroes",
@@ -2593,6 +2516,19 @@
    "category": "Comedy",
    "id": "9ba28189e228",
    "first_seen": "2026-10-18"
+  },
+  {
+   "source": "taibhdhearc",
+   "venue": "An Taibhdhearc",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Christmas Show: The Happy Prince",
+   "date": "2026-12-01",
+   "end_date": "2026-12-19",
+   "url": "https://www.antaibhdhearc.com/an-prionsa-sona",
+   "category": "Theatre, Irish Language",
+   "id": "e4862b97b592",
+   "first_seen": "2026-10-24"
   },
   {
    "source": "tht",
@@ -5328,6 +5264,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Dead Asset",
+   "date": "2027-04-01",
+   "url": "https://tht.ie/4930/dead-asset",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669487",
+   "category": "Theatre",
+   "id": "304967860af0",
+   "first_seen": "2026-10-24"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -5620,6 +5569,19 @@
    "category": "Music",
    "id": "4ccfce38980b",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Sam Is For The Hills",
+   "date": "2027-04-26",
+   "url": "https://tht.ie/4931/sam-is-for-the-hills",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669493",
+   "category": "Music",
+   "id": "e9b90f7b145e",
+   "first_seen": "2026-10-24"
   },
   {
    "source": "roisindubh",
