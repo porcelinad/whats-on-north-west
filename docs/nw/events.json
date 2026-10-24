@@ -1,6 +1,7 @@
 {
- "generated_at": "2026-10-23T01:32Z",
+ "generated_at": "2026-10-24T01:36Z",
  "failed_sources": [
+  "Abbey Arts Centre",
   "The Model"
  ],
  "source_last_run": {
@@ -16,14 +17,14 @@
   "craftmonth_tyrone": "2026-10-22T01:32Z",
   "craftmonth_fermanagh": "2026-10-22T01:32Z",
   "heritageweek": "2026-10-22T01:32Z",
-  "allingham": "2026-10-21T01:37Z",
+  "allingham": "2026-10-24T01:36Z",
   "fomhair": "2026-10-22T01:32Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 4,
+  "abbey": 5,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -41,7 +42,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 25,
+  "themodel": 26,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -370,59 +371,6 @@
    "first_seen": "2026-08-21"
   },
   {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Make! Weaving with Emily Waszak",
-   "date": "2026-10-22",
-   "end_date": "2026-11-05",
-   "time": "7:00 pm",
-   "url": "https://regionalculturalcentre.com/events/weaving-with-emily-waszak/",
-   "category": "Workshop",
-   "id": "90ab6cccb222",
-   "first_seen": "2026-08-05"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Legends Of The 60s Show",
-   "date": "2026-10-23",
-   "url": "https://angrianan.com/event/legends-of-the-60s-show/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873661622/events/128641596/seats?zone=Default",
-   "category": "Music",
-   "id": "761267b7ea0e",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Enniskillen One Act Drama Festival",
-   "date": "2026-10-23",
-   "time": "7:30pm",
-   "url": "https://ardhowen.com/show/enniskillen-drama-festival-2/",
-   "category": "Drama",
-   "id": "804b8e21f6f0",
-   "first_seen": "2026-10-03"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Medium Rare",
-   "date": "2026-10-23",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/medium-rare-2",
-   "category": null,
-   "id": "995b9078a669",
-   "first_seen": "2026-10-17"
-  },
-  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -437,95 +385,6 @@
    "first_seen": "2026-09-12"
   },
   {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "The Whileaways & Michael McGovern",
-   "date": "2026-10-23",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/the-whileaways-michael-mcgovern",
-   "category": "Music",
-   "id": "bc8026dbac3d",
-   "first_seen": "2026-10-17"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well foyer",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Aoife Duignan and Friends – Lunchtime at the Well",
-   "date": "2026-10-23",
-   "time": "1pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/aoife-duignan-and-friends",
-   "category": "Music",
-   "id": "1d705eaf67b2",
-   "first_seen": "2026-10-17"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Mount Errigal Hotel",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Donegal County Council , PEACEPLUS Capacity Building and Networking Event",
-   "date": "2026-10-23",
-   "time": "09:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/donegal-county-council-peaceplus-capacity-building-and-networking-event/",
-   "category": null,
-   "id": "c93a89ad5221",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Seventh Heaven: 'The Motherland' EP Launch",
-   "date": "2026-10-23",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/seventh-heaven-the-motherland-ep-launch",
-   "category": "Music/Comedy",
-   "id": "816536b8b35c",
-   "first_seen": "2026-09-02"
-  },
-  {
-   "source": "st_columbs",
-   "venue": "St Columb's Hall",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The People&#8217;s Hall Tour",
-   "date": "2026-10-23",
-   "url": "https://www.saintcolumbshall.com/whatson/the-peoples-hall-tour/2026-10-23/",
-   "category": null,
-   "id": "fb476415100c",
-   "first_seen": "2026-09-04"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Ralph McTell – Somewhere Down the Road",
-   "date": "2026-10-23",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/ralph-mctell-somewhere-down-the-road/",
-   "category": "Music",
-   "id": "72adffc58972",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Clare Sands – They Tried to Bury Us",
-   "date": "2026-10-23",
-   "url": "https://www.thedock.ie/whats-on/clare-sands",
-   "category": "Music",
-   "id": "47d6a36e991d",
-   "first_seen": "2026-09-06"
-  },
-  {
    "source": "themodel",
    "venue": "The Model",
    "town": "Sligo",
@@ -538,18 +397,6 @@
    "category": null,
    "id": "ca808d069ec0",
    "first_seen": "2026-09-30"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Eerieland: Ghost Stories of the North of Ireland",
-   "date": "2026-10-23",
-   "url": "https://www.derryplayhouse.co.uk/event/eerieland-ghost-stories-of-the-north-of-ireland",
-   "category": null,
-   "id": "e02deb6296dc",
-   "first_seen": "2026-10-18"
   },
   {
    "source": "an_grianan",
@@ -1070,29 +917,16 @@
    "venue": "Nerve Centre",
    "town": "Derry",
    "county": "Derry",
-   "title": "Gremlins (4K Restoration) | Halloween Nerve Cinema",
-   "date": "2026-10-29",
-   "time": "4:00PM",
-   "url": "https://nervecentre.org/whats-on/gremlins-nerve-cinema",
-   "category": "Film",
-   "merged_from": [
-    "nervecentre"
-   ],
-   "id": "9ac0f8d17c0d",
-   "first_seen": "2026-10-15"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The Exorcist (Extended Director's Cut) | Halloween Nerve Cinema",
+   "title": "The Exorcist | Halloween Nerve Cinema",
    "date": "2026-10-29",
    "time": "7:00PM",
    "url": "https://nervecentre.org/whats-on/the-exorcist-extended-directors-cut-halloween-nerve-cinema",
    "category": "Film",
-   "id": "da84753fc773",
-   "first_seen": "2026-09-10"
+   "merged_from": [
+    "nervecentre"
+   ],
+   "id": "7dc67c98b6a9",
+   "first_seen": "2026-10-24"
   },
   {
    "source": "rcc",
@@ -1104,9 +938,6 @@
    "time": "8:00 pm",
    "url": "https://regionalculturalcentre.com/events/rcc-cinema-scream-30th-anniversary-screening/",
    "category": "Film",
-   "merged_from": [
-    "rcc"
-   ],
    "id": "86d0a283152c",
    "first_seen": "2026-09-26"
   },
@@ -1571,6 +1402,22 @@
    "first_seen": "2026-10-18"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Cinema: The Portuguese House",
+   "date": "2026-11-05",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-the-portuguese-house/",
+   "category": "Film",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "d02648735c05",
+   "first_seen": "2026-10-24"
+  },
+  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -1593,6 +1440,7 @@
    "url": "https://allinghamfestival.com/events/johnny-gallagher/",
    "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676520/events",
    "category": null,
+   "sold_out": true,
    "id": "12b84a4f7e55",
    "first_seen": "2026-10-18"
   },
@@ -1743,20 +1591,6 @@
    "venue": "Abbey Arts Centre",
    "town": "Ballyshannon",
    "county": "Donegal",
-   "title": "Book Launch: ‘John Mc Gahern – A Writing Life’ by Frank Shovlin",
-   "date": "2026-11-07",
-   "time": "5:30pm",
-   "url": "https://allinghamfestival.com/events/frank-shovlin-a-writing-life-definitive-biography-of-mc-gahern-papers-from-the-wife-2/",
-   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173675629/events",
-   "category": null,
-   "id": "cf92f1264570",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "allingham",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
    "title": "Elaine Feeney in conversation with Sinéad Crowley",
    "date": "2026-11-07",
    "time": "4pm",
@@ -1765,6 +1599,20 @@
    "category": null,
    "id": "7a8fce480180",
    "first_seen": "2026-10-18"
+  },
+  {
+   "source": "allingham",
+   "venue": "Abbey Arts Centre",
+   "town": "Ballyshannon",
+   "county": "Donegal",
+   "title": "Frank Shovlin – ‘John Mc Gahern – A Writing Life’",
+   "date": "2026-11-07",
+   "time": "5:30pm",
+   "url": "https://allinghamfestival.com/events/frank-shovlin-a-writing-life-definitive-biography-of-mc-gahern-papers-from-the-wife-2/",
+   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173675629/events",
+   "category": null,
+   "id": "755c3e42a3ba",
+   "first_seen": "2026-10-24"
   },
   {
    "source": "allingham",
@@ -1997,14 +1845,14 @@
    "venue": "Abbey Arts Centre",
    "town": "Ballyshannon",
    "county": "Donegal",
-   "title": "Film: ‘You’ll Never Believe who’s Dead’ + Q&A",
+   "title": "Film: ‘You’ll Never Believe who’s Dead’ + Q&A with Dallan Shovlin",
    "date": "2026-11-08",
    "time": "4:30pm",
    "url": "https://allinghamfestival.com/events/film-youll-never-believe-whos-dead/",
    "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676544/events",
    "category": null,
-   "id": "64bd6200d761",
-   "first_seen": "2026-10-18"
+   "id": "4f39bcc06da8",
+   "first_seen": "2026-10-24"
   },
   {
    "source": "allingham",
@@ -2177,6 +2025,22 @@
    "category": "Variety",
    "id": "820307808afd",
    "first_seen": "2026-08-13"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Cinema: The Incomer",
+   "date": "2026-11-12",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-the-incomer/",
+   "category": "Film",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "8f8bb9c43063",
+   "first_seen": "2026-10-24"
   },
   {
    "source": "rcc",
@@ -2509,9 +2373,6 @@
    "time": "8:00 pm",
    "url": "https://regionalculturalcentre.com/events/rcc-cinema-trainspotting-30th-anniversary-screening/",
    "category": "Film",
-   "merged_from": [
-    "rcc"
-   ],
    "id": "93dbda6e3917",
    "first_seen": "2026-09-26"
   },
@@ -2614,6 +2475,7 @@
    "url": "https://angrianan.com/event/the-ennio-morricone-experience/",
    "booking_url": "https://angrianan.ticketsolve.com/shows/873658083/events",
    "category": "Music",
+   "sold_out": true,
    "id": "67c5d513563b",
    "first_seen": "2026-07-14"
   },
@@ -2772,6 +2634,22 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Cinema: The Good, the Bad and the Ugly",
+   "date": "2026-11-26",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/the-good-the-bad-and-the-ugly/",
+   "category": "Film",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "5a99e6783335",
+   "first_seen": "2026-10-24"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -2879,6 +2757,22 @@
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
    "county": "Donegal",
+   "title": "RCC Cinema: NAZA",
+   "date": "2026-11-28",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-naza/",
+   "category": "Film",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "62fb3ebc7c0f",
+   "first_seen": "2026-10-24"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
    "title": "RCC Make! Photography with Declan Devlin",
    "date": "2026-11-28",
    "time": "2:00 pm",
@@ -2964,6 +2858,22 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Cinema: Fatherland",
+   "date": "2026-12-03",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-fatherland/",
+   "category": "Film",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "1d4230fe3bcb",
+   "first_seen": "2026-10-24"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -2972,6 +2882,7 @@
    "date": "2026-12-04",
    "end_date": "2026-12-06",
    "url": "https://angrianan.com/event/all-ireland-one-act-drama-finals-2026/",
+   "booking_url": "https://ticketsolve.queue-it.net/?c=ticketsolve&e=angriananonsale08&t=https://angrianan-onsale.ticketsolve.com/shows/873667953/events",
    "category": "Theatre",
    "id": "5b0fd0b9585e",
    "first_seen": "2026-08-07"
@@ -3089,6 +3000,22 @@
    "category": "Music",
    "id": "b6b613d0c290",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Cinema: Primetime",
+   "date": "2026-12-10",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-primetime/",
+   "category": "Film",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "51b0dee54e05",
+   "first_seen": "2026-10-24"
   },
   {
    "source": "eventbrite_donegal",
@@ -3682,6 +3609,7 @@
    "county": "Donegal",
    "title": "Deirdre O’Kane: All The Rage",
    "date": "2027-01-07",
+   "end_date": "2027-01-08",
    "url": "https://angrianan.com/event/deirdre-okane-all-the-rage/",
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662942",
    "category": "Comedy",
@@ -4128,6 +4056,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Adventures on Old Mac Donalds Farm – LIVE KIDS SHOW!",
+   "date": "2027-02-13",
+   "time": "2:30pm",
+   "url": "https://struleartscentre.co.uk/show/adventures-on-old-mac-donalds-farm-live-kids-show/",
+   "category": "Kids/Family",
+   "id": "ba9da255aeac",
+   "first_seen": "2026-10-24"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -4483,7 +4424,6 @@
    "title": "Imelda May – Raised on Songs And Stories: The Lock In",
    "date": "2027-03-14",
    "url": "https://angrianan.com/event/imelda-may-raised-on-songs-and-stories-the-lock-in/",
-   "booking_url": "https://ticketsolve.queue-it.net/?c=ticketsolve&e=angriananonsale07&t=https%3A%2F%2Fangrianan%2Donsale.ticketsolve.com%2Fshows%2F873668301%2Fevents",
    "category": "Music",
    "id": "b1e982d8dc73",
    "first_seen": "2026-10-23"
@@ -5088,17 +5028,17 @@
    "first_seen": "2026-09-17"
   },
   {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "Culture Night at The RCC 2026",
-   "date": "2027-09-18",
-   "time": "5:00 pm",
-   "url": "https://regionalculturalcentre.com/events/culture-night-at-the-rcc-2026/",
-   "category": "Workshop",
-   "id": "471739ac6e42",
-   "first_seen": "2026-09-26"
+   "title": "Let It Be – The Music Of The Beatles",
+   "date": "2027-10-01",
+   "url": "https://angrianan.com/event/let-it-be-the-music-of-the-beatles/",
+   "booking_url": "https://angrianan.ticketsolve.com/shows/873668614/events",
+   "category": "Music",
+   "id": "9ce4478ac623",
+   "first_seen": "2026-10-24"
   },
   {
    "source": "ardhowen",
@@ -5171,19 +5111,6 @@
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "RCC Cinema: DJ Ahmet",
-   "date": "2027-10-15",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-cinema-dj-ahmet/",
-   "category": "Film",
-   "id": "d145bc172ed7",
-   "first_seen": "2026-10-23"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
    "title": "Wainfest! Schools Event: Niall DeBurca",
    "date": "2027-10-15",
    "time": "10:00 am",
@@ -5191,6 +5118,32 @@
    "category": null,
    "id": "f5e73d5c18f0",
    "first_seen": "2026-10-23"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Wainfest! School Screening: A Bug’s Life",
+   "date": "2027-10-16",
+   "time": "10:30 am",
+   "url": "https://regionalculturalcentre.com/events/wainfest-school-screening-a-bugs-life/",
+   "category": null,
+   "id": "e0792c7325ce",
+   "first_seen": "2026-10-24"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Áislann Rann na Feirste",
+   "town": "",
+   "county": "Donegal",
+   "title": "Ceolta an Chéid",
+   "date": "2027-10-16",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/ceolta-an-cheid/",
+   "category": null,
+   "id": "1f858c0443df",
+   "first_seen": "2026-10-24"
   }
  ]
 }
