@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T01:11Z",
+ "generated_at": "2026-10-26T01:12Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "The Model"
@@ -8,7 +8,7 @@
   "eventbrite_csv_hash": "9c0553cea73a",
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-10-25T01:11Z",
-  "hawkswell": "2026-10-23T01:32Z",
+  "hawkswell": "2026-10-26T01:12Z",
   "craftmonth_donegal": "2026-10-25T01:11Z",
   "craftmonth_derry": "2026-10-25T01:11Z",
   "craftmonth_derry_city": "2026-10-25T01:11Z",
@@ -24,7 +24,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 6,
+  "abbey": 7,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -42,7 +42,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 27,
+  "themodel": 28,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -357,34 +357,6 @@
  },
  "events": [
   {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Ballybofey & Stranorlar One-Act Drama Festival",
-   "date": "2026-10-23",
-   "end_date": "2026-10-25",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=ballybofey-stranorlar-one-act-drama-festival",
-   "category": "Drama",
-   "id": "3a7dec4d6783",
-   "first_seen": "2026-09-12"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Kieran Quinn’s Teenage Theme Night #39",
-   "date": "2026-10-23",
-   "end_date": "2026-10-25",
-   "time": "8:00 pm",
-   "url": "https://www.themodel.ie/?event=k-quinn-teens39&event_date=2026-10-23",
-   "category": null,
-   "id": "ca808d069ec0",
-   "first_seen": "2026-09-30"
-  },
-  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -395,44 +367,6 @@
    "url": "https://www.derryplayhouse.co.uk/event/the-school-on-the-edge-of-reality",
    "category": null,
    "id": "a26085f0685e",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Donegal Chamber Orchestra: 20th Anniversary Gala Concert",
-   "date": "2026-10-25",
-   "url": "https://angrianan.com/event/donegal-chamber-orchestra-2026/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666591/events/128661433/seats?zone=Default",
-   "category": "Music",
-   "id": "cfd185d7c6b7",
-   "first_seen": "2026-07-31"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Frankie Gavin & De Dannan",
-   "date": "2026-10-25",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/frankie-gavin-de-dannan",
-   "category": "Music",
-   "id": "20ef6c1eff7a",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Faces of the Púca - Samhain Mask Making",
-   "date": "2026-10-25",
-   "url": "https://www.derryplayhouse.co.uk/event/faces-of-the-puca-samhain-mask-making",
-   "category": null,
-   "id": "5afe95287039",
    "first_seen": "2026-10-18"
   },
   {
@@ -837,6 +771,19 @@
   },
   {
    "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Scream",
+   "date": "2026-10-30",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/scream",
+   "category": null,
+   "id": "4eedc8a02aa8",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "hawkswell",
    "venue": "Hawk's Well Theatre",
    "town": "Sligo",
    "county": "Sligo",
@@ -968,6 +915,32 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Dominic Kirwan",
+   "date": "2026-10-31",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/dominic-kirwan",
+   "category": null,
+   "id": "50b821f9dd99",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Ashley Campbell & Stephen O'Dowd",
+   "date": "2026-10-31",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/ashley-campbell-stephen-odowd",
+   "category": "Music",
+   "id": "0a8f40865403",
+   "first_seen": "2026-10-26"
+  },
+  {
    "source": "nervecentre",
    "venue": "Nerve Centre",
    "town": "Derry",
@@ -1018,6 +991,19 @@
    "category": null,
    "id": "08b09a1b76e5",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "RHYS DARBY 'UNHINGED'",
+   "date": "2026-11-01",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/rhys-darby-unhinged",
+   "category": "Comedy",
+   "id": "5319f59b7fce",
+   "first_seen": "2026-10-26"
   },
   {
    "source": "an_grianan",
@@ -1085,6 +1071,33 @@
    "category": null,
    "id": "e90b9bf2f2ab",
    "first_seen": "2026-10-18"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Caith Amach É – Fifth-year Oral Workshop",
+   "date": "2026-11-04",
+   "time": "10.30am",
+   "url": "https://www.hawkswell.com/whats-on/shows/caith-amach-é-4",
+   "category": "Secondary Schools",
+   "id": "d3f614603670",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Steel Magnolias",
+   "date": "2026-11-04",
+   "end_date": "2026-11-07",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/steel-magnolias",
+   "category": "Theatre",
+   "id": "23e1d91b97c9",
+   "first_seen": "2026-10-26"
   },
   {
    "source": "allingham",
@@ -5069,6 +5082,71 @@
    "category": null,
    "id": "8533e5b7ef11",
    "first_seen": "2026-10-25"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Cabin Wood, Woodland Trust",
+   "town": "Cookstown",
+   "county": "Tyrone",
+   "title": "Wildlife Wander in Cookstown",
+   "date": "2027-10-18",
+   "time": "14:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/wildlife-wander-in-cookstown/",
+   "category": null,
+   "id": "e37883f2e2e3",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim School of Art N41 E8H0",
+   "town": "Ballinamore",
+   "county": "Leitrim",
+   "title": "Digital Photography for Beginners Part 1, Sun 18th Oct, 2026, 10am-4pm",
+   "date": "2027-10-18",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/digital-photography-for-beginners-part-1-sun-18th-oct-2026-10am-4pm/",
+   "category": null,
+   "id": "539418ee949c",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim School of Art N41 E8H0",
+   "town": "Ballinamore",
+   "county": "Leitrim",
+   "title": "One Day Ceramic Workshop, Sunday 18th Oct 2026, 10am-4pm",
+   "date": "2027-10-18",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/one-day-ceramic-workshop-sunday-18th-oct-2026-10am-4pm/",
+   "category": null,
+   "id": "f806fbb102de",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Maldron Hotel Derry",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "North West Card Club - Derry/L'Derry",
+   "date": "2027-10-18",
+   "time": "11:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/north-west-card-club-derry-lderry/",
+   "category": null,
+   "id": "2b9845bdc887",
+   "first_seen": "2026-10-26"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Navenny Street",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Halloween drive in movie",
+   "date": "2027-10-18",
+   "time": "12:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/halloween-drive-in-movie/",
+   "category": null,
+   "id": "d25546c1f830",
+   "first_seen": "2026-10-26"
   }
  ]
 }
