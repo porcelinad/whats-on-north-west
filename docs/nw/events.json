@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T01:12Z",
+ "generated_at": "2026-10-27T02:06Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "The Model"
@@ -17,16 +17,16 @@
   "craftmonth_tyrone": "2026-10-25T01:11Z",
   "craftmonth_fermanagh": "2026-10-25T01:11Z",
   "heritageweek": "2026-10-25T01:11Z",
-  "allingham": "2026-10-24T01:36Z",
+  "allingham": "2026-10-27T02:06Z",
   "fomhair": "2026-10-25T01:11Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 7,
+  "abbey": 8,
   "eventbrite_donegal": 0,
-  "mcgrorys": 0,
+  "mcgrorys": 1,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
@@ -42,7 +42,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 28,
+  "themodel": 29,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -382,45 +382,6 @@
    "category": null,
    "id": "8f2c216d0ce2",
    "first_seen": "2026-10-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Foxhall Community Hall",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Foxhall Mega Whist",
-   "date": "2026-10-26",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/foxhall-mega-whist/",
-   "category": null,
-   "id": "be498bcce751",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Studio",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Tiny Trees – With Jackie Maguire",
-   "date": "2026-10-26",
-   "time": "11am & 12pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/tiny-trees",
-   "category": "Kids/Family",
-   "id": "73414f94a7ef",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Roe Valley Arts and Cultural Centre",
-   "town": "Limavady",
-   "county": "Derry",
-   "title": "Spooky Gingerbread House for 7–11yrs",
-   "date": "2026-10-26",
-   "time": "11:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/spooky-gingerbread-house-for-711yrs/",
-   "category": null,
-   "id": "c9b60c00bc29",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "an_grianan",
@@ -4688,6 +4649,19 @@
    "first_seen": "2026-08-07"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "The Seeger Sessions Revival",
+   "date": "2027-05-22",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/the-seeger-sessions-revival/",
+   "category": "Music",
+   "id": "d2694493fd70",
+   "first_seen": "2026-10-27"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -5147,6 +5121,19 @@
    "category": null,
    "id": "d25546c1f830",
    "first_seen": "2026-10-26"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "The Factory Performance Space",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Mother Courage and her Children by Bertolt Brecht",
+   "date": "2027-10-19",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/mother-courage-and-her-children-by-bertolt-brecht/",
+   "category": "Kids/Family",
+   "id": "8c42851b33ea",
+   "first_seen": "2026-10-27"
   }
  ]
 }
