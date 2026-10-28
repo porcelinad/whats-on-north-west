@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T02:27Z",
+ "generated_at": "2026-10-28T02:37Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 10
+  "galway_city_museum": 11
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -51,59 +51,6 @@
    "category": "Theatre, Irish Language",
    "id": "862da46ddf97",
    "first_seen": "2026-10-18"
-  },
-  {
-   "source": "galway_city_museum",
-   "venue": "Galway City Museum",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Family Workshop: Make a Traditional Jack-o’-Lantern",
-   "date": "2026-10-27",
-   "time": "11am",
-   "url": "https://galwaycitymuseum.ie/event/family-workshop-make-a-traditional-jack-o-lantern/",
-   "category": "Workshop, Kids/Family",
-   "id": "0692447d7921",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "GALLOWEEN: A Night of Terror and Music for Palestine",
-   "date": "2026-10-27",
-   "time": "2:30pm",
-   "url": "https://roisindubh.net/listings/galloween-a-night-of-terror-and-music-for-palestine-2026-10-27-143000-81735",
-   "booking_url": "https://www.eventbrite.com/e/galloween-a-night-of-terror-and-music-for-palestine-tickets-2002474240358?aff=oddtdtcreator",
-   "category": "Music",
-   "id": "268a64e46fea",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Silent Disco On Tuesdays",
-   "date": "2026-10-27",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2026-10-27-200000-81455",
-   "category": "Music",
-   "id": "e6ac149b0447",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "The Cable",
-   "date": "2026-10-27",
-   "url": "https://tht.ie/4791/the-cable",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173666427",
-   "category": "Theatre",
-   "id": "095239059d98",
-   "first_seen": "2026-09-27"
   },
   {
    "source": "tht",
@@ -283,6 +230,19 @@
    "category": "Music",
    "id": "486ae9bc5111",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Open Deck",
+   "date": "2026-10-29",
+   "time": "11pm",
+   "url": "https://roisindubh.net/listings/open-deck-2026-10-29-230000-81865",
+   "category": "Music",
+   "id": "6bf0976b4c1c",
+   "first_seen": "2026-10-28"
   },
   {
    "source": "roisindubh",
@@ -3684,6 +3644,18 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "taibhdhearc",
+   "venue": "An Taibhdhearc",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Toby Shaer, Archie Moss & Jack Warnock",
+   "date": "2027-01-24",
+   "url": "https://www.antaibhdhearc.com/toby-shaer-archie-moss-jack-warnock",
+   "category": "Theatre, Irish Language",
+   "id": "f4971cf27097",
+   "first_seen": "2026-10-28"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -4019,6 +3991,19 @@
    "category": "Music",
    "id": "ac964b8bef50",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Muireann Bradley – Blackwood Pew Tour 2027",
+   "date": "2027-02-06",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/muireann-bradley-%E2%80%93-blackwood-pew-tour-2027-2027-02-06-200000-81860",
+   "category": "Music",
+   "id": "23bdb13593a8",
+   "first_seen": "2026-10-28"
   },
   {
    "source": "roisindubh",
@@ -4592,6 +4577,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "roisindubh",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Imelda May : Raised on Songs & Stories: The Lock In",
+   "date": "2027-03-06",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/imelda-may-raised-on-songs-and-stories-the-lock-in-2027-03-06-190000-81850",
+   "category": "Music",
+   "id": "b0660377e76f",
+   "first_seen": "2026-10-28"
+  },
+  {
    "source": "monroes",
    "venue": "Monroe's Live",
    "town": "Galway City",
@@ -5024,6 +5022,19 @@
    "category": "Theatre",
    "id": "304967860af0",
    "first_seen": "2026-10-24"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Drag Wounds Present Apes Of The State & Pigeon Pit",
+   "date": "2027-04-02",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/drag-wounds-present-apes-of-the-state-and-pigeon-pit-2027-04-02-200000-81864",
+   "category": "Music",
+   "id": "04da66d55cdb",
+   "first_seen": "2026-10-28"
   },
   {
    "source": "roisindubh",
