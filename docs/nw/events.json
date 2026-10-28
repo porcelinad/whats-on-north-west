@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T02:06Z",
+ "generated_at": "2026-10-28T02:17Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "The Model"
@@ -9,24 +9,24 @@
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-10-25T01:11Z",
   "hawkswell": "2026-10-26T01:12Z",
-  "craftmonth_donegal": "2026-10-25T01:11Z",
-  "craftmonth_derry": "2026-10-25T01:11Z",
-  "craftmonth_derry_city": "2026-10-25T01:11Z",
-  "craftmonth_leitrim": "2026-10-25T01:11Z",
-  "craftmonth_sligo": "2026-10-25T01:11Z",
-  "craftmonth_tyrone": "2026-10-25T01:11Z",
-  "craftmonth_fermanagh": "2026-10-25T01:11Z",
-  "heritageweek": "2026-10-25T01:11Z",
+  "craftmonth_donegal": "2026-10-28T02:17Z",
+  "craftmonth_derry": "2026-10-28T02:17Z",
+  "craftmonth_derry_city": "2026-10-28T02:17Z",
+  "craftmonth_leitrim": "2026-10-28T02:17Z",
+  "craftmonth_sligo": "2026-10-28T02:17Z",
+  "craftmonth_tyrone": "2026-10-28T02:17Z",
+  "craftmonth_fermanagh": "2026-10-28T02:17Z",
+  "heritageweek": "2026-10-28T02:17Z",
   "allingham": "2026-10-27T02:06Z",
-  "fomhair": "2026-10-25T01:11Z"
+  "fomhair": "2026-10-28T02:17Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 8,
+  "abbey": 9,
   "eventbrite_donegal": 0,
-  "mcgrorys": 1,
+  "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
   "hawkswell": 0,
@@ -42,7 +42,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 29,
+  "themodel": 30,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -382,58 +382,6 @@
    "category": null,
    "id": "8f2c216d0ce2",
    "first_seen": "2026-10-20"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Fusion After Dark",
-   "date": "2026-10-27",
-   "url": "https://angrianan.com/event/fusion-after-dark/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873667277/events/128663916/seats?zone=Auditorium",
-   "category": "Kids/Family",
-   "id": "3254d6d0cefe",
-   "first_seen": "2026-08-22"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Carrie",
-   "date": "2026-10-27",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/carrie",
-   "category": null,
-   "id": "1458a8faafa1",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Mike Massé",
-   "date": "2026-10-27",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=mike-masse",
-   "category": "Music",
-   "id": "cd8ff5ae1879",
-   "first_seen": "2026-07-21"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Leitrim School of Art N41 E8HO",
-   "town": "Ballinamore",
-   "county": "Leitrim",
-   "title": "Halloween Camp, Ballinamore, 5-12 yrs, Tue 27th & Wed 28th Oct, 10am-2pm.",
-   "date": "2026-10-27",
-   "time": "10:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/halloween-camp-ballinamore-5-12-yrs-tue-27th-wed-28th-oct-10am-2pm/",
-   "category": "Kids/Family",
-   "id": "e7e0e892e41d",
-   "first_seen": "2026-10-19"
   },
   {
    "source": "hawkswell",
@@ -913,6 +861,19 @@
    "category": "Film",
    "id": "16e25bf54ccb",
    "first_seen": "2026-09-10"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Halloween Fun at Strule Arts Centre",
+   "date": "2026-10-31",
+   "time": "6:00pm",
+   "url": "https://struleartscentre.co.uk/show/halloween-fun-at-strule-arts-centre/",
+   "category": "Kids/Family",
+   "id": "2ff5cbc6cc2e",
+   "first_seen": "2026-10-28"
   },
   {
    "source": "strule",
@@ -2660,7 +2621,7 @@
    "date": "2026-12-04",
    "end_date": "2026-12-06",
    "url": "https://angrianan.com/event/all-ireland-one-act-drama-finals-2026/",
-   "booking_url": "https://ticketsolve.queue-it.net/?c=ticketsolve&e=angriananonsale08&t=https://angrianan-onsale.ticketsolve.com/shows/873667953/events",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873667953",
    "category": "Theatre",
    "id": "5b0fd0b9585e",
    "first_seen": "2026-08-07"
@@ -4202,6 +4163,7 @@
    "title": "Imelda May – Raised on Songs And Stories: The Lock In",
    "date": "2027-03-14",
    "url": "https://angrianan.com/event/imelda-may-raised-on-songs-and-stories-the-lock-in/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873668301",
    "category": "Music",
    "id": "b1e982d8dc73",
    "first_seen": "2026-10-23"
@@ -5134,6 +5096,32 @@
    "category": "Kids/Family",
    "id": "8c42851b33ea",
    "first_seen": "2026-10-27"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Lillie's Cocktail Bar Sligo",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "SLIGO- Megan McKay is a \"Loveable Chancer\"",
+   "date": "2027-10-20",
+   "time": "19:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/sligo-megan-mckay-is-a-loveable-chancer/",
+   "category": null,
+   "id": "177b291d306f",
+   "first_seen": "2026-10-28"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Sonny McSwine's, Letterkenny - McCafferty's Bar Group,",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "The Big Student Mystery Tour 2026",
+   "date": "2027-10-20",
+   "time": "17:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-big-student-mystery-tour-2026/",
+   "category": null,
+   "id": "d79270d8c797",
+   "first_seen": "2026-10-28"
   }
  ]
 }
