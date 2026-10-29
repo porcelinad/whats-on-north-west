@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T02:37Z",
+ "generated_at": "2026-10-29T02:55Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 11
+  "galway_city_museum": 12
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -81,29 +81,6 @@
    "first_seen": "2026-10-18"
   },
   {
-   "source": "galway_city_museum",
-   "venue": "Galway City Museum",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Family Workshop: Spooky Halloween in LEGO®",
-   "date": "2026-10-28",
-   "time": "11:30am & 2pm",
-   "url": "https://galwaycitymuseum.ie/event/family-workshop-spooky-halloween-in-lego/",
-   "sessions": [
-    {
-     "time": "11:30am",
-     "url": "https://galwaycitymuseum.ie/event/family-workshop-spooky-halloween-in-lego/"
-    },
-    {
-     "time": "2pm",
-     "url": "https://galwaycitymuseum.ie/event/family-workshop-spooky-halloween-in-lego-2/"
-    }
-   ],
-   "category": "Workshop, Kids/Family",
-   "id": "39fb5116bdb2",
-   "first_seen": "2026-10-04"
-  },
-  {
    "source": "mick_lally",
    "venue": "Mick Lally Theatre",
    "town": "Galway City",
@@ -115,46 +92,6 @@
    "category": "Theatre",
    "id": "e2a0b5e207a0",
    "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Brake Loose",
-   "date": "2026-10-28",
-   "time": "7pm",
-   "url": "https://roisindubh.net/listings/brake-loose-2026-10-28-190000-81606",
-   "booking_url": "https://www.eventbrite.ie/e/brake-loose-live-roisin-dubh-galway-talllon-infared-big-nothing-tickets-1987868969600",
-   "category": "Music",
-   "id": "68af672a20a8",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Delivery",
-   "date": "2026-10-28",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/delivery-2026-10-28-200000-81325",
-   "category": "Music",
-   "id": "c126d7058674",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "The Scenes Between - An Echo Acting Showcase",
-   "date": "2026-10-28",
-   "url": "https://tht.ie/4896/the-scenes-between-an-echo-acting-showcase",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668880",
-   "category": "Theatre",
-   "id": "38ba04d1b3c8",
-   "first_seen": "2026-09-27"
   },
   {
    "source": "taibhdhearc",
@@ -249,6 +186,19 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
+   "title": "Sadhbh Keane",
+   "date": "2026-10-29",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/sadhbh-keane-2026-10-29-200000-81574",
+   "category": "Music",
+   "id": "92d461c4e5ae",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
    "title": "So Fetch - 2000s Halloween Party",
    "date": "2026-10-29",
    "time": "11pm",
@@ -256,19 +206,6 @@
    "sold_out": true,
    "category": "Music",
    "id": "58c3e0c28d20",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Sadhbh Keane",
-   "date": "2026-10-29",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/sadhbh-keane-2026-10-29-200000-81574",
-   "category": "Music",
-   "id": "92d461c4e5ae",
    "first_seen": "2026-10-04"
   },
   {
@@ -535,6 +472,19 @@
    "category": "Film",
    "id": "d3edded67513",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "A Night For The Dogs: Madra & Friends",
+   "date": "2026-11-01",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/a-night-for-the-dogs-madra-and-friends-2026-11-01-200000-81863",
+   "category": "Music",
+   "id": "68149f7fd21c",
+   "first_seen": "2026-10-29"
   },
   {
    "source": "roisindubh",
@@ -1620,6 +1570,19 @@
    "category": "Music",
    "id": "e4d196fa9433",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "gac",
+   "venue": "Galway Arts Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Gallery Lates ⁄",
+   "date": "2026-11-19",
+   "time": "5–9pm",
+   "url": "https://www.galwayartscentre.ie/whats-on/late-opening-veruca-salt/",
+   "category": "Gallery Lates",
+   "id": "1789555dd6fd",
+   "first_seen": "2026-10-29"
   },
   {
    "source": "gac",
@@ -3590,6 +3553,19 @@
    "category": "Music",
    "id": "1f8798990200",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Deer Tick",
+   "date": "2027-01-23",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/deer-tick-2027-01-23-200000-81866",
+   "category": "Music",
+   "id": "0a552d46f093",
+   "first_seen": "2026-10-29"
   },
   {
    "source": "roisindubh",
