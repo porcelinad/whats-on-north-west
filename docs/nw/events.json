@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T02:27Z",
+ "generated_at": "2026-10-30T02:37Z",
  "failed_sources": [
   "The Model"
  ],
@@ -16,14 +16,14 @@
   "craftmonth_tyrone": "2026-10-28T02:17Z",
   "craftmonth_fermanagh": "2026-10-28T02:17Z",
   "heritageweek": "2026-10-28T02:17Z",
-  "allingham": "2026-10-27T02:06Z",
+  "allingham": "2026-10-30T02:37Z",
   "fomhair": "2026-10-28T02:17Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -41,7 +41,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 31,
+  "themodel": 32,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -383,178 +383,6 @@
    "first_seen": "2026-09-04"
   },
   {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Skull Forge: Mask Making Workshop",
-   "date": "2026-10-28",
-   "end_date": "2026-10-29",
-   "url": "https://www.derryplayhouse.co.uk/event/skull-forge-mask-making-workshop",
-   "category": null,
-   "id": "29ec9b0c34ca",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Fireman Sam Live: The Lost Pirate Treasure",
-   "date": "2026-10-29",
-   "end_date": "2026-10-29",
-   "url": "https://angrianan.com/event/fireman-sam-live-the-lost-pirate-treasure/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666102",
-   "category": "Kids/Family",
-   "id": "e824e6547a44",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The Cable",
-   "date": "2026-10-29",
-   "url": "https://angrianan.com/event/the-cable/",
-   "booking_url": "https://angrianan.ticketsolve.com/shows/873664052/events",
-   "category": "Drama",
-   "id": "610e57e6664b",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "The Shining",
-   "date": "2026-10-29",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/the-shining",
-   "category": null,
-   "id": "e09bad1f24a9",
-   "first_seen": "2026-10-23"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Duke Special – ’Songs from the deep forest’ 20th Anniversary Tour with special guest Niamh Bury",
-   "date": "2026-10-29",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/duke-special",
-   "category": "Music",
-   "id": "c5158578af93",
-   "first_seen": "2026-10-23"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Joes Bar",
-   "town": "Strabane",
-   "county": "Tyrone",
-   "title": "PADDY RAFF AT JOES BAR",
-   "date": "2026-10-29",
-   "time": "19:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/paddy-raff-at-joes-bar/",
-   "category": null,
-   "id": "aae1201872f6",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The Exorcist | Halloween Nerve Cinema",
-   "date": "2026-10-29",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/the-exorcist-extended-directors-cut-halloween-nerve-cinema",
-   "category": "Film",
-   "merged_from": [
-    "nervecentre"
-   ],
-   "id": "7dc67c98b6a9",
-   "first_seen": "2026-10-24"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Cinema: Scream (30th Anniversary Screening)",
-   "date": "2026-10-29",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-cinema-scream-30th-anniversary-screening/",
-   "category": "Film",
-   "id": "86d0a283152c",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Roe Valley Arts and Cultural Centre",
-   "town": "Limavady",
-   "county": "Derry",
-   "title": "Enchanted Forest Dioramas for 7-11yrs",
-   "date": "2026-10-29",
-   "time": "13:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/enchanted-forest-dioramas-for-7-11yrs/",
-   "category": "Kids/Family",
-   "id": "8349d55fa812",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Jack Keogh in Concert with Special Guest Hugo Duncan",
-   "date": "2026-10-29",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/jack-keogh-in-concert-with-special-guest-hugo-duncan/",
-   "category": "Music",
-   "id": "f56cfb83961b",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "THE MAYFLOWER COMMUNITY CENTRE",
-   "town": "Drumshanbo",
-   "county": "Leitrim",
-   "title": "Halloween Camp, Drumshanbo, 5-12 yrs, Thu 29th & Fri 30th Oct, 10am-2pm.",
-   "date": "2026-10-29",
-   "time": "10:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/halloween-camp-drumshanbo-5-12-yrs-thu-29th-fri-30th-oct-10am-2pm/",
-   "category": "Kids/Family",
-   "id": "b2ef44adc8d8",
-   "first_seen": "2026-10-19"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Who Shot Queen Medb? – The Story of the Táin & Cruachán Aí",
-   "date": "2026-10-29",
-   "url": "https://www.thedock.ie/whats-on/who-shot-queen-medb",
-   "category": "Literature",
-   "id": "7f4d6ce2d5d7",
-   "first_seen": "2026-09-19"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Film screening: Rose of Nevada",
-   "date": "2026-10-29",
-   "time": "8:00 pm",
-   "url": "/?event=sligo-film-society-2026-27&event_date=2026-10-29",
-   "category": null,
-   "id": "c67bad55249b",
-   "first_seen": "2026-09-26"
-  },
-  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -668,7 +496,7 @@
    "title": "Stardust – Dementia Friendly",
    "date": "2026-10-30",
    "time": "11:00am",
-   "url": "https://struleartscentre.co.uk/show/stardust-dementia-friendly/",
+   "url": "https://struleartscentre.co.uk/show/stardust-dementia-friendly-2/",
    "category": "Film",
    "id": "d21ffa738e9c",
    "first_seen": "2026-09-03"
@@ -3562,6 +3390,19 @@
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
    "county": "Fermanagh",
+   "title": "Music in Fermanagh presents Cahal Masterson Pianist",
+   "date": "2027-01-28",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/cahal-masterson-pianist/",
+   "category": "Music",
+   "id": "9fe276d05a06",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
    "title": "David James & Friends in Concert",
    "date": "2027-01-29",
    "time": "8:00pm",
@@ -3582,6 +3423,19 @@
    "category": "Music/Comedy",
    "id": "2d4c518da088",
    "first_seen": "2026-08-18"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "A Burns Night with a Difference",
+   "date": "2027-01-29",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/a-burns-night-with-a-difference/",
+   "category": "Music",
+   "id": "6b71661401c8",
+   "first_seen": "2026-10-30"
   },
   {
    "source": "an_grianan",
@@ -5193,6 +5047,19 @@
    "category": null,
    "id": "6d48d56f4602",
    "first_seen": "2026-10-29"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Flowerfield Arts Centre",
+   "town": "Coleraine",
+   "county": "Derry",
+   "title": "Exhibition on Screen | Tokyo Stories",
+   "date": "2027-10-22",
+   "time": "19:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/exhibition-on-screen-tokyo-stories/",
+   "category": null,
+   "id": "f4be37b92979",
+   "first_seen": "2026-10-30"
   }
  ]
 }
