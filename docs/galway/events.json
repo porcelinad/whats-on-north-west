@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T02:55Z",
+ "generated_at": "2026-10-30T02:59Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 12
+  "galway_city_museum": 13
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -51,175 +51,6 @@
    "category": "Theatre, Irish Language",
    "id": "862da46ddf97",
    "first_seen": "2026-10-18"
-  },
-  {
-   "source": "tht",
-   "venue": "Black Box Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Mother Courage and her Children",
-   "date": "2026-10-28",
-   "end_date": "2026-10-29",
-   "url": "https://tht.ie/4845/mother-courage-and-her-children",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668218",
-   "category": "Theatre, Kids/Family",
-   "id": "85141b8abbdb",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "tht",
-   "venue": "Circle of Life Garden, Salthill",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Rituals of the Sídhe",
-   "date": "2026-10-28",
-   "end_date": "2026-10-29",
-   "url": "https://tht.ie/4927/rituals-of-the-sidhe",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669268",
-   "category": "Theatre",
-   "id": "4016170ba1ec",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "mick_lally",
-   "venue": "Mick Lally Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "DEAD AIR by Alfrun Rose",
-   "date": "2026-10-28",
-   "end_date": "2026-10-29",
-   "url": "https://www.druid.ie/about/the-mick-lally-theatre/whats-on/dead-air-by-alfrun-rose",
-   "category": "Theatre",
-   "id": "e2a0b5e207a0",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "taibhdhearc",
-   "venue": "An Taibhdhearc",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "An Taibhse (film)",
-   "date": "2026-10-29",
-   "time": "7pm",
-   "url": "https://antaibhdhearc.ticketsolve.com/shows/873691790/events",
-   "category": "Theatre, Irish Language",
-   "id": "1dfd1614846e",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "galway_city_museum",
-   "venue": "Galway City Museum",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Museum Lates",
-   "date": "2026-10-29",
-   "time": "5pm",
-   "url": "https://galwaycitymuseum.ie/event/museum-lates-3/",
-   "category": null,
-   "id": "e671b72de5ad",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "galway_city_museum",
-   "venue": "Galway City Museum",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Storytelling: Spooky Samhain Tales",
-   "date": "2026-10-29",
-   "time": "1:30pm & 2:15pm",
-   "url": "https://galwaycitymuseum.ie/event/storytelling-spooky-samhain-tales/",
-   "sessions": [
-    {
-     "time": "1:30pm",
-     "url": "https://galwaycitymuseum.ie/event/storytelling-spooky-samhain-tales/"
-    },
-    {
-     "time": "2:15pm",
-     "url": "https://galwaycitymuseum.ie/event/storytelling-spooky-samhain-tales-2/"
-    }
-   ],
-   "category": "Storytelling",
-   "id": "533a8c706499",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "galway_city_museum",
-   "venue": "Galway City Museum",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Workshop: Spooky Stories & Art",
-   "date": "2026-10-29",
-   "time": "11am",
-   "url": "https://galwaycitymuseum.ie/event/workshop-spooky-stories-art/",
-   "category": "Workshop",
-   "id": "09abd8103337",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "The Beat",
-   "date": "2026-10-29",
-   "time": "Doors 7.30pm",
-   "url": "https://monroes.ie/products/the-beat-1",
-   "category": "Music",
-   "id": "486ae9bc5111",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Open Deck",
-   "date": "2026-10-29",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/open-deck-2026-10-29-230000-81865",
-   "category": "Music",
-   "id": "6bf0976b4c1c",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Sadhbh Keane",
-   "date": "2026-10-29",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/sadhbh-keane-2026-10-29-200000-81574",
-   "category": "Music",
-   "id": "92d461c4e5ae",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "So Fetch - 2000s Halloween Party",
-   "date": "2026-10-29",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/so-fetch-2000s-halloween-party-2026-10-29-230000-81580",
-   "sold_out": true,
-   "category": "Music",
-   "id": "58c3e0c28d20",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Hysterically Shopping!to some sort of end...",
-   "date": "2026-10-29",
-   "url": "https://tht.ie/4864/hysterically-shoppingto-some-sort-of-end",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668651",
-   "category": "Opera",
-   "id": "619778ca2cc9",
-   "first_seen": "2026-09-27"
   },
   {
    "source": "galway_city_museum",
@@ -608,13 +439,13 @@
    "venue": "Mick Lally Theatre",
    "town": "Galway City",
    "county": "Galway",
-   "title": "4.48 Psychosis by Sarah Kane",
+   "title": "What's On",
    "date": "2026-11-04",
    "end_date": "2026-11-07",
-   "url": "https://www.druid.ie/about/the-mick-lally-theatre/whats-on/4-48-psychosis",
+   "url": "https://www.druid.ie/about/the-mick-lally-theatre/whats-on",
    "category": "Theatre",
-   "id": "905e73c9fe39",
-   "first_seen": "2026-10-04"
+   "id": "c7d6f09c03a3",
+   "first_seen": "2026-10-30"
   },
   {
    "source": "roisindubh",
@@ -2410,6 +2241,19 @@
    "category": "Music",
    "id": "e5a39610b444",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh (Top Bar)",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Folk-ing Girl Power",
+   "date": "2026-12-05",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/folk-ing-girl-power-2026-12-05-200000-81868",
+   "category": "Music",
+   "id": "e9526ac38538",
+   "first_seen": "2026-10-30"
   },
   {
    "source": "roisindubh",
@@ -4843,6 +4687,19 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
+   "title": "OXIDE GHOSTS: THE BRASS EYE TAPES + Q&A",
+   "date": "2027-03-22",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/oxide-ghosts-the-brass-eye-tapes-q-and-a-2027-03-22-190000-81859",
+   "category": "Comedy",
+   "id": "c23edeeffd16",
+   "first_seen": "2026-10-30"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
    "title": "Seann Walsh: This Is Torture",
    "date": "2027-03-23",
    "time": "7:30pm",
@@ -5635,6 +5492,19 @@
    "category": "Music",
    "id": "16ce99ad76b6",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Neil Delamere - Neil's On Wheels",
+   "date": "2027-05-28",
+   "url": "https://tht.ie/4942/neil-delamere-neils-on-wheels",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173667413",
+   "category": "Comedy",
+   "id": "db105706f6d8",
+   "first_seen": "2026-10-30"
   },
   {
    "source": "roisindubh",
