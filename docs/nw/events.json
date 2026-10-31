@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T02:37Z",
+ "generated_at": "2026-10-31T02:24Z",
  "failed_sources": [
   "The Model"
  ],
@@ -8,22 +8,22 @@
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-10-25T01:11Z",
   "hawkswell": "2026-10-29T02:27Z",
-  "craftmonth_donegal": "2026-10-28T02:17Z",
-  "craftmonth_derry": "2026-10-28T02:17Z",
-  "craftmonth_derry_city": "2026-10-28T02:17Z",
-  "craftmonth_leitrim": "2026-10-28T02:17Z",
-  "craftmonth_sligo": "2026-10-28T02:17Z",
-  "craftmonth_tyrone": "2026-10-28T02:17Z",
-  "craftmonth_fermanagh": "2026-10-28T02:17Z",
-  "heritageweek": "2026-10-28T02:17Z",
+  "craftmonth_donegal": "2026-10-31T02:24Z",
+  "craftmonth_derry": "2026-10-31T02:24Z",
+  "craftmonth_derry_city": "2026-10-31T02:24Z",
+  "craftmonth_leitrim": "2026-10-31T02:24Z",
+  "craftmonth_sligo": "2026-10-31T02:24Z",
+  "craftmonth_tyrone": "2026-10-31T02:24Z",
+  "craftmonth_fermanagh": "2026-10-31T02:24Z",
+  "heritageweek": "2026-10-31T02:24Z",
   "allingham": "2026-10-30T02:37Z",
-  "fomhair": "2026-10-28T02:17Z"
+  "fomhair": "2026-10-31T02:24Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 1,
+  "abbey": 2,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -41,7 +41,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 32,
+  "themodel": 33,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -356,20 +356,6 @@
  },
  "events": [
   {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Trick or Treat Street – A Halloween Experience at The Art Deco",
-   "date": "2026-10-26",
-   "end_date": "2026-10-30",
-   "time": "Various times",
-   "url": "https://www.hawkswell.com/whats-on/shows/trick-or-treat-street",
-   "category": null,
-   "id": "8f2c216d0ce2",
-   "first_seen": "2026-10-20"
-  },
-  {
    "source": "st_columbs",
    "venue": "St Columb's Hall",
    "town": "Derry",
@@ -381,151 +367,6 @@
    "category": null,
    "id": "1cef55c33bc9",
    "first_seen": "2026-09-04"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The Love Hungry Farmer by John B Keane",
-   "date": "2026-10-30",
-   "url": "https://angrianan.com/event/the-love-hungry-farmer-by-john-b-keane/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873659345/events/128625357/seats?zone=Default",
-   "category": "Drama",
-   "id": "fdac0ebe58ed",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Scream",
-   "date": "2026-10-30",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/scream",
-   "category": null,
-   "id": "4eedc8a02aa8",
-   "first_seen": "2026-10-26"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Crimeworld LIVE: The Rise of the Dapper Don",
-   "date": "2026-10-30",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/crimeworld-live-the-rise-of-the-dapper-don",
-   "category": "Spoken Word",
-   "id": "8ca61e14adba",
-   "first_seen": "2026-10-23"
-  },
-  {
-   "source": "mcgrorys",
-   "venue": "McGrory's Hotel",
-   "town": "Culdaff",
-   "county": "Donegal",
-   "title": "Johnny Brady",
-   "date": "2026-10-30",
-   "url": "https://www.mcgrorys.ie/entertainment/78-174/",
-   "category": "Music",
-   "id": "1beba8f5fe41",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Labyrinth (4K Restoration) | Halloween Nerve Cinema",
-   "date": "2026-10-30",
-   "time": "4:00PM",
-   "url": "https://nervecentre.org/whats-on/labyrinth-halloween-nerve-cinema",
-   "category": "Film",
-   "merged_from": [
-    "nervecentre"
-   ],
-   "id": "43957cc83e9d",
-   "first_seen": "2026-09-10"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The Shining (Extended Cut) | Halloween Nerve Cinema",
-   "date": "2026-10-30",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/the-shining",
-   "category": "Film",
-   "id": "2e7338d028d2",
-   "first_seen": "2026-09-10"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC MUSIC: Martin Taylor",
-   "date": "2026-10-30",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/martin-taylor-concert/",
-   "category": "Music",
-   "id": "4543d9e7da58",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Rock Rising – The Supreme Classic Rock Show",
-   "date": "2026-10-30",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/rock-rising-the-supreme-classic-rock-show-3/",
-   "category": "Music",
-   "id": "21e6cb0063b2",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Stardust – Dementia Friendly",
-   "date": "2026-10-30",
-   "time": "11:00am",
-   "url": "https://struleartscentre.co.uk/show/stardust-dementia-friendly-2/",
-   "category": "Film",
-   "id": "d21ffa738e9c",
-   "first_seen": "2026-09-03"
-  },
-  {
-   "source": "fomhair",
-   "venue": "The Big Top Donegal",
-   "town": "Gaoth Dobhair",
-   "county": "Donegal",
-   "title": "Fomhair Festival presents FreakNight 2026",
-   "date": "2026-10-30",
-   "time": "6pm",
-   "url": "https://www.eventbrite.co.uk/e/fomhair-festival-presents-freaknight-2026-tickets-2002822663501?aff=oddtdtcreator&keep_tld=true",
-   "booking_url": "https://www.eventbrite.co.uk/e/fomhair-festival-presents-freaknight-2026-tickets-2002822663501?aff=oddtdtcreator&keep_tld=true",
-   "category": null,
-   "id": "3ec96660a3ae",
-   "first_seen": "2026-10-19"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Pebbledash – Salt, Glass & Spit Tour",
-   "date": "2026-10-30",
-   "url": "https://www.thedock.ie/whats-on/pebbledash",
-   "category": "Music",
-   "id": "f47128fa554a",
-   "first_seen": "2026-09-20"
   },
   {
    "source": "playhouse",
@@ -626,7 +467,7 @@
    "title": "Teddy On A Broomstick",
    "date": "2026-10-31",
    "time": "10:00am",
-   "url": "https://struleartscentre.co.uk/show/teddy-on-a-broomstick/",
+   "url": "https://struleartscentre.co.uk/show/teddy-on-a-broomstick-2/",
    "category": "Kids/Family",
    "id": "04f2f9a622e3",
    "first_seen": "2026-08-01"
@@ -639,7 +480,7 @@
    "title": "The Princess & The Goblin",
    "date": "2026-10-31",
    "time": "11:30am",
-   "url": "https://struleartscentre.co.uk/show/the-princess-the-goblin/",
+   "url": "https://struleartscentre.co.uk/show/the-princess-the-goblin-2/",
    "category": "Kids/Family",
    "id": "91651aa5af05",
    "first_seen": "2026-08-01"
@@ -1781,6 +1622,21 @@
    "first_seen": "2026-10-08"
   },
   {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The Name Of Things: Finding Our Lost Nature Words (Morning Session)",
+   "date": "2026-11-14",
+   "url": "https://www.derryplayhouse.co.uk/event/the-name-of-things-finding-our-lost-nature-words-morning-session",
+   "merged_from": [
+    "playhouse"
+   ],
+   "category": null,
+   "id": "57336247eca7",
+   "first_seen": "2026-10-31"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -1986,6 +1842,18 @@
    "category": "Music",
    "id": "56a27cfbf3d4",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "For the Craic – Book launch with John McDwyer",
+   "date": "2026-11-20",
+   "url": "https://www.thedock.ie/whats-on/for-the-craic",
+   "category": "Theatre",
+   "id": "6eed0646759c",
+   "first_seen": "2026-10-31"
   },
   {
    "source": "playhouse",
@@ -4094,6 +3962,19 @@
    "first_seen": "2026-08-19"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Ulster Orchestra : On Your Doorstep 2027",
+   "date": "2027-03-19",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/ulster-orchestra-on-your-doorstep-2027/",
+   "category": "Music",
+   "id": "9b335e6e916c",
+   "first_seen": "2026-10-31"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -4313,6 +4194,18 @@
    "category": "Comedy",
    "id": "a860d57a54cb",
    "first_seen": "2026-07-17"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Enniskillen Golf Club Presents: Stepping Out",
+   "date": "2027-04-17",
+   "url": "https://ardhowen.com/show/enniskillen-golf-club-presents-stepping-out/",
+   "category": "Classical Drama",
+   "id": "e77c9842ecbf",
+   "first_seen": "2026-10-31"
   },
   {
    "source": "rcc",
@@ -4612,6 +4505,19 @@
    "category": "Music",
    "id": "57655b729247",
    "first_seen": "2026-09-17"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Ryan Sheridan | The Paper Sails Tour",
+   "date": "2027-06-05",
+   "time": "8:00PM",
+   "url": "https://nervecentre.org/whats-on/ryan-sheridan-the-paper-sails-tour",
+   "category": "Music/Comedy",
+   "id": "3aedd1fa619e",
+   "first_seen": "2026-10-31"
   },
   {
    "source": "strule",
@@ -5060,6 +4966,19 @@
    "category": null,
    "id": "f4be37b92979",
    "first_seen": "2026-10-30"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Mount Errigal Hotel",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Donegal County Council , PEACEPLUS Capacity Building and Networking Event",
+   "date": "2027-10-23",
+   "time": "09:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/donegal-county-council-peaceplus-capacity-building-and-networking-event/",
+   "category": null,
+   "id": "ca9d62b36899",
+   "first_seen": "2026-10-31"
   }
  ]
 }
