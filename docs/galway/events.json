@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T02:59Z",
+ "generated_at": "2026-10-31T02:45Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 13
+  "galway_city_museum": 14
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -37,152 +37,6 @@
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668978",
    "category": "Exhibition",
    "id": "35377f309420",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "taibhdhearc",
-   "venue": "An Taibhdhearc",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Hallowe’en Workshop",
-   "date": "2026-10-27",
-   "end_date": "2026-10-30",
-   "url": "https://www.antaibhdhearc.com/ceardlann-dramaiochta",
-   "category": "Theatre, Irish Language",
-   "id": "862da46ddf97",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "galway_city_museum",
-   "venue": "Galway City Museum",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Storytelling: Spooky Samhain Tales",
-   "date": "2026-10-30",
-   "time": "1:30pm & 2:15pm",
-   "url": "https://galwaycitymuseum.ie/event/storytelling-spooky-samhain-tales-4/",
-   "sessions": [
-    {
-     "time": "1:30pm",
-     "url": "https://galwaycitymuseum.ie/event/storytelling-spooky-samhain-tales-4/"
-    },
-    {
-     "time": "2:15pm",
-     "url": "https://galwaycitymuseum.ie/event/storytelling-spooky-samhain-tales-5/"
-    }
-   ],
-   "category": "Storytelling",
-   "id": "2bfe0b886c0a",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "galway_city_museum",
-   "venue": "Galway City Museum",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Workshop: Traditional Halloween Masks",
-   "date": "2026-10-30",
-   "time": "11am",
-   "url": "https://galwaycitymuseum.ie/event/workshop-traditional-halloween-masks/",
-   "category": "Workshop",
-   "id": "dde3526f7e3c",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "leisureland",
-   "venue": "Leisureland",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Katzeye The Tribute Experience",
-   "date": "2026-10-30",
-   "time": "7:30pm",
-   "url": "https://www.leisureland.ie/calendar/katzye-the-tribute-experience/",
-   "category": "Music",
-   "id": "9880a438b063",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Daoirí Farrell",
-   "date": "2026-10-30",
-   "time": "Doors 7pm",
-   "url": "https://monroes.ie/products/daoiri-farrell-2",
-   "category": "Music",
-   "id": "21d0dc9e3ab0",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Eamonn’s Vision",
-   "date": "2026-10-30",
-   "time": "Doors 9pm",
-   "url": "https://monroes.ie/products/eamonns-vision",
-   "category": "Music",
-   "id": "5f006047e638",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Dubh Me Do",
-   "date": "2026-10-30",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/dubh-me-do-2026-10-30-230000-81703",
-   "category": "Music",
-   "id": "4ca8877faebe",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Hallowe'en Sisco",
-   "date": "2026-10-30",
-   "time": "9pm",
-   "url": "https://roisindubh.net/listings/halloween-sisco-2026-10-30-210000-81688",
-   "sold_out": true,
-   "category": "Music",
-   "id": "d543cd306398",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Fireman Sam Live",
-   "date": "2026-10-30",
-   "url": "https://tht.ie/4848/fireman-sam-live",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668321",
-   "category": "Kids/Family",
-   "id": "ceb6e99994ed",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Foy Vance: World Tour",
-   "date": "2026-10-30",
-   "url": "https://tht.ie/4714/foy-vance-world-tour",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173665141",
-   "category": "Theatre",
-   "time": "6pm",
-   "merged_from": [
-    "roisindubh",
-    "tht"
-   ],
-   "id": "dcc25085244e",
    "first_seen": "2026-09-27"
   },
   {
@@ -642,8 +496,8 @@
    "county": "Galway",
    "title": "Complete Madness : Ska Tribute",
    "date": "2026-11-07",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/complete-madness-ska-tribute-2026-11-07-200000-81730",
+   "time": "7:30pm",
+   "url": "https://roisindubh.net/listings/complete-madness-ska-tribute-2026-11-07-193000-81730",
    "booking_url": "https://www.eventbrite.ie/e/complete-madness-tickets-1996075286916",
    "category": "Music",
    "id": "8730fdd8ab93",
