@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T02:45Z",
+ "generated_at": "2026-11-01T02:38Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 14
+  "galway_city_museum": 15
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -25,112 +25,6 @@
   "https://tht.ie/4927/rituals-of-the-sidhe": "Circle of Life Garden, Salthill"
  },
  "events": [
-  {
-   "source": "tht",
-   "venue": "St. Nicholas Church",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "TIME by Luxmuralis",
-   "date": "2026-10-23",
-   "end_date": "2026-10-31",
-   "url": "https://tht.ie/4915/time-by-luxmuralis",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668978",
-   "category": "Exhibition",
-   "id": "35377f309420",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "galway_city_museum",
-   "venue": "Galway City Museum",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Talk & Taste Event: Traditional Halloween Fare",
-   "date": "2026-10-31",
-   "time": "2pm",
-   "url": "https://galwaycitymuseum.ie/event/talk-taste-event-traditional-halloween-fare/",
-   "category": "Talks",
-   "id": "ace1173f9452",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Fergal D'Arcy: Zombie Nation",
-   "date": "2026-10-31",
-   "time": "Doors 11pm",
-   "url": "https://monroes.ie/products/fergal-darcy-zombie-nation-1",
-   "category": "Music",
-   "id": "88b169a8fe4e",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "And So I Watch You From Afar & Caspian",
-   "date": "2026-10-31",
-   "time": "7pm",
-   "url": "https://roisindubh.net/listings/and-so-i-watch-you-from-afar-and-caspian-2026-10-31-190000-81081",
-   "category": "Music",
-   "id": "aa5ea240ef11",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Halloween Silent Disco For Kids",
-   "date": "2026-10-31",
-   "time": "12pm",
-   "url": "https://roisindubh.net/listings/halloween-silent-disco-for-kids-2026-10-31-120000-81678",
-   "sold_out": true,
-   "category": "Music, Kids/Family",
-   "id": "ecf0d5ac5cd6",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Last Orders",
-   "date": "2026-10-31",
-   "time": "11:30pm",
-   "url": "https://roisindubh.net/listings/last-orders-2026-10-31-233000-81343",
-   "category": "Music",
-   "id": "02439f880d78",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Powerhaus",
-   "date": "2026-10-31",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/powerhuas-2026-10-31-230000-81111",
-   "category": "Music",
-   "id": "17ae25d5ec07",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Dark Side of the Silvery Moon",
-   "date": "2026-10-31",
-   "url": "https://tht.ie/4928/dark-side-of-the-silvery-moon",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669357",
-   "category": "Theatre",
-   "id": "7ccf211b497c",
-   "first_seen": "2026-10-21"
-  },
   {
    "source": "tht",
    "venue": "Black Box Theatre",
@@ -5740,6 +5634,19 @@
    "category": "Variety",
    "id": "ca69a74c2406",
    "first_seen": "2026-10-21"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Bounce",
+   "date": "2027-10-04",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/bounce-2027-10-04-200000-81596",
+   "category": "Music",
+   "id": "87f0316f69ae",
+   "first_seen": "2026-11-01"
   }
  ]
 }
