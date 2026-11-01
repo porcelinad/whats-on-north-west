@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-31T02:24Z",
+ "generated_at": "2026-11-01T02:14Z",
  "failed_sources": [
   "The Model"
  ],
  "source_last_run": {
   "eventbrite_csv_hash": "9c0553cea73a",
   "eventbrite_csv_since": "2026-10-04T18:13Z",
-  "eaf": "2026-10-25T01:11Z",
-  "hawkswell": "2026-10-29T02:27Z",
+  "eaf": "2026-11-01T02:14Z",
+  "hawkswell": "2026-11-01T02:14Z",
   "craftmonth_donegal": "2026-10-31T02:24Z",
   "craftmonth_derry": "2026-10-31T02:24Z",
   "craftmonth_derry_city": "2026-10-31T02:24Z",
@@ -23,7 +23,7 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 2,
+  "abbey": 3,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -41,7 +41,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 33,
+  "themodel": 34,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -356,19 +356,6 @@
  },
  "events": [
   {
-   "source": "st_columbs",
-   "venue": "St Columb's Hall",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Derry Halloween",
-   "date": "2026-10-28",
-   "end_date": "2026-10-31",
-   "url": "https://www.saintcolumbshall.com/whatson/derry-halloween/",
-   "category": null,
-   "id": "1cef55c33bc9",
-   "first_seen": "2026-09-04"
-  },
-  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -393,110 +380,6 @@
    "category": null,
    "id": "db6381356a5b",
    "first_seen": "2026-10-29"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Rock Rising – The Supreme Classic Rock Show",
-   "date": "2026-10-31",
-   "url": "https://angrianan.com/event/rock-rising-the-supreme-classic-rock-show/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873661505/events/128638580/seats?zone=Default",
-   "category": "Music",
-   "id": "1f5dfaeb2fc2",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Dominic Kirwan",
-   "date": "2026-10-31",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/dominic-kirwan",
-   "category": null,
-   "id": "50b821f9dd99",
-   "first_seen": "2026-10-26"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Ashley Campbell & Stephen O'Dowd",
-   "date": "2026-10-31",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/ashley-campbell-stephen-odowd",
-   "category": "Music",
-   "id": "0a8f40865403",
-   "first_seen": "2026-10-26"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Wallace and Gromit: The Curse of the Were-Rabbit | Halloween Nerve Cinema",
-   "date": "2026-10-31",
-   "time": "2:00PM",
-   "url": "https://nervecentre.org/whats-on/wallace-and-gromit-curse-of-the-were-rabbit-nerve-cinema",
-   "category": "Film",
-   "id": "16e25bf54ccb",
-   "first_seen": "2026-09-10"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Halloween Fun at Strule Arts Centre",
-   "date": "2026-10-31",
-   "time": "6:00pm",
-   "url": "https://struleartscentre.co.uk/show/halloween-fun-at-strule-arts-centre/",
-   "category": "Kids/Family",
-   "id": "2ff5cbc6cc2e",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Teddy On A Broomstick",
-   "date": "2026-10-31",
-   "time": "10:00am",
-   "url": "https://struleartscentre.co.uk/show/teddy-on-a-broomstick-2/",
-   "category": "Kids/Family",
-   "id": "04f2f9a622e3",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "The Princess & The Goblin",
-   "date": "2026-10-31",
-   "time": "11:30am",
-   "url": "https://struleartscentre.co.uk/show/the-princess-the-goblin-2/",
-   "category": "Kids/Family",
-   "id": "91651aa5af05",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "The Central Bar",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Disturbance Undercover - MCR - LIMP BIZKIT - ARCTIC MONKEYS - VAN HALEN",
-   "date": "2026-10-31",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/disturbance-undercover-mcr-limp-bizkit-arctic-monkeys-van-halen/",
-   "category": null,
-   "id": "08b09a1b76e5",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "hawkswell",
@@ -850,13 +733,13 @@
    "venue": "Art Deco Theatre",
    "town": "Ballymote",
    "county": "Sligo",
-   "title": "Coocha Jazz – Art Deco Speakeasy",
+   "title": "Coocha Jazz - CANCELLED – Art Deco Speakeasy",
    "date": "2026-11-06",
    "time": "8pm",
    "url": "https://www.hawkswell.com/whats-on/shows/coocha-jazz",
    "category": null,
-   "id": "5e7ecb8afca3",
-   "first_seen": "2026-10-29"
+   "id": "0423f7c6f119",
+   "first_seen": "2026-11-01"
   },
   {
    "source": "allingham",
@@ -1377,6 +1260,20 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Broadway and Beyond",
+   "date": "2026-11-11",
+   "end_date": "2026-11-13",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/broadway-and-beyond",
+   "category": "Music",
+   "id": "9cdfc8a5972e",
+   "first_seen": "2026-11-01"
+  },
+  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -1400,6 +1297,19 @@
    "category": "Variety",
    "id": "820307808afd",
    "first_seen": "2026-08-13"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Her Night at the Art Deco – An evening of celebrating local ladies in the Arts",
+   "date": "2026-11-12",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/her-night-at-the-art-deco",
+   "category": null,
+   "id": "2a3f6bd93ebd",
+   "first_seen": "2026-11-01"
   },
   {
    "source": "rcc",
@@ -1443,6 +1353,19 @@
    "category": "Music",
    "id": "9787ff446f6e",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "I Had To Go For Counselling – A one-man Show by Gerry Farrell",
+   "date": "2026-11-13",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/i-had-to-go-for-counselling-3",
+   "category": null,
+   "id": "b96afe2059b9",
+   "first_seen": "2026-11-01"
   },
   {
    "source": "eventbrite_donegal",
@@ -1574,6 +1497,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Matt Molloy & John Carty",
+   "date": "2026-11-14",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/matt-molloy-john-carty",
+   "category": null,
+   "id": "3f3a431261c3",
+   "first_seen": "2026-11-01"
+  },
+  {
    "source": "mcgrorys",
    "venue": "McGrory's Hotel",
    "town": "Culdaff",
@@ -1648,6 +1584,45 @@
    "category": "Music",
    "id": "01230f5ed874",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "How To Train Your Dragon",
+   "date": "2026-11-15",
+   "time": "2pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/how-to-train-your-dragon",
+   "category": null,
+   "id": "a849f31128d3",
+   "first_seen": "2026-11-01"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Art Deco Theatre",
+   "town": "Ballymote",
+   "county": "Sligo",
+   "title": "Inception",
+   "date": "2026-11-15",
+   "time": "6pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/inception",
+   "category": null,
+   "id": "bbdf965972b7",
+   "first_seen": "2026-11-01"
+  },
+  {
+   "source": "hawkswell",
+   "venue": "Hawk's Well Theatre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Abba Forever",
+   "date": "2026-11-15",
+   "time": "8pm",
+   "url": "https://www.hawkswell.com/whats-on/shows/abba-forever-5",
+   "category": "Music",
+   "id": "1e71022112f6",
+   "first_seen": "2026-11-01"
   },
   {
    "source": "eventbrite_donegal",
@@ -4979,6 +4954,84 @@
    "category": null,
    "id": "ca9d62b36899",
    "first_seen": "2026-10-31"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Bogan's Bar",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "OMAGH-Megan McKay is a \"Loveable Chancer\"",
+   "date": "2027-10-24",
+   "time": "19:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/omagh-megan-mckay-is-a-loveable-chancer/",
+   "category": null,
+   "id": "04b502bb17e4",
+   "first_seen": "2026-11-01"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Dunlewey Theatre Gweedore",
+   "town": "Gweedore",
+   "county": "Donegal",
+   "title": "Fomhair Festival presents Jamie McIntyre, Dunlewey Theatre, Donegal",
+   "date": "2027-10-24",
+   "time": "19:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/fomhair-festival-presents-jamie-mcintyre-dunlewey-theatre-donegal/",
+   "category": null,
+   "id": "393a618e4962",
+   "first_seen": "2026-11-01"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Ellens Pub",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "John Colleary presents THE SKETCH PISTOLS",
+   "date": "2027-10-24",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/john-colleary-presents-the-sketch-pistols/",
+   "category": null,
+   "id": "af02a9a70f40",
+   "first_seen": "2026-11-01"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Learmount Resource Centre, Community Centre.",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The Antrim Rambler Guided Walks: Sawel and Dart in the Sperrin Mountains",
+   "date": "2027-10-24",
+   "time": "10:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-antrim-rambler-guided-walks-sawel-and-dart-in-the-sperrin-mountains/",
+   "category": null,
+   "id": "efdbd2078cef",
+   "first_seen": "2026-11-01"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim School of Art N41 E8H0",
+   "town": "Ballinamore",
+   "county": "Leitrim",
+   "title": "Painting Workshop, 1 Day, Sat 24th Oct 2026 ,10:00am-3:00pm",
+   "date": "2027-10-24",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/painting-workshop-1-day-sat-24th-oct-2026-10-00am-3-00pm/",
+   "category": null,
+   "id": "bbc36b8ad71b",
+   "first_seen": "2026-11-01"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "The Abbey Hotel Donegal",
+   "town": "Donegal Town",
+   "county": "Donegal",
+   "title": "Club 30+ : DONEGAL TOWN (The Abbey Hotel)",
+   "date": "2027-10-24",
+   "time": "17:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/club-30-donegal-town-the-abbey-hotel/",
+   "category": null,
+   "id": "0cb8d012b94f",
+   "first_seen": "2026-11-01"
   }
  ]
 }
