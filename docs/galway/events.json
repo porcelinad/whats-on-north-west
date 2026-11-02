@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T06:52Z",
+ "generated_at": "2026-11-02T06:51Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 16
+  "galway_city_museum": 17
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -25,19 +25,6 @@
   "https://tht.ie/4927/rituals-of-the-sidhe": "Circle of Life Garden, Salthill"
  },
  "events": [
-  {
-   "source": "tht",
-   "venue": "Black Box Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Halloween Spooktacular",
-   "date": "2026-11-01",
-   "url": "https://tht.ie/4901/halloween-spooktacular",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668848",
-   "category": "Variety",
-   "id": "81a1863f078a",
-   "first_seen": "2026-09-27"
-  },
   {
    "source": "gfs",
    "venue": "Eye Cinema",
@@ -50,45 +37,6 @@
    "url": "https://www.tickettailor.com/events/galwayfilmsociety/2417358",
    "category": "Film",
    "id": "d3edded67513",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "A Night For The Dogs: Madra & Friends",
-   "date": "2026-11-01",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/a-night-for-the-dogs-madra-and-friends-2026-11-01-200000-81863",
-   "category": "Music",
-   "id": "68149f7fd21c",
-   "first_seen": "2026-10-29"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "John Conneely Inc.",
-   "date": "2026-11-01",
-   "time": "11:59pm",
-   "url": "https://roisindubh.net/listings/john-conneely-inc.-2026-11-01-235900-80898",
-   "category": "Music",
-   "id": "2104721bb41f",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Open Mic Night",
-   "date": "2026-11-01",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/open-mic-night-2026-11-01-200000-81026",
-   "category": "Music",
-   "id": "6e3c5fca9832",
    "first_seen": "2026-10-04"
   },
   {
