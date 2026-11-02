@@ -1,6 +1,7 @@
 {
- "generated_at": "2026-11-01T05:56Z",
+ "generated_at": "2026-11-02T05:55Z",
  "failed_sources": [
+  "Abbey Arts Centre",
   "The Model"
  ],
  "source_last_run": {
@@ -16,14 +17,14 @@
   "craftmonth_tyrone": "2026-10-31T02:24Z",
   "craftmonth_fermanagh": "2026-10-31T02:24Z",
   "heritageweek": "2026-10-31T02:24Z",
-  "allingham": "2026-10-30T02:37Z",
+  "allingham": "2026-11-02T05:55Z",
   "fomhair": "2026-10-31T02:24Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 4,
+  "abbey": 5,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -41,7 +42,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 35,
+  "themodel": 36,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -356,45 +357,6 @@
  },
  "events": [
   {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The Last Class",
-   "date": "2026-10-30",
-   "end_date": "2026-11-01",
-   "url": "https://www.derryplayhouse.co.uk/event/the-last-class",
-   "category": null,
-   "id": "636bb0f25738",
-   "first_seen": "2026-10-29"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "The School On The Edge Of Reality",
-   "date": "2026-10-30",
-   "end_date": "2026-11-01",
-   "url": "https://www.derryplayhouse.co.uk/event/the-school-on-the-edge-of-reality",
-   "category": null,
-   "id": "db6381356a5b",
-   "first_seen": "2026-10-29"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "RHYS DARBY 'UNHINGED'",
-   "date": "2026-11-01",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/rhys-darby-unhinged",
-   "category": "Comedy",
-   "id": "5319f59b7fce",
-   "first_seen": "2026-10-26"
-  },
-  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -646,7 +608,6 @@
    "url": "https://allinghamfestival.com/events/johnny-gallagher/",
    "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676520/events",
    "category": null,
-   "sold_out": true,
    "id": "12b84a4f7e55",
    "first_seen": "2026-10-18"
   },
