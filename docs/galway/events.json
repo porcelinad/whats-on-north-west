@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T06:51Z",
+ "generated_at": "2026-11-03T07:16Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 17
+  "galway_city_museum": 18
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -25,59 +25,6 @@
   "https://tht.ie/4927/rituals-of-the-sidhe": "Circle of Life Garden, Salthill"
  },
  "events": [
-  {
-   "source": "gfs",
-   "venue": "Eye Cinema",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Just an Illusion (Galway Film Society)",
-   "date": "2026-11-01",
-   "end_date": "2026-11-02",
-   "time": "Sunday 5pm and 8pm, Monday 6:30pm",
-   "url": "https://www.tickettailor.com/events/galwayfilmsociety/2417358",
-   "category": "Film",
-   "id": "d3edded67513",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Black Box Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Physical Landscape",
-   "date": "2026-11-02",
-   "url": "https://tht.ie/4866/physical-landscape",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668693",
-   "category": "Dance",
-   "id": "32e9fc6c7116",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Outpost Comedy Club: Where'd You Get The Notions?",
-   "date": "2026-11-02",
-   "time": "Doors 8pm",
-   "url": "https://monroes.ie/products/outpost-comedy-club-23",
-   "category": "Comedy",
-   "id": "6a38ab064070",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Oíche Phádraig: A Celebration of the Songs of Padraig Stevens",
-   "date": "2026-11-02",
-   "url": "https://tht.ie/4926/oiche-padraig-stevens",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669191",
-   "category": "Music",
-   "id": "ff8794672281",
-   "first_seen": "2026-10-18"
-  },
   {
    "source": "monroes",
    "venue": "Monroe's Live",
@@ -157,19 +104,6 @@
    "first_seen": "2026-10-18"
   },
   {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "The Blow In's",
-   "date": "2026-11-04",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/the-blow-ins-2026-11-04-200000-81708",
-   "category": "Music",
-   "id": "f873944b7ef8",
-   "first_seen": "2026-10-04"
-  },
-  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway City",
@@ -230,6 +164,7 @@
    "date": "2026-11-05",
    "time": "8pm",
    "url": "https://roisindubh.net/listings/ash-fuller-2026-11-05-200000-81518",
+   "sold_out": true,
    "category": "Music",
    "id": "91f9e0923eba",
    "first_seen": "2026-10-04"
@@ -245,6 +180,7 @@
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173666435",
    "category": "Music",
    "time": "8pm",
+   "sold_out": true,
    "merged_from": [
     "roisindubh",
     "tht"
@@ -691,13 +627,13 @@
    "venue": "Town Hall Theatre",
    "town": "Galway City",
    "county": "Galway",
-   "title": "TEDxGalway",
+   "title": "TEDxGalway - 2026",
    "date": "2026-11-12",
    "url": "https://tht.ie/4850/tedxgalway",
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668220",
    "category": "Talk",
-   "id": "73786e148812",
-   "first_seen": "2026-09-27"
+   "id": "ecef352a6028",
+   "first_seen": "2026-11-03"
   },
   {
    "source": "tht",
@@ -2956,6 +2892,20 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
+   "title": "Seed Talks: The History of Witch Hunts in Ireland",
+   "date": "2027-01-12",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/seed-talks-the-history-of-witch-hunts-in-ireland-2027-01-12-190000-81873",
+   "booking_url": "https://www.eventbrite.co.uk/e/the-history-of-witch-hunts-in-ireland-tickets-2003351151222?utm_medium=Venue_speaker&utm_campaign=na&utm_source=Venue_speaker&utm_content=na",
+   "category": "Music",
+   "id": "a7345eb880ad",
+   "first_seen": "2026-11-03"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
    "title": "Silent Disco On Tuesdays",
    "date": "2027-01-12",
    "time": "11pm",
@@ -3405,6 +3355,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Born To Rise Showcase",
+   "date": "2027-01-31",
+   "url": "https://tht.ie/4940/born-to-rise-showcase",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669563",
+   "category": "Music",
+   "id": "e6dfdf9ffc24",
+   "first_seen": "2026-11-03"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -3598,19 +3561,6 @@
    "category": "Music",
    "id": "7ef82afea2dd",
    "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Anton Jablokov - Heart & Fire",
-   "date": "2027-02-10",
-   "url": "https://tht.ie/4917/anton-jablokov-heart-and-fire",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669057",
-   "category": "Music",
-   "id": "82e8390e3e4c",
-   "first_seen": "2026-09-27"
   },
   {
    "source": "roisindubh",
