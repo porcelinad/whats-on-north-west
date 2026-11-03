@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T05:55Z",
+ "generated_at": "2026-11-03T06:41Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "The Model"
@@ -9,22 +9,22 @@
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-11-01T02:14Z",
   "hawkswell": "2026-11-01T02:14Z",
-  "craftmonth_donegal": "2026-10-31T02:24Z",
-  "craftmonth_derry": "2026-10-31T02:24Z",
-  "craftmonth_derry_city": "2026-10-31T02:24Z",
-  "craftmonth_leitrim": "2026-10-31T02:24Z",
-  "craftmonth_sligo": "2026-10-31T02:24Z",
-  "craftmonth_tyrone": "2026-10-31T02:24Z",
-  "craftmonth_fermanagh": "2026-10-31T02:24Z",
-  "heritageweek": "2026-10-31T02:24Z",
+  "craftmonth_donegal": "2026-11-03T06:41Z",
+  "craftmonth_derry": "2026-11-03T06:41Z",
+  "craftmonth_derry_city": "2026-11-03T06:41Z",
+  "craftmonth_leitrim": "2026-11-03T06:41Z",
+  "craftmonth_sligo": "2026-11-03T06:41Z",
+  "craftmonth_tyrone": "2026-11-03T06:41Z",
+  "craftmonth_fermanagh": "2026-11-03T06:41Z",
+  "heritageweek": "2026-11-03T06:41Z",
   "allingham": "2026-11-02T05:55Z",
-  "fomhair": "2026-10-31T02:24Z"
+  "fomhair": "2026-11-03T06:41Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 5,
+  "abbey": 6,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
@@ -42,7 +42,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 36,
+  "themodel": 37,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -584,18 +584,6 @@
    ],
    "id": "d02648735c05",
    "first_seen": "2026-10-24"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Front and Centre Scratch",
-   "date": "2026-11-05",
-   "url": "https://www.derryplayhouse.co.uk/event/front-and-centre-scratch",
-   "category": null,
-   "id": "05a8b4f680df",
-   "first_seen": "2026-10-18"
   },
   {
    "source": "allingham",
@@ -1523,15 +1511,15 @@
    "venue": "The Playhouse",
    "town": "Derry",
    "county": "Derry",
-   "title": "The Name Of Things: Finding Our Lost Nature Words (Morning Session)",
+   "title": "The Name Of Things: Finding Our Lost Nature Words (Morning Performance)",
    "date": "2026-11-14",
-   "url": "https://www.derryplayhouse.co.uk/event/the-name-of-things-finding-our-lost-nature-words-morning-session",
+   "url": "https://www.derryplayhouse.co.uk/event/the-name-of-things-finding-our-lost-nature-words-morning-performance",
    "merged_from": [
     "playhouse"
    ],
    "category": null,
-   "id": "57336247eca7",
-   "first_seen": "2026-10-31"
+   "id": "c4a0cd785143",
+   "first_seen": "2026-11-03"
   },
   {
    "source": "an_grianan",
@@ -2506,6 +2494,19 @@
    "category": "Kids/Family",
    "id": "30e12b72857f",
    "first_seen": "2026-10-10"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The Big Staff Do",
+   "date": "2026-12-12",
+   "end_date": "2026-12-23",
+   "url": "https://www.derryplayhouse.co.uk/event/the-big-staff-do",
+   "category": null,
+   "id": "6e1c1895f07f",
+   "first_seen": "2026-11-03"
   },
   {
    "source": "an_grianan",
@@ -3576,6 +3577,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Ulster Orchestra : On Your Doorstep",
+   "date": "2027-02-19",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/ulster-orchestra-on-your-doorstep-2027/",
+   "category": "Music",
+   "id": "e3d284934d4e",
+   "first_seen": "2026-11-03"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -3786,13 +3800,13 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
-   "title": "Give My Head Peace – Live 2027",
+   "title": "Give My Head Peace – Live",
    "date": "2027-03-07",
    "time": "8:00pm",
    "url": "https://struleartscentre.co.uk/show/give-my-head-peace-live/",
    "category": "Comedy",
-   "id": "8bd84ada8b00",
-   "first_seen": "2026-08-20"
+   "id": "018cb4668439",
+   "first_seen": "2026-11-03"
   },
   {
    "source": "strule",
@@ -3889,26 +3903,13 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
-   "title": "Declan Nerney in Concert 2027",
+   "title": "Declan Nerney in Concert",
    "date": "2027-03-19",
    "time": "8:00pm",
    "url": "https://struleartscentre.co.uk/show/declan-nerney-in-concert-2027/",
    "category": "Music",
-   "id": "8bf274dc1f2c",
-   "first_seen": "2026-08-19"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Ulster Orchestra : On Your Doorstep 2027",
-   "date": "2027-03-19",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/ulster-orchestra-on-your-doorstep-2027/",
-   "category": "Music",
-   "id": "9b335e6e916c",
-   "first_seen": "2026-10-31"
+   "id": "76a597d2abc1",
+   "first_seen": "2026-11-03"
   },
   {
    "source": "an_grianan",
@@ -4139,7 +4140,7 @@
    "title": "Enniskillen Golf Club Presents: Stepping Out",
    "date": "2027-04-17",
    "url": "https://ardhowen.com/show/enniskillen-golf-club-presents-stepping-out/",
-   "category": "Classical Drama",
+   "category": "Comedy - Drama",
    "id": "e77c9842ecbf",
    "first_seen": "2026-10-31"
   },
@@ -4993,6 +4994,32 @@
    "category": null,
    "id": "0cb8d012b94f",
    "first_seen": "2026-11-01"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Foxhall Community Hall",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Foxhall Mega Whist",
+   "date": "2027-10-26",
+   "time": "19:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/foxhall-mega-whist/",
+   "category": null,
+   "id": "38b4b985a745",
+   "first_seen": "2026-11-03"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Roe Valley Arts and Cultural Centre",
+   "town": "Limavady",
+   "county": "Derry",
+   "title": "Spooky Gingerbread House for 7–11yrs",
+   "date": "2027-10-26",
+   "time": "11:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/spooky-gingerbread-house-for-711yrs/",
+   "category": null,
+   "id": "9fc094064066",
+   "first_seen": "2026-11-03"
   }
  ]
 }
