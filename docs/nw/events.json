@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T06:41Z",
+ "generated_at": "2026-11-04T06:08Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "The Model"
@@ -24,12 +24,12 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 6,
+  "abbey": 7,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 0,
+  "hawkswell": 1,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -42,7 +42,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 37,
+  "themodel": 38,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -356,19 +356,6 @@
   "https://www.balorartscentre.com/?event=the-ghostlight-sessions-november-2026": "Now in it’s 9th year The Ghostlight Sessions is one of the country’s longest running established original emerging music nights. Each night features 3 30 minute sets performed by some of Ireland’s best new musical talent. November’s Ghostlight is the final one of 2026. We’re excited to introduce Heron Red and Porter Boys Social Club while our resident MC Dean Maywood also takes the spotlight."
  },
  "events": [
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Mother Courage – Blue Raincoat Theatre Co",
-   "date": "2026-11-03",
-   "url": "https://angrianan.com/event/mother-courage-blue-raincoat-theatre-co/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873665417/events/128654240/seats?zone=Default",
-   "category": "Theatre",
-   "id": "348727067d83",
-   "first_seen": "2026-07-14"
-  },
   {
    "source": "allingham",
    "venue": "Abbey Arts Centre",
@@ -1511,15 +1498,15 @@
    "venue": "The Playhouse",
    "town": "Derry",
    "county": "Derry",
-   "title": "The Name Of Things: Finding Our Lost Nature Words (Morning Performance)",
+   "title": "The Names Of Things: Finding Our Lost Nature Words (Morning Performance)",
    "date": "2026-11-14",
-   "url": "https://www.derryplayhouse.co.uk/event/the-name-of-things-finding-our-lost-nature-words-morning-performance",
+   "url": "https://www.derryplayhouse.co.uk/event/the-names-of-things-finding-our-lost-nature-words-morning-performance",
    "merged_from": [
     "playhouse"
    ],
    "category": null,
-   "id": "c4a0cd785143",
-   "first_seen": "2026-11-03"
+   "id": "73d2eb6f91e6",
+   "first_seen": "2026-11-04"
   },
   {
    "source": "an_grianan",
@@ -2458,6 +2445,20 @@
    "first_seen": "2026-10-29"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "FICHE – Celebrating 20 years of the RCC",
+   "date": "2026-12-12",
+   "end_date": "2027-02-20",
+   "time": "3:00 pm",
+   "url": "https://regionalculturalcentre.com/exhibitions/fiche-celebrating-20-years-at-the-rcc/",
+   "category": "Exhibition",
+   "id": "53bf26139c9d",
+   "first_seen": "2026-11-04"
+  },
+  {
    "source": "st_columbs",
    "venue": "St Columb's Hall",
    "town": "Derry",
@@ -2922,12 +2923,12 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
-   "title": "Beauty & The Beast Jrs presented by Hazel Wand Theater School",
+   "title": "Beauty & The Beast Jrs presented by Hazel Wand Theatre School",
    "date": "2026-12-22",
    "url": "https://struleartscentre.co.uk/show/beauty-the-beast-jrs-presented-by-hazel-wand-theater-school/",
    "category": "Musical",
-   "id": "6137ccd6f2fb",
-   "first_seen": "2026-08-01"
+   "id": "13ddc173e3cd",
+   "first_seen": "2026-11-04"
   },
   {
    "source": "an_grianan",
@@ -3176,6 +3177,19 @@
    "category": "Music",
    "id": "4ccb93c08a75",
    "first_seen": "2026-09-02"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Hope Healing Growth Event",
+   "date": "2027-01-23",
+   "time": "10:00am",
+   "url": "https://ardhowen.com/show/hope-healing-growth-event/",
+   "category": null,
+   "id": "34b646c9e944",
+   "first_seen": "2026-11-04"
   },
   {
    "source": "strule",
@@ -5020,6 +5034,19 @@
    "category": null,
    "id": "9fc094064066",
    "first_seen": "2026-11-03"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim School of Art N41 E8HO",
+   "town": "Ballinamore",
+   "county": "Leitrim",
+   "title": "Halloween Camp, Ballinamore, 5-12 yrs, Tue 27th & Wed 28th Oct, 10am-2pm.",
+   "date": "2027-10-27",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/halloween-camp-ballinamore-5-12-yrs-tue-27th-wed-28th-oct-10am-2pm/",
+   "category": "Kids/Family",
+   "id": "c1de0b1696e6",
+   "first_seen": "2026-11-04"
   }
  ]
 }
