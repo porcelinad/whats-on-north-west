@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T06:59Z",
+ "generated_at": "2026-11-05T07:25Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 19
+  "galway_city_museum": 20
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -37,32 +37,6 @@
    "category": "Theatre",
    "id": "c7d6f09c03a3",
    "first_seen": "2026-10-30"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Coldchella",
-   "date": "2026-11-04",
-   "time": "7:30pm",
-   "url": "https://roisindubh.net/listings/coldchella-2026-11-04-193000-81724",
-   "category": "Music",
-   "id": "25d2fa271e34",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Hot Mess",
-   "date": "2026-11-04",
-   "url": "https://tht.ie/4769/hot-mess",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173664597",
-   "category": "Theatre",
-   "id": "7f0317582cd3",
-   "first_seen": "2026-09-27"
   },
   {
    "source": "monroes",
@@ -89,6 +63,19 @@
    "category": "Music, Classical",
    "id": "e71c08174adc",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "HOUSEMATES + LISTOWEL",
+   "date": "2026-11-05",
+   "time": "11:59pm",
+   "url": "https://roisindubh.net/listings/housemates-listowel-2026-11-05-235900-81882",
+   "category": "Music",
+   "id": "8fa8a8d9e0de",
+   "first_seen": "2026-11-05"
   },
   {
    "source": "roisindubh",
@@ -171,6 +158,7 @@
    "date": "2026-11-06",
    "time": "6:30pm",
    "url": "https://roisindubh.net/listings/going-coastal-2026-11-06-183000-81871",
+   "booking_url": "https://www.eventbrite.com/e/going-coastal-2026-roisin-dubh-tickets-1997148079668",
    "category": "Music",
    "id": "68b0e1aa0a06",
    "first_seen": "2026-11-04"
@@ -1131,13 +1119,13 @@
    "venue": "Siobhán McKenna Theatre",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Lunchtime Concert:<br>JJ McNamara, piano",
+   "title": "[POSTPONED]<br>Lunchtime Concert:<br>JJ McNamara, piano",
    "date": "2026-11-20",
    "time": "1pm",
    "url": "https://musicforgalway.ie/event/lunchtime-concert-jj-mcnamara-piano/",
    "category": "Music, Classical",
-   "id": "4a029d5964a8",
-   "first_seen": "2026-10-04"
+   "id": "1df3ce646cc5",
+   "first_seen": "2026-11-05"
   },
   {
    "source": "tht",
@@ -1787,6 +1775,19 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
+   "title": "Nowhere Presents Dylan Fogarty (Live)",
+   "date": "2026-12-04",
+   "time": "11pm",
+   "url": "https://roisindubh.net/listings/nowhere-presents-dylan-fogarty-%28live%29-2026-12-04-230000-81870",
+   "category": "Music",
+   "id": "98c15682250c",
+   "first_seen": "2026-11-05"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
    "title": "The Undertones",
    "date": "2026-12-04",
    "time": "8pm",
@@ -2288,6 +2289,7 @@
    "date": "2026-12-12",
    "time": "8pm",
    "url": "https://roisindubh.net/listings/sing-along-socials-a-very-merry-craicmas-2026-12-12-200000-81705",
+   "sold_out": true,
    "category": "Music",
    "id": "2bde86897df9",
    "first_seen": "2026-10-04"
@@ -2311,13 +2313,13 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
-   "title": "John Conneely Inc.",
+   "title": "John Conneely Inc. - 500th Anniversary Special",
    "date": "2026-12-13",
-   "time": "11:59pm",
-   "url": "https://roisindubh.net/listings/john-conneely-inc.-2026-12-13-235900-80904",
+   "time": "9:30pm",
+   "url": "https://roisindubh.net/listings/john-conneely-inc.-500th-anniversary-special-2026-12-13-213000-81885",
    "category": "Music",
-   "id": "196f943c5493",
-   "first_seen": "2026-10-04"
+   "id": "466b91183baf",
+   "first_seen": "2026-11-05"
   },
   {
    "source": "roisindubh",
@@ -2925,6 +2927,20 @@
    "category": "Music",
    "id": "9712ad848688",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Madra Salach",
+   "date": "2027-01-11",
+   "time": "6pm",
+   "url": "https://roisindubh.net/listings/madra-salach-2027-01-11-180000-81883",
+   "booking_url": "https://spindizzyrecords.com/products/madra-salach-outstore-roisin-dubh-galway-january-11th",
+   "category": "Music",
+   "id": "d5b5c6ceff7f",
+   "first_seen": "2026-11-05"
   },
   {
    "source": "roisindubh",
@@ -4853,6 +4869,19 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
+   "title": "Gilla Band",
+   "date": "2027-04-24",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/gilla-band-2027-04-24-200000-81872",
+   "category": "Music",
+   "id": "038e51998a66",
+   "first_seen": "2026-11-05"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
    "title": "Last Orders",
    "date": "2027-04-24",
    "time": "11:30pm",
@@ -5231,6 +5260,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Let It Be - The Music of The Beatles",
+   "date": "2027-06-03",
+   "url": "https://tht.ie/4939/let-it-be-the-music-of-the-beatles",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669498",
+   "category": "Music",
+   "id": "011ac20e5516",
+   "first_seen": "2026-11-05"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -5298,6 +5340,18 @@
    "category": "Music",
    "id": "08dc8e0e8a03",
    "first_seen": "2026-10-26"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Galway Folk Festival 2027 - Weekend Pass Early Bird Phase Two",
+   "date": "2027-06-11",
+   "url": "https://monroes.ie/products/galway-folk-festival-2027-weekend-pass-early-bird-phase-two",
+   "category": "Music",
+   "id": "1191b5ee509b",
+   "first_seen": "2026-11-05"
   },
   {
    "source": "roisindubh",
