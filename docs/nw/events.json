@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T06:08Z",
+ "generated_at": "2026-11-05T06:37Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "The Model"
@@ -17,19 +17,19 @@
   "craftmonth_tyrone": "2026-11-03T06:41Z",
   "craftmonth_fermanagh": "2026-11-03T06:41Z",
   "heritageweek": "2026-11-03T06:41Z",
-  "allingham": "2026-11-02T05:55Z",
+  "allingham": "2026-11-05T06:37Z",
   "fomhair": "2026-11-03T06:41Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 7,
+  "abbey": 8,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 1,
+  "hawkswell": 2,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -42,7 +42,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 38,
+  "themodel": 39,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -357,73 +357,6 @@
  },
  "events": [
   {
-   "source": "allingham",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Coláiste Cholmcille Drama, Film & Theatre Studies Production",
-   "date": "2026-11-04",
-   "time": "5pm",
-   "url": "https://allinghamfestival.com/events/ccbs-drama-film-theatre-studies-production/",
-   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676548/events",
-   "category": null,
-   "id": "a599df59c9f7",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "allingham",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Opening Night Festivities with Official Opening with Wine Reception & CCBS Choir",
-   "date": "2026-11-04",
-   "time": "7pm",
-   "url": "https://allinghamfestival.com/events/opening-of-the-festival/",
-   "category": null,
-   "id": "0407b2f41e1c",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "allingham",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Opening Night Festivities: Ballyshannon Drama Society presents ‘The Wonder Wheel’ by Barry Mc Kinley",
-   "date": "2026-11-04",
-   "time": "8:15pm",
-   "url": "https://allinghamfestival.com/events/ballyshannon-drama-society-the-wonder-wheel/",
-   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676516/events",
-   "category": null,
-   "id": "515f681d5f00",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "allingham",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Opening Night Festivities: Ballyshannon Samba Band",
-   "date": "2026-11-04",
-   "time": "6:30pm",
-   "url": "https://allinghamfestival.com/events/opening-night-festivities-ballyshannon-samba-band/",
-   "category": null,
-   "id": "e90b9bf2f2ab",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Caith Amach É – Fifth-year Oral Workshop",
-   "date": "2026-11-04",
-   "time": "10.30am",
-   "url": "https://www.hawkswell.com/whats-on/shows/caith-amach-é-4",
-   "category": "Secondary Schools",
-   "id": "d3f614603670",
-   "first_seen": "2026-10-26"
-  },
-  {
    "source": "hawkswell",
    "venue": "Hawk's Well Theatre",
    "town": "Sligo",
@@ -436,44 +369,6 @@
    "category": "Theatre",
    "id": "23e1d91b97c9",
    "first_seen": "2026-10-26"
-  },
-  {
-   "source": "allingham",
-   "venue": "Kilbarron Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Cúpla Focal – Cómhra, Ceol, Craic agus Caife!",
-   "date": "2026-11-04",
-   "time": "2:30pm",
-   "url": "https://allinghamfestival.com/events/cupla-focal-comhra-ceol-craic-agus-caife/",
-   "category": null,
-   "id": "81effc3d068c",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Escape the Internet with Lucas Rizzotto",
-   "date": "2026-11-04",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/escape-the-internet-with-lucas-rizzotto",
-   "category": "Music/Comedy",
-   "id": "7eeedb8cb22b",
-   "first_seen": "2026-10-08"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Once Upon a Time in a Cinema – Classic Cinema",
-   "date": "2026-11-04",
-   "url": "https://www.thedock.ie/whats-on/once-upon-a-time-in-a-cinema",
-   "category": "Film",
-   "id": "3fb3992bf6a4",
-   "first_seen": "2026-09-24"
   },
   {
    "source": "allingham",
@@ -496,7 +391,7 @@
    "county": "Donegal",
    "title": "Film: ‘A Quiet Love’ + Q&A with director Garry Keane",
    "date": "2026-11-05",
-   "time": "8:15pm",
+   "time": "8:30pm",
    "url": "https://allinghamfestival.com/events/film-a-quiet-love-garry-keane/",
    "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173675279/events",
    "category": null,
@@ -2311,6 +2206,7 @@
    "time": "7:30pm",
    "url": "https://struleartscentre.co.uk/show/community-carol-service/",
    "category": "Music",
+   "sold_out": true,
    "id": "5250783a114e",
    "first_seen": "2026-10-10"
   },
@@ -3537,6 +3433,19 @@
    "category": "Music",
    "id": "29a6de2028a2",
    "first_seen": "2026-07-16"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "FEN – Free show for national schools",
+   "date": "2027-02-16",
+   "end_date": "2027-02-16",
+   "url": "https://angrianan.com/event/fen-free-show-for-national-schools/",
+   "category": "Schools",
+   "id": "cd20ae3570a9",
+   "first_seen": "2026-11-05"
   },
   {
    "source": "abbey",
@@ -5047,6 +4956,19 @@
    "category": "Kids/Family",
    "id": "c1de0b1696e6",
    "first_seen": "2026-11-04"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Kids: Spooky Art Workshops with The Arty Fox",
+   "date": "2027-10-28",
+   "time": "11:00 am",
+   "url": "https://regionalculturalcentre.com/events/spooky-art-workshops-with-the-arty-fox/",
+   "category": "Workshop, Kids/Family",
+   "id": "3d6ab0ccf1c9",
+   "first_seen": "2026-11-05"
   }
  ]
 }
