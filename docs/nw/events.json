@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T06:37Z",
+ "generated_at": "2026-11-06T06:33Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "The Model"
@@ -9,27 +9,27 @@
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-11-01T02:14Z",
   "hawkswell": "2026-11-01T02:14Z",
-  "craftmonth_donegal": "2026-11-03T06:41Z",
-  "craftmonth_derry": "2026-11-03T06:41Z",
-  "craftmonth_derry_city": "2026-11-03T06:41Z",
-  "craftmonth_leitrim": "2026-11-03T06:41Z",
-  "craftmonth_sligo": "2026-11-03T06:41Z",
-  "craftmonth_tyrone": "2026-11-03T06:41Z",
-  "craftmonth_fermanagh": "2026-11-03T06:41Z",
-  "heritageweek": "2026-11-03T06:41Z",
+  "craftmonth_donegal": "2026-11-06T06:33Z",
+  "craftmonth_derry": "2026-11-06T06:33Z",
+  "craftmonth_derry_city": "2026-11-06T06:33Z",
+  "craftmonth_leitrim": "2026-11-06T06:33Z",
+  "craftmonth_sligo": "2026-11-06T06:33Z",
+  "craftmonth_tyrone": "2026-11-06T06:33Z",
+  "craftmonth_fermanagh": "2026-11-06T06:33Z",
+  "heritageweek": "2026-11-06T06:33Z",
   "allingham": "2026-11-05T06:37Z",
-  "fomhair": "2026-11-03T06:41Z"
+  "fomhair": "2026-11-06T06:33Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 8,
+  "abbey": 9,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 2,
+  "hawkswell": 3,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -42,7 +42,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 39,
+  "themodel": 40,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -369,103 +369,6 @@
    "category": "Theatre",
    "id": "23e1d91b97c9",
    "first_seen": "2026-10-26"
-  },
-  {
-   "source": "allingham",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Documentary: ‘The Essence of Eva’",
-   "date": "2026-11-05",
-   "time": "4:30pm",
-   "url": "https://allinghamfestival.com/events/documentary-the-essence-of-eva/",
-   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173676517/events",
-   "category": null,
-   "id": "8e1a4ed6e2ee",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "allingham",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Film: ‘A Quiet Love’ + Q&A with director Garry Keane",
-   "date": "2026-11-05",
-   "time": "8:30pm",
-   "url": "https://allinghamfestival.com/events/film-a-quiet-love-garry-keane/",
-   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173675279/events",
-   "category": null,
-   "id": "3be94a933d7a",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "allingham",
-   "venue": "Abbey Arts Centre",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Short Films: ‘Sam Rom’ & ‘Helen of Inver’",
-   "date": "2026-11-05",
-   "time": "7pm",
-   "url": "https://allinghamfestival.com/events/film-four-short-films/",
-   "booking_url": "https://allinghamfestival.ticketsolve.com/shows/1173675276/events",
-   "category": null,
-   "id": "a97a6d69b263",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "The Ghostlight Sessions November 2026 — Now in it’s 9th year The Ghostlight Sessions is one of the country’s longest running established original emerging music nights. Each night features 3 30 minute sets performed by some of Ireland’s best new musical talent. November’s Ghostlight is the final one of 2026. We’re excited to introduce Heron Red and Porter Boys Social Club while our resident MC Dean Maywood also takes the spotlight.",
-   "date": "2026-11-05",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=the-ghostlight-sessions-november-2026",
-   "category": "Music",
-   "id": "a20b833b7fe3",
-   "first_seen": "2026-10-14"
-  },
-  {
-   "source": "allingham",
-   "venue": "Coláiste Cholmcille",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Schools’ Programme with NJ Alphonsus",
-   "date": "2026-11-05",
-   "time": "4pm",
-   "url": "https://allinghamfestival.com/events/schools-programme/",
-   "category": null,
-   "id": "6e74949e5554",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "allingham",
-   "venue": "Mc Intyre's",
-   "town": "Ballyshannon",
-   "county": "Donegal",
-   "title": "Open Mic in Mc Intyre’s",
-   "date": "2026-11-05",
-   "time": "10pm",
-   "url": "https://allinghamfestival.com/events/open-mic-in-mc-intyres/",
-   "category": null,
-   "id": "91999c0a860f",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Cinema: The Portuguese House",
-   "date": "2026-11-05",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-cinema-the-portuguese-house/",
-   "category": "Film",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "d02648735c05",
-   "first_seen": "2026-10-24"
   },
   {
    "source": "allingham",
@@ -1816,19 +1719,6 @@
    "first_seen": "2026-10-29"
   },
   {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Operation Desperation: Whats Next? 16 Days of Activism against Gender-Based Violence",
-   "date": "2026-11-25",
-   "end_date": "2026-12-10",
-   "url": "https://www.derryplayhouse.co.uk/event/operation-desperation-whats-next-16-days-of-activism-against-gender-based-violence",
-   "category": null,
-   "id": "7bb6e5d77600",
-   "first_seen": "2026-10-18"
-  },
-  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -3101,6 +2991,32 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Trad Week Lunchtime Show: Méabh McKenna",
+   "date": "2027-01-26",
+   "url": "https://angrianan.com/event/trad-week-lunchtime-show-meabh-mckenna/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669099/events/128675776/seats?zone=Auditorium",
+   "category": "Trad Week",
+   "id": "eaab7cb7a30e",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "An Evening Without Kate Bush",
+   "date": "2027-01-27",
+   "url": "https://angrianan.com/event/an-evening-without-kate-bush/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669101/events/128675778/seats?zone=Auditorium",
+   "category": "Music",
+   "id": "7bef84f781cf",
+   "first_seen": "2026-11-06"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -3112,6 +3028,19 @@
    "category": "Music",
    "id": "9fe276d05a06",
    "first_seen": "2026-10-30"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Trad Week: Clann Mhic Ruairí",
+   "date": "2027-01-29",
+   "url": "https://angrianan.com/event/trad-week-clann-mhic-ruairi/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669100/events/128675777/seats?zone=Auditorium",
+   "category": "Trad Week",
+   "id": "b6ebe958dabb",
+   "first_seen": "2026-11-06"
   },
   {
    "source": "ardhowen",
@@ -4969,6 +4898,59 @@
    "category": "Workshop, Kids/Family",
    "id": "3d6ab0ccf1c9",
    "first_seen": "2026-11-05"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Fireman Sam Live: The Lost Pirate Treasure",
+   "date": "2027-10-29",
+   "end_date": "2027-10-29",
+   "url": "https://angrianan.com/event/fireman-sam-live-the-lost-pirate-treasure/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666102",
+   "category": "Kids/Family",
+   "id": "3ac0de58b731",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Joes Bar",
+   "town": "Strabane",
+   "county": "Tyrone",
+   "title": "PADDY RAFF AT JOES BAR",
+   "date": "2027-10-29",
+   "time": "19:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/paddy-raff-at-joes-bar/",
+   "category": null,
+   "id": "b47bf02eacc4",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Roe Valley Arts and Cultural Centre",
+   "town": "Limavady",
+   "county": "Derry",
+   "title": "Enchanted Forest Dioramas for 7-11yrs",
+   "date": "2027-10-29",
+   "time": "13:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/enchanted-forest-dioramas-for-7-11yrs/",
+   "category": "Kids/Family",
+   "id": "6cc368443082",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "THE MAYFLOWER COMMUNITY CENTRE",
+   "town": "Drumshanbo",
+   "county": "Leitrim",
+   "title": "Halloween Camp, Drumshanbo, 5-12 yrs, Thu 29th & Fri 30th Oct, 10am-2pm.",
+   "date": "2027-10-29",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/halloween-camp-drumshanbo-5-12-yrs-thu-29th-fri-30th-oct-10am-2pm/",
+   "category": "Kids/Family",
+   "id": "abc2a1d2ec75",
+   "first_seen": "2026-11-06"
   }
  ]
 }
