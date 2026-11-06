@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T07:25Z",
+ "generated_at": "2026-11-06T07:25Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 20
+  "galway_city_museum": 21
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -37,72 +37,6 @@
    "category": "Theatre",
    "id": "c7d6f09c03a3",
    "first_seen": "2026-10-30"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Gilli Apter",
-   "date": "2026-11-05",
-   "time": "Doors 7.30pm",
-   "url": "https://monroes.ie/products/gilli-apter",
-   "category": "Music",
-   "id": "c83259c42a37",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "musicforgalway",
-   "venue": "O'Donoghue Centre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Lunchtime Concert:<br>THE PALE BLUE DOT<br>Documentary Film Screening:<br>THE FARTHEST",
-   "date": "2026-11-05",
-   "time": "1pm",
-   "url": "https://musicforgalway.ie/event/lunchtime-concert-the-pale-blue-dot/",
-   "category": "Music, Classical",
-   "id": "e71c08174adc",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "HOUSEMATES + LISTOWEL",
-   "date": "2026-11-05",
-   "time": "11:59pm",
-   "url": "https://roisindubh.net/listings/housemates-listowel-2026-11-05-235900-81882",
-   "category": "Music",
-   "id": "8fa8a8d9e0de",
-   "first_seen": "2026-11-05"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "The Total Stone Roses",
-   "date": "2026-11-05",
-   "time": "7pm",
-   "url": "https://roisindubh.net/listings/the-total-stone-roses-2026-11-05-190000-80803",
-   "category": "Music",
-   "id": "4812c3fa3837",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Ash Fuller",
-   "date": "2026-11-05",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/ash-fuller-2026-11-05-200000-81518",
-   "sold_out": true,
-   "category": "Music",
-   "id": "91f9e0923eba",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -2285,14 +2219,14 @@
    "venue": "Róisín Dubh (Top Bar)",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Sing Along Socials: \"A Very Merry Craicmas\"",
+   "title": "Un-Holy Night! A Sing Along Social Christmas Special",
    "date": "2026-12-12",
    "time": "8pm",
-   "url": "https://roisindubh.net/listings/sing-along-socials-a-very-merry-craicmas-2026-12-12-200000-81705",
+   "url": "https://roisindubh.net/listings/un-holy-night%21-a-sing-along-social-christmas-special-2026-12-12-200000-81705",
    "sold_out": true,
    "category": "Music",
-   "id": "2bde86897df9",
-   "first_seen": "2026-10-04"
+   "id": "aa9f0f3ba974",
+   "first_seen": "2026-11-06"
   },
   {
    "source": "tht",
@@ -3279,6 +3213,20 @@
    "category": "Comedy",
    "id": "d7746a5a0ece",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Dan McCabe",
+   "date": "2027-01-29",
+   "time": "8pm",
+   "url": "https://www.leisureland.ie/calendar/dan-mccabe/",
+   "sold_out": true,
+   "category": "Music",
+   "id": "45bd14afee2f",
+   "first_seen": "2026-11-06"
   },
   {
    "source": "roisindubh",
@@ -5006,6 +4954,19 @@
    "category": "Music",
    "id": "ccea583ebef6",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Aoife Dunne: Good Grief",
+   "date": "2027-05-07",
+   "time": "7pm",
+   "url": "https://www.leisureland.ie/calendar/aoife-dunne-good-grief/",
+   "category": "Comedy",
+   "id": "6f977ec684e5",
+   "first_seen": "2026-11-06"
   },
   {
    "source": "tht",
