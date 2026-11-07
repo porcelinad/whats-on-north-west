@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T07:25Z",
+ "generated_at": "2026-11-07T06:37Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 21
+  "galway_city_museum": 22
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -37,65 +37,6 @@
    "category": "Theatre",
    "id": "c7d6f09c03a3",
    "first_seen": "2026-10-30"
-  },
-  {
-   "source": "tht",
-   "venue": "Black Box Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Dexys Midnight Runners",
-   "date": "2026-11-06",
-   "url": "https://tht.ie/4790/dexys-midnight-runners",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173666435",
-   "category": "Music",
-   "time": "8pm",
-   "sold_out": true,
-   "merged_from": [
-    "roisindubh",
-    "tht"
-   ],
-   "id": "481a083ce544",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "How I Became A Wave",
-   "date": "2026-11-06",
-   "time": "Doors 7pm",
-   "url": "https://monroes.ie/products/how-i-became-a-wave",
-   "category": "Music",
-   "id": "7c158d48ff4f",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Project Smok",
-   "date": "2026-11-06",
-   "time": "Doors 9pm",
-   "url": "https://monroes.ie/products/project-smok-2",
-   "category": "Music",
-   "id": "44692361834c",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Going Coastal",
-   "date": "2026-11-06",
-   "time": "6:30pm",
-   "url": "https://roisindubh.net/listings/going-coastal-2026-11-06-183000-81871",
-   "booking_url": "https://www.eventbrite.com/e/going-coastal-2026-roisin-dubh-tickets-1997148079668",
-   "category": "Music",
-   "id": "68b0e1aa0a06",
-   "first_seen": "2026-11-04"
   },
   {
    "source": "tht",
@@ -427,19 +368,6 @@
    "venue": "Galway Arts Centre",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Gallery Lates ⁄ Workshop ⁄",
-   "date": "2026-11-12",
-   "time": "18:30 - 20:00",
-   "url": "https://www.galwayartscentre.ie/whats-on/workshop-on-materials-and-humanity/",
-   "category": "Gallery Lates, Workshop",
-   "id": "2c20839043f0",
-   "first_seen": "2026-10-24"
-  },
-  {
-   "source": "gac",
-   "venue": "Galway Arts Centre",
-   "town": "Galway City",
-   "county": "Galway",
    "title": "Workshop ⁄",
    "date": "2026-11-12",
    "time": "18:30 - 20:30",
@@ -448,6 +376,19 @@
    "category": "Workshop",
    "id": "fb4dc9f0bd77",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "gac",
+   "venue": "Galway Arts Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Workshop ⁄ Gallery Lates ⁄",
+   "date": "2026-11-12",
+   "time": "18:30 - 20:00",
+   "url": "https://www.galwayartscentre.ie/whats-on/workshop-on-materials-and-humanity/",
+   "category": "Workshop, Gallery Lates",
+   "id": "37e3c411fa08",
+   "first_seen": "2026-11-07"
   },
   {
    "source": "leisureland",
@@ -1325,6 +1266,20 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "gac",
+   "venue": "Electric Galway 36 Abbeygate Street Upper, Galway, H91 W577",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Youth Arts ⁄ Music ⁄",
+   "date": "2026-11-27",
+   "time": "7:00pm – 9:30pm",
+   "url": "https://www.galwayartscentre.ie/whats-on/youth-lates-14/",
+   "booking_url": "https://www.eventbrite.ie/e/2004316589875?aff=oddtdtcreator",
+   "category": "Youth Arts, Music",
+   "id": "1f4fb71f6663",
+   "first_seen": "2026-11-07"
+  },
+  {
    "source": "musicforgalway",
    "venue": "Michael D. Higgins Auditorium (Lower Aula)",
    "town": "Galway City",
@@ -1528,6 +1483,7 @@
    "time": "7pm",
    "url": "https://www.leisureland.ie/calendar/aaron-rowe/",
    "category": "Music",
+   "sold_out": true,
    "merged_from": [
     "leisureland",
     "roisindubh"
@@ -5599,6 +5555,19 @@
    "category": "Music",
    "id": "87f0316f69ae",
    "first_seen": "2026-11-01"
+  },
+  {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Fireman Sam Live",
+   "date": "2027-10-30",
+   "url": "https://tht.ie/4848/fireman-sam-live",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668321",
+   "category": "Kids/Family",
+   "id": "54bce9a31860",
+   "first_seen": "2026-11-07"
   }
  ]
 }
