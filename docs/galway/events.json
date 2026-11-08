@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T06:37Z",
+ "generated_at": "2026-11-08T06:43Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 22
+  "galway_city_museum": 23
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -25,46 +25,6 @@
   "https://tht.ie/4927/rituals-of-the-sidhe": "Circle of Life Garden, Salthill"
  },
  "events": [
-  {
-   "source": "mick_lally",
-   "venue": "Mick Lally Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "What's On",
-   "date": "2026-11-04",
-   "end_date": "2026-11-07",
-   "url": "https://www.druid.ie/about/the-mick-lally-theatre/whats-on",
-   "category": "Theatre",
-   "id": "c7d6f09c03a3",
-   "first_seen": "2026-10-30"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Romeo & Juliet",
-   "date": "2026-11-06",
-   "end_date": "2026-11-07",
-   "url": "https://tht.ie/4822/romeo-and-juliet",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173667258",
-   "category": "Dance",
-   "id": "277ca6268b27",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "tht",
-   "venue": "Black Box Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Bingo Loco",
-   "date": "2026-11-07",
-   "url": "https://tht.ie/4924/bingo-loco",
-   "booking_url": "https://eu.bingoloco.com/galway",
-   "category": "Variety",
-   "id": "ad31fd419c9d",
-   "first_seen": "2026-10-04"
-  },
   {
    "source": "gac",
    "venue": "Galway Arts Centre",
@@ -77,72 +37,6 @@
    "category": "Exhibition",
    "id": "2128496c7ce7",
    "first_seen": "2026-10-21"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Smash Hits!",
-   "date": "2026-11-07",
-   "time": "Doors 9pm",
-   "url": "https://monroes.ie/products/smash-hits-9",
-   "category": "Music",
-   "id": "f3480590418e",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Complete Madness : Ska Tribute",
-   "date": "2026-11-07",
-   "time": "7:30pm",
-   "url": "https://roisindubh.net/listings/complete-madness-ska-tribute-2026-11-07-193000-81730",
-   "booking_url": "https://www.eventbrite.ie/e/complete-madness-tickets-1996075286916",
-   "category": "Music",
-   "id": "8730fdd8ab93",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Last Orders",
-   "date": "2026-11-07",
-   "time": "11:30pm",
-   "url": "https://roisindubh.net/listings/last-orders-2026-11-07-233000-81344",
-   "category": "Music",
-   "id": "815ce0b74d3f",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Nerina Pallot",
-   "date": "2026-11-07",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/nerina-pallot-2026-11-07-200000-81238",
-   "category": "Music",
-   "id": "8e23828daa3d",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Powerhaus",
-   "date": "2026-11-07",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/powerhuas-2026-11-07-230000-81112",
-   "category": "Music",
-   "id": "271cf17f47b9",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "gfs",
