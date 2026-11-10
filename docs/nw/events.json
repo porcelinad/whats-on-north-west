@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T06:15Z",
+ "generated_at": "2026-11-10T07:10Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "Hawk's Well Theatre",
@@ -25,12 +25,12 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 12,
+  "abbey": 13,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 6,
+  "hawkswell": 7,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -43,7 +43,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 43,
+  "themodel": 44,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -358,32 +358,6 @@
  },
  "events": [
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Aliens",
-   "date": "2026-11-09",
-   "url": "https://angrianan.com/event/aliens/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666943/events/128662077/seats?zone=Default",
-   "category": "Theatre",
-   "id": "8f307c9c0412",
-   "first_seen": "2026-08-13"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Women in Technical Theatre 2026",
-   "date": "2026-11-09",
-   "time": "10am & 12pm & 1pm & 3pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/women-in-technical-theatre-2026",
-   "category": "Secondary Schools",
-   "id": "90dfc98adc34",
-   "first_seen": "2026-10-29"
-  },
-  {
    "source": "eventbrite_donegal",
    "venue": "An Gailearaí",
    "town": "Gweedore",
@@ -445,7 +419,7 @@
    "title": "Artist Talk on the exhibition ‘Print & Process’ by Omagh Printmakers.",
    "date": "2026-11-10",
    "time": "12:00pm",
-   "url": "https://struleartscentre.co.uk/show/artist-talk-on-the-exhibition-print-process-by-omagh-printmakers/",
+   "url": "https://struleartscentre.co.uk/show/artist-talk-on-the-exhibition-print-process-by-omagh-printmakers-2/",
    "category": "Spoken Word",
    "id": "f6731282dc54",
    "first_seen": "2026-10-07"
@@ -1364,7 +1338,7 @@
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "RCC Cinema: NAZA",
+   "title": "RCC Cinema: NAZA (Palestinian Culture Night)",
    "date": "2026-11-28",
    "time": "8:00 pm",
    "url": "https://regionalculturalcentre.com/events/rcc-cinema-naza/",
@@ -1372,8 +1346,8 @@
    "merged_from": [
     "rcc"
    ],
-   "id": "62fb3ebc7c0f",
-   "first_seen": "2026-10-24"
+   "id": "a3848fef7503",
+   "first_seen": "2026-11-10"
   },
   {
    "source": "rcc",
@@ -2121,6 +2095,18 @@
    "category": "Musical",
    "id": "fb36adab5067",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Sensitive Santa – A Relaxed Christmas Experience 2026",
+   "date": "2026-12-19",
+   "url": "https://struleartscentre.co.uk/show/sensitive-santa-a-relaxed-christmas-experience-2026/",
+   "category": "Kids/Family",
+   "id": "5abad4ab109f",
+   "first_seen": "2026-11-10"
   },
   {
    "source": "eventbrite_donegal",
@@ -3882,6 +3868,19 @@
    "category": "Workshop",
    "id": "5bb614fcee4a",
    "first_seen": "2026-10-18"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Fermanagh’s Got Country",
+   "date": "2027-07-22",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/fermanaghs-got-country/",
+   "category": "Music",
+   "id": "a425d777197e",
+   "first_seen": "2026-11-10"
   },
   {
    "source": "eventbrite_donegal",
