@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T07:13Z",
+ "generated_at": "2026-11-10T07:45Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 24
+  "galway_city_museum": 25
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -37,46 +37,6 @@
    "category": "Exhibition",
    "id": "2128496c7ce7",
    "first_seen": "2026-10-21"
-  },
-  {
-   "source": "gfs",
-   "venue": "Eye Cinema",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Cactus Pears (Galway Film Society)",
-   "date": "2026-11-08",
-   "end_date": "2026-11-09",
-   "time": "Sunday 5pm and 8pm, Monday 6:30pm",
-   "url": "https://www.tickettailor.com/events/galwayfilmsociety/2417399",
-   "category": "Film",
-   "id": "5b36dc054f00",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Outpost Comedy Club: Where'd You Get The Notions?",
-   "date": "2026-11-09",
-   "time": "Doors 8pm",
-   "url": "https://monroes.ie/products/outpost-comedy-club-24",
-   "category": "Comedy",
-   "id": "2a240846a9a1",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Bounce",
-   "date": "2026-11-09",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/bounce-2026-11-09-200000-81587",
-   "category": "Music",
-   "id": "8267a32f297f",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "roisindubh",
@@ -486,6 +446,19 @@
    "category": "Music",
    "id": "1ef65b800388",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Reichenbach",
+   "date": "2026-11-14",
+   "time": "9pm",
+   "url": "https://roisindubh.net/listings/reichenbach-2026-11-14-210000-81892",
+   "category": "Music",
+   "id": "825f5670dd6f",
+   "first_seen": "2026-11-10"
   },
   {
    "source": "roisindubh",
@@ -959,7 +932,6 @@
    "title": "Anam Music Therapy Fundraising Concert",
    "date": "2026-11-22",
    "url": "https://tht.ie/4874/anam-music-therapy-fundraising-concert",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668936",
    "category": "Music",
    "id": "470dd3b80847",
    "first_seen": "2026-09-27"
@@ -2199,6 +2171,19 @@
    "category": "Music",
    "id": "50db18b9fdd9",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Amazing Apples",
+   "date": "2026-12-18",
+   "time": "Doors 9pm",
+   "url": "https://monroes.ie/products/amazing-apples-18",
+   "category": "Music",
+   "id": "59f95532b88a",
+   "first_seen": "2026-11-10"
   },
   {
    "source": "roisindubh",
@@ -3818,6 +3803,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "David O'Doherty: Highway to the David Zone",
+   "date": "2027-03-04",
+   "url": "https://tht.ie/4943/david-odoherty-highway-to-the-david-zone",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173666046",
+   "category": "Comedy",
+   "id": "08dafda45e7e",
+   "first_seen": "2026-11-10"
+  },
+  {
    "source": "leisureland",
    "venue": "Leisureland",
    "town": "Galway City",
@@ -4406,6 +4404,19 @@
    "category": "Music",
    "id": "99b0808b1ccc",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Begonia",
+   "date": "2027-04-08",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/begonia-2027-04-08-200000-81888",
+   "category": "Music",
+   "id": "6fab0db4367f",
+   "first_seen": "2026-11-10"
   },
   {
    "source": "musicforgalway",
