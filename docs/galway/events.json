@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T07:10Z",
+ "generated_at": "2026-11-12T07:45Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 26
+  "galway_city_museum": 27
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -37,38 +37,6 @@
    "category": "Exhibition",
    "id": "2128496c7ce7",
    "first_seen": "2026-10-21"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "KhakiKid",
-   "date": "2026-11-11",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/khakikid-2026-11-11-200000-81308",
-   "sold_out": true,
-   "category": "Music",
-   "id": "81e68a1ba50d",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Andy Irvine & Quilty",
-   "date": "2026-11-11",
-   "url": "https://tht.ie/4725/andy-irvine-and-quilty",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173665334",
-   "category": "Music",
-   "time": "8pm",
-   "merged_from": [
-    "roisindubh",
-    "tht"
-   ],
-   "id": "08a61e311035",
-   "first_seen": "2026-09-27"
   },
   {
    "source": "roisindubh",
@@ -904,9 +872,8 @@
    "county": "Galway",
    "title": "Sandro Ford: Lager Than Life",
    "date": "2026-11-22",
-   "time": "6pm",
-   "url": "https://roisindubh.net/listings/sandro-ford-lager-than-life-2026-11-22-180000-80920",
-   "sold_out": true,
+   "time": "6:30pm",
+   "url": "https://roisindubh.net/listings/sandro-ford-lager-than-life-2026-11-22-183000-80920",
    "category": "Music",
    "id": "c24710f4cd73",
    "first_seen": "2026-10-04"
@@ -2292,6 +2259,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Club 30+ - An Over 30s Evening Club!",
+   "date": "2026-12-19",
+   "time": "Doors 6pm",
+   "url": "https://monroes.ie/products/club-30-dec26",
+   "category": "Music",
+   "id": "5271fbf24652",
+   "first_seen": "2026-11-12"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -2532,6 +2512,19 @@
    "venue": "Monroe's Live",
    "town": "Galway City",
    "county": "Galway",
+   "title": "George Murphy & the Rising Sons",
+   "date": "2026-12-30",
+   "time": "Doors 8pm",
+   "url": "https://monroes.ie/products/george-murphy-the-rising-sons-3",
+   "category": "Music",
+   "id": "d6acbabaf118",
+   "first_seen": "2026-11-12"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
    "title": "New Year's Eve with KÍLA",
    "date": "2026-12-31",
    "time": "Doors 9pm",
@@ -2688,27 +2681,28 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Bounce",
+   "title": "Madra Salach - 6pm",
    "date": "2027-01-11",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/bounce-2027-01-11-200000-81589",
+   "time": "6pm",
+   "url": "https://roisindubh.net/listings/madra-salach-6pm-2027-01-11-180000-81883",
+   "booking_url": "https://spindizzyrecords.com/products/madra-salach-outstore-roisin-dubh-galway-january-11th",
    "category": "Music",
-   "id": "9712ad848688",
-   "first_seen": "2026-10-04"
+   "id": "9618ba90c268",
+   "first_seen": "2026-11-12"
   },
   {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Madra Salach",
+   "title": "Madra Salach - 9pm",
    "date": "2027-01-11",
-   "time": "6pm",
-   "url": "https://roisindubh.net/listings/madra-salach-2027-01-11-180000-81883",
-   "booking_url": "https://spindizzyrecords.com/products/madra-salach-outstore-roisin-dubh-galway-january-11th",
+   "time": "9pm",
+   "url": "https://roisindubh.net/listings/madra-salach-9pm-2027-01-11-210000-81898",
+   "booking_url": "https://spindizzyrecords.com/products/madra-salach-outstore-roisin-dubh-galway-january-11th-show-2",
    "category": "Music",
-   "id": "d5b5c6ceff7f",
-   "first_seen": "2026-11-05"
+   "id": "efa142d9da97",
+   "first_seen": "2026-11-12"
   },
   {
    "source": "roisindubh",
@@ -4507,6 +4501,19 @@
    "category": "Music, Classical",
    "id": "0530ac9fccf1",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Slomosa",
+   "date": "2027-04-09",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/slomosa-2027-04-09-200000-81890",
+   "category": "Music",
+   "id": "bf941b8a2e40",
+   "first_seen": "2026-11-12"
   },
   {
    "source": "tht",
