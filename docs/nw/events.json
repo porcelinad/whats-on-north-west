@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T06:05Z",
+ "generated_at": "2026-11-12T07:03Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "Hawk's Well Theatre",
@@ -10,27 +10,27 @@
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-11-08T05:54Z",
   "hawkswell": "2026-11-01T02:14Z",
-  "craftmonth_donegal": "2026-11-09T06:15Z",
-  "craftmonth_derry": "2026-11-09T06:15Z",
-  "craftmonth_derry_city": "2026-11-09T06:15Z",
-  "craftmonth_leitrim": "2026-11-09T06:15Z",
-  "craftmonth_sligo": "2026-11-09T06:15Z",
-  "craftmonth_tyrone": "2026-11-09T06:15Z",
-  "craftmonth_fermanagh": "2026-11-09T06:15Z",
-  "heritageweek": "2026-11-09T06:15Z",
+  "craftmonth_donegal": "2026-11-12T07:03Z",
+  "craftmonth_derry": "2026-11-12T07:03Z",
+  "craftmonth_derry_city": "2026-11-12T07:03Z",
+  "craftmonth_leitrim": "2026-11-12T07:03Z",
+  "craftmonth_sligo": "2026-11-12T07:03Z",
+  "craftmonth_tyrone": "2026-11-12T07:03Z",
+  "craftmonth_fermanagh": "2026-11-12T07:03Z",
+  "heritageweek": "2026-11-12T07:03Z",
   "allingham": "2026-11-11T06:05Z",
-  "fomhair": "2026-11-09T06:15Z"
+  "fomhair": "2026-11-12T07:03Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 14,
+  "abbey": 15,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 8,
+  "hawkswell": 9,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -43,7 +43,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 45,
+  "themodel": 46,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -358,20 +358,6 @@
  },
  "events": [
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "In Plain Sight",
-   "date": "2026-11-10",
-   "end_date": "2026-11-11",
-   "url": "https://angrianan.com/event/in-plain-sight/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873667815",
-   "category": "Theatre",
-   "id": "674c9ff56af6",
-   "first_seen": "2026-09-25"
-  },
-  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -386,32 +372,6 @@
    "first_seen": "2026-09-24"
   },
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "The Canterbury Tales – Encore Productions",
-   "date": "2026-11-11",
-   "url": "https://angrianan.com/event/the-canterbury-tales-encore-productions/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873666135/events/128660232/seats?zone=Default",
-   "category": "Theatre",
-   "id": "bbca63f4377a",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Ard Voltas Art Space",
-   "town": "Collooney",
-   "county": "Sligo",
-   "title": "Futurum: Ecoprinting with Malú Colorín for irish Design Week",
-   "date": "2026-11-11",
-   "time": "16:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/futurum-ecoprinting-with-malu-colorin-for-irish-design-week/",
-   "category": null,
-   "id": "c32eba2ad185",
-   "first_seen": "2026-10-04"
-  },
-  {
    "source": "hawkswell",
    "venue": "Hawk's Well Theatre",
    "town": "Sligo",
@@ -424,18 +384,6 @@
    "category": "Music",
    "id": "9cdfc8a5972e",
    "first_seen": "2026-11-01"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Body Count",
-   "date": "2026-11-11",
-   "url": "https://www.derryplayhouse.co.uk/event/body-count",
-   "category": null,
-   "id": "b6093270dd19",
-   "first_seen": "2026-10-18"
   },
   {
    "source": "an_grianan",
@@ -1494,6 +1442,20 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Make Your Light: Lantern Making Workshop",
+   "date": "2026-12-05",
+   "end_date": "2026-12-05",
+   "url": "https://angrianan.com/event/make-your-light-lantern-making-workshop/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669191",
+   "category": "Workshop",
+   "id": "92de037d88a8",
+   "first_seen": "2026-11-12"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Dicey Riley's",
    "town": "Strabane",
@@ -2198,6 +2160,18 @@
    "first_seen": "2026-11-04"
   },
   {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Christmas Classics by Tim Burton",
+   "date": "2026-12-23",
+   "url": "https://www.saintcolumbshall.com/whatson/christmas-classics-by-tim-burton/",
+   "category": null,
+   "id": "e1a1198104af",
+   "first_seen": "2026-11-12"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -2432,6 +2406,19 @@
    "category": "Musical",
    "id": "de4a6bfeb634",
    "first_seen": "2026-11-07"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "The Youth Of Country Music",
+   "date": "2027-01-20",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/the-youth-of-country-music/",
+   "category": "Music",
+   "id": "e81a7a89bb6f",
+   "first_seen": "2026-11-12"
   },
   {
    "source": "ardhowen",
