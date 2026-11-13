@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T07:45Z",
+ "generated_at": "2026-11-13T07:20Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 27
+  "galway_city_museum": 28
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -37,158 +37,6 @@
    "category": "Exhibition",
    "id": "2128496c7ce7",
    "first_seen": "2026-10-21"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Christmas Market Beer Tent",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Christmas Jumper Day 11:45 - 14:15",
-   "date": "2026-11-12",
-   "time": "11:45am",
-   "url": "https://roisindubh.net/listings/christmas-jumper-day-1145-1415-2026-11-12-114500-81843",
-   "sold_out": true,
-   "category": "Music",
-   "id": "504b44ce8f2d",
-   "first_seen": "2026-10-25"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Christmas Market Beer Tent",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Christmas Jumper Day 14:30 - 17:00",
-   "date": "2026-11-12",
-   "time": "2:30pm",
-   "url": "https://roisindubh.net/listings/christmas-jumper-day-1430-1700-2026-11-12-143000-81844",
-   "sold_out": true,
-   "category": "Music",
-   "id": "7066f97bae28",
-   "first_seen": "2026-10-25"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Christmas Market Beer Tent",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Christmas Jumper Day 17:15 - 19:45",
-   "date": "2026-11-12",
-   "time": "5:15pm",
-   "url": "https://roisindubh.net/listings/christmas-jumper-day-1715-1945-2026-11-12-171500-81845",
-   "sold_out": true,
-   "category": "Music",
-   "id": "459bc9607e23",
-   "first_seen": "2026-10-25"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Christmas Market Beer Tent",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Christmas Jumper Day 20:00 to close",
-   "date": "2026-11-12",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/christmas-jumper-day-2000-to-close-2026-11-12-200000-81846",
-   "sold_out": true,
-   "category": "Music",
-   "id": "4b73eabd6c3d",
-   "first_seen": "2026-10-25"
-  },
-  {
-   "source": "gac",
-   "venue": "Galway Arts Centre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Workshop ⁄",
-   "date": "2026-11-12",
-   "time": "18:30 - 20:30",
-   "url": "https://www.galwayartscentre.ie/whats-on/writing-whats-real-responsible-nonfiction-workshop/",
-   "booking_url": "https://www.eventbrite.ie/e/ali-watkins-writing-whats-real-responsible-nonfiction-workshop-tickets-2002643437431?aff=oddtdtcreator&_gl=1*14xbiy0*_up*MQ..*_ga*NDI0MDYzNzU5LjE3OTA3OTI3ODg.*_ga_TQVES5V6SH*czE3OTA3OTI3ODgkbzEkZzEkdDE3OTA3OTI4NzIkajQyJGwwJGgw",
-   "category": "Workshop",
-   "id": "fb4dc9f0bd77",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "gac",
-   "venue": "Galway Arts Centre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Workshop ⁄ Gallery Lates ⁄",
-   "date": "2026-11-12",
-   "time": "18:30 - 20:00",
-   "url": "https://www.galwayartscentre.ie/whats-on/workshop-on-materials-and-humanity/",
-   "category": "Workshop, Gallery Lates",
-   "id": "37e3c411fa08",
-   "first_seen": "2026-11-07"
-  },
-  {
-   "source": "leisureland",
-   "venue": "Leisureland",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "A TASTE OF CELLISSIMO with National Symphony Orchestra Ireland",
-   "date": "2026-11-12",
-   "time": "7:30pm",
-   "url": "https://www.leisureland.ie/calendar/a-taste-of-cellissimo-with-national-symphony-orchestra-ireland/",
-   "category": "Music",
-   "merged_from": [
-    "leisureland",
-    "musicforgalway"
-   ],
-   "id": "41048b33970a",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Christmas Jumper Day Sisco 10pm to close",
-   "date": "2026-11-12",
-   "time": "10pm",
-   "url": "https://roisindubh.net/listings/christmas-jumper-day-sisco-10pm-to-close-2026-11-12-220000-81847",
-   "category": "Music",
-   "id": "7398ad67af6e",
-   "first_seen": "2026-10-23"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Christmas Jumper Day Sisco 1pm - 4pm",
-   "date": "2026-11-12",
-   "time": "1pm",
-   "url": "https://roisindubh.net/listings/christmas-jumper-day-sisco-1pm-4pm-2026-11-12-130000-81849",
-   "category": "Music",
-   "id": "8f3e6c5938a6",
-   "first_seen": "2026-10-23"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Christmas Jumper Day Sisco 5.30pm - 8pm",
-   "date": "2026-11-12",
-   "time": "5:30pm",
-   "url": "https://roisindubh.net/listings/christmas-jumper-day-sisco-5.30pm-8pm-2026-11-12-173000-81848",
-   "category": "Music",
-   "id": "7f9cc1745707",
-   "first_seen": "2026-10-23"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "TEDxGalway - 2026",
-   "date": "2026-11-12",
-   "url": "https://tht.ie/4850/tedxgalway",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668220",
-   "category": "Talk",
-   "id": "ecef352a6028",
-   "first_seen": "2026-11-03"
   },
   {
    "source": "tht",
@@ -1038,14 +886,14 @@
    "venue": "Electric Galway 36 Abbeygate Street Upper, Galway, H91 W577",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Youth Arts ⁄ Music ⁄",
+   "title": "Music ⁄ Youth Arts ⁄",
    "date": "2026-11-27",
    "time": "7:00pm – 9:30pm",
    "url": "https://www.galwayartscentre.ie/whats-on/youth-lates-14/",
    "booking_url": "https://www.eventbrite.ie/e/2004316589875?aff=oddtdtcreator",
-   "category": "Youth Arts, Music",
-   "id": "1f4fb71f6663",
-   "first_seen": "2026-11-07"
+   "category": "Music, Youth Arts",
+   "id": "02178ee807fb",
+   "first_seen": "2026-11-13"
   },
   {
    "source": "musicforgalway",
@@ -3991,6 +3839,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Marty Gleeson - Dog Ear",
+   "date": "2027-03-09",
+   "url": "https://tht.ie/4946/marty-gleeson-dog-ear",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669841",
+   "category": "Comedy",
+   "id": "a93ad54d307b",
+   "first_seen": "2026-11-13"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -4270,6 +4131,19 @@
   },
   {
    "source": "roisindubh",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Onóir",
+   "date": "2027-03-27",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/on%C3%B3ir-2027-03-27-190000-81540",
+   "category": "Music",
+   "id": "80fae4aa2893",
+   "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
@@ -4279,19 +4153,6 @@
    "url": "https://roisindubh.net/listings/last-orders-2027-03-27-233000-81364",
    "category": "Music",
    "id": "342976213730",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Onóir",
-   "date": "2027-03-27",
-   "time": "7pm",
-   "url": "https://roisindubh.net/listings/on%C3%B3ir-2027-03-27-190000-81540",
-   "category": "Music",
-   "id": "80fae4aa2893",
    "first_seen": "2026-10-04"
   },
   {
@@ -4979,6 +4840,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Cellissimo 2027: Cello Octet Amsterdam",
+   "date": "2027-05-20",
+   "url": "https://tht.ie/4945/cellissimo-2027-cello-octet-amsterdam",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669840",
+   "category": "Music",
+   "id": "d7224606b696",
+   "first_seen": "2026-11-13"
+  },
+  {
    "source": "monroes",
    "venue": "Monroe's Live",
    "town": "Galway City",
@@ -4990,6 +4864,19 @@
    "category": "Music",
    "id": "e3a763efb04e",
    "first_seen": "2026-10-19"
+  },
+  {
+   "source": "musicforgalway",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "CELLISSIMO 2027<BR>RTÉ Concert Orchestra",
+   "date": "2027-05-22",
+   "time": "7:30pm",
+   "url": "https://musicforgalway.ie/event/rte-concert-orchestra-27/",
+   "category": "Music, Classical",
+   "id": "a5b86c9b3bbe",
+   "first_seen": "2026-11-13"
   },
   {
    "source": "roisindubh",
