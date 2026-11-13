@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T07:03Z",
+ "generated_at": "2026-11-13T06:34Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "Hawk's Well Theatre",
@@ -25,12 +25,12 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 15,
+  "abbey": 16,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 9,
+  "hawkswell": 10,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -43,7 +43,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 46,
+  "themodel": 47,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -384,48 +384,6 @@
    "category": "Music",
    "id": "9cdfc8a5972e",
    "first_seen": "2026-11-01"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Donegal Giving Conference",
-   "date": "2026-11-12",
-   "end_date": "2026-11-12",
-   "url": "https://angrianan.com/event/donegal-giving-conference/",
-   "category": "Variety",
-   "id": "820307808afd",
-   "first_seen": "2026-08-13"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "Her Night at the Art Deco – An evening of celebrating local ladies in the Arts",
-   "date": "2026-11-12",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/her-night-at-the-art-deco",
-   "category": null,
-   "id": "2a3f6bd93ebd",
-   "first_seen": "2026-11-01"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Cinema: The Incomer",
-   "date": "2026-11-12",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-cinema-the-incomer/",
-   "category": "Film",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "8f8bb9c43063",
-   "first_seen": "2026-10-24"
   },
   {
    "source": "rcc",
@@ -1442,6 +1400,18 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Ireland's Involvement in UN Peacekeeping in Cyprus – Shared Histories, Shared Futures",
+   "date": "2026-12-04",
+   "url": "https://www.thedock.ie/whats-on/un-peacekeeping",
+   "category": "Spoken Word",
+   "id": "590da6080f1c",
+   "first_seen": "2026-11-13"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -1503,6 +1473,19 @@
    "category": "Kids/Family",
    "id": "47f6da509584",
    "first_seen": "2026-08-01"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Light the Way Home for Sweeney the Giant",
+   "date": "2026-12-08",
+   "url": "https://angrianan.com/event/light-the-way/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669192",
+   "category": "Variety",
+   "id": "e49d739c6899",
+   "first_seen": "2026-11-13"
   },
   {
    "source": "an_grianan",
@@ -2341,6 +2324,32 @@
    "category": "Music",
    "id": "4c63a6418077",
    "first_seen": "2026-10-06"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "GUBU What Now?",
+   "date": "2027-01-12",
+   "url": "https://angrianan.com/event/gubu-what-now/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669265/events/128676575/seats?zone=Auditorium",
+   "category": "Spoken Word",
+   "id": "1813a77f314b",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Conal Gallen – OVER & OUT",
+   "date": "2027-01-15",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/conal-gallen-over-out/",
+   "category": "Comedy",
+   "id": "ef9f08e03e3c",
+   "first_seen": "2026-11-13"
   },
   {
    "source": "ardhowen",
@@ -3309,6 +3318,32 @@
    "category": "Music",
    "id": "e73a52022aa3",
    "first_seen": "2026-07-21"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Kojaque",
+   "date": "2027-03-28",
+   "time": "8:00PM",
+   "url": "https://nervecentre.org/whats-on/kojaque",
+   "category": "Music/Comedy",
+   "id": "80b53c6d0203",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Gweedore Reunion 2027 — Last Orders",
+   "date": "2027-03-29",
+   "time": "8:00PM",
+   "url": "https://nervecentre.org/whats-on/willie-barretts-gweedore-reunion-2024-2-2",
+   "category": "Music/Comedy",
+   "id": "35ee863d6e2c",
+   "first_seen": "2026-11-13"
   },
   {
    "source": "ardhowen",
@@ -4446,6 +4481,19 @@
    "category": null,
    "id": "a04bc37a3684",
    "first_seen": "2026-11-08"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Cinema: The Portuguese House",
+   "date": "2027-11-05",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-the-portuguese-house/",
+   "category": "Film",
+   "id": "b083bde1de96",
+   "first_seen": "2026-11-13"
   }
  ]
 }
