@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T06:34Z",
+ "generated_at": "2026-11-14T06:11Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "Hawk's Well Theatre",
@@ -18,19 +18,19 @@
   "craftmonth_tyrone": "2026-11-12T07:03Z",
   "craftmonth_fermanagh": "2026-11-12T07:03Z",
   "heritageweek": "2026-11-12T07:03Z",
-  "allingham": "2026-11-11T06:05Z",
+  "allingham": "2026-11-14T06:11Z",
   "fomhair": "2026-11-12T07:03Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 16,
+  "abbey": 17,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 10,
+  "hawkswell": 11,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -43,7 +43,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 47,
+  "themodel": 48,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -372,20 +372,6 @@
    "first_seen": "2026-09-24"
   },
   {
-   "source": "hawkswell",
-   "venue": "Hawk's Well Theatre",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Broadway and Beyond",
-   "date": "2026-11-11",
-   "end_date": "2026-11-13",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/broadway-and-beyond",
-   "category": "Music",
-   "id": "9cdfc8a5972e",
-   "first_seen": "2026-11-01"
-  },
-  {
    "source": "rcc",
    "venue": "Regional Cultural Centre",
    "town": "Letterkenny",
@@ -400,109 +386,6 @@
    "first_seen": "2026-08-05"
   },
   {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "ABBA Forever",
-   "date": "2026-11-13",
-   "url": "https://angrianan.com/event/abba-forever/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873662309/events/128644603/seats?zone=Default",
-   "category": "Music",
-   "id": "9787ff446f6e",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "hawkswell",
-   "venue": "Art Deco Theatre",
-   "town": "Ballymote",
-   "county": "Sligo",
-   "title": "I Had To Go For Counselling – A one-man Show by Gerry Farrell",
-   "date": "2026-11-13",
-   "time": "8pm",
-   "url": "https://www.hawkswell.com/whats-on/shows/i-had-to-go-for-counselling-3",
-   "category": null,
-   "id": "b96afe2059b9",
-   "first_seen": "2026-11-01"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Atlantic Apartotel",
-   "town": "Bundoran",
-   "county": "Donegal",
-   "title": "Samba Fusion Ireland 2026 with Raz Jayasuriya",
-   "date": "2026-11-13",
-   "time": "18:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/samba-fusion-ireland-2026-with-raz-jayasuriya/",
-   "category": null,
-   "id": "5d4702d5f7cf",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Joes Bar",
-   "town": "Strabane",
-   "county": "Tyrone",
-   "title": "Fintan Harvey FLIGHTMARES Strabane",
-   "date": "2026-11-13",
-   "time": "20:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/fintan-harvey-flightmares-strabane/",
-   "category": null,
-   "id": "eb0b817a6184",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Sunset Theory | Youth Show",
-   "date": "2026-11-13",
-   "time": "7:00PM",
-   "url": "https://nervecentre.org/whats-on/sunset-theory-youth-show",
-   "category": "Music/Comedy",
-   "id": "bfba0267904a",
-   "first_seen": "2026-09-12"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC MUSIC: Lemoncello",
-   "date": "2026-11-13",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/lemoncello/",
-   "category": "Music",
-   "id": "c7be8ddd79b9",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Mr. Bergmann of Deadman's Point – Nth Degree Productions",
-   "date": "2026-11-13",
-   "url": "https://www.thedock.ie/whats-on/mr-bergmann-of-deadmans-point",
-   "category": "Theatre",
-   "id": "0ca993ab6b0b",
-   "first_seen": "2026-10-05"
-  },
-  {
-   "source": "themodel",
-   "venue": "The Model",
-   "town": "Sligo",
-   "county": "Sligo",
-   "title": "Stories from the Sea",
-   "date": "2026-11-13",
-   "time": "8:00 pm",
-   "url": "https://www.themodel.ie/?event=stories-from-the-sea&event_date=2026-11-13",
-   "category": null,
-   "id": "0cbf80161f44",
-   "first_seen": "2026-08-21"
-  },
-  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -514,19 +397,6 @@
    "category": null,
    "id": "adcd4a38cc2a",
    "first_seen": "2026-09-11"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Villa Rose Hotel and Spa",
-   "town": "Stranorlar",
-   "county": "Donegal",
-   "title": "An Evening with George and Aaron Lowden",
-   "date": "2026-11-13",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/an-evening-with-george-and-aaron-lowden/",
-   "category": null,
-   "id": "6a427277b276",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "abbey",
@@ -2129,6 +1999,19 @@
    "category": "Kids/Family",
    "id": "5736b22871ef",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "It’s a Wonderful Life",
+   "date": "2026-12-22",
+   "time": "6:00 pm",
+   "url": "https://regionalculturalcentre.com/events/its-a-wonderful-life/",
+   "category": "Film",
+   "id": "78a6caf75588",
+   "first_seen": "2026-11-14"
   },
   {
    "source": "strule",
