@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T07:20Z",
+ "generated_at": "2026-11-14T07:02Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 28
+  "galway_city_museum": 29
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -50,97 +50,6 @@
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668827",
    "category": "Theatre",
    "id": "5d0c8043e129",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "tht",
-   "venue": "Black Box Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Sharon Shannon & Mike McGoldrick",
-   "date": "2026-11-13",
-   "url": "https://tht.ie/4902/sharon-shannon-and-mike-mcgoldrick",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668881",
-   "category": "Music",
-   "id": "774a8682ba7f",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Deuce - A Tribute to Rory Gallagher",
-   "date": "2026-11-13",
-   "time": "Doors 8pm",
-   "url": "https://monroes.ie/products/deuce-1",
-   "category": "Music",
-   "id": "0c649ee39073",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "NxNW",
-   "date": "2026-11-13",
-   "time": "Doors 10pm",
-   "url": "https://monroes.ie/products/nxnw",
-   "category": "Music",
-   "id": "d468665a05da",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Swiftogeddon - 20 years of Taylor special",
-   "date": "2026-11-13",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/swiftogeddon-20-years-of-taylor-special-2026-11-13-230000-81303",
-   "category": "Music",
-   "id": "996051306dbb",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "THE FRANK & WALTERS ' Grand Parade' 30th Anniversary Tour",
-   "date": "2026-11-13",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/the-frank-and-walters-grand-parade-30th-anniversary-tour-2026-11-13-200000-80978",
-   "category": "Music",
-   "id": "1f7d35bdf519",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Slow Attack of The Mumbling Folk",
-   "date": "2026-11-13",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/slow-attack-of-the-mumbling-folk-2026-11-13-200000-81857",
-   "category": "Music",
-   "id": "56704b718760",
-   "first_seen": "2026-10-23"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Rory's Stories - The Good Ol' Days",
-   "date": "2026-11-13",
-   "url": "https://tht.ie/4688/rorys-stories-the-good-ol-days",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173664289",
-   "category": "Theatre",
-   "id": "1888d591651e",
    "first_seen": "2026-09-27"
   },
   {
@@ -272,6 +181,7 @@
    "date": "2026-11-14",
    "time": "8pm",
    "url": "https://roisindubh.net/listings/find-joy-2026-11-14-200000-81381",
+   "sold_out": true,
    "category": "Music",
    "id": "4518a0392010",
    "first_seen": "2026-10-04"
@@ -1394,6 +1304,32 @@
    "first_seen": "2026-10-19"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Monroe's Late Night Venue: DJ Corey Herself",
+   "date": "2026-12-05",
+   "time": "Doors 11pm",
+   "url": "https://monroes.ie/products/monroes-late-night-venue-dj-corey-herself-6",
+   "category": "Music",
+   "id": "30462b3c1661",
+   "first_seen": "2026-11-14"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Ride The Cyclone",
+   "date": "2026-12-05",
+   "time": "Doors 2.30pm",
+   "url": "https://monroes.ie/products/ride-the-cyclone-dec5",
+   "category": "Music",
+   "id": "dfb5775d1043",
+   "first_seen": "2026-11-14"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -1497,6 +1433,29 @@
    "category": "Film",
    "id": "b5f2634f1087",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Ride The Cyclone",
+   "date": "2026-12-06",
+   "time": "Doors 12pm & Doors 2.30pm",
+   "url": "https://monroes.ie/products/ride-the-cyclone-dec6-12pm",
+   "category": "Music",
+   "sessions": [
+    {
+     "time": "Doors 12pm",
+     "url": "https://monroes.ie/products/ride-the-cyclone-dec6-12pm"
+    },
+    {
+     "time": "Doors 2.30pm",
+     "url": "https://monroes.ie/products/ride-the-cyclone-dec6-2-30pm"
+    }
+   ],
+   "id": "80857b5df205",
+   "first_seen": "2026-11-14"
   },
   {
    "source": "roisindubh",
@@ -1758,6 +1717,19 @@
    "category": "Music",
    "id": "af9a80e5e087",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Monroe's Late Night Venue: DJ Will Softly",
+   "date": "2026-12-12",
+   "time": "Doors 11pm",
+   "url": "https://monroes.ie/products/monroes-late-night-venue-dj-will-softly",
+   "category": "Music",
+   "id": "82c98b4897e6",
+   "first_seen": "2026-11-14"
   },
   {
    "source": "roisindubh",
@@ -2118,6 +2090,19 @@
    "category": "Music",
    "id": "5271fbf24652",
    "first_seen": "2026-11-12"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Monroe's Late Night Venue: DJ Flako",
+   "date": "2026-12-19",
+   "time": "Doors 11pm",
+   "url": "https://monroes.ie/products/monroes-late-night-venue-dj-flako-5",
+   "category": "Music",
+   "id": "f24df5f333bb",
+   "first_seen": "2026-11-14"
   },
   {
    "source": "roisindubh",
@@ -2669,6 +2654,19 @@
    "category": "Music",
    "id": "3d9682c01c00",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "THE KING-SIZE SIMPSONS QUIZ",
+   "date": "2027-01-20",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/the-king-size-simpsons-quiz-2027-01-20-190000-81911",
+   "category": "Music",
+   "id": "bf972ed0a1a7",
+   "first_seen": "2026-11-14"
   },
   {
    "source": "tht",
@@ -3735,6 +3733,20 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh (Top Bar)",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Chief Keegan",
+   "date": "2027-03-05",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/chief-keegan-2027-03-05-200000-81906",
+   "booking_url": "https://www.eventbrite.com/e/chief-keegan-galway-the-roisin-dubh-upstairs-tickets-2004788221538?aff=oddtdtcreator&keep_tld=true",
+   "category": "Music",
+   "id": "512f48458564",
+   "first_seen": "2026-11-14"
+  },
+  {
    "source": "musicforgalway",
    "venue": "Siobhán McKenna Theatre",
    "town": "Galway City",
@@ -4740,6 +4752,19 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
+   "title": "Showhawk Duo",
+   "date": "2027-05-09",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/showhawk-duo-2027-05-09-190000-81902",
+   "category": "Music",
+   "id": "22dde2332afd",
+   "first_seen": "2026-11-14"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
    "title": "Bounce",
    "date": "2027-05-10",
    "time": "8pm",
@@ -5379,6 +5404,19 @@
    "category": "Kids/Family",
    "id": "54bce9a31860",
    "first_seen": "2026-11-07"
+  },
+  {
+   "source": "tht",
+   "venue": "Black Box Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "John Barrowman 60th Birthday Bash",
+   "date": "2027-10-31",
+   "url": "https://tht.ie/4944/john-barrowman-60th-birthday-bash",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669837/events",
+   "category": "Music",
+   "id": "166a2386c01b",
+   "first_seen": "2026-11-14"
   }
  ]
 }
