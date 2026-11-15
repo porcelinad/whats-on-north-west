@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T07:02Z",
+ "generated_at": "2026-11-15T07:13Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 29
+  "galway_city_museum": 30
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -37,167 +37,6 @@
    "category": "Exhibition",
    "id": "2128496c7ce7",
    "first_seen": "2026-10-21"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "The Importance of Being Earnest",
-   "date": "2026-11-12",
-   "end_date": "2026-11-14",
-   "url": "https://tht.ie/4895/the-importance-of-being-earnest",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668827",
-   "category": "Theatre",
-   "id": "5d0c8043e129",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "taibhdhearc",
-   "venue": "Galway",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "An Taibhdhearc & Moonfish Theatre Workshop",
-   "date": "2026-11-14",
-   "url": "https://www.antaibhdhearc.com/ceardlann-moonfish",
-   "category": "Theatre, Irish Language",
-   "id": "435db7e283e0",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "leisureland",
-   "venue": "Leisureland",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "The Misadventures of the 3 Little Pigs",
-   "date": "2026-11-14",
-   "time": "3pm",
-   "url": "https://www.leisureland.ie/calendar/the-misadventures-of-the-3-little-pigs/",
-   "category": "Music",
-   "merged_from": [
-    "leisureland",
-    "roisindubh"
-   ],
-   "id": "76fbe4921abb",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Andrew Ryan",
-   "date": "2026-11-14",
-   "time": "Doors 7pm",
-   "url": "https://monroes.ie/products/andrew-ryan",
-   "category": "Music",
-   "id": "697c483236ff",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Andrew Ryan (Extra show)",
-   "date": "2026-11-14",
-   "time": "Doors 5pm",
-   "url": "https://monroes.ie/products/andrew-ryan-1",
-   "category": "Music",
-   "id": "a9acfe410fd6",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Monroe's Late Night Venue: DJ Corey Herself",
-   "date": "2026-11-14",
-   "time": "Doors 11pm",
-   "url": "https://monroes.ie/products/monroes-late-night-venue-dj-corey-herself-5",
-   "category": "Music",
-   "id": "4bf58b7c8cda",
-   "first_seen": "2026-11-11"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Pólca 4",
-   "date": "2026-11-14",
-   "time": "Doors 10pm",
-   "url": "https://monroes.ie/products/polca-4",
-   "category": "Music",
-   "id": "1c8103e0e412",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Last Orders",
-   "date": "2026-11-14",
-   "time": "11:30pm",
-   "url": "https://roisindubh.net/listings/last-orders-2026-11-14-233000-81345",
-   "category": "Music",
-   "id": "1ef65b800388",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Reichenbach",
-   "date": "2026-11-14",
-   "time": "9pm",
-   "url": "https://roisindubh.net/listings/reichenbach-2026-11-14-210000-81892",
-   "category": "Music",
-   "id": "825f5670dd6f",
-   "first_seen": "2026-11-10"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Powerhaus",
-   "date": "2026-11-14",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/powerhuas-2026-11-14-230000-81113",
-   "category": "Music",
-   "id": "0aacf7993046",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "find-joy",
-   "date": "2026-11-14",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/find-joy-2026-11-14-200000-81381",
-   "sold_out": true,
-   "category": "Music",
-   "id": "4518a0392010",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Gearóid Farrelly: No Pressure",
-   "date": "2026-11-14",
-   "url": "https://tht.ie/4652/gearandoacuteid-farrelly-no-pressure",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173663763",
-   "category": "Comedy",
-   "id": "fd600620c49c",
-   "first_seen": "2026-09-27"
   },
   {
    "source": "gfs",
@@ -548,6 +387,19 @@
    "venue": "Monroe's Live",
    "town": "Galway City",
    "county": "Galway",
+   "title": "Monroe's Late Night Venue: DJ Killian MacDonald",
+   "date": "2026-11-21",
+   "time": "Doors 11pm",
+   "url": "https://monroes.ie/products/monroes-late-night-venue-dj-killian-macdonald",
+   "category": "Music",
+   "id": "5e2ccc6f5663",
+   "first_seen": "2026-11-15"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
    "title": "Pauric O'Meara",
    "date": "2026-11-21",
    "time": "Doors 7pm",
@@ -817,6 +669,19 @@
    "category": "Music, Classical",
    "id": "89c535b469f8",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "The Garth Brooks Tribute Show, Thunder Rolls",
+   "date": "2026-11-27",
+   "time": "Doors 7pm",
+   "url": "https://monroes.ie/products/the-garth-brooks-tribute-show-thunder-rolls",
+   "category": "Music",
+   "id": "e5c008bc73bb",
+   "first_seen": "2026-11-15"
   },
   {
    "source": "roisindubh",
