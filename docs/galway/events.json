@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T07:13Z",
+ "generated_at": "2026-11-16T07:18Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 30
+  "galway_city_museum": 31
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -53,45 +53,6 @@
    "first_seen": "2026-10-04"
   },
   {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "John Conneely Inc.",
-   "date": "2026-11-15",
-   "time": "11:59pm",
-   "url": "https://roisindubh.net/listings/john-conneely-inc.-2026-11-15-235900-80900",
-   "category": "Music",
-   "id": "fa73265bcab5",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Open Mic Night",
-   "date": "2026-11-15",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/open-mic-night-2026-11-15-200000-81028",
-   "category": "Music",
-   "id": "45d081ed2042",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Seamus Fogarty",
-   "date": "2026-11-15",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/seamus-fogarty-2026-11-15-200000-81218",
-   "category": "Music",
-   "id": "1b086a97d7f8",
-   "first_seen": "2026-10-04"
-  },
-  {
    "source": "tht",
    "venue": "The Mick Lally Theatre, Druid Lane",
    "town": "Galway City",
@@ -103,19 +64,6 @@
    "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173667297",
    "category": "Theatre",
    "id": "be205868b430",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Michael English: Irish Concert Tour 2026",
-   "date": "2026-11-15",
-   "url": "https://tht.ie/4702/michael-english-irish-concert-tour-2026",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173664727",
-   "category": "Music",
-   "id": "2c46c709d8de",
    "first_seen": "2026-09-27"
   },
   {
@@ -241,7 +189,7 @@
   },
   {
    "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
+   "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
    "title": "Shobsy",
@@ -428,8 +376,8 @@
    "county": "Galway",
    "title": "Club Gass Presents Haute and Freddy",
    "date": "2026-11-21",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/club-gass-presents-haute-and-freddy-2026-11-21-200000-81512",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/club-gass-presents-haute-and-freddy-2026-11-21-190000-81512",
    "sold_out": true,
    "category": "Music",
    "id": "13cf2ccae0cc",
@@ -2397,7 +2345,6 @@
    "date": "2027-01-11",
    "time": "9pm",
    "url": "https://roisindubh.net/listings/madra-salach-9pm-2027-01-11-210000-81898",
-   "booking_url": "https://spindizzyrecords.com/products/madra-salach-outstore-roisin-dubh-galway-january-11th-show-2",
    "category": "Music",
    "id": "efa142d9da97",
    "first_seen": "2026-11-12"
@@ -3342,6 +3289,19 @@
    "category": "Comedy",
    "id": "2c0a17702f73",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Linkin Cork – A Tribute to Linkin Park",
+   "date": "2027-02-20",
+   "time": "Doors 7.30pm",
+   "url": "https://monroes.ie/products/linkin-cork",
+   "category": "Music",
+   "id": "8931abf7d5a6",
+   "first_seen": "2026-11-16"
   },
   {
    "source": "roisindubh",
@@ -5217,6 +5177,19 @@
    "category": "Music",
    "id": "c9d3742ace53",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Rushified - A Tribute to Rush",
+   "date": "2027-09-11",
+   "time": "Doors 7.pm",
+   "url": "https://monroes.ie/products/rushified-1",
+   "category": "Music",
+   "id": "6a95e132cc65",
+   "first_seen": "2026-11-16"
   },
   {
    "source": "roisindubh",
