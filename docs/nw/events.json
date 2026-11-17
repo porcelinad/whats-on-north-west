@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T06:18Z",
+ "generated_at": "2026-11-17T07:49Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "Hawk's Well Theatre",
@@ -18,19 +18,19 @@
   "craftmonth_tyrone": "2026-11-15T06:19Z",
   "craftmonth_fermanagh": "2026-11-15T06:19Z",
   "heritageweek": "2026-11-15T06:19Z",
-  "allingham": "2026-11-14T06:11Z",
+  "allingham": "2026-11-17T07:49Z",
   "fomhair": "2026-11-15T06:19Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 19,
+  "abbey": 20,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 13,
+  "hawkswell": 14,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -43,8 +43,8 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 50,
-  "playhouse": 0,
+  "themodel": 51,
+  "playhouse": 1,
   "allingham": 0,
   "fomhair": 0
  },
@@ -357,19 +357,6 @@
   "https://www.balorartscentre.com/?event=the-ghostlight-sessions-november-2026": "Now in it’s 9th year The Ghostlight Sessions is one of the country’s longest running established original emerging music nights. Each night features 3 30 minute sets performed by some of Ireland’s best new musical talent. November’s Ghostlight is the final one of 2026. We’re excited to introduce Heron Red and Porter Boys Social Club while our resident MC Dean Maywood also takes the spotlight."
  },
  "events": [
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Ulster Orchestra Primary Schools’ Concert",
-   "date": "2026-11-16",
-   "time": "11:00am",
-   "url": "https://struleartscentre.co.uk/show/ulster-orchestra-primary-schools-concert-7/",
-   "category": "Music",
-   "id": "88b988fc11a4",
-   "first_seen": "2026-09-03"
-  },
   {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
@@ -993,6 +980,19 @@
    ],
    "id": "1d4230fe3bcb",
    "first_seen": "2026-10-24"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "EA Music Service Omagh Christmas Concert 2026",
+   "date": "2026-12-03",
+   "time": "6:00pm",
+   "url": "https://struleartscentre.co.uk/show/ea-music-service-omagh-christmas-concert-2026/",
+   "category": "Music",
+   "id": "7f52d5864318",
+   "first_seen": "2026-11-17"
   },
   {
    "source": "an_grianan",
@@ -1672,6 +1672,7 @@
    "date": "2026-12-19",
    "url": "https://struleartscentre.co.uk/show/sensitive-santa-a-relaxed-christmas-experience-2026/",
    "category": "Kids/Family",
+   "sold_out": true,
    "id": "5abad4ab109f",
    "first_seen": "2026-11-10"
   },
@@ -1998,6 +1999,20 @@
    "category": "Comedy",
    "id": "ef9f08e03e3c",
    "first_seen": "2026-11-13"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Robin Hood and his Mary Women – Letterkenny Pantomime Society",
+   "date": "2027-01-16",
+   "end_date": "2027-01-23",
+   "url": "https://angrianan.com/event/robin-hood-and-his-mary-women-letterkenny-pantomime-society/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669323/events/128677132",
+   "category": "Kids/Family",
+   "id": "824c03e4ab9f",
+   "first_seen": "2026-11-17"
   },
   {
    "source": "ardhowen",
