@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T07:18Z",
+ "generated_at": "2026-11-17T08:30Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 31
+  "galway_city_museum": 32
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -39,20 +39,6 @@
    "first_seen": "2026-10-21"
   },
   {
-   "source": "gfs",
-   "venue": "Eye Cinema",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Blue Heron (Galway Film Society)",
-   "date": "2026-11-15",
-   "end_date": "2026-11-16",
-   "time": "Sunday 5pm and 8pm, Monday 6:30pm",
-   "url": "https://www.tickettailor.com/events/galwayfilmsociety/2417400",
-   "category": "Film",
-   "id": "ccf9ea15e6ef",
-   "first_seen": "2026-10-04"
-  },
-  {
    "source": "tht",
    "venue": "The Mick Lally Theatre, Druid Lane",
    "town": "Galway City",
@@ -65,32 +51,6 @@
    "category": "Theatre",
    "id": "be205868b430",
    "first_seen": "2026-09-27"
-  },
-  {
-   "source": "tht",
-   "venue": "Black Box Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "An Evening in Ireland with Jeff Tweedy",
-   "date": "2026-11-16",
-   "url": "https://tht.ie/4765/jeff-tweedy",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173665853",
-   "category": "Music",
-   "id": "44bed5846ff1",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Outpost Comedy Club: Where'd You Get The Notions?",
-   "date": "2026-11-16",
-   "time": "Doors 8pm",
-   "url": "https://monroes.ie/products/outpost-comedy-club-25",
-   "category": "Comedy",
-   "id": "86e4755e5d96",
-   "first_seen": "2026-10-18"
   },
   {
    "source": "roisindubh",
@@ -382,6 +342,19 @@
    "category": "Music",
    "id": "13cf2ccae0cc",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Shamrock Showband: Shankill Road Mission",
+   "date": "2026-11-21",
+   "time": "2pm",
+   "url": "https://roisindubh.net/listings/shamrock-showband-shankill-road-mission-2026-11-21-140000-81913",
+   "category": "Music",
+   "id": "22490c1fdb6a",
+   "first_seen": "2026-11-17"
   },
   {
    "source": "gfs",
@@ -1304,6 +1277,7 @@
    "title": "Galway Messiah",
    "date": "2026-12-06",
    "time": "7:30pm",
+   "sold_out": true,
    "url": "https://musicforgalway.ie/event/galway-messiah-26/",
    "category": "Music, Classical",
    "id": "ab942d2b6a1a",
@@ -4026,7 +4000,6 @@
    "title": "An Evening with Vladimir Šmicer and Patrik Berger",
    "date": "2027-03-31",
    "url": "https://tht.ie/4918/an-evening-with-vladimir-smicer-and-patrik-berger",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669055",
    "category": "Sport",
    "id": "3c4ca246ac77",
    "first_seen": "2026-10-04"
@@ -5153,6 +5126,32 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "roisindubh",
+   "venue": "Heineken Big Top",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "The Scratch & Gurriers",
+   "date": "2027-07-22",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/the-scratch-and-gurriers-2027-07-22-190000-81907",
+   "category": "Music",
+   "id": "aaeaef9644af",
+   "first_seen": "2026-11-17"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Heineken Big Top",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Block Rockin Beats",
+   "date": "2027-07-23",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/block-rockin-beats-2027-07-23-190000-81909",
+   "category": "Music",
+   "id": "bbc654914e04",
+   "first_seen": "2026-11-17"
+  },
+  {
    "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway City",
@@ -5229,6 +5228,33 @@
    "category": "Music",
    "id": "87f0316f69ae",
    "first_seen": "2026-11-01"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Mary Gauthier",
+   "date": "2027-10-29",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/mary-gauthier-2027-10-29-190000-81912",
+   "booking_url": "https://tht.ie/4947/mary-gauthier",
+   "category": "Music",
+   "id": "4ca3fa630e91",
+   "first_seen": "2026-11-17"
+  },
+  {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Mary Gauthier",
+   "date": "2027-10-29",
+   "url": "https://tht.ie/4947/mary-gauthier",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669908",
+   "category": "Music",
+   "id": "de4150f534cf",
+   "first_seen": "2026-11-17"
   },
   {
    "source": "tht",
