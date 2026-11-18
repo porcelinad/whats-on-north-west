@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T08:30Z",
+ "generated_at": "2026-11-18T07:57Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 32
+  "galway_city_museum": 33
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -51,19 +51,6 @@
    "category": "Theatre",
    "id": "be205868b430",
    "first_seen": "2026-09-27"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Silent Disco On Tuesdays",
-   "date": "2026-11-17",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2026-11-17-200000-81458",
-   "category": "Music",
-   "id": "237726ba9107",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "tht",
@@ -543,13 +530,13 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
-   "title": "McGrath",
+   "title": "Sakura",
    "date": "2026-11-26",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/mcgrath-2026-11-26-200000-81295",
+   "time": "11:59pm",
+   "url": "https://roisindubh.net/listings/sakura-2026-11-26-235900-81916",
    "category": "Music",
-   "id": "a977edb97892",
-   "first_seen": "2026-10-04"
+   "id": "079ac4313548",
+   "first_seen": "2026-11-18"
   },
   {
    "source": "roisindubh",
@@ -898,13 +885,13 @@
    "venue": "Róisín Dubh (Top Bar)",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Tuesday Comedy Showcase",
+   "title": "Tuesday Comedy Showcase with Breda Larkin",
    "date": "2026-12-01",
    "time": "8:30pm",
-   "url": "https://roisindubh.net/listings/tuesday-comedy-showcase-2026-12-01-203000-81878",
+   "url": "https://roisindubh.net/listings/tuesday-comedy-showcase-with-breda-larkin-2026-12-01-203000-81878",
    "category": "Comedy",
-   "id": "fcad8e73f5ce",
-   "first_seen": "2026-11-04"
+   "id": "78fdd00c6164",
+   "first_seen": "2026-11-18"
   },
   {
    "source": "galway_city_museum",
@@ -1341,13 +1328,13 @@
    "venue": "Róisín Dubh (Top Bar)",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Tuesday Comedy Showcase",
+   "title": "Tuesday Comedy Showcase with Taran O'Sullivan",
    "date": "2026-12-08",
    "time": "8:30pm",
-   "url": "https://roisindubh.net/listings/tuesday-comedy-showcase-2026-12-08-203000-81879",
+   "url": "https://roisindubh.net/listings/tuesday-comedy-showcase-with-taran-osullivan-2026-12-08-203000-81879",
    "category": "Comedy",
-   "id": "3df8070851e1",
-   "first_seen": "2026-11-04"
+   "id": "0ece4cf64c77",
+   "first_seen": "2026-11-18"
   },
   {
    "source": "roisindubh",
@@ -3126,6 +3113,19 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
+   "title": "Casey Lowery",
+   "date": "2027-02-14",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/casey-lowery-2027-02-14-200000-81903",
+   "category": "Music",
+   "id": "88aa82170fd4",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
    "title": "Open Mic Night",
    "date": "2027-02-14",
    "time": "8pm",
@@ -4693,13 +4693,13 @@
    "venue": "Leisureland",
    "town": "Galway City",
    "county": "Galway",
-   "title": "CELLISSIMO 2027<BR>RTÉ Concert Orchestra",
+   "title": "CELLISSIMO 2027 <BR>RTÉ Concert Orchestra",
    "date": "2027-05-22",
    "time": "7:30pm",
    "url": "https://musicforgalway.ie/event/rte-concert-orchestra-27/",
    "category": "Music, Classical",
-   "id": "a5b86c9b3bbe",
-   "first_seen": "2026-11-13"
+   "id": "0d2a610ac7bf",
+   "first_seen": "2026-11-18"
   },
   {
    "source": "roisindubh",
@@ -4757,6 +4757,19 @@
    "category": "Music",
    "id": "16ce99ad76b6",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh (Top Bar)",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "McGrath",
+   "date": "2027-05-28",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/mcgrath-2027-05-28-200000-81295",
+   "category": "Music",
+   "id": "691c396dfa28",
+   "first_seen": "2026-11-18"
   },
   {
    "source": "tht",
@@ -5007,6 +5020,19 @@
    "category": "Music",
    "id": "6e047107d5a1",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Wednesday",
+   "date": "2027-06-26",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/wednesday-2027-06-26-200000-81899",
+   "category": "Music",
+   "id": "ee6ffb30b020",
+   "first_seen": "2026-11-18"
   },
   {
    "source": "tht",
