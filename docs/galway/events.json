@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T07:57Z",
+ "generated_at": "2026-11-19T07:57Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -9,12 +9,12 @@
   "monroes": 0,
   "roisindubh": 0,
   "gfs": 0,
-  "gac": 0,
+  "gac": 1,
   "mick_lally": 0,
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 33
+  "galway_city_museum": 34
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -65,33 +65,6 @@
    "category": "Community",
    "id": "ba920da62531",
    "first_seen": "2026-09-27"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "20TH CENTURY PADDY: THE SONGS OF SHANE MACGOWAN – ALBUM LAUNCH",
-   "date": "2026-11-18",
-   "time": "6pm",
-   "url": "https://roisindubh.net/listings/20th-century-paddy-the-songs-of-shane-macgowan-%E2%80%93-album-launch-2026-11-18-180000-81858",
-   "booking_url": "https://goldendiscs.ie/pages/20th-century-paddy-the-songs-of-shane-macgowan-album-launch",
-   "category": "Music",
-   "id": "543abff409b4",
-   "first_seen": "2026-10-24"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Movember",
-   "date": "2026-11-18",
-   "time": "9:30pm",
-   "url": "https://roisindubh.net/listings/movember-2026-11-18-213000-81894",
-   "category": "Music",
-   "id": "97fb393f02d8",
-   "first_seen": "2026-11-11"
   },
   {
    "source": "tht",
@@ -2909,6 +2882,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Grace Mulvey: Gigantica",
+   "date": "2027-02-05",
+   "url": "https://tht.ie/4948/grace-mulvey-gigantica",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173670021",
+   "category": "Comedy",
+   "id": "f24a363dd646",
+   "first_seen": "2026-11-19"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -4250,6 +4236,19 @@
    "category": "Music",
    "id": "5d4fd96a67b3",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Ashley Campbell & Band",
+   "date": "2027-04-11",
+   "time": "Doors 7.30pm",
+   "url": "https://monroes.ie/products/ashley-campbell-band",
+   "category": "Music",
+   "id": "4e8e1d090c16",
+   "first_seen": "2026-11-19"
   },
   {
    "source": "roisindubh",
