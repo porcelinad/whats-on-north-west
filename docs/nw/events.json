@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T07:19Z",
+ "generated_at": "2026-11-19T07:16Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "Hawk's Well Theatre",
@@ -22,15 +22,15 @@
   "fomhair": "2026-11-18T07:19Z"
  },
  "consecutive_failures": {
-  "an_grianan": 1,
+  "an_grianan": 0,
   "rcc": 0,
-  "balor": 1,
-  "abbey": 21,
+  "balor": 0,
+  "abbey": 22,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 15,
+  "hawkswell": 16,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -40,10 +40,10 @@
   "craftmonth_tyrone": 0,
   "craftmonth_fermanagh": 0,
   "heritageweek": 0,
-  "thedock": 1,
+  "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 52,
+  "themodel": 53,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -357,32 +357,6 @@
   "https://www.balorartscentre.com/?event=the-ghostlight-sessions-november-2026": "Now in it’s 9th year The Ghostlight Sessions is one of the country’s longest running established original emerging music nights. Each night features 3 30 minute sets performed by some of Ireland’s best new musical talent. November’s Ghostlight is the final one of 2026. We’re excited to introduce Heron Red and Porter Boys Social Club while our resident MC Dean Maywood also takes the spotlight."
  },
  "events": [
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Adrift by Deirdre Kinahan",
-   "date": "2026-11-18",
-   "url": "https://angrianan.com/event/adrift-by-deirdre-kinahan/",
-   "booking_url": "https://angrianan.ticketsolve.com/shows/873666266/events",
-   "category": "Theatre",
-   "id": "b14c3616b15f",
-   "first_seen": "2026-07-16"
-  },
-  {
-   "source": "balor",
-   "venue": "Balor Arts Centre",
-   "town": "Ballybofey",
-   "county": "Donegal",
-   "title": "Ballybofey & Stranorlar Women's Group Variety Show",
-   "date": "2026-11-18",
-   "time": "8:00 pm",
-   "url": "https://www.balorartscentre.com/?event=ballybofey-stranorlar-womens-group-variety-show-2",
-   "category": "Variety",
-   "id": "ecfc80dd62af",
-   "first_seen": "2026-11-11"
-  },
   {
    "source": "nervecentre",
    "venue": "Nerve Centre & Brunswick Moviebowl",
@@ -1146,7 +1120,6 @@
    "time": "7:30pm",
    "url": "https://struleartscentre.co.uk/show/community-carol-service/",
    "category": "Music",
-   "sold_out": true,
    "id": "5250783a114e",
    "first_seen": "2026-10-10"
   },
@@ -2300,6 +2273,19 @@
    "first_seen": "2026-09-30"
   },
   {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "The Human Voice",
+   "date": "2027-02-03",
+   "url": "https://angrianan.com/event/the-human-voice/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669350/events/128677319/seats?zone=Auditorium",
+   "category": "Theatre",
+   "id": "ff20afc46e35",
+   "first_seen": "2026-11-19"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -2698,6 +2684,19 @@
    "category": null,
    "id": "28b79bfc844c",
    "first_seen": "2026-10-18"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Arcanadh",
+   "date": "2027-02-27",
+   "url": "https://angrianan.com/event/arcanadh/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669352/events/128677325/seats?zone=Auditorium",
+   "category": "Music",
+   "id": "0cbeff96768a",
+   "first_seen": "2026-11-19"
   },
   {
    "source": "strule",
@@ -4209,6 +4208,19 @@
    "category": null,
    "id": "f4a49a182122",
    "first_seen": "2026-11-18"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Ard Voltas Art Space",
+   "town": "Collooney",
+   "county": "Sligo",
+   "title": "Futurum: Ecoprinting with Malú Colorín for irish Design Week",
+   "date": "2027-11-11",
+   "time": "16:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/futurum-ecoprinting-with-malu-colorin-for-irish-design-week/",
+   "category": null,
+   "id": "704e036e6f6e",
+   "first_seen": "2026-11-19"
   }
  ]
 }
