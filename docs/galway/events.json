@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T07:57Z",
+ "generated_at": "2026-11-20T07:46Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -9,12 +9,12 @@
   "monroes": 0,
   "roisindubh": 0,
   "gfs": 0,
-  "gac": 1,
+  "gac": 0,
   "mick_lally": 0,
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 34
+  "galway_city_museum": 35
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -54,20 +54,6 @@
   },
   {
    "source": "tht",
-   "venue": "Black Box Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Back to the 80s!",
-   "date": "2026-11-18",
-   "end_date": "2026-11-19",
-   "url": "https://tht.ie/4877/back-to-the-80s",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669028",
-   "category": "Community",
-   "id": "ba920da62531",
-   "first_seen": "2026-09-27"
-  },
-  {
-   "source": "tht",
    "venue": "Town Hall Theatre",
    "town": "Galway City",
    "county": "Galway",
@@ -79,59 +65,6 @@
    "category": "Music",
    "id": "e4d196fa9433",
    "first_seen": "2026-09-27"
-  },
-  {
-   "source": "gac",
-   "venue": "Galway Arts Centre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Gallery Lates ⁄",
-   "date": "2026-11-19",
-   "time": "5–9pm",
-   "url": "https://www.galwayartscentre.ie/whats-on/late-opening-veruca-salt/",
-   "category": "Gallery Lates",
-   "id": "1789555dd6fd",
-   "first_seen": "2026-10-29"
-  },
-  {
-   "source": "gac",
-   "venue": "Galway Arts Centre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Workshop ⁄",
-   "date": "2026-11-19",
-   "time": "18:30 - 20:30",
-   "url": "https://www.galwayartscentre.ie/whats-on/whats-the-story-storytelling-workshop/",
-   "booking_url": "https://www.eventbrite.ie/e/orla-mc-govern-whats-the-story-storytelling-workshop-tickets-2002644316059?aff=oddtdtcreator&_gl=1*174h4i6*_up*MQ..*_ga*NDI0MDYzNzU5LjE3OTA3OTI3ODg.*_ga_TQVES5V6SH*czE3OTA3OTI3ODgkbzEkZzEkdDE3OTA3OTI5MjIkajYwJGwwJGgw",
-   "category": "Workshop",
-   "id": "d08a2a1a12b5",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Shobsy",
-   "date": "2026-11-19",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/shobsy-2026-11-19-200000-81299",
-   "category": "Music",
-   "id": "7259899af9dd",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "The Mersey Beatles: 60 Years Of Sgt Pepper's Lonely Hearts Club Band",
-   "date": "2026-11-19",
-   "url": "https://tht.ie/4941/the-mersey-beatles",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669567",
-   "category": "Music",
-   "id": "eb37ae1a81e4",
-   "first_seen": "2026-11-04"
   },
   {
    "source": "leisureland",
@@ -529,14 +462,14 @@
    "venue": "Electric Galway 36 Abbeygate Street Upper, Galway, H91 W577",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Music ⁄ Youth Arts ⁄",
+   "title": "Youth Arts ⁄ Music ⁄",
    "date": "2026-11-27",
    "time": "7:00pm – 9:30pm",
    "url": "https://www.galwayartscentre.ie/whats-on/youth-lates-14/",
    "booking_url": "https://www.eventbrite.ie/e/2004316589875?aff=oddtdtcreator",
-   "category": "Music, Youth Arts",
-   "id": "02178ee807fb",
-   "first_seen": "2026-11-13"
+   "category": "Youth Arts, Music",
+   "id": "1f4fb71f6663",
+   "first_seen": "2026-11-20"
   },
   {
    "source": "musicforgalway",
@@ -958,6 +891,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "gac",
+   "venue": "Galway Arts Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Event ⁄ Music ⁄",
+   "date": "2026-12-04",
+   "time": "6:00pm - 8:00pm",
+   "url": "https://www.galwayartscentre.ie/whats-on/exhibition-launch-warm-kisses-the-bond-that-anchors-my-soul/",
+   "category": "Music",
+   "id": "9cb2480945b5",
+   "first_seen": "2026-11-20"
+  },
+  {
    "source": "monroes",
    "venue": "Monroe's Live",
    "town": "Galway City",
@@ -1035,6 +981,19 @@
    "category": "Comedy",
    "id": "70f34c1e7c43",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "gac",
+   "venue": "Galway Arts Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Exhibition ⁄",
+   "date": "2026-12-05",
+   "end_date": "2027-01-17",
+   "url": "https://www.galwayartscentre.ie/whats-on/warm-kisses-the-bond-that-anchors-my-soul/",
+   "category": "Exhibition",
+   "id": "f5817655fc8e",
+   "first_seen": "2026-11-20"
   },
   {
    "source": "monroes",
@@ -1322,6 +1281,19 @@
    "category": "Comedy",
    "id": "c92c6a5e568a",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "gac",
+   "venue": "Galway Arts Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Performance ⁄ Gallery Lates ⁄",
+   "date": "2026-12-10",
+   "time": "7pm",
+   "url": "https://www.galwayartscentre.ie/whats-on/make-yourself-great-again/",
+   "category": "Performance, Gallery Lates",
+   "id": "b5b9f0c5d35f",
+   "first_seen": "2026-11-20"
   },
   {
    "source": "leisureland",
@@ -1703,6 +1675,19 @@
    "category": "Music",
    "id": "6f1908f433d0",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "gac",
+   "venue": "Galway Arts Centre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Gallery Lates ⁄ Tour ⁄",
+   "date": "2026-12-17",
+   "time": "6pm",
+   "url": "https://www.galwayartscentre.ie/whats-on/curators-tour-with-fatoumata-gandega/",
+   "category": "Gallery Lates",
+   "id": "5826112aaf64",
+   "first_seen": "2026-11-20"
   },
   {
    "source": "roisindubh",
@@ -2426,6 +2411,19 @@
    "category": "Comedy",
    "id": "52914b12ff27",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "SMO",
+   "date": "2027-01-21",
+   "time": "11:59pm",
+   "url": "https://roisindubh.net/listings/smo-2027-01-21-235900-81917",
+   "category": "Music",
+   "id": "d4b72a1cdf26",
+   "first_seen": "2026-11-20"
   },
   {
    "source": "roisindubh",
@@ -4355,6 +4353,7 @@
    "time": "7pm",
    "url": "https://www.leisureland.ie/calendar/paul-smith-happy-2/",
    "category": "Comedy",
+   "sold_out": true,
    "merged_from": [
     "leisureland",
     "roisindubh"
