@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T07:16Z",
+ "generated_at": "2026-11-20T07:05Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "Hawk's Well Theatre",
@@ -18,19 +18,19 @@
   "craftmonth_tyrone": "2026-11-18T07:19Z",
   "craftmonth_fermanagh": "2026-11-18T07:19Z",
   "heritageweek": "2026-11-18T07:19Z",
-  "allingham": "2026-11-17T07:49Z",
+  "allingham": "2026-11-20T07:05Z",
   "fomhair": "2026-11-18T07:19Z"
  },
  "consecutive_failures": {
-  "an_grianan": 0,
-  "rcc": 0,
-  "balor": 0,
-  "abbey": 22,
+  "an_grianan": 1,
+  "rcc": 1,
+  "balor": 1,
+  "abbey": 23,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 16,
+  "hawkswell": 17,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -43,7 +43,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 53,
+  "themodel": 54,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -375,57 +375,6 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "Dream, Perform, Shine – ETB STARS",
-   "date": "2026-11-19",
-   "url": "https://angrianan.com/event/dream-perform-shine-etb-stars/",
-   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873667853/events/128665754/seats?zone=Auditorium",
-   "category": "Variety",
-   "id": "eb5ba6d74829",
-   "first_seen": "2026-08-22"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Flowerfield Arts Centre",
-   "town": "Coleraine",
-   "county": "Derry",
-   "title": "Palladium Portstewart | Innerspace",
-   "date": "2026-11-19",
-   "time": "19:15",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/palladium-portstewart-innerspace/",
-   "category": null,
-   "id": "467b6d1fab89",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Cinema: Trainspotting (30th Anniversary Screening)",
-   "date": "2026-11-19",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-cinema-trainspotting-30th-anniversary-screening/",
-   "category": "Film",
-   "id": "93dbda6e3917",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "Gealán Quartet – Prayers and Truths",
-   "date": "2026-11-19",
-   "url": "https://www.thedock.ie/whats-on/gealán-quartet",
-   "category": "Music",
-   "id": "c9bfdd0b17d8",
-   "first_seen": "2026-10-10"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
    "title": "Hallow’istmas The 13th – Online",
    "date": "2026-11-20",
    "end_date": "2026-11-21",
@@ -732,6 +681,18 @@
    "category": "Film",
    "id": "a01c3e64fb15",
    "first_seen": "2026-10-22"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Healing In The Aftermath of Coercive Control",
+   "date": "2026-11-26",
+   "url": "https://www.derryplayhouse.co.uk/event/healing-in-the-aftermath-of-coercive-control",
+   "category": null,
+   "id": "feab69b11022",
+   "first_seen": "2026-11-20"
   },
   {
    "source": "ardhowen",
@@ -2026,6 +1987,18 @@
    "first_seen": "2026-10-16"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "Garadice – Sanctuary",
+   "date": "2027-01-16",
+   "url": "https://www.thedock.ie/whats-on/garadice",
+   "category": "Music",
+   "id": "2bac3496d71c",
+   "first_seen": "2026-11-20"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Atlantic Apartotel",
    "town": "Bundoran",
@@ -2699,6 +2672,18 @@
    "first_seen": "2026-11-19"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Lend Me A Tenor",
+   "date": "2027-02-27",
+   "url": "https://ardhowen.com/show/lend-me-a-tenor/",
+   "category": "Drama",
+   "id": "ca2ea27da2a6",
+   "first_seen": "2026-11-20"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -3059,6 +3044,18 @@
    "category": "Music/Comedy",
    "id": "5e635fbd4e1a",
    "first_seen": "2026-07-25"
+  },
+  {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Dear Evan Hanson",
+   "date": "2027-04-03",
+   "url": "https://struleartscentre.co.uk/show/dear-evan-hanson/",
+   "category": "Musical",
+   "id": "c346dcdbdca1",
+   "first_seen": "2026-11-20"
   },
   {
    "source": "ardhowen",
@@ -3592,6 +3589,18 @@
    "category": "Music",
    "id": "9ce4478ac623",
    "first_seen": "2026-10-24"
+  },
+  {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "An Evening With Dana – The Original Derry Girl",
+   "date": "2027-10-01",
+   "url": "https://www.derryplayhouse.co.uk/event/an-evening-with-dana-the-original-derry-girl",
+   "category": null,
+   "id": "6235834d10af",
+   "first_seen": "2026-11-20"
   },
   {
    "source": "ardhowen",
