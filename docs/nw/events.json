@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T07:05Z",
+ "generated_at": "2026-11-21T06:58Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "Hawk's Well Theatre",
@@ -10,27 +10,27 @@
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-11-15T06:19Z",
   "hawkswell": "2026-11-01T02:14Z",
-  "craftmonth_donegal": "2026-11-18T07:19Z",
-  "craftmonth_derry": "2026-11-18T07:19Z",
-  "craftmonth_derry_city": "2026-11-18T07:19Z",
-  "craftmonth_leitrim": "2026-11-18T07:19Z",
-  "craftmonth_sligo": "2026-11-18T07:19Z",
-  "craftmonth_tyrone": "2026-11-18T07:19Z",
-  "craftmonth_fermanagh": "2026-11-18T07:19Z",
-  "heritageweek": "2026-11-18T07:19Z",
+  "craftmonth_donegal": "2026-11-21T06:58Z",
+  "craftmonth_derry": "2026-11-21T06:58Z",
+  "craftmonth_derry_city": "2026-11-21T06:58Z",
+  "craftmonth_leitrim": "2026-11-21T06:58Z",
+  "craftmonth_sligo": "2026-11-21T06:58Z",
+  "craftmonth_tyrone": "2026-11-21T06:58Z",
+  "craftmonth_fermanagh": "2026-11-21T06:58Z",
+  "heritageweek": "2026-11-21T06:58Z",
   "allingham": "2026-11-20T07:05Z",
-  "fomhair": "2026-11-18T07:19Z"
+  "fomhair": "2026-11-21T06:58Z"
  },
  "consecutive_failures": {
-  "an_grianan": 1,
-  "rcc": 1,
-  "balor": 1,
-  "abbey": 23,
+  "an_grianan": 0,
+  "rcc": 0,
+  "balor": 0,
+  "abbey": 24,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 17,
+  "hawkswell": 18,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -43,7 +43,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 54,
+  "themodel": 55,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -388,81 +388,6 @@
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
    "county": "Donegal",
-   "title": "John Colleary: Mighty Quack POSTPONED",
-   "date": "2026-11-20",
-   "url": "https://angrianan.com/event/john-colleary-the-quack/",
-   "category": "Comedy",
-   "id": "76e7d695208e",
-   "first_seen": "2026-11-11"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Dunlewey Theatre Gweedore",
-   "town": "Gweedore",
-   "county": "Donegal",
-   "title": "Paul Brady, Dunlewey Theatre, Donegal",
-   "date": "2026-11-20",
-   "time": "19:30",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/paul-brady-dunlewey-theatre-donegal/",
-   "category": null,
-   "id": "08cf34104bad",
-   "first_seen": "2026-08-02"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Leitrim Sculpture Centre",
-   "town": "Manorhamilton",
-   "county": "Leitrim",
-   "title": "Expanded Glass: Fuse, Flame, Cast Workshop",
-   "date": "2026-11-20",
-   "time": "10:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/expanded-glass-fuse-flame-cast-workshop/",
-   "category": null,
-   "id": "3fa591c113d7",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC MUSIC: Tommy Sands",
-   "date": "2026-11-20",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/rcc-music-tommy-sands/",
-   "category": "Music",
-   "id": "56a27cfbf3d4",
-   "first_seen": "2026-07-14"
-  },
-  {
-   "source": "thedock",
-   "venue": "The Dock",
-   "town": "Carrick-on-Shannon",
-   "county": "Leitrim",
-   "title": "For the Craic – Book launch with John McDwyer",
-   "date": "2026-11-20",
-   "url": "https://www.thedock.ie/whats-on/for-the-craic",
-   "category": "Theatre",
-   "id": "6eed0646759c",
-   "first_seen": "2026-10-31"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Micky Bartlett - I'm Only Gonna Say This Once",
-   "date": "2026-11-20",
-   "url": "https://www.derryplayhouse.co.uk/event/micky-bartlett-im-only-gonna-say-this-once",
-   "category": null,
-   "id": "1a545fe1c6c8",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "an_grianan",
-   "venue": "An Grianán Theatre",
-   "town": "Letterkenny",
-   "county": "Donegal",
    "title": "The Ennio Morricone Experience",
    "date": "2026-11-21",
    "url": "https://angrianan.com/event/the-ennio-morricone-experience/",
@@ -481,6 +406,7 @@
    "date": "2026-11-21",
    "time": "8:00pm",
    "url": "https://ardhowen.com/show/romeo-and-juliet/",
+   "sold_out": true,
    "category": null,
    "id": "b2d6f3c3cfd3",
    "first_seen": "2026-08-21"
@@ -2039,6 +1965,18 @@
    "first_seen": "2026-11-12"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "The Toni Cade Bambara School of Organizing – Film Screening",
+   "date": "2027-01-21",
+   "url": "https://www.thedock.ie/whats-on/the-toni-cade-bambara-school-of-organizing",
+   "category": "Film",
+   "id": "4cb43ddddb13",
+   "first_seen": "2026-11-21"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -2293,6 +2231,7 @@
    "url": "https://angrianan.com/event/bernard-oshea-desperate-house-husband/",
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873663482/events/128648631/seats?zone=Default",
    "category": "Comedy",
+   "sold_out": true,
    "id": "34cac701190a",
    "first_seen": "2026-07-14"
   },
@@ -2426,6 +2365,18 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "TULUA – Live in Concert",
+   "date": "2027-02-12",
+   "url": "https://www.thedock.ie/whats-on/tulua",
+   "category": "Music",
+   "id": "fda02f16ad04",
+   "first_seen": "2026-11-21"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -2527,6 +2478,20 @@
    "category": null,
    "id": "d859691aa3db",
    "first_seen": "2026-07-20"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Out of Order: Letterkenny Music & Drama Group",
+   "date": "2027-02-18",
+   "end_date": "2027-02-20",
+   "url": "https://angrianan.com/event/out-of-order-letterkenny-music-drama-group/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669437",
+   "category": "Theatre",
+   "id": "52b85deff65d",
+   "first_seen": "2026-11-21"
   },
   {
    "source": "ardhowen",
@@ -3525,6 +3490,19 @@
    "first_seen": "2026-10-10"
   },
   {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "John Colleary: Mighty Quack",
+   "date": "2027-07-03",
+   "url": "https://angrianan.com/event/john-colleary-the-quack/",
+   "booking_url": "https://angrianan.ticketsolve.com/shows/873662636/events",
+   "category": "Comedy",
+   "id": "87a7c8c0da6a",
+   "first_seen": "2026-11-21"
+  },
+  {
    "source": "eaf",
    "venue": "Malin Presbyterian Church",
    "town": "Malin",
@@ -4230,6 +4208,58 @@
    "category": null,
    "id": "704e036e6f6e",
    "first_seen": "2026-11-19"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Cinema: The Incomer",
+   "date": "2027-11-12",
+   "time": "8:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-cinema-the-incomer/",
+   "category": "Film",
+   "id": "c47fdf27a494",
+   "first_seen": "2026-11-21"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Atlantic Apartotel",
+   "town": "Bundoran",
+   "county": "Donegal",
+   "title": "Samba Fusion Ireland 2026 with Raz Jayasuriya",
+   "date": "2027-11-13",
+   "time": "18:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/samba-fusion-ireland-2026-with-raz-jayasuriya/",
+   "category": null,
+   "id": "db17145bf836",
+   "first_seen": "2026-11-21"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Joes Bar",
+   "town": "Strabane",
+   "county": "Tyrone",
+   "title": "Fintan Harvey FLIGHTMARES Strabane",
+   "date": "2027-11-13",
+   "time": "20:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/fintan-harvey-flightmares-strabane/",
+   "category": null,
+   "id": "a6e5e7ac8885",
+   "first_seen": "2026-11-21"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Villa Rose Hotel and Spa",
+   "town": "Stranorlar",
+   "county": "Donegal",
+   "title": "An Evening with George and Aaron Lowden",
+   "date": "2027-11-13",
+   "time": "19:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/an-evening-with-george-and-aaron-lowden/",
+   "category": null,
+   "id": "064869c4ec92",
+   "first_seen": "2026-11-21"
   }
  ]
 }
