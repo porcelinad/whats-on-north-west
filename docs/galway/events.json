@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T07:46Z",
+ "generated_at": "2026-11-21T07:43Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 35
+  "galway_city_museum": 36
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -65,97 +65,6 @@
    "category": "Music",
    "id": "e4d196fa9433",
    "first_seen": "2026-09-27"
-  },
-  {
-   "source": "leisureland",
-   "venue": "Leisureland",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "80s Icons Show",
-   "date": "2026-11-20",
-   "time": "8pm",
-   "url": "https://www.leisureland.ie/calendar/80s-icons-show-3/",
-   "category": "Music",
-   "id": "d504223632e7",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Abuse Your Illusion – Guns N’ Roses Tribute",
-   "date": "2026-11-20",
-   "time": "Doors 8pm",
-   "url": "https://monroes.ie/products/abuse-your-illusion-1",
-   "category": "Music",
-   "id": "9d4019585c40",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Bicurious",
-   "date": "2026-11-20",
-   "time": "Doors 10pm",
-   "url": "https://monroes.ie/products/bicurious",
-   "category": "Music",
-   "id": "33d5499da447",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "16 Years Of One Direction",
-   "date": "2026-11-20",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/16-years-of-one-direction-2026-11-20-230000-81718",
-   "category": "Music",
-   "id": "cb75a3ee52ba",
-   "first_seen": "2026-10-18"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Johnluke",
-   "date": "2026-11-20",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/johnluke-2026-11-20-200000-81523",
-   "category": "Music",
-   "id": "69c2ac03612e",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Heron Red",
-   "date": "2026-11-20",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/heron-red-2026-11-20-200000-81632",
-   "category": "Music",
-   "id": "1391394e831c",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "musicforgalway",
-   "venue": "Siobhán McKenna Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "[POSTPONED]<br>Lunchtime Concert:<br>JJ McNamara, piano",
-   "date": "2026-11-20",
-   "time": "1pm",
-   "url": "https://musicforgalway.ie/event/lunchtime-concert-jj-mcnamara-piano/",
-   "category": "Music, Classical",
-   "id": "1df3ce646cc5",
-   "first_seen": "2026-11-05"
   },
   {
    "source": "tht",
@@ -231,7 +140,6 @@
    "date": "2026-11-21",
    "time": "7pm",
    "url": "https://roisindubh.net/listings/club-gass-presents-haute-and-freddy-2026-11-21-190000-81512",
-   "sold_out": true,
    "category": "Music",
    "id": "13cf2ccae0cc",
    "first_seen": "2026-10-04"
@@ -387,7 +295,7 @@
    "title": "Silent Disco On Tuesdays",
    "date": "2026-11-24",
    "time": "11pm",
-   "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2026-11-24-200000-81459",
+   "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2026-11-24-230000-81459",
    "category": "Music",
    "id": "d77902b21cd3",
    "first_seen": "2026-10-04"
@@ -397,13 +305,13 @@
    "venue": "Róisín Dubh (Top Bar)",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Tuesday Comedy Showcase",
+   "title": "Tuesday Comedy Showcase with Chris Watts",
    "date": "2026-11-24",
    "time": "8:30pm",
-   "url": "https://roisindubh.net/listings/tuesday-comedy-showcase-2026-11-24-203000-81877",
+   "url": "https://roisindubh.net/listings/tuesday-comedy-showcase-with-chris-watts-2026-11-24-203000-81877",
    "category": "Comedy",
-   "id": "e5f463c88db3",
-   "first_seen": "2026-11-04"
+   "id": "abbbed991110",
+   "first_seen": "2026-11-21"
   },
   {
    "source": "tht",
@@ -417,6 +325,19 @@
    "category": "Music",
    "id": "d0f5a2300685",
    "first_seen": "2026-09-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "luail 001: Justin Banks ANL",
+   "date": "2026-11-25",
+   "time": "Doors 9.30pm",
+   "url": "https://monroes.ie/products/luail-001-justin-banks-anl",
+   "category": "Music",
+   "id": "8630d54e06ac",
+   "first_seen": "2026-11-21"
   },
   {
    "source": "monroes",
@@ -781,7 +702,7 @@
    "title": "Silent Disco On Tuesdays",
    "date": "2026-12-01",
    "time": "11pm",
-   "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2026-12-01-200000-81460",
+   "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2026-12-01-230000-81460",
    "category": "Music",
    "id": "248d78af493c",
    "first_seen": "2026-10-04"
@@ -1250,7 +1171,7 @@
    "title": "Silent Disco On Tuesdays",
    "date": "2026-12-08",
    "time": "11pm",
-   "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2026-12-08-200000-81461",
+   "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2026-12-08-230000-81461",
    "category": "Music",
    "id": "cc222b0c8f81",
    "first_seen": "2026-10-04"
@@ -1619,7 +1540,7 @@
    "title": "Silent Disco On Tuesdays",
    "date": "2026-12-15",
    "time": "11pm",
-   "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2026-12-15-200000-81462",
+   "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2026-12-15-230000-81462",
    "category": "Music",
    "id": "52abf192e41e",
    "first_seen": "2026-10-04"
@@ -3067,6 +2988,19 @@
    "first_seen": "2026-09-27"
   },
   {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Drag Brunch",
+   "date": "2027-02-13",
+   "time": "Doors 3pm",
+   "url": "https://monroes.ie/products/drag-brunch-21",
+   "category": "Music",
+   "id": "1d6e203f6e5a",
+   "first_seen": "2026-11-21"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -3554,6 +3488,19 @@
    "category": "Music",
    "id": "b0660377e76f",
    "first_seen": "2026-10-28"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Drag Brunch",
+   "date": "2027-03-06",
+   "time": "Doors 3pm",
+   "url": "https://monroes.ie/products/drag-brunch-20",
+   "category": "Music",
+   "id": "b4376a90f841",
+   "first_seen": "2026-11-21"
   },
   {
    "source": "monroes",
