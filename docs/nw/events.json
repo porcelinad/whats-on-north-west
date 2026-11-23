@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T06:39Z",
+ "generated_at": "2026-11-23T07:27Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "Hawk's Well Theatre",
@@ -18,19 +18,19 @@
   "craftmonth_tyrone": "2026-11-21T06:58Z",
   "craftmonth_fermanagh": "2026-11-21T06:58Z",
   "heritageweek": "2026-11-21T06:58Z",
-  "allingham": "2026-11-20T07:05Z",
+  "allingham": "2026-11-23T07:27Z",
   "fomhair": "2026-11-21T06:58Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 25,
+  "abbey": 26,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 19,
+  "hawkswell": 20,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -43,7 +43,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 56,
+  "themodel": 57,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -670,6 +670,19 @@
    "category": "Theatre",
    "id": "fe4c1ba8ac36",
    "first_seen": "2026-07-14"
+  },
+  {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Found Drowned - The Mysterious Death of Bella Brooks",
+   "date": "2026-12-01",
+   "time": "8:00 pm",
+   "url": "https://www.balorartscentre.com/?event=found-drowned-the-mysterious-death-of-bella-brooks-2",
+   "category": "Drama",
+   "id": "a036995db5c0",
+   "first_seen": "2026-11-23"
   },
   {
    "source": "strule",
@@ -4130,6 +4143,45 @@
    "category": null,
    "id": "064869c4ec92",
    "first_seen": "2026-11-21"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Iniscarn Forest & Park",
+   "town": "Magherafelt",
+   "county": "Derry",
+   "title": "The Antrim Rambler Guided Walks: Slieve Gallion in County Derry",
+   "date": "2027-11-15",
+   "time": "11:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/the-antrim-rambler-guided-walks-slieve-gallion-in-county-derry/",
+   "category": null,
+   "id": "5956426ebfa8",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim School of Art N41 E8H0",
+   "town": "Ballinamore",
+   "county": "Leitrim",
+   "title": "Willow Basket Weaving, (Skib Basket), Sun 15th Nov, 10:30am",
+   "date": "2027-11-15",
+   "time": "10:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/willow-basket-weaving-skib-basket-sun-15th-nov-10-30am/",
+   "category": null,
+   "id": "c5b03b45858e",
+   "first_seen": "2026-11-23"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "The Benwiskin Centre",
+   "town": "Sligo",
+   "county": "Sligo",
+   "title": "Benwiskin Sings: Community Singing with Una McCann",
+   "date": "2027-11-15",
+   "time": "11:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/benwiskin-sings-community-singing-with-una-mccann/",
+   "category": null,
+   "id": "f682c107fd63",
+   "first_seen": "2026-11-23"
   }
  ]
 }
