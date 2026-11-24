@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T07:27Z",
+ "generated_at": "2026-11-24T09:47Z",
  "failed_sources": [
   "Abbey Arts Centre",
   "Hawk's Well Theatre",
@@ -10,27 +10,27 @@
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-11-22T06:39Z",
   "hawkswell": "2026-11-01T02:14Z",
-  "craftmonth_donegal": "2026-11-21T06:58Z",
-  "craftmonth_derry": "2026-11-21T06:58Z",
-  "craftmonth_derry_city": "2026-11-21T06:58Z",
-  "craftmonth_leitrim": "2026-11-21T06:58Z",
-  "craftmonth_sligo": "2026-11-21T06:58Z",
-  "craftmonth_tyrone": "2026-11-21T06:58Z",
-  "craftmonth_fermanagh": "2026-11-21T06:58Z",
-  "heritageweek": "2026-11-21T06:58Z",
+  "craftmonth_donegal": "2026-11-24T09:47Z",
+  "craftmonth_derry": "2026-11-24T09:47Z",
+  "craftmonth_derry_city": "2026-11-24T09:47Z",
+  "craftmonth_leitrim": "2026-11-24T09:47Z",
+  "craftmonth_sligo": "2026-11-24T09:47Z",
+  "craftmonth_tyrone": "2026-11-24T09:47Z",
+  "craftmonth_fermanagh": "2026-11-24T09:47Z",
+  "heritageweek": "2026-11-24T09:47Z",
   "allingham": "2026-11-23T07:27Z",
-  "fomhair": "2026-11-21T06:58Z"
+  "fomhair": "2026-11-24T09:47Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 26,
+  "abbey": 27,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 20,
+  "hawkswell": 21,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -43,7 +43,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 57,
+  "themodel": 58,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -3204,17 +3204,17 @@
    "first_seen": "2026-10-21"
   },
   {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "Rory’s Stories The Good Ol’ Days",
-   "date": "2027-05-15",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/rorys-stories-the-good-ol-days/",
-   "category": "Comedy",
-   "id": "3948fc6a8779",
-   "first_seen": "2026-09-30"
+   "source": "nervecentre",
+   "venue": "Nerve Centre",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "The Music of Prefab Sprout performed by Martin McAloon",
+   "date": "2027-05-09",
+   "time": "8:00PM",
+   "url": "https://nervecentre.org/whats-on/the-music-of-prefab-sprout-performed-by-martin-mcaloon",
+   "category": "Music/Comedy",
+   "id": "f48d5d63aad8",
+   "first_seen": "2026-11-24"
   },
   {
    "source": "ardhowen",
@@ -3360,6 +3360,19 @@
    "first_seen": "2026-09-15"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "The Boondocks",
+   "date": "2027-06-25",
+   "time": "9:00pm",
+   "url": "https://ardhowen.com/show/the-boondocks/",
+   "category": "Music",
+   "id": "61e95c78182b",
+   "first_seen": "2026-11-24"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -3437,6 +3450,19 @@
    "category": "Music",
    "id": "dea2027f0951",
    "first_seen": "2026-09-17"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Declan O’Rourke",
+   "date": "2027-09-26",
+   "url": "https://angrianan.com/event/declan-orourke/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669542/events/128677919/seats?zone=Auditorium",
+   "category": "Music",
+   "id": "c903fd033ad9",
+   "first_seen": "2026-11-24"
   },
   {
    "source": "an_grianan",
