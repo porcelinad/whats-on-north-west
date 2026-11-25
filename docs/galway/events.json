@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T10:26Z",
+ "generated_at": "2026-11-25T09:11Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 39
+  "galway_city_museum": 40
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -53,45 +53,6 @@
    "first_seen": "2026-09-27"
   },
   {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Silent Disco On Tuesdays",
-   "date": "2026-11-24",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/silent-disco-on-tuesdays-2026-11-24-230000-81459",
-   "category": "Music",
-   "id": "d77902b21cd3",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Tuesday Comedy Showcase with Chris Watts",
-   "date": "2026-11-24",
-   "time": "8:30pm",
-   "url": "https://roisindubh.net/listings/tuesday-comedy-showcase-with-chris-watts-2026-11-24-203000-81877",
-   "category": "Comedy",
-   "id": "abbbed991110",
-   "first_seen": "2026-11-21"
-  },
-  {
-   "source": "tht",
-   "venue": "Town Hall Theatre",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "A Night at The Musicals",
-   "date": "2026-11-24",
-   "url": "https://tht.ie/4899/a-night-at-the-musicals",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173669407",
-   "category": "Music",
-   "id": "d0f5a2300685",
-   "first_seen": "2026-09-27"
-  },
-  {
    "source": "monroes",
    "venue": "Monroe's Live",
    "town": "Galway City",
@@ -103,19 +64,6 @@
    "category": "Music",
    "id": "8630d54e06ac",
    "first_seen": "2026-11-21"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Arborist",
-   "date": "2026-11-26",
-   "time": "Doors 8pm",
-   "url": "https://monroes.ie/products/arborist",
-   "category": "Music",
-   "id": "59f31ded04b0",
-   "first_seen": "2026-10-04"
   },
   {
    "source": "roisindubh",
@@ -254,13 +202,13 @@
    "venue": "Monroe's Live",
    "town": "Galway City",
    "county": "Galway",
-   "title": "The Noughties",
+   "title": "The Noughties - Postponed",
    "date": "2026-11-28",
    "time": "Doors 10pm",
    "url": "https://monroes.ie/products/noughty-1",
    "category": "Music",
-   "id": "94280d4cbe91",
-   "first_seen": "2026-10-04"
+   "id": "86d861f57d18",
+   "first_seen": "2026-11-25"
   },
   {
    "source": "roisindubh",
@@ -516,12 +464,12 @@
    "venue": "Mick Lally Theatre",
    "town": "Galway City",
    "county": "Galway",
-   "title": "What's On",
+   "title": "The Reincarnation of Cornelius Agrippa",
    "date": "2026-12-03",
-   "url": "https://www.druid.ie/about/the-mick-lally-theatre/whats-on",
+   "url": "https://www.druid.ie/about/the-mick-lally-theatre/whats-on/the-reincarnation-of-cornelius-agrippa",
    "category": "Theatre",
-   "id": "1c01e234607a",
-   "first_seen": "2026-11-11"
+   "id": "79d4cee32d5d",
+   "first_seen": "2026-11-25"
   },
   {
    "source": "roisindubh",
@@ -1088,6 +1036,19 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
+   "title": "Club GASS",
+   "date": "2026-12-11",
+   "time": "10pm",
+   "url": "https://roisindubh.net/listings/club-gass-2026-12-11-220000-81921",
+   "category": "Music",
+   "id": "464602890fad",
+   "first_seen": "2026-11-25"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
    "title": "Florence Road",
    "date": "2026-12-11",
    "time": "7pm",
@@ -1141,19 +1102,6 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Last Orders",
-   "date": "2026-12-12",
-   "time": "11:30pm",
-   "url": "https://roisindubh.net/listings/last-orders-2026-12-12-233000-81349",
-   "category": "Music",
-   "id": "6a9b750b0578",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
    "title": "No Scrubs: 90s & 00s R&B Xmas Party",
    "date": "2026-12-12",
    "time": "11pm",
@@ -1186,19 +1134,6 @@
    "url": "https://roisindubh.net/listings/the-riptide-movement-2026-12-12-200000-81266",
    "category": "Music",
    "id": "85156de58a9d",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh (Top Bar)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Powerhaus",
-   "date": "2026-12-12",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/powerhuas-2026-12-12-230000-81117",
-   "category": "Music",
-   "id": "f2d7c0779151",
    "first_seen": "2026-10-04"
   },
   {
@@ -4357,6 +4292,18 @@
    "category": "Music",
    "id": "1959a7538fa6",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Liberace and Liza - A Tribute",
+   "date": "2027-05-12",
+   "url": "https://tht.ie/4950/liberace-and-liza-a-tribute",
+   "category": "Music",
+   "id": "56dac9c12f19",
+   "first_seen": "2026-11-25"
   },
   {
    "source": "tht",
