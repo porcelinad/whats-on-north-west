@@ -1,7 +1,6 @@
 {
- "generated_at": "2026-11-24T09:47Z",
+ "generated_at": "2026-11-25T08:22Z",
  "failed_sources": [
-  "Abbey Arts Centre",
   "Hawk's Well Theatre",
   "The Model"
  ],
@@ -25,12 +24,12 @@
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 27,
+  "abbey": 0,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 21,
+  "hawkswell": 22,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -43,7 +42,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 58,
+  "themodel": 59,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -405,7 +404,7 @@
    "title": "5 Books That Could Save Your Life",
    "date": "2026-11-25",
    "time": "10:30am",
-   "url": "https://struleartscentre.co.uk/show/5-books-that-could-save-your-life/",
+   "url": "https://struleartscentre.co.uk/show/5-books-that-could-save-your-life-2/",
    "category": "Conference",
    "id": "cc8d6970bdc2",
    "first_seen": "2026-10-29"
@@ -589,7 +588,7 @@
    "date": "2026-11-28",
    "time": "6:30 pm",
    "url": "https://regionalculturalcentre.com/events/palestinian-culture-night/",
-   "category": "Music",
+   "category": "Film",
    "merged_from": [
     "rcc"
    ],
@@ -1653,6 +1652,22 @@
    "first_seen": "2026-10-18"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Make! Portrait Painting with Daniel Nelis",
+   "date": "2027-01-07",
+   "time": "7:00 pm",
+   "url": "https://regionalculturalcentre.com/events/portrait-painting-with-daniel-nelis/",
+   "category": "Workshop",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "8b7b6323bcdb",
+   "first_seen": "2026-11-25"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -1899,6 +1914,22 @@
    "first_seen": "2026-11-04"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Make! Geli Printmaking with Michelle Doherty",
+   "date": "2027-01-23",
+   "time": "2:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-make-geli-printmaking-with-michelle-doherty/",
+   "category": "Workshop",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "169fd8e2b7aa",
+   "first_seen": "2026-11-25"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -2065,6 +2096,19 @@
    "category": "Music",
    "id": "ca8ec25df875",
    "first_seen": "2026-09-30"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Trad Week: St Brigid’s Wild Atlantic Women",
+   "date": "2027-01-31",
+   "url": "https://angrianan.com/event/trad-week-st-brigids-wild-atlantic-women/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669618/events/128678045/seats?zone=Auditorium",
+   "category": "Music",
+   "id": "b0fed34fb901",
+   "first_seen": "2026-11-25"
   },
   {
    "source": "an_grianan",
@@ -2454,6 +2498,22 @@
    "first_seen": "2026-07-14"
   },
   {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Make! Learn to DJ with DJ Dano",
+   "date": "2027-02-25",
+   "time": "7:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-make-learn-to-dj-with-dj-dano/",
+   "category": "Workshop",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "81d0f8aa6c98",
+   "first_seen": "2026-11-25"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -2530,6 +2590,22 @@
    "category": "Drama",
    "id": "ca2ea27da2a6",
    "first_seen": "2026-11-20"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Make! Statement Earring Masterclass with Lisa McCormack",
+   "date": "2027-02-27",
+   "time": "11:00 am",
+   "url": "https://regionalculturalcentre.com/events/rcc-make-statement-earring-masterclass-with-lisa-mccormack/",
+   "category": "Workshop",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "be4ebd7ab3dd",
+   "first_seen": "2026-11-25"
   },
   {
    "source": "strule",
@@ -2661,6 +2737,19 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "The Carpenters Experience",
+   "date": "2027-03-11",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/the-carpenters-experience/",
+   "category": "Music",
+   "id": "dc93589ecec8",
+   "first_seen": "2026-11-25"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -2775,6 +2864,22 @@
    "category": "Music",
    "id": "01b1ce15e65f",
    "first_seen": "2026-10-21"
+  },
+  {
+   "source": "rcc",
+   "venue": "Regional Cultural Centre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "RCC Make! Upcycling & Papercraft Workshop with Moira McHugh",
+   "date": "2027-03-20",
+   "time": "2:00 pm",
+   "url": "https://regionalculturalcentre.com/events/rcc-make-upcycling-papercraft-workshop-with-moira-mchugh/",
+   "category": "Workshop",
+   "merged_from": [
+    "rcc"
+   ],
+   "id": "edbc622e9feb",
+   "first_seen": "2026-11-25"
   },
   {
    "source": "balor",
@@ -3516,58 +3621,6 @@
    "first_seen": "2026-10-22"
   },
   {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Wainfest! School Event: Mischief and Mystery in Moominvalley",
-   "date": "2027-10-12",
-   "time": "11:00 am",
-   "url": "https://regionalculturalcentre.com/events/wainfest-school-event-mischief-and-mystery-in-moominvalley/",
-   "category": null,
-   "id": "bf795834d465",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Love Your Coast Photography Exhibition",
-   "date": "2027-10-13",
-   "time": "9:30 am",
-   "url": "https://regionalculturalcentre.com/events/love-your-coast-photography-exhibition/",
-   "category": "Exhibition",
-   "id": "72afacd7b86d",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Wainfest! Schools Event: Niall DeBurca",
-   "date": "2027-10-15",
-   "time": "10:00 am",
-   "url": "https://regionalculturalcentre.com/events/wainfest-schools-event-niall-deburca/",
-   "category": null,
-   "id": "f5e73d5c18f0",
-   "first_seen": "2026-10-23"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "Wainfest! School Screening: A Bug’s Life",
-   "date": "2027-10-16",
-   "time": "10:30 am",
-   "url": "https://regionalculturalcentre.com/events/wainfest-school-screening-a-bugs-life/",
-   "category": null,
-   "id": "e0792c7325ce",
-   "first_seen": "2026-10-24"
-  },
-  {
    "source": "eventbrite_donegal",
    "venue": "Áislann Rann na Feirste",
    "town": "",
@@ -3947,19 +4000,6 @@
    "category": "Kids/Family",
    "id": "c1de0b1696e6",
    "first_seen": "2026-11-04"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Kids: Spooky Art Workshops with The Arty Fox",
-   "date": "2027-10-28",
-   "time": "11:00 am",
-   "url": "https://regionalculturalcentre.com/events/spooky-art-workshops-with-the-arty-fox/",
-   "category": "Workshop, Kids/Family",
-   "id": "3d6ab0ccf1c9",
-   "first_seen": "2026-11-05"
   },
   {
    "source": "an_grianan",
