@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T08:22Z",
+ "generated_at": "2026-11-26T08:07Z",
  "failed_sources": [
   "Hawk's Well Theatre",
   "The Model"
@@ -17,19 +17,19 @@
   "craftmonth_tyrone": "2026-11-24T09:47Z",
   "craftmonth_fermanagh": "2026-11-24T09:47Z",
   "heritageweek": "2026-11-24T09:47Z",
-  "allingham": "2026-11-23T07:27Z",
+  "allingham": "2026-11-26T08:07Z",
   "fomhair": "2026-11-24T09:47Z"
  },
  "consecutive_failures": {
   "an_grianan": 0,
   "rcc": 0,
   "balor": 0,
-  "abbey": 0,
+  "abbey": 1,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 22,
+  "hawkswell": 23,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -42,7 +42,7 @@
   "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 59,
+  "themodel": 60,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -384,32 +384,6 @@
    "first_seen": "2026-07-31"
   },
   {
-   "source": "nervecentre",
-   "venue": "Nerve Centre",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Táin Bó Cuailnge | World Premiere | Foyle Film Festival",
-   "date": "2026-11-25",
-   "time": "6:00PM",
-   "url": "https://nervecentre.org/whats-on/tain-bo-cuailnge-world-premiere-foyle-film-festival",
-   "category": "Film",
-   "id": "58ba49fc1281",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "5 Books That Could Save Your Life",
-   "date": "2026-11-25",
-   "time": "10:30am",
-   "url": "https://struleartscentre.co.uk/show/5-books-that-could-save-your-life-2/",
-   "category": "Conference",
-   "id": "cc8d6970bdc2",
-   "first_seen": "2026-10-29"
-  },
-  {
    "source": "playhouse",
    "venue": "The Playhouse",
    "town": "Derry",
@@ -476,18 +450,6 @@
    "category": "Film",
    "id": "a01c3e64fb15",
    "first_seen": "2026-10-22"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Healing In The Aftermath of Coercive Control",
-   "date": "2026-11-26",
-   "url": "https://www.derryplayhouse.co.uk/event/healing-in-the-aftermath-of-coercive-control",
-   "category": null,
-   "id": "feab69b11022",
-   "first_seen": "2026-11-20"
   },
   {
    "source": "ardhowen",
@@ -588,7 +550,7 @@
    "date": "2026-11-28",
    "time": "6:30 pm",
    "url": "https://regionalculturalcentre.com/events/palestinian-culture-night/",
-   "category": "Film",
+   "category": "Music",
    "merged_from": [
     "rcc"
    ],
@@ -1415,6 +1377,7 @@
    "date": "2026-12-19",
    "url": "https://struleartscentre.co.uk/show/sensitive-santa-a-relaxed-christmas-experience-2026/",
    "category": "Kids/Family",
+   "sold_out": true,
    "id": "5abad4ab109f",
    "first_seen": "2026-11-10"
   },
@@ -1943,6 +1906,18 @@
    "first_seen": "2026-08-01"
   },
   {
+   "source": "st_columbs",
+   "venue": "St Columb's Hall",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "COOL DISCS PRESENTS&#8230; AMBLE &#8211; LOVE AND ALL IT&#8217;S WARES &#8211; ALBUM + TKT BUNDLE",
+   "date": "2027-01-24",
+   "url": "https://www.saintcolumbshall.com/whatson/cool-discs-presents-amble-love-and-all-its-wares-album-tkt-bundle/",
+   "category": null,
+   "id": "452b65b30def",
+   "first_seen": "2026-11-26"
+  },
+  {
    "source": "an_grianan",
    "venue": "An Grianán Theatre",
    "town": "Letterkenny",
@@ -1964,9 +1939,22 @@
    "date": "2027-01-27",
    "url": "https://angrianan.com/event/an-evening-without-kate-bush/",
    "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669101/events/128675778/seats?zone=Auditorium",
-   "category": "Music",
+   "category": "Variety",
    "id": "7bef84f781cf",
    "first_seen": "2026-11-06"
+  },
+  {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Trad Week Lunchtime Show: In Tune with Tradition with Tara Connaghan",
+   "date": "2027-01-28",
+   "url": "https://angrianan.com/event/in-tune-with-tradition-with-tara-connaghan/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669652",
+   "category": "Trad Week",
+   "id": "fdce87f7c36d",
+   "first_seen": "2026-11-26"
   },
   {
    "source": "ardhowen",
@@ -2724,6 +2712,20 @@
    "first_seen": "2026-11-03"
   },
   {
+   "source": "an_grianan",
+   "venue": "An Grianán Theatre",
+   "town": "Letterkenny",
+   "county": "Donegal",
+   "title": "Matilda the Musical",
+   "date": "2027-03-09",
+   "end_date": "2027-03-11",
+   "url": "https://angrianan.com/event/matilda-the-musical/",
+   "booking_url": "https://angrianan.ticketsolve.com/ticketbooth/shows/873669658",
+   "category": "Musical",
+   "id": "4b7f53b505b2",
+   "first_seen": "2026-11-26"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -3322,6 +3324,31 @@
    "first_seen": "2026-11-24"
   },
   {
+   "source": "thedock",
+   "venue": "The Dock",
+   "town": "Carrick-on-Shannon",
+   "county": "Leitrim",
+   "title": "The Séamus Egan Project – Music Network",
+   "date": "2027-05-13",
+   "url": "https://www.thedock.ie/whats-on/the-séamus-egan-project",
+   "category": "Music",
+   "id": "e858dca001e2",
+   "first_seen": "2026-11-26"
+  },
+  {
+   "source": "balor",
+   "venue": "Balor Arts Centre",
+   "town": "Ballybofey",
+   "county": "Donegal",
+   "title": "Petunia & The Vipers",
+   "date": "2027-05-15",
+   "time": "8:00 pm",
+   "url": "https://www.balorartscentre.com/?event=petunia-the-vipers",
+   "category": "Music",
+   "id": "350ba8d2b982",
+   "first_seen": "2026-11-26"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -3606,6 +3633,19 @@
    "category": "Music",
    "id": "d9b3d0645f71",
    "first_seen": "2026-10-23"
+  },
+  {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "Tim McGarry: The TIM Is Right",
+   "date": "2027-10-09",
+   "time": "8:00pm",
+   "url": "https://ardhowen.com/show/tim-mcgarry-the-tim-is-right/",
+   "category": "Comedy",
+   "id": "dc8aa6b96dc0",
+   "first_seen": "2026-11-26"
   },
   {
    "source": "an_grianan",
