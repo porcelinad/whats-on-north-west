@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T08:07Z",
+ "generated_at": "2026-11-27T08:17Z",
  "failed_sources": [
   "Hawk's Well Theatre",
   "The Model"
@@ -9,27 +9,27 @@
   "eventbrite_csv_since": "2026-10-04T18:13Z",
   "eaf": "2026-11-22T06:39Z",
   "hawkswell": "2026-11-01T02:14Z",
-  "craftmonth_donegal": "2026-11-24T09:47Z",
-  "craftmonth_derry": "2026-11-24T09:47Z",
-  "craftmonth_derry_city": "2026-11-24T09:47Z",
-  "craftmonth_leitrim": "2026-11-24T09:47Z",
-  "craftmonth_sligo": "2026-11-24T09:47Z",
-  "craftmonth_tyrone": "2026-11-24T09:47Z",
-  "craftmonth_fermanagh": "2026-11-24T09:47Z",
-  "heritageweek": "2026-11-24T09:47Z",
+  "craftmonth_donegal": "2026-11-27T08:17Z",
+  "craftmonth_derry": "2026-11-27T08:17Z",
+  "craftmonth_derry_city": "2026-11-27T08:17Z",
+  "craftmonth_leitrim": "2026-11-27T08:17Z",
+  "craftmonth_sligo": "2026-11-27T08:17Z",
+  "craftmonth_tyrone": "2026-11-27T08:17Z",
+  "craftmonth_fermanagh": "2026-11-27T08:17Z",
+  "heritageweek": "2026-11-27T08:17Z",
   "allingham": "2026-11-26T08:07Z",
-  "fomhair": "2026-11-24T09:47Z"
+  "fomhair": "2026-11-27T08:17Z"
  },
  "consecutive_failures": {
-  "an_grianan": 0,
-  "rcc": 0,
-  "balor": 0,
-  "abbey": 1,
+  "an_grianan": 1,
+  "rcc": 1,
+  "balor": 1,
+  "abbey": 2,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 23,
+  "hawkswell": 24,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -39,10 +39,10 @@
   "craftmonth_tyrone": 0,
   "craftmonth_fermanagh": 0,
   "heritageweek": 0,
-  "thedock": 0,
+  "thedock": 1,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 60,
+  "themodel": 61,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -401,61 +401,6 @@
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
    "county": "Fermanagh",
-   "title": "Called Out",
-   "date": "2026-11-26",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/called-out/",
-   "category": null,
-   "id": "95ff42728018",
-   "first_seen": "2026-10-21"
-  },
-  {
-   "source": "eventbrite_donegal",
-   "venue": "Flowerfield Arts Centre",
-   "town": "Coleraine",
-   "county": "Derry",
-   "title": "Exhibition on Screen | Michelangelo | Love and Death",
-   "date": "2026-11-26",
-   "time": "19:00",
-   "url": "https://www.eventbrite.ie/d/ireland--donegal/exhibition-on-screen-michelangelo-love-and-death/",
-   "category": null,
-   "id": "143a09e693d9",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "rcc",
-   "venue": "Regional Cultural Centre",
-   "town": "Letterkenny",
-   "county": "Donegal",
-   "title": "RCC Cinema: The Good, the Bad and the Ugly",
-   "date": "2026-11-26",
-   "time": "8:00 pm",
-   "url": "https://regionalculturalcentre.com/events/the-good-the-bad-and-the-ugly/",
-   "category": "Film",
-   "merged_from": [
-    "rcc"
-   ],
-   "id": "5a99e6783335",
-   "first_seen": "2026-10-24"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "‘Acts of Memory’ NI debut screening of award-winning film",
-   "date": "2026-11-26",
-   "time": "7:00pm",
-   "url": "https://struleartscentre.co.uk/show/acts-of-memory-screening-and-qa-session-with-local-award-winning-fimmaker-mariead-mcclean/",
-   "category": "Film",
-   "id": "a01c3e64fb15",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
    "title": "Paddy Power FULL",
    "date": "2026-11-27",
    "time": "8:00pm",
@@ -511,22 +456,10 @@
    "title": "How To Marry A Millionaire – Dementia Friendly",
    "date": "2026-11-27",
    "time": "11:00am",
-   "url": "https://struleartscentre.co.uk/show/how-to-marry-a-millionaie-dementia-friendly/",
+   "url": "https://struleartscentre.co.uk/show/how-to-marry-a-millionaire-dementia-friendly/",
    "category": "Film",
    "id": "ac44e6de5f0b",
    "first_seen": "2026-09-05"
-  },
-  {
-   "source": "playhouse",
-   "venue": "The Playhouse",
-   "town": "Derry",
-   "county": "Derry",
-   "title": "Maccana – The Unseen Growth of Winter",
-   "date": "2026-11-27",
-   "url": "https://www.derryplayhouse.co.uk/event/maccana-the-unseen-growth-of-winter",
-   "category": null,
-   "id": "e66f3003a877",
-   "first_seen": "2026-08-01"
   },
   {
    "source": "eventbrite_donegal",
@@ -587,13 +520,13 @@
    "venue": "Strule Arts Centre",
    "town": "Omagh",
    "county": "Tyrone",
-   "title": "Let It Be: The Music of The Beatles",
+   "title": "Let It Be – The Music of The Beatles",
    "date": "2026-11-28",
    "time": "8:00pm",
    "url": "https://struleartscentre.co.uk/show/let-it-be-the-music-of-the-beatles/",
    "category": "Music",
-   "id": "d50a10f887ed",
-   "first_seen": "2026-08-01"
+   "id": "28451598f528",
+   "first_seen": "2026-11-27"
   },
   {
    "source": "playhouse",
@@ -3635,6 +3568,19 @@
    "first_seen": "2026-10-23"
   },
   {
+   "source": "strule",
+   "venue": "Strule Arts Centre",
+   "town": "Omagh",
+   "county": "Tyrone",
+   "title": "Declan O’Rourke, OCEANIC",
+   "date": "2027-10-07",
+   "time": "8:00pm",
+   "url": "https://struleartscentre.co.uk/show/declan-orourke-oceanic/",
+   "category": "Music",
+   "id": "22171ebefb3f",
+   "first_seen": "2026-11-27"
+  },
+  {
    "source": "ardhowen",
    "venue": "Ardhowen Theatre",
    "town": "Enniskillen",
@@ -4288,6 +4234,19 @@
    "category": null,
    "id": "f682c107fd63",
    "first_seen": "2026-11-23"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Flowerfield Arts Centre",
+   "town": "Coleraine",
+   "county": "Derry",
+   "title": "Palladium Portstewart | Innerspace",
+   "date": "2027-11-19",
+   "time": "19:15",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/palladium-portstewart-innerspace/",
+   "category": null,
+   "id": "f15749af86ec",
+   "first_seen": "2026-11-27"
   }
  ]
 }
