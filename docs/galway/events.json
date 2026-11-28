@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T09:06Z",
+ "generated_at": "2026-11-28T08:28Z",
  "failed_sources": [
   "Galway City Museum"
  ],
@@ -14,7 +14,7 @@
   "taibhdhearc": 0,
   "leisureland": 0,
   "musicforgalway": 0,
-  "galway_city_museum": 42
+  "galway_city_museum": 43
  },
  "venue_cache": {
   "https://tht.ie/4891/bothar-na-smaointe": "St. Nicholas Church",
@@ -64,72 +64,6 @@
    "category": "Exhibition",
    "id": "139595c4326c",
    "first_seen": "2026-09-27"
-  },
-  {
-   "source": "gac",
-   "venue": "Electric Galway 36 Abbeygate Street Upper, Galway, H91 W577",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Youth Arts ⁄ Music ⁄",
-   "date": "2026-11-27",
-   "time": "7:00pm – 9:30pm",
-   "url": "https://www.galwayartscentre.ie/whats-on/youth-lates-14/",
-   "booking_url": "https://www.eventbrite.ie/e/2004316589875?aff=oddtdtcreator",
-   "category": "Youth Arts, Music",
-   "id": "1f4fb71f6663",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "source": "musicforgalway",
-   "venue": "Michael D. Higgins Auditorium (Lower Aula)",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Emily Anderson Concert with ConTempo Quartet",
-   "date": "2026-11-27",
-   "time": "7:30pm",
-   "url": "https://musicforgalway.ie/event/emily-anderson-concert-with-contempo-quartet/",
-   "category": "Music, Classical",
-   "id": "89c535b469f8",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "monroes",
-   "venue": "Monroe's Live",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "The Garth Brooks Tribute Show, Thunder Rolls",
-   "date": "2026-11-27",
-   "time": "Doors 7pm",
-   "url": "https://monroes.ie/products/the-garth-brooks-tribute-show-thunder-rolls",
-   "category": "Music",
-   "id": "e5c008bc73bb",
-   "first_seen": "2026-11-15"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Adult DVD",
-   "date": "2026-11-27",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/adult-dvd-2026-11-27-200000-81260",
-   "category": "Music",
-   "id": "23e82c823a1b",
-   "first_seen": "2026-10-04"
-  },
-  {
-   "source": "roisindubh",
-   "venue": "Róisín Dubh",
-   "town": "Galway City",
-   "county": "Galway",
-   "title": "Just Like Heaven: Alt 80’s Night",
-   "date": "2026-11-27",
-   "time": "11pm",
-   "url": "https://roisindubh.net/listings/just-like-heaven-alt-80%E2%80%99s-night-2026-11-27-230000-81734",
-   "category": "Music",
-   "id": "3a74a3a9ec52",
-   "first_seen": "2026-10-21"
   },
   {
    "source": "tht",
@@ -514,13 +448,13 @@
    "venue": "Galway Arts Centre",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Event ⁄ Music ⁄",
+   "title": "Music ⁄ Event ⁄",
    "date": "2026-12-04",
    "time": "6:00pm - 8:00pm",
    "url": "https://www.galwayartscentre.ie/whats-on/exhibition-launch-warm-kisses-the-bond-that-anchors-my-soul/",
    "category": "Music",
-   "id": "9cb2480945b5",
-   "first_seen": "2026-11-20"
+   "id": "21e08d21087b",
+   "first_seen": "2026-11-28"
   },
   {
    "source": "monroes",
@@ -924,7 +858,6 @@
    "time": "7pm",
    "url": "https://www.leisureland.ie/calendar/tommy-tiernan-world-tour-of-galway/",
    "category": "Comedy",
-   "sold_out": true,
    "merged_from": [
     "leisureland",
     "roisindubh"
@@ -995,7 +928,6 @@
    "time": "7pm",
    "url": "https://www.leisureland.ie/calendar/tommy-tiernan-world-tour-of-galway-2/",
    "category": "Comedy",
-   "sold_out": true,
    "merged_from": [
     "leisureland",
     "roisindubh"
@@ -1312,13 +1244,13 @@
    "venue": "Galway Arts Centre",
    "town": "Galway City",
    "county": "Galway",
-   "title": "Gallery Lates ⁄ Tour ⁄",
+   "title": "Tour ⁄ Gallery Lates ⁄",
    "date": "2026-12-17",
    "time": "6pm",
    "url": "https://www.galwayartscentre.ie/whats-on/curators-tour-with-fatoumata-gandega/",
    "category": "Gallery Lates",
-   "id": "5826112aaf64",
-   "first_seen": "2026-11-20"
+   "id": "1f87f107706d",
+   "first_seen": "2026-11-28"
   },
   {
    "source": "roisindubh",
@@ -1578,8 +1510,8 @@
    "county": "Galway",
    "title": "Mick Flannery",
    "date": "2026-12-20",
-   "time": "8pm",
-   "url": "https://roisindubh.net/listings/mick-flannery-2026-12-20-200000-81527",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/mick-flannery-2026-12-20-190000-81527",
    "sold_out": true,
    "category": "Music",
    "id": "20388bc53cc7",
@@ -2693,6 +2625,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Vladimir Jablokov - One Night in Vienna",
+   "date": "2027-02-10",
+   "url": "https://tht.ie/4966/vladimir-jablokov-one-night-in-vienna",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173670300",
+   "category": "Music",
+   "id": "e7c42604b324",
+   "first_seen": "2026-11-28"
+  },
+  {
    "source": "roisindubh",
    "venue": "Róisín Dubh",
    "town": "Galway City",
@@ -2952,7 +2897,6 @@
    "title": "Adam Kay: Undoctored",
    "date": "2027-02-19",
    "url": "https://tht.ie/4886/adam-kay-undoctored",
-   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173668937",
    "category": "Comedy",
    "id": "9946a0e70b7f",
    "first_seen": "2026-09-27"
@@ -4119,6 +4063,19 @@
    "venue": "Róisín Dubh",
    "town": "Galway City",
    "county": "Galway",
+   "title": "Paul Smith",
+   "date": "2027-04-17",
+   "time": "8pm",
+   "url": "https://roisindubh.net/listings/paul-smith-2027-04-17-200000-81896",
+   "category": "Music",
+   "id": "653e8587b068",
+   "first_seen": "2026-11-28"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
    "title": "Hollie McNish",
    "date": "2027-04-20",
    "time": "7pm",
@@ -4174,6 +4131,19 @@
    ],
    "id": "d2e6530cbecc",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "roisindubh",
+   "venue": "Róisín Dubh",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "ARXX",
+   "date": "2027-04-23",
+   "time": "7pm",
+   "url": "https://roisindubh.net/listings/arxx-2027-04-23-190000-81924",
+   "category": "Music",
+   "id": "934aa72231d3",
+   "first_seen": "2026-11-28"
   },
   {
    "source": "roisindubh",
@@ -4343,6 +4313,19 @@
    "category": "Music",
    "id": "2e302bdaa34d",
    "first_seen": "2026-10-27"
+  },
+  {
+   "source": "monroes",
+   "venue": "Monroe's Live",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Robert Grace",
+   "date": "2027-05-08",
+   "time": "Doors 7pm",
+   "url": "https://monroes.ie/products/robert-grace",
+   "category": "Music",
+   "id": "8292d329a5f8",
+   "first_seen": "2026-11-28"
   },
   {
    "source": "roisindubh",
@@ -4577,6 +4560,19 @@
    "category": "Music",
    "id": "fbd06d1e87c3",
    "first_seen": "2026-10-04"
+  },
+  {
+   "source": "tht",
+   "venue": "Town Hall Theatre",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Tango Passion with Anton Jablokov & Friends",
+   "date": "2027-05-26",
+   "url": "https://tht.ie/4967/tango-passion-with-anton-jablokov-and-friends",
+   "booking_url": "https://tht.ticketsolve.com/ticketbooth/shows/1173670299",
+   "category": "Music",
+   "id": "dd39ad76fcb0",
+   "first_seen": "2026-11-28"
   },
   {
    "source": "tht",
@@ -5184,6 +5180,19 @@
    "category": "Music",
    "id": "166a2386c01b",
    "first_seen": "2026-11-14"
+  },
+  {
+   "source": "leisureland",
+   "venue": "Leisureland",
+   "town": "Galway City",
+   "county": "Galway",
+   "title": "Hothouse Flowers with Something Happens",
+   "date": "2027-11-18",
+   "time": "8pm",
+   "url": "https://www.leisureland.ie/calendar/hothouse-flowers-with-something-happens/",
+   "category": "Music",
+   "id": "5b9f21d48cc3",
+   "first_seen": "2026-11-28"
   },
   {
    "source": "tht",
