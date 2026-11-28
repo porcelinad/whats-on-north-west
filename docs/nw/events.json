@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T08:17Z",
+ "generated_at": "2026-11-28T07:39Z",
  "failed_sources": [
   "Hawk's Well Theatre",
   "The Model"
@@ -21,15 +21,15 @@
   "fomhair": "2026-11-27T08:17Z"
  },
  "consecutive_failures": {
-  "an_grianan": 1,
-  "rcc": 1,
-  "balor": 1,
-  "abbey": 2,
+  "an_grianan": 0,
+  "rcc": 0,
+  "balor": 0,
+  "abbey": 3,
   "eventbrite_donegal": 0,
   "mcgrorys": 0,
   "st_columbs": 0,
   "nervecentre": 0,
-  "hawkswell": 24,
+  "hawkswell": 25,
   "eaf": 0,
   "craftmonth_donegal": 0,
   "craftmonth_derry": 0,
@@ -39,10 +39,10 @@
   "craftmonth_tyrone": 0,
   "craftmonth_fermanagh": 0,
   "heritageweek": 0,
-  "thedock": 1,
+  "thedock": 0,
   "strule": 0,
   "ardhowen": 0,
-  "themodel": 61,
+  "themodel": 62,
   "playhouse": 0,
   "allingham": 0,
   "fomhair": 0
@@ -397,19 +397,6 @@
    "first_seen": "2026-11-07"
   },
   {
-   "source": "ardhowen",
-   "venue": "Ardhowen Theatre",
-   "town": "Enniskillen",
-   "county": "Fermanagh",
-   "title": "Paddy Power FULL",
-   "date": "2026-11-27",
-   "time": "8:00pm",
-   "url": "https://ardhowen.com/show/paddy-power-full/",
-   "category": null,
-   "id": "0484b4525c02",
-   "first_seen": "2026-08-01"
-  },
-  {
    "source": "balor",
    "venue": "Balor Arts Centre",
    "town": "Ballybofey",
@@ -422,44 +409,6 @@
    "category": "Panto",
    "id": "12670eb3048d",
    "first_seen": "2026-09-09"
-  },
-  {
-   "source": "mcgrorys",
-   "venue": "McGrory's Hotel",
-   "town": "Culdaff",
-   "county": "Donegal",
-   "title": "John Spillane",
-   "date": "2026-11-27",
-   "url": "https://www.mcgrorys.ie/entertainment/78-177/",
-   "category": "Music",
-   "id": "36ec4bd4ed94",
-   "first_seen": "2026-07-20"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "A Christmas Country with the Stars 2026",
-   "date": "2026-11-27",
-   "time": "8:00pm",
-   "url": "https://struleartscentre.co.uk/show/a-christmas-country-with-the-stars-2026/",
-   "category": "Music",
-   "id": "93a1cd325535",
-   "first_seen": "2026-08-01"
-  },
-  {
-   "source": "strule",
-   "venue": "Strule Arts Centre",
-   "town": "Omagh",
-   "county": "Tyrone",
-   "title": "How To Marry A Millionaire – Dementia Friendly",
-   "date": "2026-11-27",
-   "time": "11:00am",
-   "url": "https://struleartscentre.co.uk/show/how-to-marry-a-millionaire-dementia-friendly/",
-   "category": "Film",
-   "id": "ac44e6de5f0b",
-   "first_seen": "2026-09-05"
   },
   {
    "source": "eventbrite_donegal",
@@ -3193,6 +3142,18 @@
    "first_seen": "2026-10-09"
   },
   {
+   "source": "ardhowen",
+   "venue": "Ardhowen Theatre",
+   "town": "Enniskillen",
+   "county": "Fermanagh",
+   "title": "The Two Loves of Gabriel Foley",
+   "date": "2027-04-30",
+   "url": "https://ardhowen.com/show/the-two-loves-of-gabriel-foley/",
+   "category": "Drama",
+   "id": "5251a4737dc6",
+   "first_seen": "2026-11-28"
+  },
+  {
    "source": "strule",
    "venue": "Strule Arts Centre",
    "town": "Omagh",
@@ -4184,6 +4145,18 @@
    "first_seen": "2026-11-21"
   },
   {
+   "source": "playhouse",
+   "venue": "The Playhouse",
+   "town": "Derry",
+   "county": "Derry",
+   "title": "Tim McGarry - The TIM is Right",
+   "date": "2027-11-13",
+   "url": "https://www.derryplayhouse.co.uk/event/tim-mcgarry-the-tim-is-right",
+   "category": null,
+   "id": "764102be9d82",
+   "first_seen": "2026-11-28"
+  },
+  {
    "source": "eventbrite_donegal",
    "venue": "Villa Rose Hotel and Spa",
    "town": "Stranorlar",
@@ -4247,6 +4220,32 @@
    "category": null,
    "id": "f15749af86ec",
    "first_seen": "2026-11-27"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Dunlewey Theatre Gweedore",
+   "town": "Gweedore",
+   "county": "Donegal",
+   "title": "Paul Brady, Dunlewey Theatre, Donegal",
+   "date": "2027-11-20",
+   "time": "19:30",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/paul-brady-dunlewey-theatre-donegal/",
+   "category": null,
+   "id": "58138f508a17",
+   "first_seen": "2026-11-28"
+  },
+  {
+   "source": "eventbrite_donegal",
+   "venue": "Leitrim Sculpture Centre",
+   "town": "Manorhamilton",
+   "county": "Leitrim",
+   "title": "Expanded Glass: Fuse, Flame, Cast Workshop",
+   "date": "2027-11-20",
+   "time": "10:00",
+   "url": "https://www.eventbrite.ie/d/ireland--donegal/expanded-glass-fuse-flame-cast-workshop/",
+   "category": null,
+   "id": "94a7f9495ffb",
+   "first_seen": "2026-11-28"
   }
  ]
 }
